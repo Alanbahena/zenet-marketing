@@ -4,7 +4,7 @@ description: Mapa amplio de las categorías del sector restaurantero en MX/LATAM
 type: market-research
 last_updated: 2026-04-28
 status: draft
-version: 0.3
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -81,6 +81,54 @@ Cuando la propiedad cambia significativamente la dinámica operativa, partimos l
 ---
 
 ## 3. Las 12 categorías
+
+### 3.1 QSR / Comida rápida
+
+**Definición operativa.** Restaurantes de servicio rápido, ticket bajo, alta rotación. Servicio en mostrador o drive-thru, sin servicio en mesa (aunque pueden tener mesas para consumo). Comida preparada en minutos con procedimientos altamente estandarizados. Foco operativo en velocidad y consistencia.
+
+**Sub-tipos comunes** *(número aproximado de sucursales en MX, compilación sectorial 2024-2026 vía Perplexity, no auditado)*:
+- *Cadenas globales muy grandes (1,000+ sucursales)* — Starbucks (~1,300), Subway (~1,000), Little Caesars (~1,000).
+- *Cadenas globales grandes (200-800 sucursales)* — Domino's (~800), KFC (~600), Burger King (~400), Carl's Jr. (~350), Pizza Hut (~250), Krispy Kreme (~250), McDonald's (~200), El Pollo Loco (~200).
+- *Cadenas mexicanas grandes* — El Globo (~160, opera Grupo Bimbo), Bisquets Obregón (~150, híbrido café-QSR).
+- *Cadenas en expansión reciente o nicho* — Shake Shack, Chipotle, Popeyes (todas vía Alsea, en crecimiento 2024-2026).
+- *Cadenas globales sin cifra pública verificable* — Helados Holanda, Yogurtland, Wendy's, Dairy Queen, Baskin-Robbins.
+- *Categorías QSR-like informales* (taquerías de paso, loncherías, antojerías, puestos de tortas) — comparten dinámica operativa pero pertenecen al sector tradicional mexicano, se tratan en categoría 3.12.
+
+**Tamaño relativo en MX.** **Grande.** Las cadenas QSR globales con cifra pública verificable suman ~6,500+ sucursales en MX en 2024-2026 (sin contar marcas sin dato público como Wendy's, Helados Holanda, Yogurtland, Dairy Queen). Aproximadamente 5-6x más sucursales que el conjunto de cadenas casual visibles (~1,200). Altísima visibilidad en plazas comerciales, zonas de alta circulación y avenidas con drive-thru.
+
+**Modelo operativo típico.**
+- Servicio en mostrador o drive-thru, sin servicio en mesa.
+- Ticket promedio: ~$281 MXN por persona en "fast food MX" según Parrot 2026 — cifra posiblemente inflada por family meals o transacciones combinadas; QSR puro probablemente más bajo.
+- Cocina con 4-12 personas según tamaño y formato.
+- Operación 7 días, horario amplio (desayuno hasta cena tarde, algunos 24h).
+- Estructura: gerente de turno + supervisor regional + corporativo.
+- Métricas operativas centrales: velocidad de servicio, consistencia entre sucursales, food cost, throughput por hora pico.
+
+**Propiedad típica.** Cadena corporativa o franquicia. En MX, dos operadores master dominan el QSR formal:
+
+- ***Alsea*** opera ≥10 marcas QSR globales en MX: Burger King, KFC (principalmente), Domino's, Pizza Hut, Krispy Kreme, Starbucks, Shake Shack, Chipotle, Popeyes, más Bisquets Obregón nacional. **Es el operador QSR más grande de MX y, por tanto, un solo cliente potencial gigante para cualquier proveedor de software del sector** — implicación directa para Zenet GTM.
+- ***Arcos Dorados*** (cotiza en NYSE) opera McDonald's en toda LATAM, incluyendo MX.
+- *Otros operadores relevantes:* CMR opera Carl's Jr.; Grupo Bimbo opera El Globo (integración vertical desde panadería). Subway y Little Caesars usan modelos de franquicia masiva con muchos franquiciatarios pequeños.
+
+**Madurez sistémica.** Muy alta. Es la categoría más estandarizada de la industria. Manuales operativos corporativos vivos. POS integrados (Aloha, Micros, sistemas propietarios). Inventario y producción altamente automatizados. KDS (Kitchen Display Systems). Drive-thru, pickup y delivery integrados tecnológicamente. Capacitación corporativa intensiva. La marca dicta el sistema de operación; el franquiciatario lo ejecuta.
+
+**Dolor operativo dominante.** Distinto al independiente — no es ausencia de sistemas:
+- Volumen extremo en horas pico, presión constante por velocidad.
+- Rotación de personal muy alta, capacitación continua del equipo.
+- Cumplimiento de estándares corporativos auditables.
+- Para franquiciatarios pequeños (1-3 sucursales): inversión inicial alta, sistemas obligatorios costosos, ROI ajustado.
+
+**Relevancia para Zenet.** **Baja.** Las cadenas QSR ya operan con sistemas corporativos sofisticados; el problema que Zenet resuelve está cubierto por el corporativo de la marca. Excepción estrecha: cadenas QSR mexicanas en crecimiento (5-15 sucursales) sin sistemas corporativos consolidados — pero para entonces típicamente ya están adoptando un ERP o un sistema vertical de QSR.
+
+**Adyacencias.**
+- *Fast casual* (3.2) — frontera difusa: fast casual es QSR con ticket más alto y comida hecha al momento.
+- *Casual de cadena* (3.4) — comparten lógica corporativa y de franquicia, distinto formato de servicio.
+- *Categorías informales tradicionales* (3.12) — taquerías y loncherías mexicanas son QSR-like operativamente pero culturalmente distintas.
+
+**Fuentes y pendientes.**
+- Base: `zenet-business-context-production.md` sección 6 (Competitive Landscape — menciona Aloha y Micros como POS típicos del segmento).
+- Verificado (Apr 2026, Perplexity): conteos aproximados de sucursales para 13 cadenas QSR mayores en MX (compilación sectorial 2024-2026, no auditada); identificación de Alsea y Arcos Dorados como operadores master dominantes; ticket sectorial "fast food MX" ~$281 MXN (Parrot 2026, no oficial — verificar si incluye family meals).
+- Pendiente: cifras públicas auditadas para Helados Holanda, Yogurtland, Wendy's, Dairy Queen, Baskin-Robbins; ticket QSR puro depurado por persona individual; total agregado de sucursales QSR formales en MX (estimación sectorial completa, no solo top de cadenas).
 
 ### 3.3 Casual dining independiente *— zona Zenet*
 
