@@ -131,8 +131,9 @@ owner: [Name of document owner]
 - `brand-strategy` — strategic foundation docs (mission, positioning, etc.)
 - `brand-story` — biographical and mythological narrative docs
 - `voice-and-tone` — voice principles, vocabulary, writing rules
+- `market-research` — industry, market, segmentation, ICP, ecosystem, geography, regulatory docs
 
-New types will be added as new departments come online (`market-research`, `competitive-analysis`, `content-template`, etc.).
+New types will be added as new departments come online (`competitive-analysis`, `content-template`, etc.).
 
 ### Versioning
 
