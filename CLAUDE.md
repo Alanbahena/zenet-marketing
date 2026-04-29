@@ -10,7 +10,7 @@ The workspace is designed so that any contributor — Alan, a freelancer, or an 
 
 ---
 
-## Status (as of 2026-04-28)
+## Status (as of 2026-04-29)
 
 | Section | Status | Notes |
 |---|---|---|
@@ -24,14 +24,14 @@ The workspace is designed so that any contributor — Alan, a freelancer, or an 
 | **Branding — supporting folders** | Empty | _sop, _templates, skills, assets |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **Market Research and Analysis** | 🚧 In progress | `01-industry-and-market/01-panorama-de-la-industria.md` ✓ v1.1 (12 categorías del sector restaurantero MX) — siguiente: `02-definicion-y-alcance.md` |
+| **Market Research and Analysis** | 🚧 In progress | `01-industry-and-market/01-panorama-de-la-industria.md` ✓ v1.1 · `02-definicion-y-alcance.md` ✓ v1.0 — siguiente: `03-tamano-de-mercado.md` |
 | **Product Strategy** | Pending | |
 | **SEO and Content** | Pending | |
 | **Social Media Content Creation** | Pending | |
 | **Value Proposition** | Pending | Likely consolidates into Product Strategy |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
 
-**Current strategic decision:** branding has a strong foundation (strategy + story + voice/tone). The remaining branding docs are deferred until either real outputs exist (for examples/guidelines) or visual decisions are firmer (for visual identity). **Market Research and Analysis is now in active construction:** `01-panorama-de-la-industria.md` complete (v1.1, Apr 2026, 12 categorías del sector restaurantero MX con datos verificados de INEGI, CANIRAC, IMARC, Perplexity Pro Deep Research). Siguiente doc en cola: `02-definicion-y-alcance.md`.
+**Current strategic decision:** branding has a strong foundation (strategy + story + voice/tone). The remaining branding docs are deferred until either real outputs exist (for examples/guidelines) or visual decisions are firmer (for visual identity). **Market Research and Analysis is now in active construction:** `01-panorama-de-la-industria.md` complete (v1.1, Apr 2026, 12 categorías del sector restaurantero MX con datos verificados de INEGI, CANIRAC, IMARC, Perplexity Pro Deep Research) y `02-definicion-y-alcance.md` complete (v1.0, Apr 2026, scope declarado con 4 dimensiones + validación contra 6 criterios de calificación + 3 refinamientos respecto a business-context). Siguiente doc en cola: `03-tamano-de-mercado.md`.
 
 ---
 
@@ -355,6 +355,7 @@ You wrote this. You know where things are. The CLAUDE.md exists so the next agen
 | Words to use / avoid + glossary | `Branding/_context/04-voice-and-tone/vocabulario.md` |
 | Grammar + format rules | `Branding/_context/04-voice-and-tone/reglas-de-redaccion.md` |
 | Restaurant industry panorama / mapa del sector restaurantero MX | `Market Research and Analysis/_context/01-industry-and-market/01-panorama-de-la-industria.md` |
+| Mercado declarado de Zenet / scope (qué entra, qué no entra, FAQ) | `Market Research and Analysis/_context/01-industry-and-market/02-definicion-y-alcance.md` |
 | Visual identity (logo, colors, typography) | Pending → `Branding/_context/03-visual-identity/` |
 | Design system snapshot | Pending → `Branding/_context/05-design-system/` |
 | Production software context | `/02_Producto-y-Tech/Production-software/Zenet/CLAUDE.md` |
@@ -362,5 +363,5 @@ You wrote this. You know where things are. The CLAUDE.md exists so the next agen
 
 ---
 
-*Last updated: 2026-04-28*
-*Next planned update: when `02-definicion-y-alcance.md` reaches first complete version, or when another department starts active construction.*
+*Last updated: 2026-04-29*
+*Next planned update: when `03-tamano-de-mercado.md` reaches first complete version, or when another department starts active construction.*
