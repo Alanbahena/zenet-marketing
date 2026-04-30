@@ -24,14 +24,14 @@ The workspace is designed so that any contributor — Alan, a freelancer, or an 
 | **Branding — supporting folders** | Empty | _sop, _templates, skills, assets |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **Market Research and Analysis** | 🚧 In progress | `01-industry-and-market/01-panorama-de-la-industria.md` ✓ v1.1 · `02-definicion-y-alcance.md` ✓ v1.0 · `03-tamano-de-mercado.md` ✓ v1.0 · `_context/05-market-insights/01-vision-plataforma-zenet.md` (draft) — siguiente: `04-segmentacion-de-mercado.md` |
+| **Market Research and Analysis** | 🚧 In progress | `01-industry-and-market/01-panorama-de-la-industria.md` ✓ v1.1 · `02-definicion-y-alcance.md` ✓ v1.0 · `03-tamano-de-mercado.md` ✓ v1.0 · `04-segmentacion-de-mercado.md` ✓ v1.0 · `05-perfil-de-cliente-ideal.md` ✓ v1.0 · `_context/05-market-insights/01-vision-plataforma-zenet.md` (draft) — pendiente decidir siguiente doc en cola |
 | **Product Strategy** | Pending | |
 | **SEO and Content** | Pending | |
 | **Social Media Content Creation** | Pending | |
 | **Value Proposition** | Pending | Likely consolidates into Product Strategy |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
 
-**Current strategic decision:** branding has a strong foundation (strategy + story + voice/tone). The remaining branding docs are deferred until either real outputs exist (for examples/guidelines) or visual decisions are firmer (for visual identity). **Market Research and Analysis is now in active construction:** `01-panorama-de-la-industria.md` complete (v1.1, 12 categorías del sector restaurantero MX), `02-definicion-y-alcance.md` complete (v1.0, scope declarado con 4 dimensiones + validación contra 6 criterios), y `03-tamano-de-mercado.md` complete (v1.0, TAM/SAM/SOM con sensibilidad horizontal y benchmarks competitivos). Análisis estratégico exploratorio sobre platform play guardado como draft en `_context/05-market-insights/01-vision-plataforma-zenet.md` para integración futura al doc de expansión. Siguiente doc en cola: `04-segmentacion-de-mercado.md`.
+**Current strategic decision:** branding has a strong foundation (strategy + story + voice/tone). The remaining branding docs are deferred until either real outputs exist (for examples/guidelines) or visual decisions are firmer (for visual identity). **Market Research and Analysis is now in active construction:** los primeros 5 docs del subfolder `01-industry-and-market` están completos en v1.0 — `01-panorama-de-la-industria.md` (12 categorías), `02-definicion-y-alcance.md` (scope declarado), `03-tamano-de-mercado.md` (TAM/SAM/SOM con sensibilidad), `04-segmentacion-de-mercado.md` (5 sub-segmentos con beachhead Sub-segmento B + 3 fases de adquisición pre-PMF), y `05-perfil-de-cliente-ideal.md` (ICP del beachhead con perfil arquetípico, día típico, customer journey, anti-ICP y sistema de scoring). Análisis estratégico exploratorio sobre platform play guardado como draft en `_context/05-market-insights/01-vision-plataforma-zenet.md`. Pendiente decidir siguiente doc en cola.
 
 ---
 
@@ -357,6 +357,8 @@ You wrote this. You know where things are. The CLAUDE.md exists so the next agen
 | Restaurant industry panorama / mapa del sector restaurantero MX | `Market Research and Analysis/_context/01-industry-and-market/01-panorama-de-la-industria.md` |
 | Mercado declarado de Zenet / scope (qué entra, qué no entra, FAQ) | `Market Research and Analysis/_context/01-industry-and-market/02-definicion-y-alcance.md` |
 | Tamaño de mercado (TAM/SAM/SOM con sensibilidad y benchmarks) | `Market Research and Analysis/_context/01-industry-and-market/03-tamano-de-mercado.md` |
+| Segmentación de mercado (5 sub-segmentos, beachhead, fases de adquisición pre-PMF, mensajes y motion) | `Market Research and Analysis/_context/01-industry-and-market/04-segmentacion-de-mercado.md` |
+| Perfil de cliente ideal (ICP del beachhead, perfil arquetípico, día típico, customer journey, anti-ICP, sistema de scoring) | `Market Research and Analysis/_context/01-industry-and-market/05-perfil-de-cliente-ideal.md` |
 | Visión platform play / análisis estratégico de expansión vertical (draft) | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
 | Visual identity (logo, colors, typography) | Pending → `Branding/_context/03-visual-identity/` |
 | Design system snapshot | Pending → `Branding/_context/05-design-system/` |
@@ -366,4 +368,4 @@ You wrote this. You know where things are. The CLAUDE.md exists so the next agen
 ---
 
 *Last updated: 2026-04-29*
-*Next planned update: when `04-segmentacion-de-mercado.md` reaches first complete version, or when another department starts active construction.*
+*Next planned update: when next doc in `01-industry-and-market` subfolder is decided and reaches first complete version, or when another department starts active construction.*

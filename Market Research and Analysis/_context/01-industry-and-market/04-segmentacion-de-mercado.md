@@ -3,7 +3,7 @@ name: Segmentación de mercado
 description: Ejes de segmentación, los 5 sub-segmentos del scope de Zenet, elección del beachhead segment, y fases de adquisición pre-PMF
 type: market-research
 last_updated: 2026-04-29
-status: draft
+status: active
 version: 1.0
 owner: Alan Bahena
 ---
