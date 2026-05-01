@@ -1,79 +1,181 @@
 # CLAUDE.md — Zenet Marketing
 
-## Project Overview
+## 1. Project Overview
 
 This is the **marketing operations workspace for Zenet**. It centralizes brand context, market research, content templates, standard operating procedures, and Claude Code skills that automate recurring marketing work — organized by marketing department.
 
-This is NOT a software project. It contains documentation, templates, and slash-command skills. The Zenet production software (Next.js + FastAPI + Supabase) lives in a separate repository.
+This is **not** a software project. It contains documentation, templates, and slash-command skills. The Zenet production software (Next.js + FastAPI + Supabase) lives in a separate repository (see section 9, Data Connections).
 
-The workspace is designed so that any contributor — Alan, a freelancer, or an AI agent (Claude Code) — can pick up a marketing task and execute it consistently with Zenet's brand, voice, and strategy.
+**Designed for collaboration between humans and AI agents.** The workspace is structured so that any contributor — Alan, a freelancer, or a Claude Code agent starting from zero — can pick up a marketing task and execute it consistently with Zenet's brand, voice, and strategy. Every doc declares its purpose in frontmatter; every department follows the same pattern; every strategic decision is documented with a pointer to its source.
+
+**Disciplines this workspace will eventually support via skills:**
+
+- Market research and analysis
+- Reports and analytics
+- Product strategy planning
+- Digital campaigns
+- Content creation (long-form, social, email)
+- Offer and value proposition design
+- Copywriting
+
+If you're an AI agent reading this for the first time, jump to section 12 ("How to use this project") for a fast start.
 
 ---
 
-## Status (as of 2026-04-30)
+## 2. Most Recent Work
 
-| Section | Status | Notes |
+**As of 2026-05-01:**
+
+- **Subfolder `Market Research and Analysis/_context/01-industry-and-market/` closed at v1.0** with 8 docs (panorama, scope, sizing, segmentation, ICP, ecosystem, geography, regulatory).
+- **Last completed docs:** `07-geografia-y-expansion.md` v1.0 (2026-05-01) and `08-entorno-regulatorio.md` v1.0 (2026-04-30).
+- **Draft work pending review:** `_context/05-market-insights/01-vision-plataforma-zenet.md` v0.1 (platform play exploration).
+- **Branding** has a strong v1.0 foundation in three sections (strategy, story, voice/tone). Visual identity, design system, examples and guidelines are deferred until real outputs exist or visual decisions are firmer.
+- **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist but no internal structure yet.
+
+**Next work — pending user decision:** which subfolder of Market Research to start next (likely `02-competitive-analysis/`, given that docs 02 and 06 already pushed it), or which department to activate first.
+
+---
+
+## 3. Project Status
+
+| Section | Status | Brief |
 |---|---|---|
-| **Branding / 01-brand-strategy** | ✓ Complete | mision-vision-valores · posicionamiento · promesa-de-marca · personalidad-y-arquetipo |
-| **Branding / 02-brand-story** | ✓ Complete | origin-story · narrativa |
+| **Branding / 01-brand-strategy** | ✓ Complete v1.0 | Mission/vision/values, positioning, brand promise, archetype |
+| **Branding / 02-brand-story** | ✓ Complete v1.0 | Origin story, strategic narrative |
 | **Branding / 03-visual-identity** | Pending | Awaiting visual decisions + design system port |
-| **Branding / 04-voice-and-tone** | ✓ Complete | voz-y-tono · vocabulario · reglas-de-redaccion |
+| **Branding / 04-voice-and-tone** | ✓ Complete v1.0 | Voice principles, vocabulary, writing rules |
 | **Branding / 05-design-system** | Pending | To be ported from production repo |
 | **Branding / 06-application-examples** | Pending | Needs real published outputs to point at |
 | **Branding / 07-guidelines** | Pending | Will codify precedent as it accumulates |
-| **Branding — supporting folders** | Empty | _sop, _templates, skills, assets |
+| **Branding** — supporting folders (`_sop`, `_templates`, `skills`, `assets`) | Empty | |
+| **Market Research / 01-industry-and-market** | ✓ Complete v1.0 | 8 docs cerrados (ver Reference Table sección 13) |
+| **Market Research / 05-market-insights** | 🚧 Draft | `01-vision-plataforma-zenet.md` v0.1 |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **Market Research and Analysis** | 🚧 In progress | `01-industry-and-market/01-panorama-de-la-industria.md` ✓ v1.1 · `02-definicion-y-alcance.md` ✓ v1.0 · `03-tamano-de-mercado.md` ✓ v1.0 · `04-segmentacion-de-mercado.md` ✓ v1.0 · `05-perfil-de-cliente-ideal.md` ✓ v1.0 · `06-estructura-y-ecosistema.md` ✓ v1.0 · `08-entorno-regulatorio.md` ✓ v1.0 · `_context/05-market-insights/01-vision-plataforma-zenet.md` (draft) — siguiente en cola: `07-geografia-y-expansion.md` |
-| **Product Strategy** | Pending | |
+| **Product Strategy** | Pending | Will absorb Value Proposition (consolidation decided) |
 | **SEO and Content** | Pending | |
 | **Social Media Content Creation** | Pending | |
-| **Value Proposition** | Pending | Likely consolidates into Product Strategy |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
 
-**Current strategic decision:** branding has a strong foundation (strategy + story + voice/tone). The remaining branding docs are deferred until either real outputs exist (for examples/guidelines) or visual decisions are firmer (for visual identity). **Market Research and Analysis is now in active construction:** 7 docs del subfolder `01-industry-and-market` están completos en v1.0 — `01-panorama-de-la-industria.md` (12 categorías), `02-definicion-y-alcance.md` (scope declarado), `03-tamano-de-mercado.md` (TAM/SAM/SOM con sensibilidad), `04-segmentacion-de-mercado.md` (5 sub-segmentos con beachhead Sub-segmento B + 3 fases de adquisición pre-PMF), `05-perfil-de-cliente-ideal.md` (ICP del beachhead con perfil arquetípico, día típico, customer journey, anti-ICP y sistema de scoring), `06-estructura-y-ecosistema.md` (cadena de valor BoH end-to-end con variante de centro de distribución, mapa de roles internos con buying committee, capa upstream con La Canasta como apuesta de canal #1, capa downstream con comisiones efectivas vs nominales, capa software con validación de categoría nueva en LATAM, capa institucional con CANIRAC TJ como touchpoint accionable, capa financiamiento con underwriting con data operativa como platform-play moat, capa talento con red de consultores validados, capa medios con Restaurantes Exitosos y MPR como partnerships de contenido, mapa visual ASCII del ecosistema, 5 apuestas estratégicas centrales, 11 hipótesis de canal priorizadas en 3 tiers, y puente al platform play), y `08-entorno-regulatorio.md` (régimen fiscal SAT con CFDI 4.0 y fiscalización digital 2026 como palanca #1, laboral/IMSS/NOMs con NOM-019 desde 1 trabajador y outsourcing REPSE con responsabilidad solidaria, sanitario con NOM-251 y cita ancla "5 inspecciones COEPRIS al mes" — Aguilar Santuario CANIRAC TJ, municipal BC con foco TJ y moratoria Zona Norte 6 años, distintivos voluntarios con Distintivo H como sub-producto natural de Zenet, calendario regulatorio del año con concentración en Q1, superficie de contacto Zenet ↔ regulación con frame "facilitador no certificador", riesgo regulatorio para Zenet bajo LFPDPPP 2025 — vigor 21 mar 2025 amplía obligados a encargados, regulación IA en discusión sin ley aprobada, contador externo como bloqueador silencioso con frame ampliado "el chef adopta, el dueño paga, el contador autoriza", 18 huecos numerados + 8 hipótesis estratégicas + 8 triggers de actualización). Análisis estratégico exploratorio sobre platform play guardado como draft en `_context/05-market-insights/01-vision-plataforma-zenet.md`. Siguiente en cola: `07-geografia-y-expansion.md`.
+**Strategic posture (current):**
+
+- **Branding foundation is enough to operate.** No new branding docs unless real published outputs accumulate (then `06-application-examples`) or visual identity decisions firm up (then `03-visual-identity` + `05-design-system`).
+- **Market Research subfolder 01 is the operational backbone.** All 8 docs reference each other and form a coherent body. Future market research subfolders (competitive analysis, market insights, etc.) build on top.
+- **Department activation order is user-driven.** Alan decides which department starts next based on which marketing operation needs to be productized first.
 
 ---
 
-## Project Structure
+## 4. Key Strategic Decisions Log
+
+Canonical decisions that any agent or contributor should preserve. Each links to its source doc — read the source for nuance, not just the bullet here.
+
+### Brand and positioning
+
+- **Categoría declarada:** "Sistema operativo cognitivo para back-of-house de restaurantes." Not a POS, not inventory, not ERP, not chatbot. → `Branding/_context/01-brand-strategy/posicionamiento.md`
+- **Audiencia primaria:** dueños operadores y gerentes operativos de restaurantes independientes con 1-5 sucursales en crecimiento, en MX y LATAM, casual independiente como cuisine focus. → `Branding/_context/01-brand-strategy/posicionamiento.md`
+- **Arquetipo:** Sabio (primario) + Cuidador (secundario). Rol externo: "tu mano derecha operativa" (analogía sous chef). → `Branding/_context/01-brand-strategy/personalidad-y-arquetipo.md`
+- **Primer valor:** "Aumentar, no reemplazar." Operadores que buscan reemplazar equipo con IA quedan fuera del scope (`02-definicion-y-alcance.md` exclusión cultural #2). → `Branding/_context/01-brand-strategy/mision-vision-valores.md`
+- **Voz operativa:** 9 principios invariables (lenguaje del operador, sin tech, sin hype, voz activa, una idea por oración, concreto sobre abstracto, el porqué no solo el qué, honestidad sobre marketing, "si no se entiende, fallamos"). → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
+- **Idioma:** español neutro latinoamericano con anclaje mexicano. **"Tú"** por defecto. "Usted" reservado para legal y prensa. → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
+- **Nombre:** **Zenet** (Z mayúscula, resto minúsculas). El producto ES el agente — no se nombra al "agente IA" como entidad separada. Zenet detecta. Zenet sugiere. Zenet acompaña. → CLAUDE.md sección 8
+
+### Scope and ICP
+
+- **Filtro de formalidad mínimo:** RFC con actividad empresarial + CFDI 4.0 regular + 1+ año operando. Sin esos tres, el operador no es ICP. → `Market Research/_context/01-industry-and-market/02-definicion-y-alcance.md`
+- **Scope core categórico:** casual independiente formal con BoH propio + identidad propia + cocina protagonista. Modelos operativos equivalentes (gastropub/brewpub con cocina, microcadena profesionalizada, grupo multimarca chef-driven, restaurante chef-driven concesionado en hotel boutique) entran al scope. → `02-definicion-y-alcance.md`
+- **Beachhead pre-PMF:** Sub-segmento B = 2-3 sucursales en consolidación operativa, dueño-operador hands-on con gerente, recién abrieron 2da sucursal y la operación se rompió. → `04-segmentacion-de-mercado.md`
+- **ICP arquetípico:** Carlos Mendoza, dueño-operador 42 años, mariscos en Zona Río Tijuana, 12 años operando, 2 sucursales, abre WhatsApp 60 veces al día. → `05-perfil-de-cliente-ideal.md`
+- **Buying committee:** "El chef adopta, el dueño paga, el contador autoriza." Los tres deben estar cubiertos antes del cierre o la venta entra en limbo. → `08-entorno-regulatorio.md` §12
+
+### Geografía y expansión
+
+- **5 fases declaradas:** Fase 1 TJ → Fase 2 BC completa (Mexicali, Ensenada, Rosarito, Tecate, Valle de Guadalupe como caso especial) → Fase 3 operativa (Sonora, Querétaro, Puebla) → Fase 3 bis (Mérida, modelo remoto + partnership obligatorio) → Fase 4 (GDL, MTY, CDMX) → Fase 5 (LATAM con Serie A). → `07-geografia-y-expansion.md` §2
+- **Tres modelos operativos de expansión:** Modelo 1 periferia accesible (BC, equipo TJ + viajes Alan), Modelo 2 plaza con consultor partner local (Fase 3 operativa), Modelo 3 plaza remota con partnership obligatorio (Fase 3 bis Mérida y futuro Fase 5). → `07-geografia-y-expansion.md` §16
+- **Valle de Guadalupe:** caso especial activable desde Año 1 con regla "abrir la puerta, no salir a tocarla". → `07-geografia-y-expansion.md` §8.2
+- **Disciplina de avance entre fases:** por pre-condición medible, no por calendario. (5 design partners + NPS≥40 → Fase 2; 15-25 clientes activos + retención ≥80% → Fase 3 operativa; etc.) → `07-geografia-y-expansion.md` §16.5
+
+### Pricing y comercial
+
+- **Pricing uniforme dentro de MX.** $1,500 MXN/mes/sucursal en Fase 1. Descuentos por etapa (Fase 0 design partners 20-30%), no por plaza. LATAM se evalúa con Serie A. → `07-geografia-y-expansion.md` §17
+
+### Canal y ecosistema
+
+- **La Canasta como apuesta de canal upstream #1.** Distribuidora con cobertura BC + BCS + Sonora, discurso comercial alineado con ICP, institucionalizada en CANACINTRA Ensenada. → `06-estructura-y-ecosistema.md` §4.4
+- **CANIRAC TJ como touchpoint institucional accionable más concreto.** Liderazgo Rebeca Aguilar Santuario; Bootcamp GastronomIA con 40 marcas / 203 restaurantes participantes en enero 2026. → `06-estructura-y-ecosistema.md` §7.3
+- **Modelo "consultor partner como extensión Zenet":** replica al revés el modelo SoftRestaurant + SYCA TJ. Consultor local entrena, implementa y monetiza su servicio sobre Zenet. Anna Palazuelos, Victor Murguía, Algira Garzón ya validaron cualitativamente. → `06-estructura-y-ecosistema.md` §14, `07-geografia-y-expansion.md` §16.3
+
+### Competitivo
+
+- **Espacio AI-native + BoH-first es defendible mientras Zenet sea primero y más profundo.** No competir frontalmente con POS+inventario (Tier 1 saturado: PoloTab, Parrot, Fudo). Zenet se posiciona como capa cognitiva sobre POS existente. → `02-definicion-y-alcance.md` §4.4
+- **Doctrina de plazas grandes:** entrar tarde con caso ancla demostrado, no temprano sin diferenciación. CDMX como última plaza grande, no primera. → `07-geografia-y-expansion.md` §14
+
+### Regulatorio
+
+- **Zenet califica como encargado del tratamiento bajo LFPDPPP 2025** (vigor 21 mar 2025). Tiene obligaciones propias frente a autoridad y titulares — no se escuda en contrato con cliente. → `08-entorno-regulatorio.md` §10
+- **Frame de cumplimiento:** Zenet es **facilitador, no certificador**. No es PAC, no es despacho contable, no es UV de Distintivo H, no es asesor legal. → `08-entorno-regulatorio.md` §8.4
+- **Fiscalización digital SAT 2026 = palanca #1 de mensajería.** "Data limpia y reconciliada entre POS, inventario y CFDI es defensa frente a auditoría exprés." → `08-entorno-regulatorio.md` §2.8 y §9.4
+
+### Correcciones documentales relevantes
+
+- **K'u'uk (Pedro Evia) cerró sus puertas** — no es referente activo Mérida. El referente activo de la nueva cocina yucateca es Néctar/Huniik (Roberto Solís). → `07-geografia-y-expansion.md` §13.2
+- **Mochomos confirmado de origen sonorense** (no cadena CDMX como asumió originalmente doc 02). Modelo "grupo regional escalando nacional" como referencia narrativa. → `07-geografia-y-expansion.md` §10.1
+
+---
+
+## 5. Project Structure
 
 ```
 claude_code/                                # Root of this workspace
 ├── CLAUDE.md                               # This file
 ├── README.md
 │
-├── _context/                               # Shared cross-department context (root-level)
+├── _context/                               # Shared cross-department context (root-level, currently empty)
 │
 ├── Branding/                               # Brand foundation
-│   ├── _context/                           # Brand reference material
-│   │   ├── 01-brand-strategy/              ✓
+│   ├── _context/
+│   │   ├── 01-brand-strategy/              ✓ v1.0
 │   │   │   ├── mision-vision-valores.md
 │   │   │   ├── posicionamiento.md
 │   │   │   ├── promesa-de-marca.md
 │   │   │   └── personalidad-y-arquetipo.md
-│   │   ├── 02-brand-story/                 ✓
+│   │   ├── 02-brand-story/                 ✓ v1.0
 │   │   │   ├── origin-story.md
 │   │   │   └── narrativa.md
 │   │   ├── 03-visual-identity/             pending
-│   │   ├── 04-voice-and-tone/              ✓
+│   │   ├── 04-voice-and-tone/              ✓ v1.0
 │   │   │   ├── voz-y-tono.md
 │   │   │   ├── vocabulario.md
 │   │   │   └── reglas-de-redaccion.md
 │   │   ├── 05-design-system/               pending
 │   │   ├── 06-application-examples/        pending
 │   │   ├── 07-guidelines/                  pending
-│   │   └── assets/                         empty (logos, colors, icons, illustrations, photography, templates)
+│   │   └── assets/                         empty
 │   ├── _sop/                               empty
 │   ├── _templates/                         empty
 │   └── skills/                             empty
 │
-├── Analytics and Reporting/                # Each department follows the same pattern:
+├── Market Research and Analysis/
+│   ├── _context/
+│   │   ├── 01-industry-and-market/         ✓ v1.0 — 8 docs
+│   │   │   ├── 01-panorama-de-la-industria.md
+│   │   │   ├── 02-definicion-y-alcance.md
+│   │   │   ├── 03-tamano-de-mercado.md
+│   │   │   ├── 04-segmentacion-de-mercado.md
+│   │   │   ├── 05-perfil-de-cliente-ideal.md
+│   │   │   ├── 06-estructura-y-ecosistema.md
+│   │   │   ├── 07-geografia-y-expansion.md
+│   │   │   └── 08-entorno-regulatorio.md
+│   │   └── 05-market-insights/             🚧 draft
+│   │       └── 01-vision-plataforma-zenet.md  (v0.1 draft)
+│   ├── _sop/                               empty
+│   ├── _templates/                         empty
+│   └── skills/                             empty
+│
+├── Analytics and Reporting/                # Each pending department follows the same pattern:
 ├── Email and CRM/                          #   _context/  → reference material
-├── Market Research and Analysis/           #   _sop/      → standard operating procedures
-├── Product Strategy/                       #   _templates/ → reusable output templates
-├── SEO and Content/                        #   skills/    → Claude Code slash commands
-├── Social Media Content Creation/
-└── Value Proposition/
+├── Product Strategy/                       #   _sop/      → standard operating procedures
+├── SEO and Content/                        #   _templates/ → reusable output templates
+└── Social Media Content Creation/          #   skills/    → Claude Code slash commands
 ```
 
 ### The department pattern
@@ -82,7 +184,7 @@ Every marketing department follows the same internal structure:
 
 | Subfolder | Purpose | What goes inside |
 |---|---|---|
-| `_context/` | Reference material the department needs | Markdown documents organized by topic, often in numbered subsections (01-, 02-, ...) |
+| `_context/` | Reference material the department needs | Markdown documents organized by topic, often in numbered subsections (`01-`, `02-`, ...) |
 | `_sop/` | Standard operating procedures | Step-by-step guides for recurring department tasks |
 | `_templates/` | Reusable output templates | Briefs, decks, copy frameworks, post structures |
 | `skills/` | Claude Code slash commands | Markdown files defining `/command-name` workflows |
@@ -91,7 +193,7 @@ The `_` prefix marks these as supporting/meta folders. They sort to the top alph
 
 ---
 
-## Conventions
+## 6. Conventions
 
 ### File naming
 
@@ -107,7 +209,7 @@ Every primary document begins with this YAML frontmatter:
 ---
 name: [Document Title in Spanish]
 description: [One-line description — used to decide relevance]
-type: [brand-strategy | brand-story | voice-and-tone | etc.]
+type: [brand-strategy | brand-story | voice-and-tone | market-research | etc.]
 last_updated: YYYY-MM-DD
 status: active | draft | deprecated
 version: X.Y
@@ -125,6 +227,7 @@ owner: [Name of document owner]
 | Folder names | English |
 | File names | Spanish (kebab-case) |
 | Code, conventions, technical metadata | English |
+| CLAUDE.md (this file) | English with Spanish quotes when citing canonical brand text |
 
 ### Document types (current `type` field values)
 
@@ -133,7 +236,7 @@ owner: [Name of document owner]
 - `voice-and-tone` — voice principles, vocabulary, writing rules
 - `market-research` — industry, market, segmentation, ICP, ecosystem, geography, regulatory docs
 
-New types will be added as new departments come online (`competitive-analysis`, `content-template`, etc.).
+New types will be added as new departments come online (`competitive-analysis`, `content-template`, `campaign-brief`, `value-proposition`, etc.).
 
 ### Versioning
 
@@ -154,9 +257,43 @@ Small edits live in git history. Major shifts get archived. No filename versioni
 
 ---
 
-## The Zenet Brand (quick reference)
+## 7. Working Principles
 
-This is a tight summary so any contributor or agent gets oriented in 60 seconds. **Full strategic foundation lives in `Branding/_context/01-brand-strategy/` and `02-brand-story/`. This is a pointer, not a replacement.**
+Meta-rules that apply across all work in this workspace. AI agents and human contributors should treat these as defaults — deviate only with explicit reason.
+
+### On honesty and rigor
+
+- **Mark `[SIN FUENTE PUBLICADA]` rather than invent.** When data isn't available in public sources, declare the gap honestly with a suggestion of how to close it. Never fabricate cifras, dates, or names.
+- **Distinguish between estimation, hypothesis, and fact.** Use source labels: `[OFICIAL]`, `[Dato MX casual independiente]`, `[Dato MX sector restaurantero]`, `[Dato local plaza X]`, `[Estimación cualitativa]`, `[SIN FUENTE PUBLICADA]`.
+- **Cite source and year inline** — `(Fuente, año)` — for any cifra, date, or named claim. Build the full source list at the end of each doc.
+
+### On scope and depth
+
+- **Don't inflate docs for completeness.** Secondary topics get secondary treatment. A 200-line section on a marginal plaza is not better than a 30-line section on the same plaza.
+- **Prefer pointers over duplication.** If information lives in another doc of the workspace, reference it; don't restate it. The exception is canonical summaries (like CLAUDE.md section 8 — Brand quick reference).
+- **Hipótesis abiertas y triggers de actualización** are first-class sections in long docs. Declare what you didn't resolve and what would dispatch revisiting it.
+
+### On collaboration
+
+- **Step-by-step approval with Alan.** Never advance to next document or major section without explicit user confirmation. Carryover from production repo: Alan prefers step-by-step approval over autonomous progression.
+- **Never auto-commit.** Alan decides when to commit. AI agents propose; Alan disposes.
+- **Spanish-language pre-publish check** before any final document is saved: voice principles · vocabulary · mechanics · narrative tests (the four-layer checklist in `reglas-de-redaccion.md` section 8).
+
+### On voice and content
+
+- **Read voice/tone docs before writing user-facing copy.** The voice is operative, not decorative — applying it consistently is the difference between Zenet content and generic SaaS content.
+- **Vocabulario.md governs word choice.** Words to use, words to avoid, glossary. Trumps personal preference.
+- **El producto ES el agente.** Zenet detecta, sugiere, acompaña. No nombramos "el agente IA" como entidad separada.
+
+### On geographic and market scope
+
+- **Disciplina de avance por pre-condición medible, no calendario.** Don't activate next phase by date — activate by demonstrable PMF, retention, or other concrete trigger (see section 4 decisions log).
+
+---
+
+## 8. The Zenet Brand (quick reference)
+
+Tight summary so any contributor or agent gets oriented in 60 seconds. **Full strategic foundation lives in `Branding/_context/01-brand-strategy/` and `02-brand-story/`. This is a pointer, not a replacement.**
 
 ### Categoría
 
@@ -232,15 +369,11 @@ Siempre escrito **Zenet** (Z mayúscula, resto minúsculas). El producto ES el a
 - **Mercado inicial:** Tijuana → Baja California → Noroeste de México → LATAM.
 - **Trato por defecto:** "tú" en producto y marketing. "Usted" reservado para legal y prensa.
 
-### Pointers a fuentes completas
-
-- Estrategia: `Branding/_context/01-brand-strategy/`
-- Historia: `Branding/_context/02-brand-story/`
-- Voz y tono: `Branding/_context/04-voice-and-tone/`
+For the full sources behind this summary, see Reference Table (section 13).
 
 ---
 
-## Data Connections
+## 9. Data Connections
 
 ### Zenet production repository
 
@@ -248,7 +381,7 @@ Siempre escrito **Zenet** (Z mayúscula, resto minúsculas). El producto ES el a
 
 The production repo has its own `CLAUDE.md` with full technical and business context: tech stack (Next.js + FastAPI + Supabase + Anthropic Claude), data model (17 tables), product architecture (8 AI agents, 3-phase user experience), business strategy, and the Zenet business context document (`docs/project-strategy/business-context/zenet-business-context-production.md`).
 
-When marketing work needs technical or product accuracy (feature names, pricing, capability claims), the production repo is the source of truth — not this workspace.
+**When marketing work needs technical or product accuracy** (feature names, pricing, capability claims), the production repo is the source of truth — not this workspace.
 
 ### Notion (TBD)
 
@@ -266,30 +399,30 @@ This project uses Claude (Anthropic) for any AI-assisted marketing work. Default
 
 ---
 
-## Working Agreements
+## 10. Working Agreements
 
 ### When to update this CLAUDE.md
 
 Update when:
+
 - A section reaches `✓ Complete` status (move from pending to complete).
 - A new department starts (mark as 🚧 In progress).
 - A new convention is established that affects how future docs are written.
 - A new document type is introduced (add to the `type` field values list).
+- A new strategic decision is made that should appear in the decisions log (section 4).
 - A new data connection is established (Notion link, etc.).
-- A working agreement changes.
+- A new working principle or working agreement is adopted.
 
 Don't update CLAUDE.md for routine document edits — frontmatter metadata + git history handle those.
 
 ### Commits
 
-- **The user (Alan) decides when to commit.** Never auto-commit.
+- **Alan decides when to commit.** Never auto-commit.
 - Commit messages: imperative mood, concise. *"Add brand strategy section"*, *"Update positioning with field validation insights"* — not *"Updated some files"*.
 - Don't commit `.env` files, credentials, or sensitive client data.
 - Don't skip pre-commit hooks (if any get added).
 
 ### Adding a new department
-
-To activate an empty department folder:
 
 1. Create the four standard subfolders inside it: `_context/`, `_sop/`, `_templates/`, `skills/`.
 2. If the department needs sub-sections in `_context/`, use numbered prefixes (`01-`, `02-`, ...).
@@ -317,57 +450,81 @@ Before any final document is saved, it should pass the four-layer checklist in `
 
 ---
 
-## How to use this project
+## 11. Available Skills (slash commands)
+
+This section tracks Claude Code slash commands implemented in `<department>/skills/` folders across the workspace.
+
+**Current state (2026-05-01):** No skills implemented yet. Each department's `skills/` folder is empty.
+
+**Planned skill domains** (in approximate order of likely activation):
+
+- `/research-*` skills for Market Research and Analysis (e.g., research a new plaza, build competitive snapshot, update market sizing).
+- `/report-*` skills for Analytics and Reporting (KPI digest, monthly performance summary).
+- `/campaign-*` skills for Email and CRM and SEO/Content (campaign brief, content calendar, email sequence).
+- `/copy-*` skills for content creation aligned with voice/tone (post draft, founder LinkedIn post, landing copy).
+- `/strategy-*` skills for Product Strategy (offer design, value proposition canvas, positioning audit).
+
+**When a skill is added, document it here** with: skill name, department, what it does, expected inputs, expected outputs, source path.
+
+---
+
+## 12. How to use this project
 
 ### If you're an AI agent (Claude Code) coming in fresh
 
-1. Read this CLAUDE.md fully — it gives you orientation in ~5 minutes.
-2. For any task touching brand strategy, voice, or content style: consult the relevant doc in `Branding/_context/` before drafting.
-3. For any vocabulary question: `vocabulario.md` first, then `voz-y-tono.md` for principles.
-4. When in doubt about format: `reglas-de-redaccion.md`.
-5. Never guess or improvise — point to a source of truth or ask.
+1. **Read this CLAUDE.md fully** — it gives you orientation in ~5 minutes. Sections 1, 2, 3, 4 give you state and decisions; section 8 gives you brand foundation; section 13 gives you the path to any specific topic.
+2. **For any task touching brand strategy, voice, or content style:** consult the relevant doc in `Branding/_context/` before drafting. Brand quick reference in section 8 is summary, not replacement.
+3. **For any vocabulary question:** `Branding/_context/04-voice-and-tone/vocabulario.md` first, then `voz-y-tono.md` for principles.
+4. **For market research questions** (sizing, ICP, geography, regulatory, ecosystem): start in `Market Research and Analysis/_context/01-industry-and-market/` — all 8 docs at v1.0.
+5. **For format questions:** `reglas-de-redaccion.md`.
+6. **Never guess or improvise.** Point to a source of truth or declare `[SIN FUENTE PUBLICADA]` and ask. Working principles in section 7 govern.
+7. **Apply the confirmation behavior:** never advance to next section or document without explicit user OK.
 
 ### If you're a freelancer or new contributor
 
 1. Start with this CLAUDE.md for orientation.
-2. Read the four brand strategy docs (in order: misión-visión-valores → posicionamiento → promesa-de-marca → personalidad-y-arquetipo).
+2. Read the four brand strategy docs in order: misión-visión-valores → posicionamiento → promesa-de-marca → personalidad-y-arquetipo.
 3. Read the brand story (origin-story → narrativa).
 4. Skim the three voice/tone docs.
-5. Ask Alan about anything that's unclear before producing work.
+5. If your work touches market context (ICP, scope, geography), skim `02-definicion-y-alcance.md` and `05-perfil-de-cliente-ideal.md`.
+6. Ask Alan about anything that's unclear before producing work.
 
 ### If you're Alan
 
-You wrote this. You know where things are. The CLAUDE.md exists so the next agent or freelancer doesn't need to re-derive your decisions.
+This CLAUDE.md is the orientation doc you maintain. Update it when section 3 status changes, when a new strategic decision belongs in section 4, when a working principle or agreement evolves. The decisions log in section 4 is what protects the project from drift across conversations.
 
 ---
 
-## Reference table: where to find common things
+## 13. Reference table — where to find common things
 
-| What you need | Where to find it |
-|---|---|
-| Mission, vision, values | `Branding/_context/01-brand-strategy/mision-vision-valores.md` |
-| Positioning + competitive map | `Branding/_context/01-brand-strategy/posicionamiento.md` |
-| Brand promise | `Branding/_context/01-brand-strategy/promesa-de-marca.md` |
-| Brand personality and archetype | `Branding/_context/01-brand-strategy/personalidad-y-arquetipo.md` |
-| Founder origin story | `Branding/_context/02-brand-story/origin-story.md` |
-| Strategic brand narrative | `Branding/_context/02-brand-story/narrativa.md` |
-| Voice principles + tone modulation | `Branding/_context/04-voice-and-tone/voz-y-tono.md` |
-| Words to use / avoid + glossary | `Branding/_context/04-voice-and-tone/vocabulario.md` |
-| Grammar + format rules | `Branding/_context/04-voice-and-tone/reglas-de-redaccion.md` |
-| Restaurant industry panorama / mapa del sector restaurantero MX | `Market Research and Analysis/_context/01-industry-and-market/01-panorama-de-la-industria.md` |
-| Mercado declarado de Zenet / scope (qué entra, qué no entra, FAQ) | `Market Research and Analysis/_context/01-industry-and-market/02-definicion-y-alcance.md` |
-| Tamaño de mercado (TAM/SAM/SOM con sensibilidad y benchmarks) | `Market Research and Analysis/_context/01-industry-and-market/03-tamano-de-mercado.md` |
-| Segmentación de mercado (5 sub-segmentos, beachhead, fases de adquisición pre-PMF, mensajes y motion) | `Market Research and Analysis/_context/01-industry-and-market/04-segmentacion-de-mercado.md` |
-| Perfil de cliente ideal (ICP del beachhead, perfil arquetípico, día típico, customer journey, anti-ICP, sistema de scoring) | `Market Research and Analysis/_context/01-industry-and-market/05-perfil-de-cliente-ideal.md` |
-| Estructura y ecosistema (cadena de valor BoH, roles internos, capas externas, mapa visual ASCII, implicaciones, buying committee, hipótesis de canal, puente platform play) | `Market Research and Analysis/_context/01-industry-and-market/06-estructura-y-ecosistema.md` |
-| Entorno regulatorio (régimen fiscal SAT, laboral/IMSS/NOMs, sanitario/NOM-251, municipal BC, distintivos, calendario regulatorio, superficie Zenet ↔ regulación, riesgo LFPDPPP 2025 e IA, contador como bloqueador silencioso, hipótesis abiertas y triggers) | `Market Research and Analysis/_context/01-industry-and-market/08-entorno-regulatorio.md` |
-| Visión platform play / análisis estratégico de expansión vertical (draft) | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
-| Visual identity (logo, colors, typography) | Pending → `Branding/_context/03-visual-identity/` |
-| Design system snapshot | Pending → `Branding/_context/05-design-system/` |
-| Production software context | `/02_Producto-y-Tech/Production-software/Zenet/CLAUDE.md` |
-| Business context / market validation | Production repo: `docs/project-strategy/business-context/zenet-business-context-production.md` |
+| What you need | Status | Where to find it |
+|---|---|---|
+| Mission, vision, values | ✓ active | `Branding/_context/01-brand-strategy/mision-vision-valores.md` |
+| Positioning + competitive map | ✓ active | `Branding/_context/01-brand-strategy/posicionamiento.md` |
+| Brand promise | ✓ active | `Branding/_context/01-brand-strategy/promesa-de-marca.md` |
+| Brand personality and archetype | ✓ active | `Branding/_context/01-brand-strategy/personalidad-y-arquetipo.md` |
+| Founder origin story | ✓ active | `Branding/_context/02-brand-story/origin-story.md` |
+| Strategic brand narrative | ✓ active | `Branding/_context/02-brand-story/narrativa.md` |
+| Voice principles + tone modulation | ✓ active | `Branding/_context/04-voice-and-tone/voz-y-tono.md` |
+| Words to use / avoid + glossary | ✓ active | `Branding/_context/04-voice-and-tone/vocabulario.md` |
+| Grammar + format rules | ✓ active | `Branding/_context/04-voice-and-tone/reglas-de-redaccion.md` |
+| Restaurant industry panorama / mapa del sector restaurantero MX | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/01-panorama-de-la-industria.md` |
+| Mercado declarado de Zenet / scope (qué entra, qué no entra, FAQ) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/02-definicion-y-alcance.md` |
+| Tamaño de mercado (TAM/SAM/SOM con sensibilidad y benchmarks) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/03-tamano-de-mercado.md` |
+| Segmentación de mercado (5 sub-segmentos, beachhead, fases de adquisición pre-PMF) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/04-segmentacion-de-mercado.md` |
+| Perfil de cliente ideal (ICP del beachhead, día típico, customer journey, anti-ICP, scoring) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/05-perfil-de-cliente-ideal.md` |
+| Estructura y ecosistema (cadena de valor BoH, roles internos, capas externas, buying committee, hipótesis de canal) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/06-estructura-y-ecosistema.md` |
+| Geografía y expansión (5 fases, criterios de priorización, anatomía TJ, 3 modelos de expansión, pricing uniforme MX) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/07-geografia-y-expansion.md` |
+| Entorno regulatorio (SAT, IMSS/laboral, sanitario/NOM-251, municipal BC, distintivos, calendario, riesgo LFPDPPP 2025 e IA) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/08-entorno-regulatorio.md` |
+| Visión platform play / análisis estratégico de expansión vertical | 🚧 draft v0.1 | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
+| Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
+| Design system snapshot | pending | `Branding/_context/05-design-system/` |
+| Application examples (real published outputs) | pending | `Branding/_context/06-application-examples/` |
+| Brand guidelines (precedent codified) | pending | `Branding/_context/07-guidelines/` |
+| Production software context | external | Production repo: `/02_Producto-y-Tech/Production-software/Zenet/CLAUDE.md` |
+| Business context / market validation | external | Production repo: `docs/project-strategy/business-context/zenet-business-context-production.md` |
 
 ---
 
-*Last updated: 2026-04-30*
-*Next planned update: when `07-geografia-y-expansion.md` reaches first complete version, or when another department starts active construction.*
+*Last updated: 2026-05-01.*
+*Next planned update: when the next subfolder of Market Research begins active construction, or when another department starts active construction, or when a new strategic decision belongs in section 4.*
