@@ -2,7 +2,7 @@
 name: Etapas y marco de investigación de cliente
 description: Marco de gobernanza de la sección 02-customer-research. Define las 5 etapas de madurez de evidencia, la etapa actual, las convenciones de marcado de fuentes y la disciplina de transición entre etapas.
 type: research-framework
-last_updated: 2026-05-01
+last_updated: 2026-05-03
 status: active
 version: 1.0
 owner: Alan Bahena

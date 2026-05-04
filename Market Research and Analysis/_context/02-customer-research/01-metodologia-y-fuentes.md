@@ -3,7 +3,7 @@ name: Metodología y fuentes de investigación
 description: Inventario de la evidencia disponible al inaugurar la sección, gaps explícitos, plan de discovery hacia etapa 2, disciplina de documentación de conversaciones y criterios de saturación cualitativa.
 type: customer-research
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-01
+last_updated: 2026-05-03
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -59,7 +59,7 @@ Lo que existe al 2026-05-01, organizado por fuente.
 
 **Contexto:** llamada de ~2 horas. Primera (y única) conversación de primera mano con el producto mostrado. Originada por DM de LinkedIn enviado en marzo 2026. Documentada en Notion con propiedades estructuradas: hipótesis testeadas, resultado, quote clave, insights de industria, siguiente paso.
 
-**Quién es Víctor Murguía:** consultor gastronómico independiente basado en Mexicali, experiencia internacional (India, Europa, México). Apertura de Sanchos en Mumbai 2007 (hoy ~$100K USD/mes). **No es operador del beachhead** — es consultor con experiencia operadora.
+**Quién es Víctor Murguía:** chef y consultor gastronómico independiente basado en Mexicali, experiencia internacional (India, Europa, México). Apertura de Sanchos en Mumbai 2007 (hoy ~$100K USD/mes). **No es operador del beachhead** — es chef-consultor con experiencia operadora.
 
 **Qué validó:** Solución, Propuesta de Valor, Precio (las tres marcadas "Validada" en el Validation Log, confianza Alta para Solución y Valor, Media para Precio). Acuñó el posicionamiento "DeepSeek de la industria restaurantera".
 
@@ -75,8 +75,8 @@ Database tipada en Notion con propiedades: Persona, Rol, Hipótesis Testeada, Re
 
 | Persona | Rol | Tipo | Fecha |
 |---|---|---|---|
-| Víctor Murguía | Consultor gastronómico (Mexicali) | Demo MVP | 2026-04-01 |
-| Víctor Murguía | Consultor gastronómico (Mexicali) | Discovery LinkedIn | 2026-03-19 |
+| Víctor Murguía | Chef y consultor gastronómico (Mexicali) | Demo MVP | 2026-04-01 |
+| Víctor Murguía | Chef y consultor gastronómico (Mexicali) | Discovery LinkedIn | 2026-03-19 |
 | Anna Palazuelos | Consultora — autora "Recetas para el éxito"; supervisó 27 Moshi Moshi + 16 Il Giornale | LinkedIn DM | 2026-03-19 |
 | Algira Garzón | Consultora OD en hospitalidad | Discovery | 2026-03-20 |
 | Víctor Mendoza | Consultor QSR | Industry perspective | mar-2026 |
@@ -399,7 +399,7 @@ El business context declara "onboarding matters as much as the product." Murguí
 
 ### Conversaciones y demos citadas
 
-- **Víctor Murguía** — Consultor gastronómico independiente (Mexicali). Demo MVP 2026-04-01 (~2 horas). Discovery LinkedIn 2026-03-19. Documentadas en Notion Validation Log.
+- **Víctor Murguía** — Chef y consultor gastronómico independiente (Mexicali). Demo MVP 2026-04-01 (~2 horas). Discovery LinkedIn 2026-03-19. Documentadas en Notion Validation Log.
 - **Anna Palazuelos** — Consultora gastronómica, autora "Recetas para el éxito"; supervisó 27 Moshi Moshi y 16 Il Giornale. LinkedIn DM 2026-03-19. Documentada en Notion Conversations & Insights.
 - **Algira Garzón** — Consultora OD en hospitalidad. Discovery 2026-03-20. Documentada en Notion.
 - **Víctor Mendoza** — Consultor QSR. Conversación mar-2026. Documentada en Notion.
