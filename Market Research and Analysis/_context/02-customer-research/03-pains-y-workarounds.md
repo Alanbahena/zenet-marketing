@@ -1,6 +1,5 @@
 ---
-
-## name: Dolores y workarounds del operador
+name: Dolores y workarounds del operador
 description: Inventario detallado de dolores operativos, financieros, emocionales y relacionales del dueño-operador del beachhead, mapeo de workarounds actuales y costo de mantenerlos. Hipótesis estructuradas pendientes de validación con dueño directo.
 type: customer-research
 research_stage: discovery-pre-PMF
@@ -8,6 +7,7 @@ last_updated: 2026-05-06
 status: active
 version: 0.4
 owner: Alan Bahena
+---
 
 # Dolores y workarounds del operador
 

@@ -1,40 +1,40 @@
 ---
-name: Voice of customer — verbatim library
-description: Library plana de verbatims curados (gold / load-bearing / illustrative) con metadata estructurada por entry (persona × theme × stage × marketing use-case) + indices de navegación + coverage gaps. Designed for retrieval/reuse across marketing operations (copy, landing, social, sales enablement). NO repite docs 03/06 — esos usan verbatims como evidence; este ES la library misma.
-type: customer-research
-research_stage: discovery-pre-PMF
-last_updated: 2026-05-08
-status: active
-version: 0.1
-owner: Alan Bahena
----
+
+## name: Voice of customer — verbatim library  
+description: Library plana de verbatims curados (gold / load-bearing / illustrative) con metadata estructurada por entry (persona × theme × stage × marketing use-case) + indices de navegación + coverage gaps. Designed for retrieval/reuse across marketing operations (copy, landing, social, sales enablement). NO repite docs 03/06 — esos usan verbatims como evidence; este ES la library misma.  
+type: customer-research  
+research_stage: discovery-pre-PMF  
+last_updated: 2026-05-08  
+status: active  
+version: 0.1  
+owner: Alan BahenaUpda
 
 # Voice of customer — verbatim library
 
 ## Índice
 
 1. [Propósito + diferencia con docs vecinos](#1-propósito--diferencia-con-docs-vecinos)
-   - Diferencia con docs vecinos
-   - Cómo navegar este doc
+  - Diferencia con docs vecinos
+  - Cómo navegar este doc
 2. [Marco metodológico](#2-marco-metodológico)
-   - 2.1 Tipos de verbatims
-   - 2.2 Source labeling + traceability
-   - 2.3 Curation tiers
-   - 2.4 Anti-falsificación rules — non-negotiable
-   - 2.5 Metadata schema por entry
+  - 2.1 Tipos de verbatims
+  - 2.2 Source labeling + traceability
+  - 2.3 Curation tiers
+  - 2.4 Anti-falsificación rules — non-negotiable
+  - 2.5 Metadata schema por entry
 3. **[Library](#3-library)**
-   - 3.0 Top 10 gold-tier — empieza aquí
-   - 3.1 Library completa (V-001 → V-030)
+  - 3.0 Top 10 gold-tier — empieza aquí
+  - 3.1 Library completa (V-001 → V-030)
 4. **[Indices de navegación](#4-indices-de-navegación)**
-   - 4.1 Por persona
-   - 4.2 Por theme
-   - 4.3 Por decision stage
-   - 4.4 Por marketing use-case
+  - 4.1 Por persona
+  - 4.2 Por theme
+  - 4.3 Por decision stage
+  - 4.4 Por marketing use-case
 5. [Coverage gaps + primary research roadmap](#5-coverage-gaps--primary-research-roadmap)
-   - 5.1 Gaps declarados — verbatims que NO existen en library v0.1
-   - 5.2 Primary research roadmap
-   - 5.3 Library maintenance
-   - 5.4 Honest declaration final
+  - 5.1 Gaps declarados — verbatims que NO existen en library v0.1
+  - 5.2 Primary research roadmap
+  - 5.3 Library maintenance
+  - 5.4 Honest declaration final
 6. [Fuentes](#6-fuentes)
 
 ---
@@ -45,14 +45,16 @@ Doc 07 es la **library curada de verbatims** del proyecto. Su propósito es serv
 
 ### Diferencia con docs vecinos
 
-| Doc | Lens | Verbatim role |
-|---|---|---|
-| 02 JTBD | Jobs taxonomy | Sparingly cited |
-| 03 Pains | Pain categorization + workarounds | Evidence inline |
-| 04 Journey | Phase narrative | Contextual inline |
-| 05 Buying | Criteria + sales cycle | Procedural inline |
-| 06 Objections | Objection catalog | Anchor verbatim + disarming inline |
-| **07 VoC** | **Verbatim library itself** | **El artefacto** — flat list con metadata por entry, organizado para retrieval |
+
+| Doc           | Lens                              | Verbatim role                                                                  |
+| ------------- | --------------------------------- | ------------------------------------------------------------------------------ |
+| 02 JTBD       | Jobs taxonomy                     | Sparingly cited                                                                |
+| 03 Pains      | Pain categorization + workarounds | Evidence inline                                                                |
+| 04 Journey    | Phase narrative                   | Contextual inline                                                              |
+| 05 Buying     | Criteria + sales cycle            | Procedural inline                                                              |
+| 06 Objections | Objection catalog                 | Anchor verbatim + disarming inline                                             |
+| **07 VoC**    | **Verbatim library itself**       | **El artefacto** — flat list con metadata por entry, organizado para retrieval |
+
 
 Docs 03-06 usan verbatims como evidencia incrustada en narrativa. Doc 07 NO repite contenido narrativo — extrae los verbatims, les asigna metadata, y los hace retrievable por persona / theme / stage / use-case.
 
@@ -69,12 +71,14 @@ Docs 03-06 usan verbatims como evidencia incrustada en narrativa. Doc 07 NO repi
 
 ### 2.1 Tipos de verbatims
 
-| Tipo | Definición | Marca en library |
-|---|---|---|
-| **In vivo** | Quote literal directo, atribuido a fuente nombrada o anónima trazable | `[VERBATIM]` |
-| **Paraphrase** | Reformulación cercana de pattern documentado por researcher (NOT exact quote) | `[PARAPHRASE]` |
-| **Aggregated** | Pattern documentado en multiple sources sin single attribution literal | `[AGGREGATED]` |
-| **Stat-finding** | Hallazgo cuantitativo (NOT quote técnicamente, pero load-bearing como language) | `[STAT]` |
+
+| Tipo             | Definición                                                                      | Marca en library |
+| ---------------- | ------------------------------------------------------------------------------- | ---------------- |
+| **In vivo**      | Quote literal directo, atribuido a fuente nombrada o anónima trazable           | `[VERBATIM]`     |
+| **Paraphrase**   | Reformulación cercana de pattern documentado por researcher (NOT exact quote)   | `[PARAPHRASE]`   |
+| **Aggregated**   | Pattern documentado en multiple sources sin single attribution literal          | `[AGGREGATED]`   |
+| **Stat-finding** | Hallazgo cuantitativo (NOT quote técnicamente, pero load-bearing como language) | `[STAT]`         |
+
 
 ### 2.2 Source labeling + traceability
 
@@ -89,11 +93,13 @@ Cada entry incluye source + fecha + tipo. Convenciones heredadas de doc 00 §3:
 
 ### 2.3 Curation tiers
 
-| Tier | Criterio | Marca |
-|---|---|---|
-| **Gold** | Load-bearing — informa positioning, copy hero, sales motion fundamental. Citable at-will. | 🌟 |
-| **Load-bearing** | Anchored evidence para una category específica. Citable con context. | ⭐ |
-| **Illustrative** | Texture y color cultural. Útil para prose, NO para hero copy. | • |
+
+| Tier             | Criterio                                                                                  | Marca |
+| ---------------- | ----------------------------------------------------------------------------------------- | ----- |
+| **Gold**         | Load-bearing — informa positioning, copy hero, sales motion fundamental. Citable at-will. | 🌟    |
+| **Load-bearing** | Anchored evidence para una category específica. Citable con context.                      | ⭐     |
+| **Illustrative** | Texture y color cultural. Útil para prose, NO para hero copy.                             | •     |
+
 
 ### 2.4 Anti-falsificación rules — non-negotiable
 
@@ -104,7 +110,7 @@ Cada entry incluye source + fecha + tipo. Convenciones heredadas de doc 00 §3:
 3. **NO traducir literally del inglés sin nota.** Si la fuente es inglés (Bruce Nelson, MarketMan G2, Reddit US), el quote permanece en inglés con traducción al español marcada como tal — NO reemplaza el original.
 4. **Mexican linguistic patterns marcados como `[AGGREGATED]`, NO como `[VERBATIM]`** salvo que tengan single attribution traceable. *"Hablamos pronto"*, *"el negocio es complicado"*, *"queda algo a fin de mes"* son patterns documentados, NO single-source quotes.
 5. **Notion-research + Demo Murguía** se citan via paraphrase + reference — NOT as fabricated verbatims. Las conversaciones internas no produjeron transcripts publicables; lo que se sabe es pattern + summary.
-6. **`[SIN FUENTE PUBLICADA]`** se usa para gaps declarados — coverage roadmap §5, NOT placeholder verbatims.
+6. `**[SIN FUENTE PUBLICADA]*`* se usa para gaps declarados — coverage roadmap §5, NOT placeholder verbatims.
 
 ### 2.5 Metadata schema por entry
 
@@ -131,18 +137,20 @@ Cada entry de §3.1 sigue:
 
 Los 10 verbatims más load-bearing del proyecto. Cada uno informa positioning, sales motion, o messaging structural.
 
-| # | ID | Verbatim corto | Theme |
-|---|---|---|---|
-| 1 | V-001 | *"Yo veo si a final de mes queda dinero en la cuenta, quiere decir que estoy haciendo dinero"* | identity-control |
-| 2 | V-002 | *"The software isn't broken. The discipline is."* | discipline-failure |
-| 3 | V-003 | **40.9%** de operadores Jalisco *"no les da confianza"* a software/tech vendors | distrust |
-| 4 | V-004 | *"El grueso del restaurante no tiene almacenista"* | chaos-burnout |
-| 5 | V-005 | *"Es difícil"* + *"es muy costoso"* — paired beliefs | distrust + money-roi |
-| 6 | V-006 | *"After years of being a paying customer, this was insulting and incredibly tone-deaf."* | vendor-relationship |
-| 7 | V-007 | *"Prefieren observar antes de comprometer"* | stage-stall |
-| 8 | V-008 | *"Lo que te trajo aquí no te lleva a la siguiente sucursal"* | aspirational reframe |
-| 9 | V-009 | *"El problema es sobrevivir"* | chaos-burnout |
-| 10 | V-010 | *"Yo SOY el sistema"* | identity-control |
+
+| #   | ID    | Verbatim corto                                                                                 | Theme                |
+| --- | ----- | ---------------------------------------------------------------------------------------------- | -------------------- |
+| 1   | V-001 | *"Yo veo si a final de mes queda dinero en la cuenta, quiere decir que estoy haciendo dinero"* | identity-control     |
+| 2   | V-002 | *"The software isn't broken. The discipline is."*                                              | discipline-failure   |
+| 3   | V-003 | **40.9%** de operadores Jalisco *"no les da confianza"* a software/tech vendors                | distrust             |
+| 4   | V-004 | *"El grueso del restaurante no tiene almacenista"*                                             | chaos-burnout        |
+| 5   | V-005 | *"Es difícil"* + *"es muy costoso"* — paired beliefs                                           | distrust + money-roi |
+| 6   | V-006 | *"After years of being a paying customer, this was insulting and incredibly tone-deaf."*       | vendor-relationship  |
+| 7   | V-007 | *"Prefieren observar antes de comprometer"*                                                    | stage-stall          |
+| 8   | V-008 | *"Lo que te trajo aquí no te lleva a la siguiente sucursal"*                                   | aspirational reframe |
+| 9   | V-009 | *"El problema es sobrevivir"*                                                                  | chaos-burnout        |
+| 10  | V-010 | *"Yo SOY el sistema"*                                                                          | identity-control     |
+
 
 ---
 
@@ -585,59 +593,67 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 
 ### 4.1 Por persona
 
-| Persona | IDs |
-|---|---|
-| **Dueño-operador** | V-001, V-006, V-008, V-010, V-011, V-012, V-015, V-016, V-017, V-018, V-019, V-021 |
-| **Gerente** | V-011, V-012, V-015, V-016 |
-| **Chef · cocinero** | V-022, V-024 |
-| ***Contable* externo** | V-014 |
+
+| Persona                                              | IDs                                                                                              |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| **Dueño-operador**                                   | V-001, V-006, V-008, V-010, V-011, V-012, V-015, V-016, V-017, V-018, V-019, V-021               |
+| **Gerente**                                          | V-011, V-012, V-015, V-016                                                                       |
+| **Chef · cocinero**                                  | V-022, V-024                                                                                     |
+| ***Contable* externo**                               | V-014                                                                                            |
 | **Industria (institutional / practitioner / press)** | V-002, V-003, V-004, V-005, V-007, V-009, V-013, V-020, V-023, V-025, V-026, V-027, V-029, V-030 |
-| **Consultor partner local** | V-022, V-028 |
+| **Consultor partner local**                          | V-022, V-028                                                                                     |
+
 
 ### 4.2 Por theme
 
-| Theme | IDs |
-|---|---|
-| **identity-control** | V-001, V-010, V-011, V-018, V-021 |
-| **chaos-burnout** | V-004, V-009, V-011, V-015, V-030 |
-| **distrust** | V-003, V-005, V-013, V-024 |
-| **stoicism · apechugar** | V-017, V-019 |
-| **aspirational · reframe** | V-008, V-021, V-022 |
-| **validation-seeking · peer-evidence** | V-029 |
-| **time-scarcity · training cost** | V-012 |
-| **money-roi** | V-001, V-003, V-005, V-018 |
-| **discipline-failure · post-firma** | V-002, V-014, V-020 |
-| **vendor-relationship** | V-006, V-023, V-025, V-026, V-027 |
-| **stage-stall · cultural code** | V-007, V-016 |
+
+| Theme                                  | IDs                               |
+| -------------------------------------- | --------------------------------- |
+| **identity-control**                   | V-001, V-010, V-011, V-018, V-021 |
+| **chaos-burnout**                      | V-004, V-009, V-011, V-015, V-030 |
+| **distrust**                           | V-003, V-005, V-013, V-024        |
+| **stoicism · apechugar**               | V-017, V-019                      |
+| **aspirational · reframe**             | V-008, V-021, V-022               |
+| **validation-seeking · peer-evidence** | V-029                             |
+| **time-scarcity · training cost**      | V-012                             |
+| **money-roi**                          | V-001, V-003, V-005, V-018        |
+| **discipline-failure · post-firma**    | V-002, V-014, V-020               |
+| **vendor-relationship**                | V-006, V-023, V-025, V-026, V-027 |
+| **stage-stall · cultural code**        | V-007, V-016                      |
+
 
 ### 4.3 Por decision stage
 
-| Stage | IDs |
-|---|---|
+
+| Stage             | IDs                                                                                |
+| ----------------- | ---------------------------------------------------------------------------------- |
 | **Pre-awareness** | V-001, V-004, V-005, V-007, V-009, V-010, V-013, V-015, V-017, V-018, V-019, V-030 |
-| **Awareness** | V-008, V-011, V-013, V-016, V-017, V-021, V-027 |
-| **Research** | V-003, V-007, V-008, V-013, V-021, V-027, V-029 |
-| **Evaluation** | V-007, V-016, V-022, V-023, V-025, V-026, V-029 |
-| **Negotiation** | V-016, V-025 |
-| **Post-firma** | V-002, V-012, V-014, V-020, V-024 |
-| **Renewal-churn** | V-002, V-006, V-014 |
+| **Awareness**     | V-008, V-011, V-013, V-016, V-017, V-021, V-027                                    |
+| **Research**      | V-003, V-007, V-008, V-013, V-021, V-027, V-029                                    |
+| **Evaluation**    | V-007, V-016, V-022, V-023, V-025, V-026, V-029                                    |
+| **Negotiation**   | V-016, V-025                                                                       |
+| **Post-firma**    | V-002, V-012, V-014, V-020, V-024                                                  |
+| **Renewal-churn** | V-002, V-006, V-014                                                                |
+
 
 ### 4.4 Por marketing use-case
 
-| Use-case | IDs primarios |
-|---|---|
-| **Copy hero / landing headline** | V-001, V-008, V-010, V-021 |
-| **Landing body / pain articulation** | V-003, V-004, V-009, V-011, V-012, V-015, V-018, V-029 |
-| **Sales pitch (Sesión 1 demo)** | V-001, V-008, V-011, V-012, V-013, V-021, V-022, V-023 |
-| **Sales disarm (objection handling)** | V-001, V-005, V-006, V-007, V-011, V-013, V-016, V-017, V-021 |
-| **Social content** | V-001, V-002, V-008, V-019, V-021, V-030 |
+
+| Use-case                               | IDs primarios                                                 |
+| -------------------------------------- | ------------------------------------------------------------- |
+| **Copy hero / landing headline**       | V-001, V-008, V-010, V-021                                    |
+| **Landing body / pain articulation**   | V-003, V-004, V-009, V-011, V-012, V-015, V-018, V-029        |
+| **Sales pitch (Sesión 1 demo)**        | V-001, V-008, V-011, V-012, V-013, V-021, V-022, V-023        |
+| **Sales disarm (objection handling)**  | V-001, V-005, V-006, V-007, V-011, V-013, V-016, V-017, V-021 |
+| **Social content**                     | V-001, V-002, V-008, V-019, V-021, V-030                      |
 | **Internal alignment / team training** | V-002, V-003, V-006, V-009, V-010, V-019, V-020, V-023, V-027 |
-| **CS playbook** | V-002, V-006, V-014, V-020, V-024 |
-| **Founder-led sales / GTM design** | V-022, V-025, V-026, V-028 |
-| **Positioning + brand strategy** | V-001, V-005, V-009, V-010, V-019, V-027, V-030 |
-| **TJ-specific copy** | V-015, V-019, V-030 |
-| **Chef-targeted copy** | V-022, V-024 |
-| ***Contable*-targeted copy** | V-014 |
+| **CS playbook**                        | V-002, V-006, V-014, V-020, V-024                             |
+| **Founder-led sales / GTM design**     | V-022, V-025, V-026, V-028                                    |
+| **Positioning + brand strategy**       | V-001, V-005, V-009, V-010, V-019, V-027, V-030               |
+| **TJ-specific copy**                   | V-015, V-019, V-030                                           |
+| **Chef-targeted copy**                 | V-022, V-024                                                  |
+| ***Contable*-targeted copy**           | V-014                                                         |
+
 
 ---
 
@@ -647,18 +663,20 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 
 `[Heredado de doc 06 §9.5 caveat #2 — Query 1 self-declared gaps]`:
 
-| Gap | Por qué falta | Cómo cerrarlo |
-|---|---|---|
-| **Direct first-person operator verbatims sobre BOH SaaS específicamente en español** | Majority de authentic operator language vive en closed WhatsApp groups, Facebook communities, conversaciones face-to-face NO indexadas | 15-20 design partner interviews TJ/CDMX con audio + transcript |
-| **Timing objections — direct verbatims sobre stall language** | Aggregated patterns existen (V-016 *"hablamos pronto"*) pero NO single-source operator quotes específicos a SaaS timing | Sales call recording analysis + lost-deal analysis |
-| **Multi-stakeholder SaaS-specific objection language** (chef / socio / *contable*) | NO direct operator quotes en publicly indexed sources — V-011 es lo más cercano vía paraphrase | Three-session demo recordings (Manager + Chef + Owner) durante Fase 0 |
-| **AI ideological objections — *"no quiero reemplazar gente"*** | NO operator-attributed quotes encontrados | Discovery question explícita en design partner interviews |
-| **Competition / incumbent-named objections — *"ya tengo SoftRestaurant"*** | NO direct operator quotes en publicly indexed sources | Switch-from-incumbent interviews |
-| **Tijuana-specific verbatims sobre software adoption** | NO TJ-context quotes encontrados (V-015 es CANIRAC framing, NOT operator quote) | TJ-specific design partner interviews — beachhead activación |
-| **LATAM analog verbatims** (Argentine, Colombian, Peruvian operators) | NOT found en publicly indexed sources sobre BOH SaaS objections | Diferred a Fase 5 LATAM expansion |
-| **Renewal/churn verbatims en Mexican context** | V-006 es US (MarketMan G2); NO Mexican equivalents | Future activo — emerge cuando primeros design partners alcanzan Mes 12 |
-| **Buying committee internal conversation verbatims** | El operador hablando con su socio o *contable* NO es publicly indexed | Multi-stakeholder interview format con socio + *contable* presentes |
-| **Verbatims post-firma adoption en Mexican context** | V-002, V-014, V-020 son US; pattern transfers pero language local NO captured | Design partner Mes 3-6 interviews |
+
+| Gap                                                                                  | Por qué falta                                                                                                                          | Cómo cerrarlo                                                          |
+| ------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| **Direct first-person operator verbatims sobre BOH SaaS específicamente en español** | Majority de authentic operator language vive en closed WhatsApp groups, Facebook communities, conversaciones face-to-face NO indexadas | 15-20 design partner interviews TJ/CDMX con audio + transcript         |
+| **Timing objections — direct verbatims sobre stall language**                        | Aggregated patterns existen (V-016 *"hablamos pronto"*) pero NO single-source operator quotes específicos a SaaS timing                | Sales call recording analysis + lost-deal analysis                     |
+| **Multi-stakeholder SaaS-specific objection language** (chef / socio / *contable*)   | NO direct operator quotes en publicly indexed sources — V-011 es lo más cercano vía paraphrase                                         | Three-session demo recordings (Manager + Chef + Owner) durante Fase 0  |
+| **AI ideological objections — *"no quiero reemplazar gente"***                       | NO operator-attributed quotes encontrados                                                                                              | Discovery question explícita en design partner interviews              |
+| **Competition / incumbent-named objections — *"ya tengo SoftRestaurant"***           | NO direct operator quotes en publicly indexed sources                                                                                  | Switch-from-incumbent interviews                                       |
+| **Tijuana-specific verbatims sobre software adoption**                               | NO TJ-context quotes encontrados (V-015 es CANIRAC framing, NOT operator quote)                                                        | TJ-specific design partner interviews — beachhead activación           |
+| **LATAM analog verbatims** (Argentine, Colombian, Peruvian operators)                | NOT found en publicly indexed sources sobre BOH SaaS objections                                                                        | Diferred a Fase 5 LATAM expansion                                      |
+| **Renewal/churn verbatims en Mexican context**                                       | V-006 es US (MarketMan G2); NO Mexican equivalents                                                                                     | Future activo — emerge cuando primeros design partners alcanzan Mes 12 |
+| **Buying committee internal conversation verbatims**                                 | El operador hablando con su socio o *contable* NO es publicly indexed                                                                  | Multi-stakeholder interview format con socio + *contable* presentes    |
+| **Verbatims post-firma adoption en Mexican context**                                 | V-002, V-014, V-020 son US; pattern transfers pero language local NO captured                                                          | Design partner Mes 3-6 interviews                                      |
+
 
 ### 5.2 Primary research roadmap
 
@@ -668,26 +686,30 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 
 **Methodology recomendada (cf. doc 01 §6 + doc 00):**
 
-| Fase de research | Qué capturar | Cuándo |
-|---|---|---|
-| **Design partner kickoff interviews** (n=15-20) | Pre-awareness verbatims · objections during pitch · stakeholder concerns | Fase 0, primeras 8-12 semanas |
-| **Sales call recording + transcript** | Timing language · stall patterns · multi-stakeholder dynamics | Continuous desde Fase 0 |
-| **Lost-deal post-mortems** (n≥10) | Honest no-go reasons · competitor framing · *contable* concerns | Continuous desde Fase 0 |
-| **Three-session demo recordings** | Persona-specific objections (Manager / Chef / Owner) | Fase 0-1 |
-| **Switch-from-incumbent interviews** (cuando aplique) | SoftRestaurant-named objection language · training cost framing | Fase 1-2 |
-| **Mes 3 + Mes 6 + Mes 12 customer interviews** | Post-firma adoption · discipline failure language · renewal framing | Continuous desde Fase 0 (lagging by retention curve) |
-| **Multi-stakeholder format interviews** (operador + socio + *contable*) | Buying committee internal conversation patterns | Fase 1+ |
-| **WhatsApp / Facebook community listening** | Closed-channel authentic operator language | Continuous, ethics-permitted |
+
+| Fase de research                                                        | Qué capturar                                                             | Cuándo                                               |
+| ----------------------------------------------------------------------- | ------------------------------------------------------------------------ | ---------------------------------------------------- |
+| **Design partner kickoff interviews** (n=15-20)                         | Pre-awareness verbatims · objections during pitch · stakeholder concerns | Fase 0, primeras 8-12 semanas                        |
+| **Sales call recording + transcript**                                   | Timing language · stall patterns · multi-stakeholder dynamics            | Continuous desde Fase 0                              |
+| **Lost-deal post-mortems** (n≥10)                                       | Honest no-go reasons · competitor framing · *contable* concerns          | Continuous desde Fase 0                              |
+| **Three-session demo recordings**                                       | Persona-specific objections (Manager / Chef / Owner)                     | Fase 0-1                                             |
+| **Switch-from-incumbent interviews** (cuando aplique)                   | SoftRestaurant-named objection language · training cost framing          | Fase 1-2                                             |
+| **Mes 3 + Mes 6 + Mes 12 customer interviews**                          | Post-firma adoption · discipline failure language · renewal framing      | Continuous desde Fase 0 (lagging by retention curve) |
+| **Multi-stakeholder format interviews** (operador + socio + *contable*) | Buying committee internal conversation patterns                          | Fase 1+                                              |
+| **WhatsApp / Facebook community listening**                             | Closed-channel authentic operator language                               | Continuous, ethics-permitted                         |
+
 
 ### 5.3 Library maintenance
 
 **Cadencia de update:**
+
 - **Cada cierre de cycle de design partner interviews:** add new verbatims a §3.1 + actualizar indices §4.
 - **Cada nueva Perplexity query relevante:** add nuevas sources a library + tag con query ID.
 - **Cuando un verbatim se cita en nueva campaign / piece de copy / social post:** add use-case tag a entry.
 - **Versioning:** v0.X durante Fase 0 (pre-PMF). v1.0 cuando design partner cycle complete (15+ partners + Mes 6 retention data).
 
 **Triggers de review:**
+
 - Cualquier verbatim que se prueba en copy/sales y **NO resuena** debe ser marcado + reviewed (puede ser library noise, no signal).
 - Cualquier nuevo Mexican linguistic pattern documented debe ser added como `[AGGREGATED]`.
 - Anti-falsificación rules (§2.4) deben ser auditadas en cada cycle de update — drift to fictional verbatims es structural risk.
@@ -721,6 +743,7 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 - **Construido (disarming reframes)** → V-008, V-021
 
 **Referencias internas a docs vecinos:**
+
 - doc 00 §3 — research stages + tags taxonomy
 - doc 01 §3-§5 — methodology + sources inventory
 - doc 03 §5.10 — foundational research industry tech adoption lag
@@ -728,7 +751,9 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 - doc 06 §2.4, §3, §4, §5.3, §9.5-§9.7 — Query 1/2/3 integration
 
 **Activo declarado para v1.0:**
+
 - 15-20 design partner interviews TJ/CDMX
 - Sales call recordings + transcripts (continuous)
 - Mes 3/6/12 customer interviews
 - Multi-stakeholder format interviews
+
