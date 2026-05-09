@@ -11,6 +11,88 @@ owner: Alan Bahena
 
 # Buying process y criterios de decisión
 
+## Índice
+
+1. [Propósito + diferencia con docs vecinos](#1-propósito--diferencia-con-docs-vecinos)
+   - 1.1 Qué responde el documento
+   - 1.2 Diferencia frente a docs vecinos
+   - 1.3 Disciplina de evidencia
+2. [Marco del buying process aplicado](#2-marco-del-buying-process-aplicado)
+   - 2.1 Modelo blended: stages + gates + signals
+   - 2.2 Disciplina por stage
+3. **[El sales cycle de Zenet — 8 stages](#3-el-sales-cycle-de-zenet--8-stages)**
+   - 3.1 Stage A: Lead recibido
+   - 3.2 Stage B: Discovery call
+   - 3.3 Stage C: Demo Session 1 — Operations Manager
+   - 3.4 Stage D: Demo Session 2 — Executive Chef (separate)
+   - 3.5 Stage E: Demo Session 3 — Owner + Operations Manager
+   - 3.6 Stage F: *Contable* engagement (parallel desde Stage C)
+   - 3.7 Stage G: Negociación + pilot agreement
+   - 3.8 Stage H: Cierre + onboarding kickoff
+4. [Decision criteria — depth matrix + tradeoff analysis](#4-decision-criteria--depth-matrix--tradeoff-analysis)
+   - 4.1 Matrix de criterios por stakeholder
+   - 4.2 Tradeoff dynamics — el net new del doc
+   - 4.3 Decision tree típico del dueño cuando criteria conflict
+   - 4.4 Sensibilidad a cada criterio por stage del sales cycle
+5. **[Willingness-to-pay — sección densa](#5-willingness-to-pay--sección-densa)**
+   - 5.1 Evidencia local actual
+   - 5.2 Anchoring del operador — competitor pricing landscape documentado
+   - 5.3 Pricing models considerados
+   - 5.4 Discount sensitivity — Mexican SMB B2B con cultural specifics
+   - 5.5 Pricing por fase Zenet
+   - 5.6 Conditions for willingness to pay
+   - 5.7 Hipótesis crítica abierta — el WTP del dueño directo
+6. [Deal-breakers explícitos](#6-deal-breakers-explícitos)
+   - 6.1 CFDI 4.0 compliance gap
+   - 6.2 Sin Spanish support estructural
+   - 6.3 Pricing model perceived as arbitrary
+   - 6.4 *Contable* veta integration con CONTPAQi/Aspel
+   - 6.5 Cloud-only sin contingencia offline
+   - 6.6 No POS data flow viable (Zenet Fase 1 specific)
+   - 6.7 Conflicto societario sin claridad de decisor
+7. [Buying signals — readiness vs. stalling](#7-buying-signals--readiness-vs-stalling)
+   - 7.1 Verbal signals de readiness
+   - 7.2 Behavioral signals de readiness
+   - 7.3 Stakeholder signals
+   - 7.4 Anti-signals — deal stalling
+8. **[Sales cycle timing benchmarks](#8-sales-cycle-timing-benchmarks)**
+   - 8.1 Cross-SaaS benchmarks por ACV
+   - 8.2 Hofstede cultural multipliers — cuantificados
+   - 8.3 Stage-by-stage timing — US vs Mexico
+   - 8.4 3-lane model — la hipótesis revisada
+   - 8.5 Stall points específicos del Mexican context
+   - 8.6 Acceleration levers documentados
+   - 8.7 Source consultation sequence — Mexico-specific
+   - 8.8 Implementation fear como barrier mayor que awareness
+   - 8.9 Touchpoint count refinado
+   - 8.10 Mexican B2B practitioner benchmarks heredados
+   - 8.11 Funnel conversion benchmarks por stage
+9. [Anti-patterns que matan deals](#9-anti-patterns-que-matan-deals)
+   - 9.1 Demo combinado en vez de three-session structure
+   - 9.2 *Contable* engaged tarde
+   - 9.3 Pressure tactics
+   - 9.4 Cold outreach al operador
+   - 9.5 Tech jargon en mensajería
+   - 9.6 Vendor-led demo sin operator running their own scenario
+   - 9.7 Skipping kitchen tablet demo con chef
+10. [Mexican-specific buying process patterns](#10-mexican-specific-buying-process-patterns)
+    - 10.1 *Confianza* accumulation timeline
+    - 10.2 *Contable* engagement sequencing
+    - 10.3 Peer validation como gate informal
+    - 10.4 CANIRAC / industry association como legitimacy proxy
+    - 10.5 Family-business decision dynamics
+    - 10.6 WhatsApp como canal de venta primario post-demo
+    - 10.7 Pricing currency anchoring
+11. [Hipótesis abiertas prioritarias](#11-hipótesis-abiertas-prioritarias)
+12. [Fuentes](#12-fuentes)
+    - Triangulación Perplexity Pro Q1-Q5
+13. [Áreas candidatas a triangulación con Perplexity Pro](#13-áreas-candidatas-a-triangulación-con-perplexity-pro)
+    - 13.1 Áreas identificadas como delgadas
+    - 13.2 Próximo paso
+    - 13.3 Hallazgos secundarios que esperan home en otros docs
+
+---
+
 ## 1. Propósito + diferencia con docs vecinos
 
 ### 1.1 Qué responde el documento

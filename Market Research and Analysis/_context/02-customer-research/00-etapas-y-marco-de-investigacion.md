@@ -10,6 +10,48 @@ owner: Alan Bahena
 
 # Etapas y marco de investigación de cliente
 
+## Índice
+
+1. [Propósito de la sección `02-customer-research/`](#1-propósito-de-la-sección-02-customer-research)
+   - 1.1 Qué responde
+   - 1.2 Diferencia frente a `01-industry-and-market/`
+   - 1.3 Qué pregunta responde cada doc y quién la consume
+   - 1.4 Qué NO es esta sección
+2. [Naturaleza viva de la sección](#2-naturaleza-viva-de-la-sección)
+   - 2.1 Triggers de actualización continua
+   - 2.2 Implicación operativa
+3. **[Las 5 etapas de madurez de evidencia](#3-las-5-etapas-de-madurez-de-evidencia)**
+   - 3.1 Tabla resumen
+   - 3.2 Etapa 1 — `discovery-pre-PMF`
+   - 3.3 Etapa 2 — `design-partner-validation`
+   - 3.4 Etapa 3 — `early-customer-evidence`
+   - 3.5 Etapa 4 — `PMF-and-segmentation`
+   - 3.6 Etapa 5 — `scale-research`
+4. [Etapa actual declarada](#4-etapa-actual-declarada)
+   - 4.1 Justificación honesta del estado
+   - 4.2 Implicaciones operativas para esta etapa
+   - 4.3 Trigger de salida hacia etapa 2
+5. [Disciplina de transición entre etapas](#5-disciplina-de-transición-entre-etapas)
+   - 5.1 Snapshot al `_archive/` antes de re-escribir
+   - 5.2 Pasada de revisión por hipótesis
+   - 5.3 Actualización de frontmatter
+   - 5.4 Quién dispara la transición
+6. [Convenciones de marcado de evidencia](#6-convenciones-de-marcado-de-evidencia)
+   - 6.1 Etiquetas válidas
+   - 6.2 Regla de oro: no mezclar fuentes en el mismo bloque
+   - 6.3 Lista de fuentes al final de cada doc
+7. [Frontmatter extendido para docs de esta sección](#7-frontmatter-extendido-para-docs-de-esta-sección)
+   - 7.1 Campo nuevo: `research_stage`
+   - 7.2 Ejemplo de frontmatter completo para esta sección
+   - 7.3 Tipo de documento
+8. [Cómo navegar la sección](#8-cómo-navegar-la-sección)
+   - 8.1 Orden recomendado de lectura
+   - 8.2 Acceso por pregunta
+   - 8.3 Snapshots de etapas anteriores
+9. [Fuentes](#fuentes)
+
+---
+
 ## 1. Propósito de la sección `02-customer-research/`
 
 ### 1.1 Qué responde

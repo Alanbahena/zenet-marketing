@@ -11,6 +11,47 @@ owner: Alan Bahena
 
 # Metodología y fuentes de investigación
 
+## Índice
+
+1. [Propósito del documento](#1-propósito-del-documento)
+2. [Filosofía de research aplicada](#2-filosofía-de-research-aplicada)
+   - 2.1 Cualitativa primero, cuantitativa después
+   - 2.2 Primera persona > secundaria > inferida
+   - 2.3 Trazabilidad como disciplina, no como adorno
+   - 2.4 Saturación, no muestreo estadístico
+3. **[Inventario de evidencia disponible hoy](#3-inventario-de-evidencia-disponible-hoy)**
+   - 3.1 Demo formal de producto — Víctor Murguía 2026-04-01
+   - 3.2 Validation Log database — Notion
+   - 3.3 Conversations & Insights database — Notion
+   - 3.4 Hipótesis estructuradas en Notion
+   - 3.5 Síntesis maestra — `zenet-business-context-production.md` v1.0
+   - 3.6 Centro de Control Zenet — log de decisiones estratégicas
+   - 3.7 Reuso desde `01-industry-and-market/`
+   - 3.8 Benchmarks externos planeados — Perplexity Pro
+4. [Gaps de evidencia explícitos](#4-gaps-de-evidencia-explícitos)
+   - 4.1 Gap principal: cero conversaciones con dueño-operador del beachhead
+   - 4.2 Lo que ningún operador del scope ha dicho todavía
+   - 4.3 Lo que solo se puede saber con producto en uso
+5. [Plan de discovery hacia etapa 2](#5-plan-de-discovery-hacia-etapa-2)
+   - 5.1 Aprendizaje validado: el cold outreach no funciona
+   - 5.2 Vías alternativas
+   - 5.3 Cadencia esperada
+   - 5.4 Definición operativa de "design partner activo"
+6. [Cómo se documenta una conversación](#6-cómo-se-documenta-una-conversación)
+   - 6.1 Template mínimo de notas
+   - 6.2 Dónde se guardan
+   - 6.3 Disciplina de transcripción literal
+   - 6.4 Anonimización
+   - 6.5 Tres alertas heredadas del business context
+7. [Criterios de saturación cualitativa](#7-criterios-de-saturación-cualitativa)
+   - 7.1 Heurística operativa
+   - 7.2 Saturación se mide por nivel jerárquico de fuente
+   - 7.3 Implicación: cuándo declarar un patrón como "validado por dueños"
+8. [Hipótesis abiertas prioritarias para etapa 1](#8-hipótesis-abiertas-prioritarias-para-etapa-1)
+9. [Fuentes](#fuentes)
+
+---
+
 ## 1. Propósito del documento
 
 Este doc responde una sola pregunta: **¿qué evidencia tenemos hoy, de dónde salió, qué falta y cómo la vamos a conseguir?**

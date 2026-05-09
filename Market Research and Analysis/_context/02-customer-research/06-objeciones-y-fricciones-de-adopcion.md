@@ -11,6 +11,66 @@ owner: Alan Bahena
 
 # Objeciones y fricciones de adopción
 
+## Índice
+
+1. [Propósito + diferencia con docs vecinos](#1-propósito--diferencia-con-docs-vecinos)
+   - 1.1 Qué responde el documento
+   - 1.2 Diferencia frente a docs vecinos
+   - 1.3 Foundational reference — doc 03 §5.10
+   - 1.4 Disciplina de evidencia
+2. [Marco aplicado — distinción objeción vs deal-breaker vs friction](#2-marco-aplicado--distinción-objeción-vs-deal-breaker-vs-friction)
+   - 2.1 Tres conceptos relacionados pero distintos
+   - 2.2 Distinción crítica de timing
+   - 2.3 Disciplina aplicada
+   - 2.4 Cross-cutting patterns documentados — el frame real del operador
+3. **[Catálogo de objeciones por categoría](#3-catálogo-de-objeciones-por-categoría)**
+   - 3.1 Objeciones de precio
+   - 3.2 Objeciones de timing
+   - 3.3 Objeciones de capacidad / fit
+   - 3.4 Objeciones tecnológicas
+   - 3.5 Objeciones de IA / automation fear
+   - 3.6 Objeciones de competencia / incumbente
+   - 3.7 Objeciones de stakeholder
+   - 3.8 Objeciones culturales / desconfianza
+4. **[Adoption friction — post-firma, pre-activation](#4-adoption-friction--post-firma-pre-activation)**
+   - 4.0 El 4-stage decay model — framework foundational
+   - 4.1 Friction técnica del POS data exchange manual
+   - 4.2 Friction operacional de recipe library entry
+   - 4.3 Friction de equipo — resistance del staff
+   - 4.4 Friction de routine — sostener el ritual diario de upload
+   - 4.5 Friction de información — gaps de data del operador
+   - 4.6 Data maintenance collapse — el dominant failure mode
+   - 4.7 Behavioral signals — 3-tier early warning system
+   - 4.8 Customer success interventions — effectiveness data
+   - 4.9 Mexican-specific recovery patterns
+   - 4.10 Counter-productive save tactics — anti-patterns documentados
+   - 4.11 Annual vs monthly contract paradox
+5. **[Disarming tactics framework](#5-disarming-tactics-framework)**
+   - 5.1 LAER framework adaptado para Mexican context
+   - 5.2 Mexican cultural specifics — qué NO hacer
+   - 5.3 Reframing techniques
+   - 5.4 Evidence-based desactivación — la jerarquía
+   - 5.5 Effectiveness benchmarks — qué data existe (y qué NO)
+   - 5.6 Anti-pattern effectiveness — qué destruye conversion
+   - 5.7 Multi-stakeholder objection handling — buying committee benchmarks
+   - 5.8 Síntesis — qué tiene evidence vs qué es directional
+6. [Cuándo NO desactivar — objection es signal de no-fit](#6-cuándo-no-desactivar--objection-es-signal-de-no-fit)
+   - 6.1 Red flags pre-qualification — descalificar early
+   - 6.2 La disciplina
+   - 6.3 Cómo descalificar gracefully en Mexican context
+7. [Hipótesis abiertas prioritarias](#7-hipótesis-abiertas-prioritarias)
+8. [Fuentes](#8-fuentes)
+9. [Áreas candidatas a triangulación con Perplexity Pro](#9-áreas-candidatas-a-triangulación-con-perplexity-pro)
+   - 9.1 Estado de cobertura post-redacción
+   - 9.2 Recomendación
+   - 9.3 Lo que queda como activo de research primario
+   - 9.4 Estado de dispatch
+   - 9.5 Triangulación Perplexity Pro — Query 1
+   - 9.6 Triangulación Perplexity Pro — Query 2
+   - 9.7 Triangulación Perplexity Pro — Query 3
+
+---
+
 ## 1. Propósito + diferencia con docs vecinos
 
 ### 1.1 Qué responde el documento

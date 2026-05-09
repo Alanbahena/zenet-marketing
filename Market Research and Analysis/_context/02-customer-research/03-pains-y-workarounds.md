@@ -11,6 +11,53 @@ owner: Alan Bahena
 
 # Dolores y workarounds del operador
 
+## Índice
+
+1. [Propósito + diferencia con docs vecinos](#1-propósito--diferencia-con-docs-vecinos)
+   - 1.1 Qué responde el documento
+   - 1.2 Por qué los workarounds importan tanto como los dolores
+   - 1.3 Diferencia frente a docs vecinos
+   - 1.4 Disciplina de evidencia
+2. **[Inventario de dolores por categoría](#2-inventario-de-dolores-por-categoría)**
+   - 2.1 Dolores operativos
+   - 2.2 Dolores financieros
+   - 2.3 Dolores emocionales
+   - 2.4 Dolores relacionales
+3. **[Workarounds actuales — el competidor real](#3-workarounds-actuales--el-competidor-real)**
+   - 3.1 Mapeo dolor → workaround
+   - 3.2 Detalle por workaround principal
+4. [Costo de los workarounds](#4-costo-de-los-workarounds)
+   - 4.1 Time cost — horas perdidas
+   - 4.2 Money cost — dinero erosionado
+   - 4.3 Error cost — decisiones tomadas con data incompleta
+   - 4.4 Opportunity cost — lo que no se hizo
+   - 4.5 ROI de adopción digital — benchmarks publicados
+   - 4.6 Caveat crítico — aplicabilidad a México
+5. **[Por qué persisten los workarounds](#5-por-qué-persisten-los-workarounds)**
+   - 5.1 Switching costs reales
+   - 5.2 Habituación — el dolor crónico se naturaliza
+   - 5.3 Falta de conciencia de alternativa
+   - 5.4 Miedo a IA y a software complejo — matiz importante
+   - 5.5 Falta de tiempo para evaluar
+   - 5.6 Sesgo de propiedad — "yo construí esto"
+   - 5.7 Distrust activa de vendors — el freno Mexico-específico mayor
+   - 5.8 Trust hierarchy y arquitectura de descubrimiento
+   - 5.9 Patrones demográficos del operador y su profile de adopción
+   - 5.10 La industria restaurantera como adoption laggard estructural — contexto foundational
+6. [Implicaciones para mensajería y producto](#6-implicaciones-para-mensajería-y-producto)
+   - 6.1 Qué workaround tiene que desplazar Zenet primero
+   - 6.2 Qué dolor abre la conversación de venta
+   - 6.3 Qué dolor sostiene retención post-implementación
+7. [Hipótesis abiertas prioritarias para etapa 1](#7-hipótesis-abiertas-prioritarias-para-etapa-1)
+8. [Fuentes](#8-fuentes)
+   - Triangulación Perplexity Pro Q1-Q5 + Foundational Research
+9. [Áreas candidatas a triangulación con Perplexity Pro](#9-áreas-candidatas-a-triangulación-con-perplexity-pro)
+   - 9.1 Áreas identificadas como delgadas
+   - 9.2 Estado de dispatch
+   - 9.3 Hallazgos secundarios que esperan home en otros docs
+
+---
+
 ## 1. Propósito + diferencia con docs vecinos
 
 ### 1.1 Qué responde el documento

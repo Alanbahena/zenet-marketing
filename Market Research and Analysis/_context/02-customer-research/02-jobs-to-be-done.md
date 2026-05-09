@@ -11,6 +11,51 @@ owner: Alan Bahena
 
 # Jobs-to-be-done del operador
 
+## Índice
+
+1. [Propósito + marco JTBD aplicado](#1-propósito--marco-jtbd-aplicado)
+   - 1.1 Qué responde el documento
+   - 1.2 Por qué JTBD y no solo personas o lista de needs
+   - 1.3 Cómo cabe en `discovery-pre-PMF`
+   - 1.4 Disciplina de evidencia
+2. [Master job statement del dueño-operador del beachhead](#2-master-job-statement-del-dueño-operador-del-beachhead)
+   - 2.1 La declaración central
+   - 2.2 Variantes consideradas y descartadas
+   - 2.3 Estado de evidencia del master job
+3. **[Jobs funcionales del dueño-operador](#3-jobs-funcionales-del-dueño-operador)**
+   - 3.1 Estandarizar procesos que sobrevivan a la rotación de personas
+   - 3.2 Reconciliar inventario sin pasar el día persiguiendo información
+   - 3.3 Interpretar costos, no solo verlos
+   - 3.4 Entrenar al staff nuevo sin reconstruir desde cero
+   - 3.5 Escalar a la siguiente sucursal sin multiplicar el caos
+   - 3.6 Tener visibilidad cross-sucursal sin micromanage
+   - 3.7 Recuperar tiempo del día operativo
+4. [Jobs emocionales del dueño-operador](#4-jobs-emocionales-del-dueño-operador)
+   - 4.1 Recuperar control sobre un negocio que se siente que controla al dueño
+   - 4.2 Dormir tranquilo
+   - 4.3 Dejar de sentir que sobrevivo en vez de construir
+   - 4.4 Reducir la dependencia psicológica de personas clave
+   - 4.5 Sentir orgullo profesional de operar como negocio maduro
+5. [Jobs sociales del dueño-operador](#5-jobs-sociales-del-dueño-operador)
+   - 5.1 Ser visto como operador profesionalizado en la comunidad de la plaza
+   - 5.2 Tener credibilidad operativa con socios, banca y stakeholders externos
+   - 5.3 Demostrar madurez del negocio como prerrequisito para crecer
+6. [Jobs de personas secundarias](#6-jobs-de-personas-secundarias)
+   - 6.1 Chef ejecutivo / Kitchen Manager
+   - 6.2 Admin / Contador interno
+   - 6.3 Por qué importa que cada secundaria tenga jobs propios
+7. [Anti-jobs: lo que NO se contrata Zenet para hacer](#7-anti-jobs-lo-que-no-se-contrata-zenet-para-hacer)
+   - 7.1 No es: reemplazar personas (chef, gerente, contador)
+   - 7.2 No es: tracking de ventas / front-of-house
+   - 7.3 No es: facturación CFDI ni cumplimiento contable
+   - 7.4 No es: marketing digital, gestión de reseñas, ni pedidos por delivery
+   - 7.5 No es: ERP enterprise multi-función para grupos de 50+ sucursales
+8. [Hipótesis abiertas prioritarias para etapa 1](#8-hipótesis-abiertas-prioritarias-para-etapa-1)
+9. [Cobertura del framework canónico](#9-cobertura-del-framework-canónico)
+10. [Fuentes](#fuentes)
+
+---
+
 ## 1. Propósito + marco JTBD aplicado
 
 ### 1.1 Qué responde el documento

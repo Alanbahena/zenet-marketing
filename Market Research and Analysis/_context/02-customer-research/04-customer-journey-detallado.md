@@ -11,6 +11,64 @@ owner: Alan Bahena
 
 # Customer journey detallado
 
+## Índice
+
+1. [Propósito + diferencia con docs vecinos](#1-propósito--diferencia-con-docs-vecinos)
+   - 1.1 Qué responde el documento
+   - 1.2 Diferencia frente a docs vecinos
+   - 1.3 Disciplina de evidencia
+2. [Marco del customer journey aplicado](#2-marco-del-customer-journey-aplicado)
+   - 2.1 Modelo blended B2B SaaS lifecycle + JTBD time map
+   - 2.2 Integración con el 5-phase emotional arc
+   - 2.3 Disciplina por fase
+3. **[Las 10 fases del journey](#3-las-10-fases-del-journey)**
+   - 3.1 Pre-awareness — operación rota, problema no nombrado
+   - 3.2 Awareness del problema
+   - 3.3 Awareness de la categoría — "sí existe esto"
+   - 3.4 Consideración activa
+   - 3.5 Decisión
+   - 3.6 Onboarding (días 1-30 post-compra)
+   - 3.7 Activación — first value moment
+   - 3.8 Adopción y maduración (3-12 meses)
+   - 3.9 Expansión
+   - 3.10 Advocacy
+4. [Triggers transversales](#4-triggers-transversales)
+   - 4.1 Triggers operativos
+   - 4.2 Triggers psicológicos
+   - 4.3 Triggers sociales
+   - 4.4 Triggers post-compra
+5. [Friction y churn risk windows](#5-friction-y-churn-risk-windows)
+   - 5.1 Friction por fase — mapa cross-reference
+   - 5.2 Churn risk windows
+   - 5.3 Patterns de recuperación
+6. **[Multi-stakeholder journeys](#6-multi-stakeholder-journeys)**
+   - 6.1 Composición del buying committee — mapeo formal
+   - 6.2 Stakeholder journey timing — diagrama
+   - 6.3 Dueño-operador (primary buyer)
+   - 6.4 Gerente operativo (champion + technical buyer)
+   - 6.5 Chef ejecutivo (end user + potential blocker)
+   - 6.6 Contable externo (fiscal gatekeeper) — el stakeholder Mexico-específico
+   - 6.7 Decision criteria divergence matrix
+   - 6.8 Conflict patterns documentados
+   - 6.9 Veto dynamics — quiénes pueden bloquear y cuándo
+   - 6.10 Three-session demo structure — la sales motion recomendada
+   - 6.11 Post-purchase multi-stakeholder dynamics
+   - 6.12 Mexican business culture patterns que shape el committee
+   - 6.13 Cuándo divergen los journeys y cómo sincronizar
+7. [Implicaciones operativas](#7-implicaciones-operativas)
+   - 7.1 Mensajería por fase
+   - 7.2 Producto y customer success — touchpoints críticos
+   - 7.3 Canal y timing por fase
+8. [Hipótesis abiertas prioritarias](#8-hipótesis-abiertas-prioritarias)
+9. [Fuentes](#9-fuentes)
+   - Triangulación Perplexity Pro Q1-Q5
+10. [Áreas candidatas a triangulación con Perplexity Pro](#10-áreas-candidatas-a-triangulación-con-perplexity-pro)
+    - 10.1 Áreas identificadas como delgadas
+    - 10.2 Estado de dispatch
+    - 10.3 Hallazgos secundarios que esperan home en otros docs
+
+---
+
 ## 1. Propósito + diferencia con docs vecinos
 
 ### 1.1 Qué responde el documento
