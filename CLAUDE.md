@@ -24,15 +24,21 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
-**As of 2026-05-01:**
+**As of 2026-05-11:**
 
-- **Subfolder `Market Research and Analysis/_context/01-industry-and-market/` closed at v1.0** with 8 docs (panorama, scope, sizing, segmentation, ICP, ecosystem, geography, regulatory).
-- **Last completed docs:** `07-geografia-y-expansion.md` v1.0 (2026-05-01) and `08-entorno-regulatorio.md` v1.0 (2026-04-30).
+- **Subfolder `Market Research and Analysis/_context/02-customer-research/` closed at v0.1** with 8 docs (etapas-y-marco, metodología, JTBD, pains-y-workarounds, customer-journey, buying-process, objeciones, voice-of-customer). 30-entry verbatim library curated en doc 07 con metadata estructurada (persona × theme × stage × marketing use-case). Triangulación Perplexity Pro: 5 queries en doc 03, 5 en doc 04, 5 en doc 05, 3 en doc 06 + 1 foundational query = **19 queries integradas**.
+- **Disciplina de índices aplicada:** los 8 docs de `02-customer-research/` ahora tienen `## Índice` consistente con el formato de `01-industry-and-market/`. Frontmatter malformado de `03-pains-y-workarounds.md` corregido (estaba con `## name:` en vez de `name:` y sin cierre `---`).
+- **Subfolder `Market Research and Analysis/_context/01-industry-and-market/` cerrado v1.0** (sin cambios desde 2026-05-01) — 8 docs.
 - **Draft work pending review:** `_context/05-market-insights/01-vision-plataforma-zenet.md` v0.1 (platform play exploration).
-- **Branding** has a strong v1.0 foundation in three sections (strategy, story, voice/tone). Visual identity, design system, examples and guidelines are deferred until real outputs exist or visual decisions are firmer.
-- **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist but no internal structure yet.
+- **Branding** strong v1.0 en tres secciones (strategy, story, voice/tone). Visual identity, design system, examples + guidelines deferred.
+- **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist, no internal structure yet.
 
-**Next work — pending user decision:** which subfolder of Market Research to start next (likely `02-competitive-analysis/`, given that docs 02 and 06 already pushed it), or which department to activate first.
+**Next work — pending user decision:** opciones discutidas con Alan 2026-05-11:
+- (A) Próximo subfolder Market Research — `02-competitive-analysis/` (docs 02 + 06 + 07 de industry-and-market + doc 06 de customer-research ya empujaron hacia ahí).
+- (B) Cerrar `_context/05-market-insights/` v0.1 draft → v1.0.
+- (C) Activar primer departamento — Product Strategy (absorbe value proposition).
+- (D) Activar SEO/Content o Social Media (aprovecha doc 07 VoC + LinkedIn ya activo).
+- (E) Activar Analytics and Reporting (foundational pero requiere data sources).
 
 ---
 
@@ -49,6 +55,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **Branding / 07-guidelines** | Pending | Will codify precedent as it accumulates |
 | **Branding** — supporting folders (`_sop`, `_templates`, `skills`, `assets`) | Empty | |
 | **Market Research / 01-industry-and-market** | ✓ Complete v1.0 | 8 docs cerrados (ver Reference Table sección 13) |
+| **Market Research / 02-customer-research** | ✓ Complete v0.1 | 8 docs (etapas, metodología, JTBD, pains, journey, buying, objeciones, VoC). 19 queries Perplexity integradas. Verbatim library de 30 entries en doc 07 |
 | **Market Research / 05-market-insights** | 🚧 Draft | `01-vision-plataforma-zenet.md` v0.1 |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
@@ -60,7 +67,8 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 **Strategic posture (current):**
 
 - **Branding foundation is enough to operate.** No new branding docs unless real published outputs accumulate (then `06-application-examples`) or visual identity decisions firm up (then `03-visual-identity` + `05-design-system`).
-- **Market Research subfolder 01 is the operational backbone.** All 8 docs reference each other and form a coherent body. Future market research subfolders (competitive analysis, market insights, etc.) build on top.
+- **Market Research subfolders 01 + 02 form the research backbone.** Subfolder 01 (industry-and-market) is canonical at v1.0. Subfolder 02 (customer-research) cerró v0.1 — `discovery-pre-PMF` etapa declarada, scaffold honesto con disciplina de gaps + roadmap de primary research desde design partners. Triangulación externa exhaustiva via 19 queries Perplexity Pro.
+- **Verbatim library doc 07 es activo de marketing operations.** 30 entries con metadata estructurada — primer artefacto retrievable para copy, landing, social, sales enablement. Crecerá con design partner interviews.
 - **Department activation order is user-driven.** Alan decides which department starts next based on which marketing operation needs to be productized first.
 
 ---
@@ -115,6 +123,23 @@ Canonical decisions that any agent or contributor should preserve. Each links to
 - **Frame de cumplimiento:** Zenet es **facilitador, no certificador**. No es PAC, no es despacho contable, no es UV de Distintivo H, no es asesor legal. → `08-entorno-regulatorio.md` §8.4
 - **Fiscalización digital SAT 2026 = palanca #1 de mensajería.** "Data limpia y reconciliada entre POS, inventario y CFDI es defensa frente a auditoría exprés." → `08-entorno-regulatorio.md` §2.8 y §9.4
 
+### Customer research — findings load-bearing (subfolder 02 v0.1)
+
+- **El TRUE incumbent de Zenet NO es Excel ni SoftRestaurant — es "no system at all":** cuaderno + cabeza + balance bancario al cierre como unified financial control system. Verbatim gold de Jaume Romagosa (cliente): *"Yo veo si a final de mes queda dinero en la cuenta, quiere decir que estoy haciendo dinero"*. Reframes positioning entirely: Zenet NO se vende a operadores que "necesitan software" — se vende a operadores que YA tienen un sistema mental y necesitan extenderlo a la sucursal donde no están. → `02-customer-research/07-voice-of-customer.md` V-001 + doc 06 §2.4.1
+- **Financial Control Identity ("Yo SOY el sistema"):** el operador NO percibe ausencia de sistema — percibe que él ES el sistema. Cualquier mensaje que implique *"tu negocio no tiene sistema"* es perceived attack on identity. Mensaje correcto: *"Zenet extiende tu sistema a donde tú no estás."* → `02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` §2.4.1 + doc 07 V-010
+- **Data maintenance collapse es el dominant post-firma failure mode** — Bruce Nelson: *"The software isn't broken. The discipline is."* Frame foundational para CS playbook: discipline NO se institucionalizará automáticamente; requires intentional habit formation support (WhatsApp reminders, visual data freshness indicators, scheduled audit calls). → `02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` §4.6
+- **4-stage decay model con Mes 3-6 como hidden risk window:** Novelty Engagement (Mes 1-2) → Routine Degradation (Mes 2-4, el window crítico menos observado) → Silent Coasting (Mes 4-8) → Pre-Cancellation Drift (Mes 8-12). Restaurant BOH cliff es **Mes 6, NO Day 90 SaaS genérico**. CS cadence debe ser bi-weekly Meses 1-2 + Mes 3 full review + monthly thereafter. → `02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` §4.0
+- **Multi-threading 68% vs single-thread 23% (3x conversion lever):** owner + manager + chef + *contable* MUST estar engaged desde Day 1. Single-thread con dueño solo = structural underperformance, NOT optimization preference. → `02-customer-research/05-buying-process-y-criterios-de-decision.md` §10 + doc 06 §5.7
+- **Three-session demo structure como sales motion canónica:** Sesión 1 Manager 60-90min (workflow demo) → Sesión 2 Chef 30-45min separada (recetario + augmentar criterio) → Sesión 3 Owner+Manager 20-30min (ROI + cierre). *Contable* parallel track desde Stage C. → `02-customer-research/05-buying-process-y-criterios-de-decision.md` §3
+- **Sales cycle 8 stages declarado:** Lead → Discovery → Demo 1 (Manager) → Demo 2 (Chef) → Demo 3 (Owner) → *Contable* engagement (parallel) → Negociación + pilot agreement → Cierre + onboarding kickoff. 3-lane timing model: Fast 4-8 sem / Standard 8-16 sem / Slow 16-30+ sem. → `02-customer-research/05-buying-process-y-criterios-de-decision.md` §3 + §8.4
+- **Pricing $1,500 MXN positioned as lower premium tier mexicano** (Bistrosoft Pro $1,599, PoloTab $1,490, Fudo Pro $1,050). Tiered structure Fase 1: Básico $1,200 / Pro $1,500 / Multi-Sitio $1,800 +IVA. Mexican negotiation ritual: 5-10% discount expected pero NO heavy discounting (Year 1 churn lever). → `02-customer-research/05-buying-process-y-criterios-de-decision.md` §5.2 + §5.4
+- **Zenet Fase 1 manual POS upload (NOT API):** Modo 1 CSV/Excel/PDF batch + Modo 2 manual capture + Modo 3 photo + OCR. POS API integration es Fase 2+. Demo strategy operativa: pedir 1 día antes — *"Mándame foto de 5 facturas + lista de tus 10 recetas más vendidas"* — converts demo de generic show-and-tell a his-numbers-displayed. → `02-customer-research/04-customer-journey-detallado.md` §3.6.7
+- **Industria restaurantera como adoption laggard estructural (10-15% globally, 10% Mexico):** 6 structural drivers (economic, operational, talent, cultural, vendor-market, Mexico-specific). 4 industry analog breakthroughs (Clip / Toast / AgTech / Construction). 7 imperativos GTM: zero-training UX, industry fluency, founder visibility, peer evidence, WhatsApp-first CS, multi-threading, in-person evaluation. → `02-customer-research/03-pains-y-workarounds.md` §5.10
+- **Mexican-specific retention levers son structurally diferentes:** in-person visits > automated email; founder/senior personal attention > price discount; WhatsApp Business > email; peer reference (operador conocido TJ/BC) > feature demo; CFDI/SAT compliance framing > cost-efficiency. Generic US SaaS playbook will underperform en Mexican context. → `02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` §4.9
+- **LAER framework adaptado a Mexican high-power-distance + non-confrontational + collectivist context.** 9 disarming techniques codificadas + 7 anti-patterns documented (pressure tactics, argument-winning, premature ROI math, vendor self-defense — cf. MarketMan G2 case study). NO peer-reviewed head-to-head data on objection technique effectiveness; benchmark más citable: sistemático vs ad-hoc 10-20% conversion lift (Re:Work). → `02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` §5
+- **Verbatim library — 30 entries v0.1 con metadata estructurada** (V-001 → V-030, 10 gold 🌟 / 13 load-bearing ⭐ / 7 illustrative •). Anti-falsificación rules explícitas (NO inventar, NO compuestos, traducción ES marked NOT replacement). Indices por persona / theme / stage / marketing use-case. Activo declarado: 80%+ de authentic operator language vive en closed channels — design partner interviews TJ/CDMX producirán literatura primaria. → `02-customer-research/07-voice-of-customer.md`
+- **5-stage research maturity model declarado para sección 02:** discovery-pre-PMF → design-partner-validation → early-customer-evidence → PMF-and-segmentation → scale-research. Etapa actual: `discovery-pre-PMF`. Trigger de salida hacia etapa 2: 5+ design partners activos + Mes 2 retention signal positivo. → `02-customer-research/00-etapas-y-marco-de-investigacion.md`
+
 ### Correcciones documentales relevantes
 
 - **K'u'uk (Pedro Evia) cerró sus puertas** — no es referente activo Mérida. El referente activo de la nueva cocina yucateca es Néctar/Huniik (Roberto Solís). → `07-geografia-y-expansion.md` §13.2
@@ -165,6 +190,16 @@ claude_code/                                # Root of this workspace
 │   │   │   ├── 06-estructura-y-ecosistema.md
 │   │   │   ├── 07-geografia-y-expansion.md
 │   │   │   └── 08-entorno-regulatorio.md
+│   │   ├── 02-customer-research/           ✓ v0.1 — 8 docs
+│   │   │   ├── 00-etapas-y-marco-de-investigacion.md
+│   │   │   ├── 01-metodologia-y-fuentes.md
+│   │   │   ├── 02-jobs-to-be-done.md
+│   │   │   ├── 03-pains-y-workarounds.md
+│   │   │   ├── 04-customer-journey-detallado.md
+│   │   │   ├── 05-buying-process-y-criterios-de-decision.md
+│   │   │   ├── 06-objeciones-y-fricciones-de-adopcion.md
+│   │   │   ├── 07-voice-of-customer.md
+│   │   │   └── _archive/
 │   │   └── 05-market-insights/             🚧 draft
 │   │       └── 01-vision-plataforma-zenet.md  (v0.1 draft)
 │   ├── _sop/                               empty
@@ -235,8 +270,19 @@ owner: [Name of document owner]
 - `brand-story` — biographical and mythological narrative docs
 - `voice-and-tone` — voice principles, vocabulary, writing rules
 - `market-research` — industry, market, segmentation, ICP, ecosystem, geography, regulatory docs
+- `customer-research` — JTBD, pains, journey, buying process, objections, voice-of-customer docs (subfolder 02 de Market Research)
 
 New types will be added as new departments come online (`competitive-analysis`, `content-template`, `campaign-brief`, `value-proposition`, etc.).
+
+### Extended frontmatter for customer-research docs
+
+Docs en `02-customer-research/` add un campo extra al frontmatter — `research_stage` — para declarar honestamente la madurez de la evidencia:
+
+```yaml
+research_stage: discovery-pre-PMF | design-partner-validation | early-customer-evidence | PMF-and-segmentation | scale-research
+```
+
+Default actual para toda la sección: `discovery-pre-PMF`. Transición disciplinada por pre-condición medible (cf. doc 00 §3 + §5).
 
 ### Versioning
 
@@ -454,7 +500,7 @@ Before any final document is saved, it should pass the four-layer checklist in `
 
 This section tracks Claude Code slash commands implemented in `<department>/skills/` folders across the workspace.
 
-**Current state (2026-05-01):** No skills implemented yet. Each department's `skills/` folder is empty.
+**Current state (2026-05-11):** No skills implemented yet. Each department's `skills/` folder is empty.
 
 **Planned skill domains** (in approximate order of likely activation):
 
@@ -476,9 +522,10 @@ This section tracks Claude Code slash commands implemented in `<department>/skil
 2. **For any task touching brand strategy, voice, or content style:** consult the relevant doc in `Branding/_context/` before drafting. Brand quick reference in section 8 is summary, not replacement.
 3. **For any vocabulary question:** `Branding/_context/04-voice-and-tone/vocabulario.md` first, then `voz-y-tono.md` for principles.
 4. **For market research questions** (sizing, ICP, geography, regulatory, ecosystem): start in `Market Research and Analysis/_context/01-industry-and-market/` — all 8 docs at v1.0.
-5. **For format questions:** `reglas-de-redaccion.md`.
-6. **Never guess or improvise.** Point to a source of truth or declare `[SIN FUENTE PUBLICADA]` and ask. Working principles in section 7 govern.
-7. **Apply the confirmation behavior:** never advance to next section or document without explicit user OK.
+5. **For customer research questions** (JTBD, pains/workarounds, customer journey, buying process, objections, verbatim language): start in `Market Research and Analysis/_context/02-customer-research/` — all 8 docs at v0.1. For copy/landing/social/sales enablement specifically, the **verbatim library is doc 07** (30 entries con metadata). Recordar: etapa actual `discovery-pre-PMF` — hallazgos directionally well-supported pero NOT validated con design partners todavía.
+6. **For format questions:** `reglas-de-redaccion.md`.
+7. **Never guess or improvise.** Point to a source of truth or declare `[SIN FUENTE PUBLICADA]` and ask. Working principles in section 7 govern.
+8. **Apply the confirmation behavior:** never advance to next section or document without explicit user OK.
 
 ### If you're a freelancer or new contributor
 
@@ -516,6 +563,14 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Estructura y ecosistema (cadena de valor BoH, roles internos, capas externas, buying committee, hipótesis de canal) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/06-estructura-y-ecosistema.md` |
 | Geografía y expansión (5 fases, criterios de priorización, anatomía TJ, 3 modelos de expansión, pricing uniforme MX) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/07-geografia-y-expansion.md` |
 | Entorno regulatorio (SAT, IMSS/laboral, sanitario/NOM-251, municipal BC, distintivos, calendario, riesgo LFPDPPP 2025 e IA) | ✓ active | `Market Research and Analysis/_context/01-industry-and-market/08-entorno-regulatorio.md` |
+| Etapas y marco de investigación de cliente (5-stage research maturity model, etapa actual `discovery-pre-PMF`, tags taxonomy) | ✓ active v1.0 | `Market Research and Analysis/_context/02-customer-research/00-etapas-y-marco-de-investigacion.md` |
+| Metodología y fuentes de research (inventario de evidencia, gaps explícitos, plan discovery, criterios de saturación) | ✓ active v0.1 | `Market Research and Analysis/_context/02-customer-research/01-metodologia-y-fuentes.md` |
+| Jobs-to-be-done del operador (master job + 7 funcionales + 5 emocionales + 3 sociales + secundarias chef/admin + anti-jobs) | ✓ active v0.1 | `Market Research and Analysis/_context/02-customer-research/02-jobs-to-be-done.md` |
+| Dolores y workarounds del operador (5 categorías, mapeo dolor→workaround, costo, foundational research industry tech adoption lag §5.10) | ✓ active v0.4 | `Market Research and Analysis/_context/02-customer-research/03-pains-y-workarounds.md` |
+| Customer journey detallado (10 fases pre-awareness → advocacy, multi-stakeholder journeys, churn risk windows, three-session demo) | ✓ active v0.7 | `Market Research and Analysis/_context/02-customer-research/04-customer-journey-detallado.md` |
+| Buying process + criterios de decisión (sales cycle 8 stages, WTP $1,500 MXN, deal-breakers, 3-lane timing, Mexican buying patterns) | ✓ active v0.6 | `Market Research and Analysis/_context/02-customer-research/05-buying-process-y-criterios-de-decision.md` |
+| Objeciones + fricciones de adopción (catálogo 8 categorías, 4-stage decay model, data maintenance collapse, LAER Mexican-adapted) | ✓ active v0.4 | `Market Research and Analysis/_context/02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` |
+| Voice of customer verbatim library (30 entries con metadata, top 10 gold-tier, indices persona × theme × stage × use-case) | ✓ active v0.1 | `Market Research and Analysis/_context/02-customer-research/07-voice-of-customer.md` |
 | Visión platform play / análisis estratégico de expansión vertical | 🚧 draft v0.1 | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
 | Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
@@ -526,5 +581,5 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 
 ---
 
-*Last updated: 2026-05-01.*
-*Next planned update: when the next subfolder of Market Research begins active construction, or when another department starts active construction, or when a new strategic decision belongs in section 4.*
+*Last updated: 2026-05-11.*
+*Next planned update: when the next subfolder of Market Research begins active construction (option A: `02-competitive-analysis/`), or when another department starts active construction (options B-E), or when customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa, o cuando un new strategic decision belongs en section 4.*
