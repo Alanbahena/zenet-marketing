@@ -209,7 +209,8 @@ Threat magnitude = structural similarity × execution velocity × (1 / Mexican m
 |---|---|---|
 | **CFDI 4.0 nativo** (NOT solo translation) | `08-entorno-regulatorio.md` §9.4 + `06-objeciones` §6.1 deal-breaker | Build = 6-12 meses dev + SAT cert + ongoing maintenance — el biggest barrier técnico |
 | ***Contable externo* gating + CONTPAQi/Aspel integration** | `06-estructura-y-ecosistema.md` §14 + `06-objeciones` §3.6 | Foreign vendors integran QuickBooks/Xero, NO CONTPAQi — *contable* veto kills deals |
-| **WhatsApp Business como CS primary** | `06-objeciones` §4.9 + `05-buying-process` §10.6 | Foreign vendors operate email-first — MX expects WhatsApp |
+| **WhatsApp Business CS (uso #1 post-sale support)** | `06-objeciones` §4.9 + `05-buying-process` §10.6 | Foreign vendors operate email-first — MX expects WhatsApp para CS |
+| ⭐ **WhatsApp Business operational interface (uso #3 product-as-WhatsApp)** | `06-objeciones` §4.9 + CLAUDE.md §4 reframing | **Zenet's unique differentiator** — operator opera Zenet completo desde WhatsApp Business sin dashboard switch required. Mexican-active vendors usan WhatsApp solo como CS · Fudo es FoH delivery chatbot uso #4 · foreign references zero WhatsApp. Cf. doc 04 Matrix #3 BONUS row |
 | **Mexican Spanish específico** (NOT Argentine/Spanish/genérico) | `04-voice-and-tone/voz-y-tono.md` | Argentine vendors (Fudo, Bistrosoft, Maxirest) tienen partial advantage; Belgian/UK/US start at zero |
 | **Peer reference base 5+ MX** | `06-objeciones` §4.9 + `07-VoC` Q1 hallazgo #3 | *"¿Quién más aquí lo usa?"* es gate informal · build 5-10 references = 12-24 meses |
 | **Consultor partner network MX** | `06-estructura-y-ecosistema.md` §14 | Foreign vendors NOT plug into Entropía Digital / SYCA / SonoraTech etc · partnership development 12-18 meses |
@@ -1255,7 +1256,7 @@ El framework 3-dim (cf. §3.5) revela el insight estructural:
 - **PoloTab + Wansoft tienen alta MX readiness** (7.5/10 y ~8/10) pero **zero AI depth shipped** — pivot barrier 6-12 meses
 - **Zenet debe ocupar el cruce** — AI depth substantive + Mexican market depth native simultáneamente
 
-Esta intersección es **el verdadero white space**, NOT solo "AI-native ∩ BoH-first ∩ MX active" categorial. Es operacional: CFDI 4.0 nativo + WhatsApp Business CS + *contable* CONTPAQi/Aspel integration + Mexican Spanish específico + peer reference local + consultor partner network — **TODO esto + AI depth shipped**, NOT solo declared.
+Esta intersección es **el verdadero white space**, NOT solo "AI-native ∩ BoH-first ∩ MX active" categorial. Es operacional: CFDI 4.0 nativo + **WhatsApp Business operational interface** (uso #3 product-as-WhatsApp · NOT solo CS uso #1) + *contable* CONTPAQi/Aspel integration + Mexican Spanish específico + peer reference local + consultor partner network — **TODO esto + AI depth shipped**, NOT solo declared. (Cf. doc 04 §5.0 para distinción de 4 usos WhatsApp.)
 
 ### 15.1 Donde Zenet NO compite frontalmente
 

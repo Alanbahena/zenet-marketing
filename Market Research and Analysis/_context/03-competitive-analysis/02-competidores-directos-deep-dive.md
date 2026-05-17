@@ -1,10 +1,10 @@
 ---
 name: Competidores prioritarios — deep dive
-description: Deep dive de 7 vendors prioritarios para Zenet — 4 Direct OPERACIONAL active MX (PoloTab, Parrot Software, Toteat, Fudo) + 3 Direct CATEGORIAL reference benchmarks foreign (Nory, Apicbase, FoodOp). Filename "directos" preserved per CLAUDE.md convention pero scope reframed: covers vendors Zenet enfrenta en deals + structural analogs que informan roadmap. Tier Alpha + Beta + Delta cubiertos. Tier Gamma/Epsilon (incumbents legacy + below-radar) van a doc 03.
+description: Deep dive de 11 vendors prioritarios para Zenet — 4 Direct OPERACIONAL active MX (PoloTab, Parrot Software, Toteat, Fudo) + 7 Direct CATEGORIAL reference benchmarks foreign (Nory, Apicbase, FoodOp, MarginEdge, Supy, Restoke.ai, Loaded). Filename "directos" preserved per CLAUDE.md convention pero scope reframed: covers vendors Zenet enfrenta en deals + structural analogs que informan roadmap. Q5 surfaced Restoke + Loaded como Direct competitors (closest functional analogs globally). MarginEdge + Supy moved from doc 03 para internal consistency.
 type: competitive-analysis
 last_updated: 2026-05-16
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -29,9 +29,13 @@ owner: Alan Bahena
    - 3.3 ⭐ Toteat (Tier Beta #3)
    - 3.4 ⭐ Fudo (Tier Beta #4)
 4. **[Grupo 2 — Direct CATEGORIAL reference benchmarks](#4-grupo-2--direct-categorial-reference-benchmarks)**
-   - 4.1 Nory (Tier Delta — closest structural analog)
-   - 4.2 Apicbase (Tier Delta — AI-native BoH OS rebrand 2025)
-   - 4.3 FoodOp (Tier Delta — lighter coverage)
+   - 4.1 Nory (UK — closest agentic AI hospitality OS analog)
+   - 4.2 Apicbase (Belgium — AI-native BoH OS rebrand 2025 + MCP integration)
+   - 4.3 FoodOp (UK — chef co-pilot brand archetype match)
+   - 4.4 MarginEdge (USA — 10-year AI head start + best ICP fit) ⭐ NEW v0.2
+   - 4.5 Supy (UAE/UK — Pure BoH AI shipped + Deliverect en-mx partial) ⭐ NEW v0.2
+   - 4.6 **Restoke.ai (Australia — THE closest functional analog Zenet globally)** ⭐⭐ NEW v0.2 (Q5)
+   - 4.7 Loaded (NZ — AI invoice processing + independent restaurant ICP fit) ⭐ NEW v0.2 (Q5)
 5. **[Cross-vendor synthesis](#5-cross-vendor-synthesis)**
    - 5.1 Pattern recognition — dimensiones compartidas
    - 5.2 Disarming priorities por vendor (sales playbook)
@@ -62,9 +66,9 @@ El filename dice *"competidores directos deep dive"* pero **Q3 verificó que NO 
 | Grupo | Subtype | Vendors | Coverage |
 |---|---|---|---|
 | **Grupo 1** | Direct OPERACIONAL — active MX, compite por mismo wallet + decision-maker | PoloTab · Parrot Software · Toteat · Fudo | Deep dive completa (10 sub-sections per vendor) |
-| **Grupo 2** | Direct CATEGORIAL — structural analog AI-native + BoH-first, foreign no-MX | Nory · Apicbase · FoodOp | Reference benchmark coverage (6 sub-sections, lighter) |
+| **Grupo 2** | Direct CATEGORIAL — structural analog AI-native + BoH-first, foreign no-MX | Nory · Apicbase · FoodOp · MarginEdge · Supy · Restoke.ai · Loaded | Reference benchmark coverage (5-7 sub-sections per vendor, depth variable por structural similarity) |
 
-**Total: 7 vendors deep dive.** Tier Gamma (Last.app, Bistrosoft) + Tier Epsilon (incumbents legacy + below-radar resto) van a doc 03.
+**Total: 11 vendors deep dive (v0.2).** Tier Gamma (Last.app, Bistrosoft) + Tier Epsilon (incumbents legacy + below-radar resto) van a doc 03.
 
 ### 1.4 Diferencia con docs vecinos
 
@@ -96,15 +100,19 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | **Toteat** | 🚨 Beta #3 | Chile (~2014-2015) | MX commercial team desde 2023 · Country Manager Tomás Drápela · 5K+ MX restaurants claim | **5.5/10** | HIGH funded ($7.4M septiembre 2025 para AI) | **12-18 mo** |
 | **Fudo** | 🚨 Beta #4 | Argentina (Delaware entity, CDMX office, ~2015-2018) | MX office Av. Oaxaca 96 Roma Norte · pricing PDF MX Feb 2026 · WhatsApp AI shipped diciembre 2025 | **6.0/10** | MEDIUM proven (WhatsApp AI shipped, BoH AI gap) | **12-18 mo** |
 
-### 2.2 Grupo 2 — Direct CATEGORIAL reference benchmarks
+### 2.2 Grupo 2 — Direct CATEGORIAL reference benchmarks (7 vendors v0.2)
 
-> Vendors AI-native + BoH-first + structural analog a Zenet, foreign sin MX presence. **NOT threat inmediato** (entry friction 24-36 meses), **PERO informan product roadmap + GTM playbook + monitor for LATAM expansion signals.**
+> Vendors AI-native + BoH-first + structural analog a Zenet, foreign sin MX presence. **NOT threat inmediato** (entry friction 24-36 meses), **PERO informan product roadmap + GTM playbook + monitor for LATAM expansion signals.** Q5 (2026-05-16) expanded Grupo 2 desde 3 a 7 vendors al verify Restoke.ai + Loaded como Direct competitors estructuralmente · MarginEdge + Supy moved from doc 03 para internal consistency.
 
 | Vendor | Tier | Origin | MX Activity | MX Readiness | Velocity | Threat horizon |
 |---|---|---|---|---|---|---|
 | **Nory** | 🟡 Delta | UK (Dublin/London, founded ~2020) | None confirmed · UK + US HQ NY marzo 2026 | **0/10** | VERY HIGH (agentic AI shipped) | **24-36 mo si LATAM** |
 | **Apicbase** | 🟡 Delta | Belgium (founded April 2017) | None confirmed | **0/10** | HIGH (AI-native rebrand 2025, MCP integration) | **24-36 mo contingent SMB pivot** |
 | **FoodOp** | 🟡 Delta | UK (London) | None confirmed | **0/10** | HIGH (AI co-pilot chefs) | **24-36 mo** |
+| **MarginEdge** ⭐ | 🟡 Delta | USA (Arlington VA, founded 2015) | None confirmed (Spanish toggle UI only) | **0.5/10** | VERY HIGH (10-year AI head start) | **24-36 mo contingent LATAM** |
+| **Supy** | 🟡 Delta | UAE/UK (founded 2021) | None confirmed (Deliverect en-mx partial path) | **0/10** | MEDIUM-HIGH (AI invoice capture + discrepancy detection shipped) | **36+ mo** |
+| **Restoke.ai** ⭐⭐ | 🟡 Delta | Australia (Melbourne, founded 2019/2020) | None confirmed (US expansion April 2025) | **0/10** | **HIGH (agentic AI shipped — closest functional analog Zenet globally)** | **36+ mo geographic** |
+| **Loaded** ⭐ | 🟡 Delta | New Zealand (Queenstown, founded 2010) | None confirmed (10K+ venues AU/NZ/UK/US claim) | **0/10** | MEDIUM (AI invoice processing shipped) | **36+ mo** |
 
 ### 2.3 Per-vendor template structure
 
@@ -121,7 +129,7 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 9. Watchlist signals + cadence per vendor
 10. Defensive moves Zenet prioritized
 
-**Grupo 2 (6 sub-sections per vendor — lighter):**
+**Grupo 2 (6 sub-sections per vendor — depth variable por structural similarity):**
 
 1. Company profile + founding + tech stack
 2. AI features shipped (verified)
@@ -129,6 +137,15 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 4. GTM playbook lessons for Zenet
 5. LATAM expansion risk monitoring + triggers
 6. Strategic implications para Zenet
+
+**Coverage depth dentro de Grupo 2:**
+- **Restoke.ai** (closest functional analog) — full depth
+- **MarginEdge** (10-yr AI head start + best ICP fit) — full depth
+- **Apicbase** (AI-native rebrand 2025 + MCP integration) — full depth
+- **Nory** (closest agentic AI hospitality OS analog) — full depth
+- **Supy** (Pure BoH AI shipped + Deliverect en-mx) — medium depth
+- **Loaded** (AI invoice processing + independent ICP) — medium depth
+- **FoodOp** (chef co-pilot brand archetype) — lighter (smaller scale, less data)
 
 ---
 
@@ -305,15 +322,16 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | **CFDI 4.0 native** | ✅ Operational | `/facturacion` page · bulk-folio generation feature confirmed |
 | CONTPAQi / Aspel / Siigo integration | **Unknown** | No integration page lists these · `[SIN FUENTE]` |
 | **Mexican Spanish specific** | ✅ Operational | 100% Mexican company · México-specific product copywriting |
-| WhatsApp Business primary CS | ✅ Claimed | Product FAQ instructs users *"write us on WhatsApp"* · operational status confirmed by UX copy |
+| **WhatsApp CS (uso #1 post-sale support)** | ✅ Claimed | Product FAQ instructs users *"write us on WhatsApp"* · operational status confirmed by UX copy |
 | MXN pricing displayed | ✅ Operational | All pricing in MXN on `/planes` page |
 | Mexican peer reference logos | 🟡 Partial | "36 ciudades de México" claim `[Vendor self-reported]` · no named client logos found on website |
 | **MX-based sales team** | ✅ LinkedIn verified | All 18 employees located CDMX · hiring for MX-based Sales & BD rep |
 | Local consultor / distributor partnership MX | ❌ None | No distributor program published `[SIN FUENTE]` |
 | **SAT compliance messaging** | ✅ Operational | CFDI module · constancia de situación fiscal workflow · SAT-compliant invoicing |
 | Sales motion Hofstede-aligned | ✅ Observed | Website tone trust-building · explanation-first · no urgency/countdown CTAs · WhatsApp-forward onboarding |
+| ⭐ **BONUS: WhatsApp operational interface (uso #3)** | ❌ Dashboard required | Operator interacts con product via dashboard/web admin · WhatsApp solo para CS support (uso #1) |
 
-**Composite Mexican Readiness Score: 7.5/10** (Q3 verified)
+**Composite Mexican Readiness Score: 7.5/10** (Q3 verified · 10-factor baseline · WhatsApp operational interface ❌ vs Zenet ✅)
 
 #### 3.1.8 Strategic implications para Zenet
 
@@ -1015,15 +1033,16 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | **CFDI 4.0 native** | ✅ Operational | Help center confirmed CFDI 4.0 support · módulo activation workflow · SAT registration required |
 | CONTPAQi / Aspel integration | **Unknown** | No integration page references these · `[SIN FUENTE]` |
 | Mexican Spanish specific | 🟡 Partial | Mexico-specific subdomain (fu.do/es-mx) + help center en Spanish MX · **some Argentine-isms en copy ("¿Querés?")** · NOT fully neutralized a MX |
-| **WhatsApp Business primary CS** | ✅ Operational | WhatsApp chatbot officially shipped + documented as delivery CS channel diciembre 2025 |
+| **WhatsApp customer-facing FoH delivery chatbot (uso #4)** | ✅ Operational | WhatsApp chatbot officially shipped diciembre 2025 — **customer-facing AI para tomar orders de delivery** (NOT operator BoH operational interface uso #3 · NOT vendor CS uso #1 specifically) |
 | **MXN pricing displayed** | ✅ Operational | MXN pricing on /es-mx/precios page |
 | Mexican peer reference logos | **Unknown** | 35,000+ businesses claim `[Vendor self-reported]` · NO MX-specific logo wall found |
 | MX-based sales team | **Unknown** | Corporate address Wilmington DE · CDMX office address Av. Oaxaca 96 confirmed · `[SIN FUENTE para MX-based sales employees specifically on LinkedIn]` |
 | Local consultor / distributor partnership MX | **Unknown** | `[SIN FUENTE]` |
 | **SAT compliance messaging** | ✅ Operational | Detailed SAT registration workflow documented · CFDI module activation blog post mayo 2026 |
 | Sales motion Hofstede-aligned | ✅ Observed | Website tone relationship-first · no hard-pressure CTAs · help center quality suggests trust-focused onboarding |
+| ⭐ **BONUS: WhatsApp operational interface (uso #3 BoH operator-product)** | ❌ Dashboard required | Operator uses Fudo dashboard para BoH operations (inventory, recipes, expenses) · Fudo's WhatsApp es uso #4 customer-facing FoH delivery chatbot, **NOT BoH operator interface** |
 
-**Composite Mexican Readiness Score: 6.0/10** (Q3 verified)
+**Composite Mexican Readiness Score: 6.0/10** (Q3 verified · 10-factor baseline · WhatsApp operational interface uso #3 ❌ — Fudo's WhatsApp es FoH delivery uso #4, NOT BoH operational)
 
 #### 3.4.8 Strategic implications para Zenet
 
@@ -1268,6 +1287,358 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 
 ---
 
+### 4.4 MarginEdge ⭐ — Tier Delta · 10-year AI head start + best ICP fit independents
+
+`[Classification: Reference-only — moved from doc 03 §9.1 v0.2]` · `[Origin: USA — Arlington VA, founded 2015]` · `[MX Activity: none confirmed (Spanish toggle UI only)]` · `[MX Readiness: 0.5/10]` · `[Velocity: VERY HIGH — best-in-class AI BoH execution globally]` · `[Threat horizon: 24-36 meses contingent LATAM decision]`
+
+#### 4.4.1 Company profile + founding + tech stack
+
+- **Founded:** 2015 · Arlington, Virginia
+- **Tech stack:** Cloud-native SaaS · REST API integrations · AWS-hosted · pure BoH no POS architecture
+- **Scale:** **10,000+ US/Canada restaurant customers** · 10 million invoices/year processed
+- **Team:** Significant ML/AI team con 70% staff hospitality experience
+- **Fundraise history:**
+  - Total raised: **$70M+ cumulative**
+  - Series C: **$45M diciembre 2022** (Ten Coves Capital lead)
+
+#### 4.4.2 AI features shipped (Q3 + Q5 verified) — LOAD-BEARING
+
+**10 YEARS de AI BoH HEAD START:**
+
+- **AI invoice processing SHIPPED desde 2015** — 99% automated invoice line item coding · industry-first
+- **August 2025 multi-feature AI release:**
+  - AI sales forecasting (averaging **within 4% of actual sales**)
+  - AI recipe builder (paste from Word/spreadsheet · AI recognizes ingredients)
+  - Self-learning forecast algorithm
+- **October 2025:** **In-app AI assistant shipped**
+- Continuous AI investment cadence: *"new purpose-built tools already in development"*
+
+**Best-in-class AI BoH execution globally por evidence shipped.** 5x más head start que Nory · 2x más que Apicbase rebrand · 10x más que PoloTab/Parrot/Toteat/Fudo.
+
+#### 4.4.3 Product architecture lessons for Zenet — CRITICAL
+
+| Lección MarginEdge | Implementación Zenet |
+|---|---|
+| **Pure BoH no POS positioning** (zero ambiguity sobre category) | Zenet match — same category |
+| **No contracts / month-to-month model** | Mexican preference annual con descuento BUT no-contract pilot phase considerable para Fase 0 |
+| **Invoice-first workflow** (10-year AI investment foundation) | Zenet roadmap: invoice processing = first AI feature Q3 2026 priority |
+| **Food-cost ROI story con metrics quantified** ("within 4% of actual sales") | Zenet pitch: quantified savings narrative · "AI sales forecast 4% accuracy target" |
+| **Continuous AI investment cadence** (10 years incremental) | Zenet roadmap discipline · ship AI features incrementally Q1-Q4 over 2026-2028 |
+| **AI invoice processing 99% automation** | Zenet target metric · benchmark superior |
+| **70% staff hospitality experience hiring** | Zenet hiring pattern guidance |
+| **REST API integrations + AWS hosting** | Architectural pattern portable |
+
+**Critical insight:** Zenet's window de positioning AI-native real-time es **structurally available en MX** porque MarginEdge no tiene Mexican-readiness, NO porque Zenet sea más AI-native que MarginEdge (NO lo es en absolute terms). **Zenet's moat = AI depth × Mexican market depth.**
+
+#### 4.4.4 GTM playbook lessons for Zenet
+
+- **Series progression:** $25M Series B (2020) → $45M Series C (Dec 2022) led by Ten Coves Capital · total $70M+ raised
+- **ICP focus pure:** independent restaurants → multi-unit operators (NOT enterprise chains) — **best ICP fit con Zenet target** entre todos los reference benchmarks
+- **Customer count growth:** 4,000 customers en Series C (2022) → 10,000+ customers actual = 2.5x growth en 3 años
+- **15,000 restaurant target end of 2024** (announced 2022) — aspiracional milestone Zenet equivalent
+- **No-contract month-to-month** = trust-building model · low switching friction
+- **Pricing structure:**
+  - $330/mes per location (full management) ← MarketMan equivalent es $249 = MarginEdge premium for AI depth
+  - $100/mes per location (AP processing only) — entry tier
+  - $480/mes con Freepour smart scale — premium tier
+
+**Para Zenet:** MarginEdge pricing $330/loc + no-contracts = template para Mexican adaptation ($1,500 MXN ~ $75 USD = **4x below MarginEdge** justified por Mexican pricing reality + Zenet's beachhead positioning)
+
+#### 4.4.5 LATAM expansion risk monitoring + triggers
+
+**Current status (Q3 verified):**
+
+- **MX Readiness 0.5/10** — Spanish language interface available (toggle UI only, NOT localized MX product)
+- US/Canada commercial focus exclusively
+- **NO LATAM expansion signaled publicly**
+- US enterprise SaaS motion (*"96% forecast accuracy"* hard ROI focus) **misaligned con Hofstede MX context**
+- Accounting integration with Mexican software ecosystems requeriría 12-18 meses engineering
+
+**Triggers para re-clasificación:**
+
+| Trigger | Threshold | Action |
+|---|---|---|
+| LATAM expansion announcement | Public commitment | Re-clasificar Tier Gamma · EMERGENCY RESPONSE |
+| Spanish localization native (NOT toggle) | Product release | Active MX signal |
+| Mexican accounting integration (CONTPAQi/Aspel) | Integration partnership announced | Pre-entry signal |
+| MX customer logos | First customer case study | Active MX presence confirmed |
+| New Series D+ fundraise | $100M+ raise para LATAM | Capital readiness signal |
+
+**Monitoring cadence:** SEMESTRAL · founder personal monitoring · Mexico entry antes 2028 NOT evidenced en cualquier public signal
+
+#### 4.4.6 Strategic implications para Zenet
+
+- **Reference primary para product roadmap:** MarginEdge **es el closest US analog product roadmap reference** — pure BoH no POS + 10-year AI investment + ICP independent restaurants → multi-unit
+- **NOT immediate competitive threat** dada MX Readiness 0.5/10 + 24-36 mo entry friction structural
+- **"What Zenet must eventually become at scale"** — long-term aspirational reference: invoice AI 99% automation + sales forecast 4% accuracy + in-app AI assistant + continuous incremental AI investment cadence
+- **Pricing positioning anchor:** MarginEdge $330/loc + MarketMan $249/loc = Zenet $1,500 MXN ($75 USD) positioning como **4x below US benchmark** justifies MX pricing reality
+- **Critical strategic insight:** Zenet does NOT win vs MarginEdge en AI depth (MarginEdge wins) — Zenet wins en **AI depth × Mexican market depth combination**. MarginEdge tendría que invertir 18-36 meses para alcanzar Mexican readiness Zenet already has.
+
+---
+
+### 4.5 Supy — Tier Delta · Pure BoH AI shipped + Deliverect en-mx partial
+
+`[Classification: Reference-only / Adjacent + Direct candidate — moved from doc 03 §11 v0.2]` · `[Origin: UAE/UK multi-region, founded 2021]` · `[MX Activity: none — MENA/UK + Deliverect en-mx integration available]` · `[MX Readiness: 0/10]` · `[Velocity: MEDIUM-HIGH AI shipped]` · `[Threat horizon: 36+ meses]`
+
+#### 4.5.1 Company profile + founding + tech stack
+
+- **Founded:** 2021 · UAE/UK multi-region
+- **Position:** **Pure BoH — inventory, procurement, recipe costing, business intelligence · explicitly NOT a POS**
+- **Multi-branch F&B focus** · customers 2 to 90+ locations
+- **3,500+ restaurant clients globally** `[Vendor self-reported]`
+- **G2 Momentum Leader 2025**
+- **Tech stack:** Cloud-native SaaS · multi-region scale
+- **Fundraise history:**
+  - **Pre-Seed $1.5M septiembre 2021**
+  - **Seed $8M julio 2022** (BECO Capital led)
+  - **Total: ~$9.5M raised**
+
+#### 4.5.2 AI features shipped (Q3 verified)
+
+- ✅ **AI invoice capture + extraction** (ML supplier naming recognition)
+- ✅ **AI price discrepancy detection** (*"automatically detecting price discrepancies"*)
+- ✅ **Automated invoice posting**
+- 🟡 **Predictive purchasing + demand forecasting** — `[AI in roadmap]`, NOT yet verified shipped
+
+**Supy positioning page (surfaced via Alan's image research):** Supy compara explicitly against **Crunchtime + Apicbase + MarketMan + Restaurant365 + Toast + Material Control + Restoke + Fern Speed + Nory + Oracle Simphony + Lightyear + Loaded** = **valida structural Direct category match con Zenet** (same competitive set).
+
+#### 4.5.3 Product architecture lessons for Zenet
+
+| Lección Supy | Implementación Zenet |
+|---|---|
+| **AI invoice capture + discrepancy detection SHIPPED** | **Exactly el AI feature set Zenet debería ship Day 1** — Supy proves market traction |
+| **Pure BoH no POS positioning explicit** ("NOT a POS") | Zenet category match — same positioning language |
+| **Multi-branch F&B focus 2-90+ locations** | Architecture portable, pero Zenet target SMB 2-5 más narrow ICP |
+| **Module architecture (procurement → inventory → recipe costing → BI → integrations)** | Directly informs Zenet módulo design |
+| **AI maturity model framework** (December 2025 blog guide) | Reference para Zenet's own AI capability staging narrative |
+| **Multi-vertical positioning** (restaurants, food groups, multi-branch chains) | Lesson: positioning breadth vs Zenet narrow ICP focus trade-off |
+
+#### 4.5.4 GTM playbook lessons for Zenet
+
+- **Total funding modest $9.5M** = efficient engineering possible (similar a Apicbase pattern)
+- **G2 Momentum Leader 2025** = review platform investment matters · ~unanimous positive reviews
+- **24/7 global support multilingual** claimed — operational depth signal
+- **25% food cost reduction claimed** — quantified value narrative
+- **Deliverect en-mx integration available** — **partial path to MX activated via Deliverect** (interesting MX-adjacent signal)
+- **MENA + UK focus** — Saudi Seed expansion plans 2022 · NOT LATAM
+
+**Para Zenet:** Supy's $9.5M raise + 3,500+ clients claim = template para efficient engineering con modest capital · Zenet can replicate similar trajectory en MX market.
+
+#### 4.5.5 LATAM expansion risk monitoring + triggers
+
+**Current status:**
+
+- **MX Readiness 0/10** — No CFDI · No CONTPAQi/Aspel · English-primary · "multilingual" claimed pero NO Spanish localization documented
+- **Geographic focus firmly UAE/Saudi/UK con zero LATAM signals**
+- Saudi Seed expansion plans 2022 era roadmap; **LATAM NOT en public roadmap**
+- **Deliverect en-mx integration available** — **partial MX-adjacent path activated** (interesting signal pero NOT direct MX presence)
+
+**Triggers para re-clasificación:**
+
+| Trigger | Action |
+|---|---|
+| LATAM expansion announcement | Re-clasificar Tier Gamma |
+| Spanish localization shipped | Active MX signal |
+| Mexican peer logos published | Active MX presence confirmed |
+| Series A announcement (post-$8M Seed) | Capital readiness signal |
+| Deliverect partnership deepening + Mexico-specific signals | Adjacent path activation |
+
+**Monitoring cadence:** SEMESTRAL
+
+#### 4.5.6 Strategic implications para Zenet
+
+- **AI features specifically inspirational:** AI invoice capture + discrepancy detection = **exactly the features Zenet should ship Day 1** · Supy proves market traction
+- **Structural similarity validates Zenet category:** Pure BoH no POS + multi-branch F&B = same competitive class
+- **Diferenciación clear:** *"Supy es Pure BoH AI shipped para MENA/UK enterprise multi-branch. Zenet es Pure BoH AI shipped para Mexican SMB independents — same product class, different geography + ICP."*
+- **Deliverect en-mx integration es interesting signal pero NOT active MX presence** — Zenet maintains MX-native advantage
+- **Reference for AI feature roadmap:** Day 1 priorities = invoice processing + discrepancy detection · Supy provides validated feature set
+
+---
+
+### 4.6 Restoke.ai ⭐⭐ — Tier Delta · THE closest functional analog Zenet globally (Q5)
+
+`[Classification: Direct (categorial) — Q5 surfaced 2026-05-16]` · `[Origin: Australia — Melbourne, Victoria · founded 2019/2020]` · `[MX Activity: none — AU + NZ + Singapore + UK + US (April 2025 expansion)]` · `[MX Readiness: 0/10]` · `[Velocity: HIGH (agentic AI shipped post-seed)]` · `[Threat horizon: 36+ mo geographic only]`
+
+> 🌟 **Hallazgo crítico Q5 (2026-05-16):** Restoke.ai es **THE closest functional analog Zenet has globally** — same Pure BoH AI-native positioning + same ICP (independent restaurants 1-10 sites) + agentic AI shipped + post-seed velocity. **El único diferenciador es geography.** Validates structurally que la categoría Zenet construye **existe globalmente** con product-market fit verified en mercado AU/NZ/US.
+
+#### 4.6.1 Company profile + founding + tech stack
+
+- **Founded:** **2019/2020** · Melbourne, Victoria (F6S lists 2019, Rampersand portfolio page lists 2020 — likely incorporated 2019, product launched 2020)
+- **HQ:** Melbourne · US expansion active April 2025 (co-founder Assaf Stizki relocated to US) · also active New Zealand + Singapore + UK
+- **Team size:** LinkedIn lists 2-10 employees · Prospeo estimates 21-50 · given AUD $5.24M seed + US go-to-market hiring, **~25-40 FTE current range**
+- **Tech stack:** **Cloud-native + AI-native architecture built on:**
+  - **LLM orchestration layer**
+  - **ML demand forecasting**
+  - **Streaming data pipelines** (live POS + inventory data integration)
+- **Fundraise history:**
+  - **AUD $5.24M total raised**
+  - **AUD $5.1M seed septiembre 2024** (Rampersand VC led)
+  - Prior investors: BC Growth Equity + 4 others
+
+#### 4.6.2 AI features shipped (Q5 verified) — LOAD-BEARING agentic AI
+
+**Q5 verified `[AI shipped]` (NOT marketing claim):**
+
+- **ML-driven demand forecasting** integrated con live POS + inventory data streams
+- **LLM-based "agentic automation"** para ordering triggers + prep task creation + supplier communication
+- **Confidence-gated human-in-the-loop approval flows** (operator confirms before AI executes)
+- **Venue clustering for cross-property learning** (multi-location data fusion)
+- **Transparent reasoning layer** — operators see how AI reached conclusions (interpretability priority)
+
+**CEO Ken Brand explicit declaration (CMOtech Dec 2025):** *"Shift from 'read-only insights' to 'true agentic automation'"*
+
+**This is EXACTLY the positioning Zenet aspires to.** Restoke.ai has implemented globally what Zenet plans for MX/LATAM.
+
+#### 4.6.3 Product architecture lessons for Zenet — CRITICAL LOAD-BEARING
+
+| Lección Restoke.ai | Implementación Zenet |
+|---|---|
+| **Agentic AI framing** (NOT solo "AI feature") — *"true agentic automation"* | Zenet messaging discipline: *"capa cognitiva agentic AI"*, NOT *"AI feature"* genérico |
+| **LLM orchestration layer + ML demand forecasting + streaming data pipelines** | Zenet architecture blueprint — exactly el stack Zenet should build |
+| **Confidence-gated human-in-the-loop approval** | UX pattern critical para Mexican operators (cultural high uncertainty avoidance — operators want override capability, NOT autonomous AI decisions) — cf. doc 06 §5.3 reframing techniques |
+| **Venue clustering for cross-property learning** | Network effect lever — Zenet's ML improves con cada nuevo cliente · roadmap consideration |
+| **Transparent reasoning layer** | Trust-building UX para Mexican context — Hofstede high uncertainty avoidance demands explainability |
+| **Independent restaurant ICP focus (1-10 sites)** | **Identical ICP match — same target customer segment Zenet beachhead** |
+| **AI-native architecture from inception** | Validates Zenet's "AI-native Day 1" positioning is right approach (NOT bolt-on AI to legacy stack) |
+
+**Critical insight:** Restoke.ai's architecture is **template para Zenet's roadmap**. Differentiation NOT product (mismo space), differentiation IS:
+- Mexican market depth (CFDI + Spanish + *contable* integration + WhatsApp CS)
+- Geographic moat (AU/US ≠ MX/LATAM)
+- **Standardization process emphasis** (cf. Alan observation — Restoke prioritizes agentic automation but NOT standardization-as-foundational; Zenet differentiator)
+
+#### 4.6.4 GTM playbook lessons for Zenet
+
+- **Series progression timeline:** Pre-seed (2019-2020) → AUD $5.1M Seed septiembre 2024 (Rampersand led) = **~4 años pre-seed to seed**
+- **Geographic expansion strategy:** Australia (home) → NZ → Singapore → UK → **US (April 2025)** — English-speaking market sequencing
+- **Co-founder relocation strategy:** Assaf Stizki relocated to US April 2025 = founder-led expansion model
+- **CMOtech UK profile (Dec 2025):** PR-driven thought leadership (CEO Ken Brand quotes published in trade press)
+- **Rampersand VC backing:** Australian-Israeli VC con LATAM-adjacent network potential (NOT realized for Restoke yet, but signal)
+
+**Para Zenet:**
+- **4-year pre-seed to seed runway** is reference for early-stage planning timeline
+- **Founder relocation pattern** = Alan presence en TJ during Fase 0 design partner cycle (heredado doc 01)
+- **PR-driven thought leadership** post-Mes 6 = strategy candidate
+- **English-speaking expansion sequencing NO applies a Zenet** (MX → LATAM Spanish-speaking pattern instead)
+
+#### 4.6.5 LATAM expansion risk monitoring + triggers
+
+**Current status (Q5 verified):**
+
+- **MX Readiness 0/10** — markets confirmed: Australia, NZ, Singapore, US, UK · NO LATAM signals found
+- **AUD $5.24M total raised** — modest capital; LATAM expansion would require Series A + deliberate decision
+- **US is primary growth market** (April 2025 expansion) — LATAM not stated roadmap
+- **Co-founder Assaf Stizki US-based** = US strategic priority signal
+
+**Triggers para re-clasificación a Tier Gamma:**
+
+| Trigger | Threshold | Action |
+|---|---|---|
+| Series A announcement | $10M+ raise | Capital readiness para LATAM |
+| Spanish-language product signals | First Spanish release | Active LATAM intent |
+| LATAM partnership hiring LinkedIn | Sales/BD LATAM hire | Active LATAM commercial signal |
+| MX-specific feature ship (CFDI integration) | Any | Imminent MX entry |
+| Customer logo LATAM published | First LATAM client | Active LATAM presence |
+
+**Monitoring cadence:** SEMESTRAL — **MOST IMPORTANT VENDOR to monitor for LATAM signals** dada structural similarity
+
+#### 4.6.6 Strategic implications para Zenet
+
+- **🌟 STRUCTURAL VALIDATION primary:** Restoke.ai's product-market fit (post-seed, scaling US) **validates that the category Zenet construye exists globally with verified PMF**. NOT speculative product — proven category con proof-of-concept en mercado AU/NZ/US.
+- **Product roadmap reference highest fidelity:** Restoke's architecture (LLM orchestration + ML forecasting + streaming pipelines + confidence-gated human-in-the-loop + venue clustering + transparent reasoning) = **exactly el blueprint Zenet should follow**
+- **Pricing reference (limited):** `[SIN FUENTE PUBLICADA Restoke pricing exact]` — primary research path: Restoke website inquiry or LinkedIn outreach
+- **Geographic moat real:** Zenet's MX/LATAM beachhead **es uncontested geography** while Restoke focused AU/NZ/US
+- **Defensibility framework:** Si Restoke decide LATAM expansion → re-clasificación inmediata + Zenet acceleration response. But until then, **Zenet's window es structural opportunity**
+- **Diferenciador (per Alan's observation about standardization):** Restoke prioritizes agentic automation pero NOT explicitly process standardization. Zenet's positioning *"el sistema operativo cognitivo que estandariza los procesos restauranteros"* es real differentiator vs Restoke's *"agentic automation"* framing
+- **Brand archetype reference:** CEO Ken Brand's *"shift from read-only insights to true agentic automation"* = Zenet messaging language candidate
+
+---
+
+### 4.7 Loaded — Tier Delta · AI invoice processing + independent restaurant ICP fit (Q5)
+
+`[Classification: Direct (categorial) — Q5 surfaced 2026-05-16]` · `[Origin: New Zealand — Queenstown, Otago · founded 2010]` · `[MX Activity: none — NZ + AU + UK + US early]` · `[MX Readiness: 0/10]` · `[Velocity: MEDIUM (AI invoice processing shipped)]` · `[Threat horizon: 36+ mo]`
+
+#### 4.7.1 Company profile + founding + tech stack
+
+- **Founded:** **2010** · originally built as **internal management software para Cook Brothers Bars** (12 bars/pubs/restaurants co-founded por Richard McLeod + James Arnott en Queenstown, NZ) — **operator-built origin story**
+- **HQ:** 161 Glenda Drive, Queenstown, Otago, NZ · Australian expansion launched early 2023
+- **Team size:** 11-50 employees (Matchstiq profile) · LinkedIn 1,377 followers
+- **Fundraise history:**
+  - **NZD $3.25M raised diciembre 2022** (equity + NZD $1.25M MBIE loan Queenstown Economic Transformation Fund)
+  - Series A stage (Matchstiq) · Invest South (lead) + Mainland Angel Investors + MBIE
+  - **No further fundraise found post-2022**
+- **Tech stack:** **Cloud-native + AI in active deployment for specific features**
+
+#### 4.7.2 AI features shipped (Q5 verified)
+
+**`[AI shipped]` verified — landing page dedicado:** loadedhub.com/landing-pages/ai-invoice-processing
+
+- **AI Invoice Processing** — **live, marketed feature with dedicated URL**
+  - AI matches invoice line items to inventory stock items
+  - **Learns from operator corrections** (ML refinement)
+  - Flags supplier price changes automatically
+  - Updates stock-on-hand + recipe costs + COGS reports upon approval
+  - Vendor claim: **29 working days saved per year**
+  - Feature appears genuinely shipped (dedicated URL + feature preview link + operator testimonials)
+
+**Scope limitation:** **AI invoice processing ONLY** — NO demand forecasting, NO agentic BoH automation found (vs Restoke's deeper agentic positioning).
+
+**Operator testimonials + margin-improvement messaging:** *"grow profit margin by 8%"* (vendor self-reported)
+
+#### 4.7.3 Product architecture lessons for Zenet
+
+| Lección Loaded | Implementación Zenet |
+|---|---|
+| **Operator-built origin** (Cook Brothers Bars 12 venues founders) | Brand narrative authentic — Zenet considers similar founder story emphasis (operator credibility) |
+| **AI invoice processing con ML refinement** ("learns from operator corrections") | UX pattern: human-in-the-loop refinement loop = trust building |
+| **All-in-one BoH NO POS** (inventory, stock ordering, recipes, labour/rostering, COGS tracking) | Module breadth pattern — Zenet adapt para MX SMB independents |
+| **Integrates con leading POS systems** (positioned como "hub" connecting existing systems) | Zenet positioning identical: *"vive sobre tu POS existente"* |
+| **Independent restaurant + bar operators 1-10 venues sweet spot** | Identical ICP focus Zenet |
+| **Margin-improvement messaging quantified** (*"grow profit margin by 8%"*) | Mensaje ROI cuantificable pattern · Zenet target similar narrative |
+| **29 working days saved per year quantified** (invoice processing AI) | Time-savings metric pattern for Zenet pitch |
+
+#### 4.7.4 GTM playbook lessons for Zenet
+
+- **Series A NZD $3.25M raised diciembre 2022** — modest capital ($2M USD equivalent)
+- **10,000+ venues globally across AU/NZ/UK/US** `[Vendor self-reported]` — verification gap pero substantial scale claim
+- **Queenstown Economic Transformation Fund (MBIE) NZD $1.25M loan** = government-backed financing pattern (LATAM equivalent could be Mexican government innovation funds + INADEM)
+- **Geographic expansion sequencing:** NZ (home) → AU (2023) → UK + US (early) — English-speaking sequencing similar a Restoke
+- **No fundraise post-2022** = bootstrapping-after-Series-A pattern
+
+**Para Zenet:** NZD $3.25M raise + 10K+ venues claim (if true) = **efficient capital deployment pattern**. Zenet potentially similar trajectory en MX market con modest Series A.
+
+#### 4.7.5 LATAM expansion risk monitoring + triggers
+
+**Current status:**
+
+- **MX Readiness 0/10** — markets confirmed NZ + AU + UK + US (early) · zero LATAM signals
+- Post-seed bootstrap mode (no post-2022 fundraise)
+- US expansion prioritized over LATAM
+
+**Triggers para re-clasificación:**
+
+| Trigger | Action |
+|---|---|
+| Spanish-language product release | Active LATAM intent |
+| LATAM customer logos | Active LATAM presence |
+| Series B announcement | Capital readiness para LATAM |
+| US expansion success → LATAM pivot signals | Strategic redirect |
+
+**Monitoring cadence:** SEMESTRAL · lower priority que Restoke
+
+#### 4.7.6 Strategic implications para Zenet
+
+- **Product benchmark for operator-facing messaging** — Loaded's AI invoice processing feature page + operator testimonials + margin-improvement narrative ("grow profit margin by 8%") = directly comparable a Zenet's intended positioning
+- **Operator-built origin story authentic** — Cook Brothers Bars founders = brand narrative pattern Zenet considers (vendor credibility)
+- **AI scope narrower que Restoke** — AI invoice processing only, NO agentic BoH automation = lower depth than Restoke
+- **Geographic threat low** — NZ/AU/UK/US focus, LATAM not roadmap, modest capital
+- **Reference for MX go-to-market narrative:**
+  - Operator credibility (founders as restaurant operators themselves)
+  - Quantified time savings (29 working days saved)
+  - Margin improvement messaging (8% profit margin growth)
+  - Hub positioning (vive sobre POS existente)
+
+---
+
 ## 5. Cross-vendor synthesis
 
 ### 5.1 Pattern recognition — dimensiones compartidas
@@ -1301,17 +1672,41 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 
 **Convergencia:** Both foreign vendors face **Mexican Spanish friction** + **incomplete CFDI verification** + **BoH AI gap**. Zenet positioning: *"MX desde Day 1 + BoH AI native, NOT foreign adaptando + FoH AI extending"*.
 
-**Patterns Tier Delta (Nory + Apicbase + FoodOp):**
+**Patterns Tier Delta (Nory + Apicbase + FoodOp + MarginEdge + Supy + Restoke + Loaded — v0.2 expanded):**
 
-| Pattern | Nory | Apicbase | FoodOp |
-|---|---|---|---|
-| AI-native shipped | ✅ multiple features | ✅ 5+ features + MCP | ✅ (lighter detail) |
-| MX Readiness 0/10 | ✅ | ✅ | ✅ |
-| LATAM NOT en roadmap | ✅ | ✅ | ✅ |
-| Entry friction 24-36 meses | ✅ | ✅ | ✅ |
-| Structural analog Zenet | Closest (agentic AI BoH OS) | Most module architecture similar | Brand archetype match (chef co-pilot) |
+| Pattern | Nory | Apicbase | FoodOp | MarginEdge | Supy | **Restoke** | **Loaded** |
+|---|---|---|---|---|---|---|---|
+| AI-native born | ✅ Day 1 | 🟡 rebrand 2025 | ✅ | 🟡 AI added 2015 | 🟡 AI added | ✅ Day 1 | 🟡 AI added |
+| Pure BoH no POS | 🟡 BoH-first | ✅ Pure BoH | 🟡 Kitchen BoH | ✅ Pure BoH | ✅ Pure BoH | ✅ Pure BoH | ✅ Pure BoH |
+| ICP independent restaurants 1-10 sites | 🟡 partial multi-location | 🟡 enterprise focus | 🟡 chef-centric | ✅ independents → multi-unit | 🟡 2-90+ multi-branch | ✅ **identical match** | ✅ **identical match** |
+| MX Readiness 0/10 | ✅ | ✅ | ✅ | 0.5/10 (Spanish toggle) | ✅ | ✅ | ✅ |
+| LATAM NOT en roadmap | ✅ | ✅ | ✅ | ✅ | ✅ (Deliverect en-mx partial) | ✅ | ✅ |
+| Entry friction 24-36+ meses | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| AI depth shipped | Agentic AI scheduling + forecasting | 5+ AI features + MCP integration | AI co-pilot chefs | **10-yr AI head start (highest)** | AI invoice + discrepancy detection | **Agentic AI shipped (closest to Zenet positioning)** | AI invoice processing only |
+| Structural analog Zenet | Closest agentic AI hospitality OS | Most module architecture similar | Brand archetype match | Closest US BoH archetype | Closest non-AI-native Pure BoH | **🌟 THE closest functional analog globally** | Operator-built origin · ICP match |
 
-**Convergencia:** All three are **reference benchmarks NOT competitors today** + **entry friction MX is structural barrier 24-36 meses minimum** + **Zenet inherits AI-native narrative without rebrand requirement**.
+**Convergencia critical (Q5 insight load-bearing):**
+
+1. **The Zenet product category EXISTS globally with verified PMF.** Restoke.ai (Australia) is structural twin to Zenet — same AI-native Pure BoH for independent restaurants positioning + agentic AI shipped + post-seed velocity. **NOT speculative category — verified market category con multiple players.**
+
+2. **Geographic moat is the differentiator.** All 7 reference benchmarks have MX Readiness 0-0.5/10. Entry friction MX 24-36 meses minimum (CFDI + Spanish + *contable* + WhatsApp CS + peer references + consultor network). **Zenet's MX/LATAM market depth is structural advantage** que ningún reference benchmark tiene.
+
+3. **Standardization process diferenciador (Alan observation):** Restoke + Nory + Apicbase + Loaded + MarginEdge are *"AI-powered BoH platforms"* — pero **NINGUNO prioritiza explicitly the process of standardization** como Zenet declara *"sistema operativo cognitivo que estandariza los procesos restauranteros"*. Standardization = real differentiator beyond category match.
+
+4. **Zenet inherits AI-native narrative without rebrand requirement** — vs Apicbase's *"after 10 years we're taking the next step"* rebrand narrative. Zenet's "Day 1 AI-native" positioning has free advantage.
+
+5. **Reference benchmarks validate product architecture choices:**
+   - LLM orchestration layer (Restoke + Nory)
+   - ML demand forecasting (Restoke + Nory + MarginEdge + Apicbase)
+   - AI invoice processing with ML refinement (MarginEdge + Supy + Loaded)
+   - Confidence-gated human-in-the-loop (Restoke)
+   - Transparent reasoning layer (Restoke)
+   - MCP integration ChatGPT/Claude/Gemini (Apicbase)
+   - Voice stock counting (Apicbase)
+   - Module architecture: recipe → procurement → costing → analytics (MarginEdge + Apicbase + Supy)
+   - Self-learning forecast algorithms (MarginEdge)
+
+**Zenet's product blueprint = synthesis of these proven architectural patterns + Mexican market depth wrapper.**
 
 ### 5.2 Disarming priorities por vendor — sales playbook
 
@@ -1325,22 +1720,27 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | **Fudo** | *"Fudo tiene buen POS + AI chatbot WhatsApp para delivery. Pero Fudo AI está en delivery FoH, NOT en tu BoH operacional. Zenet vive sobre Fudo y agrega: procurement + costing predictivo + demand forecasting. BoH AI native, NOT FoH AI bolted-on."* |
 | **Nory** (rare, foreign awareness) | *"Nory es el mejor referente global de lo que Zenet construye — pero Nory NO opera en México y no tiene CFDI, Spanish nativo, o consultor partner network MX. Zenet es 'Nory para México' adaptado al mercado real."* |
 | **Apicbase** (rare, EU awareness) | *"Apicbase es el módulo architecture más similar a Zenet pero target enterprise + €249/mes. Zenet es 'Apicbase para SMB Mexican independents' — más accessible + MX-native."* |
+| **MarginEdge** (rare, US awareness) | *"MarginEdge es el referente US BoH AI con 10 años de head start — best-in-class AI BoH globally. Pero NO opera en México, NO tiene CFDI nativo, NO tiene Spanish localizado. Zenet construye la versión MX-native con AI shipped y la profundidad del mercado mexicano que MarginEdge tendría que construir desde cero."* |
+| **Supy** (rare, MENA awareness) | *"Supy es Pure BoH AI shipped para MENA/UK enterprise multi-branch. Zenet es Pure BoH AI shipped para Mexican SMB independents — same product class, different geography + ICP. Plus: Zenet tiene CFDI nativo + Mexican Spanish + consultor partner network."* |
+| **Restoke.ai** (rare, AU/US awareness) | *"Restoke es probably el referente global más cercano de lo que Zenet construye — agentic AI BoH para restaurantes independientes. Pero Restoke opera AU/NZ/Singapore/UK/US, NOT México. Zenet es 'Restoke para México y LATAM' con CFDI nativo + Spanish + relationship-driven sales motion que Mexican operators esperan."* |
+| **Loaded** (rare, NZ/AU awareness) | *"Loaded es buen referente built-by-operators desde Queenstown NZ — AI invoice processing shipped para restaurantes/bars independientes. Pero scope AI más limitado que Zenet (solo invoice processing, NOT agentic BoH automation) y zero LATAM presence. Zenet es operator-credible + AI más profunda + MX-native."* |
 
 ### 5.3 Differentiation matrix — Zenet vs cada vendor
 
-| Dimensión | Zenet | PoloTab | Parrot | Toteat | Fudo | Nory | Apicbase | FoodOp |
-|---|---|---|---|---|---|---|---|---|
-| Pure BoH no-POS | ✅ | ❌ POS+inv | ❌ POS+inv | ❌ POS+inv | ❌ POS+delivery | 🟡 BoH-first + Toast integration | ✅ Pure BoH | ✅ Kitchen BoH-first |
-| AI-native shipped | ✅ Day 1 | ❌ zero | ❌ zero (data sí) | 🟡 funded NOT shipped | 🟡 FoH only | ✅ agentic AI shipped | ✅ 5+ features | ✅ co-pilot |
-| Mexican-origin | ✅ | ✅ | ✅ | ❌ Chile | ❌ Argentina | ❌ UK | ❌ Belgium | ❌ UK |
-| CFDI 4.0 native | ✅ | ✅ | ✅ | 🟡 partial | ✅ | ❌ | ❌ | ❌ |
-| Mexican Spanish específico | ✅ | ✅ | ✅ | 🟡 Chilean-isms | 🟡 Argentine-isms | ❌ English | 🟡 Spanish-genérico | ❌ English |
-| WhatsApp Business CS | ✅ | ✅ | ✅ | Unknown | ✅ | ❌ | ❌ | ❌ |
-| CONTPAQi/Aspel integration | 🚧 roadmap | Unknown | Unknown | Unknown | Unknown | ❌ | ❌ | ❌ |
-| Hardware-agnostic | ✅ | ❌ PoloTab terminal lock-in | ❌ Parrot Pay closed ecosystem | ✅ | ✅ | 🟡 via Toast | ✅ | ✅ |
-| TJ/BC active presence | 🚧 beachhead | ❌ zero | ❌ zero | ❌ | ❌ | ❌ | ❌ | ❌ |
-| Pricing target SMB MX | $1,500 MXN | $990-1,490 | $949-2,800 | Unknown MX | $360-1,250 | Custom enterprise | €249 enterprise | Unknown |
-| ICP fit Carlos Mendoza | ✅ | ✅ overlap | ✅ overlap | 🟡 | ✅ overlap | 🟡 partial | ❌ enterprise | 🟡 chef focus |
+| Dimensión | Zenet | PoloTab | Parrot | Toteat | Fudo | Nory | Apicbase | FoodOp | **MarginEdge** | **Supy** | **Restoke** | **Loaded** |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Pure BoH no-POS | ✅ | ❌ POS+inv | ❌ POS+inv | ❌ POS+inv | ❌ POS+delivery | 🟡 BoH-first + Toast integration | ✅ Pure BoH | ✅ Kitchen BoH-first | ✅ Pure BoH | ✅ Pure BoH | ✅ Pure BoH | ✅ Pure BoH |
+| AI-native shipped | ✅ Day 1 | ❌ zero | ❌ zero (data sí) | 🟡 funded NOT shipped | 🟡 FoH only | ✅ agentic AI shipped | ✅ 5+ features | ✅ co-pilot | ✅ **10-yr head start (highest)** | ✅ invoice + discrepancy | ✅ **agentic AI shipped** | ✅ invoice processing only |
+| Mexican-origin | ✅ | ✅ | ✅ | ❌ Chile | ❌ Argentina | ❌ UK | ❌ Belgium | ❌ UK | ❌ USA | ❌ UAE/UK | ❌ Australia | ❌ NZ |
+| CFDI 4.0 native | ✅ | ✅ | ✅ | 🟡 partial | ✅ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Mexican Spanish específico | ✅ | ✅ | ✅ | 🟡 Chilean-isms | 🟡 Argentine-isms | ❌ English | 🟡 Spanish-genérico | ❌ English | 🟡 Spanish toggle UI only | ❌ English | ❌ English | ❌ English |
+| WhatsApp Business CS | ✅ | ✅ | ✅ | Unknown | ✅ | ❌ | ❌ | ❌ | ❌ | Unknown | ❌ | ❌ |
+| CONTPAQi/Aspel integration | 🚧 roadmap | Unknown | Unknown | Unknown | Unknown | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ |
+| Hardware-agnostic | ✅ | ❌ PoloTab terminal lock-in | ❌ Parrot Pay closed ecosystem | ✅ | ✅ | 🟡 via Toast | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
+| TJ/BC active presence | 🚧 beachhead | ❌ zero | ❌ zero | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ | ❌ Deliverect en-mx partial | ❌ | ❌ |
+| Pricing target SMB MX | $1,500 MXN | $990-1,490 | $949-2,800 | Unknown MX | $360-1,250 | Custom enterprise | €249 enterprise | Unknown | $100-480/loc USD | Unknown | Unknown | Unknown |
+| ICP fit Carlos Mendoza independent 2-5 sites | ✅ | ✅ overlap | ✅ overlap | 🟡 | ✅ overlap | 🟡 partial | ❌ enterprise | 🟡 chef focus | ✅ **best US ICP fit** | 🟡 multi-branch 2-90+ | ✅ **identical** | ✅ **identical** |
+| **Standardization process emphasis** (Alan observation) | ✅ **core differentiator** | ❌ | ❌ | ❌ | ❌ | 🟡 implicit | 🟡 module-level | ❌ | 🟡 invoice standardization only | 🟡 procurement standardization | 🟡 agentic automation but NOT standardization-as-foundational | 🟡 invoice standardization only |
 
 ### 5.4 Threat composite — quién es threat #1 por decision criterion
 
@@ -1350,10 +1750,15 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | *"Quiero el POS Mexican más establecido con scale"* | **Parrot Software** | 3,200+ POS · $21M ARR · brand recognition |
 | *"AI shipped + active commercial team MX"* | **Fudo** | WhatsApp AI shipped + CDMX office + pricing PDF MX |
 | *"AI roadmap funded + Spanish-speaking team"* | **Toteat** | $7.4M para AI + Country Manager + MX customer base claim |
-| *"El producto AI BoH más avanzado globalmente"* | **MarginEdge / Apicbase** (cf. doc 03) | 10-year AI head start (MarginEdge) o AI-native rebrand 2025 (Apicbase) |
-| *"El reference benchmark agentic AI BoH OS"* | **Nory** | Closest structural analog · $62.6M raised · agentic AI shipped |
+| *"El producto AI BoH más avanzado globalmente"* | **MarginEdge** (§4.4) | **10-year AI head start since 2015** · 99% invoice automation · sales forecast 4% accuracy |
+| *"El reference benchmark AI-native BoH OS más reciente"* | **Apicbase** (§4.2) | AI-native rebrand 2025 + MCP integration ChatGPT/Claude/Gemini |
+| *"El closest functional analog Zenet globally"* | **Restoke.ai** (§4.6) ⭐⭐ | **THE structural twin** — Agentic AI Pure BoH for independents · AU/NZ/US |
+| *"El reference benchmark agentic AI hospitality OS"* | **Nory** (§4.1) | $62.6M raised · agentic AI shipped · UK/Europe/US |
+| *"AI invoice processing + operator-built credibility"* | **Loaded** (§4.7) | Cook Brothers Bars founders · NZ operator origin · 10K+ venues claim |
+| *"Pure BoH AI shipped + multi-branch chains"* | **Supy** (§4.5) | UAE/UK · invoice capture + discrepancy detection · 3,500+ clients |
+| *"Chef co-pilot brand archetype match"* | **FoodOp** (§4.3) | UK chef-centric · £4.4M raised 2026 |
 
-**Zenet wins criterion específico:** *"AI-native BoH operativo + Mexican market depth nativo + ICP independents 2-5 sucursales + pricing $1,500 MXN accessible"* — el cruce que ningún competitor occupa actualmente.
+**Zenet wins criterion específico:** *"AI-native BoH operativo + Mexican market depth nativo + ICP independents 2-5 sucursales + pricing $1,500 MXN accessible + standardization process emphasis"* — el cruce que ningún competitor occupa actualmente. Q5 validation: la categoría existe globalmente (Restoke + Nory + MarginEdge + Apicbase + Supy + Loaded + FoodOp), pero el cruce MX/LATAM + standardization-as-foundational es uncontested.
 
 ---
 
@@ -1370,6 +1775,10 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 | **Nory** | SEMESTRAL | LATAM expansion announcement | MX hire LinkedIn | Spanish localization roadmap |
 | **Apicbase** | SEMESTRAL | LATAM expansion · SMB pivot | MX hire LinkedIn | Spanish-MX localization |
 | **FoodOp** | SEMESTRAL | LATAM expansion · Spanish localization | Larger fundraise | — |
+| **MarginEdge** ⭐ | SEMESTRAL | LATAM expansion announcement | Spanish localization native (NOT toggle) | Mexican accounting integration (CONTPAQi/Aspel) |
+| **Supy** | SEMESTRAL | LATAM expansion announcement | Spanish localization shipped | Series A post-$8M Seed |
+| **Restoke.ai** ⭐⭐ | SEMESTRAL **(MOST IMPORTANT to monitor)** | LATAM partnership hiring LinkedIn | Series A announcement ($10M+ raise) | Spanish-language product signals |
+| **Loaded** | SEMESTRAL | Spanish-language product release | LATAM customer logos | Series B announcement |
 
 ---
 
@@ -1395,8 +1804,9 @@ Si solo tienes 30 minutos antes de un deal, lee este doc + doc 01 §10 (classifi
 
 ### 7.3 Reference benchmarks discovery (less critical, but valuable)
 
-- *"¿Conoces alguna plataforma BoH AI-native foreign (MarginEdge, Apicbase, Nory)?"*
-- *"Si te dijera que existe en Europa un 'AI-native BoH operating system' que da: voice stock counting, AI procurement, demand forecasting predictivo — ¿lo usarías? ¿qué te detiene?"*
+- *"¿Conoces alguna plataforma BoH AI-native foreign (MarginEdge, Apicbase, Nory, Restoke, Loaded)?"*
+- *"Si te dijera que existe globalmente un 'AI-native BoH operating system' que da: voice stock counting (Apicbase), AI invoice processing 99% accuracy (MarginEdge), agentic AI ordering (Restoke), demand forecasting predictivo (Nory) — ¿lo usarías si fuera diseñado MX-native? ¿qué te detiene?"*
+- *"Restoke.ai (Australia) construye exactly esto para restaurantes independientes — ¿conocías este tipo de producto? ¿qué te resulta más relevante para tu operación?"*
 
 ### 7.4 Switching dynamics discovery
 
@@ -1414,10 +1824,11 @@ Heredadas de doc 01 §16.1:
 
 | Query | Modo | Fecha | Output file | Vendors aplicables a doc 02 |
 |---|---|---|---|---|
-| **Q1** Discovery competitive landscape | DeepSearch | 2026-05-15 | Q1 file | All 7 vendors initial profile |
+| **Q1** Discovery competitive landscape | DeepSearch | 2026-05-15 | Q1 file | All 7 vendors initial profile + MarginEdge + Supy |
 | **Q2** Below-radar regional MX | DeepSearch | 2026-05-15 | Q2 file | NOT applicable to doc 02 vendors |
-| **Q3** 3-dim threat assessment (12 vendors) | DeepSearch | 2026-05-16 | Q3 file | PoloTab + Toteat + Fudo + Nory + Apicbase (verified) · FoodOp (lighter) |
+| **Q3** 3-dim threat assessment (12 vendors) | DeepSearch | 2026-05-16 | Q3 file | PoloTab + Toteat + Fudo + Nory + Apicbase (verified) · FoodOp (lighter) · MarginEdge (verified deep) · Supy (verified) |
 | **Q4** Parrot Software targeted | DeepSearch | 2026-05-16 | Q4 file | Parrot Software verified deep |
+| **Q5** Supy comparison page 6-vendor verification | DeepSearch | 2026-05-16 | `/Users/alanbahena/Downloads/Zenet Watchlist Radar  6-Vendor Light Verification Report.md` | **Restoke.ai + Loaded surfaced as Direct competitors** · Oracle Materials Control + Oracle Simphony + FernSPEED + Lightyear documented |
 
 ### 8.2 Vendor public sources consultadas
 
