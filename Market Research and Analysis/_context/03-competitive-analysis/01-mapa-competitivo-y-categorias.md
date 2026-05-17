@@ -1,10 +1,10 @@
 ---
 name: Mapa competitivo y categorías
-description: Mapa exhaustivo del competitive space para BoH SaaS targeting Mexican independent restaurants. 45 vendors clasificados por rol estratégico (categorías A-E) + 3-dimension threat framework (structural similarity × execution velocity × Mexican market readiness). Construido sobre Q1 mainstream + Q2 below-radar + Q3 tech-velocity + MX-readiness assessment. White space declarado y refinado: NO vendor combina AI-native + BoH-first + MX/LATAM active hoy. El threat más concreto al white space NO es foreign AI-native (Nory/Apicbase/MarginEdge) — es Mexican-origin modern startup (PoloTab) o Mexican-active foreign con MX infrastructure (Fudo/Toteat).
+description: Mapa exhaustivo del competitive space para BoH SaaS targeting Mexican independent restaurants. 45 vendors clasificados por rol estratégico (categorías A-E) + 3-dimension threat framework (structural similarity × execution velocity × Mexican market readiness). Construido sobre Q1 mainstream + Q2 below-radar + Q3 tech-velocity + Q4 Parrot targeted assessment. White space declarado y refinado: NO vendor combina AI-native + BoH-first + MX/LATAM active hoy. El threat más concreto al white space NO es foreign AI-native (Nory/Apicbase/MarginEdge) — es **DOS Mexican-origin modern startups paralelos (PoloTab + Parrot Software, ambos Tier Alpha)** + foreign-active LATAM con MX infrastructure (Fudo/Toteat).
 type: competitive-analysis
 last_updated: 2026-05-16
 status: active
-version: 0.2
+version: 0.3
 owner: Alan Bahena
 ---
 
@@ -101,12 +101,14 @@ Este doc fue construido sobre tres queries Perplexity Pro DeepSearch dispatched 
 | **Q1** — Discovery competitive landscape mainstream MX + LATAM + US reference (2024-2026) | DeepSearch | `/Users/alanbahena/Downloads/Restaurant BoH Operations SaaS — Competitive Landscape Mexico + LATAM + US Reference Points (2024–2026).md` | 29 |
 | **Q2** — Mini-query below-radar regional MX vendors + accounting-adjacencies | DeepSearch | `/Users/alanbahena/Downloads/Mexican Regional Restaurant POS BoH Software Vendors — Below-Radar Landscape.md` | 15+ |
 | **Q3** — 3-dimension threat assessment (tech maturity + AI velocity + MX readiness) — focused subset 12 vendors | DeepSearch | `/Users/alanbahena/Downloads/Zenet Competitive Threat Assessment — 3-Dimension Analysis (12 Vendors).md` | 12 verified |
+| **Q4** — Parrot Software / ParrotConnect targeted deep dive (tech stack age + AI velocity + 3-dim threat assessment) | DeepSearch | `/Users/alanbahena/Downloads/Parrot Software   ParrotConnect — Mexican Restaurant POS  3-Dimensional Threat Assessment.md` | 1 verified (Parrot) |
 | **Total mapped** | — | — | **45 unique vendors** |
 
 Los queries son **complementarios + acumulativos**:
 - Q1 capturó mainstream digital-indexed (gross map)
 - Q2 capturó below-radar regional/accounting-adjacent que Q1 missed estructuralmente (depth en MX)
 - Q3 refinó threat assessment via 3-dim framework para los 12 vendors más estratégicos (velocity + MX readiness verification)
+- Q4 cerró gap específico Parrot Software — verified founded 2020 (NOT legacy A.1) + cloud-native + AI Velocity Score 2/10 + MX Readiness 8.5/10 = **upgraded a Tier Alpha alongside PoloTab**
 
 ### 2.3 Disciplina de refresh
 
@@ -148,40 +150,43 @@ Threat ranking refinado por **framework 3-dimensiones** (cf. §3.5): structural 
 
 #### Tier Alpha — Window 6-12 meses (action MENSUAL)
 
+> 🚨 **Tier Alpha tiene DOS vendors paralelos (Q4 verified):** PoloTab y Parrot Software son hermanos estructurales — ambos Mexican-origin modern POS cloud-native sin AI shipped + capacity capable. Parrot tiene **mayor scale** (3,200+ POS, $21M ARR, 57 empleados vs PoloTab 18); PoloTab tiene **YC credibility + agility**. Misma threat magnitude, perfiles complementarios.
+
 | Rank | Vendor | Composite | Razón |
 |---|---|---|---|
 | 🚨 **#1** | **PoloTab AI pivot** | MX Readiness **7.5/10** × velocity **MEDIUM** capable | Mexican-origin + modern cloud stack 2022 + 36+ ciudades + 18-person team + YC W23 + CTO ex-Goldman Sachs STRATS + CFDI operational + WhatsApp CS + zero AI shipped today **pero capacity structural para ship en 6-12 meses**. Trigger: AI hiring · AI feature announcement · pricing tier change |
+| 🚨 **#2** | **Parrot Software AI pivot** | MX Readiness **8.5/10** × velocity **LOW-MEDIUM** capable | **Mexican-origin Monterrey-born founded April 2020 (NOT legacy)** + cloud-native Android-first + **3,200+ active POS** (Industry Report 2025) + ~$21M ARR + $11.7M raised (F Prime Capital Series A enero 2022) + 57 empleados + CDMX + Monterrey + Riviera Maya verified · **AI Velocity Score 2/10** (zero AI shipped, marketing-stage only) PERO sit on **3,200+ POS real-time ML training corpus** = capacity para ship AI demand forecasting / menu optimization en 6-12 meses si decide. Trigger: AI hiring · AI feature announcement · Series B announcement · BC/TJ customer logo |
 
 #### Tier Beta — Window 12-18 meses (action MENSUAL)
 
 | Rank | Vendor | Composite | Razón |
 |---|---|---|---|
-| 🚨 **#2** | **Toteat AI launch substantive** | MX Readiness **5.5/10** × velocity **HIGH funded** | $7.4M septiembre 2025 explicitly para AI development · Country Manager MX (Tomás Drápela LinkedIn-verified) · 5,000+ MX restaurants self-reported · Chilean Spanish friction. Trigger: AI feature SHIPPED beyond marketing claim |
-| 🚨 **#3** | **Fudo BoH AI extension** | MX Readiness **6.0/10** × velocity **MEDIUM proven** | WhatsApp AI chatbot SHIPPED diciembre 2025 (YouTube demo verified) · CFDI 4.0 operational · CDMX office · BoH AI gap = next step natural. Trigger: AI feature beyond delivery FoH |
+| 🚨 **#3** | **Toteat AI launch substantive** | MX Readiness **5.5/10** × velocity **HIGH funded** | $7.4M septiembre 2025 explicitly para AI development · Country Manager MX (Tomás Drápela LinkedIn-verified) · 5,000+ MX restaurants self-reported · Chilean Spanish friction. Trigger: AI feature SHIPPED beyond marketing claim |
+| 🚨 **#4** | **Fudo BoH AI extension** | MX Readiness **6.0/10** × velocity **MEDIUM proven** | WhatsApp AI chatbot SHIPPED diciembre 2025 (YouTube demo verified) · CFDI 4.0 operational · CDMX office · BoH AI gap = next step natural. Trigger: AI feature beyond delivery FoH |
 
 #### Tier Gamma — Window 18-24 meses (action TRIMESTRAL)
 
 | Rank | Vendor | Composite | Razón |
 |---|---|---|---|
-| ⚠️ **#4** | **Last.app MX deepening** | MX Readiness **4.5/10** × velocity **MEDIUM with AI shipped** | "Supper" AI assistant SHIPPED (natural language query, chat-based config) · distributor program /mx active · entered MX julio 2025 · Spain Spanish vs Mexican Spanish friction TJ/BC |
-| ⚠️ **#5** | **Bistrosoft AI add** | MX Readiness **5.0/10** × velocity **MEDIUM, NO AI yet** | Cloud-native desde founding enero 2019 · CFDI 4.0 operational verified · MX active 2022 · **AI gap critical** (CIO ex-fintech Ingenico/Lyra, NOT AI/ML). Trigger: AI hiring + feature ship |
+| ⚠️ **#5** | **Last.app MX deepening** | MX Readiness **4.5/10** × velocity **MEDIUM with AI shipped** | "Supper" AI assistant SHIPPED (natural language query, chat-based config) · distributor program /mx active · entered MX julio 2025 · Spain Spanish vs Mexican Spanish friction TJ/BC |
+| ⚠️ **#6** | **Bistrosoft AI add** | MX Readiness **5.0/10** × velocity **MEDIUM, NO AI yet** | Cloud-native desde founding enero 2019 · CFDI 4.0 operational verified · MX active 2022 · **AI gap critical** (CIO ex-fintech Ingenico/Lyra, NOT AI/ML). Trigger: AI hiring + feature ship |
 
 #### Tier Delta — Window 24-36 meses contingent LATAM decision (action SEMESTRAL)
 
 | Rank | Vendor | Composite | Razón |
 |---|---|---|---|
-| 🟡 **#6** | **MarginEdge LATAM** | MX Readiness **0.5/10** × velocity **VERY HIGH** | **AI invoice processing shipped DESDE 2015 — 10 años AI BoH head start.** August 2025 multi-feature release (AI sales forecast 4% accuracy + AI recipe builder + in-app AI assistant). $70M+ raised. **Best-in-class AI BoH execution globally.** Zero MX signals = entry barrier high |
-| 🟡 **#7** | **Apicbase LATAM SMB pivot** | MX Readiness **0/10** × velocity **HIGH** | **AI-native rebrand 2025** con 5+ AI features SHIPPED (allergen autofill · demand forecast · voice stock counting · NL query · **MCP integration ChatGPT/Claude/Gemini**). $3.2M ARR / 52-person team / $4.5M raised. **Most structural similarity a Zenet entre los 12.** Enterprise focus (NOT SMB) friction adicional |
-| 🟡 **#8** | **Nory LATAM expansion** | MX Readiness **0/10** × velocity **VERY HIGH** | Agentic AI restaurant OS shipped · $62.6M raised total · **US HQ NY abierto marzo 2026** · LATAM NOT en roadmap declarado · Series B execution focus en UK consolidation + US first. **DEPRIORITIZED desde mi análisis original** |
+| 🟡 **#7** | **MarginEdge LATAM** | MX Readiness **0.5/10** × velocity **VERY HIGH** | **AI invoice processing shipped DESDE 2015 — 10 años AI BoH head start.** August 2025 multi-feature release (AI sales forecast 4% accuracy + AI recipe builder + in-app AI assistant). $70M+ raised. **Best-in-class AI BoH execution globally.** Zero MX signals = entry barrier high |
+| 🟡 **#8** | **Apicbase LATAM SMB pivot** | MX Readiness **0/10** × velocity **HIGH** | **AI-native rebrand 2025** con 5+ AI features SHIPPED (allergen autofill · demand forecast · voice stock counting · NL query · **MCP integration ChatGPT/Claude/Gemini**). $3.2M ARR / 52-person team / $4.5M raised. **Most structural similarity a Zenet entre los 12.** Enterprise focus (NOT SMB) friction adicional |
+| 🟡 **#9** | **Nory LATAM expansion** | MX Readiness **0/10** × velocity **VERY HIGH** | Agentic AI restaurant OS shipped · $62.6M raised total · **US HQ NY abierto marzo 2026** · LATAM NOT en roadmap declarado · Series B execution focus en UK consolidation + US first. **DEPRIORITIZED desde mi análisis original** |
 
 #### Tier Epsilon — Window 36+ meses (action SEMESTRAL)
 
 | Rank | Vendor | Razón |
 |---|---|---|
-| 🔵 **#9** | **Supy LATAM expansion** | MX Readiness 0/10. Pure BoH + AI shipped (invoice capture + discrepancy detection) pero UAE/Saudi/UK focus, zero LATAM signals |
-| 🔵 **#10** | **Maxirest MX entry** | MX Readiness 0.5/10. 1991 legacy con surface refresh agosto 2023 (NOT full cloud-native rewrite). NO MX entry plan 2024 declared |
-| 🔵 **#11** | **Sistemas Sierra AI** | MX Readiness 3/10 × SLOW. **46 años legacy (founded 1980)** — threat = pure install base inertia TJ/BC, NOT innovation race |
-| 🔵 **#12** | **SICAR AI** | MX Readiness 6.5 × SLOW. 120K+ businesses claim · dual-product (legacy desktop SICAR v4.0 + cloud SICAR X) · NO AI signals |
+| 🔵 **#10** | **Supy LATAM expansion** | MX Readiness 0/10. Pure BoH + AI shipped (invoice capture + discrepancy detection) pero UAE/Saudi/UK focus, zero LATAM signals |
+| 🔵 **#11** | **Maxirest MX entry** | MX Readiness 0.5/10. 1991 legacy con surface refresh agosto 2023 (NOT full cloud-native rewrite). NO MX entry plan 2024 declared |
+| 🔵 **#12** | **Sistemas Sierra AI** | MX Readiness 3/10 × SLOW. **46 años legacy (founded 1980)** — threat = pure install base inertia TJ/BC, NOT innovation race |
+| 🔵 **#13** | **SICAR AI** | MX Readiness 6.5 × SLOW. 120K+ businesses claim · dual-product (legacy desktop SICAR v4.0 + cloud SICAR X) · NO AI signals |
 
 **El window crítico de Zenet (recalibrado):** **Q3 2026 → Q4 2027.** En esa ventana hay que:
 - Establecer 5+ design partners TJ/CDMX antes que PoloTab decide AI pivot (6-12 mo)
@@ -211,15 +216,16 @@ Threat magnitude = structural similarity × execution velocity × (1 / Mexican m
 | **In-person sales motion + local presence** | `05-buying-process` §10 + Hofstede UAI 82 | Digital-first foreign sales motion BACKFIRES en Mexican B2B |
 | **Cultural sales motion Hofstede-aligned** | `06-objeciones` §5.6 anti-patterns | Standard US/EU vendor playbook (urgency, ROI calc early, contract pressure) damages relationship |
 
-#### Threat matrix 2-axis
+#### Threat matrix 2-axis (Q4 updated — Parrot added Tier Alpha)
 
 ```
                      MX Readiness HIGH (7-10)        MX Readiness LOW (0-4)
                      ─────────────────────────       ──────────────────────
 Velocity HIGH        🚨 PoloTab (7.5 × MED capable)  ⚠️  Nory (0 × VERY HIGH)
-                     🚨 Fudo (6.0 × MED proven)      ⚠️  Apicbase (0 × HIGH)
-                     🚨 Toteat (5.5 × HIGH funded)   ⚠️  Supy (0 × MED-HIGH)
-                                                      🟡 MarginEdge (0.5 × VERY HIGH)
+capable              🚨 Parrot (8.5 × LOW-MED        ⚠️  Apicbase (0 × HIGH)
+                        capable, 3,200+ POS data!)   ⚠️  Supy (0 × MED-HIGH)
+                     🚨 Fudo (6.0 × MED proven)      🟡 MarginEdge (0.5 × VERY HIGH)
+                     🚨 Toteat (5.5 × HIGH funded)
                      
 Velocity LOW         🔵 SoftRestaurant (10 × LOW)    🟢 (low priority)
                      🔵 Wansoft (10 × LOW)
@@ -230,9 +236,11 @@ Velocity LOW         🔵 SoftRestaurant (10 × LOW)    🟢 (low priority)
                      🔵 Maxirest (0.5 × SLOW-MED)
 ```
 
-**Insight load-bearing:** El cuadrante más peligroso para Zenet NO es "AI-native foreign con scale" (Nory, Apicbase, MarginEdge) — es **"Mexican-active modern startup con velocity capacity"** (PoloTab, Fudo, Toteat). El primer cuadrante enfrenta entry friction de 18-36 meses; el segundo enfrenta solo decision friction de 6-12 meses.
+**Insight load-bearing:** El cuadrante más peligroso para Zenet NO es "AI-native foreign con scale" (Nory, Apicbase, MarginEdge) — es **"Mexican-active modern startup con velocity capacity"** (PoloTab, **Parrot Software**, Fudo, Toteat). El primer cuadrante enfrenta entry friction de 18-36 meses; el segundo enfrenta solo decision friction de 6-12 meses.
 
-**Implicación estratégica:** **Zenet's defensible moat NO es AI depth global — es AI depth × Mexican market depth.** Apicbase + MarginEdge tienen más AI depth pero zero MX readiness. PoloTab tiene MX readiness alta pero zero AI depth. **Zenet tiene que ser el cruce** — y el cruce es donde está el white space.
+**El insight refinado Q4:** **DOS Mexican-origin modern POS hermanos estructurales (PoloTab + Parrot) en Tier Alpha.** Parrot es el mayor de los dos por scale (3,200+ POS · $21M ARR · 57 empleados · $11.7M raised) PERO PoloTab tiene YC W23 credibility + agility (18-person team). **Threat magnitude similar, perfiles complementarios** — Parrot tiene scale + brand + dataset ML training corpus (3,200 POS!), PoloTab tiene velocity + YC network funding potential.
+
+**Implicación estratégica:** **Zenet's defensible moat NO es AI depth global — es AI depth × Mexican market depth.** Apicbase + MarginEdge tienen más AI depth pero zero MX readiness. PoloTab + Parrot tienen MX readiness alta + datasets enormes pero zero AI depth shipped. **Zenet tiene que ser el cruce** — y el cruce es donde está el white space. Window crítico **6-12 meses** antes que cualquiera de los dos Mexican modern POS decide AI pivot.
 
 ---
 
@@ -302,16 +310,31 @@ POS-first + integrated BoH + light HCM (mid-market full-suite). 51-200 empleados
 - **Por qué A.1:** Mexican-origin 15-20 años + national push via Clip partnership. **Subido de "below-radar" a A.1 por la señal Clip = momentum nacional.** Caveat: footprint actual nacional aún NOT comparable a SoftRestaurant 23 años, pero trayectoria lo posiciona como threat tier alto en 12-24 meses.
 - **Source:** `[Q2 / 2026-05-15]`
 
-#### Parrot Software (ParrotConnect)
+#### Parrot Software (ParrotConnect) ⭐ TIER ALPHA THREAT #2 — MODERN MEXICAN STARTUP (NOT legacy A.1)
 
-`[Classification: Indirect]` · `[Origin: México]` · `[MX Activity: POS #1 marketing claim MX]`
+`[Classification: Indirect]` · `[Origin: México — Monterrey-born, CDMX HQ + San Pedro Garza García NL]` · `[MX Activity: 3,200+ active POS · CDMX + Monterrey + Riviera Maya verified]` · `[MX Readiness: 8.5/10 verified Q4]` · `[Velocity: LOW-MEDIUM capable (modern stack + zero AI shipped + 3,200 POS ML training corpus)]` · `[Threat horizon: 6-12 meses si decide AI pivot]`
 
-POS-first con integrated inventory, delivery aggregation, payments (Parrot Pay terminal propio). Active paid advertising + direct sales team CDMX. QR menu, WhatsApp orders, terminal payments marketed heavily.
+> 🚨 **Major Q4 correction de v0.2:** Mi clasificación inicial A.1 incumbent legacy (junto a SoftRestaurant) era WRONG. Q4 verificó **founding April 2020 (NOT años legacy) + cloud-native Android-first desde inception**. Parrot es **modern Mexican startup hermano estructural de PoloTab**, NO legacy incumbent. Upgraded a Tier Alpha alongside PoloTab.
 
-- **Pricing:** Custom quotation MX `[SIN FUENTE PUBLICADA]` · US pricing page $24.95/mes/user (versión internacional) `[Q1]`
-- **Recent signal:** Capterra listing active 2026; 2024 blog content sobre restaurant challenges MX
-- **Por qué A.1:** Mexican-origin + nacional + POS #1 marketing claim + active direct sales = same wallet y decision-maker que Zenet
-- **Source:** `[Q1 / 2026-05-15]`
+Mexican foodtech SaaS founded **abril 2020** (soft-launch enero 2021) por **Roberto Cebrián + David Villarreal** (originally Monterrey, current HQ CDMX Colonia Juárez + office San Pedro Garza García NL). POS-first cloud-native con integrated inventory, delivery aggregation, payments (Parrot Pay terminal propio). 57 empleados. ~$21M ARR (GetLatka 2024, modeled NOT audited).
+
+- **Pricing tiers verified Q4:**
+  - Early Direct (2026 promo): **$949 MXN/mes**
+  - Pro / Quick Service: $1,800-2,200 MXN/mes
+  - Full Service: $2,800 MXN/mes (table service, 500 CFDI folios, KDS)
+  - + Parrot Pay terminal bundled/rented · payment processing fees (MDR undisclosed)
+- **Tech stack (Q4 verified):** **Cloud-native Android-first desde inception 2021** — NO legacy migration · offline-first mode · web admin portal · mobile reporting app. **iOS NOT supported** (deliberate choice). Active platform updates 2025 (Parrot Pay <4-second payments claim, tutorial refresh series, Industry Report 2025 published)
+- **AI shipped (Q4 verified) — CRITICAL GAP:** **AI Velocity Score 2/10 — marketing-stage AI only, ZERO production AI features.** Pero **3,200+ active POS real-time data dataset = ML training corpus rich** para demand forecasting / menu optimization / theft detection / customer retention modeling. **El first mover to ship AI analytics layer to SMB MX restaurants tendrá meaningful retention moat.** Parrot data asset is real; execution on AI is absent.
+- **Fundraise history (Q4 verified):**
+  - Seed ~$2.2M USD (late 2020/early 2021) led by Liquid 2 Ventures + Foundation Capital
+  - Series A **$9.5M USD enero 2022** led by F Prime Capital (Fidelity early-stage)
+  - **Total raised: ~$11.7M USD** · **NO Series B announced** as of mayo 2026
+- **Recent signal:** CFDI 4.0 SAT compliance abril 2023 · Parrot Pay terminal launched 2023 · 99.9% delivery acceptance rate UberEats/Rappi/DiDi · Parrot Industry Report 2025 (3,200+ POS dataset published) · Early Direct $949/mes 2026 promo · Instagram active 2025-2026 high-production content
+- **MX Readiness 8.5/10 (Q4):** CFDI 4.0 native ✓ (autofacturación QR) · Mexican Spanish fully localized ✓ · Delivery apps (Rappi/UberEats/DiDi) ✓ "Best Integration" awards 2022 · Local payment methods (card + cash, Parrot Pay) ✓ · Offline mode ✓ · Multi-sucursal ✓ explicit · WhatsApp + 365-day support ✓ · National coverage CDMX/MTY/Riviera Maya ✓ · **Gaps:** no iOS + closed payment ecosystem inflates TCO + **ZERO documented BC/TJ presence** + thin reviews (G2 0 reviews · Capterra 0 reviews · Trustpilot 4.2/5 n=6 — gap notable para $21M ARR claim)
+- **Geographic verification (Q4):** ✅ Monterrey/NL ✅ CDMX ✅ Riviera Maya · 🟡 Guadalajara claimed but unverified · 🔴 **Tijuana/BC: ZERO verified presence** · 🔴 Northern Border generally NOT documented
+- **Parrot Pay closed ecosystem vulnerability:** Like PoloTab proprietary hardware lock-in. Last.app uses this as competitive argument (operators con >MXN 600K/mes sales pueden negotiar mejor con bank TPV directly). Strategic implication: open ecosystem es vulnerability común de Parrot + PoloTab
+- **Por qué Tier Alpha (NOT A.1):** Mexican-origin + cloud-native modern stack 2020 + **3,200+ POS scale + brand recognition central MX** + capacity para ship AI features en 6-12 meses. **Parallel a PoloTab pero mayor scale + brand.** Trigger AI hiring + feature announcement = re-clasificación inmediata + accelerated Zenet timeline. ZERO BC/TJ presence = window opportunity para Zenet.
+- **Source:** `[Q1 / 2026-05-15 + Q4 / 2026-05-16 verified]`
 
 #### PoloTab ⭐ TIER ALPHA THREAT #1 — VELOCITY CAPABLE
 
@@ -539,15 +562,20 @@ Antes *"Abarrotes Punto de Venta"*. Perpetual-license POS para small commerce. P
 
 ---
 
-### 5.5 Síntesis Categoría A — la batalla real
+### 5.5 Síntesis Categoría A — la batalla real (Q4 refinado)
 
 **20 vendors active MX clasificados en 4 sub-categorías.** Hallazgos load-bearing:
 
 1. **El competition real Zenet enfrenta es 4-frente:** Mexican incumbents nacionales (A.1) + foreign entrants (A.2) + below-radar Mexican (A.3) + accounting-adjacencies (A.4). NO single dominant — fragmentación es la realidad MX.
-2. **Para el beachhead TJ específicamente:** Sistemas Sierra (A.3 Mexicali HQ + TJ office + mariscos sweet spot) es probably **más relevant que SoftRestaurant nacional** en Carlos Mendoza arquetipo. **Validar via design partner interviews TJ.**
-3. **Wansoft by Clip es threat tier alto creciente** — Mexican-origin 15-20 años + Clip-backed national push = 12-24 meses para igualar SoftRestaurant momentum.
-4. **Accounting-adjacent track (A.4) es underestimated threat** — *contable* gatekeeper + 300+ distribuidores Aspel + CONTPAQi+MyBusiness POS alliance = vendor coalition contra unified restaurant SaaS.
-5. **El switching playbook (doc 06) debe diferenciar por sub-categoría** — desplazar SoftRestaurant requires playbook diferente que desplazar Aspel CAJA o Sistemas Sierra.
+2. **🚨 Tier Alpha = DOS Mexican modern POS hermanos estructurales (Q4 finding):** **PoloTab y Parrot Software** son ambos cloud-native Mexican-origin con scale + capacity AI capable + zero AI shipped + ZERO BC/TJ verified presence. Threat magnitude paralela:
+   - **Parrot:** mayor scale (3,200+ POS · $21M ARR · 57 empleados · $11.7M raised) + ML training corpus rich (3,200 datasets reales)
+   - **PoloTab:** YC W23 credibility + agility (18-person team) + CTO ex-Goldman Sachs STRATS
+   - Misma dinámica de window 6-12 meses si decide AI pivot
+3. **Para el beachhead TJ específicamente:** Sistemas Sierra (A.3 Mexicali HQ + TJ office + mariscos sweet spot) es probably **más relevant que SoftRestaurant nacional** en Carlos Mendoza arquetipo. **Validar via design partner interviews TJ.** Plus: **ni PoloTab ni Parrot tienen BC/TJ verified presence** = window de uncontested geography para Zenet
+4. **Wansoft by Clip es threat tier alto creciente** — Mexican-origin 15-20 años + Clip-backed national push = 12-24 meses para igualar SoftRestaurant momentum.
+5. **Accounting-adjacent track (A.4) es underestimated threat** — *contable* gatekeeper + 300+ distribuidores Aspel + CONTPAQi+MyBusiness POS alliance = vendor coalition contra unified restaurant SaaS.
+6. **El switching playbook (doc 06) debe diferenciar por sub-categoría** — desplazar SoftRestaurant requires playbook diferente que desplazar Aspel CAJA, Sistemas Sierra, o **PoloTab/Parrot modern Mexican**.
+7. **Closed payment ecosystem vulnerability común a PoloTab + Parrot:** Last.app explicitly explota esta como argumento competitivo (operators >MXN 600K/mes pueden negotiate bank TPV mejor). Zenet positioning *"trabajamos sobre tu POS NOT replacement"* respeta open ecosystem · diferenciador potencial vs both.
 
 ---
 
@@ -923,7 +951,7 @@ Free POS con paid add-ons (inventory, employee management, advanced analytics) �
 |---|---|---|---|---|---|---|---|
 | 1 | **SoftRestaurant** | México (Mérida, 2003) | A.1 | Indirect | **10/10 native** | **SLOW** legacy | install base inertia / 36+ mo AI |
 | 2 | **Wansoft (by Clip)** | México (Monterrey, ~2006-2010) | A.1 | Indirect | **~8/10 inferred** | **LOW** legacy + Clip push | 12-24 mo install growth |
-| 3 | **Parrot Software** | México | A.1 | Indirect | **~8/10 inferred** | **MED** inferred | 12-24 mo |
+| 3 | **Parrot Software** ⭐ | México (Monterrey-born, CDMX HQ, **founded April 2020**) | **A.1 + Tier Alpha** | Indirect | **8.5/10 verified Q4** | **LOW-MEDIUM capable** zero AI shipped + 3,200 POS ML corpus | **6-12 mo** 🚨 |
 | 4 | **PoloTab** ⭐ | México (CDMX+MTY, 2022 YC W23) | **A.1 + Tier Alpha** | Indirect | **7.5/10 verified Q3** | **MEDIUM capable** zero AI shipped | **6-12 mo** 🚨 |
 | 5 | **Fudo** ⭐ | Argentina (CDMX office, ~2015-2018) | **A.2 + Tier Beta** | Indirect | **6.0/10 verified Q3** | **MEDIUM proven** (WhatsApp AI shipped) | **12-18 mo** 🚨 |
 | 6 | **Bistrosoft** | Argentina (founded enero 2019) | **A.2 + Tier Gamma** | Indirect | **5.0/10 verified Q3** | **MEDIUM no AI yet** | **18-24 mo** |
@@ -967,9 +995,9 @@ Free POS con paid add-ons (inventory, employee management, advanced analytics) �
 | 44 | **fastPOS** | México (CDMX) | E | Indirect (status unclear) | **Unknown** | **Unknown** | re-verify pre-cite |
 | 45 | **Punto de Venta Mexicali** | México (Mexicali) | E | Adjacent (status unclear) | **Unknown** | **Unknown** | likely hardware reseller |
 
-⭐ **= verified Q3 con 3-dimension framework completo (12 vendors)** · resto = inferred desde Q1/Q2
+⭐ **= verified Q3/Q4 con 3-dimension framework completo (13 vendors: 12 Q3 + Parrot Q4)** · resto = inferred desde Q1/Q2
 
-`[Source: Q1 + Q2 / 2026-05-15 + Q3 verified / 2026-05-16]` — 45 vendors mapped + classified · 12 with full 3-dim verification
+`[Source: Q1 + Q2 / 2026-05-15 + Q3 + Q4 verified / 2026-05-16]` — 45 vendors mapped + classified · 13 with full 3-dim verification
 
 ---
 
@@ -1077,11 +1105,14 @@ El market context confirma:
 
 > Watchlist reorganizado por **Tier Alpha-Epsilon framework** (cf. §3.4). Vendors Tier Alpha = monitoring **mensual** crítico. Tier Beta = mensual. Tier Gamma = trimestral. Tier Delta/Epsilon = semestral.
 
-#### 🚨 Tier Alpha (monitoring MENSUAL)
+#### 🚨 Tier Alpha (monitoring MENSUAL crítico)
+
+> 🚨 **Dos vendors paralelos en Tier Alpha (Q4 finding):** PoloTab y Parrot Software son hermanos estructurales. Monitoring mensual de **AMBOS** — fires from either is emergency response trigger.
 
 | Vendor | Trigger crítico | Threshold | Action si trigger fires |
 |---|---|---|---|
 | **PoloTab** | **AI feature SHIPPED en product** (NOT marketing claim) · AI/ML engineer hires LinkedIn · Series A/B announcement · BoH module launch · enterprise customer count published | Cualquiera de estos | **EMERGENCY RESPONSE** — accelerate Zenet beachhead timeline 50%, doble-down design partner outreach TJ, escalar messaging "AI-native MX" |
+| **Parrot Software** | **AI feature SHIPPED en product** (NOT Industry Report marketing claim) · AI/ML engineer hires LinkedIn · **Series B announcement** (NOT announced as of mayo 2026) · **BC/TJ customer logo publicado** · BoH AI module launch leveraging 3,200 POS dataset | Cualquiera de estos | **EMERGENCY RESPONSE** — paralelo a PoloTab response · escalar messaging "AI-native MX" + leverage Parrot Pay closed ecosystem como switching argument |
 
 #### 🚨 Tier Beta (monitoring MENSUAL)
 
@@ -1122,7 +1153,7 @@ El market context confirma:
 
 | Tier | Cadencia | Quien monitor | Inputs primarios |
 |---|---|---|---|
-| **Tier Alpha (PoloTab)** | **MENSUAL crítico** | **Founder personalmente** | LinkedIn (AI hires) · website (feature announcements) · ProductHunt · Crunchbase · YC blog |
+| **Tier Alpha (PoloTab + Parrot Software)** | **MENSUAL crítico** | **Founder personalmente** | LinkedIn (AI hires both) · websites (feature announcements) · ProductHunt + YC blog (PoloTab) · F Prime Capital portfolio + GetLatka (Parrot) · Crunchbase Series B watch (Parrot) · Instagram both (high-production marketing signals) |
 | **Tier Beta (Toteat + Fudo)** | **MENSUAL** | Founder | Vendor websites · LinkedIn (AI hires) · trade press LATAM · YouTube product demos |
 | **Tier Gamma (Last.app + Bistrosoft + Wansoft + alliances)** | TRIMESTRAL | Sales + founder shared | Websites · LinkedIn · trade press MX · InfoChannel events |
 | **Tier Delta (Nory + Apicbase + MarginEdge)** | SEMESTRAL | Product + founder | Vendor product updates · fundraises · LinkedIn (LATAM hires) · TechCrunch |
@@ -1241,7 +1272,8 @@ Esta intersección es **el verdadero white space**, NOT solo "AI-native ∩ BoH-
 
 | Battlefield | Razón | Acción prioritaria |
 |---|---|---|
-| **🚨 PoloTab AI pivot (Tier Alpha)** | Mexican-origin + modern stack + MX Readiness 7.5/10 + capacity capable. **El threat #1 al white space.** Si decide AI BoH layer en 6-12 meses con su distribution = catastrófico | Establecer 5+ design partners TJ + brand defendible "AI-native MX" antes Q4 2026 |
+| **🚨 PoloTab AI pivot (Tier Alpha #1)** | Mexican-origin + modern stack 2022 + MX Readiness 7.5/10 + YC W23 + agility 18-person team capable. Si decide AI BoH layer en 6-12 meses = catastrófico | Establecer 5+ design partners TJ + brand defendible "AI-native MX" antes Q4 2026 |
+| **🚨 Parrot Software AI pivot (Tier Alpha #2 — Q4 NEW)** | Mexican-origin Monterrey-born + modern cloud stack **2020** (NOT legacy) + MX Readiness **8.5/10** + 3,200+ POS dataset (ML training corpus rich) + 57 empleados + $11.7M raised + ZERO BC/TJ presence. Threat magnitude **paralela a PoloTab + mayor scale + brand recognition central MX**. Si ship AI demand forecasting / menu optimization en 6-12 meses con su data asset = catastrófico | Same priority as PoloTab · Position Parrot Pay closed ecosystem como switching argument · diferenciador "AI shipped, NOT 3,200 datasets en BI dashboard" |
 | **🚨 Toteat AI launch (Tier Beta)** | $7.4M funded específico para AI · MX Country Manager active · 5K+ MX restaurants claim · 12-18 mo realistic | Validate PMF + AI depth substantive antes que Toteat ship AI verifiable |
 | **🚨 Fudo BoH AI extension (Tier Beta)** | WhatsApp AI shipped diciembre 2025 = velocity proven · BoH AI = next step natural | Establecer "BoH AI native, NOT bolted on" como diferenciador clear |
 | **⚠️ A.3 Below-radar Mexican** (Sistemas Sierra, SICAR) | TJ beachhead probable enfrenta Sistemas Sierra **install base** MORE que SoftRestaurant · threat es **relationship loyalty + displacement narrative**, NOT innovation race | Primary research design partner interviews TJ — discovery: *"¿usas Sistemas Sierra? ¿qué te gusta? ¿qué te frustra?"* |
@@ -1254,6 +1286,7 @@ Esta intersección es **el verdadero white space**, NOT solo "AI-native ∩ BoH-
 | Threat | Window de tiempo | Acción prioritaria |
 |---|---|---|
 | **🚨 PoloTab AI pivot** | **6-12 meses** | Establecer 5+ design partners TJ + brand local + peer evidence reproducible **antes Q4 2026** |
+| **🚨 Parrot Software AI pivot** (Q4 NEW Tier Alpha) | **6-12 meses** | Paralelo a PoloTab response · explotar Parrot Pay closed ecosystem vulnerability como switching narrative · Zenet "trabajamos sobre tu POS NOT replacement" |
 | **🚨 Toteat AI launch substantive** | **12-18 meses** | Validate PMF + AI depth substantive antes Q3 2027 |
 | **🚨 Fudo BoH AI extension** | **12-18 meses** | Ship BoH AI depth nativo antes que Fudo extienda WhatsApp AI a BoH |
 | **⚠️ CONTPAQi + MyBusiness POS alliance maduración** | **6-12 meses** | Disarming script para *contable* vetting + CONTPAQi/Aspel integration roadmap |
@@ -1288,6 +1321,7 @@ Esta intersección es **el verdadero white space**, NOT solo "AI-native ∩ BoH-
 | **Q1** Discovery competitive landscape mainstream MX + LATAM + US reference (2024-2026) | DeepSearch | 2026-05-15 | `/Users/alanbahena/Downloads/Restaurant BoH Operations SaaS — Competitive Landscape Mexico + LATAM + US Reference Points (2024–2026).md` (115 references) | 29 |
 | **Q2** Mini-query below-radar regional MX vendors + accounting-adjacencies | DeepSearch | 2026-05-15 | `/Users/alanbahena/Downloads/Mexican Regional Restaurant POS BoH Software Vendors — Below-Radar Landscape.md` (74 references) | 15+ |
 | **Q3** 3-dimension threat assessment (tech maturity + AI execution velocity + Mexican market readiness) — focused 12 vendors | DeepSearch | 2026-05-16 | `/Users/alanbahena/Downloads/Zenet Competitive Threat Assessment — 3-Dimension Analysis (12 Vendors).md` (102 references) | 12 verified |
+| **Q4** Parrot Software / ParrotConnect targeted deep dive — 3-dim threat assessment | DeepSearch | 2026-05-16 | `/Users/alanbahena/Downloads/Parrot Software   ParrotConnect — Mexican Restaurant POS  3-Dimensional Threat Assessment.md` (50 references) | 1 verified (Parrot) |
 
 
 ### 16.2 Documentos del workspace referenciados (heredados pre-Q1/Q2)
