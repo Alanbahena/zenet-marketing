@@ -2,9 +2,9 @@
 name: Posicionamiento
 description: Posición competitiva de Zenet — qué categoría jugamos, para quién, contra qué, y por qué nos eligen
 type: brand-strategy
-last_updated: 2026-04-26
+last_updated: 2026-05-18
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -35,19 +35,22 @@ Para los principios y valores que sostienen este posicionamiento, ver `mision-vi
 
 ## 2. Categoría
 
-**Zenet es un sistema operativo cognitivo para back-of-house de restaurantes.**
+**Zenet es un sistema operativo cognitivo para back-of-house de restaurantes — una agencia de agentes especialistas AI orchestrated como equipo: procurement, costing, forecasting, supplier relations, recipes, operations, analytics y compliance, coordinados como sous chef cognitivo del operador.**
 
-Esta categoría es nueva y es nuestra. Definirla bien evita que el mercado nos coloque en cajas equivocadas (POS, app de inventario, ERP).
+Esta categoría es nueva y es nuestra. Definirla bien evita que el mercado nos coloque en cajas equivocadas (POS, app de inventario, ERP, o "SaaS con feature de IA").
 
-Tres componentes definen la categoría:
+Cuatro componentes definen la categoría:
 
 | Componente | Qué significa |
 |---|---|
 | **Sistema operativo** | No es una herramienta — es la capa donde convergen procesos, datos y decisiones. End-to-end, no aislada. |
 | **Cognitivo** | No solo almacena datos: los interpreta, los explica, propone acciones. La inteligencia es estructural, no decorativa. |
 | **Back-of-house** | Cocina, inventario, recetas, procesos, costos. Lo que pasa detrás del mostrador. No competimos por la capa transaccional (eso es POS). |
+| **Agencia de agentes especialistas** | El producto ES la agencia — cada agente AI es un especialista con dominio profundo (procurement, costing, forecasting, etc.) entregado al precio de SaaS. No es "SaaS con un chatbot encima"; es un equipo cognitivo coordinado que reemplaza el equivalente humano a 70-100x descuento. |
 
-**Implicación:** Cuando alguien pregunta "¿qué es Zenet?", la respuesta nunca es "un software de inventario", "un POS" o "un ERP". Es **un sistema operativo cognitivo para restaurantes**.
+**Implicación:** Cuando alguien pregunta "¿qué es Zenet?", la respuesta nunca es "un software de inventario", "un POS" o "un ERP". Es **un sistema operativo cognitivo para restaurantes — la agencia de especialistas AI que opera tu back-of-house contigo**.
+
+**Naming convention.** No nombramos "los agentes IA" como entidades separadas — son la inteligencia interna del sistema. **Zenet detecta. Zenet sugiere. Zenet acompaña** — como equipo cognitivo coordinado, sous chef especializado en cada dominio del back-of-house.
 
 ---
 

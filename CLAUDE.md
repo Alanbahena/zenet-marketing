@@ -33,7 +33,8 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 - **Subfolders 01-industry-and-market + 02-customer-research** se mantienen v1.0 + v0.1 sin cambios.
 - **Draft work pending review:** `_context/05-market-insights/01-vision-plataforma-zenet.md` v0.1 (platform play exploration).
 - **Branding** strong v1.0 en tres secciones (strategy, story, voice/tone). Visual identity, design system, examples + guidelines deferred.
-- **Pending Alan approval (heredado doc 07 §Apéndice):** propuesta de update CLAUDE.md §8 + Branding/posicionamiento.md con plural agency framing (*"el producto ES la agencia de agentes especialistas"*).
+- **Brand language update aplicado 2026-05-18:** plural agency framing (*"el producto ES la agencia de agentes especialistas"*) propagado a CLAUDE.md §4 + §7 + §8 + `Branding/_context/01-brand-strategy/posicionamiento.md` (v1.0 → v1.1, §2 Categoría reescrita con 4to componente "Agencia de agentes especialistas" + naming convention). Heredado doc 07 §Apéndice ahora resuelto.
+- **Cleanup aplicado 2026-05-18:** frontmatter YAML reparado en `03-competitive-analysis/04-feature-y-pricing-comparative.md` + `05-gtm-y-positioning-comparado.md` (`## name:` → `name:` con cierre `---`).
 - **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist, no internal structure yet.
 
 **Next work — pending user decision:** opciones discutidas con Alan 2026-05-18:
@@ -41,8 +42,9 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 - (B) Activar Product Strategy (absorbe Value Proposition).
 - (C) Activar SEO/Content o Social Media (aprovecha doc 07 VoC + doc 07 defensibility synthesis + LinkedIn ya activo).
 - (D) Activar Analytics and Reporting (foundational pero requiere data sources).
-- (E) Aplicar brand language update §Apéndice doc 07 (CLAUDE.md §8 + posicionamiento.md plural agency framing).
-- (F) Cleanup pendiente: frontmatter malformado en docs 04 + 05 de 03-competitive-analysis (`## name:` → `name:`) + decidir destino de `Value Proposition/` folder + `04-category-and-trends/` folder.
+- ~~(E) Aplicar brand language update §Apéndice doc 07~~ ✓ aplicado 2026-05-18.
+- (F) Cleanup pendiente restante: decidir destino de `Value Proposition/` folder + `04-category-and-trends/` folder (frontmatter docs 04 + 05 ya reparado 2026-05-18).
+- **Recomendación viva 2026-05-18:** activar Social Media (LinkedIn founder voice productizado) como siguiente departamento — research backbone v0.1 + voice principles + 30 verbatims + agency-as-SaaS framing ya disponibles. Validar voz en LinkedIn antes de comprometer a landing/SEO.
 
 ---
 
@@ -91,7 +93,7 @@ Canonical decisions that any agent or contributor should preserve. Each links to
 - **Primer valor:** "Aumentar, no reemplazar." Operadores que buscan reemplazar equipo con IA quedan fuera del scope (`02-definicion-y-alcance.md` exclusión cultural #2). → `Branding/_context/01-brand-strategy/mision-vision-valores.md`
 - **Voz operativa:** 9 principios invariables (lenguaje del operador, sin tech, sin hype, voz activa, una idea por oración, concreto sobre abstracto, el porqué no solo el qué, honestidad sobre marketing, "si no se entiende, fallamos"). → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
 - **Idioma:** español neutro latinoamericano con anclaje mexicano. **"Tú"** por defecto. "Usted" reservado para legal y prensa. → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
-- **Nombre:** **Zenet** (Z mayúscula, resto minúsculas). El producto ES el agente — no se nombra al "agente IA" como entidad separada. Zenet detecta. Zenet sugiere. Zenet acompaña. → CLAUDE.md sección 8
+- **Nombre:** **Zenet** (Z mayúscula, resto minúsculas). El producto ES la agencia de agentes especialistas — no se nombran "los agentes IA" como entidades separadas. Son la inteligencia interna del sistema. Zenet detecta. Zenet sugiere. Zenet acompaña — como equipo cognitivo coordinado, sous chef especializado en cada dominio del back-of-house. → CLAUDE.md sección 8 + `Branding/_context/01-brand-strategy/posicionamiento.md` §2 (v1.1, agency-as-SaaS framing aplicado 2026-05-18)
 
 ### Scope and ICP
 
@@ -156,7 +158,7 @@ Canonical decisions that any agent or contributor should preserve. Each links to
 - **7-layer language moat (deeper than translation):** (1) Product UI Spanish-MX · (2) Marketing/sales Spanish-MX · (3) Customer support Spanish-MX · (4) Spoken dialect/code (*"hablamos pronto"* · *"mano derecha"*) · (5) Cultural codes (*confianza* · *apechugar* · *cuaderno mental*) · (6) Operator vernacular fluency (VoC library compound asset) · (7) Voice principios operativos + brand authority. Foreign vendors fail layers 4-7 incluso con Spanish toggle. → doc 07 §4.2.2
 - **WhatsApp Business uso #3 operational interface como Zenet differentiator unique.** Uso #1 (CS) + uso #2 (sales) son commodities. **Uso #3 (operator interacts con AI agency via WhatsApp — upload facturas · query agents · receive alerts) es novel application MX-native.** Uso #4 (FoH customer-facing chatbot · Fudo) = different lane. → doc 07 §5.4 + `04-feature-y-pricing-comparative.md`
 - **Pure BoH AI layer architecture (coexistence-positioned):** hardware-agnostic + POS-agnostic + lives ON top of existing POS. Enables 95% coexistence scenarios. Diferenciador estructural vs POS-first competitors (Toast · PoloTab · Parrot · SoftRestaurant · Sistemas Sierra) y vs hardware-locked (PoloTab terminal · Parrot Pay · Wansoft/Clip ecosystem). → doc 07 §4.3
-- **Pending brand language update propuesta (§Apéndice doc 07):** *"El producto ES la agencia de agentes especialistas"* (plural reframe del singular *"el producto ES el agente"* en CLAUDE.md §8 + Branding/posicionamiento.md). Decisión Alan-pending — NOT executed automatically. → doc 07 §Apéndice
+- **Brand language update aplicado 2026-05-18:** plural agency framing *"el producto ES la agencia de agentes especialistas"* propagado a CLAUDE.md §4 + §7 + §8 + `Branding/_context/01-brand-strategy/posicionamiento.md` §2 (v1.0 → v1.1). El producto ES la agencia de agentes especialistas — cada agente AI es un especialista (procurement, costing, forecasting, supplier relations, recipes, operations, analytics, compliance) entregado al precio de SaaS. → doc 07 §Apéndice (heredado, ahora resuelto)
 
 ### Correcciones documentales relevantes
 
@@ -359,7 +361,7 @@ Meta-rules that apply across all work in this workspace. AI agents and human con
 
 - **Read voice/tone docs before writing user-facing copy.** The voice is operative, not decorative — applying it consistently is the difference between Zenet content and generic SaaS content.
 - **Vocabulario.md governs word choice.** Words to use, words to avoid, glossary. Trumps personal preference.
-- **El producto ES el agente.** Zenet detecta, sugiere, acompaña. No nombramos "el agente IA" como entidad separada.
+- **El producto ES la agencia de agentes especialistas.** Zenet detecta, sugiere, acompaña — como equipo cognitivo coordinado. No nombramos "los agentes IA" como entidades separadas; son la inteligencia interna del sistema.
 
 ### On geographic and market scope
 
@@ -437,7 +439,7 @@ Profesional · Serio con calidez ocasional · Calmado · Honesto/cauteloso · Di
 
 > **Zen** (orden) **+ net** (red) — orden en una red.
 
-Siempre escrito **Zenet** (Z mayúscula, resto minúsculas). El producto ES el agente — no se nombra al "agente IA" como entidad separada. Zenet detecta. Zenet sugiere. Zenet acompaña.
+Siempre escrito **Zenet** (Z mayúscula, resto minúsculas). El producto ES la agencia de agentes especialistas. No se nombran "los agentes IA" como entidades separadas — son la inteligencia interna del sistema. Zenet detecta. Zenet sugiere. Zenet acompaña — como equipo cognitivo coordinado, sous chef especializado en cada dominio del back-of-house.
 
 ### Idioma y mercado
 
@@ -620,5 +622,5 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 
 ---
 
-*Last updated: 2026-05-11.*
+*Last updated: 2026-05-18.*
 *Next planned update: when the next subfolder of Market Research begins active construction (option A: `02-competitive-analysis/`), or when another department starts active construction (options B-E), or when customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa, o cuando un new strategic decision belongs en section 4.*

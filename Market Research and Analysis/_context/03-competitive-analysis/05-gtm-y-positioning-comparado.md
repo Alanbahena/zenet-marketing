@@ -1,12 +1,12 @@
 ---
-
-## name: GTM y positioning comparado
+name: GTM y positioning comparado
 description: Análisis comparativo de GTM motion de los 20 vendors covered en docs 02-03 — channel strategy (direct/partner/self-serve/freemium), sales motion (demo/consultative/enterprise/founder-led), messaging hero, target ICP positioning, partner ecosystem (heredado doc 01 §11 distributor map), post-firma CS playbook, geographic strategy, brand archetype, pricing presentation patterns, industry events presence. Synthesis identifica saturated channels (avoid) vs underserved channels (Zenet priority) + Zenet GTM playbook recomendado.
 type: competitive-analysis
 last_updated: 2026-05-17
 status: active
 version: 0.1
 owner: Alan Bahena
+---
 
 # GTM y positioning comparado
 

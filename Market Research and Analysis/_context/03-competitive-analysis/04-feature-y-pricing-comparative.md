@@ -1,12 +1,12 @@
 ---
-
-## name: Feature y pricing comparative
+name: Feature y pricing comparative
 description: Matrices comparativas side-by-side de 20 vendors clave del competitive landscape Zenet — BoH features + AI capabilities + pricing tiers MXN + Mexican market readiness 10-factor + POS integration mode + *contable*/accounting integration + contract/trial/guarantees + support model + fundraise/scale signals. Snapshot archivable con refresh discipline cada 3 meses obligatorio. Estructurado en sub-tablas por vendor category (Direct OPERACIONAL MX · Tier Gamma + Incumbents · Below-radar + Accounting · Direct CATEGORIAL references) para readability.
 type: competitive-analysis
 last_updated: 2026-05-16
 status: active
 version: 0.1
 owner: Alan Bahena
+---
 
 # Feature y pricing comparative
 
