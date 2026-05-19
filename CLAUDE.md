@@ -35,6 +35,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 - **Branding** strong v1.0 en tres secciones (strategy, story, voice/tone). Visual identity, design system, examples + guidelines deferred.
 - **Brand language update aplicado 2026-05-18:** plural agency framing (*"el producto ES la agencia de agentes especialistas"*) propagado a CLAUDE.md §4 + §7 + §8 + `Branding/_context/01-brand-strategy/posicionamiento.md` (v1.0 → v1.1, §2 Categoría reescrita con 4to componente "Agencia de agentes especialistas" + naming convention). Heredado doc 07 §Apéndice ahora resuelto.
 - **Cleanup aplicado 2026-05-18:** frontmatter YAML reparado en `03-competitive-analysis/04-feature-y-pricing-comparative.md` + `05-gtm-y-positioning-comparado.md` (`## name:` → `name:` con cierre `---`).
+- **Nuevo doc 2026-05-18:** `05-market-insights/00-por-que-ahora.md` v0.1 — tesis temporal de Zenet (7 secciones: tesis 1 frase + 5 fuerzas cluster narrative · 10 sub-fuerzas + counterfactual histórico 2018/2020/2022 + external validation 4 angles + 6 windows-closing + 6 risks/leading indicators + 7 implicaciones operativas). Síntesis pura sobre research backbone (industry v1.0 + customer v0.1 + competitive v0.1). White space dual-layer framing (global + LATAM) como pivot del argumento. Pendiente v0.2: design partner validation + cifra verification (nearshoring · WhatsApp penetration · vertical AI premium).
 - **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist, no internal structure yet.
 
 **Next work — pending user decision:** opciones discutidas con Alan 2026-05-18:
@@ -63,7 +64,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **Market Research / 01-industry-and-market** | ✓ Complete v1.0 | 8 docs cerrados (ver Reference Table sección 13) |
 | **Market Research / 02-customer-research** | ✓ Complete v0.1 | 8 docs (etapas, metodología, JTBD, pains, journey, buying, objeciones, VoC). 19 queries Perplexity integradas. Verbatim library de 30 entries en doc 07 |
 | **Market Research / 03-competitive-analysis** | ✓ Complete v0.1 | 8 docs (marco, mapa, directos, indirectos, features-pricing, GTM, adoption/coexistence, defensibility). 5 Perplexity queries integradas. 45 vendors mapped. 14 moats analyzed en doc 07 synthesis. Agency-as-SaaS framing reframe |
-| **Market Research / 05-market-insights** | 🚧 Draft | `01-vision-plataforma-zenet.md` v0.1 |
+| **Market Research / 05-market-insights** | 🚧 Active v0.1 | 2 docs: `00-por-que-ahora.md` v0.1 (tesis temporal) + `01-vision-plataforma-zenet.md` v0.1 (platform play exploration) |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
 | **Product Strategy** | Pending | Will absorb Value Proposition (consolidation decided) |
@@ -231,8 +232,9 @@ claude_code/                                # Root of this workspace
 │   │   │   ├── 07-diferenciacion-zenet-y-defensibility.md
 │   │   │   └── _archive/
 │   │   ├── 04-category-and-trends/         empty (folder exists)
-│   │   └── 05-market-insights/             🚧 draft
-│   │       └── 01-vision-plataforma-zenet.md  (v0.1 draft)
+│   │   └── 05-market-insights/             🚧 active v0.1 — 2 docs
+│   │       ├── 00-por-que-ahora.md             (v0.1 tesis temporal)
+│   │       └── 01-vision-plataforma-zenet.md   (v0.1 platform play draft)
 │   ├── _sop/                               empty
 │   ├── _templates/                         empty
 │   └── skills/                             empty
@@ -612,6 +614,7 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | GTM y positioning comparado (10 GTM dimensions · 20 vendors · 14 channel players · consultor partner como extensión Zenet model · Zenet GTM playbook) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/05-gtm-y-positioning-comparado.md` |
 | Adopción, coexistencia y switching dynamics (95% coexistence vs 5% switching · 4 scenarios · 13 triggers · 11 vendor scripts · 6 Mexican cultural dynamics · *contable* gating Stage F) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/06-switching-dynamics-y-incumbente.md` |
 | Diferenciación Zenet y defensibility (14 moats · 4-dim framework · stack ranking · anti-moats · decay timeline · anti-fragility audit · transferability matriz · investor pitch + Q&A · agency-as-SaaS framing) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` |
+| Tesis temporal Zenet — por qué ahora (5 fuerzas + counterfactual + external validation + windows-closing + risks + operational implications) | ✓ active v0.1 | `Market Research and Analysis/_context/05-market-insights/00-por-que-ahora.md` |
 | Visión platform play / análisis estratégico de expansión vertical | 🚧 draft v0.1 | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
 | Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |

@@ -2,9 +2,9 @@
 name: Feature y pricing comparative
 description: Matrices comparativas side-by-side de 20 vendors clave del competitive landscape Zenet — BoH features + AI capabilities + pricing tiers MXN + Mexican market readiness 10-factor + POS integration mode + *contable*/accounting integration + contract/trial/guarantees + support model + fundraise/scale signals. Snapshot archivable con refresh discipline cada 3 meses obligatorio. Estructurado en sub-tablas por vendor category (Direct OPERACIONAL MX · Tier Gamma + Incumbents · Below-radar + Accounting · Direct CATEGORIAL references) para readability.
 type: competitive-analysis
-last_updated: 2026-05-16
+last_updated: 2026-05-18
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -787,6 +787,16 @@ $3.25M Loaded (NZ, NO MX)
 
 ### 11.4 Pricing strategy recommendations based on matrices
 
+> ⚠️ **Nota de temporalidad (agregada 2026-05-18):** El pricing 3-tier descrito abajo ($1,200 / $1,500 / $1,800) representa el **estado objetivo Q3-Q4 2027**, NO el pricing operativo actual de Zenet. Este pricing asume producto completo con AI BoH funcional (variance + pronóstico + procurement automation + invoice processing), integraciones CONTPAQi/Aspel SAE funcionando, y soporte 365d estabilizado. Mientras Zenet esté pre-PMF con solo Fase 1 construida, opera un **modelo transitorio Año 1** decidido por Product Strategy (cf. `08_Estrategia-Producto/CLAUDE.md` §4 "Pricing y modelo comercial" + `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` §14). Migración al pricing canónico se dispara cuando se cumplan 5 triggers explícitos. **Refresh trigger crítico:** cuando esos triggers se cumplan, actualizar esta sección con confirmación de transición ejecutada + remover esta nota.
+
+**Modelo transitorio Año 1 (operativo actualmente):**
+
+- **Servicio de Estandarización:** $15,000 MXN/sucursal — one-time, 90 días de proyecto. Entrega manual operativo + procesos + capacitación + sistema corriendo durante el servicio + paquete exportable al final.
+- **Mantenimiento Zenet (opcional post-servicio):** $1,000 MXN/mes/sucursal precio normal; $700 MXN/mes con 30% descuento perpetuo de Socio Fundador del programa de design partners. Mantiene software corriendo + soporte + actualizaciones.
+- **Design partners (Cohort 1 Estandarización 2026):** Servicio gratis durante los 90 días del piloto + 30% descuento perpetuo si convierten a Mantenimiento.
+
+**Pricing canónico (estado objetivo Q3-Q4 2027):**
+
 **Final positioning recommendation:**
 
 > **Zenet $1,500 MXN/mes/sucursal target tier =**
@@ -797,13 +807,23 @@ $3.25M Loaded (NZ, NO MX)
 > - Mid-tier accessible vs LATAM foreign (Fudo Pro $1,050, Bistrosoft $1,599)
 > - 35% premium vs Aspel CAJA generic POS ($1,108)
 
-**Tier structure 3-tier (Fase 1):**
+**Tier structure 3-tier (post-transición Q3-Q4 2027):**
 
 - **Básico $1,200 MXN/mes** — single location · core BoH + AI invoice processing
 - **Pro $1,500 MXN/mes** — multi-location + procurement automation + demand forecasting
 - **Multi-sitio $1,800 MXN/mes** — full agentic AI + custom integrations
 
-**Fase 0 design partners:** 20-30% descuento annual + 30-60 day pilot · NO onboarding fee.
+**Fase 0 design partners (modelo Año 1 transitorio):** ver bloque "Modelo transitorio Año 1" arriba — Servicio gratis durante 90 días + 30% descuento perpetuo en Mantenimiento.
+
+**Triggers de migración al pricing canónico** (los 5 deben cumplirse):
+
+1. Fase 2 (Inventario y distribución) lista y validada con Cohort 2 de design partners.
+2. AI BoH funcional shipped (variance detection + pronóstico de consumo + procurement automation + invoice processing AI).
+3. Integraciones CONTPAQi / Aspel SAE funcionando.
+4. Mínimo 15-25 clientes pagados (combinación Mantenimiento + Fase 2).
+5. Soporte estabilizado con SLA documentado (no solo founder-led).
+
+**Términos de transición para clientes Año 1 existentes (cuando los 5 triggers se cumplan):** upgrade automático a tier Pro ($1,500/mes) con 30% descuento perpetuo de cliente original → $1,050/mes/sucursal. Setup fee de transición exento. Precio congelado 24 meses adicionales.
 
 ---
 
@@ -930,5 +950,5 @@ Heredadas de doc 01 §16.1 + doc 02 §8.1 + doc 03 §16.1:
 
 ---
 
-*Last updated: 2026-05-16.*
-*Next planned update: Q3 2026 (90 days) or trigger event (cf. §12.3).*
+*Last updated: 2026-05-18 (v0.2 — added §11.4 temporal nota distinguiendo pricing canónico Q3-Q4 2027 vs modelo transitorio Año 1 operativo actualmente).*
+*Next planned update: Q3 2026 (90 days) or trigger event (cf. §12.3) — incluido: cuando se cumplan los 5 triggers de migración a pricing canónico, remover la nota temporal de §11.4 y confirmar transición.*
