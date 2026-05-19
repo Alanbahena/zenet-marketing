@@ -24,21 +24,25 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
-**As of 2026-05-11:**
+**As of 2026-05-18:**
 
-- **Subfolder `Market Research and Analysis/_context/02-customer-research/` closed at v0.1** with 8 docs (etapas-y-marco, metodología, JTBD, pains-y-workarounds, customer-journey, buying-process, objeciones, voice-of-customer). 30-entry verbatim library curated en doc 07 con metadata estructurada (persona × theme × stage × marketing use-case). Triangulación Perplexity Pro: 5 queries en doc 03, 5 en doc 04, 5 en doc 05, 3 en doc 06 + 1 foundational query = **19 queries integradas**.
-- **Disciplina de índices aplicada:** los 8 docs de `02-customer-research/` ahora tienen `## Índice` consistente con el formato de `01-industry-and-market/`. Frontmatter malformado de `03-pains-y-workarounds.md` corregido (estaba con `## name:` en vez de `name:` y sin cierre `---`).
-- **Subfolder `Market Research and Analysis/_context/01-industry-and-market/` cerrado v1.0** (sin cambios desde 2026-05-01) — 8 docs.
+- **Subfolder `Market Research and Analysis/_context/03-competitive-analysis/` cerrado v0.1** con 8 docs:
+  - 00-marco (v1.0) · 01-mapa competitivo (v0.3) · 02-directos deep dive (v0.2) · 03-indirectos (v0.2) · 04-features-pricing (v0.1) · 05-GTM positioning (v0.1) · 06-adoption/coexistence (v0.1) · 07-defensibility synthesis (v0.1).
+  - **5 Perplexity Pro queries integradas** (Q1-Q5 · DeepSearch 2026-05-15/16) · 45 vendors mapped · 14 moats analyzed en doc 07 · 8 matrices comparativas en doc 04 · 11 vendor scripts coexistence/switching en doc 06.
+  - **Reframing fundamental v0.1:** moat #1 umbrella reframed como **multi-agent AI specialist agency-as-SaaS** (NOT typical SaaS · NOT pure consulting agency) · 95% Zenet scenarios MX = adoption/coexistence (NOT switching).
+- **Subfolders 01-industry-and-market + 02-customer-research** se mantienen v1.0 + v0.1 sin cambios.
 - **Draft work pending review:** `_context/05-market-insights/01-vision-plataforma-zenet.md` v0.1 (platform play exploration).
 - **Branding** strong v1.0 en tres secciones (strategy, story, voice/tone). Visual identity, design system, examples + guidelines deferred.
+- **Pending Alan approval (heredado doc 07 §Apéndice):** propuesta de update CLAUDE.md §8 + Branding/posicionamiento.md con plural agency framing (*"el producto ES la agencia de agentes especialistas"*).
 - **Other departments** (Analytics, Email/CRM, Product Strategy, SEO/Content, Social Media) remain pending — folders exist, no internal structure yet.
 
-**Next work — pending user decision:** opciones discutidas con Alan 2026-05-11:
-- (A) Próximo subfolder Market Research — `02-competitive-analysis/` (docs 02 + 06 + 07 de industry-and-market + doc 06 de customer-research ya empujaron hacia ahí).
-- (B) Cerrar `_context/05-market-insights/` v0.1 draft → v1.0.
-- (C) Activar primer departamento — Product Strategy (absorbe value proposition).
-- (D) Activar SEO/Content o Social Media (aprovecha doc 07 VoC + LinkedIn ya activo).
-- (E) Activar Analytics and Reporting (foundational pero requiere data sources).
+**Next work — pending user decision:** opciones discutidas con Alan 2026-05-18:
+- (A) Próximo subfolder Market Research — `04-category-and-trends/` (folder exists empty) o `05-market-insights/` v0.1 draft → v1.0.
+- (B) Activar Product Strategy (absorbe Value Proposition).
+- (C) Activar SEO/Content o Social Media (aprovecha doc 07 VoC + doc 07 defensibility synthesis + LinkedIn ya activo).
+- (D) Activar Analytics and Reporting (foundational pero requiere data sources).
+- (E) Aplicar brand language update §Apéndice doc 07 (CLAUDE.md §8 + posicionamiento.md plural agency framing).
+- (F) Cleanup pendiente: frontmatter malformado en docs 04 + 05 de 03-competitive-analysis (`## name:` → `name:`) + decidir destino de `Value Proposition/` folder + `04-category-and-trends/` folder.
 
 ---
 
@@ -56,6 +60,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **Branding** — supporting folders (`_sop`, `_templates`, `skills`, `assets`) | Empty | |
 | **Market Research / 01-industry-and-market** | ✓ Complete v1.0 | 8 docs cerrados (ver Reference Table sección 13) |
 | **Market Research / 02-customer-research** | ✓ Complete v0.1 | 8 docs (etapas, metodología, JTBD, pains, journey, buying, objeciones, VoC). 19 queries Perplexity integradas. Verbatim library de 30 entries en doc 07 |
+| **Market Research / 03-competitive-analysis** | ✓ Complete v0.1 | 8 docs (marco, mapa, directos, indirectos, features-pricing, GTM, adoption/coexistence, defensibility). 5 Perplexity queries integradas. 45 vendors mapped. 14 moats analyzed en doc 07 synthesis. Agency-as-SaaS framing reframe |
 | **Market Research / 05-market-insights** | 🚧 Draft | `01-vision-plataforma-zenet.md` v0.1 |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
@@ -67,8 +72,9 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 **Strategic posture (current):**
 
 - **Branding foundation is enough to operate.** No new branding docs unless real published outputs accumulate (then `06-application-examples`) or visual identity decisions firm up (then `03-visual-identity` + `05-design-system`).
-- **Market Research subfolders 01 + 02 form the research backbone.** Subfolder 01 (industry-and-market) is canonical at v1.0. Subfolder 02 (customer-research) cerró v0.1 — `discovery-pre-PMF` etapa declarada, scaffold honesto con disciplina de gaps + roadmap de primary research desde design partners. Triangulación externa exhaustiva via 19 queries Perplexity Pro.
-- **Verbatim library doc 07 es activo de marketing operations.** 30 entries con metadata estructurada — primer artefacto retrievable para copy, landing, social, sales enablement. Crecerá con design partner interviews.
+- **Market Research subfolders 01 + 02 + 03 form the research backbone.** Subfolder 01 (industry-and-market) is canonical at v1.0. Subfolder 02 (customer-research) cerró v0.1 — `discovery-pre-PMF` etapa declarada, scaffold honesto con disciplina de gaps + roadmap de primary research desde design partners. Subfolder 03 (competitive-analysis) cerró v0.1 — 45 vendors mapped + 14 moats analyzed con 4-dim framework (durability × defensibility × strategic value × category creation potential). Triangulación externa via 19 + 5 = **24 queries Perplexity Pro integradas**.
+- **Verbatim library doc 07 (subfolder 02) es activo de marketing operations.** 30 entries con metadata estructurada — primer artefacto retrievable para copy, landing, social, sales enablement. Crecerá con design partner interviews.
+- **Defensibility synthesis doc 07 (subfolder 03) es activo de strategic decisions + investor pitch.** 14 moats stack ranked + anti-fragility audit + transferability matriz (5-phase expansion) + investor Q&A + what NOT to compete on. Moat #1 umbrella: agency-as-SaaS para restaurant BoH (NEW category creation positioning). Pending Alan approval brand language update §Apéndice.
 - **Department activation order is user-driven.** Alan decides which department starts next based on which marketing operation needs to be productized first.
 
 ---
@@ -140,6 +146,18 @@ Canonical decisions that any agent or contributor should preserve. Each links to
 - **Verbatim library — 30 entries v0.1 con metadata estructurada** (V-001 → V-030, 10 gold 🌟 / 13 load-bearing ⭐ / 7 illustrative •). Anti-falsificación rules explícitas (NO inventar, NO compuestos, traducción ES marked NOT replacement). Indices por persona / theme / stage / marketing use-case. Activo declarado: 80%+ de authentic operator language vive en closed channels — design partner interviews TJ/CDMX producirán literatura primaria. → `02-customer-research/07-voice-of-customer.md`
 - **5-stage research maturity model declarado para sección 02:** discovery-pre-PMF → design-partner-validation → early-customer-evidence → PMF-and-segmentation → scale-research. Etapa actual: `discovery-pre-PMF`. Trigger de salida hacia etapa 2: 5+ design partners activos + Mes 2 retention signal positivo. → `02-customer-research/00-etapas-y-marco-de-investigacion.md`
 
+### Competitive analysis — findings load-bearing (subfolder 03 v0.1)
+
+- **White space declarado:** AI-native ∩ BoH-first ∩ MX/LATAM active = ∅. Ningún vendor de los 45 mapped combina las 3 dimensiones hoy. → `03-competitive-analysis/01-mapa-competitivo-y-categorias.md`
+- **Moat #1 umbrella = Multi-agent AI specialist agency-as-SaaS.** NOT typical SaaS · NOT pure consulting agency · ES "agencia de especialistas AI entregada via SaaS". Cada AI agent = specialist con domain expertise + operator-language fluency. Together forman agency at SaaS pricing power. Esta es la categoría que Zenet crea (NOT competing en POS+AI feature SaaS lane). → `03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` §4.1
+- **Pricing arbitrage agency-vs-human-team:** $1,500 MXN/mes vs $105K-185K MXN/mes equivalent human specialist team (procurement + costing + forecasting + operations + analytics + compliance + supplier + recipes) = **70-100x discount**. Frame for investor pitch + sales messaging. → doc 07 §4.1.3
+- **95% adoption/coexistence vs 5% switching framing (doc 06 reframing fundamental v0.1):** Zenet positioning core = pure BoH AI layer · hardware-agnostic · POS-agnostic · *"trabajamos sobre tu POS, no lo reemplazamos"*. Sales motion debe partir de **additive framing** (NOT replacement). Discovery question primary: *"¿qué sistema usas hoy?"* → identifies scenario (A pure adoption / B POS coexistence / C true switching rare / D *contable* coexistence) → customizes approach. → `03-competitive-analysis/06-switching-dynamics-y-incumbente.md`
+- **Asymmetric competitive barriers twin-lens:** Foreign vendor MX entry friction 24-36 meses per country (7-layer language + cultural decoder + GTM rebuild + regulatory + integration + distributor + peer references) + Mexican legacy AI rebuild 3-5 años (capital + talent + architecture constraints). Zenet head start at intersection ÚNICA = **18-36 meses minimum cumulative**. → doc 07 §4.13
+- **7-layer language moat (deeper than translation):** (1) Product UI Spanish-MX · (2) Marketing/sales Spanish-MX · (3) Customer support Spanish-MX · (4) Spoken dialect/code (*"hablamos pronto"* · *"mano derecha"*) · (5) Cultural codes (*confianza* · *apechugar* · *cuaderno mental*) · (6) Operator vernacular fluency (VoC library compound asset) · (7) Voice principios operativos + brand authority. Foreign vendors fail layers 4-7 incluso con Spanish toggle. → doc 07 §4.2.2
+- **WhatsApp Business uso #3 operational interface como Zenet differentiator unique.** Uso #1 (CS) + uso #2 (sales) son commodities. **Uso #3 (operator interacts con AI agency via WhatsApp — upload facturas · query agents · receive alerts) es novel application MX-native.** Uso #4 (FoH customer-facing chatbot · Fudo) = different lane. → doc 07 §5.4 + `04-feature-y-pricing-comparative.md`
+- **Pure BoH AI layer architecture (coexistence-positioned):** hardware-agnostic + POS-agnostic + lives ON top of existing POS. Enables 95% coexistence scenarios. Diferenciador estructural vs POS-first competitors (Toast · PoloTab · Parrot · SoftRestaurant · Sistemas Sierra) y vs hardware-locked (PoloTab terminal · Parrot Pay · Wansoft/Clip ecosystem). → doc 07 §4.3
+- **Pending brand language update propuesta (§Apéndice doc 07):** *"El producto ES la agencia de agentes especialistas"* (plural reframe del singular *"el producto ES el agente"* en CLAUDE.md §8 + Branding/posicionamiento.md). Decisión Alan-pending — NOT executed automatically. → doc 07 §Apéndice
+
 ### Correcciones documentales relevantes
 
 - **K'u'uk (Pedro Evia) cerró sus puertas** — no es referente activo Mérida. El referente activo de la nueva cocina yucateca es Néctar/Huniik (Roberto Solís). → `07-geografia-y-expansion.md` §13.2
@@ -200,6 +218,17 @@ claude_code/                                # Root of this workspace
 │   │   │   ├── 06-objeciones-y-fricciones-de-adopcion.md
 │   │   │   ├── 07-voice-of-customer.md
 │   │   │   └── _archive/
+│   │   ├── 03-competitive-analysis/        ✓ v0.1 — 8 docs
+│   │   │   ├── 00-marco-y-disciplina-competitive.md
+│   │   │   ├── 01-mapa-competitivo-y-categorias.md
+│   │   │   ├── 02-competidores-directos-deep-dive.md
+│   │   │   ├── 03-competidores-indirectos-y-adyacentes.md
+│   │   │   ├── 04-feature-y-pricing-comparative.md
+│   │   │   ├── 05-gtm-y-positioning-comparado.md
+│   │   │   ├── 06-switching-dynamics-y-incumbente.md
+│   │   │   ├── 07-diferenciacion-zenet-y-defensibility.md
+│   │   │   └── _archive/
+│   │   ├── 04-category-and-trends/         empty (folder exists)
 │   │   └── 05-market-insights/             🚧 draft
 │   │       └── 01-vision-plataforma-zenet.md  (v0.1 draft)
 │   ├── _sop/                               empty
@@ -271,8 +300,9 @@ owner: [Name of document owner]
 - `voice-and-tone` — voice principles, vocabulary, writing rules
 - `market-research` — industry, market, segmentation, ICP, ecosystem, geography, regulatory docs
 - `customer-research` — JTBD, pains, journey, buying process, objections, voice-of-customer docs (subfolder 02 de Market Research)
+- `competitive-analysis` — competitive mapping, vendor deep dives, feature/pricing comparison, GTM/positioning comparison, adoption/coexistence dynamics, defensibility synthesis (subfolder 03 de Market Research)
 
-New types will be added as new departments come online (`competitive-analysis`, `content-template`, `campaign-brief`, `value-proposition`, etc.).
+New types will be added as new departments come online (`content-template`, `campaign-brief`, `value-proposition`, etc.).
 
 ### Extended frontmatter for customer-research docs
 
@@ -500,7 +530,7 @@ Before any final document is saved, it should pass the four-layer checklist in `
 
 This section tracks Claude Code slash commands implemented in `<department>/skills/` folders across the workspace.
 
-**Current state (2026-05-11):** No skills implemented yet. Each department's `skills/` folder is empty.
+**Current state (2026-05-18):** No skills implemented yet. Each department's `skills/` folder is empty.
 
 **Planned skill domains** (in approximate order of likely activation):
 
@@ -523,9 +553,10 @@ This section tracks Claude Code slash commands implemented in `<department>/skil
 3. **For any vocabulary question:** `Branding/_context/04-voice-and-tone/vocabulario.md` first, then `voz-y-tono.md` for principles.
 4. **For market research questions** (sizing, ICP, geography, regulatory, ecosystem): start in `Market Research and Analysis/_context/01-industry-and-market/` — all 8 docs at v1.0.
 5. **For customer research questions** (JTBD, pains/workarounds, customer journey, buying process, objections, verbatim language): start in `Market Research and Analysis/_context/02-customer-research/` — all 8 docs at v0.1. For copy/landing/social/sales enablement specifically, the **verbatim library is doc 07** (30 entries con metadata). Recordar: etapa actual `discovery-pre-PMF` — hallazgos directionally well-supported pero NOT validated con design partners todavía.
-6. **For format questions:** `reglas-de-redaccion.md`.
-7. **Never guess or improvise.** Point to a source of truth or declare `[SIN FUENTE PUBLICADA]` and ask. Working principles in section 7 govern.
-8. **Apply the confirmation behavior:** never advance to next section or document without explicit user OK.
+6. **For competitive intelligence questions** (vendor landscape, moat analysis, GTM comparison, switching/coexistence dynamics, defensibility): start in `Market Research and Analysis/_context/03-competitive-analysis/` — all 8 docs at v0.1. **Doc 07 defensibility synthesis es el doc de referencia** para investor pitch + strategic decisions (14 moats + stack ranking + anti-moats + investor Q&A + what NOT to compete on). **Doc 06 es operational sales playbook** (4 scenarios A/B/C/D + 13 triggers + 11 per-vendor scripts + Mexican cultural dynamics). Recordar: 95% scenarios MX son adoption/coexistence (NOT switching).
+7. **For format questions:** `reglas-de-redaccion.md`.
+8. **Never guess or improvise.** Point to a source of truth or declare `[SIN FUENTE PUBLICADA]` and ask. Working principles in section 7 govern.
+9. **Apply the confirmation behavior:** never advance to next section or document without explicit user OK.
 
 ### If you're a freelancer or new contributor
 
@@ -571,6 +602,14 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Buying process + criterios de decisión (sales cycle 8 stages, WTP $1,500 MXN, deal-breakers, 3-lane timing, Mexican buying patterns) | ✓ active v0.6 | `Market Research and Analysis/_context/02-customer-research/05-buying-process-y-criterios-de-decision.md` |
 | Objeciones + fricciones de adopción (catálogo 8 categorías, 4-stage decay model, data maintenance collapse, LAER Mexican-adapted) | ✓ active v0.4 | `Market Research and Analysis/_context/02-customer-research/06-objeciones-y-fricciones-de-adopcion.md` |
 | Voice of customer verbatim library (30 entries con metadata, top 10 gold-tier, indices persona × theme × stage × use-case) | ✓ active v0.1 | `Market Research and Analysis/_context/02-customer-research/07-voice-of-customer.md` |
+| Marco y disciplina competitive analysis (refresh cadence, source hygiene, anti-falsificación, evidence tags, classification lens) | ✓ active v1.0 | `Market Research and Analysis/_context/03-competitive-analysis/00-marco-y-disciplina-competitive.md` |
+| Mapa competitivo + 45 vendors clasificados (categorías A-E + 3-dim threat framework + white space declarado) | ✓ active v0.3 | `Market Research and Analysis/_context/03-competitive-analysis/01-mapa-competitivo-y-categorias.md` |
+| Competidores prioritarios deep dive (11 vendors — 4 Direct OPERACIONAL MX + 7 Direct CATEGORIAL foreign references) | ✓ active v0.2 | `Market Research and Analysis/_context/03-competitive-analysis/02-competidores-directos-deep-dive.md` |
+| Competidores indirectos y adyacentes (30+ vendors variable depth — incumbents legacy + accounting-adjacencies + Tier Gamma + Sistemas Sierra + Oracle Simphony + radar) | ✓ active v0.2 | `Market Research and Analysis/_context/03-competitive-analysis/03-competidores-indirectos-y-adyacentes.md` |
+| Feature y pricing comparative (8 matrices · 20 vendors · MX Readiness 10-factor · POS integration · *contable* integration · contract/trial/guarantees) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/04-feature-y-pricing-comparative.md` |
+| GTM y positioning comparado (10 GTM dimensions · 20 vendors · 14 channel players · consultor partner como extensión Zenet model · Zenet GTM playbook) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/05-gtm-y-positioning-comparado.md` |
+| Adopción, coexistencia y switching dynamics (95% coexistence vs 5% switching · 4 scenarios · 13 triggers · 11 vendor scripts · 6 Mexican cultural dynamics · *contable* gating Stage F) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/06-switching-dynamics-y-incumbente.md` |
+| Diferenciación Zenet y defensibility (14 moats · 4-dim framework · stack ranking · anti-moats · decay timeline · anti-fragility audit · transferability matriz · investor pitch + Q&A · agency-as-SaaS framing) | ✓ active v0.1 | `Market Research and Analysis/_context/03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` |
 | Visión platform play / análisis estratégico de expansión vertical | 🚧 draft v0.1 | `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` |
 | Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
