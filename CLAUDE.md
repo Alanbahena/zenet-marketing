@@ -1,22 +1,31 @@
-# CLAUDE.md — Zenet Marketing
+# CLAUDE.md — Zenet Strategic Operations
 
 ## 1. Project Overview
 
-This is the **marketing operations workspace for Zenet**. It centralizes brand context, market research, content templates, standard operating procedures, and Claude Code skills that automate recurring marketing work — organized by marketing department.
+This is the **founder strategic operations workspace for Zenet**. It centralizes brand foundation, market research, product strategy, go-to-market operations, capital planning, content templates, standard operating procedures, and Claude Code skills that automate recurring strategic and marketing work — organized by discipline into three layers: **Foundation** (brand · research) · **Strategy** (product strategy + GTM + capital) · **Execution** (marketing channels).
 
 This is **not** a software project. It contains documentation, templates, and slash-command skills. The Zenet production software (Next.js + FastAPI + Supabase) lives in a separate repository (see section 9, Data Connections).
 
-**Designed for collaboration between humans and AI agents.** The workspace is structured so that any contributor — Alan, a freelancer, or a Claude Code agent starting from zero — can pick up a marketing task and execute it consistently with Zenet's brand, voice, and strategy. Every doc declares its purpose in frontmatter; every department follows the same pattern; every strategic decision is documented with a pointer to its source.
+**Designed for collaboration between humans and AI agents.** The workspace is structured so that any contributor — Alan, a freelancer, or a Claude Code agent starting from zero — can pick up a strategic or marketing task and execute it consistently with Zenet's brand, voice, and strategy. Every doc declares its purpose in frontmatter; every department follows the same pattern; every strategic decision is documented with a pointer to its source.
 
-**Disciplines this workspace will eventually support via skills:**
+**Why "strategic operations" not "marketing":** pre-PMF, founder roles collapse — Alan operates as founder + CEO + product strategist + marketing lead simultaneously. The workspace reflects that reality. At Series A+ when dedicated heads of product / marketing / sales exist, this workspace may split. For now, single source of truth wins over organizational orthodoxy.
 
-- Market research and analysis
-- Reports and analytics
-- Product strategy planning
-- Digital campaigns
-- Content creation (long-form, social, email)
-- Offer and value proposition design
-- Copywriting
+**Disciplines this workspace supports (or will support via skills):**
+
+**Foundation layer:**
+- Brand strategy, story, voice and tone
+- Market research and analysis (industry · customer · competitive · trends · insights)
+
+**Strategy layer:**
+- Product strategy (VP design · features · scope · pricing · offer)
+- Go-to-market operations (sales motion · outreach · partner ecosystem)
+- Capital planning and fundraising (milestone-anchored roadmap · investor pipeline · narrative arc)
+
+**Execution layer:**
+- Analytics and reporting
+- Email and CRM campaigns
+- SEO and content
+- Social media content creation
 
 If you're an AI agent reading this for the first time, jump to section 12 ("How to use this project") for a fast start.
 
@@ -24,8 +33,10 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
-**As of 2026-05-18:**
+**As of 2026-05-22:**
 
+- **Workspace identity reframed (Opción A):** de "marketing operations" → **"founder strategic operations"**. CLAUDE.md §1 + §3 + §5 + §6 updated. Razón: pre-PMF Alan ejecuta founder + CEO + product strategy + marketing roles colapsados; estructura refleja realidad operativa. Disciplinas agrupadas en 3 layers: Foundation (brand + research) · Strategy (product strategy + GTM + capital) · Execution (marketing channels).
+- **Product Strategy department activado 2026-05-22:** scaffolding completo · 6 subfolders + _archive + _sop + _templates + skills creados. Estructura v0.1 esperada: 16 docs · 6.5-7.5 días de trabajo concentrado. Siguiente: Paso 2 — redactar `00-marco-y-metodologia/00-marco-product-strategy.md` v1.0 (methodology choices: VPD primary + JTBD overlay + Kano).
 - **Subfolder `Market Research and Analysis/_context/03-competitive-analysis/` cerrado v0.1** con 8 docs:
   - 00-marco (v1.0) · 01-mapa competitivo (v0.3) · 02-directos deep dive (v0.2) · 03-indirectos (v0.2) · 04-features-pricing (v0.1) · 05-GTM positioning (v0.1) · 06-adoption/coexistence (v0.1) · 07-defensibility synthesis (v0.1).
   - **5 Perplexity Pro queries integradas** (Q1-Q5 · DeepSearch 2026-05-15/16) · 45 vendors mapped · 14 moats analyzed en doc 07 · 8 matrices comparativas en doc 04 · 11 vendor scripts coexistence/switching en doc 06.
@@ -53,6 +64,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 | Section | Status | Brief |
 |---|---|---|
+| **— FOUNDATION LAYER —** | | |
 | **Branding / 01-brand-strategy** | ✓ Complete v1.0 | Mission/vision/values, positioning, brand promise, archetype |
 | **Branding / 02-brand-story** | ✓ Complete v1.0 | Origin story, strategic narrative |
 | **Branding / 03-visual-identity** | Pending | Awaiting visual decisions + design system port |
@@ -65,11 +77,20 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **Market Research / 02-customer-research** | ✓ Complete v0.1 | 8 docs (etapas, metodología, JTBD, pains, journey, buying, objeciones, VoC). 19 queries Perplexity integradas. Verbatim library de 30 entries en doc 07 |
 | **Market Research / 03-competitive-analysis** | ✓ Complete v0.1 | 8 docs (marco, mapa, directos, indirectos, features-pricing, GTM, adoption/coexistence, defensibility). 5 Perplexity queries integradas. 45 vendors mapped. 14 moats analyzed en doc 07 synthesis. Agency-as-SaaS framing reframe |
 | **Market Research / 05-market-insights** | 🚧 Active v0.1 | 2 docs: `00-por-que-ahora.md` v0.1 (tesis temporal) + `01-vision-plataforma-zenet.md` v0.1 (platform play exploration) |
+| **— STRATEGY LAYER —** | | |
+| **Product Strategy / 00-marco-y-metodologia** | 🚧 Scaffolded · pending v1.0 | Methodology choices (VPD + JTBD + Kano) · versioning convention. Next: redactar marco doc |
+| **Product Strategy / 01-propuesta-de-valor** | 🚧 Scaffolded · pending v0.1 | 4 docs: customer profile · value map · fit analysis · vp statement compressed |
+| **Product Strategy / 02-features-y-scope** | 🚧 Scaffolded · pending v0.1 | 3 docs: MVP scope · Phase 2 roadmap hipotesis · feature prioritization |
+| **Product Strategy / 03-oferta-y-pricing** | 🚧 Scaffolded · pending v0.1 | 3 docs: design partner offer · pricing tiers · commercial terms |
+| **Product Strategy / 04-go-to-market** | 🚧 Scaffolded · pending v0.1 | 4 docs: GTM playbook · outreach · sales motion · channel/partner strategy |
+| **Product Strategy / 05-capital-y-fundraising** | 🚧 Scaffolded · pending v0.1 | 1 doc: funding roadmap + milestones (single dense doc, splittea post pre-seed close) |
+| **Product Strategy / 06-experience-y-roadmap** | Pending | Import desde production repo (3-phase user experience) |
+| **— EXECUTION LAYER —** | | |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **Product Strategy** | Pending | Will absorb Value Proposition (consolidation decided) |
 | **SEO and Content** | Pending | |
 | **Social Media Content Creation** | Pending | |
+| **— SHARED —** | | |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
 
 **Strategic posture (current):**
@@ -78,7 +99,8 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 - **Market Research subfolders 01 + 02 + 03 form the research backbone.** Subfolder 01 (industry-and-market) is canonical at v1.0. Subfolder 02 (customer-research) cerró v0.1 — `discovery-pre-PMF` etapa declarada, scaffold honesto con disciplina de gaps + roadmap de primary research desde design partners. Subfolder 03 (competitive-analysis) cerró v0.1 — 45 vendors mapped + 14 moats analyzed con 4-dim framework (durability × defensibility × strategic value × category creation potential). Triangulación externa via 19 + 5 = **24 queries Perplexity Pro integradas**.
 - **Verbatim library doc 07 (subfolder 02) es activo de marketing operations.** 30 entries con metadata estructurada — primer artefacto retrievable para copy, landing, social, sales enablement. Crecerá con design partner interviews.
 - **Defensibility synthesis doc 07 (subfolder 03) es activo de strategic decisions + investor pitch.** 14 moats stack ranked + anti-fragility audit + transferability matriz (5-phase expansion) + investor Q&A + what NOT to compete on. Moat #1 umbrella: agency-as-SaaS para restaurant BoH (NEW category creation positioning). Pending Alan approval brand language update §Apéndice.
-- **Department activation order is user-driven.** Alan decides which department starts next based on which marketing operation needs to be productized first.
+- **Product Strategy departamento activado 2026-05-22.** Segundo departamento operativo después de Branding + Market Research. Scope v0.1: 6 subfolders (marco · VP · features/scope · oferta/pricing · GTM · capital). Methodology: VPD primary + JTBD overlay + Kano feature prioritization. Pendiente: redactar 16 docs estimados 6.5-7.5 días concentrados con checkpoint approval por subfolder. Trigger v0.1 → v1.0: 3-5 design partners corriendo Mes 3+ con behavioral data.
+- **Department activation order is user-driven.** Alan decides which department starts next based on what operational constraint needs to be unlocked first.
 
 ---
 
@@ -177,6 +199,10 @@ claude_code/                                # Root of this workspace
 │
 ├── _context/                               # Shared cross-department context (root-level, currently empty)
 │
+# ═══════════════════════════════════════════════════════════════════
+# FOUNDATION LAYER — brand foundation + market research
+# ═══════════════════════════════════════════════════════════════════
+│
 ├── Branding/                               # Brand foundation
 │   ├── _context/
 │   │   ├── 01-brand-strategy/              ✓ v1.0
@@ -239,16 +265,45 @@ claude_code/                                # Root of this workspace
 │   ├── _templates/                         empty
 │   └── skills/                             empty
 │
+#
+# ═══════════════════════════════════════════════════════════════════
+# STRATEGY LAYER — product strategy + GTM + capital planning
+# ═══════════════════════════════════════════════════════════════════
+│
+├── Product Strategy/                       # 🚧 Scaffolded 2026-05-22 — pending v0.1 content
+│   ├── _context/
+│   │   ├── 00-marco-y-metodologia/         pending v1.0 — methodology choices (VPD + JTBD + Kano)
+│   │   │   └── _archive/
+│   │   ├── 01-propuesta-de-valor/          pending v0.1 — 4 docs (customer profile · value map · fit analysis · vp statement)
+│   │   │   └── _archive/
+│   │   ├── 02-features-y-scope/            pending v0.1 — 3 docs (MVP scope · Phase 2 roadmap · feature prioritization)
+│   │   │   └── _archive/
+│   │   ├── 03-oferta-y-pricing/            pending v0.1 — 3 docs (design partner offer · pricing tiers · commercial terms)
+│   │   │   └── _archive/
+│   │   ├── 04-go-to-market/                pending v0.1 — 4 docs (GTM playbook · outreach · sales motion · channel strategy)
+│   │   │   └── _archive/
+│   │   ├── 05-capital-y-fundraising/       pending v0.1 — 1 doc (funding roadmap + milestones)
+│   │   │   └── _archive/
+│   │   └── 06-experience-y-roadmap/        pending — import from production repo (3-phase user experience)
+│   │       └── _archive/
+│   ├── _sop/                               empty
+│   ├── _templates/                         empty
+│   └── skills/                             empty
+│
+# ═══════════════════════════════════════════════════════════════════
+# EXECUTION LAYER — marketing channels
+# ═══════════════════════════════════════════════════════════════════
+│
 ├── Analytics and Reporting/                # Each pending department follows the same pattern:
 ├── Email and CRM/                          #   _context/  → reference material
-├── Product Strategy/                       #   _sop/      → standard operating procedures
-├── SEO and Content/                        #   _templates/ → reusable output templates
-└── Social Media Content Creation/          #   skills/    → Claude Code slash commands
+├── SEO and Content/                        #   _sop/      → standard operating procedures
+└── Social Media Content Creation/          #   _templates/ → reusable output templates
+                                            #   skills/    → Claude Code slash commands
 ```
 
 ### The department pattern
 
-Every marketing department follows the same internal structure:
+Every department — across Foundation, Strategy, and Execution layers — follows the same internal structure:
 
 | Subfolder | Purpose | What goes inside |
 |---|---|---|
@@ -258,6 +313,18 @@ Every marketing department follows the same internal structure:
 | `skills/` | Claude Code slash commands | Markdown files defining `/command-name` workflows |
 
 The `_` prefix marks these as supporting/meta folders. They sort to the top alphabetically and are clearly differentiated from primary content (when primary content exists).
+
+### Three-layer architecture
+
+The workspace organizes work into three layers, each serving a distinct purpose:
+
+| Layer | Departments | Lens |
+|---|---|---|
+| **Foundation** | Branding · Market Research and Analysis | Strategic ground truth — *who we are* + *what the market is* |
+| **Strategy** | Product Strategy (includes GTM + capital planning) | Decisions about *what we build · how we sell · how we fund* |
+| **Execution** | Analytics · Email/CRM · SEO/Content · Social Media | Channel-specific operational work — *how marketing reaches customers* |
+
+Pre-PMF, layers blur — Alan operates across all three simultaneously. At Series A+ when dedicated heads exist, layers may correspond to org boundaries.
 
 ---
 
@@ -305,8 +372,18 @@ owner: [Name of document owner]
 - `market-research` — industry, market, segmentation, ICP, ecosystem, geography, regulatory docs
 - `customer-research` — JTBD, pains, journey, buying process, objections, voice-of-customer docs (subfolder 02 de Market Research)
 - `competitive-analysis` — competitive mapping, vendor deep dives, feature/pricing comparison, GTM/positioning comparison, adoption/coexistence dynamics, defensibility synthesis (subfolder 03 de Market Research)
+- `product-strategy` — VP design (Strategyzer/VPD), features/scope, offer/pricing, GTM operational, capital/fundraising roadmap docs (Product Strategy departamento)
 
-New types will be added as new departments come online (`content-template`, `campaign-brief`, `value-proposition`, etc.).
+New types will be added as new departments come online (`content-template`, `campaign-brief`, etc.).
+
+### Cuándo crear subfolder nuevo vs nuevo doc vs version bump
+
+Three patterns that govern how content evolves over time:
+
+- **Subfolder nuevo** cuando: dominio genuinamente nuevo · 3+ docs eventuales · ownership dedicada · SOPs/templates propios eventualmente
+- **Doc nuevo dentro de subfolder existente** cuando: extensión natural de un dominio · adición complementaria al playbook existente
+- **Version bump in-place + `_archive/`** cuando: mismo doc evoluciona con madurez (hypothesis → evidence-based · Fase 1 → Fase 2 → Fase 3). Old version moves to `_archive/` con date prefix; new version reemplaza in place
+- **Nunca crear**: folders chronological (`*-fase-2/` · `*-2027/`) · filename versioning (`logo-v2.md`) · duplicación cross-departmental — usa referencias en lugar de duplicar
 
 ### Extended frontmatter for customer-research docs
 
