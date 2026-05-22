@@ -1,12 +1,12 @@
 ---
-name: Posicionamiento
+
+## name: Posicionamiento
 description: Posición competitiva de Zenet — qué categoría jugamos, para quién, contra qué, y por qué nos eligen
 type: brand-strategy
 last_updated: 2026-05-18
 status: active
 version: 1.1
 owner: Alan Bahena
----
 
 # Posicionamiento
 
@@ -41,12 +41,14 @@ Esta categoría es nueva y es nuestra. Definirla bien evita que el mercado nos c
 
 Cuatro componentes definen la categoría:
 
-| Componente | Qué significa |
-|---|---|
-| **Sistema operativo** | No es una herramienta — es la capa donde convergen procesos, datos y decisiones. End-to-end, no aislada. |
-| **Cognitivo** | No solo almacena datos: los interpreta, los explica, propone acciones. La inteligencia es estructural, no decorativa. |
-| **Back-of-house** | Cocina, inventario, recetas, procesos, costos. Lo que pasa detrás del mostrador. No competimos por la capa transaccional (eso es POS). |
+
+| Componente                           | Qué significa                                                                                                                                                                                                                                                                            |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Sistema operativo**                | No es una herramienta — es la capa donde convergen procesos, datos y decisiones. End-to-end, no aislada.                                                                                                                                                                                 |
+| **Cognitivo**                        | No solo almacena datos: los interpreta, los explica, propone acciones. La inteligencia es estructural, no decorativa.                                                                                                                                                                    |
+| **Back-of-house**                    | Cocina, inventario, recetas, procesos, costos. Lo que pasa detrás del mostrador. No competimos por la capa transaccional (eso es POS).                                                                                                                                                   |
 | **Agencia de agentes especialistas** | El producto ES la agencia — cada agente AI es un especialista con dominio profundo (procurement, costing, forecasting, etc.) entregado al precio de SaaS. No es "SaaS con un chatbot encima"; es un equipo cognitivo coordinado que reemplaza el equivalente humano a 70-100x descuento. |
+
 
 **Implicación:** Cuando alguien pregunta "¿qué es Zenet?", la respuesta nunca es "un software de inventario", "un POS" o "un ERP". Es **un sistema operativo cognitivo para restaurantes — la agencia de especialistas AI que opera tu back-of-house contigo**.
 
@@ -126,12 +128,15 @@ No es "todo o nada" como un ERP. No es una sola feature como una app de inventar
 Hoy ofrecen herramientas genéricas, difíciles de usar, sin IA ni integración agéntica. Su back-office es lectura/escritura a base de datos con dashboards básicos.
 
 **Modernos / en crecimiento** (mayor riesgo estratégico):
+
 - **Polo Tab, Parrot, Fudo** — startups tecnológicas en ascenso en México y LATAM. Sin IA hoy, pero podrían pivotear rápido. Su velocidad de iteración los hace el mayor riesgo de convertirse en competencia directa.
 
 **Establecidos / dominantes** (mayor oportunidad de desplazamiento):
+
 - **SoftRestaurant** (líder de mercado en México), **Wansoft, Pacto, Poster, Sierra** — gran base instalada pero lentos a innovar. Back-office genérico, sin IA, difícil de usar. Los operadores los toleran porque no hay alternativa clara — Zenet es esa alternativa.
 
 **Enterprise** (segmento distinto, bajo solapamiento):
+
 - **Oracle, SAP** — demasiado caros y complejos para el segmento de Zenet.
 
 ### Watchlist internacional (aún no en LATAM, pueden entrar)
@@ -177,13 +182,15 @@ Reglas defensivas para evitar confusión en mercado:
 
 ### Validación de posicionamiento
 
-| Hipótesis | Estado | Validador |
-|---|---|---|
-| Solución (cognitive OS para BoH) | Validado | Victor Murguía (Abr 2026) |
-| Valor (tiempo, dinero, tranquilidad) | Validado | Victor Murguía (Abr 2026) |
-| Precio ($1,000-2,000 MXN/mes/sucursal) | Validado parcialmente | Victor Murguía (Abr 2026) |
-| Segmento (1-5 sucursales casual independiente) | Validado parcialmente | ~15 conversaciones (Feb-Abr 2026) |
-| Secuencia operativa (estandarización → inventario → costos) | Validado | Anna Palazuelos |
+
+| Hipótesis                                                   | Estado                | Validador                         |
+| ----------------------------------------------------------- | --------------------- | --------------------------------- |
+| Solución (cognitive OS para BoH)                            | Validado              | Victor Murguía (Abr 2026)         |
+| Valor (tiempo, dinero, tranquilidad)                        | Validado              | Victor Murguía (Abr 2026)         |
+| Precio ($1,000-2,000 MXN/mes/sucursal)                      | Validado parcialmente | Victor Murguía (Abr 2026)         |
+| Segmento (1-5 sucursales casual independiente)              | Validado parcialmente | ~15 conversaciones (Feb-Abr 2026) |
+| Secuencia operativa (estandarización → inventario → costos) | Validado              | Anna Palazuelos                   |
+
 
 ### Validadores clave
 
@@ -194,13 +201,15 @@ Reglas defensivas para evitar confusión en mercado:
 
 ### ROI hipotético (sin validar con uso real)
 
-| Componente | Valor mensual |
-|---|---|
-| Tiempo recuperado (28 hrs × $200 MXN/hr) | $5,600 MXN |
-| Reducción de mermas (3% sobre $50,000 MXN) | $1,500 MXN |
-| **Valor total** | **~$7,100 MXN/mes** |
-| Costo Zenet | $1,500 MXN/mes |
-| **ROI** | **~4.7x** |
+
+| Componente                                 | Valor mensual       |
+| ------------------------------------------ | ------------------- |
+| Tiempo recuperado (28 hrs × $200 MXN/hr)   | $5,600 MXN          |
+| Reducción de mermas (3% sobre $50,000 MXN) | $1,500 MXN          |
+| **Valor total**                            | **~$7,100 MXN/mes** |
+| Costo Zenet                                | $1,500 MXN/mes      |
+| **ROI**                                    | **~4.7x**           |
+
 
 ---
 
@@ -209,3 +218,4 @@ Reglas defensivas para evitar confusión en mercado:
 - **Fuentes.** Síntesis de `zenet-business-context-production.md` (Abr 2026), benchmark competitivo Nubio (2025) actualizado a la realidad de Zenet, y conversaciones de validación con operadores y consultores.
 - **Análisis competitivo profundo.** Este documento contiene la síntesis de posicionamiento competitivo. El análisis exhaustivo de cada competidor (perfiles, pricing, features, fortalezas, debilidades) vive en `Market Research and Analysis/_context/competitive-landscape/`.
 - **Documento vivo.** El posicionamiento se revisa cuando: (1) un competidor entra o pivotea significativamente, (2) la validación de campo cambia hipótesis clave, (3) Zenet expande segmento o categoría.
+
