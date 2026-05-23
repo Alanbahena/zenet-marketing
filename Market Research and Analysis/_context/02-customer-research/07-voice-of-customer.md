@@ -4,10 +4,10 @@
 description: Library plana de verbatims curados (gold / load-bearing / illustrative) con metadata estructurada por entry (persona × theme × stage × marketing use-case) + indices de navegación + coverage gaps. Designed for retrieval/reuse across marketing operations (copy, landing, social, sales enablement). NO repite docs 03/06 — esos usan verbatims como evidence; este ES la library misma.  
 type: customer-research  
 research_stage: discovery-pre-PMF  
-last_updated: 2026-05-08  
+last_updated: 2026-05-23  
 status: active  
-version: 0.1  
-owner: Alan BahenaUpda
+version: 0.1.1  
+owner: Alan Bahena
 
 # Voice of customer — verbatim library
 
@@ -583,7 +583,85 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 
 ---
 
-> **Library v0.1 cierra en V-030.** Total: 10 gold + 13 load-bearing + 7 illustrative = 30 entries. Coverage gaps en §5.
+#### V-031 • [VERBATIM] · cited
+
+> Jesús Ramírez, Director Comercial Allegra/Latinoamérica, Revista Fortuna, Jul 2025:
+> *"La IA no sustituye al contador, pero sí mejora la comunicación entre él y la Pyme, generando trazabilidad fiscal y operativa."*
+
+- **Source:** Revista Fortuna, Jul 2025 · *"La inteligencia artificial redefine la contabilidad, más de 10 mil despachos se suman al cambio en América Latina"* · Perplexity Pro report 2026-05
+- **Persona:** industria (institutional · accounting software vendor exec)
+- **Theme:** AI-augmentation framing · contable role evolution · adoption messaging
+- **Stage:** Pre-awareness · Awareness · Research
+- **Use-case tags:** investor-pitch · positioning · sales messaging to contables · objection handling on "AI replaces accountant" concern
+- **Cited en:** Product Strategy customer-profile §6.2 + §7.4 silent veto
+- **Por qué es load-bearing:** captures el **augmentation NOT replacement** framing canonical para messaging Zenet → contables. Citable directamente porque viene de industry executive (Allegra) en publication establecida (Revista Fortuna). Disarma objection #1 contable ("AI me reemplaza"). Use as anchor en sales scripts Stage C parallel track contable.
+
+#### V-032 • [VERBATIM] · cited
+
+> Jesús Ramírez, Allegra (mismo source V-031):
+> *"En México el reto es cultural. Queremos cambiar la percepción del contador como un 'mal necesario' para posicionarlo como aliado estratégico, incluso terapéutico, en la toma de decisiones."*
+
+- **Source:** Revista Fortuna, Jul 2025 · Perplexity Pro report 2026-05
+- **Persona:** industria (institutional · accounting software vendor exec)
+- **Theme:** contable identity-aspirational · cultural reframe · "aliado estratégico"
+- **Stage:** Awareness · Evaluation
+- **Use-case tags:** sales messaging to contables · positioning aspirational · investor-pitch (showcasing market insight)
+- **Cited en:** Product Strategy customer-profile §6.2
+- **Por qué es load-bearing:** reveals **identity-aspirational** del contable (NOT just task-doer · *"aliado estratégico"* es self-image deseado). Use en sales motion para alinear con contable's professional aspirations. Reframe Zenet desde *"sistema más"* a *"tool que te posiciona como strategic advisor del dueño"*.
+
+#### V-033 • [VERBATIM] · cited
+
+> ContadorMx, 2024 · publication contable-focused:
+> *"Cualquier Contador Público con acceso a la e.firma, FIEL o contraseña de un contribuyente puede obtener información sensible... En la mayoría de los despachos contables no se cuenta con un departamento de seguridad de la información y gestión de clientes."*
+
+- **Source:** ContadorMx 2024 · Perplexity Pro report 2026-05 §2.3 + §6.1
+- **Persona:** industria (institutional · contable practice publication)
+- **Theme:** LFPDPPP 2025 burden · data sovereignty anxiety · despacho operational vulnerability
+- **Stage:** Pre-awareness · Awareness
+- **Use-case tags:** compliance messaging · positioning (Zenet handles security so despacho doesn't have to) · objection handling LFPDPPP concerns
+- **Cited en:** Product Strategy customer-profile §6.2 contable Pains
+- **Por qué es load-bearing:** validates real LFPDPPP 2025 anxiety en contable community. Disarma objection *"¿dónde queda mi data? ¿cumple LFPDPPP?"* showing Zenet understands the burden. Use en sales conversations contable cuando data security concerns emerge.
+
+#### V-034 • [VERBATIM] · cited
+
+> Rappi Merchants guide, 2024 · sobre CFDI 4.0 staff training en restaurant POS:
+> *"Roles claros: quién captura datos (caja), quién verifica (encargado) y quién corrige errores (contabilidad)... Reglas de control: no aceptar RFC incompleto, no usar atajos; registrar incidencias y revisar conciliaciones diariamente."*
+
+- **Source:** Rappi Merchants guide 2024 · Perplexity Pro report 2026-05 §6.1
+- **Persona:** industria (institutional · platform guidance to restaurant operators)
+- **Theme:** operational discipline · CFDI workflow · cross-role coordination
+- **Stage:** Pre-awareness · Research
+- **Use-case tags:** sales messaging operational standards · positioning (Zenet enforces the discipline this guide describes) · process workflow articulation
+- **Cited en:** Product Strategy customer-profile §6.2 contable Pains
+- **Por qué es illustrative:** captures **the discipline gap** que Rappi tries to teach manually y Zenet automates. Use cuando contable cuestiona si Zenet realmente reduces their work — esta es la disciplina que ellos quisieran tener pero no escala manual.
+
+---
+
+> **Library v0.1.1 cierra en V-034.** Total: 10 gold + 13 load-bearing + 11 illustrative = **34 entries**. 4 nuevas entries (V-031 → V-034) añadidas 2026-05-23 desde Perplexity Pro report 2026-05 (Mexican Restaurant Accountant Workflow). Coverage gaps en §5.
+
+---
+
+### 3.2 Operator vernacular — contable-specific
+
+`[Validado Perplexity Pro report 2026-05 §6.2 · added 2026-05-23]`
+
+Vocabulario canonical de contables mexicanos en restaurant context. Diferente de verbatim quotes — estos son **términos** que aparecen consistently en conversation contable-restaurant. Use estos términos en sales motion para signal fluency · NOT genéricos accounting terms.
+
+| Término | Definición | Uso Zenet (cliente-facing) |
+|---|---|---|
+| **Conciliar** | Master verb del workflow contable — reconciling POS data vs CFDI vs bank statements | Sí · core capability messaging |
+| **Timbrar** | Digital sealing/validating CFDI via PAC | Sí · sin explicar a contable · explain a dueño |
+| **Póliza** | Accounting entry generated per CFDI · automated generation key CONTPAQi feature | Sí · contable-facing only |
+| **DIOT** | Declaración Informativa de Operaciones con Terceros · monthly VAT detail report on third-party transactions | Sí · sin explicar a contable |
+| **Balanza** | Balance de comprobación submitted electronically to SAT monthly | Sí · sin explicar a contable |
+| **EFOS / EDOS** | Blacklisted *factureras* (EFOS = Empresa que Factura Operaciones Simuladas · SAT Art. 69-B CFF) | Sí · contable validation feature messaging |
+| **Complemento de pago / REP** | CFDI complement required when payment occurs after invoice issuance · common B2B catering | Sí · contable-facing |
+| **Factura global** | Single CFDI covering all non-facturado consumer sales en period · daily generation typical restaurants | Sí · operational feature messaging |
+| **Tasa efectiva** | Effective tax rate · SAT compares vs sector averages to flag audit candidates | Sí · audit-defense messaging |
+| **ADD (Administrador de Documentos Digitales)** | CONTPAQi module for automated CFDI management — load · validate · deduplicate · map to polizas | Sí · contable-facing only · integration messaging |
+| **Despacho** | Contable's practice/firm · external service model dominant SMB Mexico | Sí · acknowledge despacho relationship en sales |
+
+**Implication para sales motion:** durante Stage C parallel del contable engagement, fluency con estos términos signal credibility immediate. Decir *"Zenet automates la conciliación entre POS y CFDI, genera pólizas, exporta balanza"* es totally different than *"Zenet helps with accounting"* — segundo signals tech vendor que no entiende; primero signals partner que sí entiende.
 
 ---
 
@@ -599,8 +677,8 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 | **Dueño-operador**                                   | V-001, V-006, V-008, V-010, V-011, V-012, V-015, V-016, V-017, V-018, V-019, V-021               |
 | **Gerente**                                          | V-011, V-012, V-015, V-016                                                                       |
 | **Chef · cocinero**                                  | V-022, V-024                                                                                     |
-| ***Contable* externo**                               | V-014                                                                                            |
-| **Industria (institutional / practitioner / press)** | V-002, V-003, V-004, V-005, V-007, V-009, V-013, V-020, V-023, V-025, V-026, V-027, V-029, V-030 |
+| ***Contable* externo**                               | V-014, V-033                                                                                     |
+| **Industria (institutional / practitioner / press)** | V-002, V-003, V-004, V-005, V-007, V-009, V-013, V-020, V-023, V-025, V-026, V-027, V-029, V-030, V-031, V-032, V-034 |
 | **Consultor partner local**                          | V-022, V-028                                                                                     |
 
 

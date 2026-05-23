@@ -3,9 +3,9 @@ name: Jobs-to-be-done del operador
 description: Trabajos funcionales, emocionales y sociales que el dueño-operador del beachhead contrata cuando paga Zenet. Incluye jobs secundarios para chef ejecutivo y admin, anti-jobs explícitos e hipótesis pendientes de validación con dueño directo.
 type: customer-research
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-05
+last_updated: 2026-05-23
 status: active
-version: 0.1
+version: 0.1.1
 owner: Alan Bahena
 ---
 
@@ -315,24 +315,82 @@ El producto Zenet tiene tres usuarios distintos según el business context §4. 
 
 **Evidencia:** business context Persona 2 + decisión Centro de Control Zenet (mar-2026) "para cadenas, conquistar al chef antes que al dueño; en independientes puede no aplicar". `[HIPÓTESIS PRE-PMF]` para todo lo emocional y social — los chefs entrevistados (Aldo Alvarado, Abril Borunda) validaron operational reality, no las dimensiones internas.
 
-### 6.2 Admin / Contador interno
+### 6.2 Contable (externo o interno) · Persona 3
 
-**Quién:** maneja números, compras, reportes de costo. Persona 3 en el business context.
+**Update 2026-05-23:** sección expandida con Perplexity Pro report 2026-05 (Mexican Restaurant Accountant Workflow). Originally framed como "admin / contador interno" minimal · ahora estructurada como **stakeholder load-bearing del buying committee** con depth comparable a chef ejecutivo.
 
-**Jobs funcionales:**
-- Consolidar data dispersa entre WhatsApp, papel y Excel.
-- Generar reportes de costo que expliquen el porqué, no solo el qué.
-- Optimizar compras con sugerencias informadas.
-- Tener audit trail de movimientos de inventario.
-- Minimizar errores manuales que erosionan margen.
+#### Quién es
 
-**Jobs emocionales:**
-- Dejar de sentirse "el cazador de información perpetuo".
-- Tener data limpia con qué hacer su trabajo bien.
+**Demographics + role distribution** `[Validado Perplexity 2026-05 §3.1]`:
 
-**Jobs sociales:** menos relevantes para este rol; trabajo de bastidores.
+- 35-60 años · contador público titulado · cédula profesional
+- **Distribución externo/interno por scale:**
+  - 1-3 sucursales: **mayoría externo** (despacho contable independiente)
+  - 4+ sucursales: frecuentemente interno (in-house finance role emerges)
+- Maneja 5-15 clientes restaurant simultáneos si externo · cada additional sucursal per client doubles CFDI volume
+- Software stack: CONTPAQi Contabilidad (1.2M business users MX · dominante) · Aspel COI alternative · Excel still significant
+- **Importante reframe vs original v0.1:** el contable NO es solo "admin que maneja números" — es **stakeholder en el buying committee** con authority real
 
-**Evidencia:** business context Persona 3. `[HIPÓTESIS PRE-PMF]` — no hay conversación con admin/contador interno de un restaurante del beachhead.
+#### Rol en buying committee `[Validado customer 05 §3 + customer 06 §4 + Perplexity §3.1-§3.2]`
+
+- **Autoriza desde lens cumplimiento + facturación** · Stage C parallel track del sales motion
+- **Silent veto pattern** — *"El contable's veto exercised more often through passive non-endorsement than active blockage. When the contable says nothing, the owner typically does not proceed."* `[Validado Perplexity §3.2 — load-bearing insight]`
+- **Data processor bajo LFPDPPP 2025** (vigor 21 mar 2025) — tiene obligaciones legales propias frente a auditoría · NO solo asesor
+- **Authority crece con scale (inflection 2-3 sucursales)** — en 2-3 sucursales, contable's pain from manual multi-location reconciliation flips role from gatekeeper → internal advocate `[Validado Perplexity §5.3]`
+
+#### Jobs funcionales
+
+| Job | Detail | Source |
+|---|---|---|
+| **CFDI 4.0 compliance** | Validación razón social · RFC · domicilio fiscal · régimen fiscal · uso del CFDI · catalog updates SAT current | Perplexity §1.1 |
+| **Reconciliación POS ↔ CFDI ↔ contabilidad** | Core weekly friction · 25-35% del monthly workload `[Hipótesis · Perplexity §1.2 structured hypothesis]` | Perplexity §1.1 |
+| **Declaraciones mensuales (IVA · ISR · retenciones · DIOT)** | Hard deadline día 17 mes siguiente | industry 08 + Perplexity §1.2 |
+| **Audit defense preparation** | Preparar para auditoría exprés (SAT 2026 = 16,200 audits · 12,000 PyME allocation) | Perplexity §2.1 |
+| **IMSS/INFONAVIT/nómina CFDI** | Payroll cycle típicamente semanal en restaurants | industry 08 |
+| **Contabilidad electrónica + balanza** | Monthly XML submission a SAT | industry 08 |
+| **EFOS/EDOS validation** | Verify supplier RFCs against SAT blacklist (Art. 69-B CFF) | Perplexity §2.4 |
+| **LFPDPPP 2025 compliance** | Handle client RFC data · CURP empleados · bank account info · payroll records (despacho técnicamente es data processor) | Perplexity §2.3 |
+
+#### Jobs emocionales
+
+- **Dejar de ser "el cazador de información perpetuo"** — original v0.1 emotional · validated
+- **Tener data limpia con qué hacer su trabajo bien** — original v0.1 · validated
+- **Confianza professional** — saber que está cumpliendo · NO anxious sobre exposure de audit
+- **Less burnout reconciliation manual** — el core weekly friction reduces
+- **Identity-aspirational: ser "aliado estratégico"** · NOT "mal necesario" — Jesús Ramírez Allegra V-032 captures this `[Validado Perplexity §6.1 + customer 07 V-032]`
+
+#### Jobs sociales
+
+- **Peer recognition profesional** — ser visto entre other contadores como practice modernizada · NOT obsoleto manual
+- **Respect del dueño tangible** — el dueño valora su criterio · NOT solo lo ve como cost necesario
+- **Credibility con SAT/auditores** — capacity para defender al cliente en revisiones
+
+#### Anti-jobs
+
+- **NO ser displaced por automation** — *"AI no me reemplaza"* (V-031) — augmentation framing critical
+- **NO perder visibility a raw fiscal data** — *"¿Dónde quedan mis XMLs?"* es objection #1 frecuente `[Validado Perplexity §3.4]`
+- **NO sistema que change XML/poliza format mid-cycle** — breaking existing reconciliation routines
+- **NO data sovereignty issues** — cloud-only sin XML download capability is veto trigger
+
+#### Evidencia (expansion vs v0.1)
+
+| Source | Tipo | Detail |
+|---|---|---|
+| Business context Persona 3 (original) | Internal | Initial framing |
+| Perplexity Pro report 2026-05 | External research | Major depth contribution · 7 sections covering workflow · audit environment · authority dynamics · technology adoption · buying committee · VoC quotes |
+| V-014 (customer 07 VoC) | Verbatim | Contable externo perspective |
+| V-031, V-032, V-033, V-034 (customer 07 VoC) | Verbatim NEW | Added 2026-05-23 from Perplexity |
+| Product Strategy customer-profile §6 | Synthesis | Integrated framing |
+
+**Status evidence:** evolution de `[HIPÓTESIS PRE-PMF]` (original v0.1) → `[Hipótesis informed by Perplexity Pro research]` (v0.1.1). Sigue siendo hypothesis pending Cohort 1 design partner contable interactions · pero substantially more depth + external sources cited.
+
+#### Implicación para sales motion
+
+- **Engage contable in discovery phase**, NOT after close (typical failure mode: contable discovers system at month-end when trying to import data → expensive workaround)
+- **Stage C parallel track** del three-session demo es critical · NOT optional
+- **Provide contable-specific technical documentation** (integration specs CONTPAQi · sandbox · sample CFDI exports)
+- **Offer reference from another despacho** using system for restaurant clients · peer evidence powerful
+- **Silent veto management** — proactive engagement before objection articulated · ausencia de endorsement = problema, no just objections raised
 
 ### 6.3 Por qué importa que cada secundaria tenga jobs propios
 

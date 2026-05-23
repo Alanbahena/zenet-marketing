@@ -2,9 +2,9 @@
 name: Entorno regulatorio
 description: Mapa del entorno regulatorio que rodea al operador casual independiente formal en MX (foco BC), su superficie de contacto con Zenet, y el riesgo regulatorio para Zenet como producto SaaS
 type: market-research
-last_updated: 2026-04-30
+last_updated: 2026-05-23
 status: active
-version: 1.0
+version: 1.0.1
 owner: Alan Bahena
 ---
 
@@ -262,11 +262,51 @@ El SAT desplegó en 2026 una estrategia de fiscalización con tres componentes q
 
 **POS y validación cruzada.** Los restaurantes con más de 100 CFDI diarios entran a un grupo de validación cruzada automática del CFDI 4.0. Inconsistencias entre lo registrado en el POS y lo facturado generan banderas rojas que escalan a auditoría.
 
+**Programa de auditorías SAT 2026 — Comunicado 53/2025.** `[Validado Perplexity Pro report 2026-05 §2.1 · update 2026-05-23]`
+
+El SAT publicó el **Comunicado 53/2025 (20 octubre 2025)** estableciendo un programa transparente y risk-based de auditorías para 2026 (Deloitte, Russell Bedford, AMEXFAL, Siempre al Día, 2025) [OFICIAL]:
+
+| Métrica | Cifra | Detalle |
+|---|---|---|
+| **Total auditorías planeadas 2026** | **16,200** | ~0.02% del padrón de 66.8 millones de contribuyentes |
+| **PyME allocation** | **12,000** (74% del total) | Foco principal del programa |
+| **Grandes contribuyentes** | 1,200 | Auditorías profundas a corporativos |
+| **Comercio exterior** | 3,000 | Importadores/exportadores |
+| **Modelo de selección** | **Algorítmico risk-based** | NO random — selección por behavioral indicators |
+
+**Shift clave vs años previos:** las auditorías ya **no son samples aleatorios**. Solo contribuyentes con *"high-risk behaviors"* son seleccionados. Esto da advance predictability **pero también significa que un restaurant con fiscal hygiene genuinamente pobre enfrenta probabilidad materialmente más alta que el 0.02% headline.**
+
+**Flags específicos restaurant-sector más relevantes al modelo SAT** `[Validado Perplexity §2.1]`:
+
+- **Compras > Ventas** — insumo purchasing exceeding declared sales (structurally easy para restaurants comprando de mercados informales sin CFDI)
+- **Tasa efectiva de ISR significantly below sector average** — comparación vs benchmark sector restaurantero
+- **Inconsistencies entre delivery platform CFDI (Rappi · UberEats · DiDi) y own-POS declarations**
+- **Recurrent fiscal losses despite continued operations** — pérdidas recurrentes sin cierre del negocio
+
 **Casos públicos específicos del sector restaurantero.** [SIN FUENTE PUBLICADA] No se localizaron comunicados oficiales SAT de operativos exclusivos al giro restaurantero con cifras o casos específicos 2024-2026. La estrategia es general; el sector no tiene tratamiento especial publicado.
 
 **Implicación operativa.** El operador casual independiente con 100+ CFDI diarios (típicamente Sub-segmento C y D del scope, 4-5 sucursales o multimarca) ya está dentro del rango donde el cruce automatizado opera. La presión por trazabilidad operativa entre POS, inventario y CFDI es estructural, no episódica.
 
-**Lo que esto le importa a Zenet.** Es la palanca de mensajería más poderosa de toda esta sección. La fiscalización digital no es un riesgo abstracto — es la realidad operativa del operador en 2026. La promesa de Zenet ("operación clara, ordenada, trazable") aterriza directamente en este contexto: un operador con data limpia y reconciliada entre POS, inventario y CFDI no le teme a la auditoría exprés. Un operador con data fragmentada sí. La sección 8 desarrolla cómo Zenet convierte este contexto en valor concreto.
+**Lo que esto le importa a Zenet.** Es la palanca de mensajería más poderosa de toda esta sección. La fiscalización digital no es un riesgo abstracto — es la realidad operativa del operador en 2026. La promesa de Zenet (*"operación clara, ordenada, trazable"*) aterriza directamente en este contexto: un operador con data limpia y reconciliada entre POS, inventario y CFDI no le teme a la auditoría exprés. Un operador con data fragmentada sí. La sección 8 desarrolla cómo Zenet convierte este contexto en valor concreto.
+
+### 2.9 Tratamiento fiscal de propinas — ambigüedad estructural unresolved
+
+`[Validado Perplexity Pro report 2026-05 §2.2 · added 2026-05-23]`
+
+Las propinas representan una **zona gris fiscal específica al sector restaurantero** sin resolución clara. Tres marcos en conflicto que el contable debe navegar **en cada payroll cycle**:
+
+| Marco | Posición | Implicación |
+|---|---|---|
+| **SAT Criterio 43/ISR/N** | Propina es **salario** para efectos ISR | Retención ISR required |
+| **SAT Criterio 33/IVA/N** | Propina es **non-base** para efectos IVA | NO IVA calculation |
+| **Tribunal Colegiado 2021** | Ruling que cuestiona obligación retención | Conflicto con Criterio 43 |
+| **PRODECON opinion** | Adds further complexity | Compliance gray zone |
+
+**Implicación operativa.** El contable enfrenta judgment call en cada payroll. Audit exposure latente cuando un criterio aplica diferente que el otro. Un error de tratamiento puede generar discrepancia IVA · retención ISR · IMSS integration · todos simultáneamente.
+
+**Addenda PROPINAS CFDI 4.0.** Existe una addenda formal para CFDI 4.0 (*Addenda PROPINAS*) que segrega propina amounts en el XML para que downstream systems reconcilien correctamente · pero **adoption among SMB POS systems is uneven** (FiscalCloud, 2024). La addenda PROPINAS es feature opcional · no obligatoria · muchos POS SMB no la implementan.
+
+**Lo que esto le importa a Zenet.** Una capa potencial de Pain Reliever para el contable: si Zenet captura propinas con la addenda PROPINAS correctly en CFDI export, elimina una de las zonas grises más recurrentes del workflow contable restaurant-specific. NOT urgent para Phase 1 launch · es Phase 2 feature potential cuando se redacte feature roadmap.
 
 ---
 
@@ -1099,11 +1139,13 @@ Dos cuerpos normativos definen el riesgo regulatorio actual de Zenet: la **Nueva
 
 **Cambio estructural de la reforma 2025.** La nueva ley **amplió el universo de sujetos obligados directos**: los encargados, que bajo la ley anterior eran responsables solo contractualmente con el responsable, ahora cargan obligaciones propias frente a la autoridad y a los titulares (hoganlovells, 2025). Esto significa que Zenet no puede escudarse en el contrato con el operador — tiene obligaciones legales propias.
 
-**Tres cambios relevantes de la LFPDPPP 2025 vs ley anterior** (hoganlovells, 2025; basham, 2025):
+**Cambios relevantes de la LFPDPPP 2025 vs ley anterior** (hoganlovells, 2025; basham, 2025; Perplexity Pro report 2026-05 §2.3 update 2026-05-23):
 
 1. **Ampliación a encargados como obligados directos.** Zenet entra en este grupo.
 2. **Eliminación del requisito de informar transferencias en aviso de privacidad integral.** Sigue obligando a registrarlas en el Registro de Actividades de Tratamiento.
 3. **Nuevas bases jurídicas para tratamiento sin consentimiento**, alineándose más con estándares internacionales como RGPD europeo.
+4. **INAI disuelto · enforcement migra a Secretaría Anticorrupción y Buen Gobierno** `[Validado Perplexity §2.3]` — el regulador histórico de protección de datos (INAI) fue dissolved con la reforma · enforcement authority ahora embedded en executive branch · creating different (and uncertain) enforcement dynamics. Implication: precedente regulatorio del INAI ya NO es directly applicable · nueva práctica enforcement está developing.
+5. **Contables externos = data processors técnicamente** `[Validado Perplexity §2.3]` — los despachos contables que manejan client RFC data + employee CURP + bank account info + payroll records son ahora **encargados del tratamiento** con obligaciones propias bajo LFPDPPP 2025. **Most small despachos NOT meeting requirements** como of mid-2025 (ContadorMx, 2024). Implication para Zenet: el contable del operador también es sujeto obligado · puede generar friction si Zenet workflow requires data sharing que despacho no tenga capacity de comply.
 
 **Sanciones.** Multas de **100 a 320,000 días UMA** dependiendo de la conducta (entre aproximadamente $11,000 MXN y $35 millones MXN en 2026). 19 conductas sancionables contempladas en la ley (itmastersmag, 2025).
 
