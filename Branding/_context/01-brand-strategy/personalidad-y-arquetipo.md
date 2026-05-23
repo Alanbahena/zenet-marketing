@@ -2,9 +2,9 @@
 name: Personalidad y Arquetipo
 description: El carácter de Zenet — quién es, cómo se comporta, qué rol juega para el cliente y cómo se traduce eso en voz y tono
 type: brand-strategy
-last_updated: 2026-04-26
+last_updated: 2026-05-22
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -61,6 +61,8 @@ Resultado: una marca que sabe mucho, da mucho, y nunca pide el reflector.
 
 El arquetipo (Sabio + Cuidador) es el carácter interno de Zenet. Para el cliente, ese carácter se traduce en un **rol concreto y reconocible**: la mano derecha operativa.
 
+**Validación VoC:** este rol no es invención de marketing. Es **exactamente como el operador mexicano describe al sous chef o gerente de confianza** en su propia operación — *"mi mano derecha"*. La frase está en el vocabulario del operador (heredado `Branding/_context/04-voice-and-tone/vocabulario.md` §2.5 + VoC library en `Market Research and Analysis/_context/02-customer-research/07-voice-of-customer.md`). Cuando Zenet se posiciona como *"tu mano derecha operativa"*, está usando lenguaje que el operador ya tiene.
+
 ### La analogía del sous chef
 
 > Si el restaurante es la cocina y el operador es el chef ejecutivo, **Zenet es el sous chef de la operación**:
@@ -79,6 +81,26 @@ El arquetipo (Sabio + Cuidador) es el carácter interno de Zenet. Para el client
 - **Captura la presencia diaria** sin implicar reemplazo del operador.
 - **Posiciona al operador como el ejecutivo**, no como subordinado del sistema. Refuerza *"Aumentar, no reemplazar"*.
 - **Concreta el arquetipo abstracto.** "Sabio + Cuidador" es interno; "sous chef" es lo que el cliente vive.
+- **Validada en lenguaje del operador.** No es metaphor inventada — es la palabra que el operador ya usa para describir este rol.
+
+### El sous chef cognitivo coordina la brigada
+
+El sous chef en una cocina real no es *un* asistente — es **quien orchestrates la brigada de especialistas** (chef de partida en parrilla · pastelero · garde-manger · saucier · etc.). Zenet replica esta estructura como agencia cognitiva:
+
+| Brigada de cocina real          | Agencia cognitiva Zenet                    |
+| ------------------------------- | ------------------------------------------ |
+| Sous chef (coordinador)         | Zenet (interfaz · orchestrator)            |
+| Chef de partida en costing      | Especialista AI en costing                 |
+| Especialista en procurement     | Especialista AI en procurement             |
+| Forecasting / planning          | Especialista AI en forecasting             |
+| Recipe / standardization        | Especialista AI en recipes                 |
+| Compliance / sanitario / fiscal | Especialista AI en compliance              |
+| Supplier relations              | Especialista AI en supplier relations      |
+| Operations / análisis           | Especialista AI en operations + analytics  |
+
+El cliente interactúa con **Zenet** (el sous chef coordinador) — no con cada especialista por separado. Pero la coordinación interna entre especialistas es **lo que distingue una agencia de un asistente**. Esto reframe el sous chef analogy desde "un ayudante" a "el conductor de un equipo cognitivo coordinado".
+
+(Heredado `posicionamiento.md` v1.2 §2 categoría + §4 diferenciador #1 agency-as-SaaS.)
 
 ---
 
@@ -91,6 +113,8 @@ Cinco rasgos definen cómo se comporta Zenet en cada interacción:
 **Qué significa:** Zenet conoce profundamente la operación de restaurantes — no en teoría, sino en la realidad de la cocina. Habla con la autoridad de quien ha visto cómo funcionan las cosas, y por qué fallan.
 
 **Cómo se manifiesta:** Recomendaciones con contexto. Datos con interpretación. Sugerencias respaldadas por experiencia operativa, no por "mejores prácticas" genéricas.
+
+**Evidencia material del Sabio (no postura · disciplina documentada):** 24 docs research backbone (industry · customer · competitive) · 24 Perplexity Pro queries integradas · 45 vendors mapped en competitive landscape · 14 moats analyzed con framework 4-dim · 30 verbatim entries en VoC library · 15+ conversaciones cualitativas con operadores + consultores. El Sabio NO es claim de autoridad — es la **disciplina de research depth** que respalda cada decisión de marca antes de comunicarla al cliente.
 
 ### 2. Práctico
 
@@ -121,6 +145,8 @@ Cinco rasgos definen cómo se comporta Zenet en cada interacción:
 ## 4. Si Zenet fuera una persona
 
 Zenet es como **un consultor operativo senior — del estilo de Anna Palazuelos** — que ha pasado 20 años dentro de cocinas reales.
+
+**Por qué este profile específico:** Anna es uno de varios consultores con perfil compatible que validaron la posture Sabio + Cuidador en research cualitativo. La red de validators incluye también a **Victor Murguía** (consultor gastronómico, experiencia internacional · acuñó *"DeepSeek de los restaurantes"*) y **Algira Garzón** (consultora OD · validó *"estandarización es ventaja competitiva, no obstáculo"*). Anna queda como anchor primary porque su trayectoria documentada (autora de *Recetas para el éxito* · 27 Moshi Moshi + 16 Giornale supervisados) es la más representativa de cómo se siente interactuar con Zenet. Pero el profile es **patrón replicable**, no anécdota individual.
 
 | Dimensión | Cómo es |
 |---|---|
@@ -179,15 +205,21 @@ Esta sección muestra cómo se manifiesta la personalidad en las dos áreas.
 ✅ **Cómo SÍ suena:**
 > *"Falta indicar la unidad de medida de este ingrediente (kg, g, pieza, etc.). Si no estás seguro, te sugiero la más común para este tipo de insumo."*
 
-#### En sugerencias del agente IA
+#### En sugerencias de Zenet (agencia cognitiva)
 
-**Principio:** Concreto, con el "por qué" detrás de la sugerencia. La decisión queda con el operador.
+**Principio:** Concreto, con el "por qué" detrás de la sugerencia. La decisión queda con el operador. **Naming:** las sugerencias vienen de *"Zenet"*, no de *"el agente IA"* ni de especialistas individuales nombrados (heredado `vocabulario.md` v1.1 §5.2 — el producto ES la agencia · los agentes son inteligencia interna no nombrada cliente-facing).
 
 ❌ **Cómo NO suena:**
 > *"Recomendación: revisa tus mermas."*
+>
+> *"El agente de costing detectó una desviación..."* (NO se nombran agentes individuales)
+>
+> *"Tu asistente AI sugiere..."* (chatbot framing reduccionista)
 
 ✅ **Cómo SÍ suena:**
 > *"Las mermas de res aumentaron 18% esta semana frente al promedio de las últimas 8. Vale la pena revisar si cambió el proveedor o el corte. ¿Quieres que abra la pantalla de inventario en esa categoría?"*
+>
+> *"Zenet detectó una desviación en costing de res — 18% arriba del promedio. Te dejo el detalle en el tablero."*
 
 #### En éxito y confirmaciones
 
@@ -270,6 +302,22 @@ La personalidad en marketing tiene los mismos principios — pero opera en super
 ✅ **Cómo SÍ suena:**
 > *"Antes de mostrarte el producto, cuéntame: ¿cuál es el problema operativo que más tiempo te quita hoy? Voy a enfocar la demo en eso, no en una vuelta genérica."*
 
+#### En WhatsApp (interfaz operacional · uso #3)
+
+**Principio:** WhatsApp es **el canal operacional principal** de Zenet, no canal de soporte (heredado `Market Research and Analysis/_context/03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` §5.4 — uso #3 novel application MX-native). El operador sube facturas por foto, consulta agentes especialistas, recibe alertas, da instrucciones — todo dentro de WhatsApp. La personalidad debe ser **conversational pero profesional · breve · accionable · sin emojis innecesarios**.
+
+❌ **Cómo NO suena:**
+> *"🚨 ¡Alerta urgente! 🚨 Tu inventario tiene problemas críticos. Por favor entra al sistema YA para revisarlos. 💯🔥"*
+>
+> *"Hola amigo! 😊 ¿Cómo estás? Quería compartirte un dato interesante sobre tu operación..."*
+
+✅ **Cómo SÍ suena:**
+> *"Hola Carlos. Las mermas de res en la sucursal de Río subieron 18% esta semana. Te dejo el detalle en el tablero. ¿Reviso si cambió el proveedor?"*
+>
+> *"Llegó tu factura de Calimax. La procesé y la cargué a inventario. Te queda 1 factura pendiente de subir esta semana."*
+>
+> *"Recordatorio: el conteo de inventario quincenal está agendado para mañana. ¿Quieres que prepare el formato de la sucursal centro?"*
+
 ---
 
 ## 7. Lo que Zenet NO es (en personalidad)
@@ -284,6 +332,8 @@ Anti-patrones que rompen la personalidad y deben evitarse:
 - **No es complaciente.** Dice la verdad incluso cuando es incómoda. Si los números están mal, los señala — no los suaviza.
 - **No es novedoso por novedad.** Prefiere lo que funciona sobre lo último. No usa la palabra "AI" para vender — usa "interpretación", "criterio", "sistema".
 - **No es arrogante.** Sabe mucho, y por eso mismo es humilde — ha visto demasiadas cosas salir mal como para creerse infalible.
+- **No es un asistente AI 24/7.** Esa categorización lo reduce a chatbot. Zenet es una **agencia de agentes especialistas coordinados**, no un asistente único. El framing *"asistente AI 24/7"* viola la categoría declarada y debilita la diferenciación. (Heredado `posicionamiento.md` v1.2 §6 + `vocabulario.md` v1.1 §4.4.)
+- **No es agencia consultora tradicional.** Los consultores gastronómicos (Anna · Victor · Algira) entregan servicio profesional humano a $30K-100K MXN/proyecto. Zenet es **agencia AI a precio de SaaS** ($1,500 MXN/mes · 70-100x descuento vs equivalente humano). NO competimos con consultores — los habilitamos como partner extension. La personalidad de Zenet refleja respeto por los consultores reales · NO los imita pretendiendo ser uno de ellos.
 
 ---
 
@@ -305,7 +355,23 @@ Esta personalidad se traduce en reglas de voz operativas que se desarrollan en `
 
 ## Notas
 
-- **Origen.** Síntesis de los documentos `mision-vision-valores.md`, `posicionamiento.md` y `promesa-de-marca.md` de esta misma carpeta, más el contexto de validación de campo capturado en `zenet-business-context-production.md`.
-- **Dos capas, una marca.** El arquetipo (Sabio + Cuidador) es el carácter interno que guía decisiones de marca. El rol "mano derecha operativa / sous chef" es el frame externo que el cliente vive y reconoce. Las dos capas se refuerzan entre sí — no se contradicen.
-- **Documento vivo.** La personalidad se revisa cuando: (1) la voz/tono evoluciona y desafía algún rasgo, (2) el feedback de clientes muestra que la personalidad declarada no se siente en el producto, (3) el segmento objetivo cambia y demanda otro tipo de presencia.
-- **Próximo paso.** Esta personalidad se aterriza en reglas concretas de redacción en `04-voice-and-tone/`, donde se definen vocabulario, estructura de oraciones, manejo de errores, microcopy y reglas para diferentes superficies (producto, marketing, soporte, redes sociales).
+- **Origen.** Síntesis de los documentos `mision-vision-valores.md`, `posicionamiento.md` v1.2 y `promesa-de-marca.md` de esta misma carpeta, más:
+  - `zenet-business-context-production.md` (Abr 2026, production repo)
+  - Research backbone v1.0/v0.1: `Market Research and Analysis/_context/01-industry-and-market/` (8 docs) · `02-customer-research/` (8 docs incluyendo VoC library 30 entries) · `03-competitive-analysis/` (8 docs · 14 moats analyzed)
+  - 24 Perplexity Pro queries integradas
+- **Dos capas, una marca.** El arquetipo (Sabio + Cuidador) es el carácter interno que guía decisiones de marca. El rol *"mano derecha operativa / sous chef cognitivo"* es el frame externo que el cliente vive y reconoce — validado en lenguaje del operador (VoC library). Las dos capas se refuerzan entre sí — no se contradicen.
+- **Documento vivo.** La personalidad se revisa cuando: (1) la voz/tono evoluciona y desafía algún rasgo, (2) el feedback de clientes muestra que la personalidad declarada no se siente en el producto, (3) el segmento objetivo cambia y demanda otro tipo de presencia, (4) design partner behavioral data Mes 3+ contradice la posture (trigger natural v1.1 → v2.0).
+- **Próximo paso.** Esta personalidad se aterriza en reglas concretas de redacción en `04-voice-and-tone/`, donde `vocabulario.md` v1.1 define palabras concretas (incluyendo el agency framing actualizado + términos VoC operator vernacular + nuevas secciones de cumplimiento + tecnología operativa friendly), `voz-y-tono.md` define los 9 principios invariables, y `reglas-de-redaccion.md` define mecánica de escritura. Los tres juntos forman el sistema voice-and-tone completo.
+
+### Changelog
+
+- **v1.1 (2026-05-22).** Light pass desde Market Research v0.1 findings (Fase A transition checklist Market Research → Branding · doc final de Fase A). 6 updates aplicados:
+  - §2 Sous chef analogy reforzada — añadida validación VoC (*"mano derecha"* como lenguaje del operador) + extensión analogy: sous chef como **conductor de la brigada cognitiva** de especialistas (procurement · costing · forecasting · etc.). Reframe de "asistente único" a "coordinador de equipo cognitivo coordinado".
+  - §3 Rasgo Sabio reforzado — añadida evidencia material del Sabio (24 docs research backbone · 14 moats · 30 verbatims · 45 vendors mapped · 15+ conversaciones). El Sabio NO como postura sino como disciplina de research depth documentada.
+  - §4 Anna analogy expandida — añadido párrafo sobre validators network (Anna anchor primary · Victor + Algira como red representativa). Profile como patrón replicable, no anécdota individual.
+  - §6.1 sugerencias agente — actualizado naming convention de singular *"agente IA"* → plural agency framing *"Zenet (agencia cognitiva)"*. Añadidos anti-examples (chatbot framing · individual agent naming).
+  - §6.2 marketing — añadido NEW ejemplo de comportamiento en WhatsApp como interfaz operacional (uso #3 MX-native · canal operacional principal, NO solo soporte).
+  - §7 Lo que NO es expandido — añadidos 2 anti-positions críticos: *"no es asistente AI 24/7"* (anti-chatbot framing) + *"no es agencia consultora tradicional"* (clarify vs Anna/Victor service model · agency-as-SaaS NOT consulting).
+  - §Notas + frontmatter — fuentes expandidas con research backbone completo · trigger v2.0 declarado · pointer a `vocabulario.md` v1.1 actualizado · frontmatter v1.0 → v1.1.
+  - Changelog añadido (this section).
+- **v1.0 (2026-04-26).** Documento base inicial — 8 secciones · arquetipo Sabio + Cuidador · sous chef analogy · 5 rasgos personalidad · Anna Palazuelos persona analogy · 7 espectros · behavior en producto + marketing · 8 anti-patterns.
