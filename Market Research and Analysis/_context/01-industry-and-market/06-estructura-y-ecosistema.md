@@ -2,9 +2,9 @@
 name: Estructura y ecosistema
 description: Cadena de valor del back-of-house, actores del ecosistema externo y mapa de roles internos del restaurante
 type: market-research
-last_updated: 2026-04-30
+last_updated: 2026-05-23
 status: active
-version: 1.0
+version: 1.0.1
 owner: Alan Bahena
 ---
 
@@ -1034,8 +1034,8 @@ Capa **agnóstica para Zenet** — no integramos por defecto, no competimos. Si 
 
 Capa crítica porque el contador externo es **bloqueador silencioso potencial** del buying committee (sección 3). Software dominante en despachos contables que sirven a restaurantes mexicanos:
 
-- **CONTPAQi.** Estándar histórico en despachos contables MX. Fuerte en contabilidad y nómina.
-- **Aspel.** Contendiente histórico, fuerte en facturación y administrativo.
+- **CONTPAQi.** Estándar histórico en despachos contables MX · **1.2 millones de business users · 6,000+ distribuidores nacionales** `[Validado Perplexity Pro report 2026-05 §4.3 · update 2026-05-23]`. Fuerte en contabilidad y nómina. **Dominante** y de facto integration target para restaurant software MX.
+- **Aspel.** Contendiente histórico, fuerte en facturación y administrativo · particularly significativo en northern Mexico y entre older despacho practices. Migration de Aspel COI a CONTPAQi es servicio documented (consolidación gradual del mercado).
 - **Bind ERP.** Cloud, más moderno, adopción creciente en PYMEs.
 - **Alegra.** Cloud, simple, popular en operadores chicos directos.
 - **Konfío Contador, Xero MX, otros.** Players más nuevos, adopción menor.
@@ -1044,7 +1044,20 @@ Estado de adopción del CFDI 4.0 y CFDI Carta Porte en el sector restaurantero e
 
 **Costos típicos de servicios de contabilidad externa:** $2,500-$6,000 MXN mensuales para casual independiente de 1-3 sucursales (Perfectiva, 2024; SoyConta, 2024).
 
-**Implicación para Zenet.** Debemos entregar exportes de data que faciliten al contador externo (no que le compliquen). Mensajería preventiva al contador: Zenet le ahorra trabajo, no le quita servicio.
+**Alianzas POS ↔ CONTPAQi documentadas** `[Validado Perplexity Pro report 2026-05 §4.3]` — el de facto integration estándar restaurant tech MX:
+
+- **Soft Restaurant (National Soft) ↔ CONTPAQi Contabilidad** — alliance directa anunciada Nov 2022. Permite import cuentas contables + export sales · cancelaciones · devoluciones automáticamente. Solución operativa-contable más fuerte del mercado restaurantero MX a 2026.
+- **MyBusiness POS ↔ CONTPAQi Comercial Premium** — alliance formalizada May 2025 en 14th Congreso de Punto de Venta. Extiende POS-contabilidad integration para SMB POS users.
+- **CONTPAQi ADD (Administrador de Documentos Digitales)** — module dedicated para auto-import · validate · deduplicate CFDI XML y map a polizas contables.
+
+**Implicación competitiva:** CONTPAQi integration **NO es opcional Phase 2** para Zenet — es **gating del contable's authorization** (heredado `02-customer-research/05 §10.8` silent veto + `02-customer-research/06 §3.7.5` contable-specific objections). Soft Restaurant + MyBusiness POS ya certificadas as integration standard. Phase 2 Zenet (Q3-Q4 2027) debe shippear con CONTPAQi native integration o enfrentar veto sistemático del contable.
+
+**Distribuidores Tijuana específicos** `[Validado Perplexity 2026-05 §4.3]`:
+
+- **LIMAC** — distribuidor CONTPAQi en Tijuana · instalación · soporte · implementation. Touch point posible para Zenet partnership Phase 2 cuando se redacte channel strategy.
+- **SYCA** — distribuidor Soft Restaurant en Tijuana · 10+ años de experiencia en implementaciones restauranteras. Modelo *"consultor partner como extensión Zenet"* (heredado §14 below) ya replicado por SYCA con Soft Restaurant — Zenet puede aprender + adapt patrón.
+
+**Implicación para Zenet.** Debemos entregar exportes de data que faciliten al contador externo (no que le compliquen). Mensajería preventiva al contador: Zenet le ahorra trabajo, no le quita servicio. Estrategia operacional: Phase 1 ship con CSV/Excel exports compatibles con CONTPAQi/Aspel manual import · Phase 2 ship con native API integration (CONTPAQi alliance target similar al de Soft Restaurant + MyBusiness POS).
 
 ### 6.8 Programas de lealtad y CRM
 

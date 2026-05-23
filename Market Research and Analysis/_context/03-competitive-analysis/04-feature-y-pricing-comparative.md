@@ -2,9 +2,9 @@
 name: Feature y pricing comparative
 description: Matrices comparativas side-by-side de 20 vendors clave del competitive landscape Zenet — BoH features + AI capabilities + pricing tiers MXN + Mexican market readiness 10-factor + POS integration mode + *contable*/accounting integration + contract/trial/guarantees + support model + fundraise/scale signals. Snapshot archivable con refresh discipline cada 3 meses obligatorio. Estructurado en sub-tablas por vendor category (Direct OPERACIONAL MX · Tier Gamma + Incumbents · Below-radar + Accounting · Direct CATEGORIAL references) para readability.
 type: competitive-analysis
-last_updated: 2026-05-18
+last_updated: 2026-05-23
 status: active
-version: 0.2
+version: 0.2.1
 owner: Alan Bahena
 ---
 
@@ -358,7 +358,7 @@ Vendors en mention level (cf. doc 03 §6.6 + §6.7 + §12 + §13 + §14) exclude
 | Factor                           | Last.app                                    | Bistrosoft                   | SoftRestaurant                 | Wansoft (by Clip)                 | Pacific Soft           |
 | -------------------------------- | ------------------------------------------- | ---------------------------- | ------------------------------ | --------------------------------- | ---------------------- |
 | CFDI 4.0 native                  | 🟡 In progress (Spain Verifactu carry-over) | ✅ Operational                | ✅                              | ✅ Likely (15-20 años MX)          | ✅ Included en licencia |
-| CONTPAQi / Aspel                 | Unknown                                     | Unknown                      | 🟡 Via distributor ecosystem   | Unknown                           | Unknown                |
+| CONTPAQi / Aspel                 | Unknown                                     | Unknown                      | ✅ **Native alliance Nov 2022** (National Soft + CONTPAQi Contabilidad — direct bridge cuentas contables + sales/cancelaciones/devoluciones export) | Unknown                           | Unknown                |
 | Mexican Spanish                  | 🟡 Spain Spanish primary                    | 🟡 Argentine Spanish primary | ✅ Native                       | ✅ Native                          | ✅ Native               |
 | WhatsApp CS primary              | 🟡 Claimed via FAQ                          | Unknown                      | ✅ Via distributors             | Unknown                           | Unknown                |
 | MXN pricing                      | ✅ /mx/precios                               | Unknown                      | ✅                              | ✅                                 | ✅                      |
@@ -443,6 +443,32 @@ Tier MX Readiness (Composite score)
 **Por qué importa para sales:** Mexican operators (cf. doc 06 §4.9) tienen *"WhatsApp Business operational expectation, NOT preference"*. Operator que ya usa WhatsApp 60+ veces/día (Carlos Mendoza arquetipo) NO quiere abrir otra app dashboard. **Zenet's operational interface via WhatsApp = friction-reducer estructural** vs todos los competitors.
 
 **Critical reality check:** El uso #3 (operational interface primary) requiere que Zenet ship architecture que permite operación completa via WhatsApp Business — invoice photo upload, AI insights returns, approval flows, daily alerts, demand forecast queries, procurement suggestions. **Esto es product roadmap commitment, NOT solo positioning claim.** Cf. CLAUDE.md §4 reframing — *"Smartphone-native + WhatsApp-style interaction es supervivencia competitiva"*.
+
+### 5.6 CONTPAQi ecosystem dominance + restaurant POS alliances landscape
+
+> `[Validado Perplexity Pro report 2026-05 §4.3 · added 2026-05-23]`
+
+**Reality check competitive sobre CONTPAQi integration en restaurant tech MX:**
+
+CONTPAQi domina el SMB accounting software market en México con **1.2 millones de business users + 6,000+ distribuidores nacionales**. Es de facto integration target para restaurant software en MX. La adoption rate del contable's stack determina materialmente la sales motion del POS / BoH vendor — sin CONTPAQi integration certified, contable's silent veto se materializes (heredado customer 05 §10.8 + customer 06 §3.7.5).
+
+**Alianzas POS ↔ CONTPAQi documentadas (estado mayo 2026):**
+
+| POS Vendor | Alianza con CONTPAQi | Fecha | Status | Implicación Zenet competitive |
+|---|---|---|---|---|
+| **Soft Restaurant (National Soft)** | CONTPAQi Contabilidad direct alliance | **Nov 2022** | Certified · operational · imports cuentas contables + exports sales/cancelaciones/devoluciones | **Competitive gating** — Soft Restaurant es POS dominante MX restaurant + tiene contable-friendly integration · raises bar para Zenet Phase 2 |
+| **MyBusiness POS** | CONTPAQi Comercial Premium alliance | **May 2025** | Formalized en 14th Congreso de Punto de Venta | Indica industry shift hacia POS-contabilidad integration como **table stakes** SMB MX restaurant tech |
+| **PoloTab · Parrot · Fudo · Bistrosoft** | Unknown / no documented alliance | — | Status unclear · no public announcements | Possible gap competitivo · OR alliances en discusión privada |
+| **Zenet** | 🚧 Roadmap Phase 2 | Q3-Q4 2027 estimated | NOT certified todavía · Phase 1 ship con CSV/Excel exports compatible CONTPAQi manual import | Defendible Phase 1 (manual upload framing) · gating Phase 2 |
+
+**Implicación strategic load-bearing para Zenet:**
+
+1. **Phase 1 launch (Q3 2026) NO necesita CONTPAQi native integration** — manual upload (Modo 1/2/3) suficiente porque alinea con "trabajamos sobre tu POS actual" positioning (heredado posicionamiento v1.3 §4 diferenciador #2)
+2. **Phase 2 (Q3-Q4 2027) DEBE shippear CONTPAQi native integration** — sin ella, contable's silent veto se vuelve sistemático cuando Zenet llegue a 5+ sucursales operations
+3. **Distribuidores Tijuana** — LIMAC (CONTPAQi) + SYCA (Soft Restaurant) son potential partnership targets cuando se redacte Phase 2 GTM strategy
+4. **POS API integration architecture decision** — Soft Restaurant alliance pattern (cuentas contables import + sales/cancelaciones/devoluciones export) es industry standard reference para Zenet's Phase 2 spec
+
+**Anti-pattern competitive:** Zenet intentando shippear CONTPAQi integration Phase 1 sin proper architecture es scope creep · risk de delay launch Q3 2026. Mejor ship Phase 1 con manual upload + clear messaging que CONTPAQi integration viene en Phase 2.
 
 ---
 

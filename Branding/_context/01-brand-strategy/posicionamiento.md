@@ -3,9 +3,9 @@
 ## name: Posicionamiento
 description: Posición competitiva de Zenet — qué categoría jugamos, para quién, contra qué, y por qué nos eligen
 type: brand-strategy
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 status: active
-version: 1.3
+version: 1.4
 owner: Alan Bahena
 
 # Posicionamiento
@@ -69,7 +69,7 @@ Cuatro componentes definen la categoría:
 
 - **Chefs ejecutivos** con responsabilidad operativa (recetas, inventario, equipo)
 - **Encargados de compras / inventario**
-- **Contables** (internos o externos) — rol **load-bearing** en buying committee MX: *"el chef adopta, el dueño paga, el contable autoriza"*. Sin el contable engaged, el deal entra en limbo o se cae. Customer research demostró que multi-thread (owner + manager + chef + contable) tiene **3x conversion rate** vs single-thread (68% vs 23%).
+- **Contables** (internos o externos) — rol **load-bearing** en buying committee MX: *"el chef adopta, el dueño paga, el contable autoriza"*. Sin el contable engaged, el deal entra en limbo o se cae. Customer research demostró que multi-thread (owner + manager + chef + contable) tiene **3x conversion rate** vs single-thread (68% vs 23%). **Silent veto pattern documentado** (Perplexity Pro report 2026-05): *"contable's veto exercised more often through passive non-endorsement than active blockage"* — sales motion debe engagear contable proactively en discovery, NO esperar a post-close. **Inflection point a 2-3 sucursales** — el contable flip de gatekeeper a internal advocate cuando manual multi-location reconciliation se vuelve acute (alinea con Zenet beachhead Sub-segmento B). **Software stack típico:** CONTPAQi Contabilidad dominante (1.2M business users MX) · Aspel COI alternativo · CONTPAQi integration es competitive gating en Phase 2 Zenet.
 
 ### Audiencia terciaria (canal y aliados)
 

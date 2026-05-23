@@ -3,9 +3,9 @@
 ## name: Vocabulario
 description: El diccionario operativo de Zenet — qué palabras usamos, cuáles evitamos, cómo nombramos lo nuestro, y cómo se traducen los términos entre idiomas.
 type: voice-and-tone
-last_updated: 2026-05-22
+last_updated: 2026-05-23
 status: active
-version: 1.2
+version: 1.3
 owner: Alan Bahena
 
 # Vocabulario
@@ -160,6 +160,14 @@ Vocabulario regulatorio y fiscal mexicano. Crítico para messaging compliance �
 | **Régimen fiscal**                   | Industry term sin explicar — operador formal lo conoce. |
 | **IMSS**                             | Sin explicar — Instituto Mexicano del Seguro Social. Cumplimiento laboral. |
 | **PAC**                              | Proveedor Autorizado de Certificación CFDI. Internal — cliente raramente lo necesita. Zenet NO es PAC. |
+| **Conciliar / Timbrar / Póliza**     | Master verbs del workflow contable. **Conciliar:** cross-check POS-CFDI-bank statements (concepto central messaging). **Timbrar:** digital sealing CFDI via PAC. **Póliza:** accounting entry generated per CFDI · automated generation key CONTPAQi feature. Internal/contable-facing terminology · NO usar cliente-facing dueño. |
+| **DIOT / Balanza**                   | **DIOT:** Declaración Informativa de Operaciones con Terceros · monthly VAT detail report. **Balanza:** balance de comprobación submitted electronically to SAT monthly. Sin explicar al contable · NO usar cliente-facing dueño. |
+| **EFOS / EDOS**                      | Blacklisted *factureras* (EFOS = Empresa que Factura Operaciones Simuladas · SAT Art. 69-B CFF). Contable validation feature · NO cliente-facing dueño. |
+| **Complemento de pago / REP**        | CFDI complement required when payment occurs after invoice issuance · common B2B catering. Internal/contable-facing. |
+| **Factura global**                   | Single CFDI covering all non-facturado consumer sales en period · daily generation typical restaurants. Operational concept · ambos lados (operator + contable) lo conocen. |
+| **Tasa efectiva**                    | Effective tax rate · SAT compares vs sector averages to flag audit candidates. Internal/contable-facing · audit-defense messaging. |
+| **ADD (Administrador de Documentos Digitales)** | CONTPAQi module para automated CFDI management (load · validate · deduplicate · map to polizas). Internal/contable-facing · integration messaging. |
+| **Despacho**                         | Contable's practice/firm · external service model dominant SMB MX. Operator-friendly: *"tu despacho contable"* · *"el contador externo"*. Acknowledge despacho relationship en sales. |
 
 
 ### 2.7 Tecnología operativa (cliente-friendly)
@@ -513,6 +521,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Término                                | Decisión Zenet                                                                 |
 | -------------------------------------- | ------------------------------------------------------------------------------ |
 | Acompañamiento intensivo               | Sí. Cliente-facing version de "high-touch onboarding". Los 3 meses iniciales con founder INCLUIDOS en subscripción. |
+| ADD (Administrador de Documentos Digitales) | Internal/contable-facing. CONTPAQi module para automated CFDI management. |
 | Agencia de agentes especialistas       | Sí. Concepto de categoría · frase con punch que define qué ES Zenet.           |
 | Agency-as-SaaS                         | Internal/strategic. Cliente-facing: *"agencia de agentes especialistas"*.       |
 | Agente / Los agentes                   | Evitar como entidad nombrada cliente-facing. Decir *"Zenet"* directamente.     |
@@ -525,6 +534,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Back-of-house                          | Sí. Coexiste con "trastienda".                                                 |
 | Bloques operativos                     | Sí, minúsculas. Concepto de visión a futuro.                                   |
 | BoH AI layer                           | Internal/strategic. Cliente-facing: *"capa cognitiva sobre tu back-of-house"*. |
+| Balanza                                | Internal/contable-facing. Balance de comprobación submitted electronically to SAT monthly. NO cliente-facing dueño. |
 | Caos operativo                         | Sí. Es el antagonista nombrado en la narrativa.                                |
 | Cadena (de restaurantes)               | Sí. Operación con múltiples sucursales bajo una marca.                         |
 | Capa cognitiva                         | Sí. Frame de arquitectura cliente-friendly.                                     |
@@ -536,7 +546,8 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Comensal                               | Quien come en el restaurante.                                                  |
 | Compliance                             | Evitar en cliente · preferir *"cumplimiento"*.                                  |
 | Compromiso mínimo 90 días              | Sí. Componente del modelo comercial post fase gratuita. Cliente: *"compromiso mínimo de 90 días"* · internal: *"90-day minimum commitment"*. |
-| Conciliación / Reconciliación          | Sí. Cross-check entre POS · inventario · CFDI · contabilidad.                  |
+| Complemento de pago / REP              | Internal/contable-facing. CFDI complement required when payment occurs after invoice issuance. |
+| Conciliar / Conciliación               | Master verb del workflow contable. Cross-check entre POS · inventario · CFDI · contabilidad. Internal/contable-facing primary · concepto central messaging compliance ("data limpia y reconciliada"). |
 | Conexión                               | Sí. Reemplazo de *"integration"* / *"API"* en cliente · usar con cuidado: Phase 1 NO tiene API integration. |
 | Contable / Contador                    | Sí. Rol load-bearing en buying committee MX.                                    |
 | Continuación de subscripción           | Sí. Frame para la decisión post-90-días en design partner program. Preferido sobre *"Mantenimiento"* (deprecated). |
@@ -547,12 +558,15 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Demo                                   | Sí, aceptable.                                                                 |
 | Descuento Socio Fundador               | Sí. 30% descuento perpetuo para clientes que se incorporan durante design partner program. NO es promoción · es status permanent. |
 | Design partner                         | OK internal/investor pitch. Cliente: *"operador piloto"*.                       |
+| Despacho (contable)                    | Sí. Contable's practice/firm · external service model dominant SMB MX. Cliente: *"tu despacho contable"* · *"el contador externo"*. |
 | Desperdicio                            | Evitar. Preferir *"merma"*.                                                    |
+| DIOT                                   | Internal/contable-facing. Declaración Informativa de Operaciones con Terceros · monthly VAT detail report. NO cliente-facing dueño. |
 | Disruptivo                             | Nunca. Hype.                                                                   |
 | Distintivo H                           | Sí. Sin explicar. Certificación sanitaria SECTUR-SSA.                           |
 | Dueño operador                         | Sí. Castellanización útil de "owner-operator".                                 |
 | Email / correo                         | Ambos OK.                                                                      |
 | Encargado del tratamiento              | Internal legal. Rol de Zenet bajo LFPDPPP.                                      |
+| EFOS / EDOS                            | Internal/contable-facing. Blacklisted *factureras* (SAT Art. 69-B CFF). Contable validation feature. |
 | Equipo cognitivo coordinado            | Sí. Cómo se describe la coordinación interna de los agentes.                    |
 | ERP                                    | Sí, en contexto comparativo (Zenet no es ERP).                                 |
 | Escandallo                             | Sí. Receta costeada.                                                           |
@@ -560,6 +574,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Estandarización                        | Sí. Concepto central.                                                          |
 | Excelencia operativa                   | Aceptable pero genérico. Preferir lenguaje más específico.                     |
 | Factura / Comprobante                  | Sí. Operator-friendly. Preferido sobre "CFDI" para el documento físico.         |
+| Factura global                         | Sí. Single CFDI covering all non-facturado consumer sales en period · daily generation typical restaurants. Ambos lados (operator + contable) lo conocen. |
 | Fase gratuita                          | Sí. Los 90 días iniciales del design partner program. Preferido sobre *"trial"* o *"prueba gratis"*. |
 | Feature                                | Evitar en cliente. Decir *"función"* o *"funcionalidad"*.                       |
 | Fiscalización digital                  | Sí. Umbrella term de presión SAT 2026+.                                         |
@@ -600,6 +615,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Pilot / Piloto                         | *"Piloto"* en cliente · *"pilot"* internal/strategic.                           |
 | Plataforma                             | OK pero limitado. Preferir *"sistema"*.                                         |
 | Plaza                                  | Sí. Operator term para ciudad/ubicación.                                        |
+| Póliza                                 | Internal/contable-facing. Accounting entry generated per CFDI · automated generation key CONTPAQi feature. NO cliente-facing dueño. |
 | POS / punto de venta                   | Sí. Ambos OK.                                                                  |
 | POS API integration                    | Internal. Phase 2 only · NO Phase 1. Cliente Phase 1: *"trabajamos con la data de tu POS via 3 modos de carga"*. |
 | POS-agnostic / hardware-agnostic       | Internal. Cliente: *"Zenet trabaja sobre tu POS actual"*.                       |
@@ -627,7 +643,9 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Subscripción / Suscripción             | Sí. Modelo comercial principal de Zenet (pure subscription · NO setup fee). Preferido sobre *"membresía"* o *"licencia"*. |
 | Sucursal                               | Sí. La unidad replicable.                                                      |
 | Tablero / Panel                        | Sí. Reemplazo de *"dashboard"*.                                                  |
+| Tasa efectiva                          | Internal/contable-facing. Effective tax rate · SAT compares vs sector averages to flag audit candidates. Audit-defense messaging. |
 | TIER 1 / TIER 2A / TIER 2B / TIER 3    | Internal product roadmap terminology. TIER 1 = manual vivo + WhatsApp agency (Phase 1 launch must-have). TIER 2A = recetario consultable (Phase 1 launch). TIER 2B = training portal (Phase 1.5 deferred). TIER 3 = process compliance + cumplimiento fiscal (Phase 2). NO usar cliente-facing. |
+| Timbrar                                | Internal/contable-facing. Digital sealing/validating CFDI via PAC. NO cliente-facing dueño. |
 | Trastienda                             | Sí. Coexiste con *"back-of-house"*.                                              |
 | Tú (vs usted)                          | *"Tú"* siempre, salvo legal y press.                                            |
 | Único                                  | Evitar. Hype.                                                                  |
