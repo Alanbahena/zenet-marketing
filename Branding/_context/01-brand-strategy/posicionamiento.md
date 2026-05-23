@@ -5,7 +5,7 @@ description: Posición competitiva de Zenet — qué categoría jugamos, para qu
 type: brand-strategy
 last_updated: 2026-05-22
 status: active
-version: 1.2
+version: 1.3
 owner: Alan Bahena
 
 # Posicionamiento
@@ -312,6 +312,51 @@ Zenet se justifica desde **dos ángulos complementarios**: tiempo+mermas recuper
 
 Este frame es load-bearing para investor pitch + sales messaging premium (heredado competitive 07 §4.1.3). NO se vende como *"AI barata"* — se vende como *"acceso a equipo de especialistas que el restaurante casual independiente no podría costear"*.
 
+### Modelo comercial (pure subscription · no setup fee)
+
+Zenet opera con un modelo comercial específicamente alineado al positioning agency-as-SaaS:
+
+| Componente | Detalle |
+|---|---|
+| **Modelo** | Pure subscription · sin setup fee separado · sin project pricing |
+| **Suscripción canónica** | $1,500 MXN/mes/sucursal (hipótesis · pricing exact TBD en `Product Strategy/_context/03-oferta-y-pricing/`) |
+| **Socio Fundador descuento** | 30% perpetuo sobre canonical para clientes incorporados durante design partner program |
+| **Compromiso mínimo** | 90 días post fase gratuita (cubre transición de high-touch a self-serve) |
+| **Annual prepay option** | Descuento adicional disponible (% TBD · range típico 15-20%) |
+| **High-touch onboarding (primeros 90 días)** | INCLUIDO en subscripción · NO setup fee separado |
+
+**Por qué pure subscription (no setup fee):** decisión revisada 2026-05-22 después de análisis honesto. Setup fee + subscripción rompía: (1) el agency-as-SaaS framing · (2) el pricing arbitrage 70-100x (Lente 2 arriba) · (3) creaba dos friction points en la venta · (4) introducía dilution en investor pitch (services revenue contamination vs pure SaaS ARR). Pure subscription preserva todos los frames + es Mexican SMB psychology friendly (decisión operativa del dueño · no requiere contable approval gating).
+
+**Anti-position explícita:** Zenet NO cobra setup fee. Si un prospecto pregunta *"¿cuánto cuesta la implementación?"*, respuesta correcta: *"El acompañamiento inicial de 3 meses está incluido en la subscripción"*. (Heredado `Branding/_context/04-voice-and-tone/vocabulario.md` v1.2 §2.8 + §4.5.)
+
+### Producto — Phase 1 vs Phase 2
+
+Zenet ship en fases declaradas. Lo que se vende hoy NO es lo que se vendrá. Honest framing es load-bearing:
+
+**Phase 1 (launch Q3 2026 · TIER 1 + TIER 2A):**
+
+- Manual operativo vivo en Zenet (no PDF exportable solo)
+- WhatsApp agency interface 24/7 (consultable por dueño · gerente · chef)
+- Recetario consultable vía WhatsApp por cocina
+- Procesos documentados + mapa de procesos (flowchart designer)
+- Estandarización (recetario · inventario · unidades)
+- **Modos de upload (Modo 1 CSV/Excel · Modo 2 captura manual · Modo 3 foto OCR)** — NO POS API integration
+
+**Phase 1.5 (Q4 2026 / Q1 2027 · TIER 2B deferred):**
+
+- Training portal para nuevos empleados (assessment pendiente)
+
+**Phase 2 (Q3-Q4 2027 · TIER 3 + más):**
+
+- Inventario dinámico (no manual upload)
+- Pronósticos de consumo
+- Costos automatizados + procurement
+- Variance detection data-driven
+- Agentes cumplimiento fiscal/sanitario automáticos
+- **Integración POS API** (CONTPAQi · Aspel SAE · SoftRestaurant · PoloTab · etc.)
+
+**Implicación de positioning:** *"Trabajamos sobre tu POS, no lo reemplazamos"* (§4 diferenciador #2) opera en Phase 1 vía **manual upload (3 modos)**, NO via API integration. Esto es feature, no bug — más POS-agnostic que API integration (que requiere integración específica por POS vendor). Phase 2 añade integración API automatic conservando el frame de coexistencia.
+
 ### Timing — por qué AHORA específicamente
 
 La tesis temporal completa (5 fuerzas convergentes · counterfactual histórico · windows-closing · risks · implicaciones operativas) vive en `Market Research and Analysis/_context/05-market-insights/00-por-que-ahora.md`. Pointer summary:
@@ -341,6 +386,11 @@ Window cumulativa de category-defining: **~18 meses desde Q2 2026 hasta Q4 2027*
 
 ### Changelog
 
+- **v1.3 (2026-05-22).** Update minor desde decisión estratégica de pricing model (pure subscription + 90-day minimum + annual prepay · sin setup fee · decisión 2026-05-22 post-análisis honesto). Updates aplicados:
+  - **§7 expansion · NEW subsección "Modelo comercial"** — documentado pure subscription model con componentes (suscripción canónica · 30% Socio Fundador · 90-day minimum · annual prepay · high-touch onboarding INCLUIDO) + razones para no setup fee (preserva agency-as-SaaS framing · preserva pricing arbitrage · single commercial decision · Mexican SMB psychology · pure SaaS ARR) + anti-position explícita.
+  - **§7 expansion · NEW subsección "Producto — Phase 1 vs Phase 2"** — declarado explícitamente Phase 1 launch scope (TIER 1 + TIER 2A) · Phase 1.5 deferred (TIER 2B) · Phase 2 future (TIER 3 + más). Clarificado que Phase 1 trabaja con manual upload (3 modos), NO POS API integration. Reframe del diferenciador #2 ("trabajamos sobre tu POS"): vía manual upload en Phase 1 → vía API en Phase 2. Más POS-agnostic que API.
+  - **Frontmatter** v1.2 → v1.3 · last_updated 2026-05-22.
+  - **Sync con production strategy + vocabulario:** referencias a `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 (decisión canónica modelo) + `Branding/_context/04-voice-and-tone/vocabulario.md` v1.2 §2.8 + §4.5 (terminología del modelo).
 - **v1.2 (2026-05-22).** Update mayor desde Market Research v0.1 findings (Fase A transition checklist Market Research → Branding). 9 updates aplicados:
   - §1 Declaración refinada — añadido *"casual independiente formal MX/LATAM"* + agency framing + VoC insight (sistema mental del operador) + WhatsApp interface.
   - §3 Para quién expandido — añadido ICP arquetípico Carlos Mendoza + contable como rol load-bearing buying committee + anti-ICP cultural ("yo SOY el sistema en negación") + filtro de formalidad mínima + subsección dinámica buying committee.
