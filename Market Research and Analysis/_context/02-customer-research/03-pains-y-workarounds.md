@@ -3,9 +3,9 @@ name: Dolores y workarounds del operador
 description: Inventario detallado de dolores operativos, financieros, emocionales y relacionales del dueño-operador del beachhead, mapeo de workarounds actuales y costo de mantenerlos. Hipótesis estructuradas pendientes de validación con dueño directo.
 type: customer-research
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-06
+last_updated: 2026-05-23
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -520,6 +520,132 @@ Cuatro categorías, cada una con sub-dolores específicos. Cada sub-dolor declar
 **Implicación para mensajería:** el copy que invoca dolor relacional directamente puede sentirse intrusivo o exagerado en primer contacto — el operador no se reconoce públicamente en ese frame. Pero copy que invoca el dolor *operativo proxy* y deja que el operador haga la conexión a su vida personal **sí funciona**. Ej: "Recupera 2 noches a la semana en casa" funciona; "tu pareja y tus hijos te necesitan" no funciona en adquisición.
 
 **Hipótesis abierta:** ¿la silence architecture es uniforme en el beachhead, o varía por edad/género del operador? Probable que operadoras mujeres tengan menos silencio sobre dimensión familiar y más sobre dimensión partnership; operadores hombres mayor silencio en ambos. Las primeras conversaciones con design partners deben triangular esto.
+
+### 2.5 Dolores fiscales / cumplimiento — load-bearing del *contable* heredados al operador
+
+> `[Validado Perplexity Pro report 2026-05 §1.1 + §2.1 + §2.2 + §2.3 · added 2026-05-23]`
+
+**Nota de framing:** estas son pains que **viven primariamente en el contable** (interno o externo del operador) · pero que **se heredan al operador** porque (a) impactan su exposición de auditoría, (b) generan costo de despacho contable, (c) consumen mental bandwidth via stress fiscal, (d) bloquean adoption de tecnología cuando contable no endorses.
+
+El operador NO articula estos pains nativamente · pero **los siente vía consecuencias** (multas · auditorías exprés · stress mensual cierre fiscal · resistencia contable a sistemas nuevos). Documentarlos aquí es estratégico — son palancas para sales motion + product roadmap.
+
+#### 2.5.1 CFDI reconciliation manual = 25-35% del workload mensual del contable
+
+**Detalle del dolor (contable lens):**
+
+Single-location restaurant genera 2,000-4,500 CFDI/mes · reconciling entre 3 data sources sin automation:
+- **POS system** (tickets · comandas · autofactura requests)
+- **CFDI XML timbrados** (legal fiscal record)
+- **Contabilidad system** (CONTPAQi · Aspel COI — ledger)
+
+6 failure modes documentados (Perplexity §1.1):
+
+| Error Type | Root Cause | Downstream Impact |
+|---|---|---|
+| RFC/Razón social mismatch | Cashier captures datos manually | Invalid CFDI · nota de crédito needed |
+| Duplicate CFDI | POS retries timbrado después de timeout | Inflated declared income · DIOT discrepancy |
+| Canceled CFDI sin substitute | Incorrect cancellation motive | Ingresos understated |
+| Missing complemento de pago (REP) | Credit sale sin REP follow-up | IVA timing error · SAT flag |
+| Propinas misclassified | CFDI includes propina en valor vs. non-objeto addenda | IVA overcalculation · IMSS/ISR treatment dispute |
+| Inventory ≠ CFDI egreso | Informal purchases sin CFDI | Non-deductible costs · compras > sales triggers SAT risk model |
+
+**Workaround actual del contable (SMB):**
+- XML files descargados manualmente del PAC portal
+- Imported a CONTPAQi o Excel
+- Cross-checked vs POS Z-report
+- Manual reconciled vs bank statement
+- **Semi-manual workflow** dominant para SMB despachos · automation tools available pero require software stack alignment most 1-3 sucursal restaurants haven't achieved
+
+**Cómo se hereda al operador:**
+- Despacho contable cobra por hora — más reconciliation manual = factura mensual más alta del despacho
+- Operador feels esto como *"el contable cobra mucho"* sin entender root cause
+- Errores acumulados surface como **audit risk** cuando llegue auditoría exprés (cf. industry 08 §2.8)
+
+**Verbatim potential** `[Hipótesis · validation Cohort 1]`:
+> Operator: *"Mi contador me dice que se la pasa cuadrando facturas todo el mes."*
+
+#### 2.5.2 Propinas fiscal treatment unresolved — judgment call cada payroll
+
+**Detalle del dolor (contable lens):**
+
+Tres marcos en conflicto sin resolución clara (Perplexity §2.2 + industry 08 §2.9):
+
+- **SAT Criterio 43/ISR/N:** propina es salary (retención ISR required)
+- **SAT Criterio 33/IVA/N:** propina es non-base (NO IVA calculation)
+- **Tribunal Colegiado 2021 + PRODECON opinion:** further complexity
+
+El contable **toma judgment call en cada payroll cycle** · audit exposure latente cuando criterion applies diferente que otro.
+
+**Workaround actual:**
+- Aplicar criterio del despacho consistently · documentar reasoning · cruzar fingers en auditoría
+- Algunos despachos use Addenda PROPINAS CFDI 4.0 (cuando POS lo permite · adoption uneven)
+
+**Cómo se hereda al operador:**
+- Operador no entiende esta complejidad · ve solo *"el contable maneja las propinas"*
+- Si auditoría flag inconsistency, operador enfrenta multas + back-taxes
+- Reforma laboral 2025-2026 (propinas en salario mínimo · pendiente Senado) aumenta complejidad cuando se apruebe
+
+#### 2.5.3 LFPDPPP 2025 compliance burden — despacho como data processor
+
+**Detalle del dolor (contable lens):**
+
+Nueva LFPDPPP (vigor 21 mar 2025) ahora classifies despacho contable como **encargado del tratamiento** con obligaciones legales propias (industry 08 §10.1 updated 2026-05-23 + Perplexity §2.3).
+
+Despachos handle:
+- Client RFC data
+- Employee CURP + NSS
+- Bank account information
+- Payroll records
+- e.firma / FIEL credentials
+
+**Realidad documentada (ContadorMx 2024 / Perplexity §6.1):** *"En la mayoría de los despachos contables no se cuenta con un departamento de seguridad de la información y gestión de clientes."* — **Most small despachos NOT meeting requirements** como of mid-2025.
+
+**Workaround actual:**
+- Despachos operate informally con minimal infrastructure de seguridad
+- Aviso de privacidad genérico (si lo tienen) · zero specific LFPDPPP 2025 compliance review
+- Confianza relacional con cliente reemplaza compliance documentation
+
+**Cómo se hereda al operador:**
+- Si SAT/Secretaría Anticorrupción enforces LFPDPPP 2025 against despacho, operador puede ser co-impactado vía supplier risk
+- Operador con concerns post-LFPDPPP (e.g., adopting cloud SaaS like Zenet) ahora enfrenta double-layer LFPDPPP question (su negocio + su despacho)
+
+#### 2.5.4 Audit defense preparation — stress mensual de cierre fiscal + auditoría exprés exposure
+
+**Detalle del dolor (contable lens):**
+
+SAT 2026 (industry 08 §2.8 updated):
+- **16,200 auditorías planeadas** · 12,000 PyME allocation (74%)
+- Selection **algorithmic risk-based** (NO random)
+- Restaurant-specific flags: compras > ventas · tasa efectiva ISR below sector avg · delivery platform CFDI inconsistencies · recurrent losses
+
+El contable preparing client para auditoría exprés (24 días hábiles · CSD restriction posible) opera bajo:
+- Mes 17 deadline declaraciones mensuales
+- Continuous EFOS/EDOS validation supplier RFCs
+- Contabilidad electrónica monthly submission
+- Buzón Tributario monitoring
+
+**Workaround actual:**
+- Reactive mode · cierre mensual completed con whatever data has · espera + prays no audit
+- Si llega audit notification: scramble mode · documentation reconstruction · stress acumulado
+
+**Cómo se hereda al operador:**
+- Operador hereda **anxiety latente** sobre exposure fiscal — V-001 frame *"yo veo si a final de mes queda dinero en la cuenta"* es proxy de no entender realmente su fiscal posture
+- Auditoría exprés notification es event traumatic para operador
+- Pain manifiesta como *"mi contador me dice que tengamos cuidado con [X]"* sin entender [X] específicamente
+
+#### 2.5.5 Resumen — implicación para sales motion + product roadmap
+
+**Para sales motion (heredado customer 06 §3.7.5 contable-specific objections):**
+
+- Reconocer estos 4 pains explícitamente cuando engage contable es disarming · signals fluency
+- Frame Zenet como *"alivio del workload de reconciliation manual mientras tu contador hace work más estratégico"*
+- Cite SAT 2026 risk landscape + LFPDPPP 2025 burden como mutual context (NOT scare tactic)
+
+**Para product roadmap (heredado customer-profile §6 contable Gains):**
+
+- Phase 1 (TIER 1+2A · launch Q3 2026): manual upload reduces reconciliation friction · NO API integration todavía
+- Phase 2 (TIER 3 · Q3-Q4 2027): full API integration con CONTPAQi/Aspel · automated factura global · automated propinas addenda · EFOS/EDOS supplier validation
+- Pricing arbitrage frame: Zenet $1,500/mes vs equivalent human team specialist en cumplimiento $15K MXN/mes = 10x discount (subset del 70-100x agency arbitrage)
 
 ---
 

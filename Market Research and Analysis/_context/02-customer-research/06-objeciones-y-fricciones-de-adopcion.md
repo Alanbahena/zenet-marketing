@@ -3,9 +3,9 @@ name: Objeciones y fricciones de adopción
 description: Catálogo de objeciones por categoría (8 categorías, ~35 objeciones específicas) con verbatim, trigger underlying, y disarming tactic. Adoption friction post-firma. Framework LAER adaptado a Mexican context. Cuándo NO desactivar (anti-perfiles signals). Construido sobre fundamento estructural de doc 03 §5.10.
 type: customer-research
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-08
+last_updated: 2026-05-23
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -576,6 +576,121 @@ Captura el **incumbent logic real** del operador — *"YO soy el sistema. Mi cab
   - Reframe: *"Justo por eso. Tu gerente nuevo está aprendiendo cómo opera tu restaurante. Si le enseñas con Zenet desde día 1, está aprendiendo el sistema correcto desde inicio. Si esperas, le enseñas el caos primero, y después le pides desaprender."*
   - Position Zenet como onboarding accelerator del gerente nuevo: *"Zenet te ayuda a documentar lo que tu gerente nuevo necesita saber — ahorra tu tiempo de explicar mismo cosa 10 veces."*
 - **Anti-tactic:** dismiss su preocupación de carga sobre el gerente nuevo.
+
+#### 3.7.5 Objeciones contable-specific Perplexity-derived (set de 7)
+
+> `[Validado Perplexity Pro report 2026-05 §3.4 · added 2026-05-23]`
+
+Estas 7 objeciones aparecen consistently en literatura contable mexicana sobre adoption de SaaS restaurantero. Son las que **el contable plantea explícitamente** cuando le pides feedback (vs el silent veto dynamic en §3.7.6 abajo · que es más common).
+
+**3.7.5.a — *"¿Dónde quedan mis XMLs?"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** data sovereignty + ability to access raw CFDI files for audit defense.
+- **Disarming tactic:**
+  - Show explicit XML download/export feature en Ficha Técnica Contable
+  - *"Tus XMLs siguen siendo tuyos · descargables en cualquier momento desde Zenet · backup local opcional · Zenet NO es PAC ni timbrador (no reemplazamos a tu PAC actual)"*
+  - Mostrar sample CFDI XML export en sandbox para que él valide formato
+- **Anti-tactic:** vague respuesta de *"está en la nube"* (incrementa anxiety) · NO defer al dueño (contable trust requires direct engagement).
+
+**3.7.5.b — *"¿Cómo se conecta con mi CONTPAQi (o Aspel)?"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** sin documented integration, contable enfrenta manual re-entry · cancela el value prop.
+- **Disarming tactic:**
+  - Provide explicit CONTPAQi integration documentation · cite Soft Restaurant + CONTPAQi alliance precedent (Nov 2022) y MyBusiness POS + CONTPAQi (May 2025) como industry standard
+  - Si no hay integración nativa todavía: be honest *"Phase 2 roadmap Q3-Q4 2027 · meanwhile CSV export compatible con CONTPAQi/Aspel import"*
+  - Sandbox access con sample CONTPAQi-format export
+- **Anti-tactic:** sobre-promise integración antes de tenerla shipped (destruye trust después).
+
+**3.7.5.c — *"¿Quién actualiza cuando el SAT cambia los catálogos?"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** responsibility para keeping SAT catalog versions current (e.g., June 5, 2025 catalog update) — sin claridad, contable assumes liability.
+- **Disarming tactic:**
+  - *"Zenet mantiene catálogos SAT actualizados automáticamente · es parte del servicio · tu cliente NO tiene que preocuparse por catalog updates manuales · tu workload de mantenimiento de catálogos se reduce a cero"*
+  - Show explicit catalog update log en sandbox
+- **Anti-tactic:** vague respuesta o defer responsibility (al cliente o al contable).
+
+**3.7.5.d — *"Mi cliente no entiende el sistema"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** despachos worry sobre operator error generating uncorrectable fiscal errors · que ellos tienen que limpiar después.
+- **Disarming tactic:**
+  - Demo el operator UX al contable (NOT solo features) · show que Zenet es self-explanatory para operador
+  - Reference: *"Nuestros operadores piloto reportan zero confusión de CFDI en primeros 90 días · si surge error, Zenet flags antes de que llegue al SAT, NOT after"*
+  - Position Zenet como **error prevention** para el contable, NO error generator.
+- **Anti-tactic:** dismiss su concern (es genuino · ha vivido errores costosos antes).
+
+**3.7.5.e — *"¿Está certificado como PAC o tiene PAC integrado?"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** non-PAC facturación solutions are seen as exposure · audit risk.
+- **Disarming tactic:**
+  - **Honest framing:** *"Zenet NO es PAC · NO timbramos directamente · trabajamos sobre tu PAC actual (Solución Factible · SW · cualquier PAC autorizado)"*
+  - Cite explicit PAC compatibility en docs técnicos
+  - *"Si tu cliente tiene su PAC, Zenet integra · si necesita PAC, recomendamos partners certificados pero NO los suplantamos"*
+- **Anti-tactic:** pretender que Zenet timbra (cliente lo descubre después · trust shattered).
+
+**3.7.5.f — *"La suscripción mensual no incluye el contador"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** **structural economic threat perceived** — SaaS pricing models que reemplazan despacho billing are seen as competitive (despacho economics depend on billable volume).
+- **Disarming tactic (load-bearing · captures Perplexity §4.2 insight):**
+  - *"Zenet NO reemplaza al contador · automatiza la captura · reconciliation · poliza generation que actualmente consume tiempo de auxiliar staff · TÚ (contador) ahora tienes más tiempo para advisory estratégico (planeación fiscal · audit defense · growth consulting) — work más billable y menos commoditized"*
+  - Position augmentation NOT replacement (cite V-031 Jesús Ramírez Allegra: *"La IA no sustituye al contador, pero sí mejora la comunicación entre él y la PyME"*)
+  - Frame: *"Tu cliente sigue necesitándote — para revisar lo que Zenet automatiza · para representarlo ante SAT · para asesorar decisions · Zenet libera tu bandwidth para ese work"*
+- **Anti-tactic:** claim que Zenet *"hace el trabajo del contador"* (validates su miedo · veto guaranteed).
+
+**3.7.5.g — *"Seguridad / LFPDPPP — ¿Cómo manejan mis datos?"***
+
+- **Quién:** contable, Stage F.
+- **Trigger underlying:** post-March 2025 LFPDPPP, cloud storage de RFC + employee CURP + bank data implicates el despacho como data processor con obligaciones propias.
+- **Disarming tactic:**
+  - Provide Zenet LFPDPPP compliance documentation (aviso de privacidad · controls · encryption · access logs)
+  - Acknowledge que el contable mismo es data processor bajo nueva ley · Zenet *"ayuda a tu despacho cumplir LFPDPPP automáticamente"* (frame de Zenet aliviando burden)
+  - Reference: industry 08 §10 + customer 07 V-033 (ContadorMx 2024)
+- **Anti-tactic:** dismiss concern (es legítimo y growing en industry community).
+
+#### 3.7.6 Silent veto dynamic — el problema más common (NO objection raised)
+
+> `[Validado Perplexity Pro report 2026-05 §3.2 · added 2026-05-23]`
+
+**Insight critical:**
+
+> *"El contable's veto exercised more often through passive non-endorsement than active blockage. When the contable says nothing, the owner typically does not proceed."* — Perplexity Pro report 2026-05 §3.2
+
+**Cómo se manifiesta operativamente:**
+
+- **NO es una objection en §3.7.5** · es ausencia de respuesta · ausencia de endorsement
+- Dueño dice *"déjame consultar con mi contador"* · 7-14 días después · NO follow-up · NO objection raised · deal stalls indefinitely
+- Pregunta del operador *"¿lo aprueba mi contador?"* recibe respuesta vaga (*"déjame revisarlo"*) que nunca se concreta
+- Dueño sense que contable no está cómodo · NO procede sin endorsement explícito
+
+**Diagnostic — cómo identificar silent veto vs genuine evaluation time:**
+
+| Signal | Genuine evaluation | Silent veto |
+|---|---|---|
+| Tiempo de respuesta inicial | 3-7 días con questions específicas | 7+ días sin respuesta o respuesta vaga |
+| Tipo de questions | Technical specifics (CONTPAQi · CFDI · PAC) | NO questions raised o questions genéricas vagas |
+| Follow-through | Solicita Ficha Técnica · sandbox · llamada | NO follow-up active · siempre *"déjame revisarlo"* |
+| Body language del dueño | Excited about contable engagement | Becomes evasive cuando preguntas about contable status |
+
+**Mitigation framework anti-silent-veto:**
+
+- **NO wait passively** for contable response cuando dueño says *"déjame consultar"* — proactive direct outreach within 48 hrs
+- **Specific deliverable always:** sandbox access · sample CFDI export · peer reference de otro despacho · NOT solo *"acá está la información"*
+- **Multi-channel:** email + WhatsApp + (si possible) phone call. Mexican professional context favors phone calls for serious topics
+- **Reference de peer despacho** usando Zenet es **gold-tier disarming tool** — *"Despacho XYZ con 5 restaurantes clients usa Zenet · ¿quieres su contacto para preguntar directamente?"*
+- **Founder outreach directly al contable** si dueño no facilita intro — sometimes intro friction es indicio de silent veto in motion
+
+**Anti-tactics critical:**
+
+- ❌ Wait passively asumiendo *"el dueño está consultando"* — silence ≠ progress
+- ❌ Pressure el dueño para *"hablar con su contable"* — el dueño NO puede force endorsement
+- ❌ Bypass el contable trying to close direct con dueño — Mexican high-trust commercial context · dueño WILL deferred to contable regardless
+
+**Cross-reference:** customer 05 §10.8 (silent veto pattern) + §10.9 (scale inflection point 2-3 sucursales como mitigant natural).
 
 ### 3.8 Objeciones culturales / desconfianza
 

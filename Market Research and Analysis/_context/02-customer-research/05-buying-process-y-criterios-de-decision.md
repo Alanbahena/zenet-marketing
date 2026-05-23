@@ -3,9 +3,9 @@ name: Buying process y criterios de decisión
 description: Sales playbook para Zenet — sales cycle de 8 stages, decision criteria con tradeoff analysis, willingness-to-pay deep dive, deal-breakers, buying signals, anti-patterns y patrones Mexican-specific.
 type: customer-research
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-07
+last_updated: 2026-05-23
 status: active
-version: 0.6
+version: 0.7
 owner: Alan Bahena
 ---
 
@@ -1313,6 +1313,59 @@ Mexican SMB: post-demo follow-up vía WhatsApp es expectation, no preference. Em
 Pricing en MXN, no USD. Conversión USD agrega cognitive friction y potential resistance.
 
 **Implicación:** $1,500 MXN/sucursal/mes es declarative. Si referenciar USD, es secundario contextual (~$80 USD), no anchor primario.
+
+### 10.8 Silent veto pattern del *contable* — NEW critical insight
+
+`[Validado Perplexity Pro report 2026-05 §3.2 · added 2026-05-23]`
+
+**Insight load-bearing** que reframe sales motion contable:
+
+> *"El contable's veto exercised more often through passive non-endorsement than active blockage. When the contable says nothing, the owner typically does not proceed. This 'silent veto' dynamic may be more influential than explicit objection."* — Perplexity Pro report 2026-05 §3.2
+
+**Implicación operativa para sales motion:**
+
+- **Manejar objeciones explícitas** (las que conocemos) es necesario pero **NO suficiente**
+- **Manejar ausencia de endorsement activo** es el problema real · más common que objection raised
+- Sin proactive contable engagement con specific deliverables (integration docs · sandbox · peer references) **antes** de que contable tenga que articular objection · contable silently no endorses · dueño naturally hesitates · deal stalls indefinitely
+- Failure mode típico: dueño + chef quieren firmar · contable "no ha respondido todavía" · deal stuck 30-60+ días sin clear blocker articulado
+
+**Mitigation framework:**
+
+| Stage | Acción anti-silent-veto |
+|---|---|
+| Stage B Discovery | Identificar contacto contable + pedir intro proactivo del champion |
+| Stage C Demo Manager | Champion introduces Zenet al contable via email/WhatsApp (heredado §10.2) · pero **además** Zenet envía sandbox link + sample CFDI export al contable directamente |
+| Stage D-E Demos | Ficha Técnica Contable enviada · plus **peer reference** de despacho usando sistema en otro restaurant (gold standard signal) |
+| Stage F | Llamada técnica con specialist Zenet · NO solo email confirmation · **active conversation** required |
+| Stage G | Antes de firma, **explicit confirmation** ("tu contable está OK con esto?") · NOT default-assume silence = approval |
+
+**Diagnostic:** si dueño responde *"déjame consultar con mi contador"* y después de 7 días sin progress, NO es objection raised — es silent veto materializing. Action: founder reach out directly al contable con specific deliverable, NOT wait passively.
+
+### 10.9 Scale dynamics 1 / 2-3 / 4-5 sucursales — inflection point del *contable*
+
+`[Validado Perplexity Pro report 2026-05 §5.3 · added 2026-05-23]`
+
+**Insight load-bearing:** el rol del contable en el buying committee **cambia dramáticamente** con scale del operador. Específicamente, a 2-3 sucursales (Sub-segmento B beachhead de Zenet), el contable's pain personal de manual multi-location reconciliation flips su rol de gatekeeper a internal advocate.
+
+| Scale | Rol dueño | Rol contable | Rol chef | Implicación sales motion |
+|---|---|---|---|---|
+| **1 sucursal** | Owner-operator · high engagement | Monthly check-in · **reactive** | Primary POS user | Sales cycle más rápido si dueño convencido · contable rubber-stamps |
+| **2-3 sucursales** (ICP target) | Delegating more · concerned about control | **Proactive · pain de manual multi-location reconciliation acute · consolidation value urgent** | May be multiple managers | **Inflection point critical** · contable puede ser advocate champion · use his pain personal as accelerator |
+| **4-5 sucursales** | Strategic · needs dashboards | **Critical** · multi-location CFDI reconciliation major burden · puede ser internal contable (vs external despacho) | Largely delegated | Contable becomes co-buyer · multi-thread engagement obligatorio · Stage F gate harder pero possible to leverage |
+
+**Strategic implication para Zenet beachhead Sub-segmento B (2-3 sucursales):**
+
+Esta es la **sweet spot del sales motion** — al contable le duele lo suficiente la reconciliation manual multi-location que tiene **incentive personal** para championing Zenet internamente. NO es vendor selling al dueño con contable como gate — es contable potentially advocating al dueño porque su workflow personal se beneficia.
+
+**Sales motion shift en 2-3 sucursales:**
+
+- Pre-demo prep: NOT solo *"mándame foto de 5 facturas"* (heredado §3.2) — ALSO *"pregúntale a tu contador cuánto tiempo le toma reconciliar tus 2 sucursales cada mes"* — surface contable pain explicitly
+- Stage F messaging: NOT solo *"Zenet integra con CONTPAQi"* — ALSO *"Zenet reduce tu workload de reconciliation multi-location de N hrs/mes a M hrs/mes"* — direct personal benefit framing
+- Peer references: prioritize despachos con 2-3 sucursal restaurant clients · their endorsement is gold
+
+**Anti-pattern en 1 sucursal:** intentar same sales motion en operador 1-sucursal donde contable check-in es monthly + reactive · contable doesn't have personal pain enough to advocate · falls back to gatekeeper default. **Si operador es 1-sucursal con growth plan a 2da, sell to the future** (*"cuando abras 2da sucursal esto se vuelve crítico"*).
+
+**Validation gate:** Cohort 1 design partners debe incluir **mínimo 3 operadores Sub-segmento B (2-3 sucursales actively)** para validate inflection point hypothesis. Si solo 1 operator multi-sucursal, signal direccional limited.
 
 ---
 
