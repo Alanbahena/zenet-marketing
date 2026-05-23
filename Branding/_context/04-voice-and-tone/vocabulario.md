@@ -5,7 +5,7 @@ description: El diccionario operativo de Zenet — qué palabras usamos, cuáles
 type: voice-and-tone
 last_updated: 2026-05-22
 status: active
-version: 1.1
+version: 1.2
 owner: Alan Bahena
 
 # Vocabulario
@@ -172,11 +172,31 @@ Cuando hay que hablar de tecnología con el operador, el vocabulario cliente-fac
 | **WhatsApp**                         | Canal principal de Zenet — interfaz operacional, no solo soporte. *"Sube tu factura por WhatsApp"* · *"Zenet te avisa por WhatsApp cuando..."*. Sin traducir, sin cursiva. |
 | **Foto / Fotografía (de facturas)**  | Modo 3 upload framing operator-friendly. *"Toma foto de tu factura y Zenet la procesa"*. Preferido sobre *"OCR"* o *"escaneo"*. |
 | **Subir / Cargar (factura, archivo)** | La acción de transferir documentos al sistema. Sin tech jargon. |
-| **Conexión**                         | Reemplazo de *"integration"* o *"API"*. *"Zenet se conecta con tu POS"*. |
+| **Modos de upload (Modo 1 · Modo 2 · Modo 3)** | Internal terminology. Cliente-facing decir: *"subir Excel"* (Modo 1) · *"capturar manualmente"* (Modo 2) · *"tomar foto"* (Modo 3). En contextos donde aplique enumeración, *"los 3 modos de carga"* es aceptable cliente-facing. |
+| **Conexión**                         | Reemplazo de *"integration"* o *"API"*. *"Zenet se conecta con tu POS"* · usar con cuidado porque Phase 1 NO tiene integración API · más correcto: *"Zenet trabaja sobre la data de tu POS"*. |
 | **Tablero / Panel**                  | Reemplazo de *"dashboard"*. Operator-friendly. |
 | **Sistema**                          | Preferido sobre *"software"* o *"plataforma"* en cliente. *"Zenet es el sistema que..."*. |
 | **Aplicación / App**                 | Ambos OK · "App" más casual, "aplicación" más formal. |
 | **Sobre tu POS / Sobre tu sistema actual** | Frame de coexistencia. *"Zenet trabaja sobre tu POS actual, no lo reemplaza"*. Load-bearing positioning. |
+
+
+### 2.8 Modelo comercial cliente-friendly
+
+Vocabulario del modelo comercial Zenet (pure subscription + 90-day minimum + annual prepay). Cliente-facing terms heredados de `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 §14.
+
+
+| Término                              | Cómo lo usamos                                                                                       |
+| ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Subscripción / Suscripción**       | Modelo comercial principal de Zenet. *"Subscripción mensual"* o *"suscripción Zenet"*. Preferido sobre *"membresía"* o *"licencia"*. |
+| **Subscripción continua / Continuación de subscripción** | Frame para la decisión post-90-días en design partner program. *"Al término de la fase gratuita, decides si continúas con la subscripción"*. Preferido sobre *"Mantenimiento"* (deprecated). |
+| **Compromiso mínimo 90 días / 90-day minimum commitment** | Componente del modelo comercial post fase gratuita. *"Compromiso mínimo de 90 días"* en cliente · *"90-day minimum commitment"* internal. |
+| **Pago anual anticipado / Annual prepay** | Opción de pago con descuento adicional. *"Pago anual anticipado con descuento"* en cliente · *"annual prepay"* internal. |
+| **Mensualidad**                      | Aceptable como sinónimo de *"subscripción mensual"* en contextos casuales. |
+| **Descuento Socio Fundador**         | El 30% descuento perpetuo para clientes que se incorporan durante design partner program. NO es promoción · es status permanent. |
+| **Fase gratuita**                    | Los 90 días iniciales del design partner program. *"Durante los 90 días de fase gratuita..."*. Preferido sobre *"trial"* o *"prueba gratis"*. |
+| **High-touch onboarding / Acompañamiento intensivo** | Los 3 meses de onboarding con el founder INCLUIDOS en la subscripción (no setup fee separado). *"Acompañamiento intensivo del fundador en los primeros 90 días"* en cliente · *"high-touch onboarding"* internal. |
+| **Cancelar / Cancelación**           | *"Cancelable después del compromiso mínimo con 30 días de aviso"*. Preferido sobre *"baja"* o *"churn"*. |
+| **Setup fee**                        | ⛔ **NO usar** — Zenet NO cobra setup fee (decisión 2026-05-22). El onboarding está incluido en la subscripción. Si alguien pregunta *"¿hay setup fee?"*, respuesta correcta es *"No · el acompañamiento inicial está incluido"*. |
 
 
 ---
@@ -279,7 +299,17 @@ Frases que aparecen sistemáticamente en marketing de restaurant tech AI y que v
 - *"El ChatGPT para restaurantes"* / *"El Toast mexicano"* — Comparison hype. Zenet no se posiciona contra otros vendors así.
 - *"Multi-agente / Sistema multiagente"* — Tech jargon · cliente-facing decir *"agencia de especialistas"* o simplemente *"Zenet"*.
 
-**¿Cómo se reemplazan?** No se reemplazan — se reescribe la frase entera para que diga algo concreto. *"Lleva tu restaurante al siguiente nivel"* → *"Recupera 28 horas al mes en cada sucursal"*. *"Tu asistente AI 24/7"* → *"Zenet revisa tu inventario cada mañana y te avisa por WhatsApp lo que necesita atención"*.
+### 4.5 Frases del modelo comercial obsoleto (NO usar)
+
+Frases que reflejan modelos comerciales **descontinuados o nunca adoptados**:
+
+- *"Setup fee de $X"* / *"Costo de implementación"* — Zenet NO cobra setup fee (decisión 2026-05-22). El acompañamiento inicial está incluido en la subscripción.
+- *"Mantenimiento mensual"* — terminology deprecated v1.1+. Decir *"subscripción"* o *"continuación de subscripción"*.
+- *"Proyecto de estandarización por $15K-25K"* — modelo project pricing descartado (decisión 2026-05-22). Zenet es pure subscription, no es proyecto.
+- *"Cobramos por entregable"* — Zenet entrega un sistema vivo, no entregables aislados. Decir *"acceso al sistema con subscripción mensual"*.
+- *"Contrato anual obligatorio"* — Zenet tiene compromiso mínimo de 90 días post fase gratuita · NO contrato anual obligatorio. *"Annual prepay"* es opcional, no obligatorio.
+
+**¿Cómo se reemplazan?** No se reemplazan — se reescribe la frase entera para que diga algo concreto. *"Lleva tu restaurante al siguiente nivel"* → *"Recupera 28 horas al mes en cada sucursal"*. *"Tu asistente AI 24/7"* → *"Zenet revisa tu inventario cada mañana y te avisa por WhatsApp lo que necesita atención"*. *"Setup fee de $15K + Mantenimiento $1K/mes"* → *"Subscripción mensual · primer trimestre con acompañamiento intensivo del fundador incluido"*.
 
 ---
 
@@ -482,11 +512,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 
 | Término                                | Decisión Zenet                                                                 |
 | -------------------------------------- | ------------------------------------------------------------------------------ |
+| Acompañamiento intensivo               | Sí. Cliente-facing version de "high-touch onboarding". Los 3 meses iniciales con founder INCLUIDOS en subscripción. |
 | Agencia de agentes especialistas       | Sí. Concepto de categoría · frase con punch que define qué ES Zenet.           |
 | Agency-as-SaaS                         | Internal/strategic. Cliente-facing: *"agencia de agentes especialistas"*.       |
 | Agente / Los agentes                   | Evitar como entidad nombrada cliente-facing. Decir *"Zenet"* directamente.     |
 | AI / IA-powered                        | Nunca. Genérico hype. Describir el comportamiento.                              |
 | Al final del mes / Cierre de mes       | Sí. Período de evaluación nativo del operador (VoC).                            |
+| Annual prepay / Pago anual anticipado  | Sí. Opción de pago con descuento adicional (% TBD). *"Annual prepay"* internal · *"pago anual anticipado"* en cliente. |
 | Aplicación / app                       | Ambos OK. "App" más casual, "aplicación" más formal.                           |
 | Asistente                              | Evitar como sustantivo principal. Decir *"Zenet"* directamente.                |
 | Auditoría exprés                       | Sí. Sin explicar. Frame de urgencia compliance messaging.                       |
@@ -503,14 +535,17 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Coexistencia                           | Sí. Preferido sobre "switching" o "reemplazo de POS". Load-bearing positioning. |
 | Comensal                               | Quien come en el restaurante.                                                  |
 | Compliance                             | Evitar en cliente · preferir *"cumplimiento"*.                                  |
+| Compromiso mínimo 90 días              | Sí. Componente del modelo comercial post fase gratuita. Cliente: *"compromiso mínimo de 90 días"* · internal: *"90-day minimum commitment"*. |
 | Conciliación / Reconciliación          | Sí. Cross-check entre POS · inventario · CFDI · contabilidad.                  |
-| Conexión                               | Sí. Reemplazo de *"integration"* / *"API"* en cliente.                          |
+| Conexión                               | Sí. Reemplazo de *"integration"* / *"API"* en cliente · usar con cuidado: Phase 1 NO tiene API integration. |
 | Contable / Contador                    | Sí. Rol load-bearing en buying committee MX.                                    |
+| Continuación de subscripción           | Sí. Frame para la decisión post-90-días en design partner program. Preferido sobre *"Mantenimiento"* (deprecated). |
 | Costo / costos                         | Sí.                                                                            |
 | Cuaderno (del operador / mental)       | Sí. Frame VoC para incumbent real de Zenet. *"Zenet extiende tu cuaderno"*.    |
 | Cuenta del banco                       | Sí. Indicador operativo nativo (V-001 Jaume). Anchor messaging cash flow.       |
 | Cumplimiento                           | Sí. Preferido sobre "compliance". Categoría SAT + IMSS + NOM-251 + Distintivo H. |
 | Demo                                   | Sí, aceptable.                                                                 |
+| Descuento Socio Fundador               | Sí. 30% descuento perpetuo para clientes que se incorporan durante design partner program. NO es promoción · es status permanent. |
 | Design partner                         | OK internal/investor pitch. Cliente: *"operador piloto"*.                       |
 | Desperdicio                            | Evitar. Preferir *"merma"*.                                                    |
 | Disruptivo                             | Nunca. Hype.                                                                   |
@@ -525,11 +560,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Estandarización                        | Sí. Concepto central.                                                          |
 | Excelencia operativa                   | Aceptable pero genérico. Preferir lenguaje más específico.                     |
 | Factura / Comprobante                  | Sí. Operator-friendly. Preferido sobre "CFDI" para el documento físico.         |
+| Fase gratuita                          | Sí. Los 90 días iniciales del design partner program. Preferido sobre *"trial"* o *"prueba gratis"*. |
 | Feature                                | Evitar en cliente. Decir *"función"* o *"funcionalidad"*.                       |
 | Fiscalización digital                  | Sí. Umbrella term de presión SAT 2026+.                                         |
 | Food cost                              | Sí. Industry-aceptable.                                                        |
 | Foto (de facturas)                     | Sí. Modo 3 upload framing operator-friendly. Preferido sobre "OCR".             |
 | Garantizado                            | Nunca. Hype.                                                                   |
+| High-touch onboarding                  | Internal. Cliente-facing: *"acompañamiento intensivo del fundador"*. Los 3 meses iniciales INCLUIDOS en subscripción (no setup fee separado). |
 | IA / inteligencia artificial           | Evitar en cliente. Describir el comportamiento — *"Zenet detecta..."*.          |
 | IMSS                                   | Sí. Sin explicar.                                                              |
 | Increíble                              | Nunca. Hype.                                                                   |
@@ -541,12 +578,15 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Líder                                  | Nunca. Hype.                                                                   |
 | LLM / Modelo de lenguaje               | Nunca cliente. Internal/tech docs OK.                                           |
 | Mano derecha                           | Sí. VoC operator language para sous chef / gerente confianza · analogía Zenet. |
+| Mantenimiento                          | ⛔ **Deprecated v1.1+**. Decir *"subscripción"* o *"continuación de subscripción"*. Modelo "Mantenimiento $1K/mes / $700 descuento" reemplazado por pure subscription model 2026-05-22. |
 | Manual Operativo                       | Sí, mayúsculas.                                                                |
 | Mejor (el mejor)                       | Evitar. Hype.                                                                  |
+| Mensualidad                            | Sí. Aceptable como sinónimo de *"subscripción mensual"* en contextos casuales. |
 | Merma                                  | Sí. Preferido sobre *"desperdicio"*.                                            |
 | Mes 6 / Cliff Mes 6                    | Internal. Cliente-facing usualmente no mencionar.                               |
 | Mise en place                          | Sí, en cursiva en uso técnico. Sin acento.                                     |
 | Modo 1 / 2 / 3                         | Internal. Cliente: *"subir Excel"* / *"capturar manual"* / *"tomar foto"*.       |
+| Modos de upload / Modos de carga       | Internal: *"los 3 modos de upload"*. Cliente: *"las 3 formas de cargar tus datos"* o enumerar las 3 directamente. |
 | Multi-agent / multi-agente             | Nunca cliente. Decir *"Zenet"* (la agencia).                                    |
 | Multimodal                             | Nunca cliente. Describir el comportamiento.                                     |
 | NOM-251                                | Sí. Sin explicar. Norma de higiene.                                             |
@@ -555,10 +595,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Operador                               | Sí. Genérico para usuario de Zenet.                                            |
 | Operador piloto                        | Sí. Cliente-facing version de "design partner".                                 |
 | PAC                                    | Internal. Zenet NO es PAC.                                                      |
+| Pago anual anticipado                  | Sí. Cliente-facing version de *"annual prepay"*. Opción con descuento adicional. |
+| Phase 1 / Phase 2 / Phase 1.5          | Internal terminology · stages del producto roadmap. Phase 1 = estandarización + manual vivo + WhatsApp agency + recetario (launch Q3 2026). Phase 1.5 = training portal (TIER 2B deferred). Phase 2 = inventario dinámico + pronósticos + costos + POS API (Q3-Q4 2027). Cliente: usar *"versión actual"* / *"próxima versión"* en vez de Phase numbering. |
 | Pilot / Piloto                         | *"Piloto"* en cliente · *"pilot"* internal/strategic.                           |
 | Plataforma                             | OK pero limitado. Preferir *"sistema"*.                                         |
 | Plaza                                  | Sí. Operator term para ciudad/ubicación.                                        |
 | POS / punto de venta                   | Sí. Ambos OK.                                                                  |
+| POS API integration                    | Internal. Phase 2 only · NO Phase 1. Cliente Phase 1: *"trabajamos con la data de tu POS via 3 modos de carga"*. |
 | POS-agnostic / hardware-agnostic       | Internal. Cliente: *"Zenet trabaja sobre tu POS actual"*.                       |
 | Premium                                | Evitar. Hype/corporativismo.                                                   |
 | Receta                                 | Sí.                                                                            |
@@ -570,6 +613,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | RFC con actividad empresarial          | Sí. ICP qualifier de Zenet.                                                     |
 | SAT                                    | Sí. Sin explicar.                                                              |
 | Servicio                               | Sí. El periodo activo de operación.                                            |
+| Setup fee                              | ⛔ **NUNCA usar** (decisión 2026-05-22). Zenet NO cobra setup fee. Onboarding INCLUIDO en subscripción. Si cliente pregunta: *"No · el acompañamiento inicial está incluido"*. |
 | Sin necesidad de capacitación          | Nunca. Over-promise · violates honestidad.                                      |
 | Sinergia                               | Nunca. Corporativismo.                                                         |
 | Sistema                                | Sí. Central a la marca.                                                        |
@@ -580,8 +624,10 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Sous chef cognitivo                    | Sí. Concepto de marca · rol externo de Zenet.                                   |
 | Stock / existencias                    | Ambos OK.                                                                      |
 | Subir / Cargar (factura)               | Sí. Operator-friendly acción.                                                   |
+| Subscripción / Suscripción             | Sí. Modelo comercial principal de Zenet (pure subscription · NO setup fee). Preferido sobre *"membresía"* o *"licencia"*. |
 | Sucursal                               | Sí. La unidad replicable.                                                      |
 | Tablero / Panel                        | Sí. Reemplazo de *"dashboard"*.                                                  |
+| TIER 1 / TIER 2A / TIER 2B / TIER 3    | Internal product roadmap terminology. TIER 1 = manual vivo + WhatsApp agency (Phase 1 launch must-have). TIER 2A = recetario consultable (Phase 1 launch). TIER 2B = training portal (Phase 1.5 deferred). TIER 3 = process compliance + cumplimiento fiscal (Phase 2). NO usar cliente-facing. |
 | Trastienda                             | Sí. Coexiste con *"back-of-house"*.                                              |
 | Tú (vs usted)                          | *"Tú"* siempre, salvo legal y press.                                            |
 | Único                                  | Evitar. Hype.                                                                  |
@@ -607,6 +653,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 
 ### Changelog
 
+- **v1.2 (2026-05-22).** Update minor desde decisión estratégica de pricing model (pure subscription + 90-day minimum + annual prepay · sin setup fee · decisión 2026-05-22). Updates aplicados:
+  - **§2.7 expandida** — añadido *"Modos de upload (Modo 1/2/3)"* + clarificación *"Conexión"* con caveat NO Phase 1 API integration.
+  - **NEW §2.8 Modelo comercial cliente-friendly** — 10 términos del modelo comercial: subscripción · subscripción continua · compromiso mínimo 90 días · pago anual anticipado · mensualidad · descuento Socio Fundador · fase gratuita · high-touch onboarding / acompañamiento intensivo · cancelar · setup fee (marked NO use).
+  - **NEW §4.5 Frases del modelo comercial obsoleto** — frases que reflejan modelos descontinuados (setup fee · Mantenimiento mensual · proyecto de estandarización · cobramos por entregable · contrato anual obligatorio).
+  - **§9 glossary expansion** — añadidos ~15 entries del modelo comercial: Acompañamiento intensivo · Annual prepay · Compromiso mínimo 90 días · Continuación de subscripción · Descuento Socio Fundador · Fase gratuita · High-touch onboarding · Mantenimiento (deprecated marker) · Mensualidad · Modos de upload · Pago anual anticipado · Phase 1/2/1.5 · POS API integration · Setup fee (marked NUNCA) · Subscripción · TIER 1/2A/2B/3.
+  - **Frontmatter** v1.1 → v1.2 · last_updated 2026-05-22.
+  - **Sync con production strategy:** updates referencian `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 (decisión canónica del modelo pricing).
 - **v1.1 (2026-05-22).** Update mayor desde Market Research v0.1 findings (Fase A transition checklist). 10 updates aplicados:
   - §5.2 rewrite completo — singular *"el producto es el agente"* → plural *"el producto ES la agencia de agentes especialistas"*. Reconciliación con CLAUDE.md §8 + `posicionamiento.md` v1.1 (heredado `03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` §A.1 brand language update).
   - §5.4 conceptos propios expandidos — agencia de agentes especialistas · sous chef cognitivo · equipo cognitivo coordinado · especialista (en X dominio) · capa cognitiva · tu mano derecha operativa · Mes 6.
