@@ -33,6 +33,15 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
+**As of 2026-05-26:**
+
+- **Subfolder `Product Strategy/_context/02-features-y-scope/` CERRADO v0.1 (3/3 docs)** 2026-05-26:
+  - ✅ `00-fase-1-mvp-scope.md` v0.1 — Phase 1 canonical MVP scope · 8 capabilities (6 Essential E1-E6 + 2 High value H1-H2) · acceptance criteria · critical path E5→E2→E1→E4 (E2 foundational hub dual-role) · 6 decisions log · launch readiness Go/No-Go criteria.
+  - ✅ `01-roadmap-hipotesis-fase-1.5-y-2.md` v0.1 — Phase 1.5 N1-N5 priority ordering + Phase 2 post-research reframe 2026-05-26 (F7 POS API REMOVED · F5 agentes especializados elevated priority #1 · F6 cumplimiento vía CFDI/PAC direct NOT POS API · F8 partner channel strategy NEW parallel track LIMAC + SYCA + PAC providers) · LATAM corrected to Geographic Phase 5 + Series A (decoupled from Product Phase 2) · pricing specifics deferred to subfolder 03.
+  - ✅ `02-feature-prioritization.md` v0.1 — methodology unificada cross-phase · TIER + Kano-inspired consolidated · scoring framework 6 dimensiones · unified feature matrix cross-phase (Phase 1 E1-E6+H1-H2 + Phase 1.5 N1-N5 + Phase 2 F1-F6+F8) · stack-ranking logic per phase · tradeoff framework (cuts · additions · acceleration) · validation triggers + Kano recategorization · 4 edge cases ambiguous categorizations.
+- **Strategic decisions Phase 2 reframe 2026-05-26 (research-validated):** F7 POS API removed canonical (partner gating + APIs legacy + no public API en POS amigables MX SMB) · F5 agentes especializados priority #1 (agency-as-SaaS full realization · independent POS API) · F6 cumplimiento vía CFDI/PAC direct + F8 partner channel parallel track resilient to technical timeline · F7 reactivation conditional (LIMAC/SYCA partnership OR Cohort 1 ≥4 DPs willingness-to-pay premium).
+- **Siguiente recomendado:** arranca subfolder `Product Strategy/_context/03-oferta-y-pricing/` v0.1 — pricing tiers hipótesis + WTP framework + 90-day minimum + annual prepay structure + pure subscription model formalization (outline scope first).
+
 **As of 2026-05-22:**
 
 - **Workspace identity reframed (Opción A):** de "marketing operations" → **"founder strategic operations"**. CLAUDE.md §1 + §3 + §5 + §6 updated. Razón: pre-PMF Alan ejecuta founder + CEO + product strategy + marketing roles colapsados; estructura refleja realidad operativa. Disciplinas agrupadas en 3 layers: Foundation (brand + research) · Strategy (product strategy + GTM + capital) · Execution (marketing channels).
