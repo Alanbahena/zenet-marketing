@@ -95,7 +95,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 - (C) Activar SEO/Content o Social Media (aprovecha doc 07 VoC + doc 07 defensibility synthesis + LinkedIn ya activo).
 - (D) Activar Analytics and Reporting (foundational pero requiere data sources).
 - ~~(E) Aplicar brand language update §Apéndice doc 07~~ ✓ aplicado 2026-05-18.
-- (F) Cleanup pendiente restante: decidir destino de `Value Proposition/` folder + `04-category-and-trends/` folder (frontmatter docs 04 + 05 ya reparado 2026-05-18).
+- (F) Cleanup pendiente restante: decidir destino de `04-category-and-trends/` folder (frontmatter docs 04 + 05 ya reparado 2026-05-18 · `Value Proposition/` folder eliminado 2026-05-26 — VP absorbido por `Product Strategy/_context/01-propuesta-de-valor/`).
 - **Recomendación viva 2026-05-18:** activar Social Media (LinkedIn founder voice productizado) como siguiente departamento — research backbone v0.1 + voice principles + 30 verbatims + agency-as-SaaS framing ya disponibles. Validar voz en LinkedIn antes de comprometer a landing/SEO.
 
 ---
