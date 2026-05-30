@@ -206,17 +206,19 @@ Framework de 4 tiers que prioriza acciones operacionales según urgencia + cash 
 
 ## 5. Validation triggers · LOI gate para Tier 2.0
 
-### 5.1 El gate decisional es LOI · NO calendar date
+### 5.1 El gate decisional es Intent Confirmation · NO calendar date
 
-**Tier 2.0 paid commitments ($30-50K MXN) NO arrancan por calendar trigger · arrancan por LOI evidence trigger.**
+**Tier 2.0 paid commitments ($35-55K MXN) NO arrancan por calendar trigger · arrancan por intent confirmation evidence trigger.**
+
+**Importante refinamiento 2026-05-30** (post conversación doc 02 programa Socio Fundador): el gate original mencionaba "LOI signed" · refinado a **"intent confirmation explícito vía email/WhatsApp"** porque modern B2B SaaS practice (YC playbook · Stripe/Notion/Linear) skip LOI formal upstream · el commitment real es MSA + Adendum Socio Fundador signed Day 1 (cf. `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` v0.1 §8.1).
 
 | Nivel evidencia | Acción habilitada |
 |---|---|
 | Solo discovery interviews | Sigue solo Tier 1.5 |
 | 1-2 operadores muestran interés verbal serio | Considerar lawyer outreach · NO engagement formal |
-| **LOI verbal ó written de 1 design partner committed** + 2 más en pipeline avanzado | **✓ Arrancar Tier 2.0 lawyer engagement** |
-| **Design partner agreement / term sheet signed** | Arrancar despacho contable + PAC integration |
-| First cobro date confirmado contractualmente | Activar PAC subscription · primer CFDI ready |
+| **Intent confirmation explícito vía email/WhatsApp de 1 design partner** ("sí, quiero ser Socio Fundador, cuándo arrancamos?") + 2 más en pipeline avanzado | **✓ Arrancar Tier 2.0 lawyer engagement (MSA + Order Form + Adendum SF templates)** |
+| **MSA + Order Form + Adendum Socio Fundador signed via DocuSign (Day 1 cierre)** | Arrancar despacho contable + PAC integration |
+| First cobro date confirmado contractualmente (Day 8) | Activar PAC subscription · primer CFDI ready |
 
 ### 5.2 Pivot signal · 60 días post-Tier 1.5 sin LOI
 
@@ -272,6 +274,7 @@ Fecha · firma · cargo
 | **MSA template** (governing law · IP · termination · liability · indemnification) | ✓ Sí · MX SaaS-specialized | $15-25K one-time |
 | **Aviso de Privacidad + DPA** (LFPDPPP 2025 compliant) | ✓ Sí · privacy-specialized | $8-15K one-time |
 | **Order Form template + click-wrap legal validation** | ✓ Sí (incluido con MSA) | Incluido arriba |
+| **Adendum Socio Fundador template** (lock-in lifetime + reciprocidad bilateral + brand recognition rights · cf. `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` v0.1 §8.4) | ✓ Sí · DocuSign-ready | $5-8K one-time |
 | **IMPI trademark filing guidance** | Opcional (Alan puede solo) | $3-5K si lawyer-guided |
 | **Anthropic enterprise terms review** | Recomendado · 1-2 hrs | $2-3K |
 | **PFAE → SAPI conversion** (cuando pre-seed close) | ✓ Sí + notario | $15-30K (defer Tier 3) |
@@ -279,11 +282,11 @@ Fecha · firma · cargo
 
 ### 6.2 Modelo recomendado Phase 1
 
-- **One-time engagement formal** ($25-40K MXN total) para templates + reviews
+- **One-time engagement formal** ($30-45K MXN total) para templates + reviews · incluye Adendum Socio Fundador template (refinement 2026-05-30 post doc 02)
 - **On-call retainer ligero** (~$3-5K MXN/consulta · estimado 2-3 consultas Phase 1)
 - **NO full-time GC · NO retainer mensual fijo**
 
-**Total Phase 1 legal estimado:** ~$30-50K MXN one-time + ~$10-15K MXN ongoing annual
+**Total Phase 1 legal estimado:** ~$35-55K MXN one-time + ~$10-15K MXN ongoing annual
 
 ### 6.3 Sourcing · cómo encontrar lawyer adecuado
 
@@ -493,14 +496,14 @@ Referencia rápida · profundización vive en `03-oferta-y-pricing/01-modelo-com
 
 | Categoría | One-time setup | Annual ongoing |
 |---|---|---|
-| Lawyer (MSA + DPA + IMPI + reviews) | $30-50K MXN | $10-15K MXN |
+| Lawyer (MSA + DPA + IMPI + Adendum Socio Fundador + reviews) | $35-55K MXN | $10-15K MXN |
 | Contador / despacho mensual | — | $60-130K MXN |
 | PAC | — | $3-6K MXN |
 | Business setup (PFAE + bank + Stripe + WhatsApp) | $8-15K MXN | — |
 | Marca registrada IMPI | $3-5K MXN | — |
-| **TOTAL** | **~$41-70K MXN setup** | **~$73-151K MXN/año** |
+| **TOTAL** | **~$46-75K MXN setup** | **~$73-151K MXN/año** |
 
-**Year 1 total baseline:** **~$120-220K MXN**
+**Year 1 total baseline:** **~$125-225K MXN**
 
 ### 10.2 Optimizado (con optimizaciones recomendadas)
 
