@@ -60,7 +60,7 @@ Cuatro preguntas operativas Socio Fundador-specific:
 | Estructura comercial base (pure subscription · 90-day · annual prepay · cancellation · refund) | Es base aplicable cross-tier | `03-oferta-y-pricing/01-modelo-comercial-y-terminos.md` v0.1 |
 | Pricing exacto por tier ($1,500/$1,999/$1,799 hipótesis) | Es decisión de tier structure standard | `03-oferta-y-pricing/03-pricing-tiers-hipotesis.md` (pending) |
 | Program operations detallado (cohort management · selection scoring · acuerdo template legal) | Vive canonical en customer-development workspace | `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 |
-| Operational readiness (LOI gate · lawyer engagement · WhatsApp setup) | Es operations + capital structure | `05-capital-y-fundraising/01-operational-readiness-y-business-setup-phase-1.md` v0.1 |
+| Operational readiness (LOI gate · lawyer engagement · WhatsApp setup) | Es operations + capital structure | `05-capital-y-finanzas/01-operational-readiness-y-business-setup-phase-1.md` v0.1 |
 | Sales motion · scripts · pitch materials | GTM execution downstream | `Product Strategy/_context/04-go-to-market/` (pending) |
 
 ### 1.3 Hereda de docs upstream
@@ -159,7 +159,7 @@ Detalle del proceso operacional de selección · scoring · cohort balancing · 
 | Decisión | Hipótesis Phase 1 |
 |---|---|
 | **Cohort size cap** | **5 design partners maximum** `[Hipótesis sin validar]` · trigger cierre con 5to firmado |
-| **Cohort timing arranque** | Septiembre-Octubre 2026 hipótesis (post operational readiness Tier 2.0 ready · cf. `05-capital-y-fundraising/01-operational-readiness.md` v0.1 §11) |
+| **Cohort timing arranque** | Septiembre-Octubre 2026 hipótesis (post operational readiness Tier 2.0 ready · cf. `05-capital-y-finanzas/01-operational-readiness.md` v0.1 §11) |
 | **Cohort timing cierre** | Cuando (a) 5 partners firmados O (b) Phase 1 commercial launch GA O (c) 60 días post primer LOI sin 2do progreso (pivot signal) |
 | **Phase 1.5+ second cohort?** | **NO** segundo cohort Socio Fundador · post-launch clientes = standard pricing · Socios Fundadores existentes mantienen estatus permanente |
 
@@ -574,7 +574,7 @@ Cerrado 2026-05-30 tras conversación foundational del subfolder + iteraciones c
 | `03-pricing-tiers-hipotesis.md` (pending) | Pricing standard sobre el cual aplica descuento Socio Fundador |
 | `04-viabilidad-economica-y-cogs.md` (pending) | Behavioral data SF alimenta sensitivity scenarios |
 | `05-wtp-validation-plan.md` (pending) | SF son sujetos del WTP validation post-Mes 3 |
-| `05-capital-y-fundraising/01-operational-readiness.md` v0.1 §5 | Intent confirmation gate trigger Tier 2.0 lawyer engagement · scope Tier 2.0 incluye Adendum SF template |
+| `05-capital-y-finanzas/01-operational-readiness.md` v0.1 §5 | Intent confirmation gate trigger Tier 2.0 lawyer engagement · scope Tier 2.0 incluye Adendum SF template |
 | `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 | Program operations canonical · cohort management · selection scoring · acuerdo template legal · doc 02 referencia · NO duplica |
 
 ---

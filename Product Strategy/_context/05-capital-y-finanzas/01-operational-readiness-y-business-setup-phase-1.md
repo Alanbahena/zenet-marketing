@@ -48,10 +48,10 @@ owner: Alan Bahena
 
 | Tipo de trabajo | Por qué NO aquí | Dónde vive |
 |---|---|---|
-| Funding roadmap + milestones + Path A solo bootstrap vs Path B pre-seed framework completo | Es decisión de capital structure · este doc es operations · capital structure se aborda en doc principal del subfolder | `05-capital-y-fundraising/00-funding-roadmap-y-milestones.md` (pendiente v0.1) |
+| Funding roadmap + milestones + Path A solo bootstrap vs Path B pre-seed framework completo | Es decisión de capital structure · este doc es operations · capital structure se aborda en doc principal del subfolder | `05-capital-y-finanzas/00-funding-roadmap-y-milestones.md` (pendiente v0.1) |
 | Pricing decisions · modelo comercial cliente-facing · MSA + Order Form structure | Cliente-facing decisions · este doc es internal founder operations | `Product Strategy/_context/03-oferta-y-pricing/` |
 | Sales motion · outreach · primer design partner pitch | GTM execution downstream | `Product Strategy/_context/04-go-to-market/` |
-| Cap table · founder equity vesting · investor terms | Capital structure decisions formalizadas | `05-capital-y-fundraising/00-funding-roadmap-y-milestones.md` cuando se redacte |
+| Cap table · founder equity vesting · investor terms | Capital structure decisions formalizadas | `05-capital-y-finanzas/00-funding-roadmap-y-milestones.md` cuando se redacte |
 | Detallado spec técnico WhatsApp/Stripe/Anthropic integrations | Engineering implementation | Production repo `/02_Producto-y-Tech/Production-software/Zenet/` |
 
 ### 1.3 Cross-references críticas
@@ -642,7 +642,7 @@ Este doc cierra v0.1 con framework completo de operational readiness Phase 1 tra
 **Cross-references pendientes (cuando docs target existan):**
 
 - `03-oferta-y-pricing/01-modelo-comercial-y-terminos.md` §7.3
-- `05-capital-y-fundraising/00-funding-roadmap-y-milestones.md`
+- `05-capital-y-finanzas/00-funding-roadmap-y-milestones.md`
 
 ---
 

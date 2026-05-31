@@ -49,7 +49,7 @@ Cuatro preguntas operativas cliente-facing:
 | Programa Socio Fundador deal terms · descuentos · reciprocidad | Es ofrecimiento específico Fase 0 design partners | `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` (pending v0.1) |
 | Viabilidad económica · COGS · margin floor | Es análisis financiero interno | `03-oferta-y-pricing/04-viabilidad-economica-y-cogs.md` (pending v0.1) |
 | WTP validation methodology · PSM · willingness ladders | Es plan de validación | `03-oferta-y-pricing/05-wtp-validation-plan.md` (pending v0.1) |
-| Operational readiness · stack identidades formales · sequencing Tier 1/1.5/2.0 | Es operations + capital structure decision | `05-capital-y-fundraising/01-operational-readiness-y-business-setup-phase-1.md` v0.1 |
+| Operational readiness · stack identidades formales · sequencing Tier 1/1.5/2.0 | Es operations + capital structure decision | `05-capital-y-finanzas/01-operational-readiness-y-business-setup-phase-1.md` v0.1 |
 | Sales motion · scripts de negociación · cierre · objection handling | Es ejecución comercial downstream | `Product Strategy/_context/04-go-to-market/` (pending v0.1) |
 
 ### 1.3 Hereda de marco doc 00 sin relitigar
@@ -160,7 +160,7 @@ Restaurant BoH adoption curve documented `[Anclado en research]` (`02-customer-r
 
 | # | Razón | Detalle |
 |---|---|---|
-| 1 | **Cash flow Phase 1 (founder-bootstrap reality)** | Annual prepay genera cash upfront · reduce founder bridge financing required · alinea con Path A solo bootstrap discutido en `05-capital-y-fundraising/01-operational-readiness.md` v0.1 |
+| 1 | **Cash flow Phase 1 (founder-bootstrap reality)** | Annual prepay genera cash upfront · reduce founder bridge financing required · alinea con Path A solo bootstrap discutido en `05-capital-y-finanzas/01-operational-readiness.md` v0.1 |
 | 2 | **Retention lock-in estructural** | 12 meses cobertura atraviesa Mes 6 cliff documented · cliente NO puede walk en Mes 4 (routine degradation window) |
 | 3 | **CFO-friendly accounting (cliente-side)** | Capex-friendly + budget predictability · contable cliente prefiere annual line-item vs monthly recurring · facilita buying committee approval |
 
@@ -429,7 +429,7 @@ Para Enterprise tier:
 
 > **Compliance anchoring = los marcos legales/regulatorios MX a los que el contrato + operación de Zenet DEBEN apegarse para ser válido, enforceable y libre de riesgo regulatorio.**
 
-Cinco anchors canónicos · profundización operacional vive en `05-capital-y-fundraising/01-operational-readiness-y-business-setup-phase-1.md` v0.1 §9.
+Cinco anchors canónicos · profundización operacional vive en `05-capital-y-finanzas/01-operational-readiness-y-business-setup-phase-1.md` v0.1 §9.
 
 | # | Anchor | Qué requiere · cómo se cumple |
 |---|---|---|
@@ -456,7 +456,7 @@ Para que el contrato + compliance anchoring sea operacionalmente real, Zenet nec
 
 **Detalle completo, sequencing, costs, timeline y triggers** vive en:
 
-> 📄 `Product Strategy/_context/05-capital-y-fundraising/01-operational-readiness-y-business-setup-phase-1.md` v0.1
+> 📄 `Product Strategy/_context/05-capital-y-finanzas/01-operational-readiness-y-business-setup-phase-1.md` v0.1
 
 **Pendiente legal review pre-launch:**
 
@@ -511,7 +511,7 @@ Cerrado 2026-05-29 tras conversación foundational del subfolder.
 | `03-pricing-tiers-hipotesis.md` (pending) | Pricing exacto por tier · usa modelo comercial canonical |
 | `04-viabilidad-economica-y-cogs.md` (pending) | Viabilidad económica del modelo comercial documented aquí |
 | `05-wtp-validation-plan.md` (pending) | Plan de validación de términos comerciales con design partners |
-| `05-capital-y-fundraising/01-operational-readiness.md` v0.1 | Compliance anchoring + operational readiness pre-launch |
+| `05-capital-y-finanzas/01-operational-readiness.md` v0.1 | Compliance anchoring + operational readiness pre-launch |
 | `Branding/_context/04-voice-and-tone/vocabulario.md` v1.3 §2.8 + §4.5 | Modelo comercial vocabulary canonical |
 | `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 §14 | Programa design partners commercial terms |
 

@@ -47,7 +47,7 @@ Para evitar scope creep y mantener ownership claro:
 
 | Tipo de trabajo | Por qué NO aquí | Dónde vive |
 |---|---|---|
-| Modelo financiero proyectado · LTV/CAC formal · cohort analysis · multi-year P&L · runway · capital requirements | Es financial modeling completo · requiere data conductual que no existe pre-PMF | `Product Strategy/_context/05-capital-y-fundraising/` |
+| Modelo financiero proyectado · LTV/CAC formal · cohort analysis · multi-year P&L · runway · capital requirements | Es financial modeling completo · requiere data conductual que no existe pre-PMF | `Product Strategy/_context/05-capital-y-finanzas/` |
 | Sales motion para presentar pricing · scripts de negociación · cierre · objection handling pricing-specific | Es ejecución comercial downstream | `Product Strategy/_context/04-go-to-market/` |
 | Programa design partner operativo (criteria · cohort management · acuerdo template) | Vive en workspace separado · canonical | `08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md` v1.1 |
 | Ejecución WTP qualitative interviews · PSM execution · feedback synthesis | Es ejecución de research · operacional | `05-customer-development/` (operacional) |
@@ -57,7 +57,7 @@ Para evitar scope creep y mantener ownership claro:
 
 | Boundary | Pricing aquí | Lo que vive allá |
 |---|---|---|
-| ↔ `05-capital-y-fundraising/` | Pricing decisions + viabilidad económica Nivel 2 (sanity check estructurado) | Modelo financiero completo + projections + capital requirements + milestone-anchored funding roadmap |
+| ↔ `05-capital-y-finanzas/` | Pricing decisions + viabilidad económica Nivel 2 (sanity check estructurado) | Modelo financiero completo + projections + capital requirements + milestone-anchored funding roadmap · financial model dedicated doc |
 | ↔ `04-go-to-market/` | Pricing terms + tier structure + add-on roadmap | Sales motion + scripts de presentación pricing + objection handling pricing-specific |
 | ↔ `08_Estrategia-Producto/_context/05-customer-development/` | WTP validation plan (estructura · metodología · willingness ladders) | Ejecución del plan (interviews · PSM · feedback synthesis) con design partners reales |
 | ↔ `Branding/_context/` | Pricing model consistente con framing | Canonical brand language · agency-as-SaaS framing · vocabulario commercial (`vocabulario.md` §2.8 + §4.5) |
@@ -156,7 +156,7 @@ Lectura: Zenet captura <5% del premium vertical AI global. Discount es **estrat�
 | Van Westendorp PSM | Post 3+ design partners · doc 05 · willingness ladder ($1,000 / $1,300 / $1,500 / $1,800 / $2,100) |
 | TIER alignment (heredado Kano-inspired) | Estructura pricing por tier vs features Phase 1 · doc 03 |
 | Sensitivity analysis (tier × COGS scenario × usage intensity) | Nivel 2 sanity check viabilidad · doc 04 |
-| **NO usados aquí** (defer a `05-capital-y-fundraising/`) | LTV · CAC · cohort analysis · multi-year P&L · payback formal · runway calculation · valuation |
+| **NO usados aquí** (defer a `05-capital-y-finanzas/`) | LTV · CAC · cohort analysis · multi-year P&L · payback formal · runway calculation · valuation |
 
 **Razón del defer:** cada framework "NO usado aquí" requiere data conductual que pre-PMF no existe (churn observado · sales motion costs medidos · cohort comparisons). Hacerlos pre-PMF produce ficción que después ancla decisiones. Trigger de upgrade documented en §7.
 
@@ -293,7 +293,7 @@ Phase 2 specialty agents (F5 agentes especializados · F6 cumplimiento · custom
 
 ### 6.8 Qué NO hacemos aquí
 
-Defer a `Product Strategy/_context/05-capital-y-fundraising/`:
+Defer a `Product Strategy/_context/05-capital-y-finanzas/`:
 
 - Modelo financiero proyectado 3-5 años
 - Cohort analysis (no cohorts pre-PMF)
@@ -362,7 +362,7 @@ Dependencias upstream → downstream:
 | Sales motion (cómo cobrar · qué incluir) | 01 + 02 + 03 |
 | Investor pitch (defensa pricing + economics) | 03 + 04 + 05 |
 | Design partner pitch (Fase 0 specifics) | 02 |
-| Financial modeling completo | Empezar aquí (04 como punto de entrada) · profundizar en `05-capital-y-fundraising/` |
+| Financial modeling completo | Empezar aquí (04 como punto de entrada) · profundizar en `05-capital-y-finanzas/` |
 | Compliance · contracts · refund policy | 01 |
 | Future PSM execution | 05 + `08_Estrategia-Producto/_context/05-customer-development/` |
 

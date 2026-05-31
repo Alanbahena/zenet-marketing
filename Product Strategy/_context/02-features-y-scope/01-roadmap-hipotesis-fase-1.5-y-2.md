@@ -526,7 +526,7 @@ Dedicated doc `04-go-to-market/03-channel-y-partner-strategy.md` v0.1 (futuro ·
 | **`04-go-to-market/03-channel-y-partner-strategy.md` v0.1** (futuro subfolder) | Partner channel strategy §9 informs operational detail |
 | **`08_Estrategia-Producto/.../programa-design-partners-cohort-2.md`** (futuro · cross-workspace) | Cohort 2 program structure §7.1-7.2 informs operational program design |
 | **Production repo** (engineering) | Phase 1.5/2 architecture requirements + Phase 1 prep needs §4 |
-| **`05-capital-y-fundraising/00-funding-roadmap-y-milestones.md`** (futuro subfolder) | Series Seed → Series A trajectory §5 + §8 informs funding milestones |
+| **`05-capital-y-finanzas/00-funding-roadmap-y-milestones.md`** (futuro subfolder) | Series Seed → Series A trajectory §5 + §8 informs funding milestones |
 
 ### 11.3 Research backbone inputs
 

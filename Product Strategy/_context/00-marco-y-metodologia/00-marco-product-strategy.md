@@ -35,7 +35,7 @@ owner: Alan Bahena
 
 Este doc define el **framework foundational** que toda Product Strategy hereda — methodology choices, versioning convention, cross-references map, disciplinas operativas, y roadmap evolutivo del departamento. Sin este doc declarado y vigente, los otros 16 docs del departamento (VP design, features/scope, oferta/pricing, GTM, capital planning) operarían con criterios inconsistentes, frameworks sin justificación, y referencias sin trazabilidad.
 
-Lo que este doc **NO hace:** no escribe VP statement (eso vive en `01-propuesta-de-valor/`), no define MVP scope (eso vive en `02-features-y-scope/`), no decide pricing exact (eso vive en `03-oferta-y-pricing/` cuando se redacte), no produce GTM playbook (eso vive en `04-go-to-market/`), no establece funding milestones (eso vive en `05-capital-y-fundraising/`). Es el **META** que gobierna cómo se ejecutan esos cinco subfolders.
+Lo que este doc **NO hace:** no escribe VP statement (eso vive en `01-propuesta-de-valor/`), no define MVP scope (eso vive en `02-features-y-scope/`), no decide pricing exact (eso vive en `03-oferta-y-pricing/` cuando se redacte), no produce GTM playbook (eso vive en `04-go-to-market/`), no establece funding milestones (eso vive en `05-capital-y-finanzas/`). Es el **META** que gobierna cómo se ejecutan esos cinco subfolders.
 
 Lo que este doc **SÍ hace:** declara *con qué lente* se trabaja en Product Strategy (Value Proposition Design primary + JTBD overlay + Kano feature prioritization), *con qué disciplina* se versionan los outputs (frontmatter `research_stage` field + `_archive/` + transition triggers por pre-condición medible), *qué hereda* del research backbone (mapa explícito de inputs), *qué disciplinas operativas* aplican (pre-publish check + hypothesis vs evidence labeling + cross-department sync), y *cómo evoluciona* el departamento (v0.1 → v1.0 → v2.0 con triggers de transición).
 
@@ -54,7 +54,7 @@ Product Strategy department centraliza las decisiones estratégicas que median e
 | `02-features-y-scope/` | Kano + MVP framework | Fase 1 MVP scope + Phase 2 roadmap hipótesis + Feature prioritization framework (3 docs) |
 | `03-oferta-y-pricing/` | Pricing strategy + commercial terms | Design partner offer + Pricing tiers hipótesis + Commercial terms (3 docs · pricing exact TBD) |
 | `04-go-to-market/` | Operacional sales motion | GTM playbook + Design partner outreach + Sales motion three-session demo + Channel/partner strategy (4 docs) |
-| `05-capital-y-fundraising/` | Milestone-anchored funding roadmap | Funding roadmap + milestones (1 doc denso · splittea post pre-seed) |
+| `05-capital-y-finanzas/` | Milestone-anchored funding roadmap | Funding roadmap + milestones (1 doc denso · splittea post pre-seed) |
 | `06-experience-y-roadmap/` | User experience strategy | Pending · import desde production repo (3-phase user experience documentado) |
 
 **Total: 16 docs esperados en v0.1 + este marco doc.**
@@ -297,7 +297,7 @@ Más allá de VPD primary + JTBD input + Kano-inspired TIER, dos frameworks adic
 **Por qué se adopta como secondary reference para Zenet:**
 
 - Diferente de "detailed financial modeling" que rechazamos (§4.7) — Default Alive es discipline ligera · una pregunta · no modelo complejo
-- Capital strategy doc (`05-capital-y-fundraising/00-funding-roadmap-y-milestones.md`) se beneficia de esta lens
+- Capital strategy doc (`05-capital-y-finanzas/00-funding-roadmap-y-milestones.md`) se beneficia de esta lens
 - Pre-PMF, founders confunden runway visualization con financial modeling · Default Alive simplifica
 - Útil para investor conversations · honest narrative sobre runway vs growth trajectory
 
@@ -396,11 +396,11 @@ Cuando un doc Product Strategy cambia version, ejecutar revisión de docs Produc
 | `Market Research/03-competitive-analysis/04-feature-y-pricing-comparative.md` | `02-features-y-scope/02-feature-prioritization.md` + `03-oferta-y-pricing/01-pricing-tiers-hipotesis.md` | Feature comparison · pricing positioning |
 | `Market Research/03-competitive-analysis/05-gtm-y-positioning-comparado.md` | `04-go-to-market/00-gtm-playbook-operational.md` | Comparative GTM + Zenet playbook |
 | `Market Research/03-competitive-analysis/06-switching-dynamics-y-incumbente.md` | `04-go-to-market/02-sales-motion.md` | 4 scenarios A/B/C/D · 11 vendor scripts |
-| `Market Research/03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` | `01-propuesta-de-valor/03-vp-statement-compressed.md` + `05-capital-y-fundraising/00-funding-roadmap.md` | 14 moats + agency-as-SaaS framing + investor pitch |
+| `Market Research/03-competitive-analysis/07-diferenciacion-zenet-y-defensibility.md` | `01-propuesta-de-valor/03-vp-statement-compressed.md` + `05-capital-y-finanzas/00-funding-roadmap.md` | 14 moats + agency-as-SaaS framing + investor pitch |
 | **Industry + Market Insights backbone** | | |
 | `Market Research/01-industry-and-market/07-geografia-y-expansion.md` | `04-go-to-market/03-channel-y-partner-strategy.md` + `05-capital/funding-milestones.md` | 5-phase expansion · pricing uniforme MX |
 | `Market Research/05-market-insights/00-por-que-ahora.md` | Cross-cutting (timing thesis · funding narrative) | 5 fuerzas + windows-closing + risks |
-| `Market Research/05-market-insights/01-vision-plataforma-zenet.md` | `05-capital-y-fundraising/00-funding-roadmap.md` | Platform play upside · Series A+ narrative |
+| `Market Research/05-market-insights/01-vision-plataforma-zenet.md` | `05-capital-y-finanzas/00-funding-roadmap.md` | Platform play upside · Series A+ narrative |
 | **Branding backbone** | | |
 | `Branding/_context/01-brand-strategy/posicionamiento.md` v1.3 | All VP + GTM docs | Voice + 7 diferenciadores en clusters + modelo comercial + Phase 1 vs Phase 2 framework |
 | `Branding/_context/04-voice-and-tone/vocabulario.md` v1.2 | All PS docs (cliente-facing copy) | Operator vernacular + anti-words + modelo comercial terms |
@@ -686,7 +686,7 @@ Este doc específico se actualiza cuando:
 04-go-to-market/02-sales-motion-three-session-demo.md v0.1
 04-go-to-market/03-channel-y-partner-strategy.md v0.1
 
-05-capital-y-fundraising/00-funding-roadmap-y-milestones.md v0.1
+05-capital-y-finanzas/00-funding-roadmap-y-milestones.md v0.1
 
 06-experience-y-roadmap/ (import desde production repo · pending)
 ```
@@ -707,7 +707,7 @@ Este doc específico se actualiza cuando:
 | VP statement compressed | Es output, no marco | `01-propuesta-de-valor/03-vp-statement-compressed.md` |
 | Pricing tiers exact | Es decisión deferred · output futuro | `03-oferta-y-pricing/01-pricing-tiers-hipotesis.md` |
 | Sales scripts operacionales | Es output operacional | `04-go-to-market/02-sales-motion-three-session-demo.md` |
-| Funding milestones details | Es output · single dense doc | `05-capital-y-fundraising/00-funding-roadmap-y-milestones.md` |
+| Funding milestones details | Es output · single dense doc | `05-capital-y-finanzas/00-funding-roadmap-y-milestones.md` |
 | Design partner program structure | Canonical en otro workspace | `08_Estrategia-Producto/.../programa-design-partners.md` |
 | Bibliografía VPD/JTBD/Kano | Frameworks well-known · padding | (omit · citado inline donde aplica) |
 | Historia detallada decisión pricing model | Ya documentado en `08_` doc §14 + posicionamiento §7 + vocabulario §2.8 | (cross-ref a esos docs) |

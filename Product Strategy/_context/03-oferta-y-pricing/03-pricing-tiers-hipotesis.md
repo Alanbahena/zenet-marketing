@@ -54,7 +54,7 @@ Cinco preguntas pricing-specific:
 | Viabilidad económica + COGS analysis (cost breakdown · margin floor · break-even · sensitivity tables) | `04-viabilidad-economica-y-cogs.md` (pending) |
 | WTP validation methodology (Van Westendorp PSM · willingness ladders · execution plan) | `05-wtp-validation-plan.md` (pending) |
 | Add-ons detailed specs (Heavy Usage Pack · Specialty Agent Pack feature scope) | `02-features-y-scope/01-roadmap-hipotesis-fase-1.5-y-2.md` v0.1 |
-| Capital requirements + funding roadmap | `05-capital-y-fundraising/00-funding-roadmap-y-milestones.md` (pending) |
+| Capital requirements + funding roadmap | `05-capital-y-finanzas/00-funding-roadmap-y-milestones.md` (pending) |
 
 ### 1.3 Hereda de docs upstream
 
