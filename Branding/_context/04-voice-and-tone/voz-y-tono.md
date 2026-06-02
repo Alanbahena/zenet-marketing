@@ -2,9 +2,9 @@
 name: Voz y Tono
 description: Los principios de voz invariables de Zenet y cómo se modulan en tono según la superficie. Documento fundacional del sistema voice-and-tone.
 type: voice-and-tone
-last_updated: 2026-04-27
+last_updated: 2026-06-02
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -40,7 +40,7 @@ Zenet escribe como un consultor que ha pasado años dentro de cocinas, no como u
 
 #### Principio 2. Sin vocabulario tech (cuando hablamos con clientes)
 
-Internamente y entre técnicos, las palabras "agente", "modelo", "RAG", "embedding" tienen lugar. En la comunicación con el operador, no. Zenet habla de "el sistema", "la sugerencia", "el asistente", "el agente que te acompaña".
+Internamente y entre técnicos, las palabras "agente", "modelo", "RAG", "embedding" tienen lugar. En la comunicación con el operador, no. Con el cliente, Zenet habla de "el sistema" y de "Zenet" directamente — *"Zenet detectó"*, *"Zenet te sugiere"*, *"Zenet acompaña"*. No de "el asistente" ni "el agente que te acompaña" como entidad separada: el producto ES la agencia de especialistas, y el cliente interactúa con Zenet, no con agentes nombrados (cf. `vocabulario.md` §5.2).
 
 **Por qué importa:** el operador no compra IA. Compra una operación que funciona. La capa técnica detrás es nuestra, no suya.
 
@@ -130,7 +130,7 @@ El operador está trabajando. Zenet apoya sin distraer. **Tono: informativo, cal
 |---|---|
 | **Onboarding** | Acogedor, paciente, paso a paso. Pregunta antes de proponer. Explica el por qué de cada paso. |
 | **Errores** | Empático, accionable. Asume culpa del sistema, nunca del usuario. Ofrece la siguiente acción. |
-| **Sugerencias del agente IA** | Concreto, con porqué, con dato cuando exista. La decisión queda con el operador. |
+| **Sugerencias de Zenet** | Concreto, con porqué, con dato cuando exista. La decisión queda con el operador. |
 | **Éxito y confirmaciones** | Reconocedor sin ser efusivo. Recuerda el siguiente paso si aplica. |
 | **Tooltips y ayuda inline** | Conciso. Una sola idea. Directo — sin "podría", "tal vez". |
 | **Empty states** | Orientador. Explica qué va a aparecer ahí cuando haya datos. Sin lenguaje de "todavía no hay nada". |
@@ -142,11 +142,11 @@ El operador tiene atención más amplia pero menos paciencia. Zenet tiene espaci
 | Contexto | Cómo modula el tono |
 |---|---|
 | **Landing page hero** | Una sola idea principal, articulada con confianza. Sin superlativos. La concreción es el gancho. |
-| **LinkedIn — voz del fundador (Alan)** | Reflexivo, primera persona, vulnerable cuando aplica. Aprendizajes > anuncios. Conversacional. |
+| **LinkedIn — voz del fundador (Alan)** | Reflexivo, primera persona, vulnerable cuando aplica. Aprendizajes > anuncios. Conversacional. Building in public: incluye el registro founder-ingeniero (decisiones técnicas, arquitectura, trade-offs) cuando aporta — el fundador es ingeniero, y eso es diferenciador. Ver `personalidad-y-arquetipo.md` §6.2 + `04-go-to-market/02-digital-distribution-strategy.md` (6 content pillars). |
 | **LinkedIn — voz de marca (Zenet)** | Educativo, observador, basado en datos cuando los haya. Cita validadores cuando aporten. |
 | **Email (asunto)** | Nombra el problema, no la oferta. Curiosidad ganada, no clickbait. |
 | **Email (cuerpo)** | Directo, demuestra haber escuchado, accionable. Apertura específica al destinatario cuando se pueda. |
-| **Redes sociales (Instagram, X, TikTok)** | Contextual, conciso. Emojis con moderación o ausencia. Sin frases de "tap to learn more!" |
+| **Redes sociales (Instagram, X, TikTok)** | Contextual, conciso. Emojis con moderación o ausencia. Sin frases de "tap to learn more!". Nota: en Phase 1 el canal primario es **LinkedIn ONLY** (cf. digital distribution strategy) · Instagram/X/TikTok se activan Phase 1.5+ · esta guía de tono queda lista para cuando se abran. |
 | **Anuncios pagados** | Una idea por anuncio. Llamado suave (*"Hablemos"* > *"¡Compra ya!"*). |
 | **Long-form (artículos, blog, casos)** | Estructura de pensamiento, no de venta. Empezar con la pregunta — no con la respuesta. |
 
@@ -188,7 +188,7 @@ Estos ejemplos demuestran los nueve principios en acción. Cada uno es un par �
 
 ❌ *"Nuestro agente con RAG y embeddings vectoriales analiza tu data operativa."*
 
-✅ *"El asistente de Zenet conoce tu operación y te sugiere qué revisar cada día."*
+✅ *"Zenet conoce tu operación y te sugiere qué revisar cada día."*
 
 ### Principio 3 — Sin hype
 
@@ -262,3 +262,14 @@ Estos ejemplos demuestran los nueve principios en acción. Cada uno es un par �
 - **Documentos hermanos.** `vocabulario.md` define palabras concretas (qué usar, qué evitar, términos de marca). `reglas-de-redaccion.md` define la mecánica (gramática, formato, español neutro). Los tres documentos juntos forman el sistema voice-and-tone completo.
 - **Inglés.** Cuando Zenet eventualmente comunique en inglés, este documento será adaptado, no traducido. El inglés tiene sus propios principios (claridad, voz activa, sin hype) pero patrones de oración y vocabulario distintos. La adaptación al inglés será un documento aparte cuando el negocio lo demande.
 - **Documento vivo.** Voz y tono se revisan cuando: (1) la personalidad evoluciona en aspectos relevantes, (2) un cliente o socio reporta sistemáticamente que algún tono no funciona, (3) Zenet abre una superficie nueva que no está cubierta en la sección 2 (podcasts, video, eventos en persona, etc.).
+
+### Changelog
+
+- **v1.1 (2026-06-02).** Revalidación post-Product Strategy completo (offer-pricing + GTM + capital cerrados v0.1 + brand strategy docs misión-visión v1.1 · personalidad v1.2 · posicionamiento v1.5 · promesa v1.1 · vocabulario v1.4). Updates:
+  - **Principio 2 (Sin vocabulario tech)** — quitadas "el asistente" y "el agente que te acompaña" como alternativas client-facing aprobadas (contradecían el **agency framing** canónico 2026-05-18 · `vocabulario.md` §5.2 + §4.4). El cliente interactúa con **Zenet** directamente, no con un asistente/agente separado.
+  - **Ejemplo canónico Principio 2** — ✅ "El asistente de Zenet conoce..." → ✅ "Zenet conoce..." (modelaba el patrón deprecado).
+  - **§2.1** — fila "Sugerencias del agente IA" → "Sugerencias de Zenet".
+  - **§2.2 LinkedIn fundador** — añadido registro founder-ingeniero / building in public (consistency con personalidad v1.2 §6.2 + digital distribution strategy 6 pillars).
+  - **§2.2 Redes sociales** — nota LinkedIn ONLY Phase 1 (Instagram/X/TikTok diferidos Phase 1.5+).
+  - **Frontmatter** v1.0 → v1.1 · last_updated 2026-06-02.
+- **v1.0 (2026-04-27).** Documento base inicial — 9 principios de voz + matriz de tono por superficie + ejemplos canónicos.
