@@ -268,6 +268,10 @@ Dieciocho decisiones canónicas que el subfolder declara. **NO se relitigan aqu�
 | 17 ⭐ **NEW** | **Sales-led canonical Phase 1 · hybrid Phase 2+ trigger** | Phase 1 = sales-led founder/CS-driven cross-tier · Phase 2+ trigger evaluate hybrid model (Esencial → semi-self-serve · Pro → CS-led + lighter sales touch · Multi-Sitio + Enterprise → mantienen sales-led canonical) cuando pricing economics + product maturity justify |
 | 18 ⭐ **NEW** | **Customer Health Score canonical para Mes 6 cliff prevention** | Scoring per cliente combining behavioral data (interaction patterns · payment behavior · upgrade triggers) + qualitative signals (CS observations · interview themes) + payment behavior weights · trigger thresholds proactive CS intervention pre-Mes 6 cliff · NEW canonical framework #9 primary |
 
+### 4.3 Flag · CS-as-Agents vision (futuro · NO Phase 1)
+
+> **Visión estratégica explorada 2026-06-01 (NO decisión Phase 1):** automatizar customer service de Zenet con AI agents — la misma arquitectura agency-as-SaaS que vendemos al cliente, ahora aplicada a operaciones internas de CS — con human escalation layer para retention-critical moments. Frame: AI-first CS con human para lo load-bearing + tier-based human touch (premium = more human · preserva valor #3 "Acompañar no abandonar"). **NO Phase 1** (human trust building critical) · hybrid Phase 1.5-2 · AI-primary Phase 2-3+. Customer Health Score (#18) eventualmente puede ser powered by AI + tier-1 CS queries automatizadas. Línea que NO cruzar: AI CS nunca debe sentirse "te abandonamos a un robot" · debe ser "tu agency 24/7 + humanos cuando importa". **Nota de captura completa:** `Product Strategy/_context/06-experience-y-roadmap/00-cs-as-agents-vision-nota.md` (retomar al activar subfolder 06 formal).
+
 ---
 
 ## 5. Decisiones abiertas + triggers
