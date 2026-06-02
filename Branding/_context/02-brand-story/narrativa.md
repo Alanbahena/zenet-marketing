@@ -1,10 +1,10 @@
 ---
 name: Narrativa de Marca
-description: La historia que Zenet cuenta sobre el mundo — el operador, el caos estructural, el sistema que falta y el ecosistema que estamos construyendo
+description: La historia que Zenet cuenta sobre el mundo — el operador, el caos estructural, el sistema atrapado en una sola cabeza y el ecosistema que estamos construyendo
 type: brand-story
-last_updated: 2026-04-27
+last_updated: 2026-06-02
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -20,7 +20,7 @@ Es el relato que se sostiene detrás de cada campaña, cada manifiesto, cada vid
 
 ## 1. Apertura
 
-> En cada restaurante hay un operador apagando incendios. No porque la cocina arda — sino porque el sistema que debería sostenerla nunca existió.
+> En cada restaurante hay un operador apagando incendios. No porque la cocina arda — sino porque el sistema que la sostiene vive entero en su cabeza, y una cabeza no puede estar en dos lugares a la vez.
 
 ---
 
@@ -28,9 +28,11 @@ Es el relato que se sostiene detrás de cada campaña, cada manifiesto, cada vid
 
 En la mayoría de los restaurantes que están creciendo en México y Latinoamérica — los independientes, los que tienen entre una y cinco sucursales, los que aspiran a más — la operación funciona por heroísmo, no por diseño.
 
-Cada manager opera diferente. Cada cocina guarda sus escandallos en la cabeza del chef en turno. Cada inventario se cuadra con una mezcla de Excel, WhatsApp y pizarrón. Cada nueva sucursal arranca desde cero — porque la anterior nunca dejó manual. Cada empleado clave que se va, se lleva conocimiento que nunca volverá.
+Hay un sistema, claro que lo hay. Pero vive en la cabeza del dueño, en su libreta, en el balance que revisa a fin de mes. Cada manager opera diferente. Cada cocina guarda sus escandallos en la cabeza del chef en turno. Cada inventario se cuadra con una mezcla de Excel, WhatsApp y pizarrón. Funciona — mientras el dueño esté presente.
 
-Esto no es un problema individual. Es una condición estructural compartida por miles de restaurantes en la región. Y se acepta porque parece inevitable.
+El día que se rompe tiene fecha: cuando abre la segunda sucursal y descubre que no puede estar en dos lugares a la vez. La nueva arranca desde cero porque la anterior nunca dejó manual. El empleado clave que se va se lleva conocimiento que nunca volverá. Lo que cabía en una cabeza ya no cabe en dos cocinas.
+
+Esto no es un problema individual. Lo viven miles de restaurantes en la región. Y se acepta porque parece inevitable.
 
 ---
 
@@ -38,13 +40,13 @@ Esto no es un problema individual. Es una condición estructural compartida por 
 
 Tú lo conoces mejor que cualquier consultor.
 
-Pasas tus días apagando incendios que no debiste haber tenido que apagar. Reconciliando inventarios que deberían cuadrar solos. Explicando — otra vez — el mismo proceso a un nuevo empleado, porque nadie lo escribió. Reinventando la rueda cada vez que abres una sucursal. Cargando en la cabeza un conocimiento operativo que el negocio necesita, pero que el negocio no posee.
+Pasas tus días apagando incendios que no debiste haber tenido que apagar. Reconciliando inventarios que deberían cuadrar solos. Explicando — otra vez — el mismo proceso a un nuevo empleado, porque solo vive en tu cabeza. Reinventando la rueda cada vez que abres una sucursal. Cargando una operación entera en la memoria, porque nunca pudo salir de ahí.
 
 Y aún así, cada noche, sirves comida. Cada noche, tu equipo cocina. Cada noche, tus clientes se van satisfechos.
 
-Eso no es suerte. Es talento. Es disciplina. Son años de experiencia que no aparecen en ningún manual — porque no existe ningún manual.
+Eso no es suerte. Es talento. Es disciplina. Son años de criterio afinado servicio tras servicio. Ese criterio es un sistema — el tuyo.
 
-El problema nunca fue que te falte capacidad. El problema es que te falta estructura para sostener tu capacidad.
+El problema nunca fue que te falte capacidad, ni que te falte sistema. El sistema eres tú. El problema es que ese sistema no puede salir de tu cabeza: no se delega, no se replica, no está donde tú no estás.
 
 ---
 
@@ -54,9 +56,11 @@ El verdadero enemigo no es la competencia.
 
 No es la economía, ni los proveedores, ni la rotación de personal, ni los costos de los insumos. No es la falta de talento — los restaurantes en crecimiento están llenos de talento. No es la falta de esfuerzo — los operadores trabajan más horas de las que el cuerpo aguanta.
 
-El verdadero enemigo es **la ausencia de sistemas**. Y la creencia silenciosa de que el caos operativo es el precio inevitable de tener un restaurante.
+El verdadero enemigo es **un sistema que vive en una sola cabeza**. Funciona, pero no escala: no se delega, no se replica, no sobrevive a la segunda sucursal ni al empleado que se va. Y junto a él, la creencia silenciosa de que el caos operativo es el precio inevitable de tener un restaurante.
 
-La ausencia de sistemas no se ve. Pero se siente todos los días: en horas perdidas reconciliando inventarios, en conocimiento que se va con cada empleado, en una sucursal nueva que arranca desde cero porque la anterior nunca dejó una base operativa. En la dependencia de personas clave para que un día normal funcione.
+Ese sistema atrapado no se ve. Pero se siente todos los días: en horas perdidas reconciliando inventarios, en conocimiento que se va con cada empleado, en una sucursal nueva que arranca desde cero. En la dependencia de que el dueño esté presente para que un día normal funcione.
+
+Y ahora cuesta más que nunca. Operar sin que la información esté limpia y conectada antes era solo caos. Hoy también es exposición: el SAT audita a distancia, y los datos que viven en una libreta no defienden a nadie. El costo de no sacar el sistema de una sola cabeza dejó de ser solo tiempo perdido.
 
 Y esa creencia silenciosa — *"así son los restaurantes"* — es lo que mantiene el problema vivo. Porque mientras se acepte como precio inevitable, nadie lo ataca.
 
@@ -98,13 +102,13 @@ Eso es lo que la cocina hace bien hace 100 años. Y es lo que la trastienda nunc
 
 Aquí entramos nosotros.
 
-Zenet no es otro POS, ni otra app de inventarios, ni un dashboard más. Zenet es el **sistema operativo que le faltaba al back-of-house**.
+Zenet no es otro POS, ni otra app de inventarios, ni un dashboard más. Zenet es el **sistema operativo que extiende el tuyo** — el que saca tu forma de operar de tu cabeza y la pone a funcionar en cada sucursal, en cada turno, incluso donde tú no estás.
 
-Pensamos en Zenet como el sous chef de la operación: la mano derecha que conoce la cocina tan bien como el chef ejecutivo, que tiene el ojo en cada detalle, que ejecuta sin pedir crédito, y que sabe cuándo proponer y cuándo callarse. Está presente en cada servicio. Hace ver bien al chef ejecutivo. Nunca aspira a serlo.
+Pensamos en Zenet como el sous chef de la operación: la mano derecha que conoce la cocina tan bien como el chef ejecutivo, que tiene el ojo en cada detalle, que ejecuta sin pedir crédito, y que sabe cuándo proponer y cuándo callarse. Detrás de ese sous chef hay un equipo de especialistas — compras, costos, recetas, operación — coordinados como uno solo. Está presente en cada servicio, donde tú ya vives: en tu WhatsApp. Hace ver bien al chef ejecutivo. Nunca aspira a serlo.
 
 El nombre lo dice: **Zen + net**. Orden en una red. Disciplina dentro de un sistema conectado. Estructura sin rigidez.
 
-No estamos aquí para reemplazarte. Estamos aquí para que dejes de cargar tu operación en la cabeza, en hojas de cálculo, en mensajes de WhatsApp. Para que tu negocio empiece a funcionar como sistema — no como heroísmo.
+No estamos aquí para reemplazarte. Estamos aquí para que dejes de cargar tu operación en la cabeza, en hojas de cálculo, en mensajes de WhatsApp que nadie vuelve a leer. Para que tu forma de operar deje de vivir solo en ti — y empiece a funcionar como sistema en todo tu negocio.
 
 ---
 
@@ -130,7 +134,9 @@ Hoy Zenet vive dentro de las cuatro paredes de un restaurante. Pero la visión e
 
 La primera promesa de Zenet es de acceso: que cualquier restaurante independiente — con una sucursal o con cinco — pueda operar con la estructura de orden y consistencia que hoy solo tienen las grandes cadenas. Sin la complejidad. Sin el costo. Sin la espera de cinco años para tener un sistema decente.
 
-Esa democratización es donde Zenet vive hoy. Y es solo el primer capítulo.
+Las cadenas tienen algo que el independiente nunca pudo pagar: un equipo de especialistas — compras, costos, pronósticos, operaciones — cuidando la operación todos los días. Zenet es ese equipo, coordinado, al precio de una suscripción. Lo que costaría contratarlo cuesta una fracción.
+
+Ahí es donde Zenet vive hoy. Y es solo el primer capítulo.
 
 ### 9.2 Mañana — Bloques operativos que se construyen una vez, se replican mil veces
 
@@ -191,6 +197,17 @@ Lo demás lo construimos juntos.
 - **Función del documento.** Esta narrativa es el ancla de toda la comunicación de marca. De aquí derivan: manifiestos públicos, hero films, campañas de contenido, narrativas de pitch deck, copy de landing principal, ensayos largos en LinkedIn, guiones de video, y cualquier material que requiera contar la historia de Zenet en formato extendido.
 - **Versiones derivadas.** A partir de este documento canónico se pueden crear versiones cortas (manifiesto de 200 palabras), media (copy hero de 80 palabras), y micro (un solo enunciado para anuncios o redes). El documento canónico se mantiene como referencia para que las versiones derivadas conserven coherencia narrativa.
 - **Voz mixta.** El documento usa tres voces deliberadamente: tercera persona observacional para el diagnóstico (secciones 2, 4, 5, 6), segunda persona para dignificar al operador (secciones 3, 8, 10), y primera persona plural ("nosotros") para incorporar a Zenet a la historia (secciones 7, 9, 10). Esta mezcla evita el tono predicador del manifiesto puro y la frialdad del documento académico.
-- **Antagonista.** El enemigo nombrado es *la ausencia de sistemas* (causa estructural) y *la creencia silenciosa de que el caos es el precio* (causa cultural). Nunca se nombra a un competidor — la narrativa se mantiene por encima de la pelea, alineada con la personalidad de marca.
+- **Antagonista.** El enemigo nombrado es *el sistema atrapado en una sola cabeza — funciona pero no escala* (causa estructural) y *la creencia silenciosa de que el caos es el precio* (causa cultural). **NO** se nombra como *"ausencia de sistemas"*: el research (VoC "yo SOY el sistema" · V-001/V-010) muestra que el operador SÍ tiene sistema — vive en su cabeza, su libreta y el balance que revisa a fin de mes. El enemigo es que ese sistema no sale de ahí, no que no exista. Nunca se nombra a un competidor — la narrativa se mantiene por encima de la pelea, alineada con la personalidad de marca.
 - **Metáforas centrales.** *Mise en place* (la operación entera con la disciplina que hoy solo tiene la cocina) es la metáfora central original de este documento. *Sous chef* y *Zen + net* son metáforas heredadas de otros documentos de marca, usadas brevemente para mantener cohesión.
 - **Documento vivo.** Esta narrativa se revisa cuando: (1) la visión a largo plazo (Capa 2, Capa 3, Capa 4) avanza de "futuro" a "en construcción"; (2) la validación de campo cambia cómo entendemos el problema; (3) la posición competitiva se mueve y demanda renombrar al antagonista; (4) un cambio profundo de personalidad o tono altera cómo Zenet se cuenta a sí misma.
+
+### Changelog
+
+- **v1.1 (2026-06-02).** Revalidación post-Product Strategy + re-auditoría contra Market Research. Reframe load-bearing del antagonista + alineación con hallazgos de customer research. Updates:
+  - **Antagonista reframeado** (§1, §3, §4, §7, §Notas) — de *"la ausencia de sistemas"* → *"un sistema que vive en una sola cabeza: funciona pero no escala"*. Honra el hallazgo #1 de VoC ("yo SOY el sistema" · V-001/V-010): el operador SÍ tiene sistema · *"no tienes sistema"* es ataque percibido a su identidad · mensaje correcto *"Zenet extiende tu sistema"*. Consistency con misión-visión v1.1 + posicionamiento v1.5 + promesa v1.1.
+  - **§7** — *"el sistema operativo que le faltaba al back-of-house"* → *"que extiende el tuyo"* · añadido el **equipo de especialistas** detrás del sous chef (agency-as-SaaS) + WhatsApp como interfaz donde el operador ya vive.
+  - **§9.1** — tejido el **agency-as-SaaS + pricing arbitrage** (las cadenas tienen un equipo de especialistas que el independiente nunca pudo pagar · Zenet es ese equipo al precio de una suscripción) · removido patch "democratización".
+  - **§2/§3** — afilado el **beachhead** en el momento validado del quiebre (abrir la 2da sucursal · no poder estar en dos lugares · buying process §10.9) + tejido el frame VoC *"libreta / balance a fin de mes"* (V-001 Jaume) · removido patch "condición estructural".
+  - **§4** — añadido toque de la **palanca fiscal #1** ("por qué ahora": el SAT audita a distancia · datos en libreta no defienden · industry §2.8) · sin convertir el mito en pitch de compliance.
+  - **Frontmatter + description** v1.0 → v1.1 · last_updated 2026-06-02.
+- **v1.0 (2026-04-27).** Documento base inicial — narrativa de marca completa (apertura · diagnóstico · operador · antagonista · revelación · mise en place · Zenet · transformación · visión 4 capas · llamado).
