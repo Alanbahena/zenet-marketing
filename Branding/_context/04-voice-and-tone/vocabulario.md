@@ -1,12 +1,12 @@
 ---
-
-## name: Vocabulario
+name: Vocabulario
 description: El diccionario operativo de Zenet — qué palabras usamos, cuáles evitamos, cómo nombramos lo nuestro, y cómo se traducen los términos entre idiomas.
 type: voice-and-tone
-last_updated: 2026-05-23
+last_updated: 2026-06-02
 status: active
-version: 1.3
+version: 1.4
 owner: Alan Bahena
+---
 
 # Vocabulario
 
@@ -196,14 +196,19 @@ Vocabulario del modelo comercial Zenet (pure subscription + 90-day minimum + ann
 | Término                              | Cómo lo usamos                                                                                       |
 | ------------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | **Subscripción / Suscripción**       | Modelo comercial principal de Zenet. *"Subscripción mensual"* o *"suscripción Zenet"*. Preferido sobre *"membresía"* o *"licencia"*. |
-| **Subscripción continua / Continuación de subscripción** | Frame para la decisión post-90-días en design partner program. *"Al término de la fase gratuita, decides si continúas con la subscripción"*. Preferido sobre *"Mantenimiento"* (deprecated). |
-| **Compromiso mínimo 90 días / 90-day minimum commitment** | Componente del modelo comercial post fase gratuita. *"Compromiso mínimo de 90 días"* en cliente · *"90-day minimum commitment"* internal. |
+| **Esencial · Pro · Multi-Sitio · Enterprise** | Los 4 planes (tiers) de Zenet · client-facing · capitalizados. **Esencial** (entry · 1 sucursal) · **Pro** (1 sucursal · service level superior) · **Multi-Sitio** (mín. 2 sucursales) · **Enterprise** (custom · contact sales). Precio por sucursal/mes + IVA. *"el plan Esencial"* · *"sube a Pro"*. |
+| **Programa Socio Fundador**          | El programa de design partners de Fase 0 (cliente-facing). *"Socio Fundador"* es el nombre del rol cliente-facing; *"design partner"* es internal/investor. Otorga el descuento lock-in 20-30% permanente. |
+| **Adendum Socio Fundador**           | Documento firmado (DocuSign) Day 1 que captura el lock-in permanente + reciprocidad bilateral del Socio Fundador. Internal/contractual · raramente cliente-facing en copy. |
+| **Subscripción continua / Continuación de subscripción** | Frame para la decisión post-compromiso (90 días) en el Programa Socio Fundador. *"Al término del compromiso mínimo, decides si continúas con la subscripción"*. Preferido sobre *"Mantenimiento"* (deprecated). |
+| **Compromiso mínimo 90 días / 90-day minimum commitment** | Componente del modelo comercial · activa el Day 8 (tras la ventana de cancelación), desde el primer cargo. *"Compromiso mínimo de 90 días"* en cliente · *"90-day minimum commitment"* internal. |
 | **Pago anual anticipado / Annual prepay** | Opción de pago con descuento adicional. *"Pago anual anticipado con descuento"* en cliente · *"annual prepay"* internal. |
 | **Mensualidad**                      | Aceptable como sinónimo de *"subscripción mensual"* en contextos casuales. |
-| **Descuento Socio Fundador**         | El 30% descuento perpetuo para clientes que se incorporan durante design partner program. NO es promoción · es status permanent. |
-| **Fase gratuita**                    | Los 90 días iniciales del design partner program. *"Durante los 90 días de fase gratuita..."*. Preferido sobre *"trial"* o *"prueba gratis"*. |
+| **Descuento Socio Fundador**         | El 20-30% descuento perpetuo (lock-in permanente) para clientes que se incorporan durante el Programa Socio Fundador (Fase 0 design partners). NO es promoción · es status permanente. |
+| **Ventana de cancelación**           | Los 7 días post-firma en que el cliente puede cancelar sin cargo (Day 1-7). La agency trabaja desde Day 1 (limpieza + estandarización). *"Tienes 7 días para cancelar sin costo"*. Reemplaza el framing *"fase gratuita"* (deprecado). |
+| **Primer cargo / Day 8**             | El primer cobro recurring procesa el Day 8, justo al cerrar la ventana de cancelación. El compromiso mínimo de 90 días activa desde aquí. *"El primer cargo es al octavo día"*. |
+| **Fase gratuita**                    | ⛔ **Deprecada** (modelo comercial 2026-05-29+). Zenet NO opera con "fase gratuita" ni "free trial" — la agency trabaja + cobra desde el inicio. Reemplazada por *"ventana de cancelación (7 días)"* + *"primer cargo Day 8"*. Razón: matches MX professional services pattern (despacho · consultor · agencia cobran desde firma). |
 | **High-touch onboarding / Acompañamiento intensivo** | Los 3 meses de onboarding con el founder INCLUIDOS en la subscripción (no setup fee separado). *"Acompañamiento intensivo del fundador en los primeros 90 días"* en cliente · *"high-touch onboarding"* internal. |
-| **Cancelar / Cancelación**           | *"Cancelable después del compromiso mínimo con 30 días de aviso"*. Preferido sobre *"baja"* o *"churn"*. |
+| **Cancelar / Cancelación**           | Self-serve in-app (rol Owner · panel de administración) · tras el compromiso mínimo, termina al final del período pagado actual. *"Cancelas tú mismo desde el panel, cuando quieras tras los 90 días"*. Preferido sobre *"baja"* o *"churn"*. |
 | **Setup fee**                        | ⛔ **NO usar** — Zenet NO cobra setup fee (decisión 2026-05-22). El onboarding está incluido en la subscripción. Si alguien pregunta *"¿hay setup fee?"*, respuesta correcta es *"No · el acompañamiento inicial está incluido"*. |
 
 
@@ -315,7 +320,7 @@ Frases que reflejan modelos comerciales **descontinuados o nunca adoptados**:
 - *"Mantenimiento mensual"* — terminology deprecated v1.1+. Decir *"subscripción"* o *"continuación de subscripción"*.
 - *"Proyecto de estandarización por $15K-25K"* — modelo project pricing descartado (decisión 2026-05-22). Zenet es pure subscription, no es proyecto.
 - *"Cobramos por entregable"* — Zenet entrega un sistema vivo, no entregables aislados. Decir *"acceso al sistema con subscripción mensual"*.
-- *"Contrato anual obligatorio"* — Zenet tiene compromiso mínimo de 90 días post fase gratuita · NO contrato anual obligatorio. *"Annual prepay"* es opcional, no obligatorio.
+- *"Contrato anual obligatorio"* — Zenet tiene compromiso mínimo de 90 días (activo desde el primer cargo Day 8) · NO contrato anual obligatorio. *"Annual prepay"* es opcional, no obligatorio.
 
 **¿Cómo se reemplazan?** No se reemplazan — se reescribe la frase entera para que diga algo concreto. *"Lleva tu restaurante al siguiente nivel"* → *"Recupera 28 horas al mes en cada sucursal"*. *"Tu asistente AI 24/7"* → *"Zenet revisa tu inventario cada mañana y te avisa por WhatsApp lo que necesita atención"*. *"Setup fee de $15K + Mantenimiento $1K/mes"* → *"Subscripción mensual · primer trimestre con acompañamiento intensivo del fundador incluido"*.
 
@@ -522,6 +527,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | -------------------------------------- | ------------------------------------------------------------------------------ |
 | Acompañamiento intensivo               | Sí. Cliente-facing version de "high-touch onboarding". Los 3 meses iniciales con founder INCLUIDOS en subscripción. |
 | ADD (Administrador de Documentos Digitales) | Internal/contable-facing. CONTPAQi module para automated CFDI management. |
+| Adendum Socio Fundador                 | Internal/contractual. Documento firmado (DocuSign) Day 1 · captura lock-in permanente + reciprocidad del Socio Fundador. Raramente cliente-facing. |
 | Agencia de agentes especialistas       | Sí. Concepto de categoría · frase con punch que define qué ES Zenet.           |
 | Agency-as-SaaS                         | Internal/strategic. Cliente-facing: *"agencia de agentes especialistas"*.       |
 | Agente / Los agentes                   | Evitar como entidad nombrada cliente-facing. Decir *"Zenet"* directamente.     |
@@ -545,7 +551,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Coexistencia                           | Sí. Preferido sobre "switching" o "reemplazo de POS". Load-bearing positioning. |
 | Comensal                               | Quien come en el restaurante.                                                  |
 | Compliance                             | Evitar en cliente · preferir *"cumplimiento"*.                                  |
-| Compromiso mínimo 90 días              | Sí. Componente del modelo comercial post fase gratuita. Cliente: *"compromiso mínimo de 90 días"* · internal: *"90-day minimum commitment"*. |
+| Compromiso mínimo 90 días              | Sí. Activa el Day 8 (tras la ventana de cancelación), desde el primer cargo. Cliente: *"compromiso mínimo de 90 días"* · internal: *"90-day minimum commitment"*. |
 | Complemento de pago / REP              | Internal/contable-facing. CFDI complement required when payment occurs after invoice issuance. |
 | Conciliar / Conciliación               | Master verb del workflow contable. Cross-check entre POS · inventario · CFDI · contabilidad. Internal/contable-facing primary · concepto central messaging compliance ("data limpia y reconciliada"). |
 | Conexión                               | Sí. Reemplazo de *"integration"* / *"API"* en cliente · usar con cuidado: Phase 1 NO tiene API integration. |
@@ -556,7 +562,7 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Cuenta del banco                       | Sí. Indicador operativo nativo (V-001 Jaume). Anchor messaging cash flow.       |
 | Cumplimiento                           | Sí. Preferido sobre "compliance". Categoría SAT + IMSS + NOM-251 + Distintivo H. |
 | Demo                                   | Sí, aceptable.                                                                 |
-| Descuento Socio Fundador               | Sí. 30% descuento perpetuo para clientes que se incorporan durante design partner program. NO es promoción · es status permanent. |
+| Descuento Socio Fundador               | Sí. 20-30% descuento perpetuo (lock-in permanente) para clientes del Programa Socio Fundador (Fase 0). NO es promoción · es status permanente. |
 | Design partner                         | OK internal/investor pitch. Cliente: *"operador piloto"*.                       |
 | Despacho (contable)                    | Sí. Contable's practice/firm · external service model dominant SMB MX. Cliente: *"tu despacho contable"* · *"el contador externo"*. |
 | Desperdicio                            | Evitar. Preferir *"merma"*.                                                    |
@@ -570,12 +576,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Equipo cognitivo coordinado            | Sí. Cómo se describe la coordinación interna de los agentes.                    |
 | ERP                                    | Sí, en contexto comparativo (Zenet no es ERP).                                 |
 | Escandallo                             | Sí. Receta costeada.                                                           |
+| Esencial / Pro / Multi-Sitio / Enterprise | Sí, client-facing · capitalizados. Los 4 planes de Zenet. Esencial (entry) · Pro (service level superior) · Multi-Sitio (mín. 2 sucursales) · Enterprise (custom · contact sales). Precio por sucursal/mes + IVA. |
 | Especialista (en X dominio)            | Sí. Rol interno de cada agente AI. NO se exponen al cliente como entidades separadas. |
 | Estandarización                        | Sí. Concepto central.                                                          |
 | Excelencia operativa                   | Aceptable pero genérico. Preferir lenguaje más específico.                     |
 | Factura / Comprobante                  | Sí. Operator-friendly. Preferido sobre "CFDI" para el documento físico.         |
 | Factura global                         | Sí. Single CFDI covering all non-facturado consumer sales en period · daily generation typical restaurants. Ambos lados (operator + contable) lo conocen. |
-| Fase gratuita                          | Sí. Los 90 días iniciales del design partner program. Preferido sobre *"trial"* o *"prueba gratis"*. |
+| Fase gratuita                          | ⛔ **Deprecada** (modelo comercial 2026-05-29+). Reemplazada por *"ventana de cancelación (7 días)"* + *"primer cargo Day 8"*. La agency trabaja + cobra desde el inicio · NO "free trial". |
 | Feature                                | Evitar en cliente. Decir *"función"* o *"funcionalidad"*.                       |
 | Fiscalización digital                  | Sí. Umbrella term de presión SAT 2026+.                                         |
 | Food cost                              | Sí. Industry-aceptable.                                                        |
@@ -611,15 +618,17 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Operador piloto                        | Sí. Cliente-facing version de "design partner".                                 |
 | PAC                                    | Internal. Zenet NO es PAC.                                                      |
 | Pago anual anticipado                  | Sí. Cliente-facing version de *"annual prepay"*. Opción con descuento adicional. |
-| Phase 1 / Phase 2 / Phase 1.5          | Internal terminology · stages del producto roadmap. Phase 1 = estandarización + manual vivo + WhatsApp agency + recetario (launch Q3 2026). Phase 1.5 = training portal (TIER 2B deferred). Phase 2 = inventario dinámico + pronósticos + costos + POS API (Q3-Q4 2027). Cliente: usar *"versión actual"* / *"próxima versión"* en vez de Phase numbering. |
+| Phase 1 / Phase 2 / Phase 1.5          | Internal terminology · stages del producto roadmap. Phase 1 = estandarización + manual vivo + WhatsApp agency + recetario (E1-E6 + H1-H2 · launch Q3 2026). Phase 1.5 = N1-N5 (training portal + add-ons · Q4 2026-Q1 2027). Phase 2 = agentes especializados (F5 priority #1) + cumplimiento vía CFDI/PAC directo (F6) + partner channel (F8) + inventario dinámico + pronósticos + costos (Q3-Q4 2027). **NO POS API** (F7 removido 2026-05-26). Cliente: usar *"versión actual"* / *"próxima versión"* en vez de Phase numbering. |
 | Pilot / Piloto                         | *"Piloto"* en cliente · *"pilot"* internal/strategic.                           |
 | Plataforma                             | OK pero limitado. Preferir *"sistema"*.                                         |
 | Plaza                                  | Sí. Operator term para ciudad/ubicación.                                        |
 | Póliza                                 | Internal/contable-facing. Accounting entry generated per CFDI · automated generation key CONTPAQi feature. NO cliente-facing dueño. |
 | POS / punto de venta                   | Sí. Ambos OK.                                                                  |
-| POS API integration                    | Internal. Phase 2 only · NO Phase 1. Cliente Phase 1: *"trabajamos con la data de tu POS via 3 modos de carga"*. |
+| POS API integration                    | ⛔ **Removido del roadmap** (F7 · 2026-05-26 · barreras estructurales POS SMB MX). Reactivación condicional (partnership LIMAC/SYCA o demand willingness-to-pay). Phase 2 usa CFDI/PAC directo, NO POS API. Cliente: *"trabajamos con la data de tu POS via 3 modos de carga"*. |
 | POS-agnostic / hardware-agnostic       | Internal. Cliente: *"Zenet trabaja sobre tu POS actual"*.                       |
 | Premium                                | Evitar. Hype/corporativismo.                                                   |
+| Primer cargo / Day 8                   | Sí. El primer cobro recurring · procesa el Day 8 (al cerrar la ventana de cancelación). El compromiso mínimo de 90 días activa aquí. |
+| Programa Socio Fundador                | Sí, cliente-facing. Programa de design partners Fase 0. *"Socio Fundador"* = rol cliente-facing · *"design partner"* = internal/investor. Otorga descuento lock-in 20-30% permanente. |
 | Receta                                 | Sí.                                                                            |
 | Receta estandarizada                   | Sí.                                                                            |
 | Reemplazar (equipo con AI)             | Nunca. Violates valor #1 *"Aumentar, no reemplazar"*.                           |
@@ -644,12 +653,13 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 | Sucursal                               | Sí. La unidad replicable.                                                      |
 | Tablero / Panel                        | Sí. Reemplazo de *"dashboard"*.                                                  |
 | Tasa efectiva                          | Internal/contable-facing. Effective tax rate · SAT compares vs sector averages to flag audit candidates. Audit-defense messaging. |
-| TIER 1 / TIER 2A / TIER 2B / TIER 3    | Internal product roadmap terminology. TIER 1 = manual vivo + WhatsApp agency (Phase 1 launch must-have). TIER 2A = recetario consultable (Phase 1 launch). TIER 2B = training portal (Phase 1.5 deferred). TIER 3 = process compliance + cumplimiento fiscal (Phase 2). NO usar cliente-facing. |
+| TIER 1 / TIER 2A / TIER 2B / TIER 3    | ⚠️ **Terminología legacy de capability-phasing** (reemplazada por Phase 1/1.5/2 + numeración de features E/N/F en `02-features-y-scope/`). NO confundir con los **pricing tiers** client-facing (Esencial/Pro/Multi-Sitio/Enterprise). Solo aparece en docs históricos. NO usar cliente-facing. |
 | Timbrar                                | Internal/contable-facing. Digital sealing/validating CFDI via PAC. NO cliente-facing dueño. |
 | Trastienda                             | Sí. Coexiste con *"back-of-house"*.                                              |
 | Tú (vs usted)                          | *"Tú"* siempre, salvo legal y press.                                            |
 | Único                                  | Evitar. Hype.                                                                  |
 | Usuario                                | Aceptable en contextos técnicos. En marketing preferir *"operador"* o *"cliente"*. |
+| Ventana de cancelación                 | Sí. Los 7 días post-firma para cancelar sin cargo (Day 1-7). Reemplaza *"fase gratuita"* (deprecada). La agency trabaja desde Day 1. |
 | WhatsApp                               | Sí. Sin traducir, sin cursiva. Canal operacional principal Zenet.               |
 | Wow                                    | Nunca. Hype.                                                                   |
 | Yo soy el sistema                      | Frame VoC identidad operador (V-010). NO usar como mensaje — usar como insight para messaging *"Zenet extiende tu sistema"*. |
@@ -671,6 +681,15 @@ Para consulta de un solo vistazo. Cuando la respuesta esté aquí, no hace falta
 
 ### Changelog
 
+- **v1.4 (2026-06-02).** Revalidación post-Product Strategy completo (offer-pricing + GTM + capital subfolders cerrados v0.1 + brand strategy docs misión-visión v1.1 · personalidad v1.2 · posicionamiento v1.5 · promesa v1.1). Updates:
+  - **Frontmatter reparado** — `## name:` → `name:` + cierre `---` faltante (parsing bug). Metadata 1.3 → 1.4 · last_updated 2026-06-02.
+  - **"Fase gratuita" DEPRECADA** (6 ubicaciones §2.8 + §4.5 + §9) — el modelo comercial canónico (`03-oferta-y-pricing/01-modelo-comercial-y-terminos.md` §4) la eliminó. Reemplazada por **"ventana de cancelación (7 días)" + "primer cargo Day 8"** (la agency trabaja + cobra desde Day 1 · matches MX professional services pattern). Añadidas entries `Ventana de cancelación` + `Primer cargo / Day 8` (§2.8 + §9).
+  - **4 pricing tiers añadidos** (§2.8 + §9) — `Esencial · Pro · Multi-Sitio · Enterprise` ahora canonical client-facing (aparecen en landing pública).
+  - **Descuento Socio Fundador 30% → 20-30%** (lock-in permanente · §2.8 + §9) · alineado con posicionamiento v1.5 + `02-programa-socio-fundador-offer.md`.
+  - **"Cancelar" corregido** — "30 días de aviso" → **self-serve in-app (Owner role)** · termina al final del período pagado (doc 01 §5.1).
+  - **Phase 2 POS API removido** (§9 entries Phase / POS API integration / TIER) — F7 POS API REMOVED 2026-05-26 (`02-features-y-scope/01-roadmap-hipotesis.md`) · Phase 2 ahora F5 agentes especializados + F6 CFDI/PAC directo + F8 partner channel. TIER 1/2A/2B/3 marcada legacy (reemplazada por Phase + E/N/F · NO confundir con pricing tiers).
+  - **Añadidos** `Programa Socio Fundador` + `Adendum Socio Fundador` (DocuSign Day 1).
+- **v1.3 (2026-05-23).** Wave 3 cascade post-Perplexity report — 11 términos contable añadidos a §2.6 Cumplimiento y fiscal (conciliar/timbrar/póliza · DIOT/balanza · EFOS/EDOS · REP · factura global · tasa efectiva · ADD · despacho) + entries individuales en §9 glossary. Heredado `02-customer-research/07-voice-of-customer.md` §3.2.
 - **v1.2 (2026-05-22).** Update minor desde decisión estratégica de pricing model (pure subscription + 90-day minimum + annual prepay · sin setup fee · decisión 2026-05-22). Updates aplicados:
   - **§2.7 expandida** — añadido *"Modos de upload (Modo 1/2/3)"* + clarificación *"Conexión"* con caveat NO Phase 1 API integration.
   - **NEW §2.8 Modelo comercial cliente-friendly** — 10 términos del modelo comercial: subscripción · subscripción continua · compromiso mínimo 90 días · pago anual anticipado · mensualidad · descuento Socio Fundador · fase gratuita · high-touch onboarding / acompañamiento intensivo · cancelar · setup fee (marked NO use).
