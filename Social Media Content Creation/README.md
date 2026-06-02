@@ -55,10 +55,11 @@ Social Media Content Creation/
 ├── README.md                                  ✅ este doc
 ├── _context/
 │   ├── 00-marco-y-estrategia.md               🚧 doctrina · scope · frontera · stealth/reveal · métricas · decisiones canónicas
-│   ├── 01-manual-marca-personal-alan.md       🚧 EL manual · identidad · arco narrativo · propuesta de valor · voz · audiencias · Alan↔Zenet · reglas
-│   ├── 02-perfil-linkedin.md                  🚧 perfil ancla · headline · about · banner · featured
-│   ├── 03-pillars-y-sistema-editorial.md      🚧 6 pillars operacionalizados · EN/ES · estructura por pillar · calendario
-│   ├── 04-sistema-visual-y-generacion-ai.md   🚧 principios visuales · paleta · tipografía · tipos de imagen · guía Nano Banana Pro
+│   ├── 01-manual-marca-personal-alan.md       🚧 EL manual · identidad · arco narrativo · propuesta de valor · voz (principios) · audiencias · Alan↔Zenet · reglas
+│   ├── 02-voz-y-estilo-de-alan.md             🚧 huella de estilo + corpus anotado de posts reales · la base que se carga para generar en la voz de Alan · se puebla con sus publicaciones
+│   ├── 03-perfil-linkedin.md                  🚧 perfil ancla · headline · about · banner · featured
+│   ├── 04-pillars-y-sistema-editorial.md      🚧 6 pillars operacionalizados · EN/ES · estructura por pillar · calendario
+│   ├── 05-sistema-visual-y-generacion-ai.md   🚧 principios visuales · paleta · tipografía · tipos de imagen · guía Nano Banana Pro
 │   └── _archive/
 ├── _sop/
 │   ├── produccion-de-contenido.md             🚧 workflow idea→borrador→publicación + checklist pre-publicación
@@ -71,7 +72,7 @@ Social Media Content Creation/
 └── skills/                                    🚧 futuro · /post-linkedin · /content-week · /imagen-post
 ```
 
-**Estado global:** 🚧 departamento en activación v0.1 · 1/11 artefactos (este README).
+**Estado global:** 🚧 departamento en activación v0.1 · 1/12 artefactos (este README).
 
 ---
 
@@ -80,12 +81,13 @@ Social Media Content Creation/
 1. **`README.md`** ✅ (el mapa)
 2. **`_context/00-marco-y-estrategia.md`** — doctrina · fija frontera + stealth/reveal + métricas + decisiones
 3. **`_context/01-manual-marca-personal-alan.md`** — el corazón · evolución de los 2 PDFs de Alan (ver Herencia)
-4. **`_context/03-pillars-y-sistema-editorial.md`** — pillars operacionalizados + calendario
-5. **`_context/02-perfil-linkedin.md`** — el perfil ancla
-6. **`_context/04-sistema-visual-y-generacion-ai.md`** — sistema visual + guía AI
-7. **`_templates/`** — plantillas · hooks · banco de ideas · prompts AI
-8. **`_sop/`** — producción · engagement
-9. **`skills/`** — automatización (futuro)
+4. **`_context/02-voz-y-estilo-de-alan.md`** — scaffold ahora · se puebla cuando Alan comparta sus posts reales
+5. **`_context/04-pillars-y-sistema-editorial.md`** — pillars operacionalizados + calendario
+6. **`_context/03-perfil-linkedin.md`** — el perfil ancla
+7. **`_context/05-sistema-visual-y-generacion-ai.md`** — sistema visual + guía AI
+8. **`_templates/`** — plantillas · hooks · banco de ideas · prompts AI
+9. **`_sop/`** — producción · engagement
+10. **`skills/`** — automatización (futuro)
 
 ---
 
@@ -121,7 +123,7 @@ Este departamento porta y actualiza dos documentos previos de Alan (early 2026 �
 | Campo | Valor |
 |---|---|
 | Estado | 🚧 Activo · en construcción v0.1 |
-| Artefactos | 1/11 (README) |
+| Artefactos | 1/12 (README) |
 | Siguiente | `_context/00-marco-y-estrategia.md` |
 | Trigger v0.1 → v1.0 | Sección completa (5 context + SOPs + templates) + pilot 4 sem ejecutado + voz validada en LinkedIn |
 
