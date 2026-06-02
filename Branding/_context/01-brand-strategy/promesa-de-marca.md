@@ -2,9 +2,9 @@
 name: Promesa de Marca
 description: El compromiso concreto de Zenet con sus clientes — qué garantizamos, cómo lo cumplimos y qué prometemos no hacer
 type: brand-strategy
-last_updated: 2026-04-26
+last_updated: 2026-06-02
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -33,13 +33,13 @@ Cuando un operador pregunta *"¿qué me ofrece Zenet?"*, la respuesta empieza aq
 
 ## 2. Por qué esta promesa importa
 
-Durante años, los restaurantes han tenido que construir sus propios procesos operativos. Sin manuales. Sin soporte. Sin una base sólida.
+Durante años, el operador independiente ha sostenido su operación con un sistema propio — pero ese sistema vive en su cabeza, su libreta y su WhatsApp. Funciona mientras él está presente.
 
 Cada manager opera diferente. Cada nueva sucursal arranca desde cero. Cada persona clave que se va se lleva conocimiento crítico. Cada inventario que no cuadra son horas de trabajo y dinero perdido. Cada decisión importante se toma con datos incompletos, en hojas de cálculo desconectadas, en conversaciones de WhatsApp que nadie vuelve a leer.
 
-El problema no es que falte talento. Es que falta **estructura para sostenerlo**.
+El problema no es que falte talento ni que falte sistema. Es que ese sistema es **frágil y no escala** — se rompe cuando el operador no puede estar en todos lados a la vez.
 
-Zenet existe para terminar con eso. No prometemos perfección — prometemos una base sólida sobre la cual construir. Procesos claros. Datos confiables. Un asistente que acompaña todos los días. Y la tranquilidad de saber que tu operación funciona aunque tú no estés viendo cada detalle.
+Zenet existe para terminar con eso. No prometemos reemplazar tu forma de operar — prometemos extenderla a donde tú no estás. Procesos claros. Datos confiables. Acompañamiento todos los días. Y la tranquilidad de saber que tu operación funciona aunque tú no estés viendo cada detalle.
 
 ---
 
@@ -85,17 +85,17 @@ La promesa central se materializa en cuatro dimensiones concretas. Cada una tien
 
 Las promesas anteriores son los *qué*. Esta sección es el *cómo*. Son los compromisos operativos que hacen real cada promesa.
 
-- **Acompañamiento diario.** Un agente IA presente en cada sección del producto que indica qué revisar, qué corregir y qué oportunidad existe. La interacción no termina al guardar datos — empieza ahí.
+- **Acompañamiento diario.** Zenet está presente en cada sección del producto y en WhatsApp — donde el operador ya vive — indicando qué revisar, qué corregir y qué oportunidad existe. No es un agente aislado: es la agencia de especialistas coordinada, la inteligencia interna del sistema. La interacción no termina al guardar datos — empieza ahí.
 
 - **Lenguaje del operador.** Cada interfaz, cada texto, cada interacción está escrita en el lenguaje de quien opera la cocina, no del equipo de TI. Si el operador necesita un manual para usar Zenet, fallamos.
 
-- **Onboarding rápido.** Un operador puede tener su sistema funcionando en menos de una semana. Sin consultoría enterprise, sin implementación de tres meses, sin equipo de TI dedicado.
+- **Onboarding rápido.** Zenet empieza a trabajar desde el día uno (limpieza de datos + estandarización) y la agencia queda operativa en cuestión de días. Sin consultoría enterprise, sin implementación de tres meses, sin equipo de TI dedicado.
 
 - **Soporte en español.** Equipo accesible, en horarios de operación de restaurante, en el idioma del operador. Sin colas de tickets que tardan días.
 
 - **Decisiones confirmadas por ti.** Ningún cambio importante en tus datos ocurre sin tu aprobación. La IA propone, recomienda y explica — tú decides.
 
-- **Modular, paso a paso.** Empiezas con lo que necesitas hoy. Agregas módulos cuando los necesites. Pagas solo por lo que usas. No hay "todo o nada".
+- **Un plan a tu medida, que crece contigo.** Eliges el plan según el tamaño de tu operación (una sucursal, varias, o a la medida) y subes de nivel conforme escalas. Suscripción simple, sin sorpresas en la factura, sin cobro por consulta — pagas por tu plan, no por cada vez que le preguntas algo a Zenet.
 
 ---
 
@@ -123,7 +123,7 @@ La promesa solo es real si se puede medir. Esta tabla es la rendición de cuenta
 |---|---|---|
 | Tiempo recuperado | Horas ahorradas / mes / sucursal | 25-30 hrs |
 | Dinero ahorrado | % reducción de mermas | 2-5% |
-| Tranquilidad operativa | NPS + reducción de dependencia (cualitativo) | NPS >50 |
+| Tranquilidad operativa | NPS + reducción de dependencia (cualitativo) | NPS ≥30 Phase 1 → ≥50 maduro |
 | Escalamiento ordenado | Tiempo para estabilizar nueva sucursal | <30 días |
 | Cumplimiento global | Renovación anual | >85% |
 
@@ -137,3 +137,14 @@ La promesa solo es real si se puede medir. Esta tabla es la rendición de cuenta
 - **Estado de validación.** Los indicadores cuantitativos son hipótesis basadas en estimaciones de campo. Se actualizarán con datos reales conforme los primeros clientes acumulen meses de operación con Zenet. Hasta entonces, comunicarse externamente con la misma transparencia: *"basado en estimaciones, no en uso real"*.
 - **Lenguaje del operador.** Esta promesa fue escrita deliberadamente en lenguaje de operador, no en lenguaje estratégico. Si en el futuro alguna sección suena corporativa o técnica, es señal de que se desvió del compromiso central.
 - **Documento vivo.** La promesa se revisa cuando: (1) la validación de campo confirma o desmiente un indicador, (2) el producto suma o quita capacidades que afectan lo prometido, (3) la voz/tono evoluciona y cambia el lenguaje de la promesa.
+
+### Changelog
+
+- **v1.1 (2026-06-02).** Revalidación post-Product Strategy completo (subfolders propuesta-de-valor · features · oferta-pricing · GTM · capital cerrados v0.1 + brand strategy docs misión-visión v1.1 · personalidad v1.2 · posicionamiento v1.5). Updates:
+  - **§2 reescrito** para honrar el insight **"yo SOY el sistema"** (Financial Control Identity) — de *"falta estructura / sin base sólida"* (perceived attack · implica "no tienes sistema") → *"el operador ES el sistema, pero es frágil y no escala · Zenet lo extiende a donde tú no estás"*. Consistency con misión-visión v1.1 + posicionamiento v1.5.
+  - **§4 acompañamiento** — *"un agente IA"* singular → **agency framing** ("Zenet · la agencia de especialistas coordinada · NO agente aislado") + añadido **WhatsApp como interface** (uso #3 operacional).
+  - **§4 "pagas solo por lo que usas" corregido** — implicaba usage-based metering (contradice **pure subscription · NO per-query metering** canonical) → reframe a modelo de tiers ("eliges el plan según tu operación · subes de nivel conforme escalas · pagas por tu plan, no por consulta").
+  - **§4 onboarding** — *"menos de una semana"* → *"agency trabaja Day 1 · operativa en cuestión de días"* (alinea con `01-modelo-comercial-y-terminos.md` período de implementación).
+  - **§6 NPS** — meta única >50 → progresión ≥30 Phase 1 → ≥50 maduro (alinea con GTM playbook KPIs).
+  - **Frontmatter** v1.0 → v1.1 · last_updated 2026-06-02.
+- **v1.0 (2026-04-26).** Documento base inicial — promesa central + 4 promesas específicas + cómo cumplimos + anti-promesas + medición.
