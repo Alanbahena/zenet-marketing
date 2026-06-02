@@ -1,12 +1,12 @@
 ---
-
-## name: Posicionamiento
+name: Posicionamiento
 description: Posición competitiva de Zenet — qué categoría jugamos, para quién, contra qué, y por qué nos eligen
 type: brand-strategy
-last_updated: 2026-05-23
+last_updated: 2026-06-02
 status: active
-version: 1.4
+version: 1.5
 owner: Alan Bahena
+---
 
 # Posicionamiento
 
@@ -73,7 +73,8 @@ Cuatro componentes definen la categoría:
 
 ### Audiencia terciaria (canal y aliados)
 
-- **Consultores gastronómicos** que asesoran restaurantes en estandarización y operación. Validadores cualitativos actuales: Anna Palazuelos, Victor Murguía, Algira Garzón. Modelo de canal: *"consultor partner como extensión Zenet"* — el consultor entrena, implementa y monetiza su servicio sobre Zenet (replica al revés el modelo SoftRestaurant + SYCA TJ).
+- **Consultores gastronómicos** que asesoran restaurantes en estandarización y operación. Validadores cualitativos actuales: Anna Palazuelos, Victor Murguía, Algira Garzón. Modelo de canal: *"consultor partner como extensión Zenet"* — el consultor entrena, implementa y monetiza su servicio sobre Zenet (replica al revés el modelo SoftRestaurant + SYCA TJ). **Channel priority #1 demand-side.**
+- **Contadores / despachos contables como channel ally** — el mismo stakeholder que en buying committee ejerce silent veto puede convertirse en canal: un despacho tiene 20-50+ restaurantes en cartera · si recomienda Zenet = authority + peer reference. Value exchange: Zenet entrega data limpia/reconciliada (facilita CFDI · DIOT · conciliación) + posible referral fee. **Zenet NO compite con el contador — lo habilita** (frame "facilitador NO certificador"). **Channel priority #2 demand-side** (heredado `Product Strategy/_context/04-go-to-market/05-channel-partner-strategy.md` §5).
 
 ### Para quién NO es Zenet
 
@@ -221,6 +222,7 @@ La defensa de Zenet **no es el inventario ni el costing en sí mismos**:
 - Es la **categoría que ocupa** (agency-as-SaaS para BoH) — irreducible a "feature"
 - Es la **arquitectura coexistence-positioned** (capa cognitiva sobre POS) — los POS no pueden replicarlo sin canibalizar su propio negocio
 - Es la **MX-native fluency 7-layer moat** — foreign vendors tardan 24-36 meses en construirlo
+- Es la **estructura de costos MX** — 5-10x cost arbitrage operacional vs US vertical AI (Harvey · Hippocratic): CS junior MX $500-1,250 USD/mes vs US equivalente $2,500-4,000 · talent + operaciones MX-cost · permite competir en precio Y servicio simultáneamente · LATAM expansion preserva el arbitraje (heredado `Product Strategy/_context/03-oferta-y-pricing/04-viabilidad-economica-y-cogs.md` §14)
 - Es el **diseño UX para el operador real** (no para TI)
 - Es la **interpretación de especialistas coordinados** (no dashboards)
 - Es el **acompañamiento vía WhatsApp** (uso #3 operacional)
@@ -319,11 +321,12 @@ Zenet opera con un modelo comercial específicamente alineado al positioning age
 | Componente | Detalle |
 |---|---|
 | **Modelo** | Pure subscription · sin setup fee separado · sin project pricing |
-| **Suscripción canónica** | $1,500 MXN/mes/sucursal (hipótesis · pricing exact TBD en `Product Strategy/_context/03-oferta-y-pricing/`) |
-| **Socio Fundador descuento** | 30% perpetuo sobre canonical para clientes incorporados durante design partner program |
-| **Compromiso mínimo** | 90 días post fase gratuita (cubre transición de high-touch a self-serve) |
-| **Annual prepay option** | Descuento adicional disponible (% TBD · range típico 15-20%) |
-| **High-touch onboarding (primeros 90 días)** | INCLUIDO en subscripción · NO setup fee separado |
+| **Estructura 4 tiers** (hipótesis · `03-oferta-y-pricing/03-pricing-tiers-hipotesis.md`) | Esencial $1,500/sucursal · Pro $1,999/sucursal · Multi-Sitio $1,799/sucursal (mín 2) · Enterprise Custom · todos +IVA · anchor scenario (downside $1,200 · upside $1,800-2,000 documentados) |
+| **Socio Fundador descuento** | 20-30% lock-in permanente sobre tier para clientes incorporados durante design partner program (`02-programa-socio-fundador-offer.md`) |
+| **Compromiso mínimo** | 90 días desde primer cargo (Day 8) · activa tras ventana de cancelación de 7 días |
+| **Términos de inicio** | Ventana de cancelación 7 días (cliente puede salir sin cargo) · primer cargo Day 8 · agency trabaja desde Day 1 (cleanup + estandarización) · **NO "fase gratuita" framing** (`01-modelo-comercial-y-terminos.md`) |
+| **Annual prepay option** | Descuento adicional disponible (% TBD · range hipótesis 10-20%) |
+| **High-touch onboarding (Mes 1)** | INCLUIDO en subscripción · NO setup fee separado · uniforme cross-tier |
 
 **Por qué pure subscription (no setup fee):** decisión revisada 2026-05-22 después de análisis honesto. Setup fee + subscripción rompía: (1) el agency-as-SaaS framing · (2) el pricing arbitrage 70-100x (Lente 2 arriba) · (3) creaba dos friction points en la venta · (4) introducía dilution en investor pitch (services revenue contamination vs pure SaaS ARR). Pure subscription preserva todos los frames + es Mexican SMB psychology friendly (decisión operativa del dueño · no requiere contable approval gating).
 
@@ -352,10 +355,10 @@ Zenet ship en fases declaradas. Lo que se vende hoy NO es lo que se vendrá. Hon
 - Pronósticos de consumo
 - Costos automatizados + procurement
 - Variance detection data-driven
-- Agentes cumplimiento fiscal/sanitario automáticos
-- **Integración POS API** (CONTPAQi · Aspel SAE · SoftRestaurant · PoloTab · etc.)
+- Agentes especializados (F5) + cumplimiento fiscal/sanitario vía CFDI/PAC direct (F6)
+- **Partner channel strategy (F8)** — consultor partners + contadores/despachos + distribuidores. **NO POS API integration: F7 POS API REMOVED post-research 2026-05-26** (barreras estructurales MX SMB · partner gating · APIs legacy · no public API en POS amigables al segmento)
 
-**Implicación de positioning:** *"Trabajamos sobre tu POS, no lo reemplazamos"* (§4 diferenciador #2) opera en Phase 1 vía **manual upload (3 modos)**, NO via API integration. Esto es feature, no bug — más POS-agnostic que API integration (que requiere integración específica por POS vendor). Phase 2 añade integración API automatic conservando el frame de coexistencia.
+**Implicación de positioning:** *"Trabajamos sobre tu POS, no lo reemplazamos"* (§4 diferenciador #2) opera en Phase 1 vía **manual upload (3 modos)**, NO via API integration. Esto es feature, no bug — más POS-agnostic que API integration (que requiere integración específica por POS vendor). **Phase 2 NO añade POS API integration** (F7 removed post-research) · el cumplimiento llega vía CFDI/PAC direct (F6) y el ecosistema vía partner channel (F8) · el frame de coexistencia se preserva sin dependencia de integración POS vendor-específica.
 
 ### Timing — por qué AHORA específicamente
 
@@ -382,10 +385,20 @@ Window cumulativa de category-defining: **~18 meses desde Q2 2026 hasta Q4 2027*
   - `zenet-business-context-production.md` (Abr 2026, production repo)
   - 24 Perplexity Pro queries integradas · 15+ conversaciones cualitativas operadores + consultores
 - **Análisis competitivo profundo.** Este documento contiene la síntesis de posicionamiento competitivo. El análisis exhaustivo (perfiles, pricing, features, GTM, switching dynamics, defensibility) vive en `Market Research and Analysis/_context/03-competitive-analysis/`.
-- **Documento vivo.** El posicionamiento se revisa cuando: (1) un competidor entra o pivotea significativamente, (2) la validación de campo cambia hipótesis clave, (3) Zenet expande segmento o categoría, (4) design partner behavioral data Mes 3+ contradice hipótesis (trigger natural v1.2 → v2.0).
+- **Horizonte platform (Phase 2+).** A futuro, Zenet explora extender la inteligencia hacia el ecosistema — conectar al restaurante con sus proveedores y automatizar el aprovisionamiento (procurement marketplace · *"Uber Eats B2B"* con Zenet como núcleo cognitivo · demand-side first: restaurantes primero, suppliers después con leverage). Esta dimensión platform es exploratoria · NO altera el posicionamiento core agency-as-SaaS Phase 1. → `Market Research and Analysis/_context/05-market-insights/01-vision-plataforma-zenet.md` + `Product Strategy/_context/04-go-to-market/05-channel-partner-strategy.md` §7.
+- **Documento vivo.** El posicionamiento se revisa cuando: (1) un competidor entra o pivotea significativamente, (2) la validación de campo cambia hipótesis clave, (3) Zenet expande segmento o categoría, (4) design partner behavioral data Mes 3+ contradice hipótesis (trigger natural v1.5 → v2.0).
 
 ### Changelog
 
+- **v1.5 (2026-06-02).** Revalidación post-Product Strategy completo (subfolders oferta-pricing · GTM · capital cerrados v0.1). Updates:
+  - **Frontmatter reparado** — bug YAML `## name:` → `name:` + cierre `---` faltante (mismo patrón reparado en otros docs 2026-05-18 · este había quedado).
+  - **§7 Modelo comercial actualizado** — de "$1,500 single" a **estructura 4 tiers** (Esencial $1,500 · Pro $1,999 · Multi-Sitio $1,799 · Enterprise Custom) · Socio Fundador 30% → **20-30% lock-in permanente** · **"fase gratuita" deprecado** → ventana cancelación 7 días + primer cargo Day 8 + agency trabaja Day 1 · annual prepay 15-20% → 10-20% (alinea con `03-oferta-y-pricing/` cerrado).
+  - **§7 Phase 2 POS API corregido** — **F7 POS API REMOVED** post-research 2026-05-26 (barreras estructurales MX SMB) · reemplazado por F6 cumplimiento CFDI/PAC direct + F8 partner channel · implicación positioning actualizada (Phase 2 NO añade POS API · coexistencia se preserva sin dependencia vendor-específica) (alinea con `02-features-y-scope/`).
+  - **§5 MX cost structure moat añadido** — 5-10x cost arbitrage operacional vs US vertical AI (CS junior MX $500-1,250 vs US $2,500-4,000) como capa de defensa estructural · LATAM preserva arbitraje (heredado `04-viabilidad-economica-y-cogs.md` §14).
+  - **§3 Contador como channel ally añadido** — silent veto → channel #2 demand-side (20-50 restaurantes/despacho · value exchange data limpia + referral · Zenet habilita NO compite) (heredado `05-channel-partner-strategy.md` §5).
+  - **§Notas horizonte platform añadido** — Phase 2+ procurement marketplace exploratorio · NO altera positioning core.
+  - **Frontmatter** v1.4 → v1.5 · last_updated 2026-06-02.
+- **v1.4 (2026-05-23).** Wave 3 cascade post-Perplexity report — §3 audiencia secundaria contable enriquecida: silent veto pattern + 2-3 sucursales inflection point (gatekeeper → internal advocate) + CONTPAQi stack dominance (1.2M users MX) + Phase 2 competitive gating. (Changelog entry retroactiva · v1.4 se aplicó pero no se documentó en su momento.)
 - **v1.3 (2026-05-22).** Update minor desde decisión estratégica de pricing model (pure subscription + 90-day minimum + annual prepay · sin setup fee · decisión 2026-05-22 post-análisis honesto). Updates aplicados:
   - **§7 expansion · NEW subsección "Modelo comercial"** — documentado pure subscription model con componentes (suscripción canónica · 30% Socio Fundador · 90-day minimum · annual prepay · high-touch onboarding INCLUIDO) + razones para no setup fee (preserva agency-as-SaaS framing · preserva pricing arbitrage · single commercial decision · Mexican SMB psychology · pure SaaS ARR) + anti-position explícita.
   - **§7 expansion · NEW subsección "Producto — Phase 1 vs Phase 2"** — declarado explícitamente Phase 1 launch scope (TIER 1 + TIER 2A) · Phase 1.5 deferred (TIER 2B) · Phase 2 future (TIER 3 + más). Clarificado que Phase 1 trabaja con manual upload (3 modos), NO POS API integration. Reframe del diferenciador #2 ("trabajamos sobre tu POS"): vía manual upload en Phase 1 → vía API en Phase 2. Más POS-agnostic que API.
