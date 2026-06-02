@@ -2,9 +2,9 @@
 name: Reglas de Redacción
 description: La mecánica de la escritura de Zenet — gramática, estructura, puntuación, formato, números y reglas de español. La capa técnica del sistema voice-and-tone.
 type: voice-and-tone
-last_updated: 2026-04-28
+last_updated: 2026-06-02
 status: active
-version: 1.0
+version: 1.1
 owner: Alan Bahena
 ---
 
@@ -316,6 +316,15 @@ Aceptables en moderación. No abusar.
 - Pricing pages, propuestas comerciales, contratos.
 - Comparaciones con competencia internacional.
 
+**Convención MXN vs USD (Zenet):**
+
+| Tipo de cifra | Moneda | Ejemplo |
+|---|---|---|
+| **Pricing client-facing** | MXN | `$1,500 MXN` (Esencial) · `$1,999 MXN` (Pro) · `$1,799 MXN` (Multi-Sitio) |
+| **Costos internos, COGS y funding** | USD | baseline software, COGS, pre-seed `$100-200K USD` (docs de capital + viabilidad económica) |
+
+**Regla:** cuando ambas monedas coexisten en un mismo texto, **marca siempre el código** — `$1,500 MXN` y `$1,500 USD` son ~17x distintos, y la ambigüedad es costosa.
+
 ### 5.5 Fechas
 
 | Contexto | Formato |
@@ -475,3 +484,10 @@ Si los chequeos pasan, se publica. Si alguno falla, se reescribe — no se publi
 - **Inglés.** Cuando Zenet eventualmente comunique en inglés, este documento se adaptará a las reglas mecánicas del inglés (no se traducirán mecánicamente). Las reglas en inglés vivirán en un documento separado.
 - **Documento vivo.** Las reglas se revisan cuando: (1) un patrón nuevo aparece consistentemente en la comunicación de la marca, (2) un cliente o agencia reporta sistemáticamente confusión por una regla específica, (3) la RAE o las convenciones editoriales mexicanas cambian alguna norma relevante.
 - **Documentos hermanos.** `voz-y-tono.md` (los principios), `vocabulario.md` (las palabras), y este documento (la mecánica) forman juntos el sistema voice-and-tone de Zenet.
+
+### Changelog
+
+- **v1.1 (2026-06-02).** Revalidación post-Product Strategy completo (offer-pricing + GTM + capital cerrados v0.1 + brand strategy docs misión-visión v1.1 · personalidad v1.2 · posicionamiento v1.5 · promesa v1.1 · vocabulario v1.4 · voz-y-tono v1.1). Sin inconsistencias de mecánica detectadas — el doc ya tenía el agency framing correcto en el checklist §8 (línea 448). Único update:
+  - **§5.4 Moneda** — añadida convención **MXN vs USD** (pricing client-facing en MXN · costos/COGS/funding en USD · marcar siempre el código cuando coexisten). Cierra ambigüedad introducida por el uso intensivo de USD en los docs de capital + viabilidad económica.
+  - **Frontmatter** v1.0 → v1.1 · last_updated 2026-06-02.
+- **v1.0 (2026-04-28).** Documento base inicial — mecánica de escritura completa (estructura · español · puntuación · números/moneda/fechas · listas/títulos/CTAs · longitud por superficie · checklist final).
