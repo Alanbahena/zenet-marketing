@@ -25,6 +25,12 @@
 | `README.md` (este) | ✓ active v0.1 | Scope · roadmap · triggers · external resources |
 | `01-operational-readiness-y-business-setup-phase-1.md` | ✓ active v0.1 | Stack 7 identidades formales · PFAE→SAPI sequencing · Tier framework con LOI gate · vendor stack · 5 compliance anchors · cost summary |
 
+### Tracking activo
+
+| Archivo | Status | Cubre |
+|---|---|---|
+| `_tracking/zenet-costos-fase-0.xlsx` | ✓ activo v1.0 (2026-06-02) | Tracker de costos Fase 0 · 3 hojas (Catálogo de Costos 26 conceptos pre-poblados con Tier framework + Tipo fijo/variable/one-time · Tracking Mensual Jun 2026→May 2027 con fórmulas automáticas subtotales + NET BURN · Dashboard resumen 12m). Pre-poblado con costos canonical de `02-financial-model` inputs + doc 04 viabilidad económica (oferta-y-pricing) + `01-operational-readiness`. **Founder llena valores reales mes a mes** · baseline fijo Phase 0 ~$3,960 MXN/mes · activa Tier 2.0 (lawyer/contador/PAC) con LOI gate. Editable en Excel/Numbers/Google Sheets (sync iCloud). Feeds eventual `02-financial-model` v0.1 cuando triggers se cumplan. |
+
 ### Docs scaffolded (pre-draft · pending data/triggers para v0.1)
 
 | Doc | Status | Trigger para v0.1 |
