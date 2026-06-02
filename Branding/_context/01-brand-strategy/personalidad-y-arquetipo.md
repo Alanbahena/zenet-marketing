@@ -2,9 +2,9 @@
 name: Personalidad y Arquetipo
 description: El carácter de Zenet — quién es, cómo se comporta, qué rol juega para el cliente y cómo se traduce eso en voz y tono
 type: brand-strategy
-last_updated: 2026-05-22
+last_updated: 2026-06-02
 status: active
-version: 1.1
+version: 1.2
 owner: Alan Bahena
 ---
 
@@ -248,7 +248,7 @@ La personalidad en marketing tiene los mismos principios — pero opera en super
 > *"Revoluciona tu restaurante con la IA más avanzada del mercado. ¡Resultados garantizados!"*
 
 ✅ **Cómo SÍ suena:**
-> *"Tu operación, ordenada todos los días. Sin manuales improvisados, sin depender de personas clave, sin caos cada vez que abres una sucursal nueva. Zenet es el sistema operativo que le faltaba a tu cocina."*
+> *"Tu operación, ordenada todos los días. Sin manuales improvisados, sin depender de personas clave, sin caos cada vez que abres una sucursal nueva. Zenet extiende tu forma de operar a cada sucursal — incluso donde tú no estás."*
 
 #### En LinkedIn (publicaciones desde Alan o Zenet)
 
@@ -257,8 +257,13 @@ La personalidad en marketing tiene los mismos principios — pero opera en super
 ❌ **Cómo NO suena:**
 > *"🚀 ¡Súper emocionado de anunciar que Zenet acaba de lanzar! La IA más revolucionaria para restaurantes. ¡Regístrate ya! 🔥💯 #AI #Restaurants #Innovation"*
 
-✅ **Cómo SÍ suena:**
+✅ **Cómo SÍ suena (founder operativo):**
 > *"Llevo 6 meses en cocinas, hablando con dueños y chefs. Lo que más me sorprende no es lo obvio (el inventario que no cuadra). Es que cada manager opera diferente. Sin manual. Sin estructura. Cuando una persona clave se va, se va el conocimiento. Es por eso que estandarizar — no automatizar — es el primer paso. Esa es la apuesta de Zenet."*
+
+✅ **Cómo SÍ suena (founder ingeniero · building in public):**
+> *"Construir una agencia de agentes para back-of-house tiene un costo escondido: cada consulta consume tokens. Esta semana implementé prompt caching en los system prompts — bajó el costo de inferencia ~50% sin tocar la calidad de las respuestas. Comparto el antes/después porque la economía de la IA vertical se decide en estos detalles."*
+
+**Nota:** la voz de LinkedIn opera en dos registros complementarios — el **founder operativo** (lo que aprende en cocinas · lenguaje del operador) y el **founder ingeniero** (decisiones técnicas · AI/ML/arquitectura · building in public). Ambos comparten el mismo carácter Sabio + Cuidador · sin hype · concreto · honesto. (Heredado `Product Strategy/_context/04-go-to-market/02-digital-distribution-strategy.md` v0.1 §5 — 6 content pillars incluyendo technical pillar · founder = engineer differentiator.)
 
 #### En email marketing (asunto + apertura)
 
@@ -350,6 +355,7 @@ Esta personalidad se traduce en reglas de voz operativas que se desarrollan en `
 - **Paciente, sin prisa.** No empuja al operador. Lo acompaña a su ritmo.
 - **Honesto sobre estado de validación.** Lo que es hipótesis se marca como hipótesis.
 - **Una idea por oración** cuando sea posible. La claridad es la prioridad.
+- **Modula por interlocutor, sin cambiar de carácter.** La compra de Zenet involucra a varias personas (dueño · gerente · chef · contador — multi-threading 68% load-bearing). La personalidad es la misma con todos, pero el ángulo cambia: con el **dueño**, el lente es ROI y tranquilidad operativa; con el **gerente**, operación y tiempo recuperado; con el **chef**, criterio aumentado (no reemplazado); con el **contador**, cumplimiento y data limpia. Mismo Zenet · distinto énfasis según lo que cada rol necesita. (Heredado `02-customer-research/05-buying-process.md` §10 + `04-go-to-market/04-sales-motion-three-session-demo.md` v0.1.)
 
 ---
 
@@ -365,6 +371,11 @@ Esta personalidad se traduce en reglas de voz operativas que se desarrollan en `
 
 ### Changelog
 
+- **v1.2 (2026-06-02).** Refinamientos post-Product Strategy completo (subfolders oferta-pricing · GTM · capital cerrados v0.1 + misión-visión-valores v1.1):
+  - §6.2 hero copy corregido — *"Zenet es el sistema operativo que le faltaba a tu cocina"* → *"Zenet extiende tu forma de operar a cada sucursal — incluso donde tú no estás"*. Elimina el framing *"te falta sistema"* (perceived attack) · alinea con el insight **"yo SOY el sistema"** (Financial Control Identity) consistente con misión-visión-valores v1.1.
+  - §6.2 LinkedIn — añadido segundo registro de voz: **founder ingeniero** (building in public · AI/ML/arquitectura · prompt caching ejemplo) complementando el founder operativo · alinea con GTM digital distribution doc 02 (6 content pillars · technical pillar NEW · founder = engineer differentiator) · ambos registros comparten el carácter Sabio + Cuidador.
+  - §8 implicaciones voz/tono — añadido principio de **modulación por interlocutor** (dueño ROI · gerente operación · chef criterio · contador cumplimiento · multi-threading 68% load-bearing) · mismo carácter, distinto énfasis.
+  - §Metadata — frontmatter v1.1 → v1.2 · last_updated 2026-06-02.
 - **v1.1 (2026-05-22).** Light pass desde Market Research v0.1 findings (Fase A transition checklist Market Research → Branding · doc final de Fase A). 6 updates aplicados:
   - §2 Sous chef analogy reforzada — añadida validación VoC (*"mano derecha"* como lenguaje del operador) + extensión analogy: sous chef como **conductor de la brigada cognitiva** de especialistas (procurement · costing · forecasting · etc.). Reframe de "asistente único" a "coordinador de equipo cognitivo coordinado".
   - §3 Rasgo Sabio reforzado — añadida evidencia material del Sabio (24 docs research backbone · 14 moats · 30 verbatims · 45 vendors mapped · 15+ conversaciones). El Sabio NO como postura sino como disciplina de research depth documentada.
