@@ -148,12 +148,15 @@ Sirven de base · viven completos + reusables en `_templates/prompts-imagenes-ai
 
 Prompt validado:
 ```
-Edit this portrait. Replace the background with a smooth, solid dark charcoal
-(#14161B) with subtle professional studio lighting. Keep the person's face, hair,
-skin and expression EXACTLY as they are — do not alter or beautify the face in any
-way. Keep the black t-shirt. Clean, natural, realistic. Headshot framing.
+Edit this portrait. Replace the background with a smooth medium warm grey (#4A4641),
+clearly lighter than a dark charcoal banner so the subject separates and stands out.
+Keep the person's face, hair, skin and expression EXACTLY as they are — do not alter
+or beautify the face in any way. Keep the black t-shirt. Subtle professional studio
+lighting. Clean, natural, realistic. Headshot framing.
 ```
 → exportar **cuadrado 1:1 · mín. 400×400 px · ideal 800×800–1000×1000** (nitidez retina · máx 8MB · PNG o JPG) · recortar a cuadrado/círculo · sin watermark · verificar que sigue siendo *Alan*, no una versión idealizada.
+
+**Aprendizaje (validado 2026-06-03):** foto **oscura** sobre banner **oscuro** se funde — la cara pierde definición. Solución: fondo **gris medio cálido `#4A4641`** (más claro que el banner) → la cara se separa y se vuelve el foco. Es el tono puente entre el banner oscuro arriba y el área blanca abajo.
 
 ### 6.2 Foto de cover / banner
 

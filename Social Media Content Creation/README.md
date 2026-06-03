@@ -54,25 +54,25 @@ Este departamento es la **ejecución táctica** del contenido social de Zenet en
 Social Media Content Creation/
 ├── README.md                                  ✅ este doc
 ├── _context/
-│   ├── 00-marco-y-estrategia.md               🚧 doctrina · scope · frontera · stealth/reveal · métricas · decisiones canónicas
-│   ├── 01-manual-marca-personal-alan.md       🚧 EL manual · identidad · arco narrativo · propuesta de valor · voz (principios) · audiencias · Alan↔Zenet · reglas
-│   ├── 02-voz-y-estilo-de-alan.md             🚧 huella de estilo + corpus anotado de posts reales · la base que se carga para generar en la voz de Alan · se puebla con sus publicaciones
-│   ├── 03-perfil-linkedin.md                  🚧 perfil ancla · headline · about · banner · featured
-│   ├── 04-pillars-y-sistema-editorial.md      🚧 6 pillars operacionalizados · EN/ES · estructura por pillar · calendario
-│   ├── 05-sistema-visual-y-generacion-ai.md   🚧 principios visuales · paleta · tipografía · tipos de imagen · guía Nano Banana Pro
+│   ├── 00-marco-y-estrategia.md               ✅ doctrina · scope · frontera · stealth/reveal · métricas · decisiones canónicas
+│   ├── 01-manual-marca-personal-alan.md       ✅ EL manual · identidad · arco narrativo · propuesta de valor · voz (principios) · audiencias · Alan↔Zenet · reglas
+│   ├── 02-voz-y-estilo-de-alan.md             ✅ huella de estilo + corpus anotado (7 posts reales) · base de generación · VALIDADA
+│   ├── 03-perfil-linkedin.md                  ✅ perfil ancla · headline + about cerrados · banner por generar
+│   ├── 04-pillars-y-sistema-editorial.md      ✅ 6 pillars operacionalizados · EN/ES · estructura por pillar · calendario 4 core/sem
+│   ├── 05-sistema-visual-y-generacion-ai.md   ✅ paleta validada (carbón+off-white+ámbar+azul técnico) · guía Nano Banana Pro
 │   └── _archive/
 ├── _sop/
-│   ├── produccion-de-contenido.md             🚧 workflow idea→borrador→publicación + checklist pre-publicación
-│   └── engagement-y-comunidad.md              🚧 comentarios · DMs · nutrir comunidad semilla
+│   ├── produccion-de-contenido.md             ✅ workflow idea→borrador→publicación + checklist pre-publicación
+│   └── engagement-y-comunidad.md              ✅ engagement priorities · comunidad semilla · ritmo de métricas
 ├── _templates/
-│   ├── plantillas-post-por-pillar.md          🚧 templates de publicación · uno por pillar
-│   ├── hooks-y-aperturas.md                   🚧 fórmulas de hook / primera línea
-│   ├── banco-de-ideas.md                      🚧 swipe file vivo · ideas capturadas
-│   └── prompts-imagenes-ai.md                 🚧 prompts reusables de Nano Banana Pro por tipo de imagen
+│   ├── plantillas-post-por-pillar.md          ✅ esqueleto fill-in por pillar
+│   ├── hooks-y-aperturas.md                   ✅ biblioteca de hooks del corpus
+│   ├── banco-de-ideas.md                      ✅ 5 posts listos (starter pack) + 10 semillas
+│   └── prompts-imagenes-ai.md                 ✅ prompts validados (diagrama · quote cards · headshot · banner)
 └── skills/                                    🚧 futuro · /post-linkedin · /content-week · /imagen-post
 ```
 
-**Estado global:** 🚧 departamento en activación v0.1 · 1/12 artefactos (este README).
+**Estado global:** ✅ departamento construido v0.1 · `_context` + `_templates` + `_sop` completos · solo skills (futuro) pending · **voz validada** + starter pack en recámara.
 
 ---
 
@@ -122,11 +122,11 @@ Este departamento porta y actualiza dos documentos previos de Alan (early 2026 �
 
 | Campo | Valor |
 |---|---|
-| Estado | 🚧 Activo · en construcción v0.1 |
-| Artefactos | 1/12 (README) |
-| Siguiente | `_context/00-marco-y-estrategia.md` |
-| Trigger v0.1 → v1.0 | Sección completa (5 context + SOPs + templates) + pilot 4 sem ejecutado + voz validada en LinkedIn |
+| Estado | ✅ Construido v0.1 (`_context` + `_templates` + `_sop`) · skills (futuro) pending |
+| Artefactos | 11/12 (falta solo skills · futuro) |
+| Siguiente operativo | Instalar perfil (headshot + banner) · arrancar pilot 4 sem de publicación |
+| Trigger v0.1 → v1.0 | Pilot 4 sem ejecutado + voz validada consistentemente en LinkedIn + métricas con data real |
 
 ---
 
-*Última actualización: 2026-06-02.*
+*Última actualización: 2026-06-03.*

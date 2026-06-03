@@ -80,16 +80,19 @@ Quote: "[pega aquí la frase]"
 **Para:** la foto de perfil · **sube tu foto** + este prompt. Edita fondo, **no la cara**.
 
 ```
-Edit this portrait. Replace the background with a smooth, solid dark charcoal
-(#14161B) with subtle professional studio lighting. Keep the person's face, hair,
-skin and expression EXACTLY as they are — do not alter or beautify the face in any
-way. Keep the black t-shirt. Clean, natural, realistic. Headshot framing.
+Edit this portrait. Replace the background with a smooth medium warm grey (#4A4641),
+clearly lighter than a dark charcoal banner so the subject separates and stands out.
+Keep the person's face, hair, skin and expression EXACTLY as they are — do not alter
+or beautify the face in any way. Keep the black t-shirt. Subtle professional studio
+lighting. Clean, natural, realistic. Headshot framing.
 ```
 → exportar cuadrado 1:1 · ~800×800 · sin watermark · verificar que sigues siendo *tú*.
 
+**Aprendizaje (validado 2026-06-03):** foto oscura sobre banner oscuro se funde · **gris medio cálido `#4A4641` separa la cara del banner** y la hace el foco. (Si el banner fuera claro, el fondo de la foto iría oscuro — siempre contraste.)
+
 ---
 
-## 5. Banner / cover — por validar (con nombre · sin foto)
+## 5. Banner / cover — ✅ validado (con nombre · sin foto)
 **Para:** el cover de LinkedIn · 1584×396. **Plan B** si el texto sale chueco: generar solo el diagrama y poner el texto en Canva/Figma.
 
 ```
@@ -128,4 +131,4 @@ Sober, precise, balanced composition.
 
 ---
 
-*Última actualización: 2026-06-03. Prompts 1, 2, 4 validados · banner por validar.*
+*Última actualización: 2026-06-03. Prompts 1, 2 (cards), 4 (headshot · gris cálido) y 5 (banner) validados.*
