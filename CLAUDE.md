@@ -33,6 +33,17 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
+**As of 2026-06-04:**
+
+- **Sección `Branding/_context/03-visual-identity/` 🟡 BASE v0.1 (6 docs · doctrina + 5 scaffolds)** 2026-06-04 — identidad visual de **marca/marketing** (capa 2) · agent-readable + token-first.
+  - ✅ `00-marco-de-identidad-visual.md` v0.1 — doctrina · cómo usar (humano + agente IA · estados ✅ definido / 🟡 base provisional / 🚧 scaffold) · **modelo de 3 capas** (producto `05-design-system` · marketing este folder · Alan personal Social Media) · 5 principios visuales (sobrio sobre llamativo · cálido sobre frío-tech · claro y ordenado · sistema sobre decoración · honesto sobre futurista-hueco) · **base provisional** de marca · relación con el brandbook · decisiones abiertas con triggers.
+  - 🟡 `01-logo-y-marca` (isotipo rocas zen/Z/eslabones + wordmark Geon · **motivo reinterpretado de inventario → sistema/orden**) · 🟡 `02-color` (paleta del brandbook **tokenizada** · off-white dominante + naranja `#FF653B` **contenido** como acento + teal secundario) · 🟡 `03-tipografia` (Geon + Roboto) · 🟡 `04-iconografia-e-imagen` (motivo apilado + glass cálido + BoH ilustrado · **food-waste removido**) · 🚧 `05-aplicacion-por-superficie` (crece con la landing).
+- **Strategic decisions identidad visual 2026-06-04:**
+  - **Brandbook (Cloudgaze · Carlo Gutierrez · 2025) re-anclado, NO rehecho** — esencia se conserva (isotipo · wordmark Geon · filosofía Braun/Dieter Rams "humano sobre frío-tech" · base off-white sobria · glassmorphism cálido · patrón punteado) · mensajería/posicionamiento se actualiza (de "smart inventory · reduce desperdicio · paz mental" → posicionamiento de hoy) · **food-waste/sostenibilidad dropped** (ya no es pilar de marca · CLAUDE.md §3 lo confirma).
+  - **Base provisional (confirmar con la landing):** color = off-white + grises/teal sobrios + naranja contenido como acento (matiz/emoción TBD) · futurista = **warm-minimal** (glass cálido · NO cold-tech) · motivo = **óvalos apilados = sistema en capas / orden en una red** (reinterpretado del inventario) · imagen = BoH ilustrado + operador, sin food-waste.
+  - **Modelo de 3 capas canonical** — visual de producto (capa 1 · `05-design-system` · portear de production repo) ≠ visual de marketing/marca (capa 2 · `03-visual-identity`) ≠ visual personal de Alan (capa 3 · Social Media · es de Alan, no de Zenet) · core compartido (logo · paleta · tipo · motivo) aplicado distinto por superficie.
+- **Siguiente recomendado:** activar `SEO and Content/` con la **landing page** como primer workstream (en paralelo con el pilot de LinkedIn · la landing **confirma las decisiones visuales abiertas**) · O portear el design system de producto (`Branding/05-design-system`) · revalidar `origin-story.md` (pendiente).
+
 **As of 2026-06-03:**
 
 - **Departamento `Social Media Content Creation/` ✓ CONSTRUIDO v0.1 (13 docs · `_context` 6 + `_templates` 4 + `_sop` 2 + README · skills pending)** 2026-06-03 — **PRIMER departamento de la capa Execution activado.** Ejecución táctica de la digital distribution strategy (GTM doc 02). Voz del fundador productizada para LinkedIn.
@@ -238,7 +249,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **— FOUNDATION LAYER —** | | |
 | **Branding / 01-brand-strategy** | ✓ Complete · revalidado 2026-06-03 | Mission/vision/values (v1.1), positioning (v1.5), brand promise (v1.1), archetype (v1.2) · revalidados contra Product Strategy (antagonista reframe · agency-as-SaaS · modelo comercial 4 tiers · fase gratuita deprecada) |
 | **Branding / 02-brand-story** | ✓ Active · narrativa v1.1 | Strategic narrative v1.1 (antagonista reframeado: "sistema atrapado en una cabeza") · origin story pending revalidación del fundador |
-| **Branding / 03-visual-identity** | Pending | Awaiting visual decisions + design system port |
+| **Branding / 03-visual-identity** | 🟡 Base v0.1 2026-06-04 | 6 docs (doctrina + 5 scaffolds) · agent-readable + token-first · brandbook (Cloudgaze 2025) re-anclado · paleta tokenizada · motivo reinterpretado a sistema/orden · food-waste dropped · 3 decisiones base provisional (confirmar con landing) · modelo 3 capas (producto/marketing/Alan) |
 | **Branding / 04-voice-and-tone** | ✓ Complete · revalidado 2026-06-03 | Voice principles (v1.1), vocabulary (v1.4), writing rules (v1.1) · revalidados (fase gratuita deprecada · 4 tiers · agency framing · convención MXN/USD) |
 | **Branding / 05-design-system** | Pending | To be ported from production repo |
 | **Branding / 06-application-examples** | Pending | Needs real published outputs to point at |
@@ -545,6 +556,7 @@ owner: [Name of document owner]
 - `competitive-analysis` — competitive mapping, vendor deep dives, feature/pricing comparison, GTM/positioning comparison, adoption/coexistence dynamics, defensibility synthesis (subfolder 03 de Market Research)
 - `product-strategy` — VP design (Strategyzer/VPD), features/scope, offer/pricing, GTM operational, capital/fundraising roadmap docs (Product Strategy departamento)
 - `social-media` — marco/estrategia de contenido, manual de marca personal, voz y estilo (corpus), perfil LinkedIn, pillars/sistema editorial, sistema visual + generación AI, templates y SOPs de contenido (Social Media Content Creation departamento)
+- `visual-identity` — marco de identidad visual, logo/marca, color (tokens), tipografía, iconografía/imagen, aplicación por superficie (Branding · sección 03-visual-identity)
 
 New types will be added as new departments come online (`content-template`, `campaign-brief`, etc.).
 
@@ -890,7 +902,13 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Pillars y sistema editorial (6 pillars operacionalizados · idioma por pillar · estructura de post · calendario 4 core/sem 3 ES+1 EN · se calibra con métricas del pilot) | ✓ active v0.1 | `Social Media Content Creation/_context/04-pillars-y-sistema-editorial.md` |
 | Sistema visual + generación AI (paleta validada carbón+off-white+ámbar firma+azul técnico · modo dual · guía Nano Banana Pro · headshot gris cálido + banner) | ✓ active v0.1 | `Social Media Content Creation/_context/05-sistema-visual-y-generacion-ai.md` |
 | Templates + SOPs Social Media (banco-de-ideas 5 posts starter pack + 10 semillas · prompts AI validados · plantillas por pillar · hooks · producción · engagement + ritmo métricas) | ✓ active v0.1 | `Social Media Content Creation/_templates/` + `_sop/` |
-| Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
+| Marco de identidad visual (doctrina + índice · cómo usar humano/IA · modelo 3 capas producto/marketing/Alan · 5 principios visuales · base provisional · relación con brandbook · decisiones abiertas con triggers · token-first/agent-readable) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/00-marco-de-identidad-visual.md` |
+| Logo y marca (isotipo rocas zen/Z/eslabones · wordmark Geon · motivo reinterpretado a sistema/orden · variantes · usos/clear-space scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/01-logo-y-marca.md` |
+| Color de marca (tokens hex del brandbook · off-white dominante + naranja #FF653B contenido + teal · disciplina acento-no-flood · emoción/matiz por confirmar con landing) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/02-color.md` |
+| Tipografía de marca (Geon primaria + Roboto secundaria · escala/fallback web scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/03-tipografia.md` |
+| Iconografía e imagen (motivo apilado sistema/orden + variaciones punteado/glass cálido · BoH ilustrado + operador · food-waste removido · íconos scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/04-iconografia-e-imagen.md` |
+| Aplicación visual por superficie (landing · social Zenet post-reveal · decks · email · crece con la landing) | 🚧 scaffold v0.1 | `Branding/_context/03-visual-identity/05-aplicacion-por-superficie.md` |
+| Visual identity (logo, colors, typography) — overview | 🟡 base v0.1 | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
 | Application examples (real published outputs) | pending | `Branding/_context/06-application-examples/` |
 | Brand guidelines (precedent codified) | pending | `Branding/_context/07-guidelines/` |
@@ -899,5 +917,5 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 
 ---
 
-*Last updated: 2026-06-03.*
+*Last updated: 2026-06-04.*
 *Next planned update: cuando se active `06-experience-y-roadmap/` formal (import production repo 3-phase UX + integrar CS-as-agents nota) · cuando `02-financial-model-y-projections.md` mueva de pre-draft a v0.1 (5 triggers cumplidos · 3+ design partners Mes 3+ data) · cuando se active Social Media Content Creation department (con doc 02 GTM digital distribution LinkedIn ONLY como strategic foundation) · cuando se active otro departamento (SEO/Content · Analytics · Email/CRM) · cuando Path A vs B decision se cierre (post design partner validation · trigger v0.2 funding roadmap) · cuando customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa · cuando un new strategic decision belongs en section 4.*
