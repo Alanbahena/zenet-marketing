@@ -2,7 +2,7 @@
 name: Banco de ideas y backlog de contenido
 description: El swipe file vivo del contenido de Alan · backlog de posts listos para publicar (el starter pack validado) + semillas de ideas para futuros posts. Cada post con pillar · idioma · estado · texto · brief de imagen. Se llena conforme se genera y se valida contenido.
 type: social-media
-last_updated: 2026-06-03
+last_updated: 2026-06-04
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -20,7 +20,7 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos · ~2 semanas de recámara. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo).**
+5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes).** Recámara restante: POST-01 · POST-03 · POST-04.
 
 ---
 
@@ -152,8 +152,8 @@ falta verlo antes, no después.
 
 ---
 
-### POST-05 · Behind-scenes · EN · ✅
-**Imagen:** foto real (escritorio / proceso) o text-only
+### POST-05 · Behind-scenes · EN · 📤 publicado (2026-06-04)
+**Imagen:** text-only · *(editado en vivo por Alan: cambió el ejemplo del data model por el ángulo "los años sin IA = el criterio". Versión publicada abajo · primer post del pillar behind-scenes.)*
 
 ```
 People imagine building a product as a series of breakthroughs. It's mostly not.
@@ -161,20 +161,17 @@ People imagine building a product as a series of breakthroughs. It's mostly not.
 Most of my days look like this: read what I wrote yesterday, find the thing I got
 wrong, fix it, write down why, repeat. Quiet, slow, unglamorous.
 
-This week the "exciting" work was rewriting a data model because the first version
-made a simple query painful. No demo. No screenshot worth sharing. Just a foundation
-that's now slightly less likely to break later.
+After building my own stuff these last few years, I catch myself thinking "what a
+time to be able to build with AI." But I also know this: without years of building
+things the hard way — before AI — I wouldn't see what I see now. The model didn't
+give me the judgment. The boring years did.
 
-I've started to think that's the actual job. Not the breakthroughs — the discipline
-between them. The willingness to redo the boring layer so the interesting layer can
-stand on it.
-
-AI changed the speed of this. It didn't change the nature of it. I still have to
-decide what's right, understand why the last version was wrong, and own the call. The
-model types faster. It doesn't carry the judgment.
+I've started to think that's the actual work. Not the breakthroughs — the discipline
+between them. The willingness to redo the boring layer, to go back to basics, so the
+interesting layer can stand on it.
 
 No grand insight today. Just the honest version of what building actually looks like
-from the inside.
+from where I sit.
 
 Back to it.
 ```
@@ -210,4 +207,4 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 
 ---
 
-*Última actualización: 2026-06-03. Vivo · se nutre conforme se genera contenido.*
+*Última actualización: 2026-06-04. Vivo · se nutre conforme se genera contenido.*
