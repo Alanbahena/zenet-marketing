@@ -33,6 +33,29 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
+**As of 2026-06-03:**
+
+- **Departamento `Social Media Content Creation/` ✓ CONSTRUIDO v0.1 (13 docs · `_context` 6 + `_templates` 4 + `_sop` 2 + README · skills pending)** 2026-06-03 — **PRIMER departamento de la capa Execution activado.** Ejecución táctica de la digital distribution strategy (GTM doc 02). Voz del fundador productizada para LinkedIn.
+  - ✅ `README.md` v0.1 — orientación + mapa + constraints (stealth · idioma · voz) + frontera con distribution strategy + herencia de los 2 PDFs previos de Alan (Manual de Marca Personal v1.0 marzo + Digital Framework v0.1 febrero).
+  - ✅ `_context/00-marco-y-estrategia.md` v0.1 — doctrina · 5 frames · **doctrina stealth/reveal** (qué se puede/no decir pre-reveal + trigger milestone-anchored: 30-50 comunidad + 1-2 design partners) · decisiones canónicas (idioma ES-primario + EN técnico · founder-led · north star relaciones) · objetivos por fase · métricas no-vanidad operacionalizadas.
+  - ✅ `_context/01-manual-marca-personal-alan.md` v0.1 — EL manual · identidad (**builder/innovador primario** · ingeniero que piensa en sistemas = el cómo · arquetipo interno Tony Stark/laboratorio) · arco narrativo enriquecido 5 capítulos (Audi→México→Teradata→lab→hoy · hilos de origin-story) · propuesta de valor · voz principios · audiencias · Alan↔Zenet · reglas inquebrantables.
+  - ✅ `_context/02-voz-y-estilo-de-alan.md` v0.1 — **la huella de voz operacional · VALIDADA.** Corpus de 7 posts reales (VE-01..07 · 4 ES + 3 EN) · devices firma ("no es X, es Y" · "the real experience not the theory" · confesión honesta · pregunta abierta de cierre) · registro ES vs EN · reglas de generación · north star (humano · sin hype · que represente a Alan).
+  - ✅ `_context/03-perfil-linkedin.md` v0.1 — perfil ancla · **headline + About cerrados e instalados** (EN-primary · About con ángulo cliente/producto NEW = diferenciador ingeniero-que-piensa-negocio) · banner + foto instalados.
+  - ✅ `_context/04-pillars-y-sistema-editorial.md` v0.1 — 6 pillars operacionalizados · mapeo idioma · estructura de post por pillar · **calendario 4 core/sem (3-5 · 3 ES + 1 EN · miércoles engagement · flex 5º)** · balance mensual · se calibra con métricas del pilot.
+  - ✅ `_context/05-sistema-visual-y-generacion-ai.md` v0.1 — sistema visual personal de Alan (pre-reveal · NO Zenet brand) · **paleta validada** (carbón #14161B + off-white #ECEAE3 + ámbar firma #E2A33C + azul técnico #3E5B7D · modo dual claro/oscuro) · guía Nano Banana Pro · headshot (gris cálido #4A4641 para separar del banner) · banner.
+  - ✅ `_templates/` (4) — banco-de-ideas (5 posts starter pack + 10 semillas) · prompts-imagenes-ai (5 prompts validados) · plantillas-post-por-pillar · hooks-y-aperturas. ✅ `_sop/` (2) — produccion-de-contenido (workflow + checklist) · engagement-y-comunidad (priorities + comunidad semilla + ritmo métricas).
+  - **Validación en vivo 2026-06-03:** voz confirmada por el fundador ("suena totalmente a mí" en el primer post generado) · paleta validada con 3 pruebas reales en Nano Banana · **POST-02 (técnico EN) publicado en LinkedIn = primer post del sistema en vivo.**
+- **Revalidación Branding contra Product Strategy (8 docs · brand-strategy 4/4 + voice-and-tone 3/3 + narrativa · origin-story pending):**
+  - `01-brand-strategy/`: `mision-vision-valores.md` v1.1 · `personalidad-y-arquetipo.md` v1.2 · `posicionamiento.md` v1.5 · `promesa-de-marca.md` v1.1.
+  - `04-voice-and-tone/`: `vocabulario.md` v1.4 · `voz-y-tono.md` v1.1 · `reglas-de-redaccion.md` v1.1.
+  - `02-brand-story/`: `narrativa.md` v1.1. **Pendiente:** `origin-story.md` (revisión del fundador · todavía con framing viejo del antagonista §7).
+- **Strategic decisions 2026-06-03:**
+  - **Antagonista reframeado canonical** — de *"la ausencia de sistemas"* → *"el sistema atrapado en una sola cabeza: funciona pero no escala"*. Honra el hallazgo #1 de VoC ("yo SOY el sistema" · V-001/V-010): el operador SÍ tiene sistema · *"no tienes sistema"* es ataque percibido. Propagado a misión-visión · personalidad · posicionamiento · promesa · vocabulario · narrativa + el departamento Social Media.
+  - **Voz del fundador productizada y validada** — sistema de 2 capas (manual = principios · voz-y-estilo = huella operacional con corpus real) que genera posts en la voz de Alan · validado en vivo.
+  - **Stealth-first con reveal milestone-anchored** (Social Media) — Zenet NO se nombra en LinkedIn hasta milestone (design partners validados) · refina distribution strategy §3.4 (a reconciliar en su v0.2).
+  - **Idioma ES-primario + EN técnico** mapeado a pillars · **identidad de Alan = builder/innovador primario** (sistemas = el cómo) · **paleta visual personal validada** (carbón + ámbar firma + azul técnico).
+- **Siguiente recomendado:** usar el sistema (pilot 4 sem · publicar starter pack) · revalidar `origin-story.md` (pendiente del fundador) · skills Social Media (`/post-linkedin` futuro) · O activar otro departamento Execution (SEO/Content · Analytics · Email/CRM).
+
 **As of 2026-06-02:**
 
 - **Subfolder `Product Strategy/_context/05-capital-y-finanzas/` 🚧 ACTIVE v0.1 (3 docs core + tracking + README)** 2026-06-02:
@@ -213,10 +236,10 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | Section | Status | Brief |
 |---|---|---|
 | **— FOUNDATION LAYER —** | | |
-| **Branding / 01-brand-strategy** | ✓ Complete v1.0 | Mission/vision/values, positioning, brand promise, archetype |
-| **Branding / 02-brand-story** | ✓ Complete v1.0 | Origin story, strategic narrative |
+| **Branding / 01-brand-strategy** | ✓ Complete · revalidado 2026-06-03 | Mission/vision/values (v1.1), positioning (v1.5), brand promise (v1.1), archetype (v1.2) · revalidados contra Product Strategy (antagonista reframe · agency-as-SaaS · modelo comercial 4 tiers · fase gratuita deprecada) |
+| **Branding / 02-brand-story** | ✓ Active · narrativa v1.1 | Strategic narrative v1.1 (antagonista reframeado: "sistema atrapado en una cabeza") · origin story pending revalidación del fundador |
 | **Branding / 03-visual-identity** | Pending | Awaiting visual decisions + design system port |
-| **Branding / 04-voice-and-tone** | ✓ Complete v1.0 | Voice principles, vocabulary, writing rules |
+| **Branding / 04-voice-and-tone** | ✓ Complete · revalidado 2026-06-03 | Voice principles (v1.1), vocabulary (v1.4), writing rules (v1.1) · revalidados (fase gratuita deprecada · 4 tiers · agency framing · convención MXN/USD) |
 | **Branding / 05-design-system** | Pending | To be ported from production repo |
 | **Branding / 06-application-examples** | Pending | Needs real published outputs to point at |
 | **Branding / 07-guidelines** | Pending | Will codify precedent as it accumulates |
@@ -237,7 +260,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
 | **SEO and Content** | Pending | |
-| **Social Media Content Creation** | Pending | |
+| **Social Media Content Creation** | ✓ **Built v0.1** 2026-06-03 | **PRIMER Execution dept activado.** Ejecución táctica de digital distribution strategy · voz del fundador productizada para LinkedIn · 13 docs (_context 6 + _templates 4 + _sop 2 + README) · **voz VALIDADA en vivo** · paleta visual validada · perfil instalado · starter pack 5 posts · POST-02 publicado · stealth-first · LinkedIn ONLY · founder-led |
 | **— SHARED —** | | |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
 
@@ -521,6 +544,7 @@ owner: [Name of document owner]
 - `customer-research` — JTBD, pains, journey, buying process, objections, voice-of-customer docs (subfolder 02 de Market Research)
 - `competitive-analysis` — competitive mapping, vendor deep dives, feature/pricing comparison, GTM/positioning comparison, adoption/coexistence dynamics, defensibility synthesis (subfolder 03 de Market Research)
 - `product-strategy` — VP design (Strategyzer/VPD), features/scope, offer/pricing, GTM operational, capital/fundraising roadmap docs (Product Strategy departamento)
+- `social-media` — marco/estrategia de contenido, manual de marca personal, voz y estilo (corpus), perfil LinkedIn, pillars/sistema editorial, sistema visual + generación AI, templates y SOPs de contenido (Social Media Content Creation departamento)
 
 New types will be added as new departments come online (`content-template`, `campaign-brief`, etc.).
 
@@ -859,6 +883,13 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Sales Motion Three-Session Demo (doc más denso · sales cycle 8 stages · three-session FLEXIBLE NO rígido comprime/expande por lane · per-session playbooks Manager+SPIN/Chef/Owner+cierre · pricing deep-dive + justificación + cierre NO reveal secreto landing ya muestra · Contable parallel silent veto · LAER MX-adapted 9 disarming + 7 anti-patterns + identity "yo SOY el sistema" · 3-lane timing · cierre→handoff onboarding · sales enablement materials · 12 anti-patterns) | ✓ active v0.1 | `Product Strategy/_context/04-go-to-market/04-sales-motion-three-session-demo.md` |
 | Channel / Partner Strategy (re-ranked value exchange + aligned incentives · 3 principios value exchange + demand-side first supply-side con leverage + phase timing · Tier 1 consultor #1 extensión Zenet + contador/despacho #2 NEW silent veto→ally · Tier 2 institutional CANIRAC/CANACO/eventos · Tier 3 distribuidores Phase 2+ supply-side con leverage Uber Eats B2B procurement · multi-plaza 3 models · 9 anti-patterns) | ✓ active v0.1 | `Product Strategy/_context/04-go-to-market/05-channel-partner-strategy.md` |
 | CS-as-Agents vision nota (captura estratégica · automatizar customer service con AI agents misma arquitectura agency-as-SaaS + human escalation · layered + tier-based premium=more human preserva valor #3 "Acompañar no abandonar" · NO Phase 1 · hybrid 1.5-2 · AI-primary 2-3+ · retomar al activar subfolder 06 formal) | 🚧 draft v0.1-nota | `Product Strategy/_context/06-experience-y-roadmap/00-cs-as-agents-vision-nota.md` |
+| Social Media README + marco (orientación + doctrina · stealth/reveal · idioma ES+EN · north star relaciones · métricas no-vanidad · frontera con distribution strategy) | ✓ active v0.1 | `Social Media Content Creation/README.md` + `_context/00-marco-y-estrategia.md` |
+| Manual de marca personal Alan (identidad builder/innovador · arco narrativo 5 cap Audi→México→Teradata→lab→hoy · propuesta de valor · voz principios · audiencias · Alan↔Zenet · reglas inquebrantables) | ✓ active v0.1 | `Social Media Content Creation/_context/01-manual-marca-personal-alan.md` |
+| Voz y estilo de Alan (huella operacional VALIDADA · corpus 7 posts reales VE-01..07 · devices firma · registro ES/EN · reglas de generación · north star humano/sin hype) | ✓ active v0.1 | `Social Media Content Creation/_context/02-voz-y-estilo-de-alan.md` |
+| Perfil LinkedIn Alan (headline + About EN-primary cerrados e instalados · ángulo cliente/producto diferenciador · banner + foto) | ✓ active v0.1 | `Social Media Content Creation/_context/03-perfil-linkedin.md` |
+| Pillars y sistema editorial (6 pillars operacionalizados · idioma por pillar · estructura de post · calendario 4 core/sem 3 ES+1 EN · se calibra con métricas del pilot) | ✓ active v0.1 | `Social Media Content Creation/_context/04-pillars-y-sistema-editorial.md` |
+| Sistema visual + generación AI (paleta validada carbón+off-white+ámbar firma+azul técnico · modo dual · guía Nano Banana Pro · headshot gris cálido + banner) | ✓ active v0.1 | `Social Media Content Creation/_context/05-sistema-visual-y-generacion-ai.md` |
+| Templates + SOPs Social Media (banco-de-ideas 5 posts starter pack + 10 semillas · prompts AI validados · plantillas por pillar · hooks · producción · engagement + ritmo métricas) | ✓ active v0.1 | `Social Media Content Creation/_templates/` + `_sop/` |
 | Visual identity (logo, colors, typography) | pending | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
 | Application examples (real published outputs) | pending | `Branding/_context/06-application-examples/` |
@@ -868,5 +899,5 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 
 ---
 
-*Last updated: 2026-06-02.*
+*Last updated: 2026-06-03.*
 *Next planned update: cuando se active `06-experience-y-roadmap/` formal (import production repo 3-phase UX + integrar CS-as-agents nota) · cuando `02-financial-model-y-projections.md` mueva de pre-draft a v0.1 (5 triggers cumplidos · 3+ design partners Mes 3+ data) · cuando se active Social Media Content Creation department (con doc 02 GTM digital distribution LinkedIn ONLY como strategic foundation) · cuando se active otro departamento (SEO/Content · Analytics · Email/CRM) · cuando Path A vs B decision se cierre (post design partner validation · trigger v0.2 funding roadmap) · cuando customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa · cuando un new strategic decision belongs en section 4.*

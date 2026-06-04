@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > El archivo vivo del contenido de Alan: **posts listos para publicar** (la recámara) + **semillas de ideas** para lo que viene. Se nutre de las semillas del arco (`01-manual` §2.3), del corpus de voz (`02-voz-y-estilo`), y de lo que vaya saliendo.
 
-**Estados:** ✅ listo (aprobado, publicable) · ✏️ borrador · 💡 idea (sin escribir).
+**Estados:** ✅ listo (aprobado, publicable) · 📤 publicado · ✏️ borrador · 💡 idea (sin escribir).
 
 **Cómo usarlo:** tomar un post ✅ del backlog → publicar según el calendario (`04-pillars` §5) → marcar como publicado (mover a histórico o borrar). Las semillas 💡 se convierten en borradores cuando toca ese pillar en la semana.
 
@@ -20,7 +20,7 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos · ~2 semanas de recámara.
+5 posts validados en voz de Alan · cubren los 5 pillars activos · ~2 semanas de recámara. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo).**
 
 ---
 
@@ -56,8 +56,8 @@ dispuesto a que el experimento falle, y quedarte con lo que enseñó.
 
 ---
 
-### POST-02 · Technical · EN · ✅
-**Imagen:** diagrama oscuro (demo→system) o text-only
+### POST-02 · Technical · EN · 📤 publicado (2026-06-03)
+**Imagen:** ✅ diagrama "Model dentro de System" (oscuro + azul + ámbar) · primer post del sistema en vivo
 
 ```
 A demo and a system are not the same thing. I keep relearning this.
