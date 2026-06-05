@@ -114,7 +114,7 @@ Cerrado 2026-06-04 como fundamento · 4 decisiones + narrativa + arquitectura de
 ### Decisiones abiertas
 | # | Abierto | Trigger |
 |---|---|---|
-| 1 | Dirección del headline (A promesa / B reframe / C categoría) | Al trabajar el Hero |
+| 1 | ✅ **Resuelta** — dirección del headline = frame **agency-as-SaaS** ("Las grandes cadenas operan con un equipo de especialistas. Ahora tu restaurante también." · fallback "tú también") · se descartaron A/B/C (sonaban a POS) | Hero cerrado 2026-06-04 |
 | 2 | Mecanismo de CTA (formulario vs. agendar) | Al trabajar copy + prototipo |
 | 3 | Confirmar decisiones visuales (color/emoción · glass) | Al diseñar el prototipo (cf. `03-visual-identity` §7) |
 | 4 | ¿Sección "por qué ahora" se mantiene o se funde con "el problema"? | Al trabajar el copy (evaluar largo) |
