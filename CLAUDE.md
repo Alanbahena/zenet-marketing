@@ -33,6 +33,20 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
+**As of 2026-06-05:**
+
+- **Departamento `SEO and Content/` 🚧 ACTIVADO v0.1 — landing page workstream (3 docs · copy completo 8/8)** 2026-06-05 — **SEGUNDO departamento de la capa Execution activado** (después de Social Media). Primer workstream: la **landing page** como *página de confianza para reclutar los primeros design partners* (pre-PMF · targeted · sin pricing · nombra Zenet · NO conversión masiva).
+  - ✅ `_context/01-landing-page/00-estrategia-y-estructura.md` v0.1 — fundamento · 4 decisiones (design-partner trust · targeted 1:1 · conversación-led sin pricing · nombra Zenet sin romper el stealth de LinkedIn) · audiencia · narrativa de 8 pasos · arquitectura de 8 secciones con brief + input por sección · CTA conversación-led.
+  - ✅ `_context/01-landing-page/01-copy.md` v0.1 — **copy completo y lockeado 8/8** en voz de marca: ① Hero (agency-as-SaaS "Las grandes cadenas operan con un equipo de especialistas. Ahora tu restaurante también" · "por el precio de una app") · ② El problema (reframe del antagonista · 4 pains) · ③ Qué es Zenet ("lo que vive en tu cabeza… un sistema" · equipo de especialistas · Manual Operativo vivo · "no reemplaza a tu equipo, lo libera… la última palabra es tuya" · **2 estructuras A/B documentadas**) · ④ Qué cambia (4 cambios espejo de los pains · cualitativa sin cifras · cierre emocional) · ⑤ Por qué ahora (posibilidad + industria se profesionaliza · **sin urgencia artificial/miedo**) · ⑥ Por qué Alan (**1ª persona** · "De los sistemas de las grandes industrias, al back-of-house" · "no una herramienta más, sino un sistema") · ⑦ La invitación (**voz de Zenet** · "Forma parte de los primeros Socios Fundadores" · 4 beneficios · honestidad bilateral · sin %) · ⑧ Cierre/CTA ("Si esto suena a tu restaurante, hablemos" · "no es una venta, una conversación").
+  - 🚧 `_context/01-landing-page/02-prototipo-y-diseno.md` v0.1-scaffold — fase de diseño pendiente · herramienta = **Claude Artifacts** (acordado) · aplica `Branding/03-visual-identity` · aquí se cierran las decisiones abiertas (estructura A/B de §3 · mecanismo CTA · matiz del acento/glass/tipografía → retroalimenta visual identity).
+- **Strategic decisions landing 2026-06-05:**
+  - **Landing = página de confianza para design partners** (NO conversión masiva · NO early commercial) · éxito = conversaciones agendadas con ICP, no signups/tráfico · **targeted 1:1** (no broadcast/SEO por ahora) · **nombra Zenet** (superficie nombrada · distinta del LinkedIn de Alan que sigue en stealth · uso dirigido = no rompe el stealth).
+  - **Cambio de voz deliberado dentro de la página** — §6 (Por qué Alan) es **Alan en 1ª persona** (el fundador) · §7 + §8 son **voz de Zenet** (la marca invita en "tú" · el fundador en 3ª persona). Driver #1 de confianza pre-PMF = el fundador.
+  - **§5 "Por qué ahora" reanclada** — se descartó el ángulo SAT/miedo (chocaba con "sin urgencia artificial" voz §2) → reframe **posibilidad (tecnología) + demanda (industria se profesionaliza)** · se descartó fusionarla con §6.
+  - **Disciplina honesta pre-PMF** — sin cifras inventadas (§4 cualitativa · las cifras de la promesa ~28 hrs/~3% mermas son hipótesis) · sin pricing table (conversación-led) · "sistema, no herramienta" blindado · honestidad bilateral en la invitación.
+  - **Nuevo tipo de doc `seo-content`** (landing · SEO · content) registrado.
+- **Siguiente recomendado:** diseño/prototipo de la landing en Claude Artifacts (`02-prototipo-y-diseno` · aplica `03-visual-identity` · cierra decisiones visuales abiertas + estructura A/B de §3) · luego commit (copy + visual identity + social media siguen sin commitear) · revalidar `origin-story.md` (pendiente).
+
 **As of 2026-06-04:**
 
 - **Sección `Branding/_context/03-visual-identity/` 🟡 BASE v0.1 (6 docs · doctrina + 5 scaffolds)** 2026-06-04 — identidad visual de **marca/marketing** (capa 2) · agent-readable + token-first.
@@ -270,7 +284,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **— EXECUTION LAYER —** | | |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **SEO and Content** | Pending | |
+| **SEO and Content** | 🚧 **Active v0.1** 2026-06-05 | **SEGUNDO Execution dept activado.** Primer workstream: **landing page** (`_context/01-landing-page/`) = página de confianza para reclutar design partners · 3 docs: `00-estrategia-y-estructura` v0.1 (4 decisiones + narrativa + arquitectura 8 secciones) + `01-copy` v0.1 (**copy completo lockeado 8/8** · agency-as-SaaS · reframe antagonista · voz Alan §6 + voz Zenet §7-8 · honesto pre-PMF) + `02-prototipo-y-diseno` v0.1-scaffold (diseño pendiente · Claude Artifacts). Targeted · nombra Zenet · conversación-led |
 | **Social Media Content Creation** | ✓ **Built v0.1** 2026-06-03 | **PRIMER Execution dept activado.** Ejecución táctica de digital distribution strategy · voz del fundador productizada para LinkedIn · 13 docs (_context 6 + _templates 4 + _sop 2 + README) · **voz VALIDADA en vivo** · paleta visual validada · perfil instalado · starter pack 5 posts · POST-02 publicado · stealth-first · LinkedIn ONLY · founder-led |
 | **— SHARED —** | | |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
@@ -557,6 +571,7 @@ owner: [Name of document owner]
 - `product-strategy` — VP design (Strategyzer/VPD), features/scope, offer/pricing, GTM operational, capital/fundraising roadmap docs (Product Strategy departamento)
 - `social-media` — marco/estrategia de contenido, manual de marca personal, voz y estilo (corpus), perfil LinkedIn, pillars/sistema editorial, sistema visual + generación AI, templates y SOPs de contenido (Social Media Content Creation departamento)
 - `visual-identity` — marco de identidad visual, logo/marca, color (tokens), tipografía, iconografía/imagen, aplicación por superficie (Branding · sección 03-visual-identity)
+- `seo-content` — landing page (estrategia/estructura · copy por sección · prototipo/diseño), SEO y content docs (SEO and Content departamento)
 
 New types will be added as new departments come online (`content-template`, `campaign-brief`, etc.).
 
@@ -912,10 +927,13 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
 | Application examples (real published outputs) | pending | `Branding/_context/06-application-examples/` |
 | Brand guidelines (precedent codified) | pending | `Branding/_context/07-guidelines/` |
+| Landing page · estrategia y estructura (página de confianza para design partners · 4 decisiones design-partner-trust/targeted/conversación-led/nombra-Zenet · audiencia · narrativa 8 pasos · arquitectura de 8 secciones con brief+input · CTA conversación-led · decisiones abiertas) | ✓ active v0.1 | `SEO and Content/_context/01-landing-page/00-estrategia-y-estructura.md` |
+| Landing page · copy por sección (copy completo lockeado 8/8 en voz de marca · ① Hero agency-as-SaaS · ② problema reframe antagonista · ③ qué es Zenet equipo de especialistas + Manual Operativo + 2 estructuras A/B · ④ qué cambia cualitativa · ⑤ por qué ahora posibilidad+industria · ⑥ por qué Alan 1ª persona · ⑦ invitación Socio Fundador voz Zenet · ⑧ cierre/CTA) | ✓ active v0.1 | `SEO and Content/_context/01-landing-page/01-copy.md` |
+| Landing page · prototipo y diseño (fase de diseño · Claude Artifacts · aplica 03-visual-identity · cierra decisiones abiertas: estructura A/B §3 · mecanismo CTA · matiz acento/glass/tipografía) | 🚧 scaffold v0.1 | `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md` |
 | Production software context | external | Production repo: `/02_Producto-y-Tech/Production-software/Zenet/CLAUDE.md` |
 | Business context / market validation | external | Production repo: `docs/project-strategy/business-context/zenet-business-context-production.md` |
 
 ---
 
-*Last updated: 2026-06-04.*
-*Next planned update: cuando se active `06-experience-y-roadmap/` formal (import production repo 3-phase UX + integrar CS-as-agents nota) · cuando `02-financial-model-y-projections.md` mueva de pre-draft a v0.1 (5 triggers cumplidos · 3+ design partners Mes 3+ data) · cuando se active Social Media Content Creation department (con doc 02 GTM digital distribution LinkedIn ONLY como strategic foundation) · cuando se active otro departamento (SEO/Content · Analytics · Email/CRM) · cuando Path A vs B decision se cierre (post design partner validation · trigger v0.2 funding roadmap) · cuando customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa · cuando un new strategic decision belongs en section 4.*
+*Last updated: 2026-06-05.*
+*Next planned update: cuando el prototipo/diseño de la landing (`SEO and Content/01-landing-page/02-prototipo-y-diseno`) cierre las decisiones visuales abiertas (estructura A/B §3 · acento/glass/tipografía → retroalimenta `03-visual-identity`) · cuando se active `06-experience-y-roadmap/` formal (import production repo 3-phase UX + integrar CS-as-agents nota) · cuando `02-financial-model-y-projections.md` mueva de pre-draft a v0.1 (5 triggers cumplidos · 3+ design partners Mes 3+ data) · cuando se active otro departamento (Analytics · Email/CRM) · cuando Path A vs B decision se cierre (post design partner validation · trigger v0.2 funding roadmap) · cuando customer research transitions de `discovery-pre-PMF` a `design-partner-validation` etapa · cuando un new strategic decision belongs en section 4.*

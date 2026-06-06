@@ -77,12 +77,12 @@ El **argumento** que hace la página, en orden (la narrativa dicta la estructura
 | 2 | **El problema** | Que el operador se sienta visto | El reframe + la fricción concreta (se rompe en la 2da sucursal · el conocimiento en una cabeza) | narrativa v1.1 · customer research · POST-03 |
 | 3 | **Qué es Zenet** | La idea central | Sistema operativo cognitivo / agency-as-SaaS · "extiende tu forma de operar" · NO feature-dump | posicionamiento · agency framing |
 | 4 | **Qué cambia** | La transformación | Antes/después · las 4 promesas (tiempo · dinero · tranquilidad · escalamiento ordenado) | promesa de marca |
-| 5 | **Por qué ahora** | Urgencia + posibilidad | La tesis temporal (AI lo hace posible hoy · el momento) | market-insights "por qué ahora" |
+| 5 | **Por qué ahora** | Posibilidad + demanda (sin urgencia artificial) | Beat 1 la tecnología por fin lo permite · Beat 2 la industria se profesionaliza | market-insights "por qué ahora" |
 | 6 | **Por qué Alan** | Credibilidad del fundador (driver de confianza) | El arco (turbinas → Audi → Teradata → esto) · founder-ingeniero que construye | manual de marca personal §2 · origin-story |
 | 7 | **La invitación** | Invitar al Programa Socio Fundador | Qué es · beneficios · qué se espera · invitación (no venta) | `02-programa-socio-fundador-offer.md` |
 | 8 | **Cierre / CTA** | Cerrar con calma + abrir conversación | "Hablemos" · contacto / agendar conversación | outreach strategy |
 
-> **Estado:** las 8 secciones aprobadas como arquitectura · el **copy de cada una se trabaja sección por sección** en `01-copy.md` (empezando por el Hero). 🚧
+> **Estado:** las 8 secciones aprobadas + **copy completo y lockeado (8/8) ✅** en `01-copy.md` (2026-06-05). Sigue diseño/prototipo en `02-prototipo-y-diseno.md`.
 
 ---
 
@@ -109,16 +109,18 @@ El **argumento** que hace la página, en orden (la narrativa dicta la estructura
 | `Product Strategy/04-go-to-market/03-outreach-strategy.md` | Cómo se comparte la landing (targeted) |
 
 ### Estado v0.1
-Cerrado 2026-06-04 como fundamento · 4 decisiones + narrativa + arquitectura de 8 secciones. Copy y diseño 🚧.
+Fundamento cerrado 2026-06-04 (4 decisiones + narrativa + arquitectura de 8 secciones) · **copy completo y lockeado 8/8 2026-06-05** (`01-copy.md`). Diseño/prototipo 🚧 (`02-prototipo-y-diseno.md`).
 
 ### Decisiones abiertas
 | # | Abierto | Trigger |
 |---|---|---|
 | 1 | ✅ **Resuelta** — dirección del headline = frame **agency-as-SaaS** ("Las grandes cadenas operan con un equipo de especialistas. Ahora tu restaurante también." · fallback "tú también") · se descartaron A/B/C (sonaban a POS) | Hero cerrado 2026-06-04 |
-| 2 | Mecanismo de CTA (formulario vs. agendar) | Al trabajar copy + prototipo |
-| 3 | Confirmar decisiones visuales (color/emoción · glass) | Al diseñar el prototipo (cf. `03-visual-identity` §7) |
-| 4 | ¿Sección "por qué ahora" se mantiene o se funde con "el problema"? | Al trabajar el copy (evaluar largo) |
+| 2 | Mecanismo de CTA (formulario vs. agendar) | Al diseñar el prototipo (`02`) |
+| 3 | Confirmar decisiones visuales (matiz del acento/emoción · cuánto glass · escala tipográfica) | Al diseñar el prototipo (cf. `03-visual-identity` §7) |
+| 4 | ✅ **Resuelta** — la §5 "Por qué ahora" **se mantiene standalone** (NO se funde) · reframe de urgencia/miedo → **posibilidad + industria se profesionaliza** (sin urgencia artificial) · se descartó fusionarla con §6 (Opción B) | Copy cerrado 2026-06-05 |
+| 5 | **§3 estructura A (grid de áreas + flujo) vs B (solo flujo)** — ambas documentadas en `01-copy` §3 | Al renderizar el diseño (`02`) |
+| 6 | §6: ¿anclar 1 nombre concreto (Audi/Teradata) para más prueba, vs. arco abstraído actual? | Al diseñar / decisión del fundador |
 
 ---
 
-*Última actualización: 2026-06-04. v0.1 · fundamento · copy y diseño por trabajar.*
+*Última actualización: 2026-06-05. v0.1 · fundamento + copy completo (8/8) · diseño por trabajar.*
