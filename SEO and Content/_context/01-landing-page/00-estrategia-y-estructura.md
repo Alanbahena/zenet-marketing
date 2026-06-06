@@ -120,6 +120,7 @@ Fundamento cerrado 2026-06-04 (4 decisiones + narrativa + arquitectura de 8 secc
 | 4 | ✅ **Resuelta** — la §5 "Por qué ahora" **se mantiene standalone** (NO se funde) · reframe de urgencia/miedo → **posibilidad + industria se profesionaliza** (sin urgencia artificial) · se descartó fusionarla con §6 (Opción B) | Copy cerrado 2026-06-05 |
 | 5 | **§3 estructura A (grid de áreas + flujo) vs B (solo flujo)** — ambas documentadas en `01-copy` §3 | Al renderizar el diseño (`02`) |
 | 6 | §6: ¿anclar 1 nombre concreto (Audi/Teradata) para más prueba, vs. arco abstraído actual? | Al diseñar / decisión del fundador |
+| 7 | **Versión en inglés de la landing** — diferida. La audiencia core (design partners MX) opera en español; el inglés solo aplica si aparece un receptor EN concreto (mentor/inversionista US · expansión Fase 5). **NO es traducción, es re-escritura en registro EN** (el corpus de Alan prueba ES≠EN). Para mentor US: preferir un **one-pager EN dedicado** ("what I'm building" · founder + visión + ask) sobre traducir esta landing operador-optimizada | Si se decide buscar mentor/inversionista en US **Y** el copy ES ya estabilizado post-diseño (evitar traducir blanco en movimiento) |
 
 ---
 
