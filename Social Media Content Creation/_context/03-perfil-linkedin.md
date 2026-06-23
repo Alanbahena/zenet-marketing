@@ -2,7 +2,7 @@
 name: Perfil de LinkedIn · Alan Bahena
 description: El perfil de LinkedIn como activo ancla del departamento · qué debe lograr bajo stealth · decisión de idioma del perfil · headline (opciones + recomendación) · About en la voz de Alan · brief de foto y banner (pointer a 05-visual) · sección Featured · manejo de Experiencia/Educación bajo stealth · creator mode + URL + open to · checklist de optimización. Copy en draft para revisión del fundador.
 type: social-media
-last_updated: 2026-06-03
+last_updated: 2026-06-17
 status: draft
 version: 0.1
 owner: Alan Bahena
@@ -55,10 +55,12 @@ El **contenido** es ES-primario (comunidad semilla). Pero el **perfil** sirve a 
 
 > Lo más visible del perfil (~220 caracteres · aparece en búsquedas, comentarios, DMs).
 
-**✅ ELEGIDO (2026-06-03):**
-> **I build operational systems for the real world · Engineer who thinks in systems & builds in public · From mechanical engineering to software to enterprise data to AI**
+**✅ ELEGIDO (2026-06-03 · actualizado e instalado 2026-06-17):**
+> **I build operational intelligence for the real world · Engineer who thinks in systems & builds in public · From mechanical engineering to software to enterprise data to AI**
 
-(~160 caracteres) · builder-first · arco de 4 pasos (mechanical → software → enterprise data → AI) · stealth-safe · sin hype.
+(~165 caracteres) · builder-first · lead **operational intelligence** (término ownable · consistente con el arco del banner *Physical Systems → Data Infrastructure → Operational Intelligence* + el About · más diferenciado que "systems") · arco de 4 pasos (mechanical → software → enterprise data → AI · mantiene "AI" como keyword buscable para builders/investors) · stealth-safe · sin hype.
+
+**Cambio 2026-06-17:** el lead pasó de *"operational systems"* → *"operational intelligence"* (decisión del fundador). Razón: término más ownable + alinea bio ↔ banner ↔ About. Nota estratégica (no accionada): el headline sirve a la audiencia amplia EN (builders/investors/talento) · el operador conecta vía los posts ES, no la bio (cf. §2) · puente al operador disponible = línea ES de cierre en el About (§4 · opcional · no activada).
 
 **Alternativas consideradas (referencia):**
 - **B (más corto):** *Systems engineer & builder · Turning operational chaos into systems · Building in public*
@@ -161,7 +163,7 @@ Se actualiza conforme haya posts que performen. Es tu "mejor de" curado.
 
 ## 9. Checklist de optimización
 
-- [ ] Headline elegido (A / B / C) e instalado
+- [x] Headline elegido e instalado (operational-intelligence lead · 2026-06-17)
 - [ ] About final (editado + aprobado)
 - [ ] Foto de headshot actualizada
 - [ ] Banner diseñado (post `05-visual`)
@@ -178,7 +180,7 @@ Se actualiza conforme haya posts que performen. Es tu "mejor de" curado.
 
 ### Estado v0.1 (draft)
 
-**Headline ✅ + About ✅ aprobados (2026-06-03).** Idioma: EN-primary (decidido). Pendientes: instalar en LinkedIn · foto headshot · banner (depende de `05-visual`). Opcionales del About disponibles: línea ES de cierre + firma *"Not the narrative"*.
+**Headline ✅ (revisado e instalado 2026-06-17 · lead cambiado a "operational intelligence") + About ✅ aprobados (2026-06-03).** Idioma: EN-primary (decidido). Pendientes: instalar en LinkedIn · foto headshot · banner (depende de `05-visual`). Opcionales del About disponibles: línea ES de cierre + firma *"Not the narrative"*.
 
 ### Version triggers
 
@@ -199,4 +201,4 @@ Se actualiza conforme haya posts que performen. Es tu "mejor de" curado.
 
 ---
 
-*Última actualización: 2026-06-03. Draft · copy para revisión.*
+*Última actualización: 2026-06-17. Draft · copy para revisión.*

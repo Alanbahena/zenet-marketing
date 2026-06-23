@@ -2,7 +2,7 @@
 name: Banco de ideas y backlog de contenido
 description: El swipe file vivo del contenido de Alan · backlog de posts listos para publicar (el starter pack validado) + semillas de ideas para futuros posts. Cada post con pillar · idioma · estado · texto · brief de imagen. Se llena conforme se genera y se valida contenido.
 type: social-media
-last_updated: 2026-06-04
+last_updated: 2026-06-22
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > El archivo vivo del contenido de Alan: **posts listos para publicar** (la recámara) + **semillas de ideas** para lo que viene. Se nutre de las semillas del arco (`01-manual` §2.3), del corpus de voz (`02-voz-y-estilo`), y de lo que vaya saliendo.
 
-**Estados:** ✅ listo (aprobado, publicable) · 📤 publicado · ✏️ borrador · 💡 idea (sin escribir).
+**Estados:** ✅ listo (aprobado, publicable) · 🗓️ programado · 📤 publicado · ✏️ borrador · 💡 idea (sin escribir).
 
 **Cómo usarlo:** tomar un post ✅ del backlog → publicar según el calendario (`04-pillars` §5) → marcar como publicado (mover a histórico o borrar). Las semillas 💡 se convierten en borradores cuando toca ese pillar en la semana.
 
@@ -20,38 +20,37 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes).** Recámara restante: POST-01 · POST-03 · POST-04.
+5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only).** Recámara restante: POST-03 · POST-04.
 
 ---
 
-### POST-01 · Founder journey · ES · ✅
-**Imagen:** sin imagen (text-only) o quote card oscuro con *"No eran fracasos. Eran experimentos."*
+### POST-01 · Founder journey · ES · 📤 publicado (2026-06-15)
+**Imagen:** foto real del escritorio — toma candid, luz cálida ámbar (modo oscuro · on-paleta `05-visual` §2), código en pantallas · refuerza el frame *"mi propio laboratorio"*. (Chequeo stealth: pantallas = código/logs + dashboard Supabase, no UI de producto · sin nombres de archivo/tabla legibles.) Versión previa text-only / quote card descartada a favor de la foto.
+**Origen:** editado con Alan 2026-06-14 · 2 anclas concretas limpias (red de viajeros 2020 + app de logística de reciclaje) · **se quitó el POS de food-waste** por stealth/marca (food-waste es tema dropped del relato Zenet · cf. nota VE-09) · cierre declarativo nuevo (*"reconstruir desde ahí"* — eco rompieron→reescribí→reconstruir · en lugar de la pregunta abierta original) · gramática corregida. Se evaluaron 2 fotos: descartada la de luz neón morada (off-paleta · lee "gamer RGB") · elegida la de luz cálida ámbar.
 
 ```
-Durante años llamé "proyectos fallidos" a varias cosas que construí.
+Durante años quizá llamé "proyectos fallidos" a varias cosas que construí.
 
-Una app de reciclaje que no despegó. Un POS para restaurantes que la tecnología de
-2022 no podía sostener. Ideas que se rompieron, que reescribí desde cero, que dejé
-en el camino.
+Una red de viajeros que compartían en blogs experiencias peculiares de viajes alrededor
+del mundo, en 2020. Una app de logística de reciclaje que no despegó. Ideas que se
+rompieron, que reescribí desde cero, que quizás dejé en el camino.
 
-Tardé en verlo, pero estaba equivocado en cómo los nombraba.
+Quizá tardé años en verlo, pero estaba equivocado en cómo las nombraba.
 
 No eran fracasos. Eran experimentos.
 
-Los últimos años han sido, en realidad, mi propio laboratorio: construir algo, ver
-qué aguanta bajo condiciones reales, aprender, y usar ese aprendizaje en lo
-siguiente. Cada cosa que "no funcionó" me enseñó algo que la siguiente necesitaba.
-El timing. El contexto. Escuchar al usuario antes de construir.
+Los últimos años han sido, en realidad, mi propio laboratorio: construir algo, ver qué
+aguanta bajo condiciones reales, aprender, y usar ese aprendizaje en lo siguiente. Cada
+cosa que "no funcionó" me enseñó algo que la siguiente necesitaba. El timing. El
+contexto. Escuchar al usuario antes de construir.
 
 Lo curioso es que con la presión de hoy —tracción, números, IA que acelera todo— es
-fácil olvidar esto. Quieres que cada cosa funcione a la primera. Pero un laboratorio
-no funciona así. Funciona a base de experimentos que la mayoría de las veces no
-salen.
+fácil olvidar esto. Quieres que cada cosa funcione a la primera. Pero un laboratorio no
+funciona así. Funciona a base de experimentos que la mayoría de las veces no salen.
 
 Creo que ahí está la diferencia entre construir y solo ejecutar: construir es estar
-dispuesto a que el experimento falle, y quedarte con lo que enseñó.
-
-¿Cuál de tus "fracasos" terminó siendo el que más te enseñó?
+dispuesto a que el experimento falle, y quedarte con lo que enseñó para reconstruir
+desde ahí.
 ```
 
 ---
@@ -178,6 +177,192 @@ Back to it.
 
 ---
 
+### POST-06 · Founder journey · ES · 📤 publicado (2026-06-09)
+**Imagen:** carrusel de 2 fotos reales de Alemania — (1) el huerto desde la ventana, el inicio, 5 abr 2020 · (2) la cama elevada con lechugas, ya crecido · arco *semilla → cosecha*.
+**Origen:** semilla "jardín orgánico Alemania" · co-desarrollado con Alan en varios drafts · **stealth cuidado** (food-waste removido · cadena origen→trazabilidad→restaurantes evitada · origen/calidad de alimentos queda como valor personal, NO tesis de producto).
+
+```
+Encontré esta foto hace unos días. La tomé desde mi ventana el 5 de abril de 2020.
+
+Es el jardín de mi casa cuando vivía en Alemania, el día que apenas empezaba a armar
+el huerto orgánico. Todavía no sabía que esa experiencia iba a cambiar la forma en que
+veo las cosas hoy.
+
+Lo que inició como un hobby terminó siendo la semilla de varias de las ideas que me
+acompañan desde entonces. Las cosechas. La calidad de los alimentos y de dónde venían.
+El gusto de compartir y regalar lo que crecía entre los vecinos de la comunidad.
+
+Soy ingeniero. Pero esta foto me recuerda que algunas de las mejores cosas que he
+construido no empezaron en un archivo digital. Empezaron en algo simple que disfrutaba
+hacer, casi sin darme cuenta de a dónde me llevaría.
+
+A veces las mejores ideas vienen de las experiencias a las que menos atención les damos.
+```
+
+---
+
+### POST-07 · Technical · EN · 📤 publicado (2026-06-10)
+**Imagen:** diagrama de sistema (oscuro + azul técnico + 1 acento ámbar) — un set definido con 4 tokens azules dentro + 1 token escapado en ámbar fuera del límite. Generado con Nano Banana Pro (prompt #1 de `_templates/prompts-imagenes-ai.md`). Lee como *"un valor fuera del set permitido"* · conecta con la anécdota del enum y el cierre "validate at the boundary".
+**Origen:** bug real encontrado probando la app de producción (agentes devolviendo valores fuera del enum aceptado — `"fine dining"` cuando solo valía `"casual"`/`"gourmet"` · posible drift por actualización de modelo) · co-desarrollado con Alan en varios drafts · gancho **"parece fácil al principio"** + tesis **"prompt engineering es disciplina propia"** + teaser de cost management para el próximo técnico. Segundo post del pillar 3 (después de POST-02).
+
+```
+One of the biggest lessons I've learned this year: working with AI looks easy at first.
+
+Coming from the older generation of AI models, it feels almost trivial now — plain
+text in, an answer out. But that ease hides a real discipline. Prompt engineering is a
+craft of its own, and one missing instruction can break your whole system.
+
+I learned it the hard way. My tests passed — unit, E2E, manual, all green. But my
+agents started returning values that don't exist: a field that had to be "casual" or
+"gourmet" came back as "fine dining." It used to work. Same prompts, same tests. The
+model underneath had changed.
+
+A few things I'm taking from it:
+
+→ A prompt is not a contract. Code doesn't change unless you change it. A prompt can
+break when nothing in your repo moved — because the model moved.
+
+→ "It passed before" guarantees nothing. Tests freeze your code, not a model's
+reasoning. An update can quietly shift behavior every test was blind to.
+
+→ If a value must be one of five things, the system enforces that — not the prompt.
+Asking the model nicely isn't a guardrail. Validating at the boundary is.
+
+→ Prompts need regression testing too. Continuously, against every model version you
+run on.
+
+Prompt engineering isn't a side skill anymore — it's core product engineering. (Cost
+management is the other half; a topic for another post.)
+
+Models don't always respect your constraints. You have to build the system so they
+can't break them.
+
+#BuildingInPublic #AIEngineering #AgenticAI
+```
+
+---
+
+### POST-08 · Industria · ES · 📤 publicado (2026-06-16)
+**Imagen:** ✅ mapa de la operación de BoH — diagrama blueprint (carbón `#14161B` + nodos off-white `#ECEAE3` + íconos de línea), 6 nodos (Recetas · Inventarios · Compras/proveedores · Merma · Costos por platillo · Proyección) conectados por flechas · cada nodo con punto ámbar `#E2A33C` = "manual" + leyenda. Generado con Nano Banana Pro (4:5 · prompt en `_templates/prompts-imagenes-ai.md`) · watermark ✦ removido en Apple Fotos.
+**Origen:** desarrollado con Alan 2026-06-14/15 · Pillar 2 industria · **lista de actividades refinada y validada contra el VP** (value-map + customer-profile + scope Fase 1 + 8 dominios agency-as-SaaS): se quitó "recepción y distribución entre sucursales" (off-scope · supply chain, no BoH-first · cf. `03-competitive/07` §4.3) y se agregó "recetas y estandarización" (dolor core + diferenciador de entrada · `customer-profile` §5.3). Línea **"esquema corporativo global a pequeña escala"** (insight de Alan · ownable) · reframe del antagonista (*"no es que no existan procesos · viven en la cabeza"*) · cierre declarativo + convicción de builder **suave** (*"vale la pena resolver bien"* · se descartó el lenguaje de pitch *"gran oportunidad / transformar la industria"*) · **sin hashtags** (patrón ES `02-voz-y-estilo` §3).
+
+```
+Después de años analizando operaciones de cerca, hay algo que no deja de sorprenderme.
+
+El back of house de un restaurante opera, en el fondo, como un esquema corporativo
+global — pero a pequeña escala. La misma complejidad, sin la estructura que la sostiene.
+Y aun así, casi todo sigue funcionando de memoria.
+
+He trabajado con operaciones de varias industrias, y el de un restaurante es de los
+casos más retadores que he visto. En algún momento, cada restaurante tiene que diseñar
+sus procesos y transformarlos conforme crece, para depender menos de una sola persona.
+Cómo se cocina. Cómo se compra. Cómo se recibe. Cómo se mide. Cómo se pasa un turno al
+siguiente.
+
+No es que no existan procesos. El detalle es dónde viven y cómo se ejecutan: manuales,
+sin documentar, dependientes de que cierta persona esté presente.
+
+Y conforme el negocio crece, esos patrones se vuelven más difíciles de cambiar — y más
+caros, aunque casi nunca se vea cuánto. Estandarizar cuesta enormidades. Abrir otra
+sucursal significa empezar prácticamente de cero.
+
+Cuando mapeas una operación completa, la lista de lo que todavía se hace a mano es larga:
+
+→ Recetas y estandarización de procesos
+→ Inventarios y conteos
+→ Compras y pedidos a proveedores
+→ Control de merma
+→ Escandallos y costos por platillo
+→ Proyección de cuánto preparar cada día
+
+Cada una funciona. Pero cada una depende de alguien.
+
+Y ahí está lo que más me llama la atención: no es que la operación sea manual. Es lo
+bien que funciona a pesar de serlo — sostenida por la gente, no por el sistema.
+Y creo que ahí hay algo que vale la pena resolver bien.
+```
+
+---
+
+### POST-09 · Technical · EN · 📤 publicado (2026-06-18)
+**Imagen:** ✅ gráfica de la inversión del costo (Nano Banana Pro) — modo Pillar 3 (carbón `#14161B` + azul de plano `#3E5B7D` + 1 ámbar `#E2A33C`): dos líneas sobre ejes off-white — "Classic SaaS" (azul) bajando hacia cero vs "AI-native" (ámbar) subiendo con la escala · *costo por usuario vs escala*. Watermark ✦ removido. Diagrama técnico distinto del mapa de industria de POST-08 (azul = solo técnico).
+**Origen:** desarrollado con Alan 2026-06-17 · Pillar 3 técnico EN · **cierra el hilo de serie** prometido en POST-07/VE-10 (*"cost management is the other half"*) · apertura = reflexión personal (cómo cambió construir SaaS · pedida por Alan) · spine económico = **inversión del costo marginal** (SaaS clásico costo ~0 → AI-native costo real/variable/volátil · a escala puede encarecer en vez de abaratar) · 3 palancas (model routing · prompt caching · context discipline · se cortó *batching* por largo) · beat de **modelo de negocio** agregado a nivel industria (NO pricing de Zenet) · cierre = aforismo *"design problem + business-model one"* + línea *"old playbook"* (gesto amplio específico, NO el genérico "everything is changing"). **Stealth:** craft del costo de inferencia, NO economía/márgenes/ventaja MX (moat).
+
+```
+I've spent years building SaaS, and one of the assumptions I built everything on has
+started to break.
+
+For most of the SaaS era, the math was simple: build it once, and one more user costs
+almost nothing. Near-zero marginal cost is the whole reason software is such a good
+business — at scale, you get cheaper.
+
+AI-native software breaks that. Every interaction has a real, variable cost, and it's
+volatile in a way code never was: a heavy user can cost many times a light one, and a
+model update can move your costs overnight. So the thing that made SaaS great can quietly
+invert — at scale, you get more expensive per user, not cheaper. Unless you design
+against it.
+
+That's the part I underestimated. Cost stopped being a line item and became an
+architecture decision:
+
+→ Not every task needs the biggest model. Routing simple calls to a smaller one is often
+the single largest saving.
+
+→ Caching is money left on the table if you don't design for it. The same context and
+system prompts get sent on every call.
+
+→ Context is a cost, not just a capability. Loading the full history every turn feels
+safe, until you see the bill.
+
+But it goes beyond architecture. When serving one more user stops being almost free, the
+flat-rate model SaaS was built on starts to strain too. AI-native software won't just be
+built differently — the business around it has to be rethought.
+
+The honest framing: the per-token price is the smallest part of the story. I used to
+think cost was a finance problem. Now I think it's both a design problem and a
+business-model one.
+
+And this is just the cost side. The longer I build with AI, the more of the old playbook
+I find I have to rewrite.
+
+#BuildingInPublic #AIEngineering #AgenticAI
+```
+
+---
+
+### POST-10 · Founder journey · ES · 📤 publicado (2026-06-22)
+**Imagen:** ninguna — **text-only** (decisión deliberada · un origin story personal rinde mejor sin imagen). Se descartó: quote card (modo declaración/marketing · choca con el tono personal) · y un still-life ilustrado de Nano Banana (salió con **texto fake de IA en inglés** · el "tell" de IA va contra el north star "real, no performático").
+**Origen:** desarrollado con Alan 2026-06-21/22 · Pillar 1 journey · **origin story**: su primera agencia de software (2021) · primer cliente = un restaurante · así descubrió el problema del back of house. **Cierre reframeado de "oportunidad" → "pregunta/descubrimiento"** (la oportunidad queda implícita · evita el front-load comercial · mismo fix que POST-01/POST-08) · honestidad del *"no tenía bien segmentado el perfil de cliente"* · contraste founder-ingeniero (*"yo venía de un mundo de ingeniería"*) · reframe canónico (el sistema vive en la memoria, no que falte) · cierre con guiño building-in-public (*"casi todo lo que he construido este último año… nace de ella"*) · apretado ~30% del primer draft · sin hashtags (patrón ES).
+
+```
+Cuando armé mi primera agencia de software en 2021, no tenía idea de en qué me estaba
+metiendo. Ni siquiera tenía claro mi perfil de cliente. Mi primer cliente terminó siendo
+un restaurante.
+
+Llegué pensando que el trabajo era técnico — construir una herramienta, resolver un
+problema de software. Pasé semanas metido en su operación, y lo que más me sorprendió no
+fue lo que les faltaba. Fue todo lo que sostenían a mano.
+
+Inventarios en papel. Pedidos de memoria. Recetas que solo existían en la cabeza del
+cocinero. Y aun así, el lugar funcionaba.
+
+Ahí me di cuenta de algo que me siguió dando vueltas durante años: el problema nunca fue
+la tecnología. Era que toda la operación vivía en la memoria de la gente, y se rompía en
+el momento en que esa gente no estaba.
+
+Yo venía de un mundo de ingeniería, donde todo se estructura y se documenta. Ver una
+cocina funcionar al revés — a puro esfuerzo repetitivo, cada día — me dejó pensando.
+
+No salí de ahí con una solución. Salí con una pregunta que no he soltado desde entonces:
+¿cómo le das estructura y estandarización a algo que funciona, pero depende de una sola
+persona?
+
+Años después, sigo persiguiendo esa pregunta. Y casi todo lo que he construido este
+último año, de una forma u otra, nace de ella.
+```
+
+---
+
 ## Semillas de ideas (💡 sin escribir)
 
 Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `01-manual` §2.3 + research backbone.)
@@ -192,7 +377,7 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 | SAT 2026 / fiscalización digital → "data limpia = defensa" | 2 industria | ES | La palanca fiscal #1 |
 | WhatsApp como interfaz operacional (no solo soporte) | 2/4 | ES | El operador ya vive ahí |
 | Prompt caching / model routing → costo vs arquitectura | 3 técnico | EN | Decisión técnica con impacto real |
-| El jardín orgánico en Alemania → de dónde viene la comida | 1 journey | ES | Personal · humaniza *(NO front-load platform vision)* |
+| ✅ ~~El jardín orgánico en Alemania~~ → **usado en POST-06** (huerto · sin food-waste · stealth cuidado) | 1 journey | ES | Personal · humaniza |
 | "El chef adopta, el dueño paga, el contador autoriza" | 2 industria | ES | El comité de compra invisible |
 
 > Convertir una 💡 en ✏️: pedir *"escríbeme un post sobre [idea]"* — sale calibrado contra `02-voz-y-estilo`.
@@ -207,4 +392,4 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 
 ---
 
-*Última actualización: 2026-06-04. Vivo · se nutre conforme se genera contenido.*
+*Última actualización: 2026-06-22. Vivo · se nutre conforme se genera contenido.*

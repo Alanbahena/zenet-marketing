@@ -2,7 +2,7 @@
 name: Voz y estilo de Alan (guía operacional con ejemplos reales)
 description: La huella de estilo de Alan Bahena extraída de sus publicaciones reales de LinkedIn · es la base operacional que se carga para generar contenido en su voz · north star (humano · conexión · sin hype · que lo represente) + devices firma + esqueleto recurrente + registro ES vs EN + reglas de generación + corpus anotado de posts reales. Doc vivo · crece y se afina con cada post nuevo. Pairea con el manual §Tono y Voz (principios) y hereda el piso de voz de Branding.
 type: social-media
-last_updated: 2026-06-22
+last_updated: 2026-06-21
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > Este NO es un doc de principios abstractos — es la **huella real** de cómo escribe Alan, extraída de sus publicaciones. Es la base que se carga (manual o vía el futuro skill `/post-linkedin`) cuando se pide *"escríbeme un post sobre X"*, para que salga en su voz, no en una voz genérica.
 >
-> **Doc vivo.** v0.1 está construido sobre 14 posts reales (N=14). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
+> **Doc vivo.** v0.1 está construido sobre 13 posts reales (N=13). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
 
 **Relación con los otros docs de voz:**
 
@@ -378,29 +378,11 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 **Ilustra:** apertura = **reflexión personal honesta**, no claim (*"one of the assumptions I built everything on has started to break"* · registro reflexivo EN, como VE-10) · **spine económico = la inversión del costo marginal** (SaaS clásico ~0 → AI-native real/variable/volátil · es un *argumento*, no lecciones sueltas) · device **"no es X, es Y"** (*"Cost stopped being a line item and became an architecture decision"* · *"Context is a cost, not just a capability"*) · flechas → para las 3 palancas (model routing · caching · context discipline) · **"The honest framing:"** (device firma) · cierre = aforismo *"I used to think… Now I think…"* + línea **"old playbook"** (gesto amplio **específico**, NO el genérico "everything is changing with AI" · descartado a propósito) · **cierra el hilo de serie** prometido en VE-10/POST-07 (*"cost management is the other half"* · device de serie) · hashtags EN técnicos. **Nota de voz (load-bearing):** modelo de cómo subir de altitud (ingeniería → modelo de negocio) en un post técnico — el beat de negocio se queda a nivel **industria/categoría**, no personal. **Nota de stealth (load-bearing):** habla del **craft del costo de inferencia** (routing/caching/contexto), NO de la economía del negocio (pricing · márgenes · ventaja de costo MX = moat) — modelo de post de costo sin tocar moat. **Imagen:** gráfica de la inversión (Classic SaaS ↓ vs AI-native ↑ · azul de plano = solo técnico + 1 ámbar). **Nota de origen:** realización real construyendo · co-desarrollado con Alan en varios drafts · la apertura reflexiva (cómo cambió construir SaaS) + el beat de modelo de negocio + el cierre "old playbook" son de Alan. **Tercer técnico EN** (después de VE-06 y VE-10) · consolida el pillar. Publicado 2026-06-18.
 
-### VE-14 · ES · Pillar 1 (founder journey) · origin story / "mi primer cliente fue un restaurante"
-
-> Cuando armé mi primera agencia de software en 2021, no tenía idea de en qué me estaba metiendo. Ni siquiera tenía claro mi perfil de cliente. Mi primer cliente terminó siendo un restaurante.
->
-> Llegué pensando que el trabajo era técnico — construir una herramienta, resolver un problema de software. Pasé semanas metido en su operación, y lo que más me sorprendió no fue lo que les faltaba. Fue todo lo que sostenían a mano.
->
-> Inventarios en papel. Pedidos de memoria. Recetas que solo existían en la cabeza del cocinero. Y aun así, el lugar funcionaba.
->
-> Ahí me di cuenta de algo que me siguió dando vueltas durante años: el problema nunca fue la tecnología. Era que toda la operación vivía en la memoria de la gente, y se rompía en el momento en que esa gente no estaba.
->
-> Yo venía de un mundo de ingeniería, donde todo se estructura y se documenta. Ver una cocina funcionar al revés — a puro esfuerzo repetitivo, cada día — me dejó pensando.
->
-> No salí de ahí con una solución. Salí con una pregunta que no he soltado desde entonces: ¿cómo le das estructura y estandarización a algo que funciona, pero depende de una sola persona?
->
-> Años después, sigo persiguiendo esa pregunta. Y casi todo lo que he construido este último año, de una forma u otra, nace de ella.
-
-**Ilustra:** hook = **apertura personal honesta/vulnerable** (*"no tenía idea de en qué me estaba metiendo"* · *"ni siquiera tenía claro mi perfil de cliente"*) · device **"no es X, es Y"** doble (*"no fue lo que les faltaba. Fue todo lo que sostenían a mano"* · *"el problema nunca fue la tecnología. Era que…"*) · **específicos concretos** (2021 · inventarios en papel · pedidos de memoria · recetas en la cabeza) · **contraste founder-ingeniero** (*"yo venía de un mundo de ingeniería"* · como el *"Soy ingeniero. Pero…"* de VE-09) · **reframe canónico** (vive en la memoria, no que falte) · cierre = **pregunta** + guiño building-in-public (*"nace de ella"*). **Nota de voz (load-bearing):** modelo de **origin story con la oportunidad IMPLÍCITA** — el clímax se reframeó de *"vi una gran oportunidad"* → *"salí con una pregunta que no he soltado"* · cuenta el porqué del founder SIN front-loadear la visión comercial · cierra el patrón que se suavizó en POST-01 y POST-08. **Nota visual (load-bearing):** caso modelo de **cuándo NO poner imagen** — text-only como decisión deliberada para un journey personal · se descartó el quote card (modo marketing) y un still-life ilustrado de Nano Banana (salió con **texto fake de IA** · el "tell" de IA va contra el north star "real, no performático"). **Sin hashtags** (patrón ES). **Nota de origen:** historia real (primera agencia 2021 · primer cliente = restaurante · así descubrió el problema del BoH) · co-desarrollado con Alan en varios drafts · el "2021", la honestidad del perfil de cliente y el cierre "nace de ella" son de Alan. **Cuarto journey ES** (después de VE-01, VE-09, VE-11). Publicado 2026-06-22.
-
 ### Cobertura del corpus
 
 | Pillar | Posts | Gap |
 |---|---|---|
-| 1 Founder journey | VE-01 · VE-02 · VE-09 · VE-11 · VE-14 | OK (fuerte) |
+| 1 Founder journey | VE-01 · VE-02 · VE-09 · VE-11 | OK (fuerte) |
 | 2 Industry insight | VE-04 · VE-05 · VE-07 · VE-12 | OK (fuerte) |
 | 3 Técnico | VE-03 · VE-06 · VE-10 · VE-13 | OK (fuerte) |
 | 4 Operador vernacular | (parcial en VE-05 · VE-07) | falta puro |
@@ -413,7 +395,7 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 ### 6.1 Estado v0.1
 
-Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native) y 2026-06-22 con VE-14 (founder journey ES · origin story / "mi primer cliente fue un restaurante"). **N=14 · 8 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
+Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native). **N=13 · 7 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
 
 ### 6.2 Cómo crece este doc
 
@@ -443,4 +425,4 @@ Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 
 
 ---
 
-*Última actualización: 2026-06-22. Doc vivo · se afina con cada post.*
+*Última actualización: 2026-06-21. Doc vivo · se afina con cada post.*
