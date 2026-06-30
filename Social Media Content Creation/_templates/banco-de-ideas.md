@@ -2,7 +2,7 @@
 name: Banco de ideas y backlog de contenido
 description: El swipe file vivo del contenido de Alan · backlog de posts listos para publicar (el starter pack validado) + semillas de ideas para futuros posts. Cada post con pillar · idioma · estado · texto · brief de imagen. Se llena conforme se genera y se valida contenido.
 type: social-media
-last_updated: 2026-06-22
+last_updated: 2026-06-30
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -20,7 +20,7 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only).** Recámara restante: POST-03 · POST-04.
+5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only) · POST-11 publicado 2026-06-30 (industria ES · pregunta de engagement · "¿por qué cuesta tanto estandarizar?" · text-only).** Recámara restante: POST-03 · POST-04.
 
 ---
 
@@ -363,6 +363,24 @@ Años después, sigo persiguiendo esa pregunta. Y casi todo lo que he construido
 
 ---
 
+### POST-11 · Industria (pregunta de engagement) · ES · 📤 publicado (2026-06-30)
+**Imagen:** ninguna — text-only (post corto de engagement).
+**Origen:** desarrollado con Alan 2026-06-30 · **primer post corto de engagement** (formato nuevo · pregunta abierta a la comunidad para incitar interacción de calidad) · Pillar 2/4 industria/operador · pregunta = *"¿por qué cuesta tanto estandarizar y documentar los procesos de un restaurante?"* con 5 candidatos cebados (tiempo · dinero · todo en una cabeza · rotación de personal · algo más) · **problema, no solución** (se descartó una versión previa que describía el producto = pitch encubierto + stealth risk · cf. nota voz VE-14 oportunidad implícita) · postura de campo *"después de años observando las operaciones de cerca"* (autoridad para preguntar) · cierre abierto · sin hashtags (patrón ES) · **se prefirió texto sobre poll** (conversaciones de calidad > volumen de taps · north star "conversaciones, no seguidores").
+
+```
+Pregunta honesta para la industria restaurantera:
+
+¿Por qué cuesta tanto estandarizar y documentar los procesos de un restaurante?
+
+¿Es el tiempo? ¿El dinero? ¿Que todo vive en la cabeza de quien lo hace? ¿La rotación de
+personal? ¿Algo más?
+
+Después de años observando las operaciones de cerca, me interesa de verdad cómo lo ven
+desde adentro.
+```
+
+---
+
 ## Semillas de ideas (💡 sin escribir)
 
 Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `01-manual` §2.3 + research backbone.)
@@ -392,4 +410,4 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 
 ---
 
-*Última actualización: 2026-06-22. Vivo · se nutre conforme se genera contenido.*
+*Última actualización: 2026-06-30. Vivo · se nutre conforme se genera contenido.*
