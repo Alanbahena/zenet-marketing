@@ -2,9 +2,9 @@
 name: Marco de identidad visual
 description: Doctrina + índice de la identidad visual de marca Zenet (capa marketing) · cómo usar el folder (humano + agente IA) · el modelo de 3 capas (producto/marketing/Alan personal) · principios visuales derivados de personalidad/voz/promesa · base provisional de marca (color · futurista · motivo · imagen) con estado · relación con el brandbook (qué se conserva, qué se actualiza) · mapa de la sección + estado · decisiones abiertas con triggers (confirmar con landing). Token-first y agent-readable. Se afina al diseñar la landing.
 type: visual-identity
-last_updated: 2026-06-04
+last_updated: 2026-07-01
 status: active
-version: 0.1
+version: 1.0
 owner: Alan Bahena
 ---
 
@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > La **doctrina + el índice** de la identidad visual de marca de Zenet (capa marketing). Cualquiera —humano o agente IA— que vaya a diseñar la landing, un post de Zenet o un deck, **carga este doc primero**: aquí está el mapa, los principios, la base provisional y el estado de cada elemento.
 >
-> **v0.1 base.** Construida sobre el *Zenet Brandbook* (Cloudgaze · Carlo Gutierrez · 2025) **re-anclado a la marca de hoy** + las bases provisionales (2026-06-04). Se afina al diseñar la landing.
+> **v1.0.** Construida sobre el *Zenet Brandbook* (Cloudgaze · Carlo Gutierrez · 2025) **re-anclado a la marca de hoy** + **confirmada al diseñar la landing** (2026-06/07 · cf. `SEO and Content/01-landing-page/02-prototipo-y-diseno`). Color, tipografía y glass ya están cerrados; logo (usos), ilustración BoH full y modo oscuro siguen abiertos.
 
 ---
 
@@ -63,14 +63,15 @@ Derivados de personalidad (`personalidad-y-arquetipo.md` · Sabio + Cuidador), v
 
 ## 4. Base provisional de marca (las decisiones)
 
-> Fijadas 2026-06-04 como **base de arranque** · 🟡 se confirman/afinan al diseñar la landing (la emoción del color se juzga mejor en la página real).
+> Fijadas 2026-06-04 como base · **✅ confirmadas/afinadas al diseñar la landing (2026-06/07)** — cf. `SEO and Content/01-landing-page/02-prototipo-y-diseno`.
 
-| Decisión | 🟡 Base provisional | Confirmar con landing |
-|---|---|---|
-| **Color** | Base **off-white + grises/teal sobrios** · naranja `#FF653B` (existente) como **acento cálido CONTENIDO** · teal secundario | matiz exacto del naranja (¿más terroso/terracota?) · ¿segundo acento? · la emoción real |
-| **Futurista** | **Warm-minimal** · glassmorphism **cálido** + off-white + blur suave · limpio pero humano · NO cold-tech-neón | cuánto glass/blur vs. flat por sección |
-| **Motivo** | Óvalos apilados reinterpretados: ~~inventario in/out~~ → **"sistema en capas · orden en una red"** · punteado/glass como variaciones | framing narrativo exacto |
-| **Imagen** | **DROP food-waste / sostenibilidad** (off-strategy) · mantener **BoH ilustrado + operador real** | estilo exacto de ilustración BoH |
+| Decisión | ✅ Confirmado en la landing |
+|---|---|
+| **Color** | Base **off-white** + charcoal/teal sobrios · acento **terracota `#CC5536`** contenido (hover `#B84A2F`) — **NO** `#FF653B` (saturado + no AA) · teal/mint secundarios sutiles. Cf. `02-color`. |
+| **Futurista** | **Warm-minimal confirmado** · glass cálido **reservado a momentos clave** (hero · CTA); el resto flat sobrio · NO cold-tech-neón. |
+| **Tipografía** | **Onest** (display) + **Hanken Grotesk** (body) vía Google Fonts · **Geon descartado** (sin licencia web). Cf. `03-tipografia`. |
+| **Motivo** | Realizado como **red cálida** en el hero (núcleo terracota + 6 nodos glass = "equipo coordinado · sistema en red") · figuras Braun line-art en las cards. |
+| **Imagen** | food-waste fuera (confirmado) · **foto real del fundador** + **screenshot real de la app** + figuras Braun ilustradas. |
 
 **Frame general:** identidad **práctica · limpia · ordenada · sobria-pero-cálida** · anclada en el brandbook, re-narrada a la marca de hoy.
 
@@ -98,10 +99,10 @@ Fuente: `Branding/Zenet Brandbook.pdf` (Cloudgaze · 2025). Buen craft, pero con
 03-visual-identity/
 ├── 00-marco-de-identidad-visual.md      ✅ este doc (doctrina + índice)
 ├── 01-logo-y-marca.md                   🟡 isotipo + wordmark capturados · usos/clear-space 🚧
-├── 02-color.md                          🟡 paleta brandbook capturada (tokens) · acento/emoción por confirmar
-├── 03-tipografia.md                     🟡 Geon + Roboto · escala 🚧
-├── 04-iconografia-e-imagen.md           🟡 motivo + glass + BoH · drop food-waste · íconos 🚧
-└── 05-aplicacion-por-superficie.md      🚧 crece al diseñar la landing
+├── 02-color.md                          ✅ acento terracota #CC5536 confirmado (landing) · modo oscuro 🚧
+├── 03-tipografia.md                     ✅ Onest + Hanken confirmadas (landing · Geon descartado)
+├── 04-iconografia-e-imagen.md           🟡 motivo (red cálida en hero) + figuras Braun + glass · íconos 🚧
+└── 05-aplicacion-por-superficie.md      🟡 landing ✅ documentada · otras superficies 🚧
 ```
 
 Y separado: **`Branding/05-design-system`** = identidad visual de **producto** (capa 1 · portear de production repo) · 🚧 pending.
@@ -110,15 +111,16 @@ Y separado: **`Branding/05-design-system`** = identidad visual de **producto** (
 
 ## 7. Decisiones abiertas con triggers
 
-| # | Decisión abierta | Trigger de cierre |
+| # | Decisión | Estado |
 |---|---|---|
-| 1 | Matiz exacto del acento (naranja contenido vs. terracota vs. ámbar) + ¿segundo acento? | Diseño de la landing · testear emoción en página real |
-| 2 | Cuánto glass/blur vs. flat por sección | Diseño de la landing |
-| 3 | Escala tipográfica + pesos (Geon/Roboto) | Diseño de la landing |
-| 4 | Clear space · usos · don'ts del logo · el ajuste del logo que Alan mencionó | Cuando se trabaje `01-logo` a fondo |
-| 5 | Estilo exacto de ilustración BoH (punteado) | Diseño de la landing / primeros visuales |
-| 6 | Portear el design system de producto (capa 1) | Cuando se active `Branding/05-design-system` |
-| 7 | Accesibilidad/contraste de la paleta | Diseño de la landing |
+| 1 | Matiz del acento + ¿segundo acento? | ✅ **terracota `#CC5536`**, único acento (landing) |
+| 2 | Cuánto glass/blur vs. flat por sección | ✅ glass en momentos clave (hero/CTA) · resto flat |
+| 3 | Escala/pesos + familias tipográficas | ✅ Onest + Hanken · `clamp()` fluido (landing) |
+| 4 | Clear space · usos · don'ts del logo · el ajuste que Alan mencionó | 🚧 abierto (trabajar `01-logo` a fondo) |
+| 5 | Estilo exacto de ilustración BoH | 🟡 figuras Braun line-art + screenshot real usados · ilustración full aún abierta |
+| 6 | Portear el design system de producto (capa 1) | 🚧 abierto (`Branding/05-design-system`) |
+| 7 | Accesibilidad/contraste de la paleta | ✅ AA corregido (teal-700 para secundarios) |
+| 8 | Modo oscuro de marketing | 🚧 abierto (la landing es modo claro) |
 
 ---
 
@@ -136,4 +138,4 @@ Y separado: **`Branding/05-design-system`** = identidad visual de **producto** (
 
 ---
 
-*Última actualización: 2026-06-04. v0.1 base · se afina al diseñar la landing.*
+*Última actualización: 2026-07-01. v1.0 · confirmada con la landing (color terracota · Onest+Hanken · glass cálido · eyebrows). Opens: logo usos · ilustración BoH full · modo oscuro · design system de producto.*

@@ -20,8 +20,9 @@ owner: Alan Bahena
 
 ## Imagotipo — ✅ existe
 
-- Isotipo + **"zenet"** en versión personalizada de **Geon** (sans serif limpia y amigable · ver `03-tipografia`).
+- Isotipo + **"zenet"** en versión personalizada de **Geon** (el wordmark conserva el lettering original de Geon como asset · el texto en vivo de la marca usa Onest+Hanken · ver `03-tipografia`).
 - "zenet" siempre en minúsculas (cf. brand quick reference · Z mayúscula solo cuando el nombre va como texto, no en el wordmark).
+- **✅ En uso (landing 2026-07-01):** imagotipo charcoal como `assets/zenet-imagotipo.png` (24px en nav · 26px en footer) · imagotipo blanco compositado en el screenshot de la app. Cf. `SEO and Content/01-landing-page/02-prototipo-y-diseno` §9.
 
 ## Variantes de color — 🟡 base
 

@@ -2,9 +2,9 @@
 name: Color
 description: Sistema de color de marca Zenet (capa marketing) · tokens explícitos (hex) capturados del Zenet Brandbook 2025 · roles base provisionales (off-white dominante + grises/teal sobrios + naranja contenido como acento + teal secundario) · disciplina acento-no-flood · decisiones abiertas (matiz del acento · emoción · contraste) a confirmar con la landing. Token-first / agent-readable.
 type: visual-identity
-last_updated: 2026-06-04
+last_updated: 2026-07-01
 status: active
-version: 0.1
+version: 1.0
 owner: Alan Bahena
 ---
 
@@ -33,7 +33,9 @@ owner: Alan Bahena
 ### Acento + secundarios
 | Token | Hex | Rol propuesto · estado |
 |---|---|---|
-| **orange-accent** | `#FF653B` | **acento cálido CONTENIDO** (CTA · highlights · 1 elemento) · 🟡 matiz/emoción por confirmar |
+| **accent (terracota)** | `#CC5536` | ✅ **acento cálido CONTENIDO** (CTA · subrayado · números · eyebrows · núcleo del motivo) · **confirmado en la landing** |
+| accent-hover | `#B84A2F` | hover del acento (botones) |
+| ~~orange-accent~~ | ~~`#FF653B`~~ | ⛔ **descartado** — muy saturado + no pasa AA (era el naranja del brandbook) |
 | maroon | `#753941` | acento oscuro alterno · usar con cuidado |
 | mint-200 | `#BFE2D9` | secundario fresco · superficies suaves |
 | teal-400 | `#88BCAF` | secundario · acento frío sutil |
@@ -44,21 +46,21 @@ owner: Alan Bahena
 |---|---|
 | Fondo dominante | `#FFFCFA` / `#F9F4EF` |
 | Texto | `#2B3738` (principal) · `#4B5E5E` (secundario) |
-| Acento cálido | `#FF653B` **contenido** |
+| Acento cálido | `#CC5536` **contenido** (terracota) · hover `#B84A2F` |
 | Secundario | teal `#88BCAF` / mint `#BFE2D9` |
 
 ## Disciplina
 
-- **Acento contenido, NO flood** — el naranja resalta (CTA · 1 highlight), no inunda la superficie. Eso es lo que mantiene el "sobrio · calmado" (cf. `00-marco` §3 principio 1).
+- **Acento contenido, NO flood** — el terracota resalta (CTA · subrayado · números · eyebrows · núcleo del motivo), no inunda la superficie. Eso es lo que mantiene el "sobrio · calmado" (cf. `00-marco` §3 principio 1).
 - Base mayormente off-white + sobrio · calidez vía acento + glass cálido.
 
-## 🚧 / Decisiones abiertas (confirmar con landing)
+## Decisiones — ✅ confirmadas con la landing (2026-07-01)
 
-- **Matiz exacto del acento** — ¿`#FF653B` tal cual · más terroso/terracota · o ámbar? Depende de la **emoción** en la página real.
-- **¿Segundo acento?** (¿el teal sube de rol?).
-- **Contraste / accesibilidad** (WCAG) — validar combinaciones texto/fondo.
-- **Modo claro vs oscuro** para superficies de marketing.
+- ✅ **Matiz del acento** — **terracota `#CC5536`** (NO `#FF653B`). Cálido, sobrio, humano. Cf. `SEO and Content/01-landing-page/02-prototipo-y-diseno` §2.
+- ✅ **Contraste / AA** — texto secundario en `teal-700` (no `grey-300`, que fallaba ~2:1) · `grey-300` solo decorativo · blanco sobre terracota en botones = OK.
+- ✅ **Segundo acento** — NO se sube el teal a acento; teal/mint quedan secundarios sutiles. **Terracota es el único acento.**
+- 🚧 **Modo oscuro** para superficies de marketing — aún abierto (la landing es modo claro).
 
 ---
 
-*Última actualización: 2026-06-04. v0.1 · tokens del brandbook · acento/emoción por confirmar con la landing.*
+*Última actualización: 2026-07-01. v1.0 · acento confirmado terracota #CC5536 en la landing (descartado #FF653B).*

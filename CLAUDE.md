@@ -33,6 +33,24 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 
 ## 2. Most Recent Work
 
+**As of 2026-07-01:**
+
+- **Landing page ✓ DISEÑADA Y CONSTRUIDA (Claude Design · 8/8 secciones + formulario Hablemos)** 2026-07-01 — el workstream `SEO and Content/01-landing-page/` pasó de copy a **producto visual terminado**. Construida en **Claude Design** (MCP · reemplazó a Claude Artifacts) como `.dc.html` self-contained. Funcionalmente completa, conectada, animada — pendiente solo publicar.
+  - `Landing.dc.html` — 8 secciones + footer · foto real del fundador · screenshot real de la app · contraste AA corregido.
+  - `Hablemos.dc.html` — formulario on-brand (chips · todos los campos obligatorios) conectado a **Formspree** (`f/xrewyvab`) vía AJAX · los 3 botones "Hablemos" enlazan aquí.
+  - **Movimiento (cross-browser + `prefers-reduced-motion`):** hero rico · hover en cards §2/§3/§4/§7 (450ms) · §5 línea que se extiende · §6 foto zoom · §8 glow que sigue el cursor.
+  - **Eyebrows** de sección (versalitas terracota · patrón tipo Handle · voz Zenet) en §2–§7.
+  - **Limpieza:** borrados 11 archivos de exploración en Claude Design (quedan Landing + Hablemos + Hero/Grid-foundation referencia) · NO hay design system formal en Claude Design (tokens embebidos en `:root`).
+- **Design system de la landing DOCUMENTADO (spec en markdown) 2026-07-01:**
+  - ✅ `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md` **v1.0** — spec completo (herramienta + workflow · design tokens `:root` · Onest+Hanken · grid 12-col 1280 · componentes/eyebrows · movimiento · 8 secciones · assets · portabilidad Next.js). El spec markdown = fuente de verdad; el `.dc.html` = artefacto vivo.
+  - ✅ **Retroalimentado `Branding/03-visual-identity`:** `02-color` v1.0 · `03-tipografia` v1.0 · `00-marco` v1.0 · `05-aplicacion` v0.2 · `04-iconografia` v0.2 · `01-logo`.
+- **Strategic decisions identidad visual 2026-07-01 (confirmadas por la landing):**
+  - **Acento = terracota `#CC5536`** (hover `#B84A2F`) · se **descarta `#FF653B`** (saturado + no AA) · acento contenido.
+  - **Tipografía = Onest (display) + Hanken Grotesk (body)** · **Geon descartado** (sin licencia webfont).
+  - **Glass cálido reservado a momentos clave** (hero · CTA) · resto flat sobrio · motivo = red cálida en el hero.
+  - **Deploy en pausa** (decisión de Alan) · caminos: estático Netlify/Vercel o Next.js · Formspree se activa con el 1er envío post-deploy.
+- **Siguiente recomendado:** publicar la landing (estático o Next.js · probar el form en vivo) · revisión integral desktop+móvil · O activar otro departamento Execution (Analytics · Email/CRM).
+
 **As of 2026-06-05:**
 
 - **Departamento `SEO and Content/` 🚧 ACTIVADO v0.1 — landing page workstream (3 docs · copy completo 8/8)** 2026-06-05 — **SEGUNDO departamento de la capa Execution activado** (después de Social Media). Primer workstream: la **landing page** como *página de confianza para reclutar los primeros design partners* (pre-PMF · targeted · sin pricing · nombra Zenet · NO conversión masiva).
@@ -263,7 +281,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **— FOUNDATION LAYER —** | | |
 | **Branding / 01-brand-strategy** | ✓ Complete · revalidado 2026-06-03 | Mission/vision/values (v1.1), positioning (v1.5), brand promise (v1.1), archetype (v1.2) · revalidados contra Product Strategy (antagonista reframe · agency-as-SaaS · modelo comercial 4 tiers · fase gratuita deprecada) |
 | **Branding / 02-brand-story** | ✓ Active · narrativa v1.1 | Strategic narrative v1.1 (antagonista reframeado: "sistema atrapado en una cabeza") · origin story pending revalidación del fundador |
-| **Branding / 03-visual-identity** | 🟡 Base v0.1 2026-06-04 | 6 docs (doctrina + 5 scaffolds) · agent-readable + token-first · brandbook (Cloudgaze 2025) re-anclado · paleta tokenizada · motivo reinterpretado a sistema/orden · food-waste dropped · 3 decisiones base provisional (confirmar con landing) · modelo 3 capas (producto/marketing/Alan) |
+| **Branding / 03-visual-identity** | ✓ Confirmado v1.0 (color+tipo) 2026-07-01 | Retroalimentado por la landing. `00-marco` v1.0 · `02-color` v1.0 (acento **terracota #CC5536** · descartado #FF653B saturado+no-AA) · `03-tipografia` v1.0 (**Onest+Hanken** · Geon descartado sin licencia web) · `04-iconografia` v0.2 (motivo=red cálida · glass reservado) · `05-aplicacion` v0.2 (landing documentada) · `01-logo` v0.1. Opens: logo usos · ilustración BoH full · modo oscuro · design system de producto |
 | **Branding / 04-voice-and-tone** | ✓ Complete · revalidado 2026-06-03 | Voice principles (v1.1), vocabulary (v1.4), writing rules (v1.1) · revalidados (fase gratuita deprecada · 4 tiers · agency framing · convención MXN/USD) |
 | **Branding / 05-design-system** | Pending | To be ported from production repo |
 | **Branding / 06-application-examples** | Pending | Needs real published outputs to point at |
@@ -284,7 +302,7 @@ If you're an AI agent reading this for the first time, jump to section 12 ("How 
 | **— EXECUTION LAYER —** | | |
 | **Analytics and Reporting** | Pending | |
 | **Email and CRM** | Pending | |
-| **SEO and Content** | 🚧 **Active v0.1** 2026-06-05 | **SEGUNDO Execution dept activado.** Primer workstream: **landing page** (`_context/01-landing-page/`) = página de confianza para reclutar design partners · 3 docs: `00-estrategia-y-estructura` v0.1 (4 decisiones + narrativa + arquitectura 8 secciones) + `01-copy` v0.1 (**copy completo lockeado 8/8** · agency-as-SaaS · reframe antagonista · voz Alan §6 + voz Zenet §7-8 · honesto pre-PMF) + `02-prototipo-y-diseno` v0.1-scaffold (diseño pendiente · Claude Artifacts). Targeted · nombra Zenet · conversación-led |
+| **SEO and Content** | 🚧 **Active v1.0 landing** 2026-07-01 | **SEGUNDO Execution dept.** Landing page **diseñada y construida** (Claude Design · 8/8 + formulario `Hablemos` a Formspree · animaciones/hover + eyebrows). 3 docs: `00-estrategia-y-estructura` v0.1 + `01-copy` v0.1 (copy 8/8 + eyebrows) + **`02-prototipo-y-diseno` v1.0** (spec de diseño: tokens · grid 12-col 1280 · componentes · movimiento). Pendiente solo publicar (Netlify/Vercel o Next.js) |
 | **Social Media Content Creation** | ✓ **Built v0.1** 2026-06-03 | **PRIMER Execution dept activado.** Ejecución táctica de digital distribution strategy · voz del fundador productizada para LinkedIn · 13 docs (_context 6 + _templates 4 + _sop 2 + README) · **voz VALIDADA en vivo** · paleta visual validada · perfil instalado · starter pack 5 posts · POST-02 publicado · stealth-first · LinkedIn ONLY · founder-led |
 | **— SHARED —** | | |
 | **Root `_context/`** | Empty | For shared cross-department context (TBD) |
@@ -313,6 +331,13 @@ Canonical decisions that any agent or contributor should preserve. Each links to
 - **Voz operativa:** 9 principios invariables (lenguaje del operador, sin tech, sin hype, voz activa, una idea por oración, concreto sobre abstracto, el porqué no solo el qué, honestidad sobre marketing, "si no se entiende, fallamos"). → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
 - **Idioma:** español neutro latinoamericano con anclaje mexicano. **"Tú"** por defecto. "Usted" reservado para legal y prensa. → `Branding/_context/04-voice-and-tone/voz-y-tono.md`
 - **Nombre:** **Zenet** (Z mayúscula, resto minúsculas). El producto ES la agencia de agentes especialistas — no se nombran "los agentes IA" como entidades separadas. Son la inteligencia interna del sistema. Zenet detecta. Zenet sugiere. Zenet acompaña — como equipo cognitivo coordinado, sous chef especializado en cada dominio del back-of-house. → CLAUDE.md sección 8 + `Branding/_context/01-brand-strategy/posicionamiento.md` §2 (v1.1, agency-as-SaaS framing aplicado 2026-05-18)
+
+### Identidad visual (marca/marketing)
+
+- **Acento de marca = terracota `#CC5536`** (hover `#B84A2F`), confirmado por la landing. Se **descarta el naranja `#FF653B`** del brandbook (muy saturado + no pasa AA). Acento **contenido** (botones · subrayado · números · eyebrows · núcleo del motivo). → `Branding/_context/03-visual-identity/02-color.md`
+- **Tipografía de marca = Onest (display) + Hanken Grotesk (body)** vía Google Fonts. Se **descarta Geon** (sin licencia webfont · el wordmark conserva el lettering como asset). → `Branding/_context/03-visual-identity/03-tipografia.md`
+- **Glass cálido reservado a momentos clave** (hero · CTA); resto flat sobrio. Motivo realizado como **red cálida** (equipo coordinado · sistema en red). → `Branding/_context/03-visual-identity/04-iconografia-e-imagen.md`
+- **Landing = fuente de verdad del diseño** en spec markdown (`02-prototipo-y-diseno.md` v1.0); el `.dc.html` en Claude Design es el artefacto vivo. → `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md`
 
 ### Scope and ICP
 
@@ -409,7 +434,7 @@ claude_code/                                # Root of this workspace
 │   │   ├── 02-brand-story/                 ✓ v1.0
 │   │   │   ├── origin-story.md
 │   │   │   └── narrativa.md
-│   │   ├── 03-visual-identity/             pending
+│   │   ├── 03-visual-identity/             ✓ v1.0 (color+tipo) — 6 docs
 │   │   ├── 04-voice-and-tone/              ✓ v1.0
 │   │   │   ├── voz-y-tono.md
 │   │   │   ├── vocabulario.md
@@ -917,19 +942,19 @@ This CLAUDE.md is the orientation doc you maintain. Update it when section 3 sta
 | Pillars y sistema editorial (6 pillars operacionalizados · idioma por pillar · estructura de post · calendario 4 core/sem 3 ES+1 EN · se calibra con métricas del pilot) | ✓ active v0.1 | `Social Media Content Creation/_context/04-pillars-y-sistema-editorial.md` |
 | Sistema visual + generación AI (paleta validada carbón+off-white+ámbar firma+azul técnico · modo dual · guía Nano Banana Pro · headshot gris cálido + banner) | ✓ active v0.1 | `Social Media Content Creation/_context/05-sistema-visual-y-generacion-ai.md` |
 | Templates + SOPs Social Media (banco-de-ideas 5 posts starter pack + 10 semillas · prompts AI validados · plantillas por pillar · hooks · producción · engagement + ritmo métricas) | ✓ active v0.1 | `Social Media Content Creation/_templates/` + `_sop/` |
-| Marco de identidad visual (doctrina + índice · cómo usar humano/IA · modelo 3 capas producto/marketing/Alan · 5 principios visuales · base provisional · relación con brandbook · decisiones abiertas con triggers · token-first/agent-readable) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/00-marco-de-identidad-visual.md` |
+| Marco de identidad visual (doctrina + índice · cómo usar humano/IA · modelo 3 capas producto/marketing/Alan · 5 principios visuales · base confirmada con la landing · relación con brandbook · decisiones cerradas + opens con triggers · token-first/agent-readable) | ✓ active v1.0 | `Branding/_context/03-visual-identity/00-marco-de-identidad-visual.md` |
 | Logo y marca (isotipo rocas zen/Z/eslabones · wordmark Geon · motivo reinterpretado a sistema/orden · variantes · usos/clear-space scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/01-logo-y-marca.md` |
-| Color de marca (tokens hex del brandbook · off-white dominante + naranja #FF653B contenido + teal · disciplina acento-no-flood · emoción/matiz por confirmar con landing) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/02-color.md` |
-| Tipografía de marca (Geon primaria + Roboto secundaria · escala/fallback web scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/03-tipografia.md` |
-| Iconografía e imagen (motivo apilado sistema/orden + variaciones punteado/glass cálido · BoH ilustrado + operador · food-waste removido · íconos scaffold) | 🟡 base v0.1 | `Branding/_context/03-visual-identity/04-iconografia-e-imagen.md` |
-| Aplicación visual por superficie (landing · social Zenet post-reveal · decks · email · crece con la landing) | 🚧 scaffold v0.1 | `Branding/_context/03-visual-identity/05-aplicacion-por-superficie.md` |
-| Visual identity (logo, colors, typography) — overview | 🟡 base v0.1 | `Branding/_context/03-visual-identity/` |
+| Color de marca (tokens hex · off-white dominante + acento **terracota #CC5536** contenido + hover #B84A2F + teal/mint secundarios · **descartado #FF653B** saturado+no-AA · disciplina acento-no-flood · AA fix · confirmado con la landing · modo oscuro 🚧) | ✓ active v1.0 | `Branding/_context/03-visual-identity/02-color.md` |
+| Tipografía de marca (**Onest** display + **Hanken Grotesk** body vía Google Fonts · **Geon descartado** sin licencia web · clamp() fluido · confirmado con la landing) | ✓ active v1.0 | `Branding/_context/03-visual-identity/03-tipografia.md` |
+| Iconografía e imagen (motivo realizado como **red cálida** en el hero + figuras Braun line-art en cards · glass cálido **reservado a momentos clave** · BoH ilustrado + operador · food-waste removido · íconos scaffold) | ✓ active v0.2 | `Branding/_context/03-visual-identity/04-iconografia-e-imagen.md` |
+| Aplicación visual por superficie (landing ✅ **documentada** con pointer al spec · social Zenet post-reveal · decks · email · otras superficies 🚧) | ✓ active v0.2 | `Branding/_context/03-visual-identity/05-aplicacion-por-superficie.md` |
+| Visual identity (logo, colors, typography) — overview | ✓ v1.0 (color+tipo) | `Branding/_context/03-visual-identity/` |
 | Design system snapshot | pending | `Branding/_context/05-design-system/` |
 | Application examples (real published outputs) | pending | `Branding/_context/06-application-examples/` |
 | Brand guidelines (precedent codified) | pending | `Branding/_context/07-guidelines/` |
 | Landing page · estrategia y estructura (página de confianza para design partners · 4 decisiones design-partner-trust/targeted/conversación-led/nombra-Zenet · audiencia · narrativa 8 pasos · arquitectura de 8 secciones con brief+input · CTA conversación-led · decisiones abiertas) | ✓ active v0.1 | `SEO and Content/_context/01-landing-page/00-estrategia-y-estructura.md` |
 | Landing page · copy por sección (copy completo lockeado 8/8 en voz de marca · ① Hero agency-as-SaaS · ② problema reframe antagonista · ③ qué es Zenet equipo de especialistas + Manual Operativo + 2 estructuras A/B · ④ qué cambia cualitativa · ⑤ por qué ahora posibilidad+industria · ⑥ por qué Alan 1ª persona · ⑦ invitación Socio Fundador voz Zenet · ⑧ cierre/CTA) | ✓ active v0.1 | `SEO and Content/_context/01-landing-page/01-copy.md` |
-| Landing page · prototipo y diseño (fase de diseño · Claude Artifacts · aplica 03-visual-identity · cierra decisiones abiertas: estructura A/B §3 · mecanismo CTA · matiz acento/glass/tipografía) | 🚧 scaffold v0.1 | `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md` |
+| Landing page · prototipo y diseño (spec de diseño · herramienta Claude Design + workflow de edición · design tokens :root · Onest+Hanken · grid 12-col 1280 · componentes/patrones incl. eyebrows · movimiento/hover · 8 secciones · assets · portabilidad Next.js · decisiones visuales confirmadas) | ✓ active v1.0 | `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md` |
 | Production software context | external | Production repo: `/02_Producto-y-Tech/Production-software/Zenet/CLAUDE.md` |
 | Business context / market validation | external | Production repo: `docs/project-strategy/business-context/zenet-business-context-production.md` |
 

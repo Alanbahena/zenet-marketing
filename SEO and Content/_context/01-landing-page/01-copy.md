@@ -16,6 +16,21 @@ owner: Alan Bahena
 
 ---
 
+## Eyebrows / etiquetas de sección — ✅ aprobado (2026-07-01)
+
+Etiqueta pequeña en versalitas terracota sobre cada título (patrón tipo Handle · voz Zenet · **nombra el beat de la narrativa, no repite el título**). Añadida a §2–§7 · el Hero no lleva (es el hero) · el cierre usa su pill "Socios Fundadores". Terracota deliberado: rima con los números 01–04 de las cards. Aprobado en vivo por el fundador.
+
+| Sección | Eyebrow |
+|---|---|
+| §2 El problema | La realidad de hoy |
+| §3 Qué es Zenet | El sistema |
+| §4 Qué cambia | El cambio |
+| §5 Por qué ahora | El momento |
+| §6 Por qué Alan | El fundador |
+| §7 La invitación | La invitación |
+
+---
+
 ## 1. Hero — ✅ aprobado (2026-06-04)
 
 **Headline:**
@@ -168,9 +183,9 @@ owner: Alan Bahena
 >
 > Pasé años trabajando en sistemas complejos, en distintos países: sistemas físicos, infraestructura de datos, inteligencia operativa. Diseñándolos y construyéndolos. De todo eso me quedó una sola lección: los sistemas son sistemas — y la estructura es lo que permite escalar.
 >
-> Cuando empecé a mirar de cerca la operación de un restaurante, reconocí el patrón. El mismo caos que aparece en las grandes industrias, a menor escala. Y la misma forma de ordenarse que usan las empresas tecnológicas globales — que se puede replicar en un restaurante, con procesos especializados.
+> Cuando empecé a trabajar de cerca en la operación de un restaurante, reconocí el patrón. El mismo caos que aparece en las grandes industrias, a menor escala. Y la misma forma de ordenarse que usan las empresas tecnológicas globales — que se puede replicar en un restaurante, con procesos especializados.
 >
-> Por eso no construyo Zenet desde una oficina. Pasé los últimos años dentro de la industria: hablando con dueños, chefs y operadores, viendo los problemas reales y resolviéndolos desde la raíz. De ahí nace Zenet — no una herramienta más, sino un sistema que pone al alcance de cualquier restaurante lo que antes parecía reservado para las grandes cadenas.
+> De esos años dentro de la industria — hablando con dueños, chefs y operadores, viendo los problemas reales y resolviéndolos desde la raíz — nace Zenet: no una herramienta más, sino un sistema que pone al alcance de cualquier restaurante lo que antes parecía reservado para las grandes cadenas.
 
 **Visual:** foto de Alan (headshot · sobrio, humano · cf. `Social Media/05-sistema-visual` para el tratamiento) — aquí *ver* a la persona construye confianza.
 

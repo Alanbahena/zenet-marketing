@@ -2,9 +2,9 @@
 name: Aplicación por superficie
 description: Cómo se aplica la identidad visual de marca Zenet a cada superficie de marketing (landing · social Zenet post-reveal · decks · email/ads). Scaffold · se popula sobre todo al diseñar la landing (ese trabajo fuerza y valida las decisiones de color/tipo/motivo).
 type: visual-identity
-last_updated: 2026-06-04
+last_updated: 2026-07-01
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -12,11 +12,12 @@ owner: Alan Bahena
 
 > Cargar `00-marco` + los docs de elementos (color · tipo · imagen) primero. Esta es la capa de **aplicación** — cómo se combinan en cada superficie. **Crece sobre todo al diseñar la landing.** Estados: ✅ · 🟡 base · 🚧.
 
-## Landing page — 🚧 (primer workstream · SEO and Content)
+## Landing page — ✅ diseñada y documentada (2026-07-01)
 
-- Surface ancla. Aquí se **confirman** las decisiones abiertas (acento/emoción · glass vs flat · escala tipográfica) cf. `00-marco` §7.
-- Dirección base: off-white dominante · glass cálido en hero · motivo apilado como sistema/orden · acento naranja contenido en CTAs · operador/BoH ilustrado.
-- 🚧 Estructura de secciones + diseño → se desarrolla en `SEO and Content/` (landing) usando esta identidad.
+- Surface ancla · **confirmó** las decisiones abiertas (acento · glass vs flat · tipografía) cf. `00-marco` §4/§7.
+- **Spec completo en `SEO and Content/_context/01-landing-page/02-prototipo-y-diseno.md`** (tokens · grid 12-col 1280 · 8 secciones · eyebrows · hover/animaciones). Artefacto vivo en Claude Design.
+- Cómo se aplicó la identidad: off-white dominante · **acento terracota `#CC5536` contenido** (botones · subrayado · números · eyebrows · núcleo del motivo) · glass cálido **reservado al hero + CTA** (resto flat sobrio) · motivo como **red cálida** en el hero · figuras Braun line-art en cards · Onest + Hanken · foto real del fundador + screenshot real de la app.
+- Recurso nuevo: **eyebrows** (etiqueta de sección en versalitas terracota) — extiende el sistema de kickers a nivel de sección.
 
 ## Social Zenet — 🚧 (post-reveal)
 
@@ -37,4 +38,4 @@ Cada superficie usa el **core compartido** (logo · paleta · tipo · motivo) ·
 
 ---
 
-*Última actualización: 2026-06-04. v0.1 · scaffold · se popula al diseñar la landing.*
+*Última actualización: 2026-07-01. v0.2 · landing documentada (spec en `SEO and Content/01-landing-page/02-prototipo-y-diseno`) · otras superficies 🚧.*
