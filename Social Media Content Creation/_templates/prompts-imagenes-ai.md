@@ -2,7 +2,7 @@
 name: Prompts de imágenes con AI (Nano Banana Pro / Gemini)
 description: La librería copy-paste de prompts validados para generar imágenes on-brand con Nano Banana Pro · diagrama técnico · quote cards (claro y oscuro) · edición de headshot · banner/cover. Cada prompt encodea la paleta (carbón + off-white + ámbar firma + azul técnico) + guardrails anti-hype. El sistema/spec vive en 05-visual; aquí viven los prompts listos para usar.
 type: social-media
-last_updated: 2026-06-03
+last_updated: 2026-07-08
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -112,6 +112,26 @@ Sober, precise, balanced composition.
 
 ---
 
+## 6. Diagrama de arco / progresión (íconos · sin texto) — ✅ validado
+**Para:** pillar 3 (técnico) · un flujo/arco de etapas (ej. el arco *físico → datos → AI* de POST-13) · modo oscuro. **Clave: íconos, NO texto** — Nano Banana escribe texto falso/garabateado, así que los íconos cargan el significado y el post explica el resto.
+
+```
+A clean horizontal system diagram, engineering-blueprint style — like a precise technical
+drawing by a systems engineer.
+Background: solid dark charcoal #14161B with a very subtle, barely-visible graph-paper grid.
+[N] schematic nodes connected left-to-right by thin arrows. Node outlines and icons in thin
+off-white #ECEAE3 flat line-work; the connecting arrows in muted drafting blue #3E5B7D. Each
+node is a simple rounded box containing one minimal line-icon:
+[- node 1: <icon> · - node 2: <icon> · - node 3: <icon>]
+Highlight the final node with warm amber #E2A33C — amber is the only warm accent.
+No text or labels anywhere. Flat and matte. NO glow, NO neon, NO gradients, NO 3D, NO
+clip-art — clean thin line drawings only. Generous negative space. Square 1:1.
+```
+
+**Aprendizaje (validado 2026-07-08 · POST-13):** el enfoque **ícono + "no text or labels"** dio el resultado de IA más limpio hasta ahora — evita el *garbled-text* que arruinó intentos previos (el still-life de POST-10 salió con texto falso en inglés). Si necesitas etiquetas, genera **sin texto** y agrégalas en Canva/Figma. Ejemplo real POST-13: engrane (físico) → base de datos (datos) → red de nodos en ámbar (AI).
+
+---
+
 ## Guardrails (checklist antes de generar)
 
 - [ ] ¿Especifiqué los **hex** de la paleta?
@@ -131,4 +151,4 @@ Sober, precise, balanced composition.
 
 ---
 
-*Última actualización: 2026-06-03. Prompts 1, 2 (cards), 4 (headshot · gris cálido) y 5 (banner) validados.*
+*Última actualización: 2026-07-08. Prompts 1, 2 (cards), 4 (headshot · gris cálido), 5 (banner) y 6 (arco de íconos · POST-13) validados.*
