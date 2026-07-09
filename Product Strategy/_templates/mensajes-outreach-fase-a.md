@@ -1,8 +1,8 @@
 ---
 name: Mensajes de outreach — Fase A
-description: Los mensajes base (templates) para el outreach 1:1 de la Fase A del reclutamiento de design partners. Se construyen DESDE mensajes reales (no abstractos) — cada prospecto real se redacta y luego se generaliza a template con [variables]. Incluye los 5 levers, el formato de prospect brief, la taxonomía de tipos de mensaje, y los mensajes por tipo (insider · pedido de intro · ICP · LinkedIn DM · seguimiento). Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a. El tracking de a-quién-se-mandó vive en el .xlsx del _tracking, NO aquí.
+description: Los mensajes base (templates) para el outreach 1:1 de la Fase A del reclutamiento de design partners. Se construyen DESDE mensajes reales (no abstractos) — cada prospecto real se redacta y luego se generaliza a template con [variables]. Incluye los 5 levers, el formato de prospect brief, la taxonomía de tipos de mensaje, y los mensajes por tipo (insider · pedido de intro · ICP · LinkedIn DM · seguimiento). Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a. El tracking de a-quién-se-mandó vive en el cockpit de Notion (Pipeline — Fase A), NO aquí.
 type: product-strategy
-last_updated: 2026-07-02
+last_updated: 2026-07-08
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -14,7 +14,7 @@ owner: Alan Bahena
 >
 > **Workflow:** por cada prospecto → *prospect brief* → mensaje real → se generaliza a template. Los templates crecen **desde casos reales**, no abstractos.
 >
-> **Frontera:** aquí viven los **mensajes** (estable). El **a-quién-se-mandó + resultado** vive en `_context/04-go-to-market/_tracking/outreach-y-validacion-fase-a.xlsx` (vivo). Estrategia completa: `04-go-to-market/06-plan-de-activacion-y-validacion-fase-a.md`.
+> **Frontera:** aquí viven los **mensajes** (estable). El **a-quién-se-mandó + resultado** vive en el **cockpit de Notion** (`🎯 Zenet — Fase A` · Pipeline, vivo). Estrategia completa: `04-go-to-market/06-plan-de-activacion-y-validacion-fase-a.md`.
 
 ---
 
@@ -40,8 +40,8 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 | # | A quién | Propósito | Estado |
 |---|---|---|---|
 | **1** | Insider de la industria (chef/consultor conocido) | Su take experto + intros + (posible partner) | ✅ base (Victor) |
-| **2** | Conocido general → pedido de intro | Que te presente operadores dueños | 🟡 borrador |
-| **3** | Operador dueño (ICP) | Validación / co-construir | 🚧 pendiente |
+| **2** | Conector / channel partner → pedido de intro | Que te presente operadores dueños | ✅ casos reales (Pedro + Josemi · Ola 1) |
+| **3** | Operador dueño (ICP) | Validación / co-construir | ✅ casos reales (Alma + Carlos · Ola 1) |
 | **4** | DM tibio LinkedIn (a operadores) | Conseguir la llamada | 🟡 borrador |
 | **5** | Seguimiento | Reactivar sin ser pesado | 🚧 pendiente |
 
@@ -91,11 +91,59 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 
 ---
 
-## #2 · Pedido de intro (a un conocido) — 🟡 borrador
-> *"Estoy armando algo para dueños de restaurante que batallan con [pain concreto]. ¿Conoces a alguien con 2-3 sucursales al que le pase? Me encantaría platicar — no para venderle, para aprender y enseñarle lo que construyo."*
+## #2 · Pedido de intro (conector / channel partner) — ✅ casos reales (Ola 1 · listos 2026-07-08)
 
-## #3 · Operador ICP (directo o vía intro) — 🚧 pendiente
-*(Por redactar desde el primer caso real. Frame: conversación de validación / invitación a co-construir · Mom Test · no venta.)*
+> Frame: ask de **BAJA barrera** (una intro/recomendación, NO una junta con ellos) · co-constructor · corto. El conector **abre la puerta**; el demo pasa con quien te presente. Adapta al momento del contacto.
+
+### Caso real — Pedro Castañeda (contador · channel partner · WhatsApp · link `zenetapp.com`)
+**Brief:** es el contador de Zenet (relación de confianza · ya conoce el proyecto desde adentro) · despacho con clientes restauranteros · ask = intro a clientes de su red + planta semilla de colaborar.
+
+> Pedro, ¿qué tal, cómo estás? Espero que todo bien.
+> Ya tiene tiempo desde la última vez que platicamos de Zenet. Un update rápido: el cambio de régimen y la constitución legal que teníamos pensados se recorrieron un poco — ahorita estamos corriendo un programa de validación, y una vez que pase esta fase seguimos con lo que ya hemos platicado para constituir Zenet legalmente y salir a vender.
+> A todo esto, quería preguntarte algo: estoy buscando platicar con unos cuantos dueños de restaurantes independientes en crecimiento (2-3 sucursales) que batallan con el orden y la operación del día a día — para aprender de ellos y juntos seguir moldeando Zenet, no para venderles por ahora. Tú que ves muchos restaurantes por dentro, ¿se te ocurre algún cliente de tu red al que le pudiera servir y me lo puedas presentar?
+> Con gusto te platico más de por dónde va, o nos juntamos a platicar — también para después ir viendo la planeación legal y contable del proyecto.
+> Te dejo aquí por dónde va, para que te des una idea: zenetapp.com
+
+### Caso real — Josemi / Miguel Leyva (amigo · conector · WhatsApp · link `demoj`)
+**Brief:** amigo cercano (tenis) · manager en San Diego PERO su familia tiene negocios de comida en TJ (ICP geo) + contactos · acaba de anunciar que será papá → ask de BAJA barrera (recomendación, no junta) + demo pasado a aside con el ritual de amistad (jugar tenis).
+
+> Que onda Josemi! Muchas felicidades por la gran noticia 🩷 me alegro mucho por ustedes, disfruten esta nueva etapa. 🙌🏻
+> Me acordé de ti, ¿te acuerdas del proyecto para restaurantes que te mostré hace tiempo? Ha avanzado bastante, y estoy buscando platicar con operadores o dueños de restaurantes en TJ para aprender y moldear el proyecto juntos. Si se te ocurre alguien a quien le pueda interesar y funcionar, me caería increíble que me lo recomendaras. No para vender nada aún.
+> Igual cuando andes con calma podemos ir a jugar tenis y te lo muestro. 🎾 Aquí le puedes echar un ojo al proyecto si gustas: https://go.zenetapp.com/demoj
+
+### Aprendizajes (pedido de intro)
+- **El ask = intro/recomendación (baja barrera), NO una junta con el conector.** El demo pasa con quien te presente.
+- **Adapta al momento del contacto** (Josemi = bebé en camino → felicita primero + ask fácil + demo como aside con el ritual de amistad).
+- **Channel partner (contador):** aprovecha que "ve muchos restaurantes por dentro" + planta la semilla de colaborar sin forzar.
+
+## #3 · Operador ICP + re-enganche warm — ✅ casos reales (Ola 1 · listos para enviar 2026-07-07)
+
+> Frame: re-enganche / validación · co-construir · Mom Test · **no venta** · coexistencia ("no reemplazar, potenciar y dar orden") · honestidad "está temprano". El único trabajo del mensaje = **conseguir la conversación**. La comunidad NO se menciona en el 1er toque (prematuro · cf. `04-go-to-market/07-plan-de-comunidad-y-eventos`).
+
+### Caso real — Alma (dueña Alma Verde · WhatsApp · link `demoav`)
+**Brief:** dueña de Alma Verde (+5 rest · 3 ciudades) · warm (ya platicaron hace meses) · tiene POS por sucursal pero BoH manual → frame coexistencia · valida H4/H6.
+
+> Hola Alma 👋🏻 ¿cómo va todo? ¿Cómo has estado? Hace ya algunos meses que platicamos de un proyecto para restaurantes que está tomando forma aquí en Tijuana. Te platico que ha llegado a otro nivel: se ha convertido en un sistema para el back-of-house de restaurantes en crecimiento, justo para perfiles como el de Alma Verde. La idea no es reemplazar lo que ya tienes, sino potenciar y dar orden a todo lo que ya construiste para que crezca tu estructura operativa. Imagina un grupo de consultores especializados en las operaciones de Alma Verde.
+>
+> Está temprano, y por eso me encantaría enseñártelo, escuchar tu opinión honesta y ver de qué forma podemos trabajar juntos. ¿Te late un café o una llamada corta esta semana?
+>
+> Y si quieres ir viendo por dónde va el proyecto, aquí te invito a visitarlo: https://go.zenetapp.com/demoav
+
+### Caso real — Carlos (gerente Alma Verde · re-enganche warm · WhatsApp · link `democv`)
+**Brief:** gerente de Alma Verde (mismo account que Alma = multi-thread) · ya le mostró demos + entrevista hace +1 año · re-enganche con memoria específica ("Alma Verde hipódromo, la parte de arriba") · valida valor operativo, NO es el payer.
+
+> Hola Carlos! 👋🏻 Qué tal, ¿cómo has estado? Espero que te encuentres bien. ¿Recuerdas que hace poco más de un año te mostré un proyecto para restaurantes? Que hasta te visité en Alma Verde hipódromo y platicamos en la parte de arriba — por cierto, he ido varias veces a la sucursal de hipódromo y ya no te he visto.
+>
+> Te platico que el proyecto ha avanzado a otro nivel desde esa última vez que platicamos, y creo que te aportaría mucho valor al trabajo que haces en el día a día. Me encantaría enseñarte cómo quedó y escuchar tu opinión honesta. ¿Te late ir por un café y platicar? Podemos ver de qué forma nos podemos ayudar los dos.
+>
+> Por cierto, aquí para que le des un vistazo por dónde va el proyecto: go.zenetapp.com/democv
+
+### Aprendizajes (para futuros mensajes ICP / re-enganche)
+- **Memoria específica compartida** (una visita, el lugar exacto) > gancho genérico — prueba la relación, imposible de fingir.
+- **Coexistencia siempre** ("no reemplazar, potenciar") con operadores que ya tienen POS.
+- **"Imagina un grupo de consultores especializados en [su negocio]"** = la línea agency-as-SaaS, personalizada. Potente.
+- **"Tú" consistente** (no mezclar con "su/usted"). **"sistema", nunca "herramienta".**
+- **NO meter la comunidad en el 1er toque** (prematuro · sobre-promete "gente usándola" al 35% · diluye el ask).
 
 ## #4 · DM tibio LinkedIn (a operadores) — 🟡 borrador
 > *"Hola [Nombre], vi que operas [restaurante]. Construyo un sistema para el back-of-house de restaurantes en crecimiento y busco unos cuantos operadores que me ayuden a moldearlo. ¿Te late una llamada corta? Aquí lo que voy armando: zenetapp.com"*
@@ -105,4 +153,4 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 
 ---
 
-*Última actualización: 2026-07-02. v0.1 · #1 insider con caso real (Victor) + template · #2/#4 borradores · #3/#5 pendientes (se redactan desde casos reales).*
+*Última actualización: 2026-07-08. v0.1 · Ola 1 completa (4 mensajes reales listos): #3 ICP/re-enganche (Alma `demoav` + Carlos `democv`) · #2 pedido de intro (Pedro `zenetapp.com` + Josemi `demoj`) · #1 insider (Victor). #4 DM LinkedIn borrador · #5 seguimiento pendiente.*
