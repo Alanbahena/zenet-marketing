@@ -4,9 +4,9 @@
 description: Library plana de verbatims curados (gold / load-bearing / illustrative) con metadata estructurada por entry (persona × theme × stage × marketing use-case) + indices de navegación + coverage gaps. Designed for retrieval/reuse across marketing operations (copy, landing, social, sales enablement). NO repite docs 03/06 — esos usan verbatims como evidence; este ES la library misma.  
 type: customer-research  
 research_stage: discovery-pre-PMF  
-last_updated: 2026-05-23  
+last_updated: 2026-07-19  
 status: active  
-version: 0.1.1  
+version: 0.1.2  
 owner: Alan Bahena
 
 # Voice of customer — verbatim library
@@ -635,9 +635,22 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 - **Cited en:** Product Strategy customer-profile §6.2 contable Pains
 - **Por qué es illustrative:** captures **the discipline gap** que Rappi tries to teach manually y Zenet automates. Use cuando contable cuestiona si Zenet realmente reduces their work — esta es la disciplina que ellos quisieran tener pero no escala manual.
 
+#### V-035 • [PARAPHRASE] · cited
+
+> Carlos, gerente de Alma Verde (demo presencial · síntesis de apuntes de sesión, NO grabación literal):
+> *"No quiero que sea un POS, quiero que solo se encargue del back of house."*
+
+- **Source:** [Demo Alma Verde 2026-07-14] — sesión de validación design partner (gerente Carlos · apuntes del fundador)
+- **Persona:** gerente (operador · adopter, NO payer · account Alma Verde)
+- **Theme:** coexistence · anti-POS · back-of-house focus · category clarity
+- **Stage:** Evaluation (demo)
+- **Use-case tags:** positioning (coexistencia · capa sobre el POS) · landing-body · sales-disarm ("¿es otro POS?") · internal-alignment (scope discipline)
+- **Cited en:** Product Strategy `04-go-to-market/08-learnings-de-validacion` §7 (Sesión #1)
+- **Por qué es load-bearing:** primer verbatim de **design partner** que confirma la posición de **coexistencia** ("capa sobre el POS, no reemplazo") desde la voz del operador — y que la **desea**. Blinda el scope (Zenet = back-of-house, NO POS) en positioning + sales-disarm. ⚠️ N=1 · gerente (no payer) · confirmar con más sesiones.
+
 ---
 
-> **Library v0.1.1 cierra en V-034.** Total: 10 gold + 13 load-bearing + 11 illustrative = **34 entries**. 4 nuevas entries (V-031 → V-034) añadidas 2026-05-23 desde Perplexity Pro report 2026-05 (Mexican Restaurant Accountant Workflow). Coverage gaps en §5.
+> **Library v0.1.2 cierra en V-035.** Total: 10 gold + 14 load-bearing + 11 illustrative = **35 entries**. V-035 (design partner · demo Alma Verde 2026-07-14) añadida 2026-07-19 — **primera verbatim de una sesión de validación con design partner** (cf. `04-go-to-market/08-learnings-de-validacion`). V-031 → V-034 añadidas 2026-05-23 (Perplexity Pro report · Mexican Restaurant Accountant Workflow). Coverage gaps en §5.
 
 ---
 

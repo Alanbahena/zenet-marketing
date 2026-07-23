@@ -1,8 +1,8 @@
 ---
 name: Mensajes de outreach — Fase A
-description: Los mensajes base (templates) para el outreach 1:1 de la Fase A del reclutamiento de design partners. Se construyen DESDE mensajes reales (no abstractos) — cada prospecto real se redacta y luego se generaliza a template con [variables]. Incluye los 5 levers, el formato de prospect brief, la taxonomía de tipos de mensaje, y los mensajes por tipo (insider · pedido de intro · ICP · LinkedIn DM · seguimiento). Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a. El tracking de a-quién-se-mandó vive en el cockpit de Notion (Pipeline — Fase A), NO aquí.
+description: Los mensajes base (templates) para el outreach 1:1 de la Fase A del reclutamiento de design partners. Se construyen DESDE mensajes reales (no abstractos) — cada prospecto real se redacta y luego se generaliza a template con [variables]. Incluye los 5 levers, el formato de prospect brief, la taxonomía de tipos de mensaje, y los mensajes por tipo (insider · pedido de intro · ICP · LinkedIn DM · seguimiento · intro reenviado por conector). Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a. El tracking de a-quién-se-mandó vive en el cockpit de Notion (Pipeline — Fase A), NO aquí.
 type: product-strategy
-last_updated: 2026-07-08
+last_updated: 2026-07-17
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -44,6 +44,7 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 | **3** | Operador dueño (ICP) | Validación / co-construir | ✅ casos reales (Alma + Carlos · Ola 1) |
 | **4** | DM tibio LinkedIn (a operadores) | Conseguir la llamada | 🟡 borrador |
 | **5** | Seguimiento | Reactivar sin ser pesado | 🚧 pendiente |
+| **6** | Intro reenviado por conector (voz del conector) | Que el conector caliente a SUS contactos + te presente | ✅ base (Victor) |
 
 > **Ojo canónico:** insider ≠ ICP. Los insiders dan **feedback + intros**, NO validan compromiso (eso lo valida el dueño-operador · el chef es *adopter*, no *payer*). Su entusiasmo NO cuenta como validación de H4.
 
@@ -151,6 +152,33 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 ## #5 · Seguimiento — 🚧 pendiente
 *(Por redactar. Variante corta y ligera para reactivar sin ser pesado, post-no-respuesta o post-conversación.)*
 
+## #6 · Intro reenviado por conector (voz del conector) — ✅ base reutilizable (Victor · 2026-07-17)
+
+> Frame: lo envía el **conector** (no tú), en **su voz**, vouching por ti. La calidez viene de SU relación + SU credibilidad → es de tus canales más potentes (referido / intro warm). **Ojo:** distinto del **frío puro** (mensaje tuyo a un desconocido, sin vouch) — eso es menor prioridad en Fase A (doctrina warm-first) y necesita otra adaptación (ver abajo).
+
+### Caso real — contactos de Victor (chef-consultor · 2026-07-17)
+**Brief:** Victor (insider · se mudó a Egipto) ofreció presentarte a contactos suyos (posibles dueños/operadores). Él escribe de entrada, en su voz, aprovechando que lo respetan por su expertise en estandarización/orden.
+
+> Hola [Nombre], ¿cómo estás?
+>
+> Conocí a alguien que está construyendo algo que creo que te puede servir mucho para diseñar, estandarizar y escalar la operación de tu negocio. Se llama Zenet: un sistema que pone en orden y automatiza todo el back de la operación —procesos, protocolos, recetas, inventarios— como un equipo de especialistas cuidando tu negocio, y trabajando sobre lo que ya tienes.
+>
+> Imagínate un cerebro operativo especializado en cómo trabaja tu restaurante: la mano derecha de tus gerentes, chefs y todo tu equipo, con IA. Aquí lo puedes ver: zenetapp.com
+>
+> Si te late, con gusto te conecto con Alan, el fundador, para que te lo muestre en una demo y lo construyan de la mano —serías de los primeros socios fundadores, con la chance de moldearlo a la medida de tu operación. Sin compromiso, más para que lo conozcas y, quién sabe, nazca una buena relación.
+
+*(Texto plano, sin negritas markdown, para que pegue limpio en WhatsApp.)*
+
+### Cómo adaptarlo
+- **Voz del conector (default):** él vouchea (*"conocí a alguien..."*). Dile que lo haga suyo — personalice el nombre y, si conoce un dolor del contacto, lo mencione.
+- **Ancla a SU credibilidad:** si el conector es experto en algo (Victor = estandarización), engancha Zenet a eso (*"esto va justo en lo que a mí me apasiona"*).
+- **Voz tuya (directo semi-warm):** si lo mandas TÚ, cambia *"conocí a alguien / te conecto con Alan"* → 1ª persona (*"estoy construyendo Zenet… me encantaría mostrártelo"*) + di **por qué le escribes a ÉL** (la relevancia reemplaza al vouch).
+- **Gancho "socio fundador":** mantenlo **colaborativo** (moldearlo juntos / de los primeros), NUNCA transaccional (sin descuentos/precio en el 1er toque).
+- **Verbos de arranque** (*"diseñar, estandarizar y escalar"*): swappables al resultado que más le importe al contacto.
+
+### Invariables (qué NO tocar)
+Coexistencia (*"sobre lo que ya tienes, no reemplaza"*) · "sistema / equipo de especialistas" no "herramienta" · **"cerebro operativo / mano derecha"** (voz de marca) · co-constructor, no venta · honesto (*"está temprano"*).
+
 ---
 
-*Última actualización: 2026-07-08. v0.1 · Ola 1 completa (4 mensajes reales listos): #3 ICP/re-enganche (Alma `demoav` + Carlos `democv`) · #2 pedido de intro (Pedro `zenetapp.com` + Josemi `demoj`) · #1 insider (Victor). #4 DM LinkedIn borrador · #5 seguimiento pendiente.*
+*Última actualización: 2026-07-17. v0.1 · Ola 1 completa (#1-#3) · **#6 intro por conector = base reutilizable (Victor)** · #4 DM LinkedIn borrador · #5 seguimiento pendiente.*
