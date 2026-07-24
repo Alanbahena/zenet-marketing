@@ -2,7 +2,7 @@
 name: Landing page · copy por sección
 description: El copy final de la landing inicial de Zenet, sección por sección, en la voz de marca. Se llena progresivamente empezando por el Hero. Cada sección sigue su brief en 00-estrategia-y-estructura §5 + la voz de Branding.
 type: seo-content
-last_updated: 2026-07-21
+last_updated: 2026-07-24
 status: active
 version: 0.2
 owner: Alan Bahena
@@ -232,11 +232,11 @@ Etiqueta pequeña en versalitas terracota sobre cada título (patrón tipo Handl
 **Body** (primera persona · Alan hablándote directo):
 > Soy Alan, y construyo Zenet.
 >
-> Pasé años trabajando en sistemas complejos, en distintos países: sistemas físicos, infraestructura de datos, inteligencia operativa. Diseñándolos y construyéndolos. De todo eso me quedó una sola lección: los sistemas son sistemas — y la estructura es lo que permite escalar.
+> Pasé años trabajando en sistemas complejos y exigentes, donde la calidad no se negociaba, en distintos países: sistemas físicos, infraestructura de datos, inteligencia operativa. Diseñándolos y construyéndolos. De todo eso me quedó una sola lección: los sistemas son sistemas — y la estructura es lo que permite escalar sin perder la calidad.
 >
-> Cuando empecé a trabajar de cerca en la operación de un restaurante, reconocí el patrón. El mismo caos que aparece en las grandes industrias, a menor escala. Y la misma forma de ordenarse que usan las empresas tecnológicas globales — que se puede replicar en un restaurante, con procesos especializados.
+> Cuando empecé a trabajar de cerca en la operación de un restaurante, reconocí el patrón: el mismo caos de las grandes industrias, a menor escala. Y la misma forma de poner orden que usan las empresas de tecnología globales — que se puede replicar en un restaurante, con procesos especializados.
 >
-> De esos años dentro de la industria — hablando con dueños, chefs y operadores, viendo los problemas reales y resolviéndolos desde la raíz — nace Zenet: no una herramienta más, sino un sistema que pone al alcance de cualquier restaurante lo que antes parecía reservado para las grandes cadenas.
+> De esos años dentro de la industria — hablando con dueños, chefs y operadores, viendo los problemas reales y resolviéndolos desde la raíz — nace Zenet: no una herramienta más, sino un sistema — una inteligencia operativa que pone al alcance de cualquier restaurante lo que antes requería una gran inversión y todo un equipo.
 
 **Visual:** foto de Alan (headshot · sobrio, humano · cf. `Social Media/05-sistema-visual` para el tratamiento) — aquí *ver* a la persona construye confianza.
 
@@ -250,9 +250,10 @@ Etiqueta pequeña en versalitas terracota sobre cada título (patrón tipo Handl
 - **Headline = puente "De X → a Y"** (enterprise-grade → tu escala) · enmarca el background de Alan como *credencial*, no como carencia. Se descartó "No vengo de los restaurantes…" (plantaba duda de outsider en la página de confianza) y "al siguiente nivel" (rozaba hype · voz §1).
 - **Primera persona** — Alan hablándote directo · más íntimo/confiable que tercera persona.
 - **No repite el "por qué ahora"** (eso vive en §5) · aquí solo credibilidad (arco de ingeniero de sistemas) + trabajo de campo ("lo construyo escuchando").
-- **"no una herramienta más, sino un sistema"** = usa el dispositivo firma de Alan *"no es X, es Y"* (voz §2) Y refuerza el posicionamiento canónico **"sistema, no herramienta"** (valor #2 · diferenciador #1). NUNCA llamar a Zenet "herramienta" a secas.
+- **"no una herramienta más, sino un sistema"** = usa el dispositivo firma de Alan *"no es X, es Y"* (voz §2) Y refuerza el posicionamiento canónico **"sistema, no herramienta"** (valor #2 · diferenciador #1). NUNCA llamar a Zenet "herramienta" a secas. **Refinamiento 2026-07-24:** el candado "sistema" se conserva y se encadena a *"una inteligencia operativa que…"* (no se reemplaza — evita romper el contraste herramienta/sistema).
+- **Hilo de calidad (NUEVO 2026-07-24):** el arco del fundador ahora teje *calidad/exigencia* ("sistemas exigentes, donde la calidad no se negociaba" · "escalar sin perder la calidad") — rima con el mundo fine-dining y con el remate de la landing (experiencia + calidad). Se descartó "premium" (sonaba a marketing · rompía la voz humilde del fundador).
 - **Arco abstraído** (sistemas físicos · infraestructura de datos · inteligencia operativa) en vez de nombrar Audi/Teradata — sobriedad sobre flex. Opción abierta: anclar 1 nombre concreto si se busca más prueba.
-- **Cierra el loop** con el Hero + §5 ("lo que antes parecía reservado para las grandes cadenas").
+- **Cierre v2 (2026-07-24):** *"lo que antes requería una gran inversión y todo un equipo"* — conecta con el frame agencia-de-especialistas / arbitraje de precio (antes: "reservado para las grandes cadenas", que cerraba el loop con el Hero/§5 · el nuevo aterriza el costo evitado).
 - **Puentea a §7** — "lo construyo escuchando / dentro de la industria" prepara la invitación al Programa Socio Fundador (construye *con* operadores).
 - Alts de headline descartadas: B "De las grandes industrias a tu cocina: los sistemas son sistemas" · C "El orden de las grandes industrias, al alcance de tu restaurante" · D "Llevo años construyendo sistemas. Ahora, para los restaurantes".
 
