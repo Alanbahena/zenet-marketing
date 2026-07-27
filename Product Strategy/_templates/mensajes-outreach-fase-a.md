@@ -169,6 +169,30 @@ Cuando personalices (con o sin ayuda), ajusta estos:
 
 *(Texto plano, sin negritas markdown, para que pegue limpio en WhatsApp.)*
 
+### Caso real — Miguel Bahena (variante DIRECTA · voz de Alan · post-vouch · 2026-07-23)
+**Brief:** chef-dueño de Madre (Ensenada · fine-dining nivel Michelin) · Victor lo refirió y ya vouchó → Miguel dijo "que Alan me escriba con gusto" (puerta abierta). Valor primario = super-conector Ensenada/Baja + peer proof; ICP **adyacente** (no core beachhead). Gancho único: **mismo apellido (Bahena)**. **Enviado en formato híbrido: texto → voice note → texto (link).**
+
+**Parte 1 · texto (abre + gancho del apellido):**
+> Hola Miguel, ¿qué tal? Soy Alan Bahena, el fundador del que te platicó el chef Victor Murguía. Curiosamente tenemos el mismo apellido — capaz y hasta tenemos familia en común. Gracias por abrirme la puerta; Victor habla increíble de ti, y además pude ver el gran restaurante que has construido en Madre.
+>
+> Te dejo un audio para contarte bien de qué va 👇
+
+**Parte 2 · voice note (la propuesta de valor · hablada por beats, no leída):**
+> Zenet = un experto por cada área del back, en el celular (tuyo y de tu equipo) · no reemplaza, trabaja sobre lo que ya tienes: orden + eficiencia (procesos, protocolos, recetas, inventarios, compras, proveedores) · cerebro operativo / mano derecha de cada quien · **para quitar fricción y liberar energía a lo que importa: la experiencia y la calidad** (ángulo fine-dining).
+
+**Parte 3 · texto (no-venta explícito + ask + link):**
+> Apenas estoy arrancando, y quiero ser honesto contigo: no busco venderte nada. Lo que me gustaría es conectar, intercambiar ideas y conocer tu opinión honesta sobre el proyecto — es para aprender y seguir moldeándolo. Y quién sabe, de paso nace una buena relación.
+>
+> ¿Podríamos agendar una llamada o reunión corta en estos días? Y aquí puedes ir viendo cómo se va desarrollando: zenetapp.com
+>
+> Un abrazo, Alan
+
+### Aprendizajes (variante directa + voice note)
+- **Voice note para la propuesta de valor** (fundador → chef, cultura MX): el tono hace la mitad del trabajo · háblalo por beats, no lo leas. **El link SIEMPRE en texto** (no se tapea dentro de un audio) → sándwich texto-audio-texto.
+- **Ángulo por perfil:** para fine-dining, el valor NO es "ahorra tiempo" sino **"libera energía para la experiencia y la calidad"**. Personaliza el remate del valor al perfil.
+- **Gancho imposible de fingir** (apellido común / memoria compartida) > gancho genérico.
+- **"No busco venderte nada" al FRENTE del párrafo de cierre** (no a media frase) — es lo primero que debe registrar.
+
 ### Cómo adaptarlo
 - **Voz del conector (default):** él vouchea (*"conocí a alguien..."*). Dile que lo haga suyo — personalice el nombre y, si conoce un dolor del contacto, lo mencione.
 - **Ancla a SU credibilidad:** si el conector es experto en algo (Victor = estandarización), engancha Zenet a eso (*"esto va justo en lo que a mí me apasiona"*).
