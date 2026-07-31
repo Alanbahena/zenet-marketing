@@ -1,2 +1,6 @@
 # macOS
 .DS_Store
+
+# Exports derivados (Word/PDF/HTML generados desde el markdown para leer y marcar
+# fuera del repo). La fuente de verdad es siempre el .md — estos se regeneran.
+_export/
