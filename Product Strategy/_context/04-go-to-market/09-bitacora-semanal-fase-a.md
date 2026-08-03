@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-07-26
+last_updated: 2026-08-03
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -29,6 +29,67 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 27 jul–2 ago — "la semana que se pensó, no se habló"
+
+**▸ Foco que traíamos** (retro 20–26): CANIRAC ✅ · perfil 3 / San Miguel ❌ · mentor ❌ · nudge a Miguel ✅ → **2 de 4**.
+
+**▸ 🏆 Logros**
+- **Café CANIRAC ejecutado** (lun 28 · Alfonso Arballo · puente de Pedro) con run-sheet propio (`_templates/guion-reunion-canirac-fase-a.md` v0.1) → debrief completo en `08` v0.2 (Sesión #2).
+- **`03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` v0.1** — el activo más grande de la semana. Traduce las decisiones canónicas al lenguaje económico del operador sin inventar cifras: mapa de gastos línea por línea · diagnóstico **costo teórico vs real** como primer entregable defendible · **el punto porcentual** como unidad de conversación · precio bilateral · **8 anti-claims** · HV-01..05.
+- **Nudge a Miguel Bahena** enviado (30-jul · sin respuesta).
+- **Tabla nueva en Notion `🤝 Red estratégica`** (mentores · inversionistas · aliados), separada del Pipeline de validación, con la regla de reparto escrita en el cockpit.
+- **3 contactos fichados:** Juanjo Gutiérrez (**= el "mentor potencial" que llevaba semanas sin nombre**) · Antonio López Montañez · Alfonso Arellano (puerta a Culinary Art School TJ).
+- Commit `a56b8b5`.
+
+**▸ ✅ Qué funcionó**
+- **Escribir el guión antes de la sesión.** Segunda vez que el patrón rinde (la 1ª fue Carlos). Ya es método, no suerte.
+- **Pedro entregó otra vez** — la tesis *contador → aliado de canal* lleva dos cumplimientos seguidos.
+- **La disciplina "entusiasmo ≠ validación" hizo su trabajo:** se detectó que **no aterrizó ningún ask**, en lugar de contar el café como puerta abierta. Un año atrás esto se hubiera guardado como "gran reunión".
+- *(Queda pendiente de esta retro: la lectura en vivo del guión — ¿sirvió durante el café o se soltó a los cinco minutos?)*
+
+**▸ 💡 Learnings**
+1. **★ EL FRENO NO ERA AGENDA — ERA EXPOSICIÓN.** Avanzó **todo lo que se hace solo** (el doc, el debrief, las tablas) y se cayó **todo lo que implicaba mostrarle Zenet a alguien**. San Miguel y Juanjo no se atoraron por tiempo: se atoraron porque escribirle a alguien significa exponer algo que no se siente listo. Nombrado, se puede diseñar alrededor.
+   - ⚠️ **La trampa:** *"pulo la propuesta de valor y luego hablo con operadores"* es un círculo que no cierra — la VP no se valida escribiéndola mejor, se valida en conversaciones, y mientras tanto la única fuente que podría decir si está lista queda apagada.
+   - ✅ **La salida precisa (no es fuerza de voluntad):** **H1** (los pains resuenan) y **H6** (el pozo de valor) **no necesitan VP pulida** — el Mom Test explora SU mundo, 80/20 escuchando. **La mitad del scorecard se puede mover sin enseñar nada.** H2 y H3 sí la necesitan. Dos carriles, no una fila.
+2. **La VP no aterriza — 2ª señal independiente** (Carlos 14-jul + Alfonso 28-jul) → **ya no es N=1**. Dos capas con remedios distintos: **(a) comunicación** (el mensaje) y **(b) sustancia** (el alcance de Fase 1, que Alan concede en parte). El doc 06 responde a (b); (a) se ataca la semana que entra.
+3. **Objeción nueva y distinta: *"otro software más"*.** Alfonso: *"quizá sea complicado lograr que un restaurante pague por otro software más."* Es **vitamina vs painkiller = H6 directo**, y no es lo mismo que la objeción #1: aquélla dice *"no entiendo qué resuelve"*, ésta dice *"aunque lo entienda, la categoría ya está saturada de cosas que se pagan"*. **No se resuelve con mejor copy — se resuelve con el operador correcto.** Quien siente el dolor no compra "otro software": compra la salida de su problema.
+4. **CANIRAC = canal post-PMF, no de Fase A.** Cámara política y burocrática · membresía ~$3,000 MXN/año · empresas grandes ahí por imagen. Confirma con detalle de campo el Tier 2 institucional del channel strategy (awareness, no revenue). Ajuste honesto: en la retro anterior iba como *"la grande"* de la semana. No lo era.
+5. **Convergencia del framework de 3 perfiles.** Alfonso llegó solo a la misma segmentación (independientes nuevos · alta cocina · producción grande estandarizada) y a la misma implicación (*"si atacamos todas, no atacamos ninguna"*). Un framework que sobrevive el contacto con alguien de la industria **sube de hipótesis de retro a hipótesis con apoyo externo**.
+6. **Alfonso Arballo es supply-side, no operador.** Trabaja en el negocio familiar de distribución de vinos y licores (surte a Calimax, Soriana en TJ). Doble clasificación, **ambas post-PMF**: conector institucional (Tier 2) + distribuidor (Tier 3 · Fase 2+ con leverage · demand-side primero). Consistente con no forzarlo.
+7. **★ LinkedIn se detuvo — y el diagnóstico importa más que el hecho.** Alan dejó de publicar: *"me cuesta continuar cuando veo que no hay avance"* (poco alcance · casi nula interacción · cero mensajes). Cuatro lecturas honestas:
+   - **(a) Dos meses es muy poco.** El horizonte real de LinkedIn orgánico es 6-12 meses de compounding. Se estaba leyendo la parte plana de la curva como si fuera horizontal.
+   - **(b) Se midió con la métrica equivocada.** Alcance y likes son exactamente lo que `02-digital-distribution-strategy` advierte NO optimizar; su north star declarado es **relaciones**.
+   - **(c) Con esa métrica, LinkedIn no ha fallado.** **Victor Murguía llegó por LinkedIn** (inbound, él contactó a Alan) — y Victor produjo el referido a **Miguel Bahena**. Una relación que genera un referido no es cero. *(Corrección: en la conversación de la retro se afirmó primero que ningún prospecto vino de LinkedIn; es falso.)*
+   - **(d) El stealth quita el material más potente:** no se puede nombrar Zenet, que es lo que Alan tiene más ganas de contar.
+
+**▸ 🔀 Decisiones**
+- **Secuencia canónica para atacar el hueco de la VP:** (1) probar el **argumento del punto porcentual** en conversación → (2) **mago-de-Oz del diagnóstico** con los docs de Alma Verde → (3) **copy v0.3** → (4) landing v3.
+- **NO prometer el diagnóstico en la landing hasta correrlo una vez.** Razones: el perfil 3 se auto-excluiría (*"yo no tengo documentos"*) · es promesa verificable sin evidencia · `06-argumentacion` §9 lo pone como **el disparador mayor** que mueve los claims a v1.0. Lo seguro hoy es prometer el **método**, no el **hallazgo**.
+- **Mentores e inversionistas viven fuera del Pipeline de validación.** Regla: *¿su red lleva a operadores → Pipeline Fase A; a capital/mentoría/ecosistema → Red estratégica?*
+- **Miguel Bahena: tope de 2 toques directos alcanzado** (un tercero quema el vouch) → reactivar **vía Victor** · **kill date ~15-ago** → si nada, Pausado.
+- **Legal: se confirma el Tier framework propio.** Lo caro (abogado · contratos · DPA · SAPI) espera al LOI. **El aviso de privacidad de la landing se hace ya** — Formspree ya recolecta datos personales desde julio y bajo LFPDPPP 2025 Zenet es encargado del tratamiento. No es prematuro: va tarde.
+- **La VP se re-articula con Why/How/What (Sinek) + tono evangelizador.** ⚠️ Es cambio de **expresión**, no de estrategia — la VP canónica sigue siendo la de `01-propuesta-de-valor` v0.1.
+- **Reveal / IG build-in-public anclado al primer design partner.** Coincide con las decisiones abiertas #1 y #2 del plan de Fase A §9.5. ⚠️ **Tensión a resolver conscientemente:** `02-digital-distribution-strategy` declara **LinkedIn ONLY en Fase 1** y difiere IG a Fase 1.5+/2+. Si IG entra al reveal, es un cambio deliberado de esa decisión, no deriva.
+- **★ LinkedIn se reencuadra: de canal de audiencia a instrumento de validación.** Publicar **de vez en cuando** (sin cadencia forzada) y **solo sobre la PROBLEMÁTICA** — no sobre Zenet ni sobre producto. Dos objetivos: **(1) seguir validando problem fit / H1** (un operador que comenta *"eso me pasa exacto"* es evidencia casi gratis, y alimenta la VoC library) · **(2) cerrar llamadas para Mom Test**. Compatible con el stealth. **Métrica:** ni alcance ni likes → *¿comentó o escribió un operador real? ¿se agendó una llamada?*
+  - ⚠️ **Riesgo a verificar barato:** ¿la audiencia de Alan en LinkedIn son operadores de restaurantes o es red tech/industria? Si no hay operadores leyendo, ningún contenido convierte — y entonces el trabajo de LinkedIn no es publicar sino **conectar y comentar** en el mundo de ellos. Revisar tras 3-4 posts.
+  - ⚠️ **`02-digital-distribution-strategy` v0.1 (LinkedIn ONLY · 3-5 posts/semana) ya no describe la realidad** → necesita nota de revisión a v0.2, o el canon se vuelve ficción y contamina todo lo que se apoya en él.
+- **El foco semanal baja a 3 puntos** (capacidad observada ≈2, no 4).
+
+**▸ 📊 Scorecard H1–H6**
+**Sin movimiento.** Cero conversaciones nuevas con operadores. El café de CANIRAC **no cuenta** (conector, contexto social, señales declaradas). Sigue **1 de las 5-8 conversaciones** que pide el gate a Fase B. **Todos los assets están construidos; faltan operadores.**
+
+**▸ 🎯 Foco próxima semana (3–9 ago) — TRES, no cuatro**
+1. **Pulir la propuesta de valor** (Why → How → What · tono evangelizador). Es el trabajo que destraba lo demás — **pero no es precondición para el punto 2**.
+2. **Mensaje a Ana proponiendo llamada.** *(Versión chica de "San Miguel" — 2 minutos, no la llamada completa. La tarea llevaba 2 semanas cayéndose porque pedía una llamada; se redimensiona.)*
+3. **Juanjo** — redactarlo juntos y mandarlo martes o miércoles.
+
+*Carril de producto (aparte): onboarding con análisis de estandarización y costos. Nota: correrlo **a mano una vez** con los docs de Alma Verde antes de construir la ruta — un día manual puede ahorrar semanas de build en la dirección equivocada.*
+*Diferido: reactivar a Miguel vía Victor (kill date 15-ago) · aviso de privacidad · calculadora del punto.*
+
+*▸ Pipeline: 16 prospectos · 1 soft-commit (Carlos/Alma Verde) · 3 conversación (Victor, Pedro, Alfonso Arballo) · 2 enviados sin respuesta (Alma, Miguel Bahena) · **10 en "Por enviar"**.*
 
 ---
 
@@ -107,4 +168,4 @@ owner: Alan Bahena
 
 ---
 
-*Última actualización: 2026-07-26. v0.1 · 2 entradas (13–19 + 20–26 jul).*
+*Última actualización: 2026-08-03. v0.2 · 3 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago).*

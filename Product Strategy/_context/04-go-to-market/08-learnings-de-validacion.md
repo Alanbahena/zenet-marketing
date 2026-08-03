@@ -156,6 +156,9 @@ owner: Alan Bahena
 ### 1. Contexto
 
 - **Contacto:** Alfonso Arballo, integrante de la mesa de jóvenes de **CANIRAC Tijuana**.
+- **Su rol real (resuelto 2-ago · era el hueco del debrief):** trabaja en el **negocio familiar de distribución de vinos y licores**, que surte a grandes cadenas en Tijuana (Calimax, Soriana). **No tiene restaurante propio** — su conocimiento del gremio viene de CANIRAC. Es la **rama (c)** del guión: conector/insider, **NO ICP**.
+  - **Doble clasificación, ambas post-PMF:** conector institucional (CANIRAC · Tier 2 institucional = awareness) **+ supply-side** (distribuidor · Tier 3, que `05-channel-partner-strategy` movió a **Fase 2+ con leverage**, bajo el principio *demand-side primero*). Lectura consistente: **cultivar lento, activar después**.
+  - ⚠️ Sin confirmar: si esa distribuidora surte también a restaurantes (probable en Baja) o solo a retail. Si surte a restaurantes, su lectura del comportamiento de compra del operador vale más de lo que parece.
 - **Cómo se llegó:** Pedro Castañeda (contador de Zenet · channel partner) hizo el puente → café informal, **Pedro presente**. Primer toque institucional warm.
 - **Instrumento:** guión de café con conector institucional (`_templates/guion-reunion-canirac-fase-a.md` v0.1 · 5 beats).
 - **Objetivo declarado:** aprender + relación + abrir puerta. NO venta, NO validación formal.
@@ -178,6 +181,8 @@ owner: Alan Bahena
 - 🌟 *"Sí, Zenet se ve muy bonito, y sí es un asistente virtual — sin embargo al día de hoy solo es un núcleo de data estructurada, que el restaurantero ya hace y ya tiene en múltiples herramientas."* (paráfrasis cercana del apunte, no grabación literal)
 - No le convence del todo que la propuesta de valor ataque un problema real de la industria.
 - **Alan concede parcialmente:** *"en cierta parte tiene razón — por ahora la Fase 1 de Zenet solo es un prototipo que funciona como un núcleo de infraestructura de datos."*
+- 🌟 **Objeción #2 (recuperada 2-ago, no estaba en el apunte original):** *"quizá sea complicado lograr que un restaurante pague por **otro software más**."* Es la objeción **vitamina vs painkiller** = **H6 directo**, y es distinta de la primera: la #1 dice *"no entiendo qué resuelve"*, la #2 dice *"aunque lo entienda, la categoría ya está saturada de cosas que se pagan"*. Conecta con `06-argumentacion` §7.2 (*"¿por qué te pago más que a mi POS si no me das POS?"*) y con el strip anti-POS de la landing v2.
+  - **Lo que NO resuelve esta objeción:** mejor copy. **Lo que sí:** el operador correcto. Quien siente el dolor no compra *"otro software"* — compra la salida de su problema. Por eso el **perfil 3 es el test**, no el argumento.
 
 **Lo que HIZO (revelado):**
 - **Ningún ask aterrizó.** Sin nombre concreto de la mesa, sin siguiente paso propuesto, sin invitación. Interés intelectual y cortesía; **cero acción**.
