@@ -1,6 +1,6 @@
 ---
 name: Landing page · prototipo y diseño
-description: El spec de diseño de la landing v3 de Zenet (construida en branch v3 · deploy a producción GATED por onboarding + análisis real; prod sigue en v2). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
+description: El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por decisión del fundador). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
 last_updated: 2026-08-07
 status: active
@@ -14,7 +14,7 @@ owner: Alan Bahena
 >
 > **Artefacto vivo:** el repo **`zenet-landing`** (GitHub privado `Alanbahena/zenet-landing` · en `02_Producto-y-Tech/` · fuera de este workspace) desplegado por **Vercel**.
 >
-> Estado: 🚧 **v3 COMPLETA en branch `v3`** (QA cerrado 2026-08-07 · preview `zenet-landing-git-v3-zenet.vercel.app`). **Producción (`zenetapp.com`) sigue en v2.0.** ⛔ **Deploy de v3 GATED** (no negociable): (1) onboarding flow shipped y (2) el análisis corrido ≥1 vez con documentos reales. El copy v3 habla en presente — la página no puede mentir.
+> Estado: ✅ **v3 EN VIVO en producción** (`zenetapp.com` · tag `v3.0` · 2026-08-07). El gate original (onboarding + análisis real) fue **levantado por decisión explícita del fundador** el 2026-08-07 — los tags "En construcción" se consideraron honestidad suficiente. ⚠️ El copy habla en presente: **shipear onboarding + análisis real quedó como deuda de producto con prioridad alta.**
 
 ---
 
@@ -118,7 +118,7 @@ Reglas invariables (heredadas + v3): **cross-browser** (JS timer + CSS transitio
 
 ## 10. Deploy gate y cross-doc
 
-**⛔ Gate de deploy (v3 → producción):** (1) onboarding flow shipped · (2) análisis corrido ≥1 vez con documentos reales. El copy v3 está en presente por decisión de Alan — publicarla antes sería mentir. Al pasar el gate: merge `--no-ff` v3→main + tag `v3.0` + refrescar caché de OG (Sharing Debugger).
+**Gate de deploy — LEVANTADO 2026-08-07** por decisión explícita del fundador (opción consciente, no push casual): los tags "En construcción" de la Etapa 3 y la consulta se consideraron honestidad suficiente. Deploy ejecutado: merge `--no-ff` v3→main + tag `v3.0` + verificación en vivo (hero v3 · /hablemos 200 · OG 200). ⚠️ **Deuda que dejó el gate:** onboarding + análisis con docs reales — el copy promete en presente; producto debe alcanzarlo cuanto antes. Recordar refrescar caché de OG en WhatsApp/FB (Sharing Debugger) si el preview sale viejo.
 
 | Doc | Relación |
 |---|---|
@@ -131,4 +131,4 @@ Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva d
 
 ---
 
-*Última actualización: 2026-08-07. v3.0 · construida en branch `v3` (preview) · deploy gated · prod = v2.0 · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
+*Última actualización: 2026-08-07. v3.0 · EN VIVO en zenetapp.com (tag v3.0 · gate levantado) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*

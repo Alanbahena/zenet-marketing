@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > El fundamento de la landing. Define **qué trabajo hace la página, para quién, qué argumento construye y en qué secciones**. El copy sección por sección en `01-copy.md` (v0.3); el diseño en `02-prototipo-y-diseno.md` (v3.0).
 >
-> Estado: la **v2** está EN VIVO en `zenetapp.com` · la **v3** (esta estructura) está construida en branch `v3` — ⛔ **deploy gated**: onboarding shipped + análisis corrido ≥1 vez con docs reales (el copy v3 habla en presente; la página no puede mentir).
+> Estado: ✅ la **v3** (esta estructura) está **EN VIVO en `zenetapp.com`** (tag `v3.0` · 2026-08-07 · gate levantado por decisión del fundador — ⚠️ deuda de producto: onboarding + análisis real, el copy habla en presente).
 
 ---
 
@@ -131,7 +131,7 @@ Rescates v2→v3: el reloj de "En acción" → animación de la Etapa 3 · el Ma
 | `Product Strategy/04-go-to-market/03-outreach-strategy.md` | Cómo se comparte (targeted) |
 
 ### Estado v0.2
-Narrativa y arquitectura v3 cerradas (copy v0.3 completo 2026-08-05 · build completo + QA cerrado 2026-08-07 en branch `v3`). **Prod = v2.** ⛔ Deploy de v3 gated (onboarding + análisis real).
+Narrativa y arquitectura v3 cerradas (copy v0.3 · build + QA 2026-08-07) y **EN VIVO en producción** (tag `v3.0`). El gate se levantó por decisión del fundador; onboarding + análisis real quedan como deuda de producto prioritaria.
 
 ### Decisiones abiertas
 | # | Abierto | Trigger |
@@ -144,4 +144,4 @@ Narrativa y arquitectura v3 cerradas (copy v0.3 completo 2026-08-05 · build com
 
 ---
 
-*Última actualización: 2026-08-07. v0.2 · narrativa y arquitectura v3 (9 secciones) · prod = v2 · deploy gated · v0.1 archivada en `_archive/2026-08-07_00-estrategia-y-estructura-v0.1.md`.*
+*Última actualización: 2026-08-07. v0.2 · narrativa y arquitectura v3 (9 secciones) · EN VIVO en zenetapp.com (v3.0) · v0.1 archivada en `_archive/2026-08-07_00-estrategia-y-estructura-v0.1.md`.*

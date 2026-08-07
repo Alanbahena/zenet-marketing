@@ -1,6 +1,6 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). El BUILD está gateado: flujo de onboarding shippeado + análisis corrido una vez con docs reales. La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
 last_updated: 2026-08-05
 status: active
