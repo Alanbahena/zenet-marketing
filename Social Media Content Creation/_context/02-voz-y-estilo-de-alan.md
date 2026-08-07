@@ -2,7 +2,7 @@
 name: Voz y estilo de Alan (guía operacional con ejemplos reales)
 description: La huella de estilo de Alan Bahena extraída de sus publicaciones reales de LinkedIn · es la base operacional que se carga para generar contenido en su voz · north star (humano · conexión · sin hype · que lo represente) + devices firma + esqueleto recurrente + registro ES vs EN + reglas de generación + corpus anotado de posts reales. Doc vivo · crece y se afina con cada post nuevo. Pairea con el manual §Tono y Voz (principios) y hereda el piso de voz de Branding.
 type: social-media
-last_updated: 2026-06-22
+last_updated: 2026-08-05
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > Este NO es un doc de principios abstractos — es la **huella real** de cómo escribe Alan, extraída de sus publicaciones. Es la base que se carga (manual o vía el futuro skill `/post-linkedin`) cuando se pide *"escríbeme un post sobre X"*, para que salga en su voz, no en una voz genérica.
 >
-> **Doc vivo.** v0.1 está construido sobre 14 posts reales (N=14). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
+> **Doc vivo.** v0.1 está construido sobre 15 posts reales (N=15). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
 
 **Relación con los otros docs de voz:**
 
@@ -396,12 +396,27 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 **Ilustra:** hook = **apertura personal honesta/vulnerable** (*"no tenía idea de en qué me estaba metiendo"* · *"ni siquiera tenía claro mi perfil de cliente"*) · device **"no es X, es Y"** doble (*"no fue lo que les faltaba. Fue todo lo que sostenían a mano"* · *"el problema nunca fue la tecnología. Era que…"*) · **específicos concretos** (2021 · inventarios en papel · pedidos de memoria · recetas en la cabeza) · **contraste founder-ingeniero** (*"yo venía de un mundo de ingeniería"* · como el *"Soy ingeniero. Pero…"* de VE-09) · **reframe canónico** (vive en la memoria, no que falte) · cierre = **pregunta** + guiño building-in-public (*"nace de ella"*). **Nota de voz (load-bearing):** modelo de **origin story con la oportunidad IMPLÍCITA** — el clímax se reframeó de *"vi una gran oportunidad"* → *"salí con una pregunta que no he soltado"* · cuenta el porqué del founder SIN front-loadear la visión comercial · cierra el patrón que se suavizó en POST-01 y POST-08. **Nota visual (load-bearing):** caso modelo de **cuándo NO poner imagen** — text-only como decisión deliberada para un journey personal · se descartó el quote card (modo marketing) y un still-life ilustrado de Nano Banana (salió con **texto fake de IA** · el "tell" de IA va contra el north star "real, no performático"). **Sin hashtags** (patrón ES). **Nota de origen:** historia real (primera agencia 2021 · primer cliente = restaurante · así descubrió el problema del BoH) · co-desarrollado con Alan en varios drafts · el "2021", la honestidad del perfil de cliente y el cierre "nace de ella" son de Alan. **Cuarto journey ES** (después de VE-01, VE-09, VE-11). Publicado 2026-06-22.
 
+### VE-15 · ES · Pillar 2 (industria · pregunta de engagement) · "estandarizar no es escribir un manual" / el costo real de estandarizar
+
+> Estandarizar un restaurante no es escribir un manual.
+> Es meses, a veces años, de prueba y error.
+>
+> Vi a un restaurantero hablar de lo que le costó lograr que su operación funcionara con la misma calidad todos los días, y me quedé pensando:
+>
+> Las recetas, las porciones, cómo se compra, cómo se abre y se cierra, el servicio — casi nunca está escrito. Y cuando lo está, vive repartido: en la cabeza del dueño, del chef, del staff, y en formatos digitales sueltos que se fueron afinando con el tiempo.
+>
+> A veces depende de muy pocas personas. A veces de una sola. Y cada vez que alguien rota, los estándares se mueven.
+>
+> Los que están en esto: ¿cuánto tiempo les tomó estandarizar su operación? ¿De cuántas personas —y de cuánta experiencia— depende hoy que las cosas se hagan igual?
+
+**Ilustra:** hook = device firma **"no es X, es Y"** desde la primera línea (*"no es escribir un manual. Es meses… de prueba y error"* · reframe en dos tiempos) · **gatillo real honesto** (*"vi a un restaurantero…"* · un video de Instagram · la autenticidad del disparador, como la foto con fecha de VE-09) · **específicos concretos** (recetas · porciones · compras · abrir/cerrar · servicio) · **reframe canónico ampliado** — el saber no solo vive en una cabeza, vive **repartido y suelto** (la fragmentación · matiz más verdadero que "vive en la cabeza") · beat de **rotación** (*"cada vez que alguien rota, los estándares se mueven"* · el dolor que el operador siente) · cierre = **doble pregunta acoplada** (tiempo + de cuántas personas/experiencia depende · el motor del engagement). **Tercer post del formato pregunta de engagement** (después de POST-11/POST-12 · cf. `banco-de-ideas`). **Nota de voz (load-bearing):** dos insights de Alan fortalecieron el post base — la **fragmentación** (conocimiento repartido en formatos/herramientas, no solo en una cabeza) y la **rotación** (degrada los estándares) · edición de craft: se **fusionó** la fragmentación en una línea (se decía dos veces) y se **cortó** una frase abstracta (*"el conocimiento es infinito…"* · rompía el ritmo concreto) — modelo de cómo integrar las ideas del fundador subiendo la señal y bajando el ruido. **Nota visual:** text-only deliberado (post-pregunta · la imagen desviaría el foco de responder · cf. VE-14). **Sin hashtags** (patrón ES · §3 · se confirmó que los hashtags casi no mueven alcance en LinkedIn y en un post-pregunta restan). **Nota de origen:** Alan escribió su propio draft (las ideas de fragmentación + rotación + *"la misma calidad todos los días"* son suyas) · co-editado a la versión tight. Publicado 2026-08-05.
+
 ### Cobertura del corpus
 
 | Pillar | Posts | Gap |
 |---|---|---|
 | 1 Founder journey | VE-01 · VE-02 · VE-09 · VE-11 · VE-14 | OK (fuerte) |
-| 2 Industry insight | VE-04 · VE-05 · VE-07 · VE-12 | OK (fuerte) |
+| 2 Industry insight | VE-04 · VE-05 · VE-07 · VE-12 · VE-15 | OK (fuerte) |
 | 3 Técnico | VE-03 · VE-06 · VE-10 · VE-13 | OK (fuerte) |
 | 4 Operador vernacular | (parcial en VE-05 · VE-07) | falta puro |
 | 5 Behind-scenes | VE-08 | OK |
@@ -413,7 +428,7 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 ### 6.1 Estado v0.1
 
-Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native) y 2026-06-22 con VE-14 (founder journey ES · origin story / "mi primer cliente fue un restaurante"). **N=14 · 8 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
+Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native) y 2026-06-22 con VE-14 (founder journey ES · origin story / "mi primer cliente fue un restaurante") y 2026-08-05 con VE-15 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" / el costo real de estandarizar). **N=15 · 9 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
 
 ### 6.2 Cómo crece este doc
 
@@ -443,4 +458,4 @@ Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 
 
 ---
 
-*Última actualización: 2026-06-22. Doc vivo · se afina con cada post.*
+*Última actualización: 2026-08-05. Doc vivo · se afina con cada post.*

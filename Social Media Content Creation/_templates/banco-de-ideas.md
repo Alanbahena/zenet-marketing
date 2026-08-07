@@ -2,7 +2,7 @@
 name: Banco de ideas y backlog de contenido
 description: El swipe file vivo del contenido de Alan · backlog de posts listos para publicar (el starter pack validado) + semillas de ideas para futuros posts. Cada post con pillar · idioma · estado · texto · brief de imagen. Se llena conforme se genera y se valida contenido.
 type: social-media
-last_updated: 2026-07-08
+last_updated: 2026-08-05
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -20,7 +20,7 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only) · POST-11 publicado 2026-06-30 (industria ES · pregunta de engagement · "¿por qué cuesta tanto estandarizar?" · text-only · ~350 impresiones + comentario de calidad) · POST-12 publicado 2026-07-06 (industria ES · pregunta de engagement · herramientas digitales / WhatsApp · text-only) · POST-13 publicado 2026-07-08 (técnico/journey EN · "systems are systems" · arco cross-industria · diagrama físico→datos→AI).** Recámara restante: POST-03 · POST-04.
+5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only) · POST-11 publicado 2026-06-30 (industria ES · pregunta de engagement · "¿por qué cuesta tanto estandarizar?" · text-only · ~350 impresiones + comentario de calidad) · POST-12 publicado 2026-07-06 (industria ES · pregunta de engagement · herramientas digitales / WhatsApp · text-only) · POST-13 publicado 2026-07-08 (técnico/journey EN · "systems are systems" · arco cross-industria · diagrama físico→datos→AI) · POST-14 publicado 2026-08-05 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" · el costo real de estandarizar · fragmentación + rotación · text-only).** Recámara restante: POST-03 · POST-04.
 
 ---
 
@@ -437,6 +437,25 @@ The tools change fast. The systems thinking underneath is what compounds.
 
 ---
 
+### POST-14 · Industria (pregunta de engagement) · ES · 📤 publicado (2026-08-05)
+**Imagen:** ninguna — **text-only** (decisión deliberada · en un post de *pregunta* la imagen desvía el foco de "responde" a "mira" y suele bajar los comentarios · cf. POST-11/POST-12 · el hook *"no es escribir un manual"* carga el peso visual solo).
+**Origen:** desarrollado con Alan 2026-08-05 · **tercer post del formato pregunta de engagement** (después de POST-11 y POST-12) · Pillar 2 industria · **gatillo real** = un video de Instagram de un restaurantero hablando de lo que cuesta estandarizar (honestidad del disparador · device firma *"vi a un restaurantero…"*) · tema = **el costo real de estandarizar** (meses/años · prueba y error · de cuántas personas depende · la experiencia que requiere). **Dos insights de Alan que fortalecieron el post base:** (1) la **fragmentación** — el conocimiento no solo vive en una cabeza, vive repartido en formatos/herramientas sueltas · (2) la **rotación** — cada vez que alguien rota, los estándares se mueven. Reframe canónico ampliado (el sistema vive repartido / en la cabeza, no que falte). **Edición de craft:** se fusionó la fragmentación en una sola línea (se decía dos veces) y se cortó una frase abstracta (*"el conocimiento es infinito…"* · rompía el ritmo concreto). Cierre = doble pregunta acoplada (tiempo + de cuántas personas/experiencia depende). **Sin hashtags** (patrón ES · se confirmó a Alan que en LinkedIn los hashtags casi no mueven alcance y en un post-pregunta restan · el lever real de alcance = responder rápido cada comentario en la 1ª hora) · stealth-safe (observación de industria · cero producto).
+
+```
+Estandarizar un restaurante no es escribir un manual.
+Es meses, a veces años, de prueba y error.
+
+Vi a un restaurantero hablar de lo que le costó lograr que su operación funcionara con la misma calidad todos los días, y me quedé pensando:
+
+Las recetas, las porciones, cómo se compra, cómo se abre y se cierra, el servicio — casi nunca está escrito. Y cuando lo está, vive repartido: en la cabeza del dueño, del chef, del staff, y en formatos digitales sueltos que se fueron afinando con el tiempo.
+
+A veces depende de muy pocas personas. A veces de una sola. Y cada vez que alguien rota, los estándares se mueven.
+
+Los que están en esto: ¿cuánto tiempo les tomó estandarizar su operación? ¿De cuántas personas —y de cuánta experiencia— depende hoy que las cosas se hagan igual?
+```
+
+---
+
 ## Semillas de ideas (💡 sin escribir)
 
 Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `01-manual` §2.3 + research backbone.)
@@ -466,4 +485,4 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 
 ---
 
-*Última actualización: 2026-07-08. Vivo · se nutre conforme se genera contenido.*
+*Última actualización: 2026-08-05. Vivo · se nutre conforme se genera contenido.*

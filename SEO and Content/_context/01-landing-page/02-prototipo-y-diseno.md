@@ -1,166 +1,134 @@
 ---
 name: Landing page · prototipo y diseño
-description: El spec de diseño de la landing v2 de Zenet (EN VIVO en zenetapp.com) — cómo está construida y con qué reglas. Repo git zenet-landing + Vercel (el artefacto vivo), design tokens :root con acento teal profundo #2E6E62, Onest+Hanken, grid 12-col 1280, 11 secciones, componentes (cards · eyebrows · stepper · chips), y las 2 piezas animadas (animación "Cómo funciona" 5 beats + sección "En acción" con reloj auto-avanzante). Workflow de edición (scripts python + branch + lab/) y version control (git tags v1.0/v2.0). Fuente de verdad del diseño. Agent-readable.
+description: El spec de diseño de la landing v3 de Zenet (construida en branch v3 · deploy a producción GATED por onboarding + análisis real; prod sigue en v2). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-07-22
+last_updated: 2026-08-07
 status: active
-version: 2.0
+version: 3.0
 owner: Alan Bahena
 ---
 
 # Landing page · prototipo y diseño
 
-> El **spec de diseño** de la landing: cómo está construida y con qué reglas. La estructura vive en `00-estrategia-y-estructura`; el copy en `01-copy` (v0.2 = copy v2); **aquí el diseño**.
+> El **spec de diseño** de la landing: cómo está construida y con qué reglas. La estructura vive en `00-estrategia-y-estructura`; el copy en `01-copy` (v0.3 = copy v3); **aquí el diseño**.
 >
-> **Artefacto vivo:** el repo **`zenet-landing`** (GitHub privado `Alanbahena/zenet-landing` · en `02_Producto-y-Tech/` · fuera de este workspace) desplegado por **Vercel** en **`zenetapp.com`**. Este doc es el spec.
+> **Artefacto vivo:** el repo **`zenet-landing`** (GitHub privado `Alanbahena/zenet-landing` · en `02_Producto-y-Tech/` · fuera de este workspace) desplegado por **Vercel**.
 >
-> Estado: ✅ **v2 EN VIVO en producción** (2026-07-22 · tag `v2.0`). La era Claude Design (v1) quedó atrás — el `.dc.html` ya no es el artefacto.
+> Estado: 🚧 **v3 COMPLETA en branch `v3`** (QA cerrado 2026-08-07 · preview `zenet-landing-git-v3-zenet.vercel.app`). **Producción (`zenetapp.com`) sigue en v2.0.** ⛔ **Deploy de v3 GATED** (no negociable): (1) onboarding flow shipped y (2) el análisis corrido ≥1 vez con documentos reales. El copy v3 habla en presente — la página no puede mentir.
 
 ---
 
 ## 1. Herramienta, repo y workflow
 
-- **Repo:** `zenet-landing` — sitio estático sin build (`index.html` + `hablemos.html` + `assets/` + `lab/`). HTML+CSS+JS inline, tokens en `:root`.
-- **Deploy:** Vercel auto-deploy on push. `main` → producción (`zenetapp.com`) · branches → preview (`zenet-landing-git-<branch>-zenet.vercel.app`). Nota: Deployment Protection activa → los previews piden auth de Vercel (curl da 302; verificar deploy con `vercel ls --yes`).
-- **Version control (3 capas):** git + **tags por versión** (`v1.0` = pre-teal · `v2.0` = la actual) para rollback · branch por versión mayor (`v2` se trabajó completa en branch y se hizo merge `--no-ff` a main) · los specs del workspace usan `_archive/` con date-prefix.
-- **`lab/`** — páginas de experimentación **noindex** (`lab/color.html` color-lab · `lab/stepper.html` A/B del stepper · `lab/howworks.html` + `lab/howworks-b.html` A/B de la animación). Patrón: iterar en el lab con Alan → la opción ganadora se integra a `index.html` → el lab queda como archivo histórico.
-- **Workflow de edición (crítico):** para ediciones múltiples sobre el HTML grande, **scripts Python** con `str.replace` + `assert count==1` por edición (evita errores de contexto de editar a mano) → commit por sub-paso → push → `vercel ls` confirma Ready → Alan revisa visual en desktop + Safari móvil real.
-- **Generación de assets (OG/favicon):** HTML de plantilla + **Chrome headless** (`--headless --screenshot --window-size=... --virtual-time-budget=9000` · lanzar con `nohup`, Chrome cuelga al salir → `pkill`; el PNG sí se escribe) · `sips -z` para derivar tamaños (apple-touch 180).
+- **Repo:** `zenet-landing` — sitio estático sin build (`index.html` ~950 líneas + `hablemos.html` + `assets/` + `lab/`). HTML+CSS+JS inline, tokens en `:root`.
+- **Deploy:** Vercel auto-deploy on push. `main` → producción (`zenetapp.com`) · branches → preview (`zenet-landing-git-<branch>-zenet.vercel.app`). Deployment Protection activa → previews piden auth de Vercel (curl da 302; verificar deploy con `vercel ls` + `vercel inspect <url>` → status Ready).
+- **Version control:** git + tags por versión (`v1.0` · `v2.0` · v3 se taggeará al deploy) · branch por versión mayor (`v3` completa en branch · merge `--no-ff` a main al pasar el gate) · specs del workspace usan `_archive/` con date-prefix.
+- **`lab/`** — checkpoints de las animaciones (`etapa1` · `etapa2` · `etapa2-b` · `etapa3` · `consulta` · `og-source`) + **`_qa.html`** (harness de QA, ver §8). Patrón: iterar en lab con Alan → la versión ganadora se integra a `index.html` → el lab queda histórico. ⚠️ Los labs pueden divergir del index tras fixes; **el index es la verdad — verificar SIEMPRE el index, no solo el lab.**
+- **Workflow de edición (crítico):** scripts Python con `str.replace` + `assert count==1` por edición → commit por sub-paso → push → confirmar Ready → revisión visual de Alan. ⚠️ Lección v3: NUNCA `re.sub` con patrones amplios sobre el CSS (un regex se comió la regla del beat 4 de la Etapa 2 — matcheaba también dentro de otras reglas). `str.replace` exacto con assert, siempre.
+- **Al avisar a Alan que revise:** esperar el deploy **Ready ANTES** de avisar, y pedir pestaña privada o `?v=N` (el deploy-lag + caché de Safari causaron dos falsas alarmas de "sigue roto" en el QA de v3).
 
 ---
 
-## 2. Decisiones visuales v2 (→ `03-visual-identity` ya retroalimentado)
+## 2. Decisiones de diseño v3
 
-| Decisión | ✅ Resuelta en v2 |
+| Decisión | Detalle |
 |---|---|
-| **Acento de marca** | **Teal profundo `#2E6E62`** (hover `#265C52`) — reemplaza al terracota `#CC5536` de v1. Razón: diferenciación vs el mar-de-naranja del food-tech · "orden/zen sobre apetito" · BoH no es food-facing · sale de la familia teal del brandbook. Decidido en `lab/color.html` · propagado a landing + hablemos + OG + favicon. **Cf. `Branding/03-visual-identity/02-color.md` v2.0** (la decisión canónica vive allá). |
-| **Arquitectura térmica** | **Invertida vs v1: base cálida / acento frío.** La calidez vive en la base (off-white cálido · peach · nodos perla glass del motivo); el orden vive en el acento teal. Conserva "cálido sobre frío-tech" sin acento naranja. |
-| **Glass** | Mismo principio v1 (reservado a momentos clave) + **fórmula de esfera** refinada en v2: la lectura de vidrio la da la **luz interior** (highlight arriba-izq + sombra interna abajo), no la opacidad del fill. Cuerpo ~.8; ni lavado (~.6) ni sólido (~.95 = "paleta"). Aplica a nodos del hero, núcleo de la animación y `day-core`. |
-| **Densidad de sección** | §3 v1 (una sección larga) se partió en **3 movimientos** con fondos alternos como "refrescos" de lectura + eyebrows de capítulo. Lección: los bloques informativos largos necesitan cambios de ritmo visual. |
-| Tipografía · AA · eyebrows | Heredadas de v1 (Onest+Hanken · teal-700 texto secundario · eyebrows ahora en teal). |
+| **REGLA v3: los componentes hablan, la prosa estorba** | Cada sección cierra en su componente más fuerte; 4 bloques de prosa de remate se eliminaron en el QA. Si un componente ya lo dice, el párrafo sobra. |
+| **Sección WHY: construida y ELIMINADA** | Se construyó una sección Why (Sinek) tras el hero, se vio en pantalla y se cortó — repetía el hero. El WHY vive en el hero mismo ("El caos no es el precio…"). Lección: probar en pantalla antes de enamorarse en papel. |
+| **Jerarquía de animación** | **El camino = la estrella** (3 etapas + consulta, §5) · hero = respiración · resto = micro-motion (hovers · reveals). Disciplina "2 sistemas animados" heredada de v2: no sobre-animar. |
+| **Hero sólido (fix v3)** | Los degradados translúcidos del motivo (alpha .62) se veían "lavados" según tamaño de ventana/zoom. Se reemplazaron por los **colores compuestos** que el ojo veía en prod (la mezcla alpha×fondo calculada): esferas `rgb(247,230,219)` · núcleo `rgb(139,190,177) → rgb(124,161,150)`, alphas .97-.98. Mismo color percibido, estable a cualquier tamaño. |
+| **Esquema SVG canónico (lección WebKit)** | Para SVGs de escena estirados: `viewBox` + `preserveAspectRatio="none"` + **strokes/dashes en unidades de viewBox** (p. ej. `stroke-width: 0.3` · `stroke-dasharray: 0.8 1`) + `width/height: 100%` explícitos en CSS. **NUNCA `vector-effect: non-scaling-stroke`** — con escalado no uniforme, WebKit/iPhone descompone la geometría. El esquema de la Etapa 3 (que siempre funcionó) es la referencia. |
+| Acento teal · arquitectura térmica · glass · tipografía | Heredados de v2 sin cambios (cf. `Branding/03-visual-identity/02-color.md` v2.0). |
 
 ---
 
-## 3. Design tokens (`:root`) — la fuente
+## 3. Design tokens (`:root`)
+
+Sin cambios vs v2 (base off-white cálida · acento `#2E6E62`/`#265C52` · teal-400/mint · Onest+Hanken · container 1280). Adición v3 — colores del motivo del hero ya NO derivan de alphas sobre el fondo; son sólidos calculados:
 
 ```css
-/* Neutros / base */
---offwhite-50:  #FFFCFA;   /* fondo base principal */
---offwhite-100: #F9F4EF;   /* fondo de sección alterna (ritmo) */
---peach-100:    #F4DED0;   /* superficie cálida sutil · glass · halo */
---charcoal-900: #2B3738;   /* texto principal */
---teal-700:     #4B5E5E;   /* texto secundario · líneas */
---grey-300:     #A3B2AC;   /* SOLO decorativo */
---grey-100:     #D1DBD7;
-
-/* Acento (teal profundo · contenido) — v2 */
---accent:       #2E6E62;   /* botones · subrayado · números · eyebrows · núcleo motivo · chips */
---accent-hover: #265C52;
-
-/* Familia del acento */
---teal-400:     #88BCAF;   /* highlight del núcleo glass · conectores */
---mint-200:     #BFE2D9;
-
-/* Tipografía */
---font-display: "Onest", system-ui, sans-serif;    /* 600/700 */
---font-body:    "Hanken Grotesk", system-ui, sans-serif;
-
-/* Layout */
---container: 1280px;
---gutter: 24px;                    /* 20px ≤1024 · 16px ≤640 */
---margin: clamp(20px, 5vw, 64px);
---nav-h: 60px;
+/* Motivo hero (sólidos compuestos · v3) */
+.node      → radial-gradient(rgba(255,255,255,.98), rgba(247,230,219,.97))
+.node-core → radial-gradient(rgba(139,190,177,.98), rgba(124,161,150,.97))
 ```
 
 ---
 
-## 4. Tipografía y grid
+## 4. Las 9 secciones (v3)
 
-Sin cambios estructurales vs v1: Onest display (600 · 700 en piezas v2) + Hanken body · `clamp()` fluido · 12-col 1280 (12→8→4) · hero 2 modos responsive · ritmo por fondo alterno `.section`/`.section-alt` + **`.section-day`** (fondo especial gradiente cálido, único de "En acción" — no rompe la alternancia, se lee como momento aparte).
-
----
-
-## 5. Las 11 secciones (v2)
-
-| # | data-screen-label | Contenido |
-|---|---|---|
-| 1 | Hero | headline v2 ("Los grandes restaurantes…equipo de especialistas. Ahora el tuyo también.") + motivo red cálida (núcleo teal + 6 nodos glass + flow-dots SMIL) |
-| 2 | El problema (alt) | 4 pains v2 (pain 3 = fragmentación "regada en mil lugares" · figura Braun de docs/puntos sueltos) |
-| 3 | Qué es Zenet | **movimiento A "El sistema":** subline → **animación "Cómo funciona"** (ver §7) → stepper línea de proceso (5 pasos · `.tl`) → strip **"Zenet no es un POS…Tu POS se queda. El caos se va."** |
-| 4 | El equipo (alt) | eyebrow "El equipo" + 6 cards de áreas (Estandarización · Inventarios · Compras · Protocolos · **Mantenimiento y permisos** · Costos) con íconos line-art |
-| 5 | El Manual | eyebrow "El resultado" + panel Manual Operativo vivo + screenshot real |
-| 6 | **En acción** (`.section-day`) | **NUEVA v2** — "Así se ve un día con Zenet" + tag honesto "En construcción — junto a los primeros Socios Fundadores" + reloj de 6 momentos (ver §7) |
-| 7 | Qué cambia (alt) | 4 changes espejo (incl. "un experto a tu lado") · **sin animación (decisión: la página ya respira)** |
-| 8 | Por qué ahora | 2 beats editoriales |
-| 9 | Por qué Alan (alt) | foto + 1ª persona + **link al LinkedIn de Alan** |
-| 10 | La invitación | 4 beneficios + panel deal |
-| 11 | Cierre / CTA | card aurora + glow cursor-follow + botón blanco |
+| # | data-screen-label | Eyebrow | Contenido |
+|---|---|---|---|
+| 1 | Hero | — | "**El caos no es el precio** de tener un restaurante." (mark en el subrayado) + subhead equipo-de-especialistas ("…desde lo que ya tienes… Tú decides; Zenet lo carga.") + motivo red (núcleo + 6 nodos, ahora sólidos) |
+| 2 | El problema | La realidad de hoy | **5 filas `.verb`** (número + chip verbo + cuerpo) con reveal escalonado al entrar (IO · stagger 90ms) |
+| 3 | El trato | Cómo trabaja | "El trabajo que más esfuerzo te cuesta —" + **5 puntos del trato**: Lo construye desde lo que ya tienes · Lo ejecuta cada día · Lo junta en un solo cerebro operativo · Lo mantiene vivo · Se lo pasa a quien llega |
+| 4 | El camino | El camino | **La pieza estrella** (§5): 3 capítulos (Etapa 1 · 2 · 3, texto + escena animada en 2 columnas) + **la consulta** como cierre. Etapa 3 y consulta llevan `tag-wip` "En construcción — con los primeros Socios Fundadores" |
+| 5 | Qué cambia | El cambio | 4 cards `.change` (figura + número) + cierre emocional |
+| 6 | Por qué ahora | El momento | Compactada a statement (title + sub con mark) — sin beats editoriales (regla v3) |
+| 7 | Por qué Alan | El fundador | Foto + 1ª persona + link LinkedIn (heredada) |
+| 8 | La invitación | La invitación | Intro + 4 `.benefit` + panel `.deal` de **3 columnas** (ancho 1040 alineado a benefits) |
+| 9 | Cierre | — | Card aurora + glow cursor-follow (texto en capa de composición propia, ver §8) + botón blanco |
 
 ---
 
-## 6. Componentes / patrones v2 (nuevos sobre v1)
+## 5. El camino — la pieza estrella
 
-- **Stepper línea de proceso (`.tl`)** — 5 puntos numerados sobre línea teal + labels debajo; vertical en móvil. Reemplazó a las pills-con-flechas (wrap feo). Estático (draw-in evaluado y pospuesto indefinidamente).
-- **Strip de posicionamiento (`.notpos`)** — banda tintada `color-mix(accent 6%)` para el mensaje anti-POS.
-- **Tag honesto (`.day-tag`)** — pill teal "En construcción — junto a los primeros Socios Fundadores" (disciplina pre-PMF: la sección En acción es intención de producto, no demo fingido).
-- **Chips de hora (`.day-chip`)** — pills clicables conectadas por línea de tiempo; activa = rellena teal.
-- **Burbujas de chat (`.hw-bub`)** — Q&A estilo WhatsApp (usuario tinte teal der. · Zenet blanca izq.) para el momento "Jarvis".
-- **Núcleo Zenet (`.hw-zcore` / `.day-core`)** — esfera teal glass con fórmula de luz interior; el personaje visual recurrente de la página (hero → animación → En acción).
+Patrón común de las 3 escenas: **beat-loop** — JS timer cicla `data-beat` en la escena, CSS reacciona por atributo, caption sincronizado, snap-reset sin flash (`.eN-snap` + reflow), IO arranca al entrar, `prefers-reduced-motion` → frame final estático. Escenas cuadradas (`aspect-ratio: 1/1`) en ≤640px.
 
----
-
-## 7. Movimiento / animaciones v2
-
-Reglas invariables: **cross-browser** (JS timer + CSS transitions + SMIL · nada de scroll-timeline) · `prefers-reduced-motion` en todo (animaciones → estado final estático) · **IntersectionObserver** para arrancar al entrar en viewport y pausar fuera · **hover = pausa** en piezas auto-avanzantes · patrón **`.noanim` reset** (reinicio de loop sin flash: class que mata transitions + reflow + remove).
-
-### Pieza 1 · Animación "Cómo funciona" (§3 · la estrella)
-
-**Metáfora ganadora: "el tablero que corre solo"** (Opción B · vs Opción A red-de-nodos, archivada en `lab/howworks.html`). 5 beats auto-avanzantes (durs 2600/3000/3000/4600/6800ms) con etiqueta + barras de progreso clicables:
-
-1. **Tus documentos** — 4 papeles dispersos y torcidos (Recetas · Excel · Fotos · Cuaderno) con líneas de texto simuladas.
-2. **Zenet los entiende** — los docs convergen en una pila + línea de **scan teal** que la recorre.
-3. **Los ordena** ("los estandariza — cada área en su lugar, como un manual") — la pila se despliega en **tablero de 6 tarjetas = las 6 áreas** (stagger).
-4. **Los automatiza** ("corre solo, cada día") — palomas ✓ + barras llenándose **en ola** por el tablero, en ciclo.
-5. **Tu mano derecha** — el tablero **se condensa en el núcleo teal** (el núcleo ES Zenet) + halo + Q&A: *"Zenet, ¿qué falta para cerrar el día de hoy?" / "Solo el conteo de barra. Lo demás ya cuadró — y ojo: el tomate sube el jueves."*
-- Namespace `hw-` (colisión real evitada: `.beat` la usa §8).
-
-### Pieza 2 · "En acción" (§6 · el reloj del día)
-
-Layout compacto: tira de 6 chips de hora + **UNA tarjeta rotativa** (crossfade 260ms · min-height fija = sin brincos) + **barra de progreso** al pie (3.4s, se pausa con hover) + **núcleo respirando** (scale 1→1.16 · 2.6s). Los **6 momentos = las 6 áreas** en orden cronológico: 7:50 apertura (protocolos) · 10:30 recepción (compras) · 12:40 servicio (inventarios) · 4:15 mantenimiento · 5:30 cocina/receta (estandarización) · 10:45 cierre (costos). Namespace `day-`. Lección: 6 tarjetas apiladas = sección demasiado larga → apilar en el tiempo, no en el espacio.
-
-### Heredadas de v1 (vigentes)
-
-Hero (breathe + glow + flow-dots SMIL + hover nodos) · hovers de cards 450ms · §8 glow cursor-follow · zoom foto fundador.
+- **Etapa 1 · "Tu operación, entendida"** — 4 beats (durs 3000/2100/1900/6200): documentos regados (cuaderno · Excel · fotos · recetas) flotan → convergen al núcleo → link → **panel de análisis** (filas + barras que se llenan). Captions: "Mandas tus documentos como están" → "Zenet los lee y los entiende" → "Analiza tu operación" → "Tu análisis honesto — con tus números".
+- **Etapa 2 · "Tu operación, estandarizada área por área"** — 5 beats: 6 chips de áreas regadas (drift) → se ordenan en hexágono → núcleo aparece → **estrella** (las 6 líneas se dibujan por dashoffset, delays escalonados) → el conjunto se disuelve y el núcleo sube: **2 tarjetas Sucursal** con mini-red + 3 roles cada una, conectadas por ramas punteadas. SVG con el esquema canónico (§2) — coords `viewBox 0 0 100 75` + `pathLength` para el draw.
+- **Etapa 3 · "Personalizas tus procesos, y empiezan a correr solos"** — núcleo arriba + ramas a 3 paneles de rutinas (Gerente apertura 7:50 · Cocina checklist · Servicio cierre 11:00) → checkboxes se palomean en cascada → **línea del tiempo del día** (track + progreso 4.6s + 4 chips de hora que se encienden). Cards en top 40/44% · timeline en bottom 11% (aire deliberado entre ambos).
+- **La consulta (cierre del camino)** — strip 2 columnas: afirmación ("Sin cursos, sin capacitaciones… si tu equipo sabe usar WhatsApp, sabe usar Zenet") + **chat rotativo** de 3 intercambios (cierre del día · receta de la casa · permiso de salubridad + servicio de la máquina) con burbujas estilo WhatsApp, **typing dots** entre pregunta y respuesta (pop cubic-bezier al aparecer Zenet) y swap suave entre intercambios (ciclo 7.2s).
 
 ---
 
-## 8. Assets
+## 6. Componentes / patrones v3 (nuevos sobre v2)
 
-- `assets/zenet-imagotipo.png` — imagotipo (charcoal) · nav (link a `/`) + footer.
-- `assets/app-catalogos.png` — captura real de la app.
-- `assets/alan-founder.jpg` — foto del fundador.
-- `assets/og-image.png` — **v2 (2026-07-22):** copy hero v2 + regla y subline teal (la v1 decía "por el precio de una app" — claim retirado).
-- `assets/favicon.png` + `apple-touch-icon.png` — **v2:** tile teal `#2E6E62` + "z" off-white (eran terracota).
-
----
-
-## 9. Portabilidad (a producción Next.js)
-
-- El estático **ya ES producción** (Vercel). Next.js sigue siendo trigger-based (leads a Supabase · SEO · componentes compartidos con el producto).
-- Al portar: tokens `:root` → tema · componentes → componentes · los 3 scripts inline (cta-glow · hw-anim · day-clock) → hooks/componentes con el mismo patrón IO + reduced-motion · Formspree reusable o API route.
+- **Filas verbo (`.verb`)** — la Realidad como lista numerada de verbos (no cards): número + chip + cuerpo, reveal una sola vez (IO unobserve).
+- **Capítulos del camino (`.chapter`)** — texto (kicker "Etapa N" + h3 + prosa) y escena (`.chapter-viz .eN-stage`) en 2 columnas; alternan lados; stack en móvil.
+- **Tag WIP (`.tag-wip`)** — pill multilinea "En construcción — con los primeros Socios Fundadores" (disciplina pre-PMF sobre Etapa 3 y consulta: intención de producto, no demo fingido).
+- **Burbujas de consulta (`.bub-user` / `.bub-zenet`)** — usuario mint der. · Zenet blanca izq. con badge "● Zenet"; typing dots en `.slot` (grid superpuesto para el swap typing→mensaje sin brincos).
+- **Escenas de etapa (`.eN-stage`)** — panel off-white-50 con borde y sombra suave; el "teatro" de cada animación.
 
 ---
 
-## 10. Cross-doc
+## 7. Movimiento / inventario de scripts
+
+Reglas invariables (heredadas + v3): **cross-browser** (JS timer + CSS transitions + SMIL · nada de scroll-timeline) · `prefers-reduced-motion` en todo → frame final estático · **IO** para arrancar al entrar · beat-loop con snap-reset.
+
+6 scripts inline en `index.html` (en orden): **cta-glow** (coordenadas del brillo, ver §8) · **verb reveal** (IO + stagger) · **e1** · **e2** · **e3** (beat-loops del camino) · **consulta** (ciclo de intercambios). Al portar a Next.js: cada uno → hook/componente con el mismo patrón IO + reduced-motion.
+
+---
+
+## 8. QA — método y lecciones técnicas (v3)
+
+- **Harness de QA (`lab/_qa.html` · untracked):** iframe `src="/"` **servido desde localhost** (un padre `file://` con iframe http es cross-origin y los scripts mueren en silencio) · params `?sel=` (scroll a un selector) `&scene=&beat=` (congelar un beat) · congelar = **barridos repetidos** matando timers del iframe (un solo kill pierde la carrera contra el IO). Captura: Chrome headless `--virtual-time-budget` + `--force-device-scale-factor=2` (retina) + PIL para crops. **Regla de oro: capturar y mirar el propio trabajo (del index) ANTES de pedirle a Alan que mire el suyo.**
+- **WebKit + SVG (la saga de la Etapa 2):** `vector-effect: non-scaling-stroke` + `preserveAspectRatio="none"` descompone la geometría en iPhone · `pathLength` solo existe como atributo SVG (no CSS) y es poco fiable con coords en % · un SVG **sin** viewBox tiene ratio intrínseco 2:1 y `position:absolute + inset:0` NO lo estira (hace falta `width/height: 100%`). El esquema canónico de §2 evita todo esto.
+- **Texto sobre gradiente animado (CTA):** actualizar custom properties en el contenedor en cada `pointermove` invalida estilos del subtree y re-rasteriza el texto (jitter). Fix: variables **solo en el elemento del glow** + throttle `requestAnimationFrame` + el bloque de texto en capa propia (`transform: translateZ(0)`).
+- **Falsas alarmas de entorno:** Chrome headless fuerza ~500px de ancho mínimo de ventana (usar iframe para capturas móviles honestas) · el zoom de Chrome/Safari es **por sitio** (el preview puede verse distinto a prod con código idéntico — ⌘0 resetea) · deploy-lag + caché Safari ⇒ avisar solo con deploy Ready + pestaña privada.
+
+---
+
+## 9. Assets
+
+- `assets/zenet-imagotipo.png` · `assets/app-catalogos.png` · `assets/alan-founder.jpg` — heredados.
+- `assets/og-image.png` — **v3 (2026-08-06):** "El caos no es el precio / de tener un restaurante." + dash teal + "Nunca lo fue." + zenetapp.com. Fuente: `lab/og-source.html` → Chrome headless 1200×630.
+- `assets/favicon.png` + `apple-touch-icon.png` — v2 (teal), vigentes.
+
+---
+
+## 10. Deploy gate y cross-doc
+
+**⛔ Gate de deploy (v3 → producción):** (1) onboarding flow shipped · (2) análisis corrido ≥1 vez con documentos reales. El copy v3 está en presente por decisión de Alan — publicarla antes sería mentir. Al pasar el gate: merge `--no-ff` v3→main + tag `v3.0` + refrescar caché de OG (Sharing Debugger).
 
 | Doc | Relación |
 |---|---|
-| `00-estrategia-y-estructura.md` | Estructura (upstream) — v2 añadió "En acción" y partió §3; refrescar cuando se toque |
-| `01-copy.md` **v0.2** | Copy v2 por sección (upstream) |
-| `Branding/03-visual-identity/02-color.md` **v2.0** | **La decisión canónica del acento teal vive allá** · este spec la aplica |
-| `Branding/03-visual-identity/00-marco` · `03-tipografia` · `05-aplicacion` | Identidad visual · pendiente refrescar referencias terracota→teal en su próxima pasada |
-| `Product Strategy/04-go-to-market/08-learnings-de-validacion.md` | Los learnings de Carlos (protocolos · mantenimiento · personalización · anti-POS) motivaron el copy v2 y la sección En acción |
+| `00-estrategia-y-estructura.md` | Estructura (upstream) — describe la v1; **pendiente refrescar a v3** (9 secciones · narrativa Sinek) |
+| `01-copy.md` **v0.3** | Copy v3 por sección (upstream · incluye vetos de vocabulario y el log de evoluciones del build) |
+| `Branding/03-visual-identity/02-color.md` **v2.0** | Decisión canónica del acento teal — este spec la aplica |
+| `Product Strategy/04-go-to-market/08-learnings-de-validacion.md` | Los learnings de Fase A motivaron el reenfoque v3 (el camino · el trato · honestidad WIP) |
+
+Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva de mejora) — se activa con la primera curva real de un design partner (documentada en `01-copy.md`).
 
 ---
 
-*Última actualización: 2026-07-22. v2.0 · EN VIVO en zenetapp.com (tag v2.0) · acento teal · 11 secciones · 2 piezas animadas · v1.0 archivada en `_archive/2026-07-22_02-prototipo-y-diseno-v1.md`.*
+*Última actualización: 2026-08-07. v3.0 · construida en branch `v3` (preview) · deploy gated · prod = v2.0 · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*

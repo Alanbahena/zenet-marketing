@@ -1,22 +1,22 @@
 ---
 name: Landing page · estrategia y estructura
-description: El fundamento de la landing page inicial de Zenet · su trabajo (página de confianza para reclutar los primeros design partners · pre-PMF · targeted · sin pricing · nombra Zenet) · las 4 decisiones · audiencia · narrativa y jerarquía de mensaje · arquitectura de 8 secciones con el brief de cada una · CTA conversación-led. La estrategia/estructura vive aquí; el copy en 01-copy; el diseño/prototipo en 02-prototipo-y-diseno. Agent-readable.
+description: El fundamento de la landing de Zenet · su trabajo (página de confianza para reclutar design partners · pre-PMF · targeted · sin pricing · nombra Zenet) · las 4 decisiones · audiencia · la narrativa v3 (Sinek + raíz "el caos no es el precio" + hilo "cargar") · arquitectura de 9 secciones con el trabajo narrativo de cada una · CTA conversación-led · historial v1→v2→v3. La estrategia/estructura vive aquí; el copy en 01-copy (v0.3); el diseño en 02-prototipo-y-diseno (v3.0). Agent-readable.
 type: seo-content
-last_updated: 2026-06-04
+last_updated: 2026-08-07
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
 # Landing page · estrategia y estructura
 
-> El fundamento de la landing inicial. Define **qué trabajo hace la página, para quién, qué argumento construye y en qué secciones**. El copy se trabaja sección por sección en `01-copy.md`; el diseño en `02-prototipo-y-diseno.md`.
+> El fundamento de la landing. Define **qué trabajo hace la página, para quién, qué argumento construye y en qué secciones**. El copy sección por sección en `01-copy.md` (v0.3); el diseño en `02-prototipo-y-diseno.md` (v3.0).
 >
-> Estados: ✅ definido · 🚧 por trabajar.
+> Estado: la **v2** está EN VIVO en `zenetapp.com` · la **v3** (esta estructura) está construida en branch `v3` — ⛔ **deploy gated**: onboarding shipped + análisis corrido ≥1 vez con docs reales (el copy v3 habla en presente; la página no puede mentir).
 
 ---
 
-## 1. El trabajo de la página
+## 1. El trabajo de la página (invariable desde v0.1)
 
 > **Una página de confianza para reclutar los primeros design partners.** No es conversión masiva. Su éxito = que el operador correcto confíe lo suficiente para **tener una conversación**.
 
@@ -29,20 +29,18 @@ owner: Alan Bahena
 
 ---
 
-## 2. Las 4 decisiones (✅ 2026-06-04)
+## 2. Las 4 decisiones (✅ 2026-06-04 · siguen vigentes)
 
 | # | Decisión | Valor |
 |---|---|---|
 | 1 | **Alcance** | Design-partner trust (NO early commercial todavía) |
 | 2 | **Pública / targeted** | **Targeted** — se comparte 1:1 con prospectos en outreach · no broadcast/SEO por ahora |
 | 3 | **Pricing** | **Conversación-led** — sin pricing table (el Programa Socio Fundador es custom) |
-| 4 | **Nombra Zenet** | **Sí** — es la superficie nombrada del producto · distinta del LinkedIn de Alan (que sigue en stealth) · usada de forma targeted = no rompe el stealth de LinkedIn |
-
-> **Nota stealth:** la landing nombra Zenet, pero se comparte de forma dirigida durante el reclutamiento de design partners — no se indexa ni se broadcastea. El reveal público en LinkedIn (Alan) sigue su propio trigger (`Social Media/00-marco` §3).
+| 4 | **Nombra Zenet** | **Sí** — superficie nombrada del producto · distinta del LinkedIn de Alan (stealth) · uso targeted = no rompe el stealth |
 
 ---
 
-## 3. Audiencia
+## 3. Audiencia (sin cambios)
 
 | Audiencia | Qué necesita sentir |
 |---|---|
@@ -52,44 +50,68 @@ owner: Alan Bahena
 
 ---
 
-## 4. Narrativa y jerarquía de mensaje
+## 4. La narrativa v3 (reescrita 2026-08-04/05 · Sinek + raíz emocional)
 
-El **argumento** que hace la página, en orden (la narrativa dicta la estructura):
+### La raíz — el problema que todo lo demás argumenta
 
-1. **Resonancia** — tu operación funciona porque tú estás ahí *(el operador se siente visto)*
-2. **Tensión** — pero no escala · se rompe en la 2da sucursal · el sistema vive en tu cabeza *(reframe del antagonista)*
-3. **La idea** — Zenet extiende tu sistema a donde tú no estás *(qué es)*
-4. **La transformación** — cómo se siente operar con sistema *(tiempo · tranquilidad · escalamiento)*
-5. **Por qué ahora** — el momento que lo hace posible
-6. **Por qué Alan** — quién lo construye *(el driver #1 de confianza en pre-PMF)*
-7. **La invitación** — el Programa Socio Fundador
-8. **Cierre** — hablemos
+> **El sistema ya existe — en tu cabeza, o repartido en herramientas que no se hablan.**
+> **Sacarlo de ahí se puede. A los pocos que lo han logrado les costó años. Y mantenerlo vivo no termina nunca.**
+> **Nadie te vende eso: te venden dónde guardarlo. El trabajo sigue siendo tuyo.**
 
-> Frame de marca: sobrio · claro · humano · sin hype · el reframe canónico ("el sistema vive en tu cabeza, no escala" · NO "no tienes sistema").
+- ⚠️ Corrección load-bearing (del fundador · Fase A): **NO decir "no se puede copiar"** — Alma Verde SÍ lo copió (con años). El problema es el **costo** (años) + el **mantenimiento** (no termina nunca).
+- **Regla de verbos:** el problema se escribe con verbos (construir · mantener · ejecutar · transferir · unir), no con "falta de X" — el mercado ya ocupa los sustantivos (inventario · costos · control). Test por línea: *¿un POS con IA podría poner esto en su landing mañana?* Si sí, no abre.
+
+### El argumento, en orden (Sinek: WHY → HOW → WHAT)
+
+1. **La bandera (WHY, en el hero)** — *"El caos no es el precio de tener un restaurante."* El WHY no tiene sección propia: vive en el hero (ver historial §5 — la sección WHY se construyó y se retiró en pantalla).
+2. **La evidencia** — la realidad de hoy: la carga diaria en 5 verbos + la resignación ("así es este negocio") refutada.
+3. **El trato (HOW)** — quién carga ahora: lo que Zenet construye · ejecuta · junta · mantiene · transfiere. Anti-POS explícito.
+4. **El camino (WHAT)** — cómo pasa en la práctica: 3 etapas (empiezas con lo que ya tienes → tu operación estandarizada → tus procesos corren solos) + la consulta como prueba. Honestidad WIP: la Etapa 3 lleva el tag "En construcción — con los primeros Socios Fundadores".
+5. **El WHY cumplido** — qué cambia: las 4 promesas + "volver a construir".
+6. **El momento** — posibilidad + industria (sin urgencia artificial).
+7. **El fundador** — 1ª persona · driver #1 de confianza pre-PMF (+ la startup de trazabilidad: "se decide atrás").
+8. **La invitación** — Socios Fundadores + el piso: *"es tuyo — te lo llevas"*.
+9. **Cierre** — hablemos.
+
+### El hilo transversal: "cargar"
+
+La página es una sola frase dicha en nueve secciones: entra como diagnóstico (*"es cargar el sistema tú solo"*), gira en el hero y el trato (*"Zenet lo carga"*), se resuelve en qué cambia (*"que tu negocio ruede"* · *"volver a construir"*).
+
+### Regla v3 de forma
+
+**Los componentes hablan; la prosa estorba.** Cada sección cierra en su componente más fuerte (animación · lista · panel) — los párrafos de remate se cortan.
 
 ---
 
-## 5. Arquitectura de secciones (las 8)
+## 5. Arquitectura de secciones (las 9 · v3)
 
-| # | Sección | Su trabajo | Qué muestra (brief) | Input |
-|---|---|---|---|---|
-| 1 | **Hero** | Qué es + promesa en 5 seg · abrir la puerta | Headline (promesa/reframe) + subhead (qué es) + CTA suave + visual (motivo apilado · glass cálido) | VP statement §6 · posicionamiento · promesa · personalidad §6.2 |
-| 2 | **El problema** | Que el operador se sienta visto | El reframe + la fricción concreta (se rompe en la 2da sucursal · el conocimiento en una cabeza) | narrativa v1.1 · customer research · POST-03 |
-| 3 | **Qué es Zenet** | La idea central | Sistema operativo cognitivo / agency-as-SaaS · "extiende tu forma de operar" · NO feature-dump | posicionamiento · agency framing |
-| 4 | **Qué cambia** | La transformación | Antes/después · las 4 promesas (tiempo · dinero · tranquilidad · escalamiento ordenado) | promesa de marca |
-| 5 | **Por qué ahora** | Posibilidad + demanda (sin urgencia artificial) | Beat 1 la tecnología por fin lo permite · Beat 2 la industria se profesionaliza | market-insights "por qué ahora" |
-| 6 | **Por qué Alan** | Credibilidad del fundador (driver de confianza) | El arco (turbinas → Audi → Teradata → esto) · founder-ingeniero que construye | manual de marca personal §2 · origin-story |
-| 7 | **La invitación** | Invitar al Programa Socio Fundador | Qué es · beneficios · qué se espera · invitación (no venta) | `02-programa-socio-fundador-offer.md` |
-| 8 | **Cierre / CTA** | Cerrar con calma + abrir conversación | "Hablemos" · contacto / agendar conversación | outreach strategy |
+| # | Sección (screen-label) | Su trabajo | Componente que la cierra |
+|---|---|---|---|
+| 1 | **Hero** | La bandera + qué es Zenet + CTA | Motivo red (núcleo + 6 nodos) respirando |
+| 2 | **El problema** — "La realidad de hoy" | La evidencia; el operador se siente visto | 5 filas verbo con reveal escalonado |
+| 3 | **El trato** — "Cómo trabaja" | El HOW: quién carga ahora | Los 5 puntos del trato |
+| 4 | **El camino** | El WHAT en 3 etapas + prueba | **Pieza estrella:** 3 escenas animadas + la consulta (chat) |
+| 5 | **Qué cambia** — "El cambio" | El WHY cumplido | 4 cards + cierre emocional |
+| 6 | **Por qué ahora** — "El momento" | Posibilidad + demanda | Statement compacto (sin beats) |
+| 7 | **Por qué Alan** — "El fundador" | Credibilidad del fundador | Foto + 1ª persona + LinkedIn |
+| 8 | **La invitación** | El Programa Socio Fundador | 4 beneficios + panel del trato honesto (3 col) |
+| 9 | **Cierre / CTA** | Cerrar con calma + abrir conversación | Card aurora "Si esto suena a tu restaurante, hablemos." |
 
-> **Estado:** las 8 secciones aprobadas + **copy completo y lockeado (8/8) ✅** en `01-copy.md` (2026-06-05). Sigue diseño/prototipo en `02-prototipo-y-diseno.md`.
+### Historial de arquitectura (v1 → v2 → v3)
+
+| Versión | Secciones | Qué la definió |
+|---|---|---|
+| v1 (jun 2026) | 8 | Fundamento original · agency-as-SaaS · terracota |
+| v2 (jul 2026 · **en prod**) | 11 | Learnings de Carlos · teal · §3 partida en 3 · sección "En acción" · anim "Cómo funciona" |
+| v3 (ago 2026 · branch) | 9 | Sinek + raíz emocional · el camino como estrella · regla "componentes hablan" |
+
+Rescates v2→v3: el reloj de "En acción" → animación de la Etapa 3 · el Manual Operativo → El trato (verbo 2) · el stepper → absorbido en el párrafo del dominó · las 6 áreas → Etapa 2. **La sección WHY se construyó, se vio en pantalla y se retiró** (repetía el hero) — lección: probar en pantalla antes de enamorarse en papel.
 
 ---
 
-## 6. CTA · conversión
+## 6. CTA · conversión (sin cambios)
 
-- **CTA primario (repetido en Hero + Cierre):** conversación-led → *"Hablemos"* / *"Conoce el Programa Socio Fundador"* / *"Agenda una conversación"* (copy exacto en `01-copy`).
-- **Mecanismo:** formulario corto o link a agendar · NO checkout · NO "regístrate".
+- **CTA primario (Hero + Cierre):** conversación-led → *"Hablemos"* → `/hablemos` (form propio on-brand + Formspree · todos los campos obligatorios).
 - **Métrica de éxito:** conversaciones agendadas con ICP cualificado (no signups · no tráfico).
 
 ---
@@ -99,29 +121,27 @@ El **argumento** que hace la página, en orden (la narrativa dicta la estructura
 ### Cross-doc
 | Doc | Relación |
 |---|---|
-| `01-copy.md` | El copy por sección (downstream) |
-| `02-prototipo-y-diseno.md` | Diseño/prototipo (downstream) |
-| `Branding/03-visual-identity/` | Identidad visual para el diseño |
-| `Branding/02-brand-story/narrativa.md` v1.1 | Narrativa + antagonista reframeado |
+| `01-copy.md` **v0.3** | El copy v3 por sección + vetos de vocabulario + log del build (downstream) |
+| `02-prototipo-y-diseno.md` **v3.0** | Diseño construido + QA + esquema SVG canónico (downstream) |
+| `Branding/03-visual-identity/02-color.md` v2.0 | Acento teal canónico |
 | `Branding/04-voice-and-tone/` | Voz del copy |
-| `Product Strategy/01-propuesta-de-valor/03-vp-statement-compressed.md` §6 | Template de landing hero |
-| `Product Strategy/03-oferta-y-pricing/02-programa-socio-fundador-offer.md` | La invitación (sección 7) |
-| `Product Strategy/04-go-to-market/03-outreach-strategy.md` | Cómo se comparte la landing (targeted) |
+| `Product Strategy/04-go-to-market/08-learnings-de-validacion.md` | Los learnings de Fase A que motivaron la raíz y el trato |
+| `Product Strategy/03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` | La argumentación de valor (§7.6 "es tuyo" → invitación) · ⚠️ su §6.1 ("no se puede copiar") quedó invalidado por la corrección de la raíz — pendiente actualizar allá |
+| `Product Strategy/03-oferta-y-pricing/02-programa-socio-fundador-offer.md` | La invitación |
+| `Product Strategy/04-go-to-market/03-outreach-strategy.md` | Cómo se comparte (targeted) |
 
-### Estado v0.1
-Fundamento cerrado 2026-06-04 (4 decisiones + narrativa + arquitectura de 8 secciones) · **copy completo y lockeado 8/8 2026-06-05** (`01-copy.md`). Diseño/prototipo 🚧 (`02-prototipo-y-diseno.md`).
+### Estado v0.2
+Narrativa y arquitectura v3 cerradas (copy v0.3 completo 2026-08-05 · build completo + QA cerrado 2026-08-07 en branch `v3`). **Prod = v2.** ⛔ Deploy de v3 gated (onboarding + análisis real).
 
 ### Decisiones abiertas
 | # | Abierto | Trigger |
 |---|---|---|
-| 1 | ✅ **Resuelta** — dirección del headline = frame **agency-as-SaaS** ("Las grandes cadenas operan con un equipo de especialistas. Ahora tu restaurante también." · fallback "tú también") · se descartaron A/B/C (sonaban a POS) | Hero cerrado 2026-06-04 |
-| 2 | Mecanismo de CTA (formulario vs. agendar) | Al diseñar el prototipo (`02`) |
-| 3 | Confirmar decisiones visuales (matiz del acento/emoción · cuánto glass · escala tipográfica) | Al diseñar el prototipo (cf. `03-visual-identity` §7) |
-| 4 | ✅ **Resuelta** — la §5 "Por qué ahora" **se mantiene standalone** (NO se funde) · reframe de urgencia/miedo → **posibilidad + industria se profesionaliza** (sin urgencia artificial) · se descartó fusionarla con §6 (Opción B) | Copy cerrado 2026-06-05 |
-| 5 | **§3 estructura A (grid de áreas + flujo) vs B (solo flujo)** — ambas documentadas en `01-copy` §3 | Al renderizar el diseño (`02`) |
-| 6 | §6: ¿anclar 1 nombre concreto (Audi/Teradata) para más prueba, vs. arco abstraído actual? | Al diseñar / decisión del fundador |
-| 7 | **Versión en inglés de la landing** — diferida. La audiencia core (design partners MX) opera en español; el inglés solo aplica si aparece un receptor EN concreto (mentor/inversionista US · expansión Fase 5). **NO es traducción, es re-escritura en registro EN** (el corpus de Alan prueba ES≠EN). Para mentor US: preferir un **one-pager EN dedicado** ("what I'm building" · founder + visión + ask) sobre traducir esta landing operador-optimizada | Si se decide buscar mentor/inversionista en US **Y** el copy ES ya estabilizado post-diseño (evitar traducir blanco en movimiento) |
+| 1 | **Versión en inglés** — diferida. NO traducción: re-escritura en registro EN. Para mentor US: preferir one-pager EN dedicado | Mentor/inversionista US concreto **Y** copy ES estabilizado |
+| 2 | **"Etapa 4 · Resultados"** (animación de la curva de mejora · idea del fundador, aparcada con gate en `01-copy.md`) | Primera curva real de un design partner |
+| 3 | Refrescar referencias terracota→teal en `03-visual-identity` 00/03/04/05 (pendiente desde v2) | Próxima pasada de visual identity |
+
+*(Resueltas y cerradas en versiones previas: headline agency-as-SaaS · CTA = form Formspree · decisiones visuales → teal v2 · §3 A/B → superada por la arquitectura v3 · anclaje del arco del fundador → resuelto con la startup de trazabilidad + LinkedIn.)*
 
 ---
 
-*Última actualización: 2026-06-05. v0.1 · fundamento + copy completo (8/8) · diseño por trabajar.*
+*Última actualización: 2026-08-07. v0.2 · narrativa y arquitectura v3 (9 secciones) · prod = v2 · deploy gated · v0.1 archivada en `_archive/2026-08-07_00-estrategia-y-estructura-v0.1.md`.*

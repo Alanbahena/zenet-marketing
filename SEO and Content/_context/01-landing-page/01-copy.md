@@ -30,13 +30,13 @@ owner: Alan Bahena
 - La extensión **"o en múltiples herramientas digitales"** (del fundador) convierte la objeción de Alfonso ("eso ya lo tengo en varias herramientas") en un caso del mismo problema.
 - Regla de bullets del problema: **verbos, no "falta de X"** — el mercado ocupa los sustantivos (inventario · costos · control); los verbos están vacíos (construir · mantener · ejecutar · transferir · unir). Test por línea: *¿un POS con IA podría poner esto en su landing mañana?* Si sí, no abre — va de soporte.
 
-## Estructura v3 (cerrada 2026-08-04)
+## Estructura v3 (cerrada 2026-08-04 · **ajustada en build 2026-08-05: 9 secciones**)
 
 | # | Sección | Trabajo narrativo | Estado |
 |---|---|---|---|
-| 1 | Hero | La bandera + qué es Zenet + CTA | ✅ |
-| 2 | El WHY | La creencia argumentada | ✅ |
-| 3 | La realidad de hoy | La evidencia (4 tarjetas + giro + cierre) | ✅ |
+| 1 | Hero | La bandera + qué es Zenet + CTA | ✅ construida |
+| 2 | ~~El WHY~~ | **RETIRADA en pantalla (05-ago)** — repetía el hero en secciones vecinas + beat de baja energía en el slot 2. El WHY vive en el hero; material redistribuido (ver §2) | ❌ |
+| 3 | La realidad de hoy | La evidencia (4 tarjetas + giro + **cierre enriquecido** con la resignación + refutación del WHY) | ✅ |
 | 4 | El trato (HOW) | Quién carga ahora: 5 verbos + dominó + anti-POS | ✅ |
 | 5 | El camino | 3 capítulos animados: Onboarding → Estandarización → Automatización | ✅ |
 | 6 | Qué cambia | El WHY cumplido (4 promesas · "volver a construir") | ✅ |
@@ -60,7 +60,7 @@ owner: Alan Bahena
 
 | Sección | Eyebrow |
 |---|---|
-| §2 El WHY | EL PORQUÉ |
+| ~~§2 El WHY~~ | *(sección retirada 05-ago)* |
 | §3 La realidad de hoy | LA REALIDAD DE HOY |
 | §4 El trato | CÓMO TRABAJA |
 | §5 El camino | EL CAMINO |
@@ -76,8 +76,10 @@ owner: Alan Bahena
 **Headline:**
 > El caos no es el precio de tener un restaurante.
 
-**Subhead:**
-> Zenet es un equipo de especialistas para tu back-of-house que arma tu sistema contigo — desde lo que ya tienes —, lo mantiene vivo y lo hace correr todos los días. Tú decides; Zenet lo carga.
+**Subhead** *(refinado 2026-08-05 en el build)*:
+> Zenet es un equipo de especialistas que construye contigo el sistema de tu back-of-house — desde lo que ya tienes —, lo mantiene vivo, lo mejora y lo hace correr todos los días. Tú decides; Zenet lo carga.
+
+*(Evolución del build: "arma tu sistema contigo" → **"construye contigo el sistema"** — "construye" hace que el hero conteste el header de §3 verbo por verbo (construirlo · mantenerlo · ejecutarlo) · + "lo mejora" (respaldado por "detecta, sugiere, acompaña" + camino cap. 3). ❌ Se rechazó "construyen contigo una plataforma" — "plataforma" está vetada (§7) y cambia el objeto: la plataforma sería nuestra; el sistema es SUYO.)*
 
 **CTA:** `Hablemos` *(sin cambio · conversación-led canónico)*
 
@@ -89,20 +91,19 @@ owner: Alan Bahena
 - Mecánica: hero afirma → §2 argumenta. Tesis y argumento, no duplicación.
 - ⚠️ Erratas a vigilar (aparecieron en apuntes): "ca**o**s" (no "caso") · "Tú" con acento · rayas en pares "— … —".
 
-## 2. El WHY — ✅ v3 cerrado (2026-08-04)
+## 2. El WHY — ❌ RETIRADA como sección (2026-08-05 · decisión en pantalla)
 
-**Body:**
-> **Creemos que el caos no es el precio de tener un restaurante.**
->
-> Te lo han dicho tanto que ya suena a verdad: que este negocio es así. Que vivir apagando incendios es parte del oficio. Que no poder soltar el celular es lo que toca.
->
-> **No es el oficio. Es cargar el sistema tú solo.**
->
-> El orden no debería costar años. La calma de ver tu operación correr sin ti no debería ser un lujo de grandes — debería ser lo normal de hacer bien lo que ya sabes hacer.
->
-> **Zenet existe para eso: para que tu negocio ruede — sin que tú seas quien lo empuja.**
+> **Por qué se retiró:** construida y vista en el navegador (commit `7ba4c4c` → revertida en `a325d6a`), el título repetía el headline del hero en secciones vecinas — en papel era "tesis y argumento"; en pantalla era la misma frase dos veces. Y una sección de creencia abstracta era un beat de baja energía en el slot más valioso (el que sigue al hero). Decisión del fundador, validada. **El WHY de Sinek fue un marco de pensamiento, no una obligación de sección: ya hizo su trabajo** (produjo el hero, la raíz, el hilo "cargar", la espina completa). El WHY vive en el headline del hero.
 
-**Versión comprimida** (deck · café · reuso):
+**Redistribución del material (nada se pierde):**
+- **La resignación + la refutación** (*"te lo han dicho tanto que ya suena a verdad… No es el oficio. Es cargar el sistema tú solo."*) → **al cierre de §3** (enriquecido — ver §3).
+- **"Zenet existe para eso: para que tu negocio ruede — sin que tú seas quien lo empuja."** → **RESERVA**, candidata al cierre/CTA (§10). Se decide al construir esa sección.
+- *"El orden no debería costar años"* → ya cubierto por la tarjeta 3 de §3 · *"lujo de grandes"* → ya vive en §7.
+
+**El texto completo del WHY sigue siendo material de reuso** (deck · café · pitch — donde NO compite con el hero):
+> Creemos que el caos no es el precio de tener un restaurante. Te lo han dicho tanto que ya suena a verdad: que este negocio es así. Que vivir apagando incendios es parte del oficio. Que no poder soltar el celular es lo que toca. No es el oficio. Es cargar el sistema tú solo. El orden no debería costar años. La calma de ver tu operación correr sin ti no debería ser un lujo de grandes — debería ser lo normal de hacer bien lo que ya sabes hacer. Zenet existe para eso: para que tu negocio ruede — sin que tú seas quien lo empuja.
+
+**Versión comprimida** (reuso):
 > El caos no es el precio de tener un restaurante. Nunca lo fue.
 
 **Notas (v3):**
@@ -134,17 +135,9 @@ A los que lo lograron les tomó años. Y no termina: cambian los costos, cambian
 **4 · Cada persona nueva vuelve a empezar de cero**
 Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle.
 
-**El giro:**
-> Y no es que no lo hayas intentado.
->
-> Compraste el punto de venta. Hiciste los Excel. Abriste el grupo de WhatsApp. Cada uno resolvió su pedazo — y te dejó un lugar más que mantener al día.
+**El remate** — ❌ **CORTADO del build (05-ago):** la sección termina en la tarjeta 4, sin prosa de salida. Se evaluaron variantes de una línea (*"Por eso no puedes tomarte un día: el sistema eres tú"* · *"Todo funciona — mientras tú estés ahí"* · *"Ahora lo cargas — tú solo"*) y el fundador decidió cero. El hilo "cargar" sobrevive vía el hero (*"Zenet lo carga"*) y el cierre de §6 (*"dejas de cargar tu negocio"*). Las variantes quedan como material de conversación/deck.
 
-**El cierre:**
-> Y debajo de todo eso hay algo más callado.
->
-> Llevas años sosteniéndolo tú. Proyectando calma cuando por dentro arde. Contestando el celular en la cena, el domingo, en las vacaciones que no fueron vacaciones.
->
-> En algún momento dejaste de construir tu negocio. Ahora lo cargas.
+> ⚠️ **Historia del corte (decisión en pantalla · 05-ago):** el **giro** completo se cortó — en el navegador duplicaba la tarjeta 2 (misma lista de herramientas) y el header ya hacía su trabajo; era necesario solo cuando "todos te dan dónde poner tu sistema" vivía al final de la sección. El **cierre emocional largo** (calma que arde · vacaciones · resignación · refutación) también — muro de texto tras 4 tarjetas. La línea que sobrevive es la **bisagra de la página**: *"ahora lo cargas"* → §4 *"el trabajo que nadie te ayudaba a hacer"* → §6 *"dejas de cargarlo"*. La resignación + refutación ("no es el oficio") quedan como material de conversación/deck (§2 reserva) — en la página perdieron su casa dos veces; no forzarles una tercera.
 
 **Notas (v3):**
 - **Sin subline**, por decisión → **"Está en tu cabeza porque siempre estuvo ahí" (tarjeta 1) es ahora LÍNEA ESTRUCTURAL**: lo único que honra la identidad (*"yo SOY el sistema"* · V-001/V-010) antes de enumerar costos. NO recortarla en pasadas futuras.
@@ -155,12 +148,23 @@ Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de 
 - "Ahora lo cargas" > "lo estás sobreviviendo" (más físico, más de operador, menos drama — voz calmada).
 - Capa emocional del cierre: research documentada (`02-customer-research/03-pains` §2.3 — sobrevivir-no-construir · carga invisible · proyectar confianza).
 
-## 4. El trato (HOW) — ✅ v3 cerrado (2026-08-04)
+## 4. El trato (HOW) — ✅ v3 cerrado (2026-08-04) · **comprimido en build (05-ago)**
+
+> **⚠️ VERSIÓN CONSTRUIDA Y APROBADA (06-ago) ≠ versión larga de abajo.** El build final — **CERRADO por fundador + revisor:** section-head (headline *"El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet."*) → **5 pasos en flujo horizontal** (columnas iguales conectadas por línea punteada estática · ícono line-art + número arriba · entrada escalonada por scroll · riel vertical en móvil) → strip anti-POS. **Los 5 pasos finales:**
+> - **01 · Lo construye desde lo que ya tienes** — Recetas en Excel, fotos de inventario, el cuaderno — los mandas como están.
+> - **02 · Lo junta en un solo cerebro operativo** — Un Manual Operativo vivo, al alcance de tu equipo.
+> - **03 · Lo mantiene vivo** — Cambias una receta, sube un costo, pruebas algo nuevo — Zenet te ayuda a reacomodar todo lo que ese cambio toca. **El orden se queda.** *(reframe del fundador: el cambio como trigger — el ejemplo precio-que-cambia sonaba a alertas de POS · "te ayuda a reacomodar" = corrección de honestidad, Fase 1 no propaga solo)*
+> - **04 · Lo ejecuta cada día** 🏷️ SF — Tus protocolos corren sin que los empujes. Tú ves qué se completó.
+> - **05 · Se lo pasa a quien llega** — La persona nueva aprende del cerebro operativo de tu restaurante, desde su primer turno. *(cerebro operativo abre en 02 y cierra en 05)*
+>
+> El **dominó se cortó** (4º bloque de prosa muerto en pantalla — REGLA v3: los componentes hablan, la prosa estorba) pero **resucitó en 3 palabras** dentro del paso 03 ("todo lo que ese cambio toca"). Vetos sostenidos en esta sección: optimiza · inteligente (×4) · impulsa · áreas de oportunidad · base de conocimiento · dispositivo electrónico · estandarizado-como-adjetivo-del-manual. Cuerpos largos de abajo = material de conversación/deck. Animación una-vez de la línea: construida y revertida por decisión del fundador (queda la entrada escalonada).
 
 **Eyebrow:** CÓMO TRABAJA
 
-**Headline:**
-> El trabajo que nadie te ayudaba a hacer — ese es el que hace Zenet.
+**Headline** *(refinado en build 06-ago · decisión del fundador)*:
+> El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet.
+
+*(Evolución: "nadie te ayudaba a hacer" → "más esfuerzo te cuesta" — el fundador prefirió el ángulo del esfuerzo sobre el espejo con el header de §3. Alts documentadas: A "que nadie te ayuda a hacer" (espejo máximo con §3) · C "que hoy cargas tú solo" (hilo cargar + rescataba el remate cortado de §3). El espejo §3→§4 queda implícito en el orden de las secciones.)*
 
 **Subline:**
 > No te da otro lugar donde capturar tu operación. La toma como está, y hace contigo lo que una herramienta no hace:
@@ -399,6 +403,14 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 9. **"Blockchain" no entra** · "fácil de usar" se demuestra con zero-training, no se declara.
 10. **Fase A no se detiene por el copy:** H1 y H6 se validan sin VP pulida (Mom Test). El build de la v3 espera al flujo del producto + diagnóstico corrido.
 
+## 💡 Idea aparcada con gate — "Etapa 4 · Resultados" (2026-08-06 · del fundador)
+
+**El concepto:** una cuarta pieza del camino mostrando objetivos + progreso — el operador fija metas sobre su índice de estandarización (el baseline del onboarding, dimensiones D1-D6 del producto), el dashboard muestra la curva, y Zenet como cerebro operativo responde *"¿qué nos falta para el objetivo del mes?"*.
+
+**Por qué NO va ahora (3 razones):** (1) cualquier objetivo de ejemplo con % es un **anti-claim disfrazado** (doc 06 §8: cero cifras de impacto) · (2) sería la **segunda promesa sin construir** en la página (objetivos/seguimiento = fase futura del producto, más allá del tag SF de la Etapa 3) · (3) **el resultado ya tiene sección** (§6 Qué cambia) y el camino de 3 etapas es la forma correcta (construir→estandarizar→correr; el resultado es el pago, no una etapa).
+
+**El GATE que la activa:** la **primera curva real de un design partner** (baseline día cero → índice a N semanas, con datos medidos y permiso de uso). Entonces la Etapa 4 se construye con el caso real — *"este restaurante pasó de X a Y"* — y se vuelve la sección más fuerte de la página (doc 06 §3.4: "ese número vale más que cualquier benchmark citable"). **Mientras tanto, la historia de objetivos/progreso vive en el DEMO** — el índice real del onboarding es enseñable en persona sin violar nada: son SUS números.
+
 ## Pendientes
 
 - [x] §5 copy de los 3 capítulos ✅ 2026-08-05 (status: solo extracción corrida · análisis en desarrollo → presente con DEPLOY GATE)
@@ -413,6 +425,9 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 
 ### Changelog
 
+- **v0.3 (2026-08-07) — FASE 2 COMPLETA: las 3 animaciones del camino + LA CONSULTA (coda nueva).** Etapa 1 "el análisis se dibuja" · Etapa 2B "las áreas se ordenan" (+ beat de sucursales con estructura de personal) · Etapa 3 "corren solos" (remata en "Tu operación durmió tranquila. Tú también."). **Coda nueva §5 — LA CONSULTA:** el strip zero-training se volvió 2 columnas: la afirmación (*"…y todo lo que tu restaurante sabe, contesta"*) + chat en vivo rotando 3 consultas (cierre/inventario/facturas · receta del manual · permiso + máquina de espresso — los dolores de Carlos). Origen: el fundador quería una animación final del "núcleo con todo el conocimiento"; reframe aplicado: el conocimiento se demuestra RESPONDIENDO, no guardando (el núcleo-contenedor ya salía 3×, y es el framing de Alfonso). Resucita los bubbles de v2 con ajuste de honestidad (*"el proveedor te subió el tomate esta semana"* = dato de facturas, no pronóstico). Idea "Etapa 4 · Resultados" aparcada con gate (ver sección 💡). La v3 está FUNCIONALMENTE COMPLETA — falta Fase 3 (QA · OG image · CSS muerto · spec v3) y Fase 4 (deploy gateado).
+- **v0.3 (2026-08-06) — ESQUELETO v3 COMPLETO EN EL BUILD (9/9 secciones · branch v3 de zenet-landing).** Evoluciones de pantalla vs el papel: **§4** cerrada y aprobada (5 pasos horizontales — ver nota en §4). **§5 camino** cerrado en esqueleto: kickers "Etapa" (no "Capítulo") · cap. 2 = *"estandarizada área por área"* (eco diagnóstico→resultado con cap. 1) + *"cimientos toman forma"* + *"inventarios estructurados"* · strip final *"Sin cursos, sin capacitaciones, sin manuales de software"* (se rechazó "que un niño de 3 años entienda" — condescendencia hacia el equipo) · cajas placeholder para las 3 animaciones (Fase 2). **§6** construida: headline motor + cards v3 + *"la calidad y la esencia viajan"* (fundador) + cierre en emotional-close. **§7** strip compacto + línea de personalización resucitada (*"aprende de lo tuyo; no llega con recetas ajenas"* — había muerto con la sección El equipo) + *"conoce tu restaurante"* (fundador). **§8** párrafo trazabilidad en vivo. **§9** el piso integrado al trato honesto. Alternancia de fondos completa. Vetos sostenidos del día: potencializa ×2 · inteligente ×4 · optimiza · base de conocimiento · núcleo (3er nombre) · plantilla-doble · fundación (anglicismo) · niño de 3 años. **Pendiente: Fase 2 (3 animaciones en lab/) · Fase 3 (QA + OG image con headline nuevo + limpieza CSS muerto) · Fase 4 deploy (GATEADO: flujo + análisis corrido).**
+- **v0.3 (2026-08-05 · d) — BUILD: la página baja a 9 secciones.** §2 El WHY construida, vista en pantalla y RETIRADA (repetía el hero en secciones vecinas + baja energía en el slot 2 — el screen test hizo su trabajo). Material redistribuido: resignación+refutación → cierre de §3 (enriquecido) · "para que tu negocio ruede" → reserva para el CTA. Hero §1 construido y refinado en build ("construye contigo el sistema" + "lo mejora"). Branch v3 en zenet-landing: commits 691399f · aa7b03c · 7ba4c4c · a325d6a.
 - **v0.3 (2026-08-05 · c) — V3 COMPLETA EN PAPEL 10/10.** §8 Por qué Alan cerrado (párrafo startup de trazabilidad · "la calidad se decide atrás" · candado sistema defendido) + §9 La invitación con el piso ("es tuyo y te lo llevas") + §10 autocontenido + eyebrows finales (§2 = EL PORQUÉ). El doc ya no depende del _archive para leerse completo. Build gateado a flujo + análisis corrido.
 - **v0.3-wip (2026-08-05 · b).** §6 Qué cambia cerrado (headline "…cuando tu operación trae motor" · cierre resuelve §3: "dejas de cargarlo, vuelves a construirlo" · vetos asistente/contenedor/acelerado) + §7 Por qué ahora comprimido a strip (headline antes/después · rima re-apuntada al WHY · vetos plataforma/impulsar).
 - **v0.3-wip (2026-08-05).** §5 El camino cerrado: headline "Tú pones el criterio. Zenet le pone motor." + 3 capítulos (Onboarding · Estandarización · Automatización) + cierre zero-training. Layout 2 columnas (texto | animación) · cap. 3 hereda el reloj de "En acción" + tag SF · regla de agentes aplicada (personas, no entidades IA) · nombres del status compartidos landing↔producto · presente del cap. 1 con DEPLOY GATE (análisis en desarrollo).

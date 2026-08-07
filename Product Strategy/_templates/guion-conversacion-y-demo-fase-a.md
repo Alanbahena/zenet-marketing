@@ -1,10 +1,10 @@
 ---
 name: Guión de conversación y demo — Fase A
-description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y la primera instancia real (Carlos · gerente de Alma Verde · presencial). Draft — se afina con el uso. Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a (§5 Mom Test) y 04-sales-motion-three-session-demo.
+description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 2 instancias reales — Carlos (gerente Alma Verde · presencial) y Juan Pablo (dueño primer restaurante CDMX · perfil frontera/control · sin demo · señales invertidas). Draft — se afina con el uso. Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a (§5 Mom Test) y 04-sales-motion-three-session-demo.
 type: product-strategy
-last_updated: 2026-07-13
+last_updated: 2026-08-06
 status: draft
-version: 0.2
+version: 0.3
 owner: Alan Bahena
 ---
 
@@ -192,7 +192,79 @@ Justo al salir (la memoria decae → racionalizas):
 
 ---
 
-## 8. Variantes por construir
+## 8. Instancia real #2 — Juan Pablo (dueño · primer restaurante · CDMX · perfil frontera/control · videollamada)
+
+**Brief:** compañero del **programa de emprendimiento en CDMX** (relación tibia · canal nuevo: la red del programa, sin explotar) · abrió su **primer restaurante hace ~meses** · una sucursal · él adentro todos los días · **NO cumple el ICP** (falla el filtro de formalidad 1+ año y el beachhead 2-3 sucursales) · sesión agendada **jue 07-ago** (videollamada según la ficha; el diseño funciona igual presencial).
+
+> **El punto #1: no es prospecto — es CONTROL.** La hipótesis del beachhead dice que el dolor aparece cuando el operador ya no puede estar en todos lados. **Él SÍ puede.** Si los pains NO le resuenan → el beachhead está bien trazado (test pasado). Si SÍ le resuenan → el problema empieza antes de lo hipotetizado (sorpresa que investigar). **Cualquiera de los dos resultados enseña.** ⚠️ Por lo mismo: **NO contarlo en el bucket del beachhead** del scorecard (las 5-8 conversaciones del gate a Fase B) — etiquetar **perfil frontera/control**.
+
+**Los 4 objetivos, en orden:**
+1. **Correr el test de frontera** — ¿los dolores del beachhead le resuenan a alguien que todavía cabe entero en su operación? → H1 (etiqueta control)
+2. **Capturar el "momento cero"** de abrir un restaurante — VoC de primera mano del verdadero incumbente (cuaderno + cabeza + WhatsApp). → VoC library
+3. **Intel "otro software más"** (objeción de Alfonso · H6 de categoría): ¿por qué software SÍ paga hoy un restaurante nuevo, y por qué no?
+4. **Activarlo como conector** (red del programa + su red de restauranteros) + **rep de exposición de bajo riesgo** (landing al final).
+
+**Ajustes a la estructura base:**
+- **NO demo del producto.** Zenet aparece **solo al final** y solo como **landing** (`zenetapp.com`): *"te enseño en qué ando"* → *"¿qué entendiste que hace?"* → silencio. Es el primer dato en vivo de la capa de **comunicación** de la VP (el hueco de la semana). Producto en vivo **solo si él lo jala** → 5 min de probadita (import por foto), no el arco de 15.
+- **El orden es no negociable:** nada de Zenet hasta que el Mom Test esté completo — en cuanto ve algo, sus respuestas se anclan y el control se contamina.
+- **Las señales se INVIERTEN:** *"no me cuesta nada, yo lo hago y alcanzo"* aquí **NO es kill** — es el control confirmando la hipótesis del beachhead.
+- **Paso 0 (pedir menú/recetas) no aplica** — no hay demo que personalizar.
+- Al leer la landing: **no esperar "esto es para mí"** (no es ICP). El read útil es si puede decir con sus palabras **QUÉ hace Zenet**.
+
+### Run-sheet — videollamada con Juan Pablo (jue 07-ago · 45-60 min)
+
+> Extracto *glanceable* para tener abierto durante la llamada.
+
+**Antes de entrar (repaso 10 seg)**
+- **Objetivo:** aprender + control del beachhead. **NO vender. Nada de Zenet hasta el final.**
+- **Recordatorios:** (1) su pasado y sus hechos, NO tu idea · (2) 80/20 escuchando · (3) *"yo lo hago y alcanzo"* = dato bueno, no fracaso.
+
+**0-5 · Reconecta + encuadra**
+- Ancla en el programa: *"me da mucho gusto que alguien del programa se aventó a abrir de verdad."*
+- *"Quiero aprender de cómo lo estás viviendo — no vengo a venderte nada; ando estudiando a fondo cómo operan los restaurantes."*
+
+**5-15 · El momento cero** *(nadie más en el pipeline acaba de abrir)*
+1. *"Platícame cómo fue abrir — ¿qué te sorprendió que no esperabas?"*
+2. *"¿Qué fue lo más difícil de las primeras semanas?"*
+3. *"¿Cómo decidiste los precios del menú?"* ↳ *"¿cómo supiste cuánto te cuesta cada platillo?"*
+
+**15-30 · Su operación hoy** *(revelado > declarado)*
+4. *"¿Cómo es un día normal tuyo? ¿Qué es lo primero que haces?"*
+5. *"¿Qué es lo que más tiempo te come en la semana?"* ↳ *"¿qué sientes que no deberías estar haciendo tú?"*
+6. *"¿Cómo llevas los números — costos, compras, lo que queda al final del mes? Platícame cómo le hiciste ayer."* → que te **muestre** (cuaderno/Excel/apps).
+7. *"¿Cuánta gente tienes? ¿Cómo capacitaste al primero que contrataste?"*
+8. *"La última vez que algo se salió de control — una merma, un faltante, un platillo que salió distinto — ¿qué pasó?"*
+
+**30-40 · La frontera** *(el corazón del test — aquí NO apurarse)*
+9. *"¿Has podido no estar un día completo? ¿Qué pasó?"*
+10. *"¿En qué momento —si ha llegado— sentiste que ya no te cabía todo en la cabeza?"*
+11. *"¿Qué haces tú hoy que ya sabes que no vas a poder hacer si abres otro?"*
+
+**40-45 · Software y dinero** *(intel "otro software más")*
+12. *"¿Qué apps o sistemas usas para operar? ¿Por cuáles pagas?"* ↳ *"¿cuál casi cancelas? ¿cuál pagarías al doble?"*
+
+**45-55 · Cierre + Zenet + asks**
+- *"Te enseño en qué ando"* → comparte pantalla con `zenetapp.com` → 🎯 *"¿qué entendiste que hace?"* → **silencio** · captura el verbatim.
+- **Ask conector (primario):** *"¿Quién del programa o de tu red conoce dueños con 2-3 sucursales que ya no se dan abasto? ¿Me lo presentarías?"*
+- Si el tiempo aprieta: la landing se va de tarea (*"¿te lo mando y me dices qué entendiste?"*).
+
+**⚠️ Guardrails:** NO precio · NO fechas · NO promesas de integración · producto en vivo solo si él lo pide (5 min · import por foto · sin abrir secciones "próximamente").
+
+### Cheat-sheet de señales — INVERTIDA *(léela en vivo)*
+- **🟢 Test pasado (esperado):** pains no resuenan · *"yo lo llevo todo y alcanzo"* → el beachhead está bien definido. **No es fracaso.**
+- **⚠️ Sorpresa (investigar):** algún pain le resuena YA, con una sucursal recién abierta → ¿CUÁL exactamente? profundizar ahí — el problema empezaría antes de lo pensado.
+- **🟢 Conector:** da un nombre · propone el intro él solo.
+- **📝 VoC:** cualquier verbatim de cuaderno/cabeza/WhatsApp/Excel → a la library.
+- **Comunicación (landing):** ¿puede reproducir el QUÉ con sus palabras? Sí → el hueco es más de sustancia. No → el problema de comunicación queda confirmado y grave.
+
+### Al salir (≤1 hr, en caliente)
+- Debrief etiquetado **perfil frontera/control** — NO suma al conteo del gate a Fase B.
+- Notion: actualizar etapa + *¿Respondió? → sí* en su ficha del Pipeline.
+- Quotes → VoC library · resultado del test → bitácora (semana 3-9 ago) · si hay learning grande → `08-learnings-de-validacion`.
+
+---
+
+## 9. Variantes por construir
 
 | Variante | Qué añadir sobre la base | Trigger |
 |---|---|---|
@@ -201,4 +273,4 @@ Justo al salir (la memoria decae → racionalizas):
 
 ---
 
-*Draft v0.1 · 2026-07-08 · nació de la instancia de Carlos (Alma Verde). Pendiente: afinar con el uso · sacar la variante de dueño puro · guión insider de Victor. El a-quién/cuándo/resultado vive en el Pipeline de Notion, no aquí.*
+*Draft v0.3 · 2026-08-06 · nació de la instancia de Carlos (Alma Verde) · v0.3 añade la instancia #2 Juan Pablo (perfil frontera/control · primera variante SIN demo con señales invertidas). Pendiente: afinar con el uso · sacar la variante de dueño puro · guión insider de Victor. El a-quién/cuándo/resultado vive en el Pipeline de Notion, no aquí.*
