@@ -1,10 +1,10 @@
 ---
 name: Bitácora de learnings de validación — Fase A
-description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
+description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
 type: product-strategy
-last_updated: 2026-07-31
+last_updated: 2026-08-07
 status: active
-version: 0.2
+version: 0.3
 owner: Alan Bahena
 ---
 
@@ -252,3 +252,81 @@ owner: Alan Bahena
 ---
 
 *Entrada #2 · fuente: reflexiones de Alan post-café (`Sesiones-Fase-A/Alfonso_Arballo_joven_canirac.docx` · 31-jul). Sesión de conector institucional — **no cuenta como N de validación**. Trigger de acción: la bandera de la VP se confirma o se cae con la 3ª señal (próxima sesión 1:1 con ICP). Próxima entrada: siguiente sesión de validación.*
+
+---
+
+## Sesión #3 · Juan Pablo — primer restaurante/cafetería CDMX (videollamada · 07-ago-2026)
+
+> ⚠️ **Sesión de CONTROL — leerla con la vara del guión v0.3 §8.** Juan Pablo NO es prospecto ni cuenta en el N del beachhead (falla el filtro de formalidad: <1 año operando · 1 sucursal · él adentro todos los días). Se diseñó como **test de frontera**: si los dolores del beachhead NO le resonaban, el beachhead estaba bien trazado; si SÍ — sorpresa que investigar. **Salió la rama sorpresa.**
+
+### 1. Contexto
+
+- **Contacto:** Juan Pablo · 23 años · recién graduado de la universidad · compañero del **taller/programa de emprendimiento en CDMX** (canal nuevo: la red del programa).
+- **Su operación:** primer restaurante/cafetería en CDMX · **<1 año** · 1 sucursal · **socia** que carga buena parte de lo operativo · **2 empleados** (un chef + una persona de staff).
+- **Formato:** videollamada · sin demo · **no se enseñó la landing** (solo visión de Zenet al final).
+- **Instrumento:** guión v0.3 §8 (perfil frontera/control · señales invertidas).
+
+### 2. Observaciones (dicho vs hecho)
+
+**Su mundo (el "momento cero" de un restaurante):**
+- Operación **casi nada estandarizada** · *"los costos son un descontrol operativo"* (paráfrasis) · **food cost por arriba de lo normal** (él mismo lo sabe y lo dice).
+- **Workaround de costeo genuino:** sin ingeniería de menú, fija un **presupuesto por platillo** y *"se las ingenia"* para cocinarlo y venderlo dentro de ese presupuesto. El costeo real (insumos + operativos) no existe.
+- **Documentación en Microsoft Office** — el incumbente real confirmado una vez más (Office/cuaderno/cabeza, no un software de industria).
+- **Atrapado en el margen:** no puede subir precios (los vecinos están igual o más baratos) y siente que ya no puede bajar costos — pero **sin estructura de costos estandarizada no puede saber dónde está parado realmente**. (Lectura de Alan: el techo es real; el piso es invisible.)
+- **Dolor de identidad — falta de experiencia:** sus 2 empleados tienen mucha más experiencia que él y le cuesta trabajo dirigirlos sin ese criterio. Es el dolor INVERSO al del beachhead: no le sobra criterio atrapado en la cabeza — **le falta el criterio mismo**.
+- 🌟 **El chef no suelta las recetas.** Fricción real y actual: el chef contratado se resiste a pasarles las recetas de sus platillos. El conocimiento como **poder de negociación del empleado** — la inversión exacta del *"yo SOY el sistema"*: aquí **el empleado es el sistema y lo sabe**.
+
+**Lo que DIJO:** todos los dolores que Zenet ataca le resuenan (estandarización · costos · orden) · la visión de Zenet *"suena muy interesante"* · abre la puerta a que **en unas semanas** Alan le comparta el programa para usarlo en su restaurante.
+
+**Lo que HIZO (revelado):** dedicó la videollamada y habló de sus números con franqueza (food cost alto · workaround del presupuesto). **Pero el compromiso es declarado y futuro** (usar el programa gratis, algún día) — no mandó documentos, no fijó fecha, no hay skin in the game todavía. Por Mom Test: señal tibia, no verde.
+
+**⚠️ Nota de disciplina (honesta):** hubo pitch a mitad de sesión (Alan le propuso el análisis de costeo/menú "como lo va a hacer Zenet") y visión al final. Comprensible con un compañero warm — pero contamina el read de H1: después del pitch, el "me resuena" ya no es 100% espontáneo. Las observaciones del mundo de él (workaround, chef, Office, margen) son PRE-pitch y esas sí valen limpio.
+
+### 3. Scores
+
+| Hipótesis | Read | Nota |
+|---|---|---|
+| **Test de frontera** (el objetivo #1) | 🔴 **rama sorpresa** | Los dolores SÍ resuenan en alguien que cabe entero en su operación → el dolor operativo **empieza antes** del beachhead. PERO ver learning 1: cambia de naturaleza |
+| **H1** · pains | **no mueve el N** (control) | Resuenan — con el matiz pre/post-pitch de arriba |
+| **H4** · compromiso revelado | 🟡 | Puerta abierta declarada ("en unas semanas") · cero señal revelada aún · la jugada para convertirla existe (ver §6) |
+| **H5** · canal | 🟢 dirección | La **red del programa de emprendimiento** produjo su primera conversación warm real — canal nuevo que funciona |
+| **H6** · pozo de valor | ❓ hipótesis nueva | La duda que el propio Alan formuló: ¿este segmento PAGARÍA? (ver learning 4) |
+
+**Fit como cuenta:** ICP 🔴 (falla filtro de formalidad + beachhead) · Design Partner 🔴 formal — pero **candidato a TEST USER** (usuario temprano que no cuenta en el N · ver §6).
+
+### 4. Learnings estratégicos ⚠️ *(N=1 — dirección, no verdad)*
+
+1. **★ El dolor empieza antes del beachhead — pero es OTRO dolor.** El del beachhead es de **extensión** (*"mi sistema funciona donde estoy; no escala a donde no estoy"*). El de Juan Pablo es de **construcción con criterio prestado** (*"no tengo sistema NI experiencia todavía"*). Síntomas parecidos (desorden · costos), naturaleza opuesta: al beachhead Zenet le **extrae** su sistema; a Juan Pablo tendría que **proponérselo** — exactamente lo que el principio de producto de la Sesión #1 (*"extraer, nunca proponer"*) dice que Zenet NO hace en Fase 1. La resonancia no amplía el ICP; confirma que el filtro estaba bien puesto **por diseño** y ahora tiene **evidencia de campo**.
+2. **★★ El beachhead quedó acotado por los DOS lados — el meta-learning del pipeline hasta hoy.** Por **arriba**, Alma Verde (Sesión #1): ya estandarizado, la estandarización no le vale — pide protocolos/automatización. Por **abajo**, Juan Pablo (Sesión #3): nada que extraer — pediría construcción. El centro (*"2-3 sucursales · sistema en la cabeza · la operación se rompió al crecer"*) sigue **sin tocarse directamente** — y es exactamente lo que la sesión de San Miguel (perfil 3, pospuesta) iba a probar. La urgencia de esa sesión SUBE con este resultado.
+3. **🌟 El chef que no suelta las recetas — arista nueva del pain de transferencia.** No es solo *"el conocimiento se va cuando se va la gente"* (el pain conocido de "Se lo pasa a quien llega") — es que **el empleado puede negarse a alimentar el sistema** porque su conocimiento es su seguridad laboral. Implicación multi-stakeholder: el chef no solo "adopta o no adopta" — puede **vetar la ingesta**. Feeds: objeciones/fricciones (`02-customer-research/06`) + el guión de la sesión de chef del sales motion (augmentar criterio ≠ extraerle su tesoro). A vigilar si reaparece.
+4. **La hipótesis WTP-novato queda registrada, NO perseguida.** Duda legítima de Alan: ¿el novato-sin-sistema pagaría? Evidencia a priori en contra: caja apretada (food cost quebrado + techo de precios) · mortalidad altísima <1 año · 2 empleados. La forma de venderle sería *"gastas X, con Zenet ahorras Y"* — que es el **argumento del punto porcentual** (06-argumentacion §4), que en este perfil aplicaría limpio (cada punto vale oro cuando el margen está atrapado). Trigger para tomarla en serio: 2-3 señales más de novatos pagando por orden. Mientras: fase posterior, como ya decía el learning 1 de la Sesión #1.
+5. **HV-03 sigue sin correr.** Otra sesión donde el frame del punto porcentual pudo probarse en frío y no salió (se habló de costeo, no del argumento del punto). Van 3 sesiones; el argumento sigue viviendo solo en papel. Señal de fricción propia a nombrar: llevarlo IMPRESO o en nota al frente en la próxima 1:1.
+
+### 5. Implicaciones — qué feeds a dónde
+
+| Learning | A dónde alimenta |
+|---|---|
+| Beachhead acotado por ambos lados (extensión vs construcción) | `Market Research/01-industry-and-market/04-segmentacion-de-mercado` + ICP profile (cuando la 3ª señal — San Miguel — confirme o rompa) |
+| Chef que no suelta recetas (veto de ingesta) | `02-customer-research/06-objeciones-y-fricciones` + guión sesión chef (`04-sales-motion`) + VoC (como paráfrasis, NO verbatim) |
+| Workaround presupuesto-por-platillo + Office como incumbente | `02-customer-research/03-pains-y-workarounds` (refuerza el canon "no system at all") |
+| Hipótesis WTP-novato + punto porcentual aplicable | `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio` (registrar en decisiones abiertas) |
+| Canal red del programa de emprendimiento funciona | `04-go-to-market/03-outreach-strategy` (canal warm nuevo · CDMX = fuera de la geografía Fase 1 — usarlo para aprender, no para pipeline de venta) |
+
+### 6. Decisión / siguiente paso
+
+1. **★ La jugada de compromiso revelado: pedirle sus documentos.** Su puerta abierta ("en unas semanas te comparto el programa") se convierte en test AHORA con un ask chico: *"mándame lo que tengas en Office (recetas, costos, lo que sea) y te regreso un análisis de dónde está parado tu costeo"*. Si los manda → señal revelada real + **segundo corpus para el mago-de-Oz** (junto a Alma Verde) + de paso alimenta la deuda del gate del deploy (análisis corrido con docs reales). Si no los manda → el "interesante" era cortesía, y también eso enseña. Cero build.
+2. **Etiqueta en pipeline:** perfil frontera/control · NO cuenta en N del beachhead · **candidato a test user** del programa (no design partner · no cuenta en scorecard) — su uso real del producto valdría más que 10 opiniones.
+3. **NO pivotar ICP ni pricing con esto.** La hipótesis WTP-novato queda escrita con su trigger. La sesión que el pipeline necesita sigue siendo la del **perfil 3 real (San Miguel vía Ana)** — este resultado la vuelve más urgente, no menos.
+
+### 7. Evidencia
+
+Paráfrasis del debrief de Alan (07-ago · videollamada · sin grabación — **nada de esto entra a la VoC library como verbatim**):
+- El workaround: presupuesto por platillo → *"ingeniárselas para cocinar y vender el platillo dentro de ese presupuesto"*.
+- El margen atrapado: vecinos con precios iguales o menores → no puede subir precios; siente que no puede bajar más los costos — sin costeo estandarizado, el piso real es invisible.
+- La fricción del chef: se resiste a pasar las recetas de sus platillos.
+- La identidad: le cuesta dirigir a empleados con mucha más experiencia que él.
+- El stack: Microsoft Office + socia operativa + 2 empleados.
+
+---
+
+*Entrada #3 · fuente: resumen de Alan post-videollamada (07-ago-2026). Sesión de CONTROL del beachhead — **no cuenta como N de validación**. Resultado: rama sorpresa con matiz (el dolor existe antes del beachhead pero cambia de naturaleza). Trigger de acción: el ask de documentos a Juan Pablo (compromiso revelado + corpus #2 del mago-de-Oz). Próxima entrada: siguiente sesión de validación — la que el pipeline pide es San Miguel (perfil 3).*
