@@ -2,7 +2,7 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-08-03
+last_updated: 2026-08-09
 status: active
 version: 0.2
 owner: Alan Bahena
@@ -29,6 +29,54 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 3–9 ago — "v3 a producción + el pipeline revivió solo"
+
+**▸ Foco que traíamos** (retro 27jul–2ago): pulir la VP (Why/How/What) ✅ **desbordado** (no se pulió — se reescribió el copy completo y se construyó y desplegó la landing v3 entera) · mensaje a Ana ❌ (3ª semana que se corre) · Juanjo ❌ → **1 de 3, y el 1 se comió la semana.**
+
+**▸ 🏆 Logros**
+- **Landing v3 EN VIVO en producción** (`zenetapp.com` · tag `v3.0` · 07-ago): copy v0.3 (Sinek + raíz "el caos no es el precio") → build completo (9 secciones · **el camino**: 3 etapas animadas + la consulta) → QA (móvil · iPhone Safari · hero sólido) → deploy. Specs sincronizados (`02-prototipo` v3.0 · `00-estrategia` v0.2) + OG v3. **El gate de deploy se levantó por decisión explícita** (los tags "En construcción" = honestidad suficiente) → la deuda cambió de carril: **onboarding + análisis real = prioridad de producto** (la página promete en presente).
+- **Sesión #3 ejecutada — Juan Pablo (07-ago · control del beachhead)** con run-sheet propio → debrief completo en `08` v0.3. Salió la rama sorpresa (ver learnings 1-3).
+- **★ Miguel Bahena respondió y AGENDÓ** (07-ago · reunión semana 10-16) — sin necesitar el recordatorio de Victor. Kill date desactivado · vouch intacto.
+- **Plática con Victor desde Egipto** (05-ago) → nota del **umbral del dolor** en `08` (señal fuera de sesión).
+- **Evento de networking de la universidad (jue 06-ago):** contacto con emprendedores más jóvenes — unos arrancando, otros más avanzados, varios con ideas afines. Primera acción del enfoque-networking que Alan decidió esta semana (ver Decisiones).
+- Workspace pusheado a GitHub (36 commits al día) · commits de la semana: `d6063e6` · `34f7128` · `7850f2c` · `0728164`.
+
+**▸ ✅ Qué funcionó**
+- **El tope de 2 toques + esperar** (Miguel): el sistema de outreach protegió el vouch y el prospecto volvió solo. "Temporada alta ≠ un no" era la lectura correcta.
+- **El diseño de sesión-control** (JP): se planteó para que cualquiera de los dos resultados enseñara — y el que salió enseñó más de lo esperado.
+- **El método de build** (labs → integrar → QA con capturas propias · scripts con asserts) + dos disciplinas nuevas que nacieron de errores: *verificar el index antes de pedir que Alan mire* · *avisar solo con deploy Ready + pestaña privada*.
+- **La relación con Victor produce inteligencia sin pedirla** — llegó solo, refirió a Miguel, y ahora manda insights desde una cocina en Egipto.
+
+**▸ 💡 Learnings**
+1. **★ El beachhead quedó acotado por los DOS lados — con el centro aún sin tocar.** Por arriba, Alma Verde (S#1: ya estandarizado — pide protocolos, no estandarización). Por abajo, Juan Pablo (S#3: nada que extraer — pediría construcción). El centro ("2-3 sucursales · el sistema en la cabeza · se rompió al crecer") sigue con **cero contacto directo** → San Miguel (perfil 3) es más urgente, no menos.
+2. **El dolor abajo del beachhead existe — pero es OTRO dolor.** El del beachhead es de **extensión** ("mi sistema no escala a donde no estoy"); el de JP es de **construcción con criterio prestado** ("no tengo sistema NI experiencia"). A él Zenet tendría que *proponerle* — justo lo que "extraer, nunca proponer" excluye en Fase 1. La resonancia NO amplía el ICP: le da evidencia de campo al filtro. (Hipótesis WTP-novato registrada con trigger · no perseguir con N=1.)
+3. **🌟 El chef que no suelta las recetas** (JP): el conocimiento como poder de negociación del empleado — la inversión del "yo SOY el sistema" (el empleado ES el sistema y lo sabe). Implicación: el chef no solo adopta o no — puede **vetar la ingesta**. A vigilar si reaparece.
+4. **★ El umbral del dolor** (Victor/Egipto, 05-ago): hotel con desperdicio ENORME y números conformes → cero intención de mejorar. La misma semana, JP: desperdicio chico y números ROTOS → dolor por todos lados. **El dolor de compra = brecha vs número esperado, no ineficiencia objetiva.** Corolarios: "números conformes" ≈ anti-ICP · usuario ≠ comprador en estado puro · **el diagnóstico es el fabricante del trigger** (hace visible la brecha invisible) — otro argumento para el mago-de-Oz.
+5. **El patrón construir-vs-hablar se repitió exacto.** La semana produjo un deploy completo (trabajo real y de calidad) y cero de los 2 mensajes comprometidos. Igual que la retro pasada: avanza lo que se hace solo, se cae lo que expone. Matiz nuevo: esta vez el pipeline se movió *de todos modos* (Miguel volvió solo · JP se agendó solo — la sesión venía de un mensaje de la semana anterior). La red que ya está sembrada trabaja aunque no se siembre más — pero no indefinidamente.
+6. **HV-03 sigue sin correr.** Tres sesiones y el argumento del punto porcentual no ha salido en voz alta. Para Miguel/Carlos: llevarlo escrito enfrente.
+7. **La red de emprendimiento YA produce — y hay que leer bien QUÉ produce.** La sesión de Juan Pablo salió de esa red (canal 🟢 en el debrief), y el evento del jueves la amplió. Pero su rendimiento natural es **aprendizaje, aliados y moral de fundador** — no operadores del beachhead. Carril correcto: **Red estratégica** (ficha y cultiva) ≠ Pipeline de validación (el N). El networking es el primo amable del patrón del learning 5: se siente productivo y es más cómodo que una sesión de validación — crece la red sin que sustituya a las 5-8 conversaciones del gate.
+
+**▸ 🔀 Decisiones**
+- **Gate de deploy de v3 LEVANTADO conscientemente** (trade-off presentado y elegido) → deuda a producto con nombre: onboarding + análisis corrido ≥1 vez con docs reales.
+- **Mensajes (Ana · Juanjo) pospuestos a la semana 10-16 por decisión explícita** — no deriva. El recordatorio-vía-Victor se volvió innecesario (Miguel respondió solo).
+- **Juan Pablo: etiqueta test-user candidato** (NO design partner · NO cuenta en N) · la jugada = **pedirle sus docs** ("te regreso un análisis") → si los manda: señal revelada + corpus #2 del mago-de-Oz.
+- **Pitch deck v0.1 como asset del kit** (card en Notion · doble propósito: base iterable + estudio/práctica · la landing v3 ES la narrativa — no se empieza de cero · versión OPERADOR primero).
+- **★ Distribución y red — postura ratificada y ampliada (decisión de Alan):** (1) **LinkedIn continúa** con build-in-public — el reencuadre de la retro pasada sigue (publicar sobre la problemática · métrica = operadores/llamadas) **+ propósito nuevo: marca personal como activo de confianza para el networking** · (2) **Instagram arranca con el primer design partner** (ratifica la decisión canónica · sigue pendiente la nota v0.2 en `02-digital-distribution-strategy`) · (3) **Networking como foco creciente los próximos meses** — "ahora que Zenet va tomando forma, es tiempo de crecer la red" — con disciplina de dos carriles: la **Red estratégica en Notion se mantiene viva** (fichar contactos nuevos al conocerlos, no meses después) y el Pipeline de validación sigue siendo la vara del avance.
+
+**▸ 📊 Scorecard H1–H6**
+**Sin movimiento del N** — JP es control (perfil frontera) y no cuenta en el bucket del beachhead. Sigue **1 de las 5-8 conversaciones** del gate a Fase B. **PERO:** por primera vez desde el 14-jul, la semana que entra tiene **dos sesiones reales en el calendario** (Miguel Bahena + follow-up Carlos ~14) + el instrumento (mago-de-Oz) por correr. El scorecard puede moverse de verdad.
+
+**▸ 🎯 Foco próxima semana (10–16 ago) — "la semana cargada" · TRES**
+1. **Mago-de-Oz con los docs de Alma Verde** → llevar el **análisis** (no features) al follow-up con Carlos ~14. Es a la vez: la respuesta a la crítica de sustancia de la VP · la prueba del instrumento · y el pago de la deuda del gate.
+2. **Reunión con Miguel Bahena** — prep: run-sheet perfil 2 / chef-dueño fine dining (card lista · palomear al confirmar fecha) · **estrenar el argumento del punto EN VOZ ALTA** · avisar a Victor (cortesía).
+3. **Los 2 micro-mensajes de 2 minutos:** Ana (proponer llamada — 4ª semana ya) + docs a Juan Pablo.
+
+*Diferido consciente: Juanjo (si la semana da) · pitch deck · aviso de privacidad · calculadora del punto.*
+
+*▸ Pipeline: 1 soft-commit (Carlos/Alma Verde) · **5 en conversación** (Victor · Pedro · Alfonso Arballo · **Juan Pablo NEW** · **Miguel Bahena NEW** — 2 con sesión hecha/agendada) · resto sin cambios.*
 
 ---
 

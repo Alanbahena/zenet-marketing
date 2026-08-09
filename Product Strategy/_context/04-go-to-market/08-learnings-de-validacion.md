@@ -2,7 +2,7 @@
 name: Bitácora de learnings de validación — Fase A
 description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
 type: product-strategy
-last_updated: 2026-08-07
+last_updated: 2026-08-09
 status: active
 version: 0.3
 owner: Alan Bahena
@@ -330,3 +330,22 @@ Paráfrasis del debrief de Alan (07-ago · videollamada · sin grabación — **
 ---
 
 *Entrada #3 · fuente: resumen de Alan post-videollamada (07-ago-2026). Sesión de CONTROL del beachhead — **no cuenta como N de validación**. Resultado: rama sorpresa con matiz (el dolor existe antes del beachhead pero cambia de naturaleza). Trigger de acción: el ask de documentos a Juan Pablo (compromiso revelado + corpus #2 del mago-de-Oz). Próxima entrada: siguiente sesión de validación — la que el pipeline pide es San Miguel (perfil 3).*
+
+---
+
+## Nota entre sesiones · Victor Murguía desde Egipto (plática informal · 05-ago-2026)
+
+> **Señal fuera de sesión — N=0 · segmento fuera de scope.** No es sesión ni mueve ningún score. Se registra porque el insight que deja es load-bearing y va a querer citarse cuando el patrón reaparezca. Formato corto a propósito.
+
+**Lo que compartió:** Victor trabaja ahora en un **hotel all-inclusive en Egipto** (ayudante del chef principal). Ve pérdidas grandes — económicas y de alimento desperdiciado — por mala planeación. Y lo que le frustra: **a los dueños no les interesa corregirlo mientras los márgenes salgan positivos y dentro de lo esperado.** El desperdicio es enorme; la intención de mejorar, cero.
+
+**El insight — el UMBRAL del dolor:** el dolor de compra no es proporcional a la ineficiencia objetiva — es proporcional a la **brecha entre el número esperado y el real**. Mientras el total cuadra, los puntos escondidos no pican. La misma semana produjo el contraste perfecto: el hotel (desperdicio enorme · números conformes → cero dolor) vs **Juan Pablo, Sesión #3** (desperdicio chico · números rotos → dolor por todos lados).
+
+**Tres implicaciones (hipótesis · confirmar con patrón):**
+1. **"Números conformes" como marcador de anti-ICP.** El comprador de Zenet no es "quien tiene desperdicio" (todos) — es **quien siente el número**. El trigger del beachhead ("la operación se rompió al abrir la 2ª") ya decía esto en teoría; ahora tiene un caso de campo por el lado negativo.
+2. **Usuario ≠ comprador, versión pura.** Victor siente el dolor intensamente y no puede comprar; el dueño puede comprar y no siente nada mientras el P&L cuadre. Refuerza multi-stakeholder: el dolor del gerente/chef no convierte si el payer no ve la brecha.
+3. **El diagnóstico como fabricante del trigger.** La única forma de venderle a un dueño-conforme es hacer visible la brecha invisible ("estás dejando X sobre la mesa"). Eso es exactamente el mago-de-Oz — otro argumento para correrlo ya.
+
+**Lo que NO significa:** hoteles, all-inclusive o Egipto como mercado (fuera de scope por los tres lados). Cascada a canon (`04-segmentacion` · `05-buying-process` · `06-argumentacion`) solo cuando haya 2-3 señales del mismo patrón.
+
+*Fuente: plática informal Alan–Victor (05-ago). Lateral: la relación con Victor está viva y produce inteligencia — llegó solo, refirió a Miguel, y comparte desde adentro de una cocina al otro lado del mundo.*
