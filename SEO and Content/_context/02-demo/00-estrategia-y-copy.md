@@ -2,7 +2,7 @@
 name: Página /demo · estrategia y copy
 description: La página /demo de zenetapp.com — EN VIVO (tag v3.1 · 11-ago-2026) · antesala del análisis (Etapa 1 del camino). Qué trabajo hace, el flujo landing→/demo→app, las decisiones canónicas (acceso cerrado · CTA doble · voz de marca) y el copy completo de los 7 bloques, aprobado bloque por bloque. Incluye la prueba del expediente real, los 6 documentos con lo que desbloquea cada uno, y el par esencial recetario+inventario. El diseño/build vive en 01-prototipo-y-diseno.
 type: seo-content
-last_updated: 2026-08-10
+last_updated: 2026-08-11
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -37,7 +37,7 @@ Tres trabajos, en orden:
 | 1 | **URL** | `/demo` — aunque la página habla en "tu análisis", que es el lenguaje del operador ("demo" es lenguaje de vendedor: *mira mi producto* vs *mira tu negocio*) |
 | 2 | **Flujo** | **Landing → /demo → app.** El botón de la landing NO va a la app: va a `/demo`, que es la antesala. Nadie entra a la app sin saber qué esperar y qué juntar |
 | 3 | **CTA doble** | Principal `Comenzar demo →` (app · para quien ya tiene acceso) · secundario *"¿Aún no tienes acceso? **Hablemos**"* → `/hablemos` (reutiliza la página que ya existe) |
-| 4 | **Enlace desde la landing** | Desde la **Etapa 1 del camino** (*"así empieza"* → *"mira cómo funciona"*). NO en el nav: competiría con "Hablemos", que sigue siendo el CTA principal de Fase A. La página además **prueba que el producto existe** — ataca de frente la crítica de *"solo es un núcleo de data"* (Alfonso, Sesión #2) |
+| 4 | **Enlace desde la landing** | **DOS entradas (ajustado 11-ago):** contextual en la **Etapa 1 del camino** (*"Mira cómo funciona →"*) + permanente en el **navbar** (*"Demo"*, enlace de texto teal subrayado — NO botón, para no competir con "Hablemos"). Se descartó ponerlo en el hero (dos botones parten la decisión) y en las Etapas 2 y 3 (/demo **es** la Etapa 1; prometer otra cosa erosiona confianza). La página además **prueba que el producto existe** — ataca de frente la crítica de *"solo es un núcleo de data"* (Alfonso, Sesión #2) |
 | 5 | **Voz** | **Voz de Zenet, no del fundador.** Regla heredada de la landing: §6 es Alan en 1ª persona; el resto habla en "tú" y menciona al fundador en 3ª. Nada de "yo" ni "escríbeme" en esta página |
 | 6 | **Estado del producto** | Hoy la demo la corre el fundador · después acompañada · eventualmente autoservicio. La página lo dice **como ventaja** (atención directa del fundador = beneficio del Programa Socio Fundador), no como disculpa |
 | 7 | **Financieros SÍ se piden** | Corrige el criterio que aplicaba para Carlos (gerente, no dueño): aquí sube **el dueño con sus propios números**. Sin ellos no hay lectura financiera. Cuidado: nunca obligatorios — van en el segundo nivel de la lista |
