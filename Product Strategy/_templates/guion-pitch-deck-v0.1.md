@@ -10,13 +10,13 @@ owner: Alan Bahena
 
 # Guion del pitch deck — v0.1
 
-> **Qué es:** el contenido del deck (14 slides) con lo que se VE y lo que se DICE. Audiencia: **operador** (Fase A). La versión inversionista es OTRO deck y espera su trigger.
+> **Qué es:** el contenido del deck (15 slides) con lo que se VE y lo que se DICE. Audiencia: **operador** (Fase A). La versión inversionista es OTRO deck y espera su trigger.
 >
 > **El mapa en una línea (15 slides):** Bandera → Realidad (D·F·C·T) → Raíz (absolver·acusar) → Definición → Deslinde → 5 Verbos → Etapa 1 → Etapa 2 → Etapa 3 → **La consulta** → El Punto → 4 Promesas + Cumbre → El Fundador → Invitación → Hablemos.
 >
 > **Nota de build (10-ago):** el diseño separó **La consulta** en slide propia (10) — el deck pasó de 14 a 15. Numeración desde ahí: 11 El Punto · 12 Qué cambia · 13 El Fundador · 14 La Invitación · 15 Cierre.
 >
-> **La frase que se lleva puesta:** *"El caos no es el precio de tener un restaurante."* — abre (1), cierra (14).
+> **La frase que se lleva puesta:** *"El caos no es el precio de tener un restaurante."* — abre (1), cierra (15).
 
 ---
 
@@ -24,8 +24,8 @@ owner: Alan Bahena
 
 1. **El guion es mapa, no script.** Se ensayan los beats hasta que salgan solos; en vivo se dicen con las palabras que salgan. Las frases en negritas son el copy lockeado — esas sí, textuales.
 2. **La pausa manda.** Si el que escucha asiente fuerte o interrumpe ("eso me pasa exacto") — detenerse ahí y jalar el hilo con Mom Test ("¿cómo lo resuelves hoy?"). Que resuene UN beat vale más que recitar todos.
-3. **El deck es modular.** 1–12 = el pitch · 13 = opcional (ver su regla) · 14–15 = el ask. En una conversación que no gana la invitación, el cierre natural es desde la 11.
-4. **El deck cierra suave; TÚ cierras concreto.** Después de la 14 viene el ask específico de la sala (ej.: "mándame tus documentos y te regreso tu análisis").
+3. **El deck es modular.** 1–12 = el pitch · 13 = opcional (ver su regla) · 14–15 = el ask. En una conversación que no gana la invitación, el cierre natural es desde la 12.
+4. **El deck cierra suave; TÚ cierras concreto.** Después de la 15 viene el ask específico de la sala (ej.: "mándame tus documentos y te regreso tu análisis").
 5. **Espejo 2↔6:** si en la Realidad alguien asintió fuerte en un asa (D·F·C·T), en el Trato detenerse más en su espejo (D→04 · F→02 · C→03 · T→05).
 
 ---
