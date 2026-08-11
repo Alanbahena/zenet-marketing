@@ -1,6 +1,6 @@
 ---
 name: Página /demo · estrategia y copy
-description: La página /demo de zenetapp.com — antesala del análisis (Etapa 1 del camino). Qué trabajo hace, el flujo landing→/demo→app, las decisiones canónicas (acceso cerrado · CTA doble · voz de marca) y el copy completo de los 7 bloques, aprobado bloque por bloque. Incluye la prueba del expediente real, los 6 documentos con lo que desbloquea cada uno, y el par esencial recetario+inventario. El diseño/build vive en 01-prototipo-y-diseno.
+description: La página /demo de zenetapp.com — EN VIVO (tag v3.1 · 11-ago-2026) · antesala del análisis (Etapa 1 del camino). Qué trabajo hace, el flujo landing→/demo→app, las decisiones canónicas (acceso cerrado · CTA doble · voz de marca) y el copy completo de los 7 bloques, aprobado bloque por bloque. Incluye la prueba del expediente real, los 6 documentos con lo que desbloquea cada uno, y el par esencial recetario+inventario. El diseño/build vive en 01-prototipo-y-diseno.
 type: seo-content
 last_updated: 2026-08-10
 status: active
@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > **Qué es:** la página que explica el análisis (Etapa 1) antes de que el operador entre a la app — qué es, qué juntar, qué va a ver, qué pasa con sus datos. Nace de una necesidad real: hoy el ask de documentos se hace a mano por WhatsApp cada vez; la página lo vuelve un link.
 >
-> **Estado:** copy cerrado bloque por bloque (2026-08-10). Diseño y build 🚧 pendientes.
+> **Estado:** ✅ **EN VIVO en `zenetapp.com/demo`** (tag `v3.1` · 2026-08-11). Copy, diseño, animación y deploy cerrados. Junto con ella salió **`/privacidad`** y las dos entradas desde la landing.
 
 ---
 
@@ -202,6 +202,29 @@ Tres trabajos, en orden:
 | 4 | **Números reales** | Diferidos por decisión (10-ago). Cuando se quieran: cobertura de recetas · cobertura de inventario · platillos costeados · total de alertas · tiempo exacto. **Financieros de operadores NUNCA** |
 | 5 | **Cuando la demo deje de ser manual** | Cambiar dos frases: el cierre del bloque 4 y el punto 1 del bloque 6 |
 
+## 5.b Lo que quedó construido (11-ago)
+
+| Pieza | Dónde |
+|---|---|
+| **`/demo`** — 7 bloques + animación de 3 beats sincronizada con el stepper | `zenetapp.com/demo` |
+| **`/privacidad`** — *"Cómo cuidamos tus documentos"* | `zenetapp.com/privacidad` |
+| **Entrada contextual** — *"Mira cómo funciona →"* al cierre de la Etapa 1 | `index.html` |
+| **Entrada permanente** — *"Demo"* en el navbar (texto teal subrayado, no botón) | `index.html` |
+
+**Decisiones de diseño que quedaron canónicas:**
+
+1. **Cada ítem necesita SU figura.** Palomas o puntos idénticos son decoración, no información — se cambiaron por figuras distintas en los documentos (menú/estado de resultados/costeo/manual), las garantías (persona/candado/papelera) y los entregables (índices/barras/alerta/rejilla con hueco).
+2. **Un bloque largo se arregla con jerarquía, no recortando argumento.** El bloque 2 bajó 25% metiendo la prueba en el encabezado, el par esencial en tarjetas grandes y los extras en rejilla 2×2.
+3. **El bloque de honestidad funciona como panel de términos** (afirmación | explicación con líneas finas) — se lee como letra chiquita puesta a la vista.
+4. **Los componentes de la landing se reutilizan tal cual:** banda tintada, stepper de línea de proceso, tarjeta aurora, eyebrows, tokens.
+5. **La animación enseña el paso más abstracto.** Tres beats (documentos → revisión área por área → el análisis se dibuja) sincronizados con el stepper: cada beat enciende su paso. JS timer + IntersectionObserver + `prefers-reduced-motion`; escena oculta en móvil.
+6. **El enlace vive donde el contenido coincide.** Se descartó repetir "Mira cómo funciona" en Etapas 2 y 3: /demo **es** la Etapa 1, y prometer otra cosa erosiona confianza.
+7. **Jerarquía de CTA intacta:** el hero de la landing conserva un solo botón ("Hablemos"). "Demo" es enlace de texto — informa sin competir.
+
+**Sobre el aviso de privacidad — decisión del 11-ago:** en vez de un aviso legal formal, se escribió una página **honesta y sin pretensión legal**. Razones: Zenet aún no es persona física con actividad empresarial ni tiene domicilio, y un aviso formal sin eso finge una figura que no existe. Precisión que bajó la urgencia: **los documentos operativos son datos de negocio, no datos personales** — el dato personal es el del formulario, obligación que ya existía desde julio con Formspree. La página declara con nombre a **Anthropic** como procesador (y que no entrena con el contenido) y cierra con una nota que admite el estado real. **Trigger de reemplazo:** cuando Zenet se constituya + primer Socio Fundador firmado → aviso formal LFPDPPP con abogado (Tier 2.0), junto con el contrato y el DPA.
+
+---
+
 ## 6. Cross-doc
 
 | Doc | Relación |
@@ -214,4 +237,4 @@ Tres trabajos, en orden:
 
 ---
 
-*v0.1 · 2026-08-10 · copy aprobado bloque por bloque por Alan. Diseño y build pendientes.*
+*v0.1 · 2026-08-11 · copy, diseño, animación y deploy cerrados. EN VIVO en zenetapp.com/demo (tag v3.1).*
