@@ -12,7 +12,7 @@ owner: Alan Bahena
 
 > Este NO es un doc de principios abstractos — es la **huella real** de cómo escribe Alan, extraída de sus publicaciones. Es la base que se carga (manual o vía el futuro skill `/post-linkedin`) cuando se pide *"escríbeme un post sobre X"*, para que salga en su voz, no en una voz genérica.
 >
-> **Doc vivo.** v0.1 está construido sobre 15 posts reales (N=15). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
+> **Doc vivo.** v0.1 está construido sobre 16 posts reales (N=16). Crece y se afina con cada publicación nueva — el objetivo a lo largo del tiempo es encontrar la voz y el estilo que mejor le quedan a Alan.
 
 **Relación con los otros docs de voz:**
 
@@ -123,6 +123,12 @@ Lo que se hace / nunca se hace al escribir como Alan.
 - Sonar performático/inflado — Alan se distancia de "the narrative".
 - Claims dogmáticos sin fundamento — él **pregunta**, no sentencia.
 - Framing *"no tienes sistema"* → usar el reframe (*"el sistema vive en tu cabeza y no escala"*).
+- **⛔⛔ Sonar a IA — el anti-patrón #1 (validado con un rechazo real · cf. VE-16):**
+  - **Staccato uniforme** — frases cortas declarativas en secuencia, todos los párrafos del mismo largo.
+  - **Enumeraciones retóricas de 3-4** (*"por miedo, por orgullo, por costumbre, por cansancio"*).
+  - **Remates en espejo / quiasmo** (*"hizo el prototipo gratis, no hizo gratis entender al cliente"*).
+  - **Prosa sin hedges, sin divagación, demasiado limpia.**
+  → Alan **divaga, se hedgea y piensa en voz alta**. Pulir su cadencia la mata. Al editarlo: **arregla solo lo objetivamente malo** (typos · muros de texto · tics repetidos · jerga · claims que juzgan) y **deja el ritmo intacto**. Si el borrador es suyo, la edición es de higiene — no de reescritura.
 
 ### Mini-workflow: de un tema a un post
 
@@ -411,11 +417,40 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 **Ilustra:** hook = device firma **"no es X, es Y"** desde la primera línea (*"no es escribir un manual. Es meses… de prueba y error"* · reframe en dos tiempos) · **gatillo real honesto** (*"vi a un restaurantero…"* · un video de Instagram · la autenticidad del disparador, como la foto con fecha de VE-09) · **específicos concretos** (recetas · porciones · compras · abrir/cerrar · servicio) · **reframe canónico ampliado** — el saber no solo vive en una cabeza, vive **repartido y suelto** (la fragmentación · matiz más verdadero que "vive en la cabeza") · beat de **rotación** (*"cada vez que alguien rota, los estándares se mueven"* · el dolor que el operador siente) · cierre = **doble pregunta acoplada** (tiempo + de cuántas personas/experiencia depende · el motor del engagement). **Tercer post del formato pregunta de engagement** (después de POST-11/POST-12 · cf. `banco-de-ideas`). **Nota de voz (load-bearing):** dos insights de Alan fortalecieron el post base — la **fragmentación** (conocimiento repartido en formatos/herramientas, no solo en una cabeza) y la **rotación** (degrada los estándares) · edición de craft: se **fusionó** la fragmentación en una línea (se decía dos veces) y se **cortó** una frase abstracta (*"el conocimiento es infinito…"* · rompía el ritmo concreto) — modelo de cómo integrar las ideas del fundador subiendo la señal y bajando el ruido. **Nota visual:** text-only deliberado (post-pregunta · la imagen desviaría el foco de responder · cf. VE-14). **Sin hashtags** (patrón ES · §3 · se confirmó que los hashtags casi no mueven alcance en LinkedIn y en un post-pregunta restan). **Nota de origen:** Alan escribió su propio draft (las ideas de fragmentación + rotación + *"la misma calidad todos los días"* son suyas) · co-editado a la versión tight. Publicado 2026-08-05.
 
+### VE-16 · ES · Pillar 1/3 (journey + técnico · audiencia builders) · "la IA abarató construir, no entender al cliente"
+
+> Esta semana tuve una reflexión sobre la IA que me dejó pensando.
+>
+> Al estar conversando con varios emprendedores me di cuenta de que muchos están creando su solución con algún tipo de tecnología de software, y que varios ya tienen un producto funcional, con buen UI, que aparenta estar bien diseñado. Algunos sin tener background de desarrollo de software, quizá un perfil de ingeniería o algún curso, pero el prototipo ahí está.
+>
+> Sin embargo, encontré un patrón. Casi todas esas ideas carecen de una buena planeación con un modelo sostenible antes de tener mercado. Las estructuras de negocio son inestables y las propuestas de valor están muy ambiguas.
+>
+> Es cierto que la IA acelera el research y el prototipado. Pero hay algo en lo que todavía se necesita mucho del humano: el comportamiento de las personas. El estudio de mercado, conectar los puntos para generar una propuesta de valor, escuchar al usuario. La IA puede investigar y analizar documentos, pero el comportamiento humano se mueve por emociones, no solo por la lógica a la que la IA está acostumbrada.
+>
+> Y creo que ahí está el punto. El problem-solution fit, y todo lo que viene antes del product-market fit, dependen de eso: de combinar la parte racional con la emocional. Nuestro mundo no es solo lógico, y los mercados dependen mucho de las emociones de las personas.
+>
+> La IA sigue transformando nuestra forma de trabajar, y para lo que es lógico y racional es un avance enorme. Pero para crear ideas, creo que la parte humana sigue siendo un factor que no podemos dejar a un lado.
+>
+> Me interesa saber cómo lo ven ustedes, sobre todo los que están construyendo algo ahora.
+
+**Ilustra:** el **arquetipo del ES reflexivo maduro** — hermano directo de VE-01 (mismo tema: lo cuantitativo/lógico vs lo cualitativo/humano en pre-PMF, con IA acelerando) · **dialéctica "Es cierto que… Pero…"** (device firma · idéntico al *"Sí, es cierto que… Pero ¿hasta qué punto…?"* de VE-01) · **pivote "Y creo que ahí está el punto"** (frase firma, literal de VE-01) · hedges que piensan en voz alta (*"quizá"* · *"me di cuenta"* · *"creo que"*) · **oraciones largas encadenadas con comas** (NO staccato) · observación de campo como gatillo (las pláticas del evento de networking) · cierre = **invitación suave**, no pregunta punchy (*"Me interesa saber cómo lo ven ustedes"* · registro exacto de VE-01) · sin hashtags (patrón ES).
+
+**🌟 Nota de generación (LA MÁS LOAD-BEARING del doc):** este post produjo el **primer rechazo explícito por "suena a IA"**. Alan escribió el borrador; una reescritura "mejorada" fue rechazada con *"tiene como un estilo que suena a que fue creado con IA, el estilo con el que escribí suena un poco más a mí"*. **Qué la delató** (el anti-patrón, a evitar siempre):
+- Frases cortas declarativas parejas en secuencia (staccato uniforme · todos los párrafos del mismo largo).
+- **Enumeración retórica de tres o cuatro** (*"por miedo, por orgullo, por costumbre, por cansancio"*).
+- **Remate en espejo/quiasmo** (*"hizo el prototipo gratis, no hizo gratis entender al cliente"*).
+- Cero hedges · cero divagación · todo demasiado limpio.
+→ **Regla:** en ES reflexivo, **editar mínimo y preservar el ritmo** — arreglar solo lo que está objetivamente mal (typos · muros de texto · tics repetidos · jerga · claims que juzgan) y **no reescribir la cadencia**. La prosa de Alan **divaga, se hedgea y piensa en voz alta**; pulirla la mata. El north star (§1) es *humano*, y lo demasiado pulido lee performático — justo de lo que él se distancia.
+
+**Nota de estrategia de canal:** audiencia **builders/emprendedores, NO operadores** — sirve al propósito **ampliado** del canal (*marca personal como activo de confianza para el networking* · decisión 9-ago de la bitácora Fase A), no al de validación de H1. Por eso entró **en lugar de POST-04** y NO desplazó a POST-03 (el que sí hace trabajo de operador). Precedente: cuando un post sirve a la red y no a la validación, **suma, no sustituye** al de la problemática.
+
+**Ediciones aplicadas (todas de higiene, ninguna de voz):** typos y acentos · partir dos muros de texto en 7 párrafos · quitar 8 repeticiones de *"gran"* (tic detectado) · jerga triple → dos términos (*"pre market fit"* no es estándar → *"antes del product-market fit"* · con audiencia builder el detalle importa) · *"todas esas ideas carecen"* → *"casi todas"* (juzgaba a gente recién conocida que lo lee · voz = empático **sin condescendencia**) · cierre-invitación agregado (sin él, el post se contesta solo) · una línea de vulnerabilidad propuesta (*"a mí también me ha pasado construir primero y preguntar después"*) fue **cortada por Alan** — no toda oportunidad de vulnerabilidad debe tomarse. Publicado 2026-08-09.
+
 ### Cobertura del corpus
 
 | Pillar | Posts | Gap |
 |---|---|---|
-| 1 Founder journey | VE-01 · VE-02 · VE-09 · VE-11 · VE-14 | OK (fuerte) |
+| 1 Founder journey | VE-01 · VE-02 · VE-09 · VE-11 · VE-14 · VE-16 | OK (fuerte) |
 | 2 Industry insight | VE-04 · VE-05 · VE-07 · VE-12 · VE-15 | OK (fuerte) |
 | 3 Técnico | VE-03 · VE-06 · VE-10 · VE-13 | OK (fuerte) |
 | 4 Operador vernacular | (parcial en VE-05 · VE-07) | falta puro |
@@ -428,7 +463,7 @@ Los posts reales de Alan, etiquetados `VE-NN`. Son los **few-shot** que se carga
 
 ### 6.1 Estado v0.1
 
-Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native) y 2026-06-22 con VE-14 (founder journey ES · origin story / "mi primer cliente fue un restaurante") y 2026-08-05 con VE-15 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" / el costo real de estandarizar). **N=15 · 9 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
+Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 (behind-scenes · reescrito en vivo por Alan), 2026-06-08 con VE-09 (founder journey ES · el huerto en Alemania), 2026-06-10 con VE-10 (técnico EN · prompt engineering / model drift) y 2026-06-15 con VE-11 (founder journey ES · "no eran fracasos, eran experimentos" / el laboratorio) y 2026-06-16 con VE-12 (industria ES · "esquema corporativo a pequeña escala" / la operación manual) y 2026-06-18 con VE-13 (técnico EN · cost management / la economía AI-native) y 2026-06-22 con VE-14 (founder journey ES · origin story / "mi primer cliente fue un restaurante") y 2026-08-05 con VE-15 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" / el costo real de estandarizar) y 2026-08-09 con VE-16 (journey/técnico ES · "la IA abarató construir, no entender al cliente" · **primer rechazo explícito por sonar-a-IA → regla de edición mínima en §4**). **N=16 · 10 ES + 6 EN.** Huella direccional sólida · devices firma claros · registro ES/EN mapeado. North star fijado por el fundador.
 
 ### 6.2 Cómo crece este doc
 
@@ -458,4 +493,4 @@ Construido 2026-06-02 sobre 7 posts reales (N=7). Ampliado 2026-06-05 con VE-08 
 
 ---
 
-*Última actualización: 2026-08-05. Doc vivo · se afina con cada post.*
+*Última actualización: 2026-08-09. Doc vivo · se afina con cada post.*

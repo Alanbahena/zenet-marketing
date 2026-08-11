@@ -2,7 +2,7 @@
 name: Banco de ideas y backlog de contenido
 description: El swipe file vivo del contenido de Alan · backlog de posts listos para publicar (el starter pack validado) + semillas de ideas para futuros posts. Cada post con pillar · idioma · estado · texto · brief de imagen. Se llena conforme se genera y se valida contenido.
 type: social-media
-last_updated: 2026-08-05
+last_updated: 2026-08-09
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -20,7 +20,7 @@ owner: Alan Bahena
 
 ## Posts listos (starter pack · 2026-06-03)
 
-5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only) · POST-11 publicado 2026-06-30 (industria ES · pregunta de engagement · "¿por qué cuesta tanto estandarizar?" · text-only · ~350 impresiones + comentario de calidad) · POST-12 publicado 2026-07-06 (industria ES · pregunta de engagement · herramientas digitales / WhatsApp · text-only) · POST-13 publicado 2026-07-08 (técnico/journey EN · "systems are systems" · arco cross-industria · diagrama físico→datos→AI) · POST-14 publicado 2026-08-05 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" · el costo real de estandarizar · fragmentación + rotación · text-only).** Recámara restante: POST-03 · POST-04.
+5 posts validados en voz de Alan · cubren los 5 pillars activos. **POST-02 publicado 2026-06-03 (primer post del sistema en vivo) · POST-05 publicado 2026-06-04 (editado en vivo por Alan · primer behind-scenes) · POST-06 publicado 2026-06-09 (founder journey · huerto Alemania · carrusel de 2 fotos) · POST-07 publicado 2026-06-10 (técnico EN · prompt engineering / model drift · diagrama del enum escapado) · POST-01 publicado 2026-06-15 (founder journey · foto del escritorio · 2 anclas + cierre "reconstruir desde ahí") · POST-08 publicado 2026-06-16 (industria ES · mapa de la operación · lista validada vs VP) · POST-09 publicado 2026-06-18 (técnico EN · cost management · gráfica de la inversión) · POST-10 publicado 2026-06-22 (journey ES · origin story · "mi primer cliente fue un restaurante" · text-only) · POST-11 publicado 2026-06-30 (industria ES · pregunta de engagement · "¿por qué cuesta tanto estandarizar?" · text-only · ~350 impresiones + comentario de calidad) · POST-12 publicado 2026-07-06 (industria ES · pregunta de engagement · herramientas digitales / WhatsApp · text-only) · POST-13 publicado 2026-07-08 (técnico/journey EN · "systems are systems" · arco cross-industria · diagrama físico→datos→AI) · POST-14 publicado 2026-08-05 (industria ES · pregunta de engagement · "estandarizar no es escribir un manual" · el costo real de estandarizar · fragmentación + rotación · text-only) · POST-15 publicado 2026-08-09 (journey/técnico ES · reflexión sobre IA y emprendedores · "la IA abarató construir, no entender al cliente" · audiencia builders/red · text-only).** Recámara restante: POST-03 · POST-04.
 
 ---
 
@@ -456,6 +456,29 @@ Los que están en esto: ¿cuánto tiempo les tomó estandarizar su operación? �
 
 ---
 
+### POST-15 · Founder journey / técnico · ES · 📤 publicado (2026-08-09)
+**Imagen:** ninguna — text-only. **Sin hashtags** (patrón ES · aunque la audiencia sea builder, los hashtags le habrían quitado el tono de reflexión).
+**Origen:** **escrito por Alan de principio a fin** (borrador propio · el insight, la observación de campo y la estructura son suyos) · co-editado 2026-08-09 · Pillar 1/3 en ES · **gatillo real** = las pláticas con emprendedores del evento de networking universitario (jue 06-ago · cf. bitácora Fase A semana 3-9 ago) · tesis = **la IA abarató construir, no abarató entender al cliente** (prototipos buenos + UI decente incluso sin background de dev · pero VP ambiguas, modelos inestables, cero planeación pre-mercado). **Audiencia = builders/emprendedores, NO operadores** — sirve al propósito ampliado del canal (*marca personal como activo de confianza para el networking* · decisión 9-ago), no al de validación de H1. Por eso **sustituyó a POST-04**, no a POST-03 (que sí hace el trabajo de operador). Edición mínima: typos/acentos · partir los muros de texto · quitar 8 repeticiones de *"gran"* · jerga triple → dos términos (*"pre market fit"* no es estándar → *"antes del product-market fit"*) · *"todas esas ideas"* → *"casi todas"* (juzgaba a gente que acababa de conocer y que lo lee) · cierre-invitación agregado en su registro de VE-01.
+**⚠️ Aprendizaje de craft (load-bearing · cf. VE-16):** una primera reescritura "mejorada" fue **rechazada por Alan por sonar a IA** — frases cortas parejas, enumeración de cuatro, remate en espejo. Su voz **divaga, piensa en voz alta y usa hedges**; al pulirla se pierde. Regla nueva: en ES reflexivo, **editar mínimo y preservar el ritmo**, no reescribir.
+
+```
+Esta semana tuve una reflexión sobre la IA que me dejó pensando.
+
+Al estar conversando con varios emprendedores me di cuenta de que muchos están creando su solución con algún tipo de tecnología de software, y que varios ya tienen un producto funcional, con buen UI, que aparenta estar bien diseñado. Algunos sin tener background de desarrollo de software, quizá un perfil de ingeniería o algún curso, pero el prototipo ahí está.
+
+Sin embargo, encontré un patrón. Casi todas esas ideas carecen de una buena planeación con un modelo sostenible antes de tener mercado. Las estructuras de negocio son inestables y las propuestas de valor están muy ambiguas.
+
+Es cierto que la IA acelera el research y el prototipado. Pero hay algo en lo que todavía se necesita mucho del humano: el comportamiento de las personas. El estudio de mercado, conectar los puntos para generar una propuesta de valor, escuchar al usuario. La IA puede investigar y analizar documentos, pero el comportamiento humano se mueve por emociones, no solo por la lógica a la que la IA está acostumbrada.
+
+Y creo que ahí está el punto. El problem-solution fit, y todo lo que viene antes del product-market fit, dependen de eso: de combinar la parte racional con la emocional. Nuestro mundo no es solo lógico, y los mercados dependen mucho de las emociones de las personas.
+
+La IA sigue transformando nuestra forma de trabajar, y para lo que es lógico y racional es un avance enorme. Pero para crear ideas, creo que la parte humana sigue siendo un factor que no podemos dejar a un lado.
+
+Me interesa saber cómo lo ven ustedes, sobre todo los que están construyendo algo ahora.
+```
+
+---
+
 ## Semillas de ideas (💡 sin escribir)
 
 Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `01-manual` §2.3 + research backbone.)
@@ -485,4 +508,4 @@ Temas con material real esperando su turno. Pillar entre paréntesis. (Fuente: `
 
 ---
 
-*Última actualización: 2026-08-05. Vivo · se nutre conforme se genera contenido.*
+*Última actualización: 2026-08-09. Vivo · se nutre conforme se genera contenido.*
