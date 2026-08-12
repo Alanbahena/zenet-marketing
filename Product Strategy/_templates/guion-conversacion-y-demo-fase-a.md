@@ -1,10 +1,10 @@
 ---
 name: Guión de conversación y demo — Fase A
-description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 2 instancias reales — Carlos (gerente Alma Verde · presencial) y Juan Pablo (dueño primer restaurante CDMX · perfil frontera/control · sin demo · señales invertidas). Draft — se afina con el uso. Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a (§5 Mom Test) y 04-sales-motion-three-session-demo.
+description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 3 instancias reales — Carlos (gerente · presencial), Juan Pablo (control · videollamada) y Miguel Bahena (chef-dueño fine dining · presencial · la variante dueño-puro sabor chef · con mapa de validación V1-V8). Draft — se afina con el uso. Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a (§5 Mom Test) y 04-sales-motion-three-session-demo.
 type: product-strategy
-last_updated: 2026-08-06
+last_updated: 2026-08-11
 status: draft
-version: 0.3
+version: 0.4
 owner: Alan Bahena
 ---
 
@@ -264,13 +264,99 @@ Justo al salir (la memoria decae → racionalizas):
 
 ---
 
-## 9. Variantes por construir
+## 9. Instancia real #3 — Miguel Bahena (chef-dueño · Madre · fine dining · Ensenada · presencial)
+
+**Brief:** chef-dueño de **Madre** (Ensenada) · fine dining con credibilidad Michelin · **perfil 2** del framework (alta cocina = ICP *adyacente* — sus reads NO cuentan en el bucket del beachhead/gate) · referido warm de **Victor Murguía** · mensaje 23-jul (voice note ángulo fine dining) + nudge 30-jul + silencio de temporada alta → **respondió él solo el 7-ago y agendó** (no viene arrastrado). Sesión: **mié 12-ago · ~2pm · presencial en Madre** · ~1 hr asumida, no confirmada → run-sheet comprimible.
+
+> **El punto #1: la relación ES el objetivo.** Miguel es payer + chef + conector a la vez — la primera vez que el guión enfrenta a un **dueño puro** (esta instancia construye esa variante, sabor chef-dueño). Todo lo demás (perfil 2, demo, intros futuras) cuelga de que salga sintiendo que conoció a alguien que entiende y respeta su mundo. **⚠️ Sampling bias vivo:** la red de Victor skewa high-end — nada de esta sesión se generaliza al beachhead.
+
+**Los 5 objetivos, en orden:**
+1. **La relación** — conexión real, modo entrevistador, escuchar de verdad.
+2. **Su historia y su mundo** — trayectoria · la industria como él la ve · logros · **deseos, miedos y su sueño más grande** *(adición de Alan sobre el guión base — con un chef-dueño, la entrevista de fondo ES el Mom Test)*.
+3. **Su operación hoy + dolores del perfil 2** → V1/V2.
+4. **Tu historia** — el arco del fundador, entre pares.
+5. **Zenet + la puerta a la demo** — landing en persona → V3 · ask de documentos → V4.
+
+**Las 4 decisiones de diseño (aprobadas 11-ago):**
+1. **Comer en Madre** (llegar antes o pedir algo): la señal de respeto más fuerte con un chef + material real (*"ese platillo que probé…"*).
+2. **El argumento del punto va EN EL BOLSILLO, no en el plan** — solo sale si ÉL lleva la plática a costos/margen. Si la sesión es pura excelencia, HV-03 espera (se registra "no probado").
+3. **El ask es la demo**: *"mándame tus documentos como estén y te regreso el análisis de Madre — toma menos de 10 minutos"* → link de `/demo` por WhatsApp al despedirse.
+4. **El rol de conector NO se pide.** Si la sesión sale bien, las intros llegan solas o en el siguiente toque.
+
+### El mapa de validación (V1–V8 · todo con etiqueta perfil 2)
+
+| # | Qué se valida | Cómo | Señal |
+|---|---|---|---|
+| V1 | ¿Cuál de los 4 dolores (D·F·C·T) resuena en fine dining? | Sale solo en "su operación" | Hipótesis: **Transferencia + consistencia** fuerte; margen menos. Otro = hallazgo |
+| V2 | ¿El perfil 2 ya documenta? | *"Enséñame tus fichas técnicas"* | Si documenta → se parece a Alma Verde (dolor = mantener/ejecutar) → refuerza patrón S#1. Si no → sorpresa grande |
+| V3 | Comunicación de la VP — **3ª señal** | Landing en persona: *"¿qué entendiste que hace?"* + silencio | Carlos y Alfonso no pudieron reproducirla. Sí → la v3 comunica. No → hueco confirmado y grave |
+| V4 | H4 · compromiso revelado | El ask de la demo | **LA señal de la sesión:** documentos en los días siguientes = compromiso de un dueño. "Sí claro" y nada = cortesía |
+| V5 | H6 · pozo de valor de un payer *(condicional)* | Solo si ÉL va a dinero: ¿ya paga software/consultores? → ahí, el punto | Primera lectura WTP con dueño real. No forzar |
+| V6 | El vocabulario con un chef | ¿*"estándar de calidad"* y *"se decide atrás"* prenden? | Valida las líneas del pitch para perfil 2 |
+| V7 | VoC de fine dining | Toda la sesión | Voz nueva en la library (chef-dueño alta cocina) |
+| V8 | H5 · el canal completó el ciclo | Referido warm → sesión presencial | Se registra en el debrief |
+
+**Señales especiales — dos que aquí NO son kill:** *"ya tengo fichas técnicas de todo"* → dato V2 (girar a: ¿y mantenerlas vivas? ¿el equipo las sigue sin ti?) · *"el margen no es mi problema"* → la frontera del perfil 2 que queremos trazar (V1). **El kill real es uno:** calidez + cero acción después.
+
+### Run-sheet — Madre, Ensenada (mié 12-ago · ~2pm · 60 min comprimible a 35)
+
+> Glanceable para el celular. Los beats marcados ⭐ son el esqueleto de 35 min si la hora se acorta.
+
+**Antes de salir (checklist)**
+- Comido o con hambre para comer en Madre · el **argumento del punto escrito** (bolsillo) · landing y `/demo` cargadas en el cel · el mensaje de follow-up con el link de /demo semi-escrito en WhatsApp.
+- **Repaso 10 seg:** (1) la relación es el objetivo · (2) su pasado y sus hechos, no tu idea · (3) 80/20 escuchando · (4) NUNCA "te falta sistema" — su estándar ES el sistema · (5) honesto: está temprano, por eso su opinión vale.
+
+**0-5 ⭐ · Llegada + reconecta**
+- El puente: *"Victor me habló muy bien de ti — me dio mucho gusto que se diera esto."*
+- El lugar: *"Platícame de Madre — ¿por qué 'Madre'?"* *(el nombre ES una historia; deja que arranque él)*
+- Si comiste: el platillo como puerta — *"¿qué historia tiene ese plato?"*
+
+**5-25 ⭐ · Su historia** *(el corazón — no se apura · sigue los hilos, no la lista)*
+1. *"¿Cómo llegaste a abrir Madre? ¿Qué había antes en tu camino?"*
+2. *"¿Por qué Ensenada?"* ↳ la escena de Ensenada/Valle como él la ve *(intel de conector sin pedir nada)*
+3. *"¿Qué es lo que más orgullo te da de lo que has construido aquí?"*
+4. *"¿Y qué sigue? ¿Cuál es el sueño grande — el que casi no cuentas?"* ⭐
+5. *"¿Qué es lo que más te quita el sueño de este negocio?"* ⭐ *(miedos — la otra mitad)*
+6. *"¿Cómo ves la industria hoy — qué está cambiando que te emociona o te preocupa?"*
+
+**25-40 ⭐ · Su operación** *(revelado > declarado — estás en SU casa: pide que te enseñe)*
+7. *"Platícame un día normal tuyo — ¿cuánto estás en cocina vs todo lo demás?"*
+8. *"¿Cómo mantienes el estándar cuando tú no estás en la cocina?"* ⭐ *(la pregunta V1 — transferencia)*
+9. *"¿Cómo son tus fichas técnicas / recetas — me enseñas cómo las llevan?"* ⭐ *(V2 — que te MUESTRE)*
+10. *"Cuando entra alguien nuevo a cocina, ¿cuánto tarda en cocinar 'como Madre'? ¿Cómo aprende?"*
+11. *"La última vez que un platillo salió distinto a como debe ser — ¿qué pasó?"*
+12. *"Con el menú cambiando por temporada, ¿cómo le haces con insumos y costos?"* *(la puerta natural a dinero — si la toma, V5 se activa)*
+13. *"¿Qué haces tú hoy que sabes que no deberías estar haciendo tú?"*
+14. *"¿Has intentado resolver algo de esto — software, consultor, alguien? ¿Qué pasó?"*
+
+**40-47 · Tu historia** *(entre pares, no pitch — el arco micro del deck)*
+- *"Pasé años en sistemas de grandes industrias donde la calidad no se negociaba. En una startup de trazabilidad entendí algo que no se ve desde la mesa: **la calidad de un platillo se decide atrás** — proveedores, inventarios, el precio de cada insumo. Cuando conocí de cerca la operación de un restaurante reconocí el patrón: el mismo caos, a menor escala. De ahí nace Zenet."* *(👂 V6: ¿"se decide atrás" le prende?)*
+
+**47-57 ⭐ · Zenet** *(solo si la conversación llegó sana hasta aquí)*
+- *"Te enseño en qué ando"* → **la landing en el cel** → 🎯 *"¿qué entendiste que hace?"* → **silencio** · captura el verbatim (V3).
+- Sus comentarios de adopción: *"¿qué software usas hoy en Madre? ¿qué has probado y abandonado, y por qué?"*
+- 💼 *Bolsillo:* si ÉL llegó a costos/margen → el argumento del punto, en voz alta (V5/HV-03).
+
+**57-60 ⭐ · El ask** *(uno solo — no saturar)*
+- *"Si te late, mándame tus documentos como estén — fichas, inventario, lo que tengas — y te regreso un análisis de Madre. Toma menos de 10 minutos del tuyo."*
+- Al despedirte, por WhatsApp: el link de `zenetapp.com/demo` — *"aquí viene qué juntar y qué vas a ver."*
+
+**⚠️ Guardrails:** NO precio (salvo el frame del punto si se gana) · NO fechas · NO promesas de integración · NO "agentes IA" · producto en vivo solo si él lo jala (5 min, import por foto) · NUNCA nada que suene a "te enseño a operar tu cocina".
+
+### Al salir (en el coche, en caliente)
+- Debrief V1–V8: dicho vs hecho · verbatims → VoC · etiqueta **perfil 2** en todo.
+- Pipeline: Miguel → "Demo" · el follow-up de /demo enviado.
+- Entrada #4 en `08-learnings-de-validacion` al llegar.
+
+---
+
+## 10. Variantes por construir
 
 | Variante | Qué añadir sobre la base | Trigger |
 |---|---|---|
-| **Dueño puro** (Alma · San Miguel · Diego) | H6 **pozo de valor real** (presupuesto/WTP · sin forzar el precio exacto) · ángulo payer · cierre-a-conversación (no a venta) | Cuando responda un dueño |
+| **Dueño puro** (Alma · San Miguel · Diego) | H6 **pozo de valor real** (presupuesto/WTP · sin forzar el precio exacto) · ángulo payer · cierre-a-conversación (no a venta) · *base: instancia #3 (Miguel · sabor chef-dueño) — falta el sabor casual/perfil 3* | Cuando responda un dueño |
 | **Insider** (Victor · remoto) | Menos "su día operativo", más **feedback experto de la categoría** + pedir intros · demo por videollamada | Guión Mom Test de Victor (pendiente) |
 
 ---
 
-*Draft v0.3 · 2026-08-06 · nació de la instancia de Carlos (Alma Verde) · v0.3 añade la instancia #2 Juan Pablo (perfil frontera/control · primera variante SIN demo con señales invertidas). Pendiente: afinar con el uso · sacar la variante de dueño puro · guión insider de Victor. El a-quién/cuándo/resultado vive en el Pipeline de Notion, no aquí.*
+*Draft v0.4 · 2026-08-11 · v0.4 añade la instancia #3 Miguel Bahena (chef-dueño fine dining · primera variante de dueño puro · mapa de validación V1-V8 · el ask productizado con /demo). Pendiente: afinar con el uso · el sabor casual/perfil 3 de la variante dueño · guión insider de Victor. El a-quién/cuándo/resultado vive en el Pipeline de Notion, no aquí.*
