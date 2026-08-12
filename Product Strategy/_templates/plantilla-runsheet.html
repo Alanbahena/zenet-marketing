@@ -1,0 +1,221 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+PLANTILLA · RUN-SHEET DE SESIÓN (Fase A) — formato estándar
+═══════════════════════════════════════════════════════════════════
+Qué es: el formato canónico para los run-sheets de sesión en PDF
+(aprobado por Alan 11-ago-2026 · primera instancia: Miguel Bahena).
+
+Cómo se usa:
+1. Duplica este archivo y edita el CONTENIDO (título, pills de meta,
+   beats con sus tiempos, preguntas, cheat-sheet). NO toques los
+   tokens ni los estilos — son la identidad del formato.
+2. Genera el PDF con Chrome headless:
+   "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"      --headless=new --disable-gpu --no-pdf-header-footer      --print-to-pdf="Run-sheet-<NOMBRE>-<FECHA>.pdf"      --virtual-time-budget=4000 "file://<este archivo>"
+3. El PDF va a: 03_Marketing/Sesiones-Fase-A/ (fuera del repo).
+   La fuente de verdad del contenido sigue siendo la instancia en
+   guion-conversacion-y-demo-fase-a.md — esto es el formato de salida.
+
+Componentes del formato:
+- .meta/.pill → los datos de la sesión (fecha·hora·lugar·duración)
+- .grid2 con .box → "Antes de salir" + "Repaso de 10 segundos"
+- .beat → un bloque por tramo, con chip de tiempo (.t) y ⭐ si es
+  parte del esqueleto comprimido · .t.soft = tramo opcional
+- .say → frases textuales que se dicen tal cual
+- .q → banco de preguntas numerado · .note → acotaciones grises
+- .pgbrk → salto a página 2: cheat-sheet (tabla) + señales (.sig
+  verde/roja) + .kill + "Al salir"
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Onest:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--ac:#2E6E62;--t4:#88BCAF;--mint:#BFE2D9;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif;}
+  *{box-sizing:border-box;margin:0}
+  @page{size:A4;margin:11mm}
+  body{font-family:var(--fb);color:var(--ch);background:#fff;font-size:9.6pt;line-height:1.42}
+  h1{font-family:var(--fd);font-size:17pt;font-weight:700;letter-spacing:-.01em}
+  .sub{color:var(--t7);font-size:9.5pt;margin-top:2px}
+  .meta{display:flex;gap:7px;margin:8px 0 12px;flex-wrap:wrap}
+  .pill{font-family:var(--fd);font-weight:600;font-size:8.2pt;color:var(--ac);background:rgba(46,110,98,.07);
+        border:1px solid rgba(46,110,98,.22);border-radius:99px;padding:2.5px 9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .box{background:var(--off);border:1px solid rgba(43,55,56,.13);border-radius:9px;padding:8px 11px;margin-bottom:9px;
+       break-inside:avoid}
+  .box h2{font-family:var(--fd);font-size:9.5pt;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+  .box ul{padding-left:14px}
+  .box li{margin-bottom:2.5px}
+  .beat{border:1px solid rgba(43,55,56,.13);border-radius:9px;margin-bottom:8px;overflow:hidden;break-inside:avoid}
+  .beat header{display:flex;align-items:center;gap:8px;background:var(--off2);padding:5px 11px;border-bottom:1px solid rgba(43,55,56,.09)}
+  .beat header .t{font-family:var(--fd);font-weight:700;font-size:9pt;color:#fff;background:var(--ac);border-radius:99px;padding:1.5px 9px;white-space:nowrap}
+  .beat header .t.soft{background:var(--t4)}
+  .beat header h3{font-family:var(--fd);font-size:10.3pt;font-weight:700}
+  .beat header .star{margin-left:auto;font-size:9pt}
+  .beat .bd{padding:7px 11px}
+  .q{padding-left:15px;counter-reset:q}
+  .q li{margin-bottom:3.2px}
+  .q b{color:var(--ac);font-weight:700}
+  .say{background:var(--off2);border-left:3px solid var(--ac);border-radius:0 7px 7px 0;padding:6px 10px;margin:5px 0;font-size:9.4pt}
+  .say em{color:var(--t7)}
+  .note{color:var(--t7);font-size:8.6pt;margin-top:4px}
+  table{width:100%;border-collapse:collapse;font-size:8.6pt}
+  th{font-family:var(--fd);text-align:left;color:var(--ac);font-weight:700;padding:3px 7px;border-bottom:1.4px solid var(--ac);white-space:nowrap}
+  td{padding:3.4px 7px;border-bottom:1px solid rgba(43,55,56,.1);vertical-align:top}
+  td:first-child{font-weight:700;white-space:nowrap;color:var(--ch)}
+  .sig{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .sig .g{border-color:rgba(46,110,98,.35)}
+  .sig .r{border-color:rgba(190,80,60,.4)}
+  .sig .r h2{color:#A8553A}
+  .kill{background:#FBF1EC;border:1px solid rgba(190,80,60,.35);border-radius:9px;padding:7px 11px;margin-bottom:9px;font-size:9.2pt}
+  .kill b{color:#A8553A}
+  .pgbrk{break-before:page}
+</style></head>
+<body>
+
+<h1>Run-sheet · Miguel Bahena — Madre, Ensenada</h1>
+<p class="sub">Instancia #3 del guión de Fase A · chef-dueño · fine dining · <b>todo con etiqueta PERFIL 2</b> (no cuenta en bucket del beachhead)</p>
+<div class="meta">
+  <span class="pill">Mié 12-ago</span><span class="pill">~2:00 pm</span><span class="pill">Presencial · Madre</span>
+  <span class="pill">60 min · comprimible a 35 (beats ⭐)</span><span class="pill">Referido de Victor</span>
+</div>
+
+<div class="grid2">
+  <div class="box">
+    <h2>✔ Antes de salir</h2>
+    <ul>
+      <li>Llegar con hambre — <b>comer en Madre</b> (respeto + material real)</li>
+      <li><b>El argumento del punto ESCRITO</b> — va en el bolsillo</li>
+      <li>Landing y <b>zenetapp.com/demo</b> cargadas en el cel</li>
+      <li>WhatsApp semi-escrito con el link de /demo (follow-up)</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h2>🧭 Repaso de 10 segundos</h2>
+    <ul>
+      <li><b>La relación ES el objetivo</b> — todo lo demás cuelga de ahí</li>
+      <li>Su pasado y sus hechos, no tu idea · <b>80/20 escuchando</b></li>
+      <li>NUNCA "te falta sistema" — <b>su estándar ES el sistema</b></li>
+      <li>Honesto: está temprano, por eso su opinión vale</li>
+    </ul>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">0–5</span><h3>Llegada + reconecta</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>El puente: <b>"Victor me habló muy bien de ti — qué gusto que se dio esto."</b></li>
+      <li><b>"Platícame de Madre — ¿por qué 'Madre'?"</b> <span class="note">(el nombre ES una historia — que arranque él)</span></li>
+      <li>Si comiste: <b>"¿qué historia tiene ese plato?"</b></li>
+    </ol>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">5–25</span><h3>Su historia — el corazón</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"¿Cómo llegaste a abrir Madre? ¿Qué había antes en tu camino?"</li>
+      <li>"¿Por qué Ensenada?" → la escena de Ensenada/Valle como él la ve <span class="note">(intel de conector — sin pedir nada)</span></li>
+      <li>"¿Qué es lo que más orgullo te da de lo que has construido?"</li>
+      <li><b>"¿Y qué sigue? ¿Cuál es el sueño grande — el que casi no cuentas?"</b> ⭐</li>
+      <li><b>"¿Qué es lo que más te quita el sueño de este negocio?"</b> ⭐ <span class="note">(miedos — la otra mitad)</span></li>
+      <li>"¿Qué está cambiando en la industria que te emociona o te preocupa?"</li>
+    </ol>
+    <p class="note">No se apura. Sigue los hilos, no la lista.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">25–40</span><h3>Su operación — revelado &gt; declarado</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"Platícame un día normal tuyo — ¿cuánto estás en cocina vs todo lo demás?"</li>
+      <li><b>"¿Cómo mantienes el estándar cuando tú no estás en la cocina?"</b> ⭐ <span class="note">→ V1 transferencia</span></li>
+      <li><b>"¿Cómo son tus fichas técnicas — me enseñas cómo las llevan?"</b> ⭐ <span class="note">→ V2 · que te MUESTRE</span></li>
+      <li>"Cuando entra alguien nuevo, ¿cuánto tarda en cocinar 'como Madre'? ¿Cómo aprende?"</li>
+      <li>"La última vez que un platillo salió distinto a como debe — ¿qué pasó?"</li>
+      <li>"Con el menú cambiando por temporada, ¿cómo le haces con insumos y costos?" <span class="note">→ puerta natural a dinero (si la toma, V5)</span></li>
+      <li>"¿Qué haces tú hoy que sabes que no deberías estar haciendo tú?"</li>
+      <li>"¿Has intentado resolver algo de esto — software, consultor? ¿Qué pasó?"</li>
+    </ol>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t soft">40–47</span><h3>Tu historia — entre pares, no pitch</h3></header>
+  <div class="bd">
+    <div class="say">"Pasé años en sistemas de grandes industrias donde la calidad no se negociaba. En una startup de trazabilidad entendí algo que no se ve desde la mesa: <b>la calidad de un platillo se decide atrás</b> — proveedores, inventarios, el precio de cada insumo. Cuando conocí de cerca la operación de un restaurante reconocí el patrón: el mismo caos, a menor escala. De ahí nace Zenet."</div>
+    <p class="note">👂 V6: ¿"se decide atrás" le prende los ojos?</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">47–57</span><h3>Zenet — solo si la conversación llegó sana</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"Te enseño en qué ando" → <b>la landing en el cel</b> → 🎯 <b>"¿qué entendiste que hace?"</b> → <b>SILENCIO</b> · captura el verbatim <span class="note">→ V3</span></li>
+      <li>"¿Qué software usas hoy en Madre? ¿Qué has probado y abandonado — y por qué?"</li>
+      <li>💼 <b>Bolsillo:</b> solo si ÉL llegó a costos/margen → el argumento del punto, en voz alta <span class="note">→ V5 / HV-03</span></li>
+    </ol>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">57–60</span><h3>El ask — uno solo</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <div class="say">"Si te late, mándame tus documentos como estén — fichas, inventario, lo que tengas — y <b>te regreso un análisis de Madre</b>. Toma menos de 10 minutos del tuyo."</div>
+    <p class="note">Al despedirte, por WhatsApp: el link de <b>zenetapp.com/demo</b> — "aquí viene qué juntar y qué vas a ver."</p>
+  </div>
+</div>
+
+<div class="pgbrk"></div>
+<h1 style="font-size:13.5pt">Cheat-sheet · mapa de validación V1–V8</h1>
+<p class="sub" style="margin-bottom:8px">Todo con etiqueta <b>perfil 2</b> — no cuenta en el bucket del beachhead</p>
+
+<div class="box" style="padding:9px 11px">
+<table>
+  <tr><th></th><th>Qué se valida</th><th>Señal</th></tr>
+  <tr><td>V1</td><td>¿Cuál dolor (D·F·C·T) resuena en fine dining?</td><td>Hipótesis: <b>Transferencia + consistencia</b> fuerte · margen menos. Otro = hallazgo</td></tr>
+  <tr><td>V2</td><td>¿El perfil 2 ya documenta? (fichas técnicas)</td><td>Sí → se parece a Alma Verde (dolor = mantener/ejecutar). No → sorpresa grande</td></tr>
+  <tr><td>V3</td><td>Comunicación de la VP — 3ª señal</td><td>¿Reproduce QUÉ hace Zenet con sus palabras? Carlos y Alfonso no pudieron</td></tr>
+  <tr><td>V4</td><td>H4 · compromiso revelado</td><td><b>LA señal:</b> documentos en los días siguientes = real · "sí claro" y nada = cortesía</td></tr>
+  <tr><td>V5</td><td>H6 · pozo de valor de un payer <i>(condicional)</i></td><td>Solo si ÉL va a dinero. Si no: registrar "no probado" — NO forzar</td></tr>
+  <tr><td>V6</td><td>Vocabulario con un chef</td><td>¿"estándar de calidad" y "se decide atrás" prenden?</td></tr>
+  <tr><td>V7</td><td>VoC de fine dining</td><td>Verbatims — voz nueva en la library</td></tr>
+  <tr><td>V8</td><td>H5 · el canal completó el ciclo</td><td>Referido warm → sesión presencial ✓</td></tr>
+</table>
+</div>
+
+<div class="sig">
+  <div class="box g">
+    <h2>🟢 Señales que NO son kill aquí</h2>
+    <ul>
+      <li><b>"Ya tengo fichas técnicas de todo"</b> → dato V2 · girar a: ¿y mantenerlas vivas? ¿el equipo las sigue sin ti?</li>
+      <li><b>"El margen no es mi problema"</b> → la frontera del perfil 2 que queremos trazar (V1) · explorar qué SÍ duele</li>
+    </ul>
+  </div>
+  <div class="box r">
+    <h2>⚠️ Guardrails</h2>
+    <ul>
+      <li>NO precio (salvo el punto, si se gana) · NO fechas · NO integraciones</li>
+      <li>NO "agentes IA" · producto en vivo solo si ÉL lo jala (5 min, import por foto)</li>
+      <li>NUNCA nada que suene a "te enseño a operar tu cocina"</li>
+      <li>NO pedir intros — llegan solas si la sesión sale bien</li>
+    </ul>
+  </div>
+</div>
+
+<div class="kill"><b>El kill real es uno solo:</b> calidez + cero acción después (no manda docs, no propone nada). Y ni eso mata la relación — solo dice que es conector, no prospecto.</div>
+
+<div class="box">
+  <h2>🚗 Al salir (en el coche, en caliente)</h2>
+  <ul>
+    <li>Debrief V1–V8: <b>dicho vs hecho</b> · verbatims → VoC · etiqueta perfil 2 en todo</li>
+    <li>Enviar el WhatsApp con el link de /demo</li>
+    <li>Pipeline: Miguel → "Demo" · al llegar: entrada #4 en la bitácora 08</li>
+  </ul>
+</div>
+
+</body></html>

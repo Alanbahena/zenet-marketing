@@ -14,7 +14,7 @@ owner: Alan Bahena
 >
 > **Estado draft v0.1** — nació de la instancia de Carlos (Alma Verde). Falta afinarlo y sacar la variante de dueño puro. El único trabajo de la conversación es **aprender** (validar H1-H6), no vender.
 >
-> **Frontera:** aquí vive el **guión** (estable, reusable). El **a-quién / cuándo / resultado** vive en el **cockpit de Notion** (`🎯 Zenet — Fase A` · Pipeline). Estrategia completa: `04-go-to-market/06-plan-de-activacion-y-validacion-fase-a.md` (§5) · cierre en Fase B: `04-go-to-market/04-sales-motion-three-session-demo.md`.
+> **Formato de salida:** cada instancia se exporta a PDF con la plantilla estándar aprobada (`_templates/plantilla-runsheet.html` · instrucciones adentro) → `03_Marketing/Sesiones-Fase-A/`. **Frontera:** aquí vive el **guión** (estable, reusable). El **a-quién / cuándo / resultado** vive en el **cockpit de Notion** (`🎯 Zenet — Fase A` · Pipeline). Estrategia completa: `04-go-to-market/06-plan-de-activacion-y-validacion-fase-a.md` (§5) · cierre en Fase B: `04-go-to-market/04-sales-motion-three-session-demo.md`.
 
 ---
 
