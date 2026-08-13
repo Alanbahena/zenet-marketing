@@ -2,9 +2,9 @@
 name: Bitácora de learnings de validación — Fase A
 description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
 type: product-strategy
-last_updated: 2026-08-09
+last_updated: 2026-08-12
 status: active
-version: 0.3
+version: 0.4
 owner: Alan Bahena
 ---
 
@@ -349,3 +349,87 @@ Paráfrasis del debrief de Alan (07-ago · videollamada · sin grabación — **
 **Lo que NO significa:** hoteles, all-inclusive o Egipto como mercado (fuera de scope por los tres lados). Cascada a canon (`04-segmentacion` · `05-buying-process` · `06-argumentacion`) solo cuando haya 2-3 señales del mismo patrón.
 
 *Fuente: plática informal Alan–Victor (05-ago). Lateral: la relación con Victor está viva y produce inteligencia — llegó solo, refirió a Miguel, y comparte desde adentro de una cocina al otro lado del mundo.*
+
+---
+
+## Sesión #4 · Miguel Bahena — Madre (chef-dueño · fine dining · Ensenada · presencial · 12-ago-2026)
+
+> **Etiqueta: PERFIL 2 (ICP adyacente).** No suma al bucket del beachhead/perfil 3 del gate — pero es la **2ª conversación real con un operador** (tras Carlos) y la **1ª con un dueño-payer**. Corrió sobre la instancia #3 del guión (v0.4 · mapa V1-V8).
+
+### 1. Contexto
+
+- **Miguel Bahena** · chef-dueño de **Madre** (Ensenada) · reconocimiento Michelin · **8 años operando** · restaurante de él y su esposa · equipo pequeño (chef + poco staff) · desayunos por la mañana, menú gourmet desde las 2pm.
+- **Cómo se llegó:** referido warm de Victor Murguía → mensaje 23-jul → respondió y agendó él solo (7-ago) → **presencial en Madre, +1 hora**.
+- **La relación (objetivo #1): LOGRADA con creces.** Agarró confianza y "no paraba de platicar de todos los problemas" · **invitó el platillo y no dejó pagar** · Alan le extendió apoyo en ingeniería (semilla de reciprocidad).
+
+### 2. Observaciones (dicho vs hecho)
+
+**Su mundo:**
+- **La carga es el dolor #1:** el negocio le quita todo el tiempo · "siempre hay problemas, incendios que apagar" · lo describe como algo "muy doloroso, que te consume por completo" · 🌟 **"si alguien le dijera que tiene que volver a empezar de cero, con todo lo que sabe ahora — no empezaría de nuevo."** (8 años dentro, con estrella de la escena — y no lo repetiría.)
+- **El costeo existe pero SE ROMPE — y la causa es él mismo:** intentan control de costos y estandarización "pero no es 100% finita" · 🌟 **como chef cambia muy seguido de platillos "y eso le destruye su estructuración de costeo de recetas."** La creatividad rompe el mantenimiento — el verbo de Zenet "lo mantiene vivo" tiene aquí su caso perfecto.
+- **La balanza calidad > costos:** los márgenes varían mucho y lo tolera — la calidad del platillo manda. El margen le importa, pero subordinado.
+- **Fragmentación confirmada de campo:** Excel + documentos de Microsoft + **Trello como inventario** ("lista de súper" con checks). "Es muy difícil llevar un control finito de números en la cocina — no puedes estar pesando toda la merma todo el tiempo."
+- **Compra fresca en ciclos cortos** (Ensenada es chica): casi sin refrigeración grande, compra poco y seguido, sin pronóstico de insumos, casi sin proveedores que le lleguen — él sale a comprar. Racional para su modelo, no un caos.
+- 🌟 **El hallazgo de plataforma — productores ↔ restaurantes:** ve gran oportunidad en comprar directo a productores locales (mejor calidad Y precio) pero "no existe una conexión entre productores y restaurantes" · **él mismo arbitra el hueco: va con productores, compra extra, se lo vende a sus amigos — y con eso paga sus insumos.** Un operador describiendo el marketplace de la visión-plataforma, sin que se le preguntara.
+- **El barco:** "un barco que todos intentan tumbar, empezando por el gobierno" — permisos, multas, mantenimiento caro, burocracia. (Rima con el dolor de Carlos: mantenimiento y permisos.)
+- **Ventas dependen de campañas digitales/redes** — si no invierten, baja la clientela.
+- 🌟 **NO quiere crecer:** preferiría que el restaurante fuera pequeño, con poca gente — "entre menos personal necesite, mejor" · si crece "pierde el control". **Su sueño:** *"comprar insumos de calidad → cocinarlos → ofrecer una gran experiencia culinaria — y que todo lo extra disminuya."*
+- **Perspectiva de chef — el laboratorio:** crear recetas = experimentar, probar, validar. (Síntesis de Alan: un especialista de recetas que ayude a crear/validar/costear — idea de roadmap, perfil chef.)
+
+**Lo que DIJO de Zenet:** Alan compartió misión/visión verbalmente (equipo de especialistas · núcleo operativo · construir/mantener/ejecutar). Miguel: el futuro va en esa dirección · "si tú no lo creas, alguien más lo va a crear" · a la pregunta directa de si Zenet le daría valor y lo usaría: **lo confirmó** · sobre pagar: cree que "una pastilla para todos esos problemas es necesaria y **él realmente pagaría por ella**".
+
+**Lo que HIZO (revelado):** +1 hora de su tiempo en temporada alta · se abrió por completo · **invitó el platillo** · aceptó probar la demo cuando se la mande. **Pendiente de revelarse:** los documentos — el ask diseñado ("mándame tus docs") mutó a "te mando la demo en los próximos días", que es promesa de Alan, no acción de Miguel. La señal V4 real sigue abierta.
+
+### 3. Scores — el mapa V1-V8
+
+| # | Read | Nota |
+|---|---|---|
+| V1 · qué dolor resuena | 🟢 **con sorpresa** | Hipótesis era transferencia+consistencia. Real: **① la CARGA (tiempo/energía/incendios) ② el mantenimiento del costeo (C)** — con causa nueva: la creatividad del chef lo rompe · margen presente pero subordinado · **transferencia DÉBIL porque NO quiere crecer** |
+| V2 · ¿ya documenta? | 🟡 **medio** | Semi-documenta y fragmentado (Excel+Word+Trello). **Fine dining ≠ estandarizado** — Miguel NO es Alma Verde. El perfil 2 quedó en medio del mapa |
+| V3 · comunicación VP | ⬜ **no corrió** | No se mostró la landing (la conversación fluyó y se decidió no cortarla). El pitch fue verbal + pregunta directa → el "sí" es post-pitch (riesgo cortesía). El test real queda para cuando reciba /demo |
+| V4 · compromiso revelado | 🟡 **abierto** | Relación revelada fuerte (platillo · tiempo · apertura) pero el ask de DOCS no se hizo como se diseñó. La señal decisiva = qué hace cuando reciba el link |
+| V5 · WTP payer | 🟡 **declarado** | **Primera declaración de WTP de un dueño en toda la Fase A** ("realmente pagaría") — pero declarada, post-pitch, en calidez. El argumento del punto NO salió → **HV-03 va en 4 sesiones sin correr** |
+| V6 · vocabulario | ⬜ no probado | "Se decide atrás" no se usó. A cambio, él regaló vocabulario propio (el barco · los incendios · la pastilla) |
+| V7 · VoC | 🟢🟢 | La sesión más rica de la Fase A — ver §7 |
+| V8 · canal | 🟢 | Referido de Victor → sesión presencial + relación. Ciclo completo |
+
+### 4. Learnings estratégicos ⚠️ *(N=1 perfil 2 — dirección, no verdad)*
+
+1. **★★ El perfil 2 no compra crecimiento — compra su vida de vuelta.** Miguel NO quiere crecer (perdería el control); su sueño es que "todo lo extra disminuya" para quedarse en insumos→cocina→experiencia. Nuestro ICP declarado dice "en crecimiento" — el perfil 2 puede quedar FUERA de ese marco y aun así ser cliente: su pitch no es *"crece sin caos"*, es **la cumbre de Qué cambia** (*"dejas de cargar tu negocio — vuelves a lo que te llevó a abrirlo"*). La página y el deck ya tienen ese mensaje; con perfil 2, ES el mensaje.
+2. **★ La creatividad del chef rompe el costeo — el caso perfecto de "lo mantiene vivo".** No es que no sepa costear: es que cambia platillos seguido y el costeo muere. Mantener > construir, otra vez (rima con la raíz y con Alma Verde). Y es el hook de producto para chefs: costeo que se actualiza al ritmo del menú.
+3. **★ Fine dining ≠ documentado.** La hipótesis "alta cocina = fichas rigurosas" falló: Miguel semi-documenta en herramientas fragmentadas. El perfil 2 puede estar operativamente más cerca del perfil 3 de lo asumido — el framework de 3 perfiles necesita el dato de campo de San Miguel para triangular.
+4. **★★ El hallazgo de plataforma llegó solo:** productores↔restaurantes sin puente, y un operador que YA arbitra ese hueco a mano (compra directo, revende a amigos, financia sus insumos). Señal de campo para `05-market-insights/01-vision-plataforma-zenet.md` — la primera desde la boca de un operador.
+5. **"Menos personal" como deseo** — en un 4-personas no es despedir: es no depender de contratar para sobrevivir. Cabe en "aumentar, no reemplazar" pero hay que escribirlo con pinzas (la línea con el valor #1 es delgada).
+6. **La 4ª sesión sin HV-03.** El punto porcentual sigue en el bolsillo — la conversación fue tan rica en lo emocional que lo económico nunca se forzó. Correcto para la relación; el argumento sigue sin probarse en voz alta.
+
+### 5. Implicaciones — qué feeds a dónde
+
+| Learning | A dónde |
+|---|---|
+| Perfil 2 = vida de vuelta, no crecimiento | `04-segmentacion` + ICP (con San Miguel como triangulación) · pitch/deck para perfil 2 |
+| Creatividad rompe costeo · agente de laboratorio de recetas | Roadmap producto (repo producción · specialty agents Fase 2) |
+| Productores↔restaurantes | `05-market-insights/01-vision-plataforma-zenet.md` |
+| El barco/gobierno · mantenimiento caro | Refuerza dolor Carlos (mantenimiento/permisos) — 2ª señal |
+| Paráfrasis de oro | VoC library (como PARÁFRASIS — sin grabación no hay verbatim) |
+
+### 6. Decisión / siguiente paso
+
+1. **★ EL FOLLOW-UP DECIDE LA SEÑAL: mandar HOY el WhatsApp** — gracias por la comida + el link de `zenetapp.com/demo` (*"aquí viene qué juntar y qué vas a ver"*). ⚠️ En la sesión se dijo "en unas semanas te muestro la demo" — **no dejar que sean semanas**: el calor de la sesión decae y la página existe justo para esto. Si manda documentos → V4 🟢 real y se corre su análisis (cruza con el mago-de-Oz).
+2. **Pipeline:** sigue en "Conversación" → pasa a "Demo" cuando la pruebe. La relación queda como activo independiente del funnel.
+3. **NO pivotar nada con N=1:** el hallazgo perfil-2-no-quiere-crecer espera a San Miguel para triangular el framework.
+
+### 7. Evidencia — paráfrasis del debrief *(sin grabación · NO entran a VoC como verbatim)*
+
+- 🌟 *"Si tuviera que volver a empezar de cero, con todo lo que sé ahora — no empezaría de nuevo."*
+- 🌟 *"Cambio de platillos muy seguido, y eso me destruye la estructuración del costeo."*
+- *"No puedes estar pesando toda la merma todo el tiempo."*
+- *"Un barco que todos intentan tumbar — empezando por el gobierno."*
+- 🌟 El sueño: *"comprar insumos de calidad, cocinarlos, ofrecer una gran experiencia — y que todo lo extra disminuya."*
+- *"No existe una conexión entre los productores locales y los restaurantes"* (+ él revende a amigos y con eso paga sus insumos).
+- *"Si tú no lo creas, alguien más lo va a crear."*
+- La pastilla: *"una pastilla para todos esos problemas — realmente pagaría por ella."*
+- Trello como inventario, en modo lista de súper con palomas.
+
+---
+
+*Entrada #4 · fuente: apuntes de Alan post-sesión (12-ago). Perfil 2 — no suma al bucket del beachhead. La señal pendiente: los documentos tras el link de /demo. Próxima entrada: la que abra el perfil 3 (San Miguel) — ahora más necesaria: el framework tiene datos de arriba (Alma Verde), abajo (JP) y adyacente (Miguel), pero el centro sigue virgen.*
