@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-08-09
+last_updated: 2026-08-19
 status: active
-version: 0.2
+version: 0.3
 owner: Alan Bahena
 ---
 
@@ -29,6 +29,54 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 10–16 ago — "la semana partida: deck + /demo + sesión #4, follow-ups en cero"
+
+**▸ Foco que traíamos** (retro 3–9): mago-de-Oz + análisis a Carlos ~14 ❌ (no se corrió · **la fecha pactada pasó en silencio**) · reunión Miguel Bahena ✅ (sesión #4 ejecutada · aviso a Victor enviado · pero el argumento del punto NO se estrenó) · micro-mensajes Ana ❌ + docs a JP ❌ → **1 de 3.** La semana se partió en dos: lunes-miércoles rindieron por siete días; jueves en adelante Alan salió de la ciudad y todo lo pendiente quedó congelado.
+
+**▸ 🏆 Logros**
+- **/demo + /privacidad EN VIVO** (`zenetapp.com` · tag `v3.1` · 11-ago): la antesala del análisis (7 bloques · qué juntar · cómo se cuida · animación de 3 tiempos · CTA a la app) + "Cómo cuidamos tus documentos" (versión base honesta pre-constitución) + **2 entradas desde la landing** (navbar "Demo" + link en Etapa 1). Doc nuevo: `SEO and Content/_context/02-demo/00-estrategia-y-copy.md`. De paso **cierra en versión base la card del aviso de privacidad** (Tier 1.5) — el formal LFPDPPP queda gateado a constitución + 1er SF firmado.
+- **Pitch deck v0.1 terminado** (15 slides · versión operador · construido SOBRE la narrativa v3, no de cero · figuras de marca dibujadas en lugar de screenshots · build regenerable) + **guión completo** en `_templates/guion-pitch-deck-v0.1.md` (visible + hablado + asas mentales). Doble propósito cumplido: base iterable + herramienta de estudio.
+- **Sesión #4 ejecutada — Miguel Bahena** (mié 12 · presencial en Madre · +1 hora) → debrief completo en `08` v0.4. **2ª conversación real con un operador y 1ª con un dueño-payer** · relación lograda "con creces" (invitó el platillo · se abrió por completo) · **1ª declaración de WTP de un dueño en toda la Fase A** ("realmente pagaría por esa pastilla").
+- **Plantilla estándar de run-sheets** (`_templates/plantilla-runsheet.html` → PDF) — el formato queda canónico para todas las sesiones.
+- Mensajes que SÍ salieron (lun 11): aviso de cortesía a Victor · primer contacto post-CETYS a Alan Jiménez.
+- Commits: `07ff596` · `46af89e` · `0e81704` · `557d9d9`.
+
+**▸ ✅ Qué funcionó**
+- **El run-sheet — 4ª sesión consecutiva con guión previo.** El objetivo #1 (la relación) se logró con creces; el mapa V1-V8 hizo legible la sesión en el debrief. Ya no es método: es infraestructura (por eso se estandarizó la plantilla).
+- **El referido de Victor completó el ciclo entero** (V8 🟢): intro warm → Miguel agendó solo → sesión presencial + relación. El canal referido-de-consultor tiene su primer ciclo completo.
+- **Construir sobre lo construido:** el deck salió en un día porque la landing v3 ya ERA la narrativa; /demo salió en dos porque el sistema visual ya existía. La inversión de julio-agosto está pagando en velocidad.
+
+**▸ 💡 Learnings**
+1. **★★ El perfil 2 no compra crecimiento — compra su vida de vuelta.** Miguel NO quiere crecer ("pierde el control"); su sueño es que "todo lo extra disminuya". El ICP declarado dice "en crecimiento" — el perfil 2 puede quedar fuera de ese marco y aun así ser cliente: su pitch es la cumbre de Qué cambia (*"dejas de cargar tu negocio"*), no *"crece sin caos"*. ⚠️ N=1 — espera a San Miguel para triangular.
+2. **★ La creatividad del chef rompe el costeo** — no es que no sepa costear: cambia platillos seguido y el costeo muere. El caso perfecto de "lo mantiene vivo" + hook de producto para chefs. Y **fine dining ≠ documentado** (Excel + Word + Trello como inventario): el perfil 2 está operativamente más cerca del perfil 3 de lo asumido.
+3. **★★ El hallazgo de plataforma llegó solo:** productores↔restaurantes sin puente — y Miguel YA arbitra ese hueco a mano (compra directo, revende a amigos, financia sus insumos). Primera señal de campo para la visión-plataforma, sin preguntarla.
+4. **HV-03 va en 4 sesiones sin correr.** La conversación fue tan rica en lo emocional que lo económico nunca se forzó — correcto para la relación, pero el argumento del punto sigue sin probarse en voz alta.
+5. **★ El patrón construir-vs-exponer cobró su primer costo real.** Tres retros seguidas observándolo — esta semana rompió una regla explícita propia: la fecha pactada con Carlos (~14) pasó **en silencio**, exactamente lo que la card decía "no se vale". Y el follow-up de Miguel (gracias + link), diseñado para el mismo jueves/viernes, tampoco salió — el calor de la mejor sesión de la Fase A lleva una semana decayendo con V4 abierto. Matiz honesto: el viaje explica jueves-domingo, pero los mensajes de 2 minutos tenían ventana antes de salir. **Ya no es observación: es el riesgo #1 de la fase.**
+
+**▸ 🔀 Decisiones**
+- **Formato de run-sheet estandarizado** (plantilla canónica en `_templates/` · todos los PDFs nuevos salen de ahí).
+- **/demo canónico documentado** (8 decisiones de diseño en `02-demo/00-estrategia-y-copy.md` · el CTA "Ya tienes acceso" apunta a la app · solo Alan crea usuarios).
+- **Privacidad en dos etapas:** versión base honesta HOY ("proyecto del fundador, no empresa constituida") · aviso formal LFPDPPP gateado a constitución + 1er SF.
+- **Follow-up Miguel en dos tiempos por juicio relacional de Alan** (gracias sin link → link el viernes) — no ejecutado; al retomarse, va en UN solo mensaje.
+- **Deck v0.1 versión operador cerrada** — se itera con evidencia de sesiones, no en el vacío.
+
+**▸ 📊 Scorecard H1–H6**
+**Sesión real, bucket quieto.** Miguel = perfil 2 (adyacente) — no suma al N del beachhead. Sigue **1 de las 5-8 conversaciones** del gate. Señales nuevas: V1 🟢 con sorpresa (la CARGA como dolor #1) · **V5 🟡 primera WTP declarada de un dueño** (declarada ≠ revelada) · V4 abierto (la señal decisiva = qué hace con el link de /demo). El mapa quedó acotado por TRES lados (arriba Alma Verde · abajo JP · adyacente Miguel) — **el centro (perfil 3/San Miguel) sigue en cero, 5ª semana corrida.**
+
+**▸ 🎯 Foco esta semana (17–23 ago — retro escrita y plan decidido el mié 19) — UNO**
+
+**El mago-de-Oz, a mano, y nada más.** Alcance confirmado: **manual con Claude** sobre los inventarios y recetas de Alma Verde — **NO** el build en la app (esa deuda se gana su lugar después, con el diseño ya validado por la corrida manual). Entregable en **dos capas**: (1) lo que los documentos actuales permiten decir — nivel de estandarización + costeo donde alcance · (2) sección corta *"esto es lo que vería con tus checklists y protocolos"*, que convierte el hueco en el ask natural y apunta a **su** dolor #1.
+
+**Único mensaje de la semana: Carlos, el viernes 21** — sus niveles de estandarización, para ver si le resulta llamativo, + nota honesta de que el proyecto se atrasó un poco y que vuelve pronto a continuar el proceso. *Decisión de Alan: llegar con trabajo hecho repara mejor una fecha pasada que una disculpa.* Eso pone deadline real al análisis: **jueves.**
+
+**Los otros cuatro mensajes se mueven al lunes 24 por decisión explícita** (Miguel · Juan Pablo · Alan Jiménez · Ana) — **como un solo bloque a primera hora del lunes, antes de tocar cualquier otra cosa.** Razón de la forma: llevamos tres semanas donde lo que se construye avanza y lo que se escribe se recorre; un slot con hora rompe el patrón mejor que una lista de pendientes.
+
+⚠️ **La cuenta que ninguna de estas tareas mueve:** el gate pide 5-8 conversaciones y vas en 1-2. El centro del beachhead (perfil 3 / San Miguel) sigue en **cero después de seis semanas de Fase A**.
+
+*▸ Pipeline: 1 soft-commit (Carlos/Alma Verde — **enfriándose**) · 5 en conversación (Victor · Pedro · Alfonso Arballo · Juan Pablo · **Miguel Bahena — sesión hecha, esperando demo**) · resto sin cambios.*
 
 ---
 
@@ -216,4 +264,4 @@ owner: Alan Bahena
 
 ---
 
-*Última actualización: 2026-08-03. v0.2 · 3 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago).*
+*Última actualización: 2026-08-19. v0.3 · 5 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago · 3–9 ago · 10–16 ago).*

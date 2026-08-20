@@ -1,10 +1,10 @@
 ---
 name: Landing page · prototipo y diseño
-description: El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por decisión del fundador). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
+description: El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · gate levantado por decisión del fundador). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-08-07
+last_updated: 2026-08-20
 status: active
-version: 3.0
+version: 3.2
 owner: Alan Bahena
 ---
 
@@ -116,6 +116,21 @@ Reglas invariables (heredadas + v3): **cross-browser** (JS timer + CSS transitio
 
 ---
 
+## 9.b Hablemos v0.4 — formulario en 3 pasos (EN VIVO 2026-08-20 · tag `v3.2`)
+
+**`hablemos.html` rediseñada** de formulario plano de 1 columna → **onboarding de 3 pasos con split panel** (referencia de patrón: Handle). Decisiones canónicas:
+
+- **Split 44/56:** panel de marca izquierdo (foto + layer + logo blanco + la raíz) | formulario derecho (max-width 480px centrado). En móvil (≤820px) el panel colapsa a **banda de ~230px arriba** (foto de fondo · logo · titular chico · sub oculto) y el form apila abajo.
+- **Panel:** foto **insumos en cocina real** (cajas de limones/chiles/verduras con campana y cocinero al fondo · Unsplash id `v8tI7dmHUxI` · licencia libre comercial · elegida entre 9 candidatas montadas — criterio de Alan: que se aprecien insumos/inventario). **Tratamiento cálido de marca:** -18% saturación + velo peach-100 al 10% + contraste 1.04 (mismo lenguaje que la portada del deck). Layer: gradiente vertical charcoal (0.55 → 0.38 → 0.82, más denso abajo donde vive el texto). Texto = **variante A, la raíz** ("El caos no es el precio…") + "Te responde el fundador — no un equipo de ventas." **Rechazado:** quote de entrevistado (paráfrasis privadas sin permiso = testimonial inventado; el slot se activa con el 1er SF con permiso). Asset: `assets/hablemos-panel.jpg` + **`assets/zenet-imagotipo-blanco.png`** (logo blanco sobre transparente generado por luminancia — el imagotipo original trae fondo y NO sirve invertido con CSS).
+- **3 pasos escalados por intimidad:** ① quién eres (nombre · rol chips con **Contador/a** · correo · celular) → ② tu restaurante (nombre · ciudad · tipo chips · sucursales 1/2-3/4-5/6+) → ③ tu operación (**ventas mensuales en RANGOS, opcional** — sin opción "prefiero no decirlo", la etiqueta "(opcional)" hace el trabajo · **el reto en sus palabras** textarea required = oro de VoC pre-conversación · extra opcional). **País = México fijo** (hidden field · en pantalla solo Ciudad).
+- **Lada:** selector 🇲🇽 +52 (default) / 🇺🇸 +1 junto al número · **al enviar se combinan en un solo campo** `whatsapp` ("+52 664 123 4567") y `lada` se elimina del payload. Correo y celular en **filas completas** (no a la mitad — con la lada no cabían).
+- **Mecánica:** un solo POST a Formspree (`f/xrewyvab`, mismo endpoint) al final · validación por paso con `reportValidity` · **Atrás conserva lo escrito** (show/hide, el DOM no se destruye) · barra de progreso 3 segmentos · fade+slide entre pasos (respeta reduced-motion) · éxito con **check circular animado** (trazo que se dibuja · aro teal sobre menta) · params QA en prod: `?step=N` y `?done=1`.
+- **Sin navbar ni footer** — página enfocada tipo Handle; el panel lleva logo + Volver; el link a `/privacidad` va junto al botón Enviar.
+- **QA:** envío de prueba real ejecutado por Alan (correo con los 11 campos + WhatsApp combinado ✓) · móvil verificado en celular real. ⚠️ Lección: headless Chrome a `--window-size=390` **recorta por ancho mínimo de ventana** (falso overflow) — verificar overflow real con iframe same-origin midiendo `scrollWidth` (aquí: 390=390 ✓).
+- Lab: `lab/_hablemos3.html` (con params `?foto=2-10` `?txt=b` de la selección — histórico).
+
+---
+
 ## 10. Deploy gate y cross-doc
 
 **Gate de deploy — LEVANTADO 2026-08-07** por decisión explícita del fundador (opción consciente, no push casual): los tags "En construcción" de la Etapa 3 y la consulta se consideraron honestidad suficiente. Deploy ejecutado: merge `--no-ff` v3→main + tag `v3.0` + verificación en vivo (hero v3 · /hablemos 200 · OG 200). ⚠️ **Deuda que dejó el gate:** onboarding + análisis con docs reales — el copy promete en presente; producto debe alcanzarlo cuanto antes. Recordar refrescar caché de OG en WhatsApp/FB (Sharing Debugger) si el preview sale viejo.
@@ -131,4 +146,4 @@ Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva d
 
 ---
 
-*Última actualización: 2026-08-07. v3.0 · EN VIVO en zenetapp.com (tag v3.0 · gate levantado) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
+*Última actualización: 2026-08-20. v3.2 · EN VIVO en zenetapp.com (tags v3.0 landing · v3.1 /demo · **v3.2 hablemos 3 pasos**) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
