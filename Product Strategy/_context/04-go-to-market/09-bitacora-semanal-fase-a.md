@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-08-19
+last_updated: 2026-08-23
 status: active
-version: 0.3
+version: 0.4
 owner: Alan Bahena
 ---
 
@@ -29,6 +29,44 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 17–23 ago — "el foco mutó a producto: el análisis se construye, los mensajes esperan otra vez"
+
+**▸ Foco que traíamos** (decidido mié 19): UNO — mago-de-Oz **manual** con docs de Alma Verde → mensaje a Carlos vie 21 con su análisis. **El foco no se ejecutó como se diseñó — se transformó:** en lugar del análisis a mano, Alan construyó **el análisis dentro del producto** (onboarding completo, a punto de cerrar). Carlos vie 21 ❌ (2ª fecha explícita que pasa sin mensaje). Extra no planeado que SÍ se cerró: **Hablemos v0.4 EN VIVO** (jue 20 · tag v3.2).
+
+**▸ 🏆 Logros**
+- **Onboarding + análisis completo EN EL PRODUCTO, a punto de cerrar** (8 commits mar-dom · tasks 26.x: el expediente, la capa de correcciones, "resolver no es contestar"). Al cerrar: se pueden meter documentos reales y sale un análisis completo. **Es LA deuda del gate del deploy en camino de pagarse** — la landing dejaría de prometer en presente algo que no existe. Y convierte el mago-de-Oz de ejercicio manual en instrumento reusable para todos los corpus (Alma Verde, JP, Miguel, los que vengan).
+- **Hablemos v0.4 EN VIVO** (`zenetapp.com/hablemos` · v3.2 · 20-ago): formulario en 3 pasos con panel de marca (foto de insumos elegida entre 9 candidatas montadas), lada 🇲🇽/🇺🇸, ventas en rangos, y el campo de oro: **el reto en sus palabras** — cada envío llega ahora clasificado por ICP y con VoC antes de la primera llamada. QA con envío real verificado. Spec sincronizado (`02-prototipo` v3.2 §9.b).
+- Retro 10-16 + plan semanal documentados y commiteados (`a7db921`).
+
+**▸ ✅ Qué funcionó**
+- **Decisiones visuales por comparación montada, no por descripción:** 9 fotos puestas en el panel real → Alan eligió viendo. Rápido y sin vueltas.
+- **El envío de prueba real como gate del deploy** — el correo completo fue la condición, no un "se ve bien".
+- **Construir sobre lo construido, 3ª vez:** Hablemos v0.4 salió en ~1 día efectivo porque tokens, método y QA ya existían.
+
+**▸ 💡 Learnings**
+1. **★★ El foco mutó sin re-agendar lo que dependía de él.** Cambiar "análisis manual" por "análisis en producto" fue probablemente la MEJOR decisión técnica (paga la deuda del gate, es reusable, es lo que el copy ya promete) — pero la mutación se llevó puesto el mensaje de Carlos por segunda vez. La lección no es "no cambies el plan": es que **cambiar el plan obliga a re-agendar explícitamente los compromisos relacionales que colgaban de él**, no a dejarlos caer en silencio.
+2. **★ La deuda relacional ya es compuesta.** Carlos: 2 fechas explícitas pasadas (~14 y vie 21), ~9 días desde la ventana pactada. Miguel: 11 días sin el gracias/link que se prometió "en unos días". Cada semana de espera hace el mensaje MÁS caro de escribir, no menos — y eso alimenta el ciclo. El patrón construir-vs-exponer ya no es un sesgo de agenda: es interés acumulándose.
+3. **★ Los 5 mensajes del lunes se redujeron a 2 — y son exactamente los 2 ligeros.** JP y Alan Jiménez no cargan promesas; Carlos y Miguel sí — y por eso son los que se posponen. Es el patrón en su forma más nítida: no se recorta por tiempo, se recorta por peso.
+4. **(a favor) El corpus de prueba correcto apareció solo:** **Juan Carlos Gallina** (amigo · tenía un café) está dispuesto a prestar sus documentos = banco de pruebas del análisis **sin riesgo relacional** (café ≠ ICP · no cuenta en N · si el análisis sale raro, no quema nada). Es la secuencia sana: probar el instrumento en terreno amigo ANTES de correrlo con Alma Verde.
+
+**▸ 🔀 Decisiones**
+- **Lunes 24: solo JP + Alan Jiménez** (decisión de Alan — los 2 micros sin dependencia).
+- **★ Miércoles 27 = FECHA DURA para Carlos Y Miguel** (decisión de Alan): Carlos con su análisis — y a la 3ª fecha ya no se llega ni con las manos vacías NI en silencio: se llega con lo que haya · Miguel con el gracias + link de `/demo`.
+- **Juan Carlos Gallina = corpus #0 del análisis** (prueba del instrumento, NO validación).
+- **Secuencia de la semana:** cerrar onboarding → corrida de prueba con docs de JC Gallina → análisis de Alma Verde en el producto → los 2 mensajes del miércoles.
+
+**▸ 📊 Scorecard H1–H6**
+**Sin movimiento — 2ª semana consecutiva sin conversaciones.** Sigue 1-2 de 5-8. Perfil 3 en cero (7ª semana). Lo que SÍ se movió es la condición **(b)** del gate: **V1 demostrable está a días de existir** — la readiness avanzó aunque la validación no.
+
+**▸ 🎯 Foco semana 24–30 — TRES**
+1. **Cerrar el onboarding + primera corrida real** con los docs de Juan Carlos Gallina.
+2. **Análisis de Alma Verde en el producto** → listo para el miércoles.
+3. **Los mensajes:** lun 24 JP + Alan Jiménez · **mié 27 fecha dura: Carlos + Miguel** (con análisis o con lo que haya).
+
+*▸ Pipeline: 1 soft-commit (Carlos/Alma Verde — **frío · 2 fechas pasadas**) · 5 en conversación (Victor · Pedro · Alfonso Arballo · Juan Pablo · Miguel Bahena — esperando demo hace 11 días) · **JC Gallina NEW como test-user del instrumento** (fuera del N).*
 
 ---
 
@@ -264,4 +302,4 @@ owner: Alan Bahena
 
 ---
 
-*Última actualización: 2026-08-19. v0.3 · 5 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago · 3–9 ago · 10–16 ago).*
+*Última actualización: 2026-08-23. v0.4 · 6 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago · 3–9 ago · 10–16 ago · 17–23 ago).*
