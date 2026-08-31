@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-08-23
+last_updated: 2026-08-30
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -29,6 +29,49 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 24–30 ago — "la demo llegó a la meta; el pipeline se quedó sin gasolina"
+
+**▸ Foco que traíamos** (retro 17-23): ① cerrar onboarding + corrida real con docs de JC Gallina → **✅/❌** (el onboarding cerró; la corrida no — JC nunca respondió) · ② análisis de Alma Verde en el producto → ❌ · ③ mensajes: lun JP + Alan Jiménez, **mié 27 fecha dura Carlos + Miguel** → **1 de 4** (solo Alan Jiménez, que no respondió). **La fecha dura se venció, y era la 3ª de Carlos.**
+
+**▸ 🏆 Logros**
+- **★★ LA DEMO DE ZENET TERMINADA — desktop y móvil — lista para probarse con personas.** El flujo completo de onboarding + análisis corre de punta a punta en ambos formatos (Task 28 verificada en dispositivos reales contra producción). **Esto paga la deuda que dejó el gate del deploy del 7 de agosto**: desde entonces la landing prometía en presente un análisis que todavía no existía — ahora existe. Que corra en **móvil** no es cobertura, es el canal donde vive el operador (learning de Carlos: el equipo trabaja desde el teléfono).
+- **La semana más productiva del repo de producción:** Task 26 cerrada con sus **19 subtareas** (el expediente/onboarding) · Task 28 cerrada y verificada contra producción · Task 27: limpieza de esquema (32 columnas eran 23) con runbook y docs corregidos — *"el README ya no miente"* · Task 31 arrancada (dashboard de Inicio).
+- **Sesión con Alfonso Arellano** (mié 27 · carril insider/conector · run-sheet propio, 5ª sesión con guión): relación excelente, **demo completa mostrada por primera vez a alguien de la industria**, y **HV-03 finalmente salió** tras 5 sesiones en el bolsillo.
+- **Dos decisiones estratégicas de fondo tomadas** (contratar ingeniería · cofundadores) — ver Decisiones.
+
+**▸ ✅ Qué funcionó**
+- **El método de producto se consolidó:** tasks con subtareas, PRs, cierre documentado y verificación en dispositivo real. Task 28 no se cerró "porque compila" — se cerró contra producción.
+- **El run-sheet, 5ª vez:** el objetivo relacional se logró y la sesión quedó legible para el debrief.
+- **La disciplina de lectura funcionó en caliente:** se detectó que T1 estaba contaminado y que el precio era declarado-en-tercera-persona, en lugar de anotar "le encantó" y seguir.
+
+**▸ 💡 Learnings**
+1. **★★ La asimetría llegó a su punto máximo: todo construido, nada validado.** Landing v3, /demo, /privacidad, formulario de 3 pasos, pitch deck, guiones, run-sheets, criterios de ICP, argumentación de valor — y ahora **el producto entero, en desktop y móvil**. Del otro lado: 1-2 conversaciones de las 5-8 del gate, cero del perfil central. Todo lo que dependía de Alan **construyendo** está hecho; todo lo que depende de Alan **exponiéndose**, no. Es la semana en que se acabaron las excusas de producto — y la evidencia definitiva de que contratar ingeniería habría sido acelerar el lado que ya llegó.
+2. **★★ El estancamiento es de ENTRADA, no de capacidad.** Cinco canales tocados esta semana, **cero respuestas**: Alan Jiménez ignoró · JC Gallina no contestó · JP de vacaciones · Carlos y Miguel sin mensaje. Y el fondo: Carlos frío, Miguel en pausa, Ana nunca contactada (7 semanas), Juanjo nunca escrito, Diego Gonzales nunca abordado, los **10 "por enviar" de julio siguen ahí**. El motor de referidos (Victor→Miguel) produjo una vez y no se volvió a cebar. **No hay flujo nuevo desde hace un mes.** Sumar gente no genera prospectos; volver a cebar la red sí.
+3. **★ Una sesión que es lo único que pasó carga más peso del que puede.** Alfonso se siente como la mejor sesión de la Fase A y en el libro de validación es de las más suaves: amigo, no comprador, catering (≠ ICP), todo declarado y post-pitch — la misma gravedad psicológica del café con Arballo. **Lo que sí se sostiene:** articuló **solo** la ventaja *hardware-agnostic* (*"Soft Restaurant te obliga a rentar hardware; Zenet corre en cualquier dispositivo"*) = mejor señal de H3 de toda la Fase A, dicha por quien conoce a los vendors · y **capacitación/gente sube a 2 señales independientes** (Carlos + Alfonso), un dolor que NO está en el centro de la Fase 1.
+4. **★ T1 contaminado enseñó algo distinto de lo que buscaba.** Alan explicó Zenet "de forma fácil" y Alfonso lo repitió → eco, no comprensión espontánea. Lo demostrado: **Alan explica muy bien en vivo**. Lo que sigue sin probarse — y siempre fue el hueco real de H2 — es que **el mensaje funcione cuando Alan no está** (landing, deck, mensaje frío).
+5. **El precio en tercera persona no es dato de precio.** *"Un chef pagaría $2-4 mil"* ≠ *"yo pagaría"*. Se registra solo como direccional: **2ª señal declarada por encima del ancla de $1,500** (Miguel fue la 1ª). El precio se decide con comportamiento.
+6. **HV-03 corrió, pero en versión aproximada** — el argumento del punto vive en un documento, no en la cabeza (se preguntó qué era durante el debrief). La **calculadora del punto** deja de ser un "estaría bien" y pasa a ser el fix concreto.
+7. **La corrida del análisis llevaba semanas bloqueada por un corpus que ya estaba en la mano.** Primero esperaba el build (ya está), luego a JC Gallina (no respondió) — pero **los inventarios y recetas de Alma Verde están en poder de Alan desde el 9 de agosto**. El bloqueo era de secuencia, no de insumos.
+
+**▸ 🔀 Decisiones**
+- **★ NO contratar ingeniería ahora** (analizado a fondo): el cuello de botella no está en producto (V1 va adelante, validación va atrás) · 1-2 ingenieros = 10-30× el burn actual, con cero LOI y cero ingresos · el spec de Fase 1.5 se prioriza con design partners que aún no existen · el propio funding roadmap ancla la 1ª contratación (CS junior, mes 6) a pre-seed, y el pre-seed a 1-2 LOI. **Triggers que revierten la decisión:** 1-2 design partners firmados · pre-seed cerrado · ingresos recurrentes que cubran el sueldo.
+- **★ Cofundador: no ahora — escalera en su lugar.** Cuesta 20-50% (más que la ronda pre-seed completa, 10-20%), es la decisión más irreversible, y el hueco real —conversaciones— es founder-led por canon y no se delega en Fase A. Camino: **asesor con equity chico → trabajar juntos en algo real → cofundador solo con validación en mano.** Si algún día se hace: vesting 4 años con cliff de 1, empresa constituida, roles por escrito.
+- **Asesor: Juanjo Gutiérrez es el candidato** (construyó tech de logística en TJ y la escaló a España — **y vendió software B2B a restaurantes y cafés en Tijuana**: la motion exacta que no avanza). Secuencia: reconectar y pedir su lectura sobre UNA cosa (el framework de 3 perfiles) → formalizar solo si la relación produce. Rangos de referencia: 0.25% estándar · 0.5% estratégico · 1% muy involucrado, con vesting a 2 años. **NO mezclar el ask de mentoría con el de capital** (además, sin SAPI no puede entrar inversión limpia).
+- **Miguel: pausa consciente** (decisión de Alan, no deriva) — la ventana del "gracias" expiró; se reentra con una razón nueva. **Gancho listo:** el hallazgo de productores↔restaurantes que él mismo regaló.
+- **Alfonso = carril insider/conector**, no suma al N.
+
+**▸ 📊 Scorecard H1–H6**
+**Sin movimiento — 3ª semana consecutiva sin conversaciones con operadores.** Sigue 1-2 de 5-8. Perfil 3 en cero (**8ª semana**). Señal nueva: **H3 🟢 direccional** (hardware-agnostic articulado por un insider). **PERO el gate se movió del otro lado: la condición (b) está CUMPLIDA — V1 demostrable existe, desktop y móvil.** Por primera vez desde que arrancó la Fase A, **no queda nada del lado del producto bloqueando una conversación**; el único obstáculo a Fase B es la validación.
+
+**▸ 🎯 Foco semana 31 ago–6 sep — TRES, todos de entrada**
+1. **★ Cebar el flujo (lo único que mueve el scorecard):** el conocido del **brunch de Alfonso** (pedir nombre + que él presente — se evapora en días) · **Juanjo** (el mensaje que lleva un mes) · **Ana/San Miguel** (8ª semana · el mensaje de 2 minutos, no la llamada).
+2. **Meter los documentos de Alma Verde a Zenet** — ya no depende de nadie más y ya no es proyecto: es una tarde. Es la 1ª corrida real del producto **y** el contenido del mensaje a Carlos (que deja de ser disculpa: *"corrí tus documentos, esto encontré"*).
+3. **La calculadora del punto** (media hora) — para que HV-03 salga completo la próxima vez.
+
+*▸ Pipeline: 1 soft-commit frío (Carlos · 3 fechas pasadas) · Miguel en pausa consciente · JP de vacaciones · JC Gallina sin respuesta · Alan Jiménez sin respuesta · **puerta nueva: conocido del brunch (vía Alfonso)** · 10 prospectos siguen en "Por enviar" desde julio.*
 
 ---
 
@@ -302,4 +345,4 @@ owner: Alan Bahena
 
 ---
 
-*Última actualización: 2026-08-23. v0.4 · 6 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago · 3–9 ago · 10–16 ago · 17–23 ago).*
+*Última actualización: 2026-08-30. v0.5 · 7 entradas (13–19 jul · 20–26 jul · 27 jul–2 ago · 3–9 ago · 10–16 ago · 17–23 ago · 24–30 ago).*

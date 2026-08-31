@@ -1,10 +1,10 @@
 ---
 name: Bitácora de learnings de validación — Fase A
-description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
+description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Entrada #5 = Alfonso Arellano / chef de catering · Culinary Art School TJ (café 27-ago-2026 · insider/conector — NO cuenta en el N; deja la mejor señal de H3 de la Fase A: el moat hardware-agnostic articulado espontáneamente por alguien que conoce a los vendors, + capacitación/gente como 2ª señal independiente con Carlos). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
 type: product-strategy
-last_updated: 2026-08-12
+last_updated: 2026-08-30
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -433,3 +433,75 @@ Paráfrasis del debrief de Alan (07-ago · videollamada · sin grabación — **
 ---
 
 *Entrada #4 · fuente: apuntes de Alan post-sesión (12-ago). Perfil 2 — no suma al bucket del beachhead. La señal pendiente: los documentos tras el link de /demo. Próxima entrada: la que abra el perfil 3 (San Miguel) — ahora más necesaria: el framework tiene datos de arriba (Alma Verde), abajo (JP) y adyacente (Miguel), pero el centro sigue virgen.*
+
+---
+
+## Sesión #5 · Alfonso Arellano — chef de catering · Culinary Art School TJ (café · 27-ago-2026)
+
+> **Etiqueta: INSIDER/CONECTOR — NO cuenta en el N del beachhead.** Catering ≠ ICP (sin BoH propio, sin sucursales, sin comensal recurrente). Se registra por la señal de diferenciación —la mejor de la Fase A— y por el patrón que forma con Carlos. Corrió sobre run-sheet propio (5ª sesión con guión · mapa T1-T5).
+>
+> ⚠️ **Nota de disciplina:** fue el ÚNICO contacto humano de la semana. Cuando una sesión es lo único que pasa, hay una gravedad psicológica que la infla — la misma trampa de la Sesión #2. Todo aquí es **declarado y post-pitch, de un amigo que no es el comprador.**
+
+### 1. Contexto
+
+- **Alfonso Arellano** · excompañero de universidad · licenciado en administración **+ carrera de Culinary Arts + maestría** como chef · hoy dedicado al **catering**.
+- **Tuvo un negocio chico de comida en Tijuana y no lo sostuvo** — motivo declarado: alza de rentas y de insumos. Habla desde la experiencia de quien no pudo sostener una operación en TJ (da credibilidad a su lectura de presión de costos; también significa que **no es comprador hoy**).
+- ⚠️ NO confundir con **Alfonso Arballo** (Sesión #2 · mesa de jóvenes CANIRAC · distribuidor de vinos).
+- **Se le mostró la demo COMPLETA del producto** — primera vez que alguien de la industria ve Zenet construido, no una idea. Reacción: "impresionado" (declarada).
+
+### 2. Observaciones
+
+**Su mundo (catering):**
+- **Dolor #1 — la gente:** conseguir, mantener y capacitar personal **para cada evento**; administrar gente le resulta difícil. Modelo de staffing por evento, distinto al de un restaurante, pero el dolor apunta al mismo lugar.
+- **Dolor #2 — proveedores:** *variación de calidad* + **alzas de precio sin previo aviso**, y cómo eso impacta el servicio ya cotizado.
+- Contexto TJ: rentas e insumos al alza como razón de haber cerrado su negocio de comida.
+
+**Lo que DIJO de Zenet:**
+- 🌟 **La diferenciación, articulada por él solo:** comparado con Soft Restaurant y similares que exigen **pagos o renta de hardware**, Zenet *"se puede usar desde cualquier dispositivo"*. **No se le sugirió** — salió de él, que conoce a los vendors.
+- Su descripción del valor: resolver *"todo ese nudo operativo del detrás"* para que el operador/chef/dueño pueda enfocarse en **diseñar una gran experiencia para el comensal**. ⚠️ Ver T1 abajo — hubo explicación previa de Alan, así que es eco, no paráfrasis limpia.
+- **Precio (en tercera persona):** cree que un chef o dueño pagaría **$2,000–$4,000 MXN/mes** y que el precio *"no es factor porque el valor agregado habla por sí solo"*.
+- **Viabilidad comercial:** a la pregunta directa de si Zenet se puede vender, dijo que sí — que la industria puede pagarlo, que es un producto bien hecho, y que podría competir en USA o entrar a aceleradoras. *(Elogio sin contenido informativo — registrado como tal.)*
+
+**Lo que HIZO (revelado):**
+- Ofreció ayuda abierta "para lo que se necesite" · ofreció conseguir **descuentos en cursos de Culinary TJ** · mencionó que **tiene un conocido por abrir un restaurante de brunch** y que *"quizá le podía mencionar la idea"*.
+- ⚠️ **Ningún ask aterrizó como se diseñó:** no dio un nombre concreto ni se comprometió a hacer la intro; el mapeo de su generación de Culinary no produjo nombres.
+
+### 3. Scores — mapa T1-T5
+
+| # | Qué se probaba | Read | Nota |
+|---|---|---|---|
+| T1 · H2 comunicación | ¿El pitch aterriza sin ayuda? | ⬜ **NO PROBADO (contaminado)** | Alan se lo explicó "de forma fácil" y él lo repitió → **eco, no comprensión espontánea**. Lo demostrado: **Alan explica muy bien en vivo**. El hueco real de H2 —que el mensaje funcione **cuando Alan no está**— sigue sin probarse |
+| T2 · la landing sola | ¿Comunica o estorba? | ⬜ no probado | Se saltó a la demo completa del producto |
+| T3 · HV-03 el punto | ¿El argumento mueve la conversación? | 🟡 **corrió en versión aproximada** | **Salió por fin tras 5 sesiones** — pero sin el mecanismo preciso a la mano (se preguntó qué era durante el debrief) y sin reacción capturada. → dispara la **calculadora del punto** |
+| T4 · H3 diferenciación | ¿Lo ve distinto de lo que conoce? | 🟢🟢 **la mejor señal de la Fase A** | Articuló **solo** el moat hardware-agnostic vs Soft Restaurant. Contrasta con el *"otro software más"* de Arballo (S#2) |
+| T5 · H1 de 2ª mano + ask | Nombres concretos | 🟡 **medio** | Una puerta entreabierta (conocido del brunch) sin nombre ni intro comprometida |
+| — · precio | H6 | 🔻 **el tier más débil** | Declarado · post-pitch · **en tercera persona** ("un chef pagaría"). NO es dato de precio |
+
+### 4. Learnings estratégicos ⚠️ *(insider-declarado · no suma al N)*
+
+1. **★★ El moat hardware-agnostic tiene su primera confirmación de campo.** El análisis competitivo lo tenía en papel (doc 07 §4.3: *pure BoH AI layer · hardware-agnostic · POS-agnostic*); ahora un insider que conoce a los vendors lo articuló espontáneamente como LA ventaja. **Gradúa a argumento de venta probado** — y es material directo para el copy y para la respuesta a "otro software más".
+2. **★ Capacitación y gente sube a 2 señales independientes** (Carlos 14-jul + Alfonso 27-ago), desde modelos operativos distintos (restaurante con sucursales vs catering por evento). **No está en el centro de la Fase 1** (recetas/inventarios). Ya no es N=1 — es un patrón que merece vigilancia en la priorización de Fase 1.5.
+3. **★ Proveedores: variación de calidad + alzas sin aviso.** Rima con Miguel (compra fresca sin pronóstico) y con el hallazgo productores↔restaurantes. 2ª señal de que la relación con proveedores es dolor vivo.
+4. **La segunda declaración de WTP por encima del ancla.** Miguel ("realmente pagaría") y ahora Alfonso ($2-4K). Ambas declaradas, ninguna revelada. Direccional: **$1,500 podría ser conservador** — se decide con comportamiento en el Mes 3, no con opiniones.
+5. **★ El elogio de cierre es la trampa de la Sesión #2, repetida.** *"Podrías competir en USA / entrar a aceleradoras"* se siente como victoria y no contiene información. La vara sigue siendo: **¿aterrizó un ask?** Aquí, a medias.
+
+### 5. Implicaciones — qué feeds a dónde
+
+| Learning | A dónde |
+|---|---|
+| Moat hardware-agnostic confirmado en campo | `03-competitive-analysis/07-defensibility` (evidencia) · copy de la landing · respuesta canónica a "otro software más" |
+| Capacitación/gente = 2ª señal | Priorización Fase 1.5 (`02-features-y-scope`) · vigilar 3ª señal |
+| Proveedores (calidad + alzas) | VoC · refuerza el hallazgo de plataforma (`05-market-insights/01-vision-plataforma`) |
+| WTP $2-4K declarado | `03-oferta-y-pricing/05-wtp-validation-plan` — tier declarado, peso mínimo |
+| T1 contaminado | Método: la pregunta de comprensión va **antes** de cualquier explicación simplificada |
+
+### 6. Decisión / siguiente paso
+
+1. **★ Convertir la puerta del brunch — no espera.** Pedirle el **nombre** y que **él haga la presentación** (no "le menciono la idea"). Se evapora en días. ⚠️ Expectativa: alguien *por abrir* es el perfil de Juan Pablo — sirve para aprender, probablemente no para el N.
+2. **La calculadora del punto** deja de ser opcional (T3 lo demostró).
+3. **Método corregido:** la pregunta *"¿qué entendiste que hace?"* va **antes** de explicar en simple — si no, se mide el eco.
+4. Alfonso queda en **Red estratégica** (aliado/conector · red de Culinary Art School TJ), no en el Pipeline.
+
+---
+
+*Entrada #5 · fuente: resumen de Alan post-sesión (27-ago). Insider/conector — no suma al N. Única sesión de una semana sin otras respuestas: leer con la disciplina anti-gravedad. Lo durable: el moat hardware-agnostic confirmado en campo + capacitación/gente como 2ª señal.*
