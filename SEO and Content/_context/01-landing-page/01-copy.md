@@ -265,7 +265,21 @@ La persona nueva aprende del manual, no de a quién le tocó al lado. Tu criteri
 - ❌ *"rediseñan la operación y la mantienen eficiente"* — contradice la corrección de honestidad que el propio fundador hizo en §4 paso 03 (*"te ayuda a reacomodar"* · **Fase 1 no propaga solo**). Y "eficiente/eficiencia" es palabra de consultor.
 - Encabezado: se ofrecieron 3 (A estado · B aforismo *"El orden no se hace una vez. Se sostiene."* · C física del cambio). **Elegido A** — mantiene "tu operación" como sujeto en las tres etapas.
 
-**Animación nueva (pendiente de build):** entra **un cambio** al cuadro (una factura con precio nuevo · una tarjeta de receta · una persona que sale) → viaja al núcleo → el núcleo **enciende solo las piezas que ese cambio toca** (receta → costo → compra → proceso) → se reacomodan → vuelve la calma. **Un núcleo, sin entidades.** Es el dominó, dibujado.
+**Animación — ✅ CONSTRUIDA E INTEGRADA (2026-09-02 · `lab/etapa3-domino.html` → `index.html`, commit `bea20c6`).** Cinco beats:
+
+| Beat | Qué pasa | Rótulo |
+|---|---|---|
+| 1 | Núcleo + 4 piezas conectadas, en gris | *Tu operación, en orden.* |
+| 2 | Cae un pill peach y el núcleo lo cacha | *Y entonces algo cambia.* |
+| 3 | **Turbulencia** — las piezas se desalinean, giran y vibran; las líneas se descosen | *Y lo que ese cambio toca, se mueve.* |
+| 4 | El pulso sale del núcleo; cada pieza vuelve a su lugar y se enciende en cadena | *Zenet lo reacomoda contigo.* |
+| 5 | Todo en teal, núcleo respirando, aparece **"Al día"** | *Tú apruebas; el orden se queda.* |
+
+- **La regla que carga el mensaje: las piezas se sacuden, el núcleo NO se mueve ni un pixel.** Zenet es lo que sostiene, y no se dice — se ve.
+- **Las 4 piezas son las del copy** (receta · costo · pedido · estándar) y **el pill rota entre los 4 cambios del primer párrafo** (sube el tomate · proveedor nuevo · se va tu cocinero · menú de temporada). Animación y texto dicen lo mismo, sin vocabulario nuevo.
+- **La turbulencia es idea del fundador** (*"cierto tipo de turbulencia, las cosas se quieren desestabilizar, y luego Zenet recompone"*). Entró completa.
+- **❌ Rojo descartado (petición del fundador, con verificación):** no existe **un solo color de alerta** en la landing ni en `/demo` — todo el sitio corre con teal + neutros. Un rojo sería el primer color fuera de paleta de toda la superficie del producto, y diría *"error"*; un proveedor que cambia no es un error, es la vida del negocio. La tensión la marca **peach `#F4DED0`** (ya en los tokens) y **se apaga cuando vuelve la calma teal** — el color cuenta el arco.
+- **Un núcleo, sin entidades** (regla de agentes) · SVG en el esquema canónico (viewBox + strokes en unidades, sin `non-scaling-stroke`) · `prefers-reduced-motion` cae al beat 5 estático · **el reloj del día se conserva en `lab/etapa3.html`** y en el historial.
 
 ### ~~Etapa 4 · Automatización~~ — ❌ **FUERA de la página (v0.4)**
 
@@ -483,8 +497,8 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 - [ ] Actualizar `00-estrategia-y-estructura.md` (sigue describiendo 8 secciones v1/v2 — desactualizado 2 versiones)
 - [ ] Actualizar `06-argumentacion-de-valor-y-precio` §6.1 (raíz corregida)
 - [ ] Al build: `02-prototipo-y-diseno` v3 (lab/ · tokens intactos · jerarquía de animación nueva)
-- [ ] **v0.4 · construir la animación del dominó** (Etapa 3) en `lab/` → reemplazar el reloj → QA → merge `v3.3-copy` → deploy
-- [ ] **v0.4 · retirar del build el reloj del día** y sus rótulos (`caps` en el JS de la Etapa 3) cuando entre la animación nueva
+- [x] **v0.4 · animación del dominó** (Etapa 3) ✅ 2026-09-02 — construida en `lab/etapa3-domino.html` e integrada (commit `bea20c6`) · el reloj del día y su CSS/JS salieron del `index.html`
+- [ ] **v0.4 · QA en móvil real + iPhone Safari** (headless no emula viewport móvil — no sirve para esto) → merge `v3.3-copy` → deploy
 - [ ] **v0.4 · `00-estrategia-y-estructura.md`** sigue describiendo 8 secciones (ahora va 3 versiones atrás)
 - [ ] **v0.4 · sincronizar el doc con lo que el build ya tiene y el copy no registra:** página `/demo`, `/privacidad`, Hablemos v0.4 (3 pasos), enlace Demo en el navbar, tags `v3.1`/`v3.2`
 
@@ -503,4 +517,4 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 
 ---
 
-*Última actualización: 2026-09-02. **v0.4 · pasada del fundador aplicada en la rama `v3.3-copy` (11 cambios + 1 retiro) y aprobada en pantalla.** El camino quedó en 3 etapas ciertas, sin tags. **Bloqueo de deploy: la animación del dominó de la Etapa 3** — hasta entonces esa etapa lleva el reloj viejo, que contradice el texto. Siguiente: construir la animación en `lab/` → QA → merge → deploy.*
+*Última actualización: 2026-09-02. **v0.4 · pasada del fundador aplicada en la rama `v3.3-copy` (11 cambios + 1 retiro) y aprobada en pantalla.** El camino quedó en 3 etapas ciertas, sin tags. **Bloqueo de deploy: la animación del dominó de la Etapa 3** — hasta entonces esa etapa lleva el reloj viejo, que contradice el texto. Siguiente: **QA en móvil real e iPhone Safari** → merge `v3.3-copy` → deploy. La rama trae 2 commits: `f5b18e8` (copy) y `bea20c6` (animación del dominó).*
