@@ -494,12 +494,11 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 - [x] §8 reescritura ✅ 2026-08-05 (párrafo trazabilidad "se decide atrás" · candado sistema defendido 2ª vez · vetos: vehículo/años-a-días/abrace)
 - [x] §9 integrar "el piso" ✅ 2026-08-05 (en "El trato honesto" · sección completa autocontenida en este doc)
 - [x] Eyebrows ✅ 2026-08-05 (§2 = EL PORQUÉ · tabla final)
-- [ ] Actualizar `00-estrategia-y-estructura.md` (sigue describiendo 8 secciones v1/v2 — desactualizado 2 versiones)
+- [x] Actualizar `00-estrategia-y-estructura.md` ✅ 2026-09-02 — **v0.3** (9 secciones · argumento sincronizado con la v3.3 · Reglas v3.3 de contenido)
 - [ ] Actualizar `06-argumentacion-de-valor-y-precio` §6.1 (raíz corregida)
-- [ ] Al build: `02-prototipo-y-diseno` v3 (lab/ · tokens intactos · jerarquía de animación nueva)
+- [x] `02-prototipo-y-diseno` ✅ 2026-09-02 — **v3.3** (la escena del dominó · la brecha punteada · el retiro del reloj · la lección de headless vs movimiento)
 - [x] **v0.4 · animación del dominó** (Etapa 3) ✅ 2026-09-02 — construida en `lab/etapa3-domino.html` e integrada (commit `bea20c6`) · el reloj del día y su CSS/JS salieron del `index.html`
-- [ ] **v0.4 · QA en móvil real + iPhone Safari** (headless no emula viewport móvil — no sirve para esto) → merge `v3.3-copy` → deploy
-- [ ] **v0.4 · `00-estrategia-y-estructura.md`** sigue describiendo 8 secciones (ahora va 3 versiones atrás)
+- [x] **v0.4 · QA + deploy** ✅ 2026-09-02 — revisado por el fundador · merge `--no-ff` a `main` · tag **`v3.3`** · en vivo verificado contra producción
 - [ ] **v0.4 · sincronizar el doc con lo que el build ya tiene y el copy no registra:** página `/demo`, `/privacidad`, Hablemos v0.4 (3 pasos), enlace Demo en el navbar, tags `v3.1`/`v3.2`
 
 ### Changelog
