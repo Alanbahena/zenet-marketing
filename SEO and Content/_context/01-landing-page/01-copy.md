@@ -1,10 +1,10 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-08-05
+last_updated: 2026-09-02
 status: active
-version: 0.3
+version: 0.4
 owner: Alan Bahena
 ---
 
@@ -117,23 +117,34 @@ owner: Alan Bahena
 
 **Eyebrow:** LA REALIDAD DE HOY
 
-**Headline** (sin subline — decisión del fundador):
-> Todos te dan dónde poner tu sistema.
-> Nadie te ayuda a construirlo, mantenerlo ni ejecutarlo.
+**Headline** — 🔄 **reescrito v0.4 (2026-09-02)** (sin subline — decisión del fundador):
+> Lo más caro de tu operación no se compra. Se carga.
+> Nadie te ayuda a construir tu sistema, a mantenerlo ni a ejecutarlo.
+
+*(El titular v3 —"Todos te dan dónde poner tu sistema"— se retira. La acusación al mercado no se pierde: vive en la tarjeta 2 y en §7 ("lo más que podías comprar era otra herramienta"). A cambio, el titular pasa a nombrar **el costo humano**, que es el hilo "cargar" — y gana un espejo exacto con §4: "lo más caro… se carga" → "el trabajo que más esfuerzo te cuesta, ese es el que hace Zenet". **"Tu sistema", nunca "un sistema"**: el posesivo honra "yo SOY el sistema" (V-001/V-010). Resaltado teal en "Se carga." Descartado en el camino: abrir con mercado/eficiencia ("el mercado está cambiando, la demanda exige eficiencia") — es trabajo de §7, y "eficiencia"/"estructura inestable" son sustantivos de consultor + ataque a identidad.)*
 
 **Las 4 tarjetas:**
 
+*(las 4 · 🔄 revisadas v0.4 · 2026-09-02)*
+
 **1 · Todo pasa por ti**
-Los insumos, los protocolos, cuánto pedir un viernes, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. Y cuando alguien clave no llega o se va, se va con él.
+Los insumos, los costos, los procesos, cuánto pedir un viernes, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
 
-**2 · Cada herramienta que compras agrega un lugar más**
-Recetas en Excel. Pendientes en WhatsApp. Protocolos en un cuaderno. Ventas en el punto de venta. Ninguna se habla con las otras — y actualizar algo es perseguirlo por todos lados.
+**2 · Todo se sostiene, pero nada se conecta**
+Recetas en Excel. Pendientes en WhatsApp. Protocolos en un cuaderno. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
 
-**3 · Ordenarlo cuesta años que no tienes**
-A los que lo lograron les tomó años. Y no termina: cambian los costos, cambian los proveedores, cambia tu gente. Lo que ordenaste hace ocho meses ya no describe cómo operan hoy. Tú no tienes años — tienes servicio esta noche.
+**3 · Ordenarlo cuesta años y dinero que no tienes**
+A los que lo lograron les tomó años. Y no termina: cambian los costos, cambian los proveedores, **cambian las recetas**, cambia tu gente. Lo que ordenaste hace ocho meses ya no describe cómo operan hoy.
 
 **4 · Cada persona nueva vuelve a empezar de cero**
-Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle.
+Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
+
+**Notas v0.4 de las tarjetas:**
+- **T1** cierra ahora en *"corre con tu energía"* — argumenta el titular nuevo (si lo más caro se carga, la tarjeta debe decir **con qué** se carga) y prepara dos contrastes: §5 Etapa 3 y §6 (*"cuando tu operación trae motor"*). El combustible y el motor, misma metáfora.
+- **T2** cambia de encabezado: *"Cada herramienta que compras agrega un lugar más"* → *"Todo se sostiene, pero nada se conecta"* (decisión del fundador · quería nombrar la desconexión). El encabezado nuevo **reconoce que su operación funciona** —que es lo cierto, y lo que el canon exige— y deja la culpa en el amarre. Se descartaron *"descontrol de estandarización operativa"* y *"falta de conexión entre partes de tu infraestructura operativa"*: patrón "falta de X" prohibido + sustantivos de folleto. La acusación de comprar se pierde aquí y sobrevive en el titular (*"no se compra"*) y en §7.
+- **T3** suma *"y dinero"* (encarece la ruta alterna sin que la página diga un precio) y *"cambian las recetas"* (la repetición aguanta 4 golpes). **Remate cortado por decisión del fundador** — *"Tú no tienes años — tienes servicio esta noche"* fuera. Es la única tarjeta que ya no remata con golpe; se ofrecieron 3 alternativas y se eligió seco.
+- **T4** absorbe la línea que T1 dejó libre (*"se lleva lo que sabía"*). Tenía que sobrevivir en algún lado: §6 card 3 (*"el conocimiento se queda, aunque alguien se vaya"*) la contesta, y sin ella §6 respondía una pregunta que nadie hacía. Va al final, encadenada.
+- **Figuras (SVG):** se añadió una **línea fantasma punteada** a la tarjeta 3 (la sólida se desploma, la punteada sigue derecho = la brecha) y su espejo invertido a §6 card 2 (la sólida se recupera, la punteada sigue cayendo = lo que dejaste de perder). **Se descartó el signo de pesos**: sería el único símbolo literal de la página, es el ícono más gastado del food-tech, y afirmaría una pérdida económica que el copy no mide.
 
 **El remate** — ❌ **CORTADO del build (05-ago):** la sección termina en la tarjeta 4, sin prosa de salida. Se evaluaron variantes de una línea (*"Por eso no puedes tomarte un día: el sistema eres tú"* · *"Todo funciona — mientras tú estés ahí"* · *"Ahora lo cargas — tú solo"*) y el fundador decidió cero. El hilo "cargar" sobrevive vía el hero (*"Zenet lo carga"*) y el cierre de §6 (*"dejas de cargar tu negocio"*). Las variantes quedan como material de conversación/deck.
 
@@ -154,7 +165,7 @@ Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de 
 > - **01 · Lo construye desde lo que ya tienes** — Recetas en Excel, fotos de inventario, el cuaderno — los mandas como están.
 > - **02 · Lo junta en un solo cerebro operativo** — Un Manual Operativo vivo, al alcance de tu equipo.
 > - **03 · Lo mantiene vivo** — Cambias una receta, sube un costo, pruebas algo nuevo — Zenet te ayuda a reacomodar todo lo que ese cambio toca. **El orden se queda.** *(reframe del fundador: el cambio como trigger — el ejemplo precio-que-cambia sonaba a alertas de POS · "te ayuda a reacomodar" = corrección de honestidad, Fase 1 no propaga solo)*
-> - **04 · Lo ejecuta cada día** 🏷️ SF — Tus protocolos corren sin que los empujes. Tú ves qué se completó.
+> - **04 · Lo ejecuta cada día** 🏷️ SF — Tus **procesos** corren sin que los empujes. **Tú solo ves los resultados.** *(v0.4 · 2026-09-02)*
 > - **05 · Se lo pasa a quien llega** — La persona nueva aprende del cerebro operativo de tu restaurante, desde su primer turno. *(cerebro operativo abre en 02 y cierra en 05)*
 >
 > El **dominó se cortó** (4º bloque de prosa muerto en pantalla — REGLA v3: los componentes hablan, la prosa estorba) pero **resucitó en 3 palabras** dentro del paso 03 ("todo lo que ese cambio toca"). Vetos sostenidos en esta sección: optimiza · inteligente (×4) · impulsa · áreas de oportunidad · base de conocimiento · dispositivo electrónico · estandarizado-como-adjetivo-del-manual. Cuerpos largos de abajo = material de conversación/deck. Animación una-vez de la línea: construida y revertida por decisión del fundador (queda la entrada escalonada).
@@ -166,8 +177,10 @@ Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de 
 
 *(Evolución: "nadie te ayudaba a hacer" → "más esfuerzo te cuesta" — el fundador prefirió el ángulo del esfuerzo sobre el espejo con el header de §3. Alts documentadas: A "que nadie te ayuda a hacer" (espejo máximo con §3) · C "que hoy cargas tú solo" (hilo cargar + rescataba el remate cortado de §3). El espejo §3→§4 queda implícito en el orden de las secciones.)*
 
-**Subline:**
-> No te da otro lugar donde capturar tu operación. La toma como está, y hace contigo lo que una herramienta no hace:
+**Subline** *(🔄 v0.4 · 2026-09-02)*:
+> No suma otra herramienta a las que ya tienes. Toma tu operación como está, y hace contigo lo que una herramienta no hace:
+
+*(La subline anterior —"no te da otro lugar donde capturar tu operación"— respondía al titular viejo de §3 ("todos te dan dónde poner tu sistema"), que ya no existe. Re-apuntada a la tarjeta 2 nueva: "todo se sostiene, pero nada se conecta" → "no suma otra herramienta".)*
 
 **Los 5 verbos** *(espejo 1:1 de la realidad — ver tabla abajo)*:
 
@@ -181,7 +194,7 @@ Un Manual Operativo vivo, conectado a un solo cerebro operativo que tu equipo co
 Cambia un precio, entra un proveedor, se ajusta una receta — Zenet detecta lo que ya no cuadra y te avisa. El orden no se hace una vez. Se sostiene.
 
 **4 · Lo ejecuta cada día** 🏷️ *En construcción — con los primeros Socios Fundadores*
-Tus protocolos corren solos: la apertura, el cierre, el checklist de la mañana. Cada quien ve lo suyo en su celular; tú ves qué se completó.
+Tus procesos corren sin que los empujes. Tú solo ves los resultados. *(v0.4 — decisión del fundador. Se documentan las opciones que se le ofrecieron y rechazó: "qué se hizo y qué no · sin tener que preguntar" · "cómo va todo, sin perseguir a nadie". **Guardarraíl vivo:** "resultados" debe leerse como* cómo salió lo que corrió*, NO como métricas del negocio; si en demo o sesión alguien lo entiende como "me va a dar números", se ajusta.)*
 
 **5 · Se lo pasa a quien llega**
 La persona nueva aprende del manual, no de a quién le tocó al lado. Tu criterio la recibe desde su primer turno.
@@ -226,17 +239,37 @@ La persona nueva aprende del manual, no de a quién le tocó al lado. Tu criteri
 >
 > Zenet los lee, los entiende — y te devuelve algo que hoy no existe: **un análisis honesto de tu operación.** Qué tan estandarizado estás, área por área. Dónde están tus costos hoy. Y qué construiría Zenet contigo primero — con tus números, no con promesas.
 
-### Capítulo 2 · Tu operación, ordenada área por área
+### Etapa 2 · Tu operación, estandarizada área por área *(🔄 v0.4)*
 
 > Con tus documentos, el trabajo empieza — desde ahí, no desde una plantilla.
 >
-> Tus recetas e inventarios quedan estandarizados. Ves qué platillos te dejan y cuáles te cuestan, y qué proveedor te subió el precio. Tu estructura toma forma: sucursales, roles, quién hace qué y cómo se hace — el protocolo de cada puesto, con sus estándares de calidad.
+> Tus recetas quedan escritas y costeadas; tus inventarios, estructurados y en orden. Ves qué platillos te dejan y cuáles te cuestan. Y **la estructura sólida de tu negocio queda hecha**: sucursales, roles, quién hace qué y cómo se hace — el proceso de cada puesto, con sus estándares de calidad.
 
-### Capítulo 3 · Y entonces: personalizas tus procesos, y empiezan a correr solos 🏷️ *En construcción — con los primeros Socios Fundadores*
+*(v0.4: "los cimientos de tu negocio toman forma" → **"la estructura sólida de tu negocio queda hecha"**. El fundador pidió que quedara dicho **el hecho consumado**, no el proceso; "toman forma" decía su idea en metáfora y en curso. Los dos puntos convierten la lista en la prueba. Se descartó meterlo como frase de arranque —duplicaba la metáfora de obra en el mismo párrafo, y ponía abstracto antes de concreto.)*
 
-> Tus protocolos se vuelven rutinas que corren sin que las empujes — y tú decides quién de tu equipo lleva cada una: la apertura, el cierre, el checklist de la mañana, el mantenimiento que toca.
+*(Animación de sucursales: se evaluó cambiar los roles —Gerente · Cocina · Servicio— por **barras de costos/márgenes** estilo `/demo`. **Descartado:** (1) es la "Etapa 4 · Resultados" aparcada con gate — sin curva real de un design partner, cualquier cifra de mejora es anti-claim; en `/demo` las mismas barras son honestas porque son SUS números y dicen "este es tu antes"; (2) ese beat es el único lugar de la página donde se cuenta que **la estructura se replica** entre sucursales, que es lo que contesta §3 T4 y prepara §6 card 4.)*
+
+### Etapa 3 · Tu operación se mantiene viva — aunque todo cambie 🔄 **REESCRITA v0.4 (2026-09-02)**
+
+> Sube el tomate. Entra un proveedor nuevo. Se va tu cocinero de años. Cambias el menú de temporada. Ninguno de esos cambios llega solo: mueve tus costos, tus recetas, tus compras, tus procesos.
 >
-> Cada quien ve lo suyo en su celular. Tú ves qué se completó — desde el celular, la tablet o la compu. Y con Zenet vas mejorando lo que salga chueco.
+> Zenet ve qué se movió y te ayuda a reacomodar todo lo que ese cambio toca — el costo del platillo, la receta, el pedido, el estándar. **Tú apruebas; el orden se queda.**
+>
+> Así tu estructura no se queda escrita en un papel que envejece. Se mantiene al día — y **un costo que sube deja de comerse tu margen en silencio.** Tú vuelves a lo tuyo: la calidad y la experiencia.
+
+**Por qué cambió (decisión del fundador · la más grande de la v0.4):** la Etapa 3 prometía **lo que menos está construido** (protocolos corriendo solos), y era la única etapa del camino que necesitaba tag. Al mover el mantenimiento aquí, **las 3 etapas son ciertas hoy** y el camino queda calcado 1:1 con los pasos de §4 (construye · junta · mantiene). Lo que describió el fundador **es el dominó** — su propia imagen, cortada como prosa en el build de agosto, que por fin tiene su lugar como etapa animada.
+
+**Vetos aplicados sobre el borrador del fundador:**
+- ❌ *"Los agentes de Zenet te ayudan…"* / *"los agentes rediseñan la operación"* — **regla canónica**: el producto ES la agencia; los agentes NUNCA se nombran como entidades separadas (CLAUDE.md §8). Es la misma regla con la que él descartó el boceto del "coordinador + 3 agentes que le reportan". Zenet, en singular.
+- ❌ *"te ayudan a mejorar tus márgenes"* — misma promesa que se dejó fuera de las barras de la Etapa 2, ahora en palabras. **Forma honesta que sí entró:** *"un costo que sube deja de comerse tu margen en silencio"* (mecanismo + visibilidad, no mejora prometida).
+- ❌ *"rediseñan la operación y la mantienen eficiente"* — contradice la corrección de honestidad que el propio fundador hizo en §4 paso 03 (*"te ayuda a reacomodar"* · **Fase 1 no propaga solo**). Y "eficiente/eficiencia" es palabra de consultor.
+- Encabezado: se ofrecieron 3 (A estado · B aforismo *"El orden no se hace una vez. Se sostiene."* · C física del cambio). **Elegido A** — mantiene "tu operación" como sujeto en las tres etapas.
+
+**Animación nueva (pendiente de build):** entra **un cambio** al cuadro (una factura con precio nuevo · una tarjeta de receta · una persona que sale) → viaja al núcleo → el núcleo **enciende solo las piezas que ese cambio toca** (receta → costo → compra → proceso) → se reacomodan → vuelve la calma. **Un núcleo, sin entidades.** Es el dominó, dibujado.
+
+### ~~Etapa 4 · Automatización~~ — ❌ **FUERA de la página (v0.4)**
+
+La automatización (protocolos corriendo solos + el **reloj del día**, asset construido y cross-browser) **sale de §5**. Se evaluaron 3 salidas: (1) Etapa 4 con tag · (2) fuera de la página · (3) una línea de cierre *"Y lo que sigue: que corran solos…"*. Se eligió **3**, se construyó, **y el fundador la retiró en pantalla** → queda la **opción 2**: el camino son 3 etapas ciertas, **cero tags en toda §5**, y la promesa de automatización sobrevive solo en el paso 04 de §4, con su tag. El reloj se guarda en el repo para cuando sea verdad. *(Ojo de nombres: la "Etapa 4" aparcada el 06-ago era* Resultados*; esta era* Automatización*. Son dos ideas distintas en el mismo slot.)*
 
 **Cierre de sección** (zero-training + anti-proyecto-eterno):
 > Y tu equipo no necesita un curso: **si saben usar WhatsApp, saben usar Zenet.**
@@ -297,11 +330,24 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 
 **Eyebrow:** EL MOMENTO
 
-**Headline:**
-> Hace unos años, lo más que podías comprar era otra herramienta. Eso acaba de cambiar.
+**Headline** *(🔄 v0.4 · 2026-09-02)*:
+> El juego cambió — y lo que puedes hacer al respecto, también.
 
-**Body** *(un solo párrafo · antes eran 2 beats)*:
-> Hoy se puede construir algo distinto: un equipo de especialistas que entiende tu operación — no solo la registra. La tecnología por fin lo permite. Y llega justo cuando la industria se profesionaliza: más control, más exigencia, más calidad. El orden que antes era un lujo de grandes, hoy está al alcance de tu restaurante.
+**Body** *(2 párrafos · el beat de mercado es nuevo)*:
+> Los costos no se quedan quietos. La gente rota más que antes. Y lo que antes se absorbía sin sentirlo, hoy se ve en el margen. Al mismo tiempo, la industria se profesionaliza: más control, más exigencia, más calidad. **Las reglas ya no son las de hace diez años.**
+>
+> Hace unos años, lo más que podías comprar era otra herramienta. Hoy se puede construir algo distinto: un equipo de especialistas que conoce tu restaurante y entiende tu operación — no solo la registra. Uno que aprende de lo tuyo; no llega con recetas ajenas. La tecnología por fin lo permite. El orden que antes era un lujo de grandes, hoy está al alcance de tu restaurante.
+
+*(v0.4 — el fundador pidió que §7 hiciera **conciencia de que el mercado cambió**: reglas del juego, costos que se mueven, rotación, exigencia. Aquí es donde esa idea vive; se frenó dos veces antes, cuando quiso ponerla en el titular de §3 y en la tarjeta 2. Estructura nueva: **cambió el juego** → **cambió lo que puedes hacer al respecto**. El titular viejo baja al arranque del 2º párrafo, intacto.)*
+
+**Traducciones aplicadas al borrador del fundador:**
+| Él dijo | Entró como | Por qué |
+|---|---|---|
+| "una mala base operativa tiene costos a largo plazo" | *"lo que antes se absorbía sin sentirlo, hoy se ve en el margen"* | Costo diferido = costo que nunca urge · y "mala base" es ataque a identidad. En presente y sin insulto. |
+| "la demanda exige eficiencia" | *"más control, más exigencia, más calidad"* (línea ya canónica) | "Eficiencia" es palabra de consultor; el operador dice calidad y exigencia. |
+| "la tecnología impulsa a los negocios a ser competentes" | *"la tecnología por fin lo permite"* | "Impulsar" vetado desde v3 · "competitivo" es de folleto. |
+
+**⚖️ Decisión: CERO CIFRAS (confirmada v0.4).** El fundador preguntó por meter datos de mercado. Se decidió que no: la página no tiene un solo número **a propósito**, y la primera cifra rompe la disciplina para las demás. Además los datos disponibles juegan mal aquí — la adopción tecnológica del sector (10-15% global · ~10% MX) **dice que casi nadie de su gremio hace esto** justo antes de pedirle que lo haga; y la fiscalización SAT 2026 es el ángulo de miedo que la v3 descartó. **Los datos son munición de deck, LinkedIn y conversación de venta**, donde se cita fuente y año.
 
 **Formato sugerido:** strip corto entre el cierre emocional de §6 y el fundador (lab/ decide).
 
@@ -403,6 +449,21 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 9. **"Blockchain" no entra** · "fácil de usar" se demuestra con zero-training, no se declara.
 10. **Fase A no se detiene por el copy:** H1 y H6 se validan sin VP pulida (Mom Test). El build de la v3 espera al flujo del producto + diagnóstico corrido.
 
+## Decisiones v0.4 (pasada del fundador · 2026-09-02)
+
+1. **El titular de §3 pasa del mercado al costo humano** — *"Lo más caro de tu operación no se compra. Se carga."* La acusación al mercado se redistribuye (tarjeta 2 + §7). Gana el espejo §3↔§4.
+2. **"Tu sistema", nunca "un sistema"** — el posesivo es la línea que honra *"yo SOY el sistema"*. Regla, no preferencia.
+3. **"Estructura inestable" / "falta de conexión" / "descontrol de estandarización": vetadas** (3 intentos) — su sistema **funciona**; se sostiene con él. El patrón "falta de X" es ataque a identidad; los sustantivos apilados son idioma de folleto. La desconexión se dice reconociendo que funciona: *"Todo se sostiene, pero nada se conecta."*
+4. **La carga se nombra con su combustible** — *"corre con tu energía"* (§3 T1) monta el contraste con *"trae motor"* (§6).
+5. **Sin signo de pesos en las figuras** — se usa **la brecha punteada** (§3 c3 y §6 c2). Geometría sin escala = imposible leerlo como cifra.
+6. **Sin barras de márgenes en la landing** — pertenecen a `/demo`, donde son SUS números y dicen *"este es tu antes"*. En la landing serían la "Etapa 4 · Resultados" aparcada, sin su gate.
+7. **La Etapa 3 se reescribe a mantenimiento; la automatización sale de §5** — el camino queda con 3 etapas **todas ciertas hoy** y **cero tags**. La promesa de automatización vive solo en §4 paso 04, con su tag.
+8. **Los agentes no se nombran (2ª vez defendido)** — el producto ES la agencia. Zenet, en singular.
+9. **Se dice "márgenes" solo como mecanismo** — *"un costo que sube deja de comerse tu margen en silencio"*, nunca *"mejoramos tu margen"*.
+10. **"Procesos" es la palabra por defecto en prosa**; se conservan 3 excepciones: la etiqueta **Protocolos** de la Etapa 2 (**es nombre de área del producto** — paridad landing↔producto), *"protocolos de sala"* (vocabulario real de restaurante) y *"Protocolos en un cuaderno"* (§3 T2 — esa lista vive de objetos concretos).
+11. **§7 absorbe la conciencia de mercado** — con **cero cifras** (ver §7).
+12. **Se retiró la línea "Y lo que sigue: que corran solos"** — construida y descartada en pantalla por el fundador.
+
 ## 💡 Idea aparcada con gate — "Etapa 4 · Resultados" (2026-08-06 · del fundador)
 
 **El concepto:** una cuarta pieza del camino mostrando objetivos + progreso — el operador fija metas sobre su índice de estandarización (el baseline del onboarding, dimensiones D1-D6 del producto), el dashboard muestra la curva, y Zenet como cerebro operativo responde *"¿qué nos falta para el objetivo del mes?"*.
@@ -422,9 +483,14 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 - [ ] Actualizar `00-estrategia-y-estructura.md` (sigue describiendo 8 secciones v1/v2 — desactualizado 2 versiones)
 - [ ] Actualizar `06-argumentacion-de-valor-y-precio` §6.1 (raíz corregida)
 - [ ] Al build: `02-prototipo-y-diseno` v3 (lab/ · tokens intactos · jerarquía de animación nueva)
+- [ ] **v0.4 · construir la animación del dominó** (Etapa 3) en `lab/` → reemplazar el reloj → QA → merge `v3.3-copy` → deploy
+- [ ] **v0.4 · retirar del build el reloj del día** y sus rótulos (`caps` en el JS de la Etapa 3) cuando entre la animación nueva
+- [ ] **v0.4 · `00-estrategia-y-estructura.md`** sigue describiendo 8 secciones (ahora va 3 versiones atrás)
+- [ ] **v0.4 · sincronizar el doc con lo que el build ya tiene y el copy no registra:** página `/demo`, `/privacidad`, Hablemos v0.4 (3 pasos), enlace Demo en el navbar, tags `v3.1`/`v3.2`
 
 ### Changelog
 
+- **v0.4 (2026-09-02) — PASADA DEL FUNDADOR sobre §3, §4, §5 y §7 · rama `v3.3-copy` · aprobada en pantalla.** 11 cambios + 1 retiro. **§3:** titular nuevo (*"Lo más caro de tu operación no se compra. Se carga."*) · T1 con *"corre con tu energía"* · T2 con encabezado nuevo (*"Todo se sostiene, pero nada se conecta"*) · T3 con *"años y dinero"* + *"cambian las recetas"* y **sin remate** (fuera *"tienes servicio esta noche"*) · T4 absorbe *"se lleva lo que sabía"* · **figuras con brecha punteada** en T3 y en §6 card 2. **§4:** subline re-apuntada (*"No suma otra herramienta a las que ya tienes"*) · paso 04 → *"Tus procesos corren sin que los empujes. Tú solo ves los resultados."* **§5:** Etapa 2 con *"la estructura sólida de tu negocio queda hecha"* · **Etapa 3 REESCRITA a mantenimiento ante el cambio** (el dominó) · **automatización fuera de la sección** (el reloj se guarda) · cero tags en §5. **§7:** titular nuevo (*"El juego cambió — y lo que puedes hacer al respecto, también"*) + beat de mercado nuevo · **cero cifras confirmado**. **Pendiente para deploy: la animación del dominó (Etapa 3) — hoy la etapa lleva el reloj viejo, cuyos rótulos contradicen el texto.**
 - **v0.3 (2026-08-07) — FASE 2 COMPLETA: las 3 animaciones del camino + LA CONSULTA (coda nueva).** Etapa 1 "el análisis se dibuja" · Etapa 2B "las áreas se ordenan" (+ beat de sucursales con estructura de personal) · Etapa 3 "corren solos" (remata en "Tu operación durmió tranquila. Tú también."). **Coda nueva §5 — LA CONSULTA:** el strip zero-training se volvió 2 columnas: la afirmación (*"…y todo lo que tu restaurante sabe, contesta"*) + chat en vivo rotando 3 consultas (cierre/inventario/facturas · receta del manual · permiso + máquina de espresso — los dolores de Carlos). Origen: el fundador quería una animación final del "núcleo con todo el conocimiento"; reframe aplicado: el conocimiento se demuestra RESPONDIENDO, no guardando (el núcleo-contenedor ya salía 3×, y es el framing de Alfonso). Resucita los bubbles de v2 con ajuste de honestidad (*"el proveedor te subió el tomate esta semana"* = dato de facturas, no pronóstico). Idea "Etapa 4 · Resultados" aparcada con gate (ver sección 💡). La v3 está FUNCIONALMENTE COMPLETA — falta Fase 3 (QA · OG image · CSS muerto · spec v3) y Fase 4 (deploy gateado).
 - **v0.3 (2026-08-06) — ESQUELETO v3 COMPLETO EN EL BUILD (9/9 secciones · branch v3 de zenet-landing).** Evoluciones de pantalla vs el papel: **§4** cerrada y aprobada (5 pasos horizontales — ver nota en §4). **§5 camino** cerrado en esqueleto: kickers "Etapa" (no "Capítulo") · cap. 2 = *"estandarizada área por área"* (eco diagnóstico→resultado con cap. 1) + *"cimientos toman forma"* + *"inventarios estructurados"* · strip final *"Sin cursos, sin capacitaciones, sin manuales de software"* (se rechazó "que un niño de 3 años entienda" — condescendencia hacia el equipo) · cajas placeholder para las 3 animaciones (Fase 2). **§6** construida: headline motor + cards v3 + *"la calidad y la esencia viajan"* (fundador) + cierre en emotional-close. **§7** strip compacto + línea de personalización resucitada (*"aprende de lo tuyo; no llega con recetas ajenas"* — había muerto con la sección El equipo) + *"conoce tu restaurante"* (fundador). **§8** párrafo trazabilidad en vivo. **§9** el piso integrado al trato honesto. Alternancia de fondos completa. Vetos sostenidos del día: potencializa ×2 · inteligente ×4 · optimiza · base de conocimiento · núcleo (3er nombre) · plantilla-doble · fundación (anglicismo) · niño de 3 años. **Pendiente: Fase 2 (3 animaciones en lab/) · Fase 3 (QA + OG image con headline nuevo + limpieza CSS muerto) · Fase 4 deploy (GATEADO: flujo + análisis corrido).**
 - **v0.3 (2026-08-05 · d) — BUILD: la página baja a 9 secciones.** §2 El WHY construida, vista en pantalla y RETIRADA (repetía el hero en secciones vecinas + baja energía en el slot 2 — el screen test hizo su trabajo). Material redistribuido: resignación+refutación → cierre de §3 (enriquecido) · "para que tu negocio ruede" → reserva para el CTA. Hero §1 construido y refinado en build ("construye contigo el sistema" + "lo mejora"). Branch v3 en zenet-landing: commits 691399f · aa7b03c · 7ba4c4c · a325d6a.
@@ -437,4 +503,4 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 
 ---
 
-*Última actualización: 2026-08-05. **v0.3 · V3 COMPLETA EN PAPEL — 10/10 secciones ✅.** Build gateado: flujo de onboarding shippeado + análisis corrido una vez con docs reales. Siguiente: commit · después lab/ cuando el gate se cumpla.*
+*Última actualización: 2026-09-02. **v0.4 · pasada del fundador aplicada en la rama `v3.3-copy` (11 cambios + 1 retiro) y aprobada en pantalla.** El camino quedó en 3 etapas ciertas, sin tags. **Bloqueo de deploy: la animación del dominó de la Etapa 3** — hasta entonces esa etapa lleva el reloj viejo, que contradice el texto. Siguiente: construir la animación en `lab/` → QA → merge → deploy.*
