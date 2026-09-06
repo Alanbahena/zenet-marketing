@@ -26,7 +26,7 @@ owner: Alan Bahena
 > **Sacarlo de ahí se puede. A los pocos que lo han logrado les costó años. Y mantenerlo vivo no termina nunca.**
 > **Nadie te vende eso: te venden dónde guardarlo. El trabajo sigue siendo tuyo.**
 
-- Corrección load-bearing (2026-08-03, del fundador): **NO decir "no se puede copiar"** — Alma Verde SÍ lo copió (con años). El problema es el **costo** (años) + el **mantenimiento** (no termina). ⚠️ Esto invalida la formulación de `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio` §6.1 ("funciona pero no se puede copiar") — pendiente actualizar ese doc.
+- Corrección load-bearing (2026-08-03, del fundador): **NO decir "no se puede copiar"** — Alma Verde SÍ lo copió (con años). El problema es el **costo** (años) + el **mantenimiento** (no termina). ✅ Aplicado en `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio` **v0.2** (§6.1 reformulada · 2026-09-05).
 - La extensión **"o en múltiples herramientas digitales"** (del fundador) convierte la objeción de Alfonso ("eso ya lo tengo en varias herramientas") en un caso del mismo problema.
 - Regla de bullets del problema: **verbos, no "falta de X"** — el mercado ocupa los sustantivos (inventario · costos · control); los verbos están vacíos (construir · mantener · ejecutar · transferir · unir). Test por línea: *¿un POS con IA podría poner esto en su landing mañana?* Si sí, no abre — va de soporte.
 

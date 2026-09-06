@@ -3,9 +3,9 @@ name: Argumentación de valor y precio — cómo se defiende el costo de Zenet e
 description: Documento de trabajo que consolida cómo se argumenta el valor económico de Zenet frente al operador sin inventar cifras. Mapa de gastos del restaurante → dónde toca Zenet · diagnóstico costo teórico vs costo real (la varianza como lo recuperable) · el punto porcentual como unidad de conversación · frontera honesta Fase 1 vs Fase 2 · síntesis del problema que Zenet realmente ataca · evaluación del precio desde el lado cliente y desde el lado Zenet · lista explícita de anti-claims. Hypothesis-level · NO redefine pricing · NO es guión de venta. Insumo para 05-wtp-validation-plan y 04-go-to-market/04-sales-motion.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-07-31
+last_updated: 2026-09-05
 status: draft
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -16,6 +16,8 @@ owner: Alan Bahena
 > Documento de trabajo derivado de una sesión de análisis del **2026-07-31**. Consolida el razonamiento económico que conecta el mapa de gastos de un restaurante con lo que Zenet Fase 1 realmente entrega — y con lo que todavía no puede prometer.
 >
 > **Estado: `draft` · hypothesis-level.** Varias piezas se van a mover cuando Fase 1 cierre alcance y costos reales. Ver §9 para los disparadores de revisión.
+>
+> **v0.2 (2026-09-05):** §6.1 reformulada por corrección del fundador — **copiar el criterio sí se puede**; el problema es el **costo** (años y dinero) y el **mantenimiento** (no termina). §6.6 y §6.7 sincronizadas con las 5 sesiones de campo corridas. El resto del documento sigue en su redacción v0.1 (31-jul).
 
 ---
 
@@ -245,9 +247,13 @@ Un cliente que no cuenta no tiene varianza que medir, y el costeo se vuelve teat
 
 ### 6.1 En una frase
 
-> **El criterio del operador funciona, pero no se puede copiar.**
+> **El criterio del operador funciona. Copiarlo se puede — pero cuesta años, y mantenerlo vivo no termina nunca.**
 
-Vive en su cabeza. Se ejecuta de memoria. Y se ejecuta distinto cada turno, con cada persona, en cada sucursal donde él no está parado.
+Vive en su cabeza, o repartido en herramientas que no se hablan. Se ejecuta de memoria, y distinto cada turno, con cada persona, en cada sucursal donde él no está parado.
+
+Sacarlo de ahí es posible: a los pocos que lo lograron les tomó **años y dinero**. Y el día que terminan, lo escrito ya empezó a envejecer — cambian los costos, cambian los proveedores, cambian las recetas, cambia la gente. Lo que se ordenó hace ocho meses ya no describe cómo se opera hoy.
+
+> **Corrección load-bearing (2026-08-03 · del fundador · aplicada en v0.2):** la formulación v0.1 —*"funciona pero no se puede copiar"*— queda **retirada**. **Alma Verde sí lo copió.** El problema no es la imposibilidad: es el **costo** y el **mantenimiento**. La raíz canónica en vivo (landing v3.3) está en `SEO and Content/_context/01-landing-page/01-copy.md` v0.4 · sección *La raíz*.
 
 ### 6.2 Cómo el análisis de costos lo comprueba
 
@@ -290,16 +296,25 @@ Explica el resto de las decisiones canónicas sin forzar ninguna:
 
 - **Por qué el beachhead son 2-3 sucursales.** No es preferencia de segmentación — es el punto exacto donde nace el dolor. Con una sucursal y el dueño adentro, el problema no existe.
 - **Por qué el verdadero incumbente es "ningún sistema".** No compites contra SoftRestaurant. Compites contra una cabeza que funciona. `[Research]` (V-001)
-- **Por qué Carlos, en Alma Verde, no habló de food cost.** Ya tenía eso resuelto — y su dolor #1 seguía siendo protocolos y mantenimiento. Misma enfermedad, otro órgano: el criterio que no alcanza a llegar a cada rincón. **N=1 · posible outlier · no pivotear con una muestra.**
+- **Por qué Carlos, en Alma Verde, no habló de food cost.** Ya tenía eso resuelto — y su dolor #1 seguía siendo protocolos y mantenimiento. **Alma Verde es la prueba de la ruta alterna:** sí se puede sacar el criterio de la cabeza sin Zenet —les tomó años— y aun así el mantenimiento sigue abierto. No contradice el planteamiento: lo sostiene por el lado caro. **N=1 · operador por encima del beachhead · no pivotear con una muestra.**
 - **Por qué la promesa es tiempo y tranquilidad, no ahorro.** Lo que se recupera cuando el criterio se copia solo es la cabeza del operador.
 
 ### 6.7 Estado de validación
 
 Esto sigue siendo **hipótesis**. Es lo que **H1-H3 de Fase A** existen para probar o tumbar.
 
-Una sesión presencial lo apoya y ninguna lo contradice todavía. Eso es **señal, no validación**.
+**Dónde está la evidencia al 2026-09-05** — 5 sesiones corridas · detalle por sesión en `04-go-to-market/08-learnings-de-validacion.md`:
 
-**Kill criteria (puesto de antemano):** si en las próximas 4-5 sesiones los operadores no reconocen este dolor con sus propias palabras —sin que se les ponga en la boca— el problema está mal planteado.
+| Sesión | Qué le hace al planteamiento |
+|---|---|
+| **#1 Carlos · Alma Verde** (14-jul · operador) | **Apoya por el lado caro.** Ya estandarizado; lo que le queda es mantenimiento y protocolos |
+| **#4 Miguel Bahena** (12-ago · dueño-payer) | **Apoya.** Nombró **la carga** como dolor #1, con sus palabras · no quiere crecer: quiere que *"todo lo extra disminuya"* |
+| **#3 Juan Pablo** (7-ago · control, bajo el beachhead) | **Matiza por abajo.** Antes del beachhead no hay criterio que extraer — pediría construcción. Acota el planteamiento, no lo tumba |
+| **#2 Arballo · #5 Alfonso Arellano** | No cuentan en el N (conector · insider). Alfonso deja la mejor señal de **H3** (hardware-agnostic), no de H1 |
+
+**Lectura honesta:** dos operadores lo apoyan, ninguno lo contradice, y **el centro del beachhead —perfil 3, sin estandarizar— sigue sin tocarse**, que es justo donde el planteamiento debería doler más. Eso es **señal, no validación**.
+
+**Kill criteria (puesto de antemano · sigue en pie):** si los operadores no reconocen este dolor con sus propias palabras —sin que se les ponga en la boca— el problema está mal planteado. **Falta el caso que más pesa: un perfil 3.**
 
 ---
 
@@ -404,7 +419,7 @@ El tercero es el más fuerte y el menos usado. Convierte $2,000/mes en algo con 
 | **Se observan COGS reales** con los primeros clientes | §7.4 completo (el argumento de "precio de validación") | Actualizar contra `04-viabilidad-economica-y-cogs` v0.2 |
 | **Primer diagnóstico teórico-vs-real de un cliente real** | §3.4 · §8 (la línea de anti-claims sobre puntos) | **Este es el disparador mayor.** Es el momento en que se puede dejar de decir "no sé" y empezar a decir un número medido. v0.1 → v1.0 |
 | **Cambia el alcance de Fase 1** (recortes o adiciones vs las 8 capacidades) | §2.3 · §5.1 mapa de fugas | Re-mapear qué fuga toca qué capacidad |
-| **4-5 sesiones de Fase A completadas** | §6.7 estado de validación | Confirmar o tumbar el planteamiento del problema (§6.1) |
+| **4-5 sesiones de Fase A completadas** | §6.7 estado de validación | **Parcialmente disparado** (5 sesiones · §6.7 actualizada 2026-09-05). Falta el caso decisivo: un operador del **perfil 3** |
 | **Se valida o se cae el anclaje dual** en sesiones reales | §7.2 | Si los operadores insisten en comparar contra POS pese al strip anti-POS, el problema es de mensaje, no de precio |
 
 ---

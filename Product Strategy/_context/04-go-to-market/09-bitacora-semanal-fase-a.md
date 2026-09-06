@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-08-30
+last_updated: 2026-09-05
 status: active
-version: 0.5
+version: 0.6
 owner: Alan Bahena
 ---
 
@@ -16,6 +16,8 @@ owner: Alan Bahena
 >
 > **Graduación:** cuando un learning es grande y canónico, gradúa a su hogar durable — docs de ICP/segmentación, `08-learnings-de-validacion.md`, o el decisions log de CLAUDE.md §4. La bitácora lo captura la semana que pasa; el doc canónico lo conserva para siempre.
 >
+> **Los números viven en `10-scorecard-fase-a.md` (desde 2026-09-05).** Ahí están el tablero del gate (estado acumulado H1-H6 + condiciones A→B + cobertura por perfil) y la serie semanal (una fila por semana). Esta bitácora **narra**; la sección `📊` de cada retro se reduce a **el delta de la semana + pointer**. Los números se teclean solo allá — así la tendencia se ve en una tabla y no en siete párrafos.
+>
 > **Un solo archivo, log corrido.** Válvula de escape si algún día se alarga (cierre de fase): mover entradas viejas a `_archive/` con prefijo de fecha (convención del workspace). No antes de tiempo.
 
 > **Plantilla de entrada** (copia y pega arriba de la más reciente):
@@ -26,7 +28,7 @@ owner: Alan Bahena
 > ▸ ✅ Qué funcionó
 > ▸ 💡 Learnings
 > ▸ 🔀 Decisiones
-> ▸ 📊 Scorecard H1–H6
+> ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
 
