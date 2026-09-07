@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 status: active
-version: 0.6
+version: 0.7
 owner: Alan Bahena
 ---
 
@@ -31,6 +31,52 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 31 ago–6 sep — "cuatro semanas sin hablar con un operador; la apuesta cambia de blanco"
+
+**▸ Foco que traíamos** (retro 24-30): ① cebar el flujo — conocido del brunch de Alfonso · Juanjo · Ana/San Miguel → **1 de 3** (Juanjo ✅ mensaje enviado por LinkedIn, **ni visto** · el conocido de Alfonso ❌ pospuesto 1-2 semanas mínimo · Ana ❌ pospuesta otra vez, 9ª semana) · **fuera del foco previo: mensaje a Algira Garzón** (consultora · canal partner potencial · LinkedIn · ni visto) · ② meter los documentos de Alma Verde a Zenet → ❌ · ③ la calculadora del punto → ❌ (diferida desde julio, 4ª retro que la carga). **Los tres focos de entrada se pospusieron por decisión explícita (5-sep), no por deriva** — ver Decisiones.
+
+**▸ 🏆 Logros**
+- **★ Landing v3.3 EN VIVO** (2-sep · tag `v3.3`): la pasada de copy del fundador, sección por sección (11 cambios + 1 retiro). §3 pasa del mercado al costo humano (*"Lo más caro de tu operación no se compra. Se carga."*) · El camino baja a **3 etapas ciertas y cero tags** — la Etapa 3 deja de ser automatización y pasa a **mantenimiento ante el cambio**, con la animación del dominó (las piezas se sacuden, el núcleo no se mueve) · §7 abre con el cambio de mercado, sin una sola cifra. Docs sincronizados: `00-estrategia` v0.3 · `01-copy` v0.4 · `02-prototipo` v3.3. Cuatro reglas de contenido quedan canónicas: cero cifras · cero colores de alerta · nunca "falta de X" · los agentes no se nombran.
+- **CLAUDE.md al día** (2-sep): cuatro semanas de trabajo que no estaban registradas (v3.1 /demo · v3.2 Hablemos · v3.3 · la demo terminada · sesiones #4 y #5 · las dos bitácoras).
+- **Las deudas de doc, cerradas en un día** (5-sep): `06-argumentacion-de-valor-y-precio` v0.2 (§6.1 con la raíz corregida — *copiar el criterio sí se puede: cuesta años y el mantenimiento no termina* · §6.6 Alma Verde como prueba de la ruta alterna · §6.7 la evidencia de las 5 sesiones) · `03-hablemos-estrategia-y-copy` v0.1 nuevo (el copy de /hablemos ya no vive solo en el HTML).
+- **`10-scorecard-fase-a` v0.1 + skill `/scorecard-fase-a-semanal`** (5-sep): los números salen de la narrativa y viven en un solo lugar — tablero del gate + serie semanal con las 9 semanas reconstruidas · 4 decisiones de conteo abiertas por escrito · esta bitácora deja de teclear números (v0.6).
+- **Producto: la V1 completa, a punto.** Task 33 cerrada y mergeada a `main` (4-sep · el caché leyendo en producción, medido) · Task 29 con sus 9 subtareas en cierre (6-sep · Alineamiento se reparte en **Recetas · Inventario · Equivalencias** · Ajustes gana la pestaña Restaurante · 12 columnas menos · `audit_claims.sh` para que los docs no vuelvan a mentir · el cierre documental explícitamente *"sin afirmar producción todavía"*).
+- **El ICP de Fase A empezó a redefinirse** desde el borrador que Alan escribió con los aprendizajes de campo — doc `11-icp-hipotesis-fase-a` en curso, puliéndose bloque por bloque. Ver Decisiones.
+
+**▸ ✅ Qué funcionó**
+- **Cerrar deudas en bloque.** Un mes abiertas, una sesión para cerrarlas (5-sep). Lo mismo con CLAUDE.md: cuatro semanas en una pasada.
+- **Sacar los números de la prosa.** La serie semanal mostró de golpe lo que siete retros diluían: 7 semanas sin movimiento, 4 consecutivas, y la entrada nunca medida. Una tabla dijo más que siete párrafos.
+- **Auditar antes de escribir.** El desfase del ICP se verificó en el filesystem (4-sep) antes de tocar una línea: tres docs pre-campo, cero graduación. Se escribe sobre lo que hay, no sobre lo que se recuerda.
+- **El método de la landing aplicado al ICP:** partir del borrador real del fundador y pulirlo bloque por bloque contra el canon, en lugar de redactar desde cero.
+
+**▸ 💡 Learnings**
+1. **★★ Cuatro semanas sin hablar con un operador, y la respuesta que emergió no fue "insistir más" sino "el blanco puede estar mal".** El beachhead declarado (2-3 sucursales · dueño con gerente · se rompió al crecer) lleva 9 semanas con N=1 y su centro nunca se tocó. Reformular el blanco es lo que pide la disciplina del propio plan (*buscar lo que refuta*). **El riesgo a vigilar es el otro:** que el doc 11, la landing nueva y el proceso de ventas sean tres piezas más construidas antes de la primera conversación nueva. El patrón *"todo construido, nada validado"* no se rompe con un documento mejor; se rompe con un mensaje enviado. El fin declarado de esta semana —sesiones con prospectos— es la vara con la que se lee la retro que sigue.
+2. **★★ El ICP vivía en tres docs pre-campo y ninguno recibió las cinco sesiones.** `04-segmentacion` v1.0 y `05-perfil-de-cliente-ideal` v1.0 (abril) + `00-customer-profile` v0.1.1 (mayo). Lo que el campo enseñó — el eje de **estandarización previa** → 3 perfiles · el beachhead acotado por tres lados con el centro sin tocar · *"el perfil 2 no compra crecimiento, compra su vida de vuelta"* · *fine dining ≠ documentado* · **"números conformes" como marcador de anti-ICP** · la carga como dolor #1 · *Zenet extrae, nunca propone* — vivía solo en `08` y aquí. La bitácora capturó; nada graduó. Es exactamente el riesgo que la regla de graduación anticipaba.
+3. **★ Dónde buscar ≠ quién califica.** Joven · abierto a lo digital · canal es *targeting*: necesario para entrar, no suficiente para contar. Quién califica sigue siendo *fit*: siente el número · hay algo que extraer · formal (RFC + CFDI + 1 año) · problema estructural, no del equipo. Sin esa separación, "joven y digital" se vuelve el ICP y el gate se llena de gente que no paga.
+4. **★ Momento ≠ trigger.** Miguel tiene dolor crónico sin evento disparador — tensiona el *"se rompió al crecer"* del beachhead (la 2ª sucursal como trigger). El estado pesa más que el evento. *(N=1)*
+5. **El canon funcionó de guardarraíl, no de freno.** Tensiones del borrador que el canon detectó: *"falta de experiencia"* describe a JP (a quien la Fase 1 no sirve) · café estaba excluido (JC Gallina ≠ ICP) · un piso de $200K/mes de ventas sube H6 a vigilancia (Zenet ≈ 0.75% de ventas) · formalidad se había quedado solo en RFC · *"el contador puede opinar"* subestima el veto silencioso.
+6. **Dos mensajes tibios por LinkedIn, ninguno visto, en la semana que no era de entrada.** Juanjo y Algira: mensajes sin abrir, links de Dub sin clic. Un "no visto" no es un no: es dato del canal, no del mensaje ni de la relación. Para contactos tibios, LinkedIn deja de ser canal de primer toque; se cambia de canal, no se espera. *(N=2 · se suma al 5 → 0 de la semana anterior · vuelve regla en la decisión #5 del scorecard)*
+7. **El vocabulario de la demo se movió debajo del guión.** Task 29 retiró *"Alineamiento"* del producto (hoy son Recetas · Inventario · Equivalencias); el run-sheet de `_templates/guion-conversacion-y-demo-fase-a.md` sigue anclado en *"Alineamiento — el corazón"* (§7, dos menciones). Deuda chica, pero es la que hace que un demo diga una palabra que la pantalla ya no muestra. Se paga al estandarizar el proceso de ventas.
+
+**▸ 🔀 Decisiones**
+- **★★ El ICP de Fase A se redefine** (doc `11-icp-hipotesis-fase-a` · en curso · hoy existe en conversación, todavía no en el repo). **La apuesta:** apuntar primero a operadores **chicos (1-2 sucursales), jóvenes y abiertos a lo digital** — early adopters — para validar rápido, y subir a restaurantes tipo Alma Verde después, con disparador medible. **Encuadre:** es un *ICP de hipótesis para la Fase A*, un experimento (qué apostamos · qué lo confirma · qué lo tumba · cuándo subimos); **no** es el ICP canónico ni una reescritura del proyecto. **Cinco decisiones de diseño ya acordadas:** (1) separar *dónde buscar* de *quién califica* · (2) perfil ③ sin estandarizar = centro · ② alta cocina = adyacente, entra · ① estandarizado (Alma Verde) = fuera de la Fase A · (3) **la carga** al centro de los problemas, no los costos (Carlos no habló de food cost · Miguel: la carga #1 · Alfonso: *"números conformes"* = anti-ICP) · (4) sin *"falta de X"* ni *"descontrol"* · (5) **consecuencia en el gate: Miguel entra al N y Alma Verde sale** — cierra la decisión #1 de `10-scorecard` §4, pero **se formaliza cuando exista el doc 11; mientras, el scorecard cuenta estricto.** Estado exacto: §1 statement v1 redactado, esperando corrección de Alan (tres calls reversibles: la edad fuera del statement · *"lo que más quiere no es crecer"* viene de Miguel, N=1 · 1-2 sucursales y no 1-3).
+- **Los tres focos de entrada se posponen, conscientemente** (Alan · 5-sep): Ana/San Miguel más tiempo · el conocido de Alfonso 1-2 semanas mínimo · Juanjo enviado, se espera. Razón: terminar la V1 completa y **salir a compartir Zenet con el ICP y el proceso de ventas claros**, comunicando bien la problemática y los mensajes clave. Secuencia declarada: ICP de hipótesis (doc 11) → copy y landing alineados a ese ICP → proceso y acercamiento de ventas v0.1, paso por paso. **El fin es concreto: tener sesiones con prospectos, empezar a vender Zenet y armar los primeros design partners.**
+- **Abierta (esperando a Alan):** dónde vive el ICP canónico cuando el experimento termine. Propuesta: bump de `05-perfil-de-cliente-ideal` a v2.0 con `04-segmentacion` y `00-customer-profile` como pointers. Se decide después del doc 11, no antes.
+- **Abierta (propuesta, no decisión):** para el proceso de ventas v0.1 la teoría ya existe (`04-sales-motion` v0.1) y los assets están en `_templates/`; lo que falta es la **ruta operativa de punta a punta**, y su espina nueva debería ser el onboarding/análisis del producto — demo *"tus números"* y clasificador de perfil a la vez — que no existía cuando se escribió el doc.
+
+**▸ 📊 Scorecard H1–H6** — sin movimiento · 4ª semana consecutiva sin conversaciones con operadores · N 1 de 5-8 (estricto) · perfil 3 en cero (9ª) · entrada 2 → 0, ninguno visto (Juanjo · Algira · LinkedIn · links Dub sin clic) · H5 pasa a 🟡 partido en la serie (alineada con el tablero · decisión #5 cerrada) · demás semáforos sin cambio · gate (b) V1 ✅ · legal sin cambio · decisión #1 (Miguel al N) en curso, se cierra con el doc 11 · scorecard → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 7–13 sep — el tríptico para salir a vender**, en este orden porque cada pieza alimenta a la siguiente:
+1. **★ Cerrar el doc 11** (ICP de hipótesis de Fase A): §1 corregido por Alan → §7 (cómo se valida cada criterio en conversación: detecta · señal · kill) → §8 (qué cambia en el gate + reconciliar `_templates/criterios-icp-y-design-partner-fase-a.md`). Cierra la decisión #1 del scorecard.
+2. **★ Copy y landing a una versión nueva que coincida con el ICP del doc 11.** El copy va primero (`01-copy` v0.5) y el diseño lo sigue, como en v2 y v3. Versión propuesta: **landing v4** (es reestructura, no retoque).
+3. **★ Documentar y estandarizar el proceso y acercamiento de ventas (v0.1):** la ruta operativa de punta a punta, del primer mensaje a la sesión, para acercarnos a prospectos con el problema y los mensajes clave bien contados.
+
+**En paralelo:** cerrar Task 29 y declarar la V1 completa en producción · registrar enviados → respondidos aunque sea 0 → 0 (decisión #4 del scorecard, activa desde hoy) · Juanjo y Algira por WhatsApp o en persona (decisión #5: para tibios, LinkedIn no es canal de primer toque).
+
+*▸ Pipeline: 1 soft-commit frío (Carlos · 3 fechas pasadas) · Miguel en pausa consciente · JP sin retomar · JC Gallina y Alan Jiménez sin respuesta · Juanjo y Algira enviados (LinkedIn · ni vistos · links sin clic) · conocido del brunch (vía Alfonso) pospuesto · Ana pospuesta (9ª semana) · 10 prospectos en "Por enviar" desde julio.*
 
 ---
 

@@ -3,9 +3,9 @@ name: Scorecard — Fase A
 description: Los números de la Fase A en un solo lugar. Dos tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil) y la serie semanal (una fila por semana, para ver la tendencia sin leer siete retros). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-05
+last_updated: 2026-09-06
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
@@ -23,7 +23,7 @@ owner: Alan Bahena
 
 ---
 
-## 1. El tablero del gate *(al 2026-09-05 · 9 semanas de Fase A)*
+## 1. El tablero del gate *(al 2026-09-06 · 9 semanas de Fase A)*
 
 ### 1.1 Gate A→B — las dos condiciones, juntas
 
@@ -46,7 +46,7 @@ owner: Alan Bahena
 | **H2** | Nuestro valor **conecta** con lo que más valoran | **Carlos:** prendió AI/chat + automatizar sus procesos; el core del demo (estandarización) no · Miguel: pitch verbal, "sí" post-pitch (cortesía posible) | **Arballo (28-jul):** *"¿otro software más?"* — declarado, social, pero bandera fuerte · **Alfonso (27-ago) T1 contaminado:** eco, no comprensión espontánea | 🟡 | 1 |
 | **H3** | Ven a Zenet **distinto** de su alternativa actual | **Alfonso (27-ago):** articuló **solo** el moat *hardware-agnostic* vs SoftRestaurant — la mejor señal de la Fase A, de quien conoce a los vendors · **Carlos:** Zenet ≠ POS, la coexistencia aterrizó | Arballo | 🟢 direccional | 1 insider + 1 op. |
 | **H4** | Está dispuesto a **dar** | **Carlos 🟢:** abrió todos sus docs · ofreció intro a Alma + departamentos · **Miguel 🟡:** relación revelada fuerte (platillo · tiempo · apertura) pero el ask de docs no se hizo como se diseñó | **JP:** puerta declarada, cero revelado · **Arballo:** ningún ask aterrizó · **Carlos frío desde agosto** | 🟡 | 1 de 3-4 |
-| **H5** | Qué **mensaje + canal** convierte | **Victor → Miguel:** ciclo completo referido→sesión presencial 🟢 · **red del programa de emprendimiento → JP:** 1ª warm real 🟢 · **Pedro → CANIRAC:** la puerta funcionó (canal post-PMF) | **Frío / LinkedIn: 5 canales tocados → 0 respuestas** (24-30 ago) · Juanjo (LinkedIn · sep): enviado, ni visto · 10 prospectos "por enviar" desde julio | 🟡 partido: **tibio funciona · frío no** | — |
+| **H5** | Qué **mensaje + canal** convierte | **Victor → Miguel:** ciclo completo referido→sesión presencial 🟢 · **red del programa de emprendimiento → JP:** 1ª warm real 🟢 · **Pedro → CANIRAC:** la puerta funcionó (canal post-PMF) | **Frío / LinkedIn: 5 canales tocados → 0 respuestas** (24-30 ago) · **31 ago–6 sep: 2 → 0, ninguno visto** — Juanjo y Algira Garzón por LinkedIn, mensajes sin abrir y links Dub sin clic → dato del canal, no del mensaje · 10 prospectos "por enviar" desde julio | 🟡 partido: **tibio funciona · frío no** | — |
 | **H6** | Existe un **pozo de valor** (painkiller, no vitamina) | *(ninguna cuantificación revelada todavía)* · **Miguel:** *"realmente pagaría"* — declarado, post-pitch, en calidez · **Alfonso:** *"un chef pagaría $2-4K"* — declarado, en **tercera persona** | **Carlos:** costos abiertos, sin cuantificar · HV-03 (el punto) corrió 1 vez, en versión aproximada | 🟡 riesgo | 0 revelados · 2 declarados sobre el ancla |
 
 **Lo que el tablero dice de un vistazo:** la VP (H1-H3) tiene señal pero no N · el compromiso revelado sigue en uno · el canal tibio produce y el frío no · y **nadie ha cuantificado todavía lo que le cuesta hoy** — que es exactamente el riesgo *"yo SOY el sistema"* que el plan pidió vigilar.
@@ -76,7 +76,9 @@ owner: Alan Bahena
 | 10–16 ago | **+1 Miguel** (perfil 2) | 1 | 0 (6ª) | s/r | **🟢** | **⬜** | 🟡 | **🟡** | 🟢 | 🟡 | Parcial — la carga como dolor #1 · 1ª WTP declarada de un dueño · bucket quieto |
 | 17–23 ago | 0 | 1 | 0 (7ª) | s/r | 🟢 | ⬜ | 🟡 | 🟡 | 🟢 | 🟡 | No — 2ª consecutiva · onboarding/análisis en construcción · Hablemos v0.4 |
 | 24–30 ago | 0 *(Alfonso · insider)* | 1 | 0 (8ª) | **5 → 0** | 🟢 | ⬜ | **🟢** | 🟡 | 🟢 | 🟡 | No — 3ª consecutiva · **gate (b) ✅ V1 demostrable** |
-| 31 ago–6 sep | 0 | 1 | 0 (9ª) | **1 → 0** (Juanjo · ni visto) | 🟢 | ⬜ | 🟢 | 🟡 | 🟢 | 🟡 | No — 4ª · landing v3.3 · deudas de doc cerradas · **el foco muta a ICP v1.0 + proceso de ventas v0.1** *(retro pendiente dom 6)* |
+| 31 ago–6 sep | 0 | 1 | 0 (9ª) | **2 → 0, ninguno visto** (Juanjo · Algira · ambos por LinkedIn · mensajes sin abrir · links Dub sin clic) | 🟢 | ⬜ | 🟢 | 🟡 | **🟡 partido** | 🟡 | No — 4ª consecutiva · landing v3.3 · deudas de doc cerradas · scorecard v0.1 · **la apuesta cambia de blanco: el ICP de Fase A se redefine** (doc 11 en curso · perfil 2-3 · 1-2 sucursales · early adopters) · gate (b) V1 ✅ · legal sin cambio |
+
+*H5 se lee 🟡 partido desde el 31 ago–6 sep para alinear la serie con §1.2 (decisión #5); las filas anteriores conservan el 🟢 del referido tibio (3-9 ago), que fue su lectura honesta en su momento.*
 
 **Lo que la serie dice de un vistazo:** 9 semanas · 2 sesiones con operador · 1 en el bucket del beachhead · perfil 3 nunca tocado · **7 semanas sin movimiento, 4 consecutivas** · y la columna *Msj → resp* casi vacía — **la entrada no se estuvo midiendo**, que es en sí un hallazgo.
 
@@ -89,7 +91,7 @@ owner: Alan Bahena
 | **Sesiones con operador** | Conversaciones esa semana con alguien que **opera un restaurante** — cuente o no al beachhead. Conectores e insiders (Arballo · Alfonso) van en cursiva y **no suman** | `08-learnings` · bitácora |
 | **N beachhead / 5-8** | Acumulado de conversaciones con el **beachhead declarado** (2-3 sucursales · sistema en la cabeza · se rompió al crecer), contra el umbral del gate. Hoy: estricto (ver §4) | gate `06-plan` §9.2 |
 | **Perfil 3** | Sesiones con el **centro del beachhead** (independiente sin estandarizar). Con contador de semanas en cero, para que el cero no se vuelva invisible. Cuenta desde la semana 1 de Fase A (6-jul) | framework 3 perfiles · bitácora 20-26 jul |
-| **Msj → resp** | Mensajes de outreach enviados esa semana → cuántos contestaron. La **única columna que mide entrada**, no producto | bitácora · Notion Pipeline |
+| **Msj → resp** | Mensajes de outreach enviados esa semana → cuántos los **vieron** → cuántos contestaron. Un no visto es dato del canal, no del mensaje (decisión #5). La **única columna que mide entrada**, no producto | bitácora · Notion Pipeline · clics en Dub · estado "visto" en LinkedIn/WhatsApp |
 | **H1–H6** | Semáforo por hipótesis según `06-plan` §2: 🟢 señal revelada fuerte · 🟡 mixto / poca data · 🔴 kill signals acumulándose · ⚠️ kill signal presente · ⬜ no probado | `08-learnings` §3 de cada sesión |
 | **¿Movió?** | Sí / Parcial / No + una línea. El resumen honesto de la semana | retro |
 
@@ -99,10 +101,11 @@ owner: Alan Bahena
 
 | # | Decisión | Estado |
 |---|---|---|
-| 1 | **¿Miguel suma al N del gate?** La bitácora dice que no (perfil 2, adyacente); el conteo luego se escribió como *"1-2 de 5-8"*. Por eso hay **dos columnas** (sesiones con operador · N beachhead). Falta decidir si el gate se cuenta **estricto** (solo beachhead → N=1) o **amplio** (cualquier operador → N=2) | ⬜ · hoy la tabla usa **estricto** |
+| 1 | **¿Miguel suma al N del gate?** La bitácora dice que no (perfil 2, adyacente); el conteo luego se escribió como *"1-2 de 5-8"*. Por eso hay **dos columnas** (sesiones con operador · N beachhead). Falta decidir si el gate se cuenta **estricto** (solo beachhead → N=1) o **amplio** (cualquier operador → N=2) | ⬜ **en curso** · se cierra con `11-icp-hipotesis-fase-a` (la apuesta: Miguel entra al N, Alma Verde sale) · mientras, la tabla sigue **estricta** |
 | 2 | **¿El soft-commit de Carlos cuenta como intent-to-join?** Fue explícito el 14-jul; lleva 3 fechas pasadas y un mes frío | ⬜ · hoy marcado `?` |
 | 3 | **Volver al canon H1-H6 en los run-sheets.** Las sesiones #4 (V1-V8) y #5 (T1-T5) usaron mapas propios; aquí se tradujeron (el mapa T lo dice explícito: T1·H2 · T4·H3 · T5·H1 · precio·H6; el V es directo: V1·H1 · V3·H2 · V4·H4 · V5·H6 · V8·H5). Para que la tabla se llene sola, el score de cada sesión debe salir ya en H | ⬜ · aplica desde la próxima sesión |
 | 4 | **Medir la entrada.** *Msj → resp* solo tiene dato en 2 de 9 semanas. Cada retro registra enviados y respondidos, aunque sea 0 → 0 | ⬜ · aplica desde la retro del 6-sep |
+| 5 | **Medir "visto" y alinear H5.** La entrada se registra como enviados → vistos → respondidos; un no visto es dato del canal, no kill de H5. La serie lee H5 como 🟡 partido desde el 31 ago–6 sep (igual que §1.2); las filas anteriores conservan su lectura. Para contactos tibios, LinkedIn no es canal de primer toque | ✅ **cerrada 6-sep** |
 
 ---
 
