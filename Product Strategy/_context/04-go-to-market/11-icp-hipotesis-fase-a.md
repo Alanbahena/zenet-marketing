@@ -418,7 +418,7 @@ Los assets de la Fase A se escribieron en julio contra el beachhead anterior. Cu
 | Asset | Qué cambia | Cuándo |
 |---|---|---|
 | `criterios-icp-y-design-partner-fase-a.md` | Se marca **superseded para la Fase A** por §2 de este doc; conserva los criterios de *design partner* (compromiso · reciprocidad), que no cambian | Al cerrar v0.1 |
-| `guion-conversacion-y-demo-fase-a.md` | Se realinea al orden y las preguntas de §7 · scores en H1-H6 canon · **se retira "Alineamiento"** (el producto ya dice Recetas · Inventario · Equivalencias) | Al cerrar v0.1 — **es el que más urge**, es lo que se lleva a la mesa |
+| `guion-conversacion-y-demo-fase-a.md` | Se realinea al orden y las preguntas de §7 · scores en H1-H6 canon · **se retira "Alineamiento"** (el producto ya dice Recetas · Inventario · Equivalencias) | ✅ **hecho 8-sep → v0.5** (base §1-§5 realineada · demo con vocabulario actual · instancia #4 = plantilla del perfil ③ · instancias #1-#3 intactas) |
 | `plantilla-runsheet.html` | Añade los nueve checks de §2.2 + la casilla de perfil + el ask con fecha | Con el guión |
 | `mensajes-outreach-fase-a.md` | Mensajes apuntados a este ICP (la carga, no el crecimiento) · canales de §2.1 (CETYS · segundo grado) · LinkedIn no como primer toque con tibios | Con el copy v0.5 (retro · foco #2) |
 

@@ -1,92 +1,138 @@
 ---
 name: Guión de conversación y demo — Fase A
-description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 3 instancias reales — Carlos (gerente · presencial), Juan Pablo (control · videollamada) y Miguel Bahena (chef-dueño fine dining · presencial · la variante dueño-puro sabor chef · con mapa de validación V1-V8). Draft — se afina con el uso. Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a (§5 Mom Test) y 04-sales-motion-three-session-demo.
+description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 3 instancias reales — Carlos (gerente · presencial), Juan Pablo (control · videollamada) y Miguel Bahena (chef-dueño fine dining · presencial · la variante dueño-puro sabor chef · con mapa de validación V1-V8). v0.5 (2026-09-08) — la base reusable (§1-§5) se realinea al ICP de hipótesis de la Fase A (11-icp-hipotesis-fase-a §2 · §6 · §7): perfiles por estandarización previa, los 9 checks, las preguntas 'última vez', el orden de 25 min, cuándo se dice el precio, registro en H canon; el vocabulario de demo pasa al actual del producto (Estandarización → Catálogos · Recetas · Inventario · Equivalencias); instancia #4 = plantilla para el perfil ③. Las instancias #1-#3 se conservan como historia. Operacionaliza 06-plan (§5 Mom Test) y 04-sales-motion.
 type: product-strategy
-last_updated: 2026-08-11
+last_updated: 2026-09-08
 status: draft
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
 # Guión de conversación y demo — Fase A
 
-> El **guión base** para las conversaciones + demos 1:1 de validación. Una estructura, no un libreto rígido: se adapta a cada prospecto. Como el kit de mensajes, crece **desde casos reales**.
+> El **guión base** para las conversaciones + demos 1:1 de validación. Una estructura, no un libreto rígido: se adapta a cada prospecto. Crece **desde casos reales** (instancias #1-#3 abajo, intactas como historia).
 >
-> **Estado draft v0.1** — nació de la instancia de Carlos (Alma Verde). Falta afinarlo y sacar la variante de dueño puro. El único trabajo de la conversación es **aprender** (validar H1-H6), no vender.
+> **v0.5 (2026-09-08) — realineado al ICP de hipótesis de la Fase A** (`04-go-to-market/11-icp-hipotesis-fase-a.md`). El único trabajo de la conversación sigue siendo **aprender** (H1-H6), no vender — pero ahora se aprende **contra un perfil concreto y con nueve checks que deciden si la conversación suma al N**. Si el doc 11 y este guión difieren, manda el doc 11: se corrige aquí, no allá.
 >
-> **Formato de salida:** cada instancia se exporta a PDF con la plantilla estándar aprobada (`_templates/plantilla-runsheet.html` · instrucciones adentro) → `03_Marketing/Sesiones-Fase-A/`. **Frontera:** aquí vive el **guión** (estable, reusable). El **a-quién / cuándo / resultado** vive en el **cockpit de Notion** (`🎯 Zenet — Fase A` · Pipeline). Estrategia completa: `04-go-to-market/06-plan-de-activacion-y-validacion-fase-a.md` (§5) · cierre en Fase B: `04-go-to-market/04-sales-motion-three-session-demo.md`.
+> **Formato de salida:** cada instancia se exporta a PDF con `_templates/plantilla-runsheet.html` → `03_Marketing/Sesiones-Fase-A/`. **Frontera:** aquí vive el **guión** (estable, reusable). El *a-quién / cuándo / resultado* vive en Notion (Pipeline); la evidencia por sesión en `08-learnings`; el marcador en `10-scorecard`.
 
 ---
 
-## 1. El eje de calibración: ¿con quién hablas?
+## 1. El eje de calibración: ¿con quién hablas — y de qué perfil?
 
-Antes de usar el guión, ubica el rol del prospecto. Cambia el objetivo de la sesión y **qué NO pedirle**.
+Dos preguntas antes de sentarte. Cambian el objetivo de la sesión, qué se sondea y **qué NO se pide**.
 
-| Rol | Qué valida bien | Qué NO le pidas | Objetivo principal |
+### 1.1 ¿Qué perfil es? (el eje = nivel de estandarización previa · `11` §1.2)
+
+| Perfil | Cómo lo reconoces antes | En la Fase A | Objetivo de la sesión |
 |---|---|---|---|
-| **Dueño / operador (payer)** | H1-H3 (la VP) · **H6 pozo de valor real** (presupuesto/WTP) · H4 | — | Validar + soft-commit a co-construir |
-| **Gerente / stakeholder (adopter)** | H1-H3 desde la **trinchera operativa** · H4 (da tiempo/acceso) · H6 solo **costo operativo** (horas/caos), NO presupuesto | Cierre · pricing · decisión de compra | Champion interno + **cuña al dueño** |
-| **Insider (chef/consultor)** | H1-H3 como **experto** · H6 pozo de valor de la categoría · intros | Compromiso de pago (no es su decisión) | Feedback experto + intros |
+| **③ Independiente sin estandarizar** | 1-2 sucursales · lo carga él · de memoria y WhatsApp | **El centro — suma al N** | Validar H1-H3 · **probar si hay de dónde extraer** · ask de documentos |
+| **② Alta cocina / chef-dueño** | Chef-propietario · calidad como obsesión · semi-documenta fragmentado | **Adyacente — suma** | Igual que ③ + vigilar *"no quiero crecer"* |
+| **②b Cafetería con cocina propia** | Hace sus sándwiches/desayunos · compra y transforma insumos · 2+ en cocina | **Entra si hay BoH** | Confirmar cocina propia en los primeros 5 min · vigilar H6 (ventas bajas) |
+| **① Estandarizado / gran producción** | Fichas, manual, alguien de compras, gerente | **Carril de producto — no suma** | Feedback de la app · probar el análisis con sus documentos · pedir intros |
+| **Control (bajo el beachhead)** | No opera todavía / informal / nada escrito | **Fuera** | Aprender dónde está el piso · no invertir sesión completa |
 
-> **Regla que atraviesa todo:** identidad **"yo SOY el sistema"** (VoC V-001/V-010). Nunca insinúes que "les falta sistema" — es un ataque percibido. Frame siempre: *"extiende / ordena / amplifica lo que ya construiste."*
+### 1.2 ¿Con quién hablas? (quién valida qué · `11` §2.3)
 
----
+| Interlocutor | Puede validar | **No le pidas** | Objetivo |
+|---|---|---|---|
+| **Dueño-operador** (paga **y** carga) | Todo: H1-H6 + intent | — | Validar completo · el ask · (2º contacto) el precio |
+| **Gerente / chef** (carga, no paga) | H1-H3 desde la trinchera · **H4** si cumple (docs · *"muéstraselo al dueño"*) | Precio · decisión · intent | Champion + **la cuña al dueño** |
+| **Dueño ausente** (paga, no carga) | H6 · intent · decisión · H4 | H1-H3 como si viviera la carga (solo declarado) | Pozo de valor · el precio · la firma — con su gerente validando el dolor |
+| **Conector / insider** | H5 (canal) · señales de segunda mano | Compromiso de pago | Feedback experto + **intros al perfil ③** |
 
-## 2. La estructura base (Mom Test → demo → compromiso)
+**El N se cuenta por cuenta, no por persona.** Una cuenta abierta por el gerente está a medias hasta que el dueño entra.
 
-**0 · Antes de ir (si hay fecha).** Pide algo chico 1 día antes para personalizar el demo: *"para enseñarte algo hecho a la medida de [su restaurante], ¿me pasas el menú o tus platillos más vendidos?"* Convierte el demo de genérico a **"tus números"**. *(Menú/recetas sí; facturas solo si es el dueño — es data sensible.)*
-
-**1 · Reconecta + encuadra (2 min).** Gancho personal / memoria compartida + honestidad: *"vengo a aprender de ti y enseñarte cómo quedó, no a venderte nada — está temprano."* Baja la guardia.
-
-**2 · Explora SU mundo — Mom Test (lo más largo · 15-20 min).** Preguntas por su vida, **no por tu idea. Aquí no se pitchea.**
-- *"Platícame un día normal tuyo — ¿qué es lo primero que haces?"*
-- *"¿Qué es lo que más tiempo te come en la semana?"*
-- *"Cuando abrieron otra sucursal / creció la operación, ¿qué se complicó?"*
-- *"¿Cómo llevan hoy inventarios / compras / costos / recetas? Enséñame."* → que te **muestre** el cuaderno/Excel (revelado > declarado · te dice cuál es el verdadero incumbente).
-- *"La última vez que algo se salió de control — una merma fea, un faltante, un platillo mal costeado — ¿qué pasó?"*
-- Escucha para **H1** (¿resuenan los pains?) y **H3** (¿cómo lo resuelve hoy?).
-
-**3 · Cuantifica el costo (5 min).** *"¿Cuánto te cuesta eso hoy?"* — horas, un consultor, merma, retrabajo, un empleado. Con dueño = pozo de valor real (**H6**). Con gerente = costo operativo (la munición que le llevas al dueño). Ojo el *"no me cuesta nada, yo lo hago"* → es la señal de WTP débil que quieres detectar.
-
-**4 · Demo — solo después de entender su mundo (10-15 min).** No tour de features. Conecta cada parte con lo que **acaba de decir**: *"me dijiste que X te come tiempo — mira esto."* Preséntalo como *"un grupo de consultores especializados en la operación de [su restaurante]."* Coexistencia: *"no reemplaza tu POS ni a tu gente, los ordena y potencia."* Honesto sobre qué ya funciona vs. qué viene (producto ~35%). Detecta el **"aha"** (**H2**) — qué parte lo hace inclinarse (típicamente el flujo de estandarización de catálogos).
-
-**5 · Compromiso chico revelado (5 min).** El ask NO es cierre:
-- *"¿Qué le falta para que a ti te sirviera de verdad?"* (co-constructor)
-- Un paso chico: 2da junta · foto de sus recetas/facturas para un demo a la medida · un intro.
-- Que **él** proponga el siguiente paso = la señal revelada más fuerte (**H4**).
+> **Regla que atraviesa todo:** *"yo SOY el sistema"* (VoC V-001/V-010). Nunca *"les falta sistema"*, nunca *"descontrol"*. Su sistema funciona: **se sostiene con él** — Zenet lo extiende, lo ordena, lo mantiene. **Zenet extrae, nunca propone.**
 
 ---
 
-## 3. Qué escuchar (mapeado a hipótesis)
+## 2. La estructura base — 25 minutos (Mom Test → pitch corto → ask)
 
-| Señal | Lee |
+**0 · Antes de ir.** Averigua lo que no hay que preguntar en la mesa: **formalidad** (factura · sitio · RFC) y **ventas** (rango · o ya llegó por `/hablemos`). Si hay fecha, pide algo chico un día antes: *"para enseñarte algo a la medida, ¿me pasas el menú o tus platillos más vendidos?"* — convierte el demo en *"tus números"* y ya es una prueba de **extraer**.
+
+**1 · Reconecta + encuadra (2 min).** Memoria compartida + honestidad: *"vengo a aprender de cómo operas — no a venderte nada."* Nada de Zenet hasta el paso 9.
+
+**2-8 · Su mundo — las preguntas que hacen que cuente (15-18 min · `11` §7.4).** Una por dolor, todas *"última vez"*. **Regla:** preguntar qué pasó y **dejar que él nombre el impacto** — si dice *"margen"* solo, vale el doble.
+
+| | La pregunta | Escucha | Revela de paso |
+|---|---|---|---|
+| **2 · P1 la carga** | *"Llévame por tu día de ayer, desde que despertaste."* · *"¿Qué pasa si te vas tres días?"* | Cadena de incendios · la energía, no solo el tiempo · *"si no estoy, no sale"* | carga la operación · ¿dueño-operador o ausente? |
+| **3 · estructural** | *"Cuéntame la última vez que algo salió mal en la operación — ¿qué pasó?"* | Habla del **proceso** (*"no estaba escrito"*) o de la **persona** (*"no se comprometen"* → A4) | eliminatorio #3 |
+| **4 · P4 gente** | *"¿Cuándo fue la última vez que se te fue alguien clave, o tuviste mucha rotación? ¿Qué se fue con esa persona y cuánto tardaste en recuperarlo?"* | Nombra lo perdido y un tiempo · vs *"se va uno, entra otro, igual"* | estructural · extraer |
+| **5 · P5 el número** | *"¿Cuándo fue la última vez que te subió un insumo importante? ¿Qué pasó — y cómo te enteraste?"* → **"¿Y qué hiciste al respecto?"** | Insumo + efecto **+ emoción** · *"me enteré hasta el cierre"* · **recosteó a mano** = cuantificó solo lo que le cuesta (→ H6) · vs *"ahí va, todo sube"* / no hizo nada | **siente el número** · extraer · H6 |
+| **5b · la composición** | *"¿Cuánto te cuesta hacer tu platillo más vendido?"* → *"¿Y cuánto te queda al mes — lo sabes por tus números o por lo que queda en la cuenta?"* | Número **desglosado** → conoce la composición (①) · *"por lo que queda en la cuenta"* → **el ICP esperado** | extraer · HV-01 |
+| **6 · extraer** | *"¿Qué tienes hoy por escrito, aunque sea suelto? ¿Recetas, listas, un Excel, fotos, el grupo de WhatsApp?"* → que te **muestre** | Nombra 2+ fuentes · vs *"todo en mi cabeza"* (se anota, no se descarta) | **hay algo que extraer** · cocina propia |
+| **7 · P2 + perfil** | *"¿Cómo le enseñas a alguien nuevo tu platillo estrella?"* · *"¿Cuándo cambiaste la carta por última vez — y qué tuviste que actualizar después?"* | Fichas/manual → ① · semi-documenta → ② · de memoria, *"yo les enseño"*, no actualizó nada → **③** · la cascada receta→costo→capacitar | **perfil** · se rompe al cambiar |
+| **8 · P3 + decide** | *"¿Dónde vive hoy tu operación — qué apps, cuadernos, Excel? Si sube un precio, ¿en cuántos lados lo cambias?"* · *"Si esto te sirviera, ¿quién más tendría que verlo?"* | 3+ lugares · *"lo persigo por todos lados"* · *"yo"* / *"yo y mi socio, el jueves"* vs vago (A8) | nada se conecta · **decide solo** |
+
+**9 · Pitch de dos minutos.** Solo ahora, y amarrado a lo que dijo: *"Un equipo de especialistas que construye tu sistema desde lo que ya tienes —tus recetas, tu Excel, tu WhatsApp—, lo mantiene vivo cuando algo cambia y lo hace correr todos los días. Tú decides; Zenet lo carga. No reemplaza tu POS ni a tu gente."* Si hay pantalla y es 2º contacto → **§2.1 demo**.
+
+**10 · Delega la carga, no el criterio.** *"Si esto existiera, ¿qué esperarías que hiciera — y qué no?"* Escucha: *"que me quite X de encima"* ✓ · *"que decida por mí"* ✗ (A5).
+
+**11 · El ask (5 min · la única medida de H4).** Nunca sin uno, **pequeño, concreto y con fecha**: **tres documentos en 48 horas** · **la intro al dueño o al socio** · **segunda sesión con fecha** (para ver su análisis) · **el link de `/demo`** y observar. Que **él** proponga el siguiente paso es la señal más fuerte. *El "sí" no vale; lo que llega, sí.*
+
+> **El precio (`11` §7.7):** **no en el primer café** — es del 2º contacto, con su análisis en la mano. Pero **nunca se evade si él pregunta**: *"mil quinientos al mes por sucursal; los Socios Fundadores entran con 20-30% menos, para siempre"* — **siempre con el punto**: *"a tus ventas, un punto de food cost son tantos pesos al mes; esto cuesta menos que un punto."* Se anota la reacción: pide los pasos ✓ · compara con su POS = anclaje POS (mensaje, no precio) · *"está caro"* sin contrapropuesta ✗. **"¿Pagarías?" no se pregunta nunca.**
+
+### 2.1 El demo — 2º contacto, con sus documentos (≤15 min · NO tour)
+
+El demo **es el análisis de sus documentos** — *onboarding = demo = clasificador de perfil*. Se corre antes de la sesión con lo que mandó (paso 0 / ask anterior) y se le enseña **lo suyo**, no el producto.
+
+- **Puente (30 seg):** *"Todo lo que me contaste —que lo cargas tú, que se rompe cuando cambias la carta— mira cómo se ve tu operación puesta en orden. No es otra herramienta: es un equipo que te la ordena, y la última palabra es tuya."*
+- **Lo que se enseña, en el vocabulario de la pantalla (sep-2026):** **Inicio** (tu punto de partida · el avance) → **Sucursales** → **Estandarización**, que hoy tiene cuatro secciones: **Catálogos** (categorías, familias, unidades) · **Recetas** (tus recetas y sus ingredientes ligados al inventario) · **Inventario** (tus insumos con unidades y presentaciones) · **Equivalencias** (qué equivale a qué entre recetas e inventario) → **Manual Operativo** (tu manual basado en datos) → **Ajustes**. El corazón está en **Recetas + Inventario + Equivalencias**: *"le tomas foto a tu receta y Zenet la vuelve estructura · conecta cada ingrediente con tu inventario y te marca lo que no cuadra."* **Propose-then-confirm:** *"Zenet propone, tú confirmas — nunca escribe solo."*
+- **Honesto sobre el estado:** lo que corre hoy es la extracción y el orden (Etapas 1-2 de la landing); el mantenimiento ante el cambio (Etapa 3) *"hacia allá va — todavía no está."*
+- **Guardarraíles:** **UN** Zenet que se vuelve especialista por sección — nunca *"8 agentes"* · **no** integraciones (POS/Excel/contabilidad) · **no** fechas · **no** *"opera tu negocio solo"* · el precio solo con el punto (arriba). ⚠️ *"Alineamiento"* **ya no existe en la app** — no lo digas.
+- **"Aha" a vigilar (H2):** la foto de su receta vuelta estructura · el mapeo con su inventario · el análisis diciéndole algo de **su** operación que reconoce como suyo (= *hay de dónde extraer* ✓).
+
+---
+
+## 3. Qué escuchar — los nueve checks + el perfil (`11` §2.2 · §7)
+
+Se marcan **todos** al salir: ✓ · ✗ · *no sondeado* (cuenta como ausente). Suma al N: **3 eliminatorios + ≥ 4 de 6 calificadores**, con quién valida qué (§1.2).
+
+| # | Check | ✓ Confirma | ✗ Tumba |
+|---|---|---|---|
+| **E1** | **Formal** | Contador · factura regular · 1+ año | *"Todavía no doy factura"* (A9) |
+| **E2** | **Cocina propia** | Transforma insumos · recetas propias · 2+ en cocina | Revende · barra (A6) |
+| **E3** | **Estructural, no del equipo** | Habla del proceso y del cambio | Habla de la persona: *"no se comprometen"* (A4) |
+| **C4** | Carga la operación | Todo pasa por él · el WhatsApp no para | Gerente que resuelve; él ve números el lunes |
+| **C5** | **Siente el número** | Número **+ emoción** · una pérdida con fecha | *"Ahí va, normal"* — **números conformes** (A1) |
+| **C6** | **Hay algo que extraer** | 2+ fuentes · **manda algo en 48 h** | Nada escrito **y** no manda (A2 · se anota, kill del experimento si 3×) |
+| **C7** | Delega la carga, no el criterio | *"Que me quite X"* · quiere seguir decidiendo | *"Que decida por mí"* (A5) |
+| **C8** | Ventas $200K – $2M | Se ubica en el rango | < $200K = precaución · > $2M con 1 sucursal → ① |
+| **C9** | Decide solo | *"Yo"* · *"yo y mi socio, el jueves"* | Vago, sin quién ni cuándo (A8) |
+
+**Perfil:** ① fichas/manual · ② chef-dueño semi-documentado · ③ de memoria y a quien esté en turno. **H1 por sesión:** 🟢 si reconoce **3+ de 5 problemas** con episodio propio · 🟡 si 1-2 · ⚠️ si aparece otro dolor mayor repetido (anótalo textual).
+
+| Señal en vivo | Lee |
 |---|---|
-| *"eso me pasa exacto"* · lenguaje espejo espontáneo | **H1** ✅ |
-| *"¿cómo consigo esto?"* · *"¿cuándo lo puedo usar?"* | **H2** ✅ (deseo) |
-| *"así lo llevo y funciona"* · *"yo ya tengo eso"* | **H3** ⚠️ posible kill (o incumbente fuerte) |
-| Cumple la tarea · da el intro · propone siguiente paso | **H4** ✅ revelado |
-| Cuantifica un costo real | **H6** ✅ |
-| *"está padre"* y nada más | Cortesía — **no** es señal |
+| *"Eso me pasa exacto"* · lenguaje espejo espontáneo | **H1** ✓ |
+| *"¿Cómo consigo esto?"* · *"¿cuándo lo puedo usar?"* | **H2** ✓ |
+| Articula **solo** por qué es distinto de su POS / Excel / cabeza | **H3** ✓ · *"yo ya tengo eso"* = ⚠️ |
+| Cumple la tarea · da el intro · propone el siguiente paso | **H4** ✓ revelado |
+| Cuantifica un costo real (horas · el fin de semana recosteando) | **H6·pozo** ✓ |
+| Oye el precio y pide los pasos | **H6·precio** ✓ |
+| *"Está padre"* · *"pagaría"* sin precio dicho · *"un chef pagaría…"* | Cortesía / declarado — **no es señal** |
 
 ---
 
-## 4. Kill criteria (a la mano, definidos de antemano)
+## 4. Kill criteria (a la mano, de antemano)
 
-- Se pone **defensivo** ("aquí ya está todo ordenado") y no resuena ningún pain → H1/H3 débil.
-- **Entusiasmo verbal total pero cero acción** (no agenda, no da intro, no involucra a quien decide) → H4 débil.
-- *"No me cuesta nada / lo hago yo gratis / es un nice-to-have"* → H6 en rojo.
+**De la conversación** (`11` §6): se pone defensivo y ningún dolor resuena → H1/H3 ✗ · culpa al equipo (A4) · pide que la IA decida (A5) · números conformes (A1) · nada que extraer y pide que le propongan (A2) · switcher serial (A7) · sin decisor (A8) · informal (A9).
 
-Regístralo, **no lo fuerces**. Busca activamente la evidencia que refuta.
+**Del experimento** (`11` §0.3 — se cuentan entre sesiones, no en una): **no hay de dónde extraer** 3× → el piso está más arriba · **dice que sí y no da** 3× → el targeting selecciona curiosos · **H6 🔴 debajo de ~$300K** · **otro dolor mayor que no es la carga**, repetido.
+
+Regístralo, **no lo fuerces**. Busca activamente lo que refuta.
 
 ---
 
-## 5. Después (loggear en caliente)
+## 5. Después — dentro de 24 horas (`11` §7.9)
 
-Justo al salir (la memoria decae → racionalizas):
-- Separa lo **dicho** de lo **hecho**.
-- Actualiza el **Scorecard** (Read + N por hipótesis).
-- Sube quotes a la **VoC library** (`Market Research/02-customer-research/07-voice-of-customer`).
-- Mueve al prospecto de etapa en el **Pipeline**.
+1. **Entrada en `08-learnings-de-validacion.md`** con: los **nueve checks** (✓ / ✗ / no sondeado) · el **perfil** · **precio dicho sí/no + reacción** · scores en **H1-H6 canon** (no mapas propios — decisión #3 del scorecard) · cada señal `[revelado]` o `[declarado]` · dicho vs hecho.
+2. **¿Suma al N?** → regla `11` §2.3 → se registra el domingo con `/scorecard-fase-a-semanal` en `10-scorecard`.
+3. **Verbatims** → `02-customer-research/07-voice-of-customer.md`, con nombre, sesión y tipo.
+4. **Pipeline de Notion:** etapa + el ask con su fecha límite. Si no llega en una semana → A3, sin drama.
+5. **El ask cumplido** → los documentos entran al producto → su análisis = el material del 2º contacto.
 
 ---
 
@@ -154,7 +200,7 @@ Justo al salir (la memoria decae → racionalizas):
 
 **1 · El sistema te guía (2 min).** Inicio: barra de progreso de estandarización + pasos gated → *"no es una hoja en blanco; te lleva de la mano."* Sucursales (canvas): *"no te deja estandarizar hasta conocer tus sucursales reales"* (habla a lo multi-sucursal).
 
-**2 · Alineamiento — el corazón (6-7 min · aquí gastas el tiempo).**
+**2 · Alineamiento — el corazón (6-7 min · aquí gastas el tiempo).** *(vocabulario de julio · hoy la pantalla dice **Estandarización → Recetas · Inventario · Equivalencias**; ver §2.1)*
 - Lista de recetas + barra **"X de N listas"** → *"así ves, receta por receta, qué tan estandarizada está tu operación"* (amarra a su 0-10).
 - **Import por foto/archivo** — si mandó sus recetas, usa las **SUYAS**: *"le tomas foto a tu receta y Zenet la vuelve estructura."* ← el wow.
 - **Mapeo ingrediente→inventario + "Revisa esta receta"**: *"conecta cada ingrediente con tu inventario y te marca los errores, como un especialista revisando."* ← días→horas.
@@ -168,7 +214,7 @@ Justo al salir (la memoria decae → racionalizas):
 **4 · Cierra → al ask:** *"¿Qué te pareció? ¿Qué le falta para que a ti te sirviera?"*
 
 **⚠️ Guardrails de honestidad** *(de las reglas del propio producto):*
-- **NO abras** Estructura / Normalización / Manual Operativo (páginas *"próximamente"* con copy viejo *"solo Clasificación disponible"* → te contradice). Si entras: *"esa nota está desactualizada, ya salió Catálogos y Alineamiento."*
+- **NO abras** Estructura / Normalización / Manual Operativo (páginas *"próximamente"* con copy viejo *"solo Clasificación disponible"* → te contradice). Si entras: *"esa nota está desactualizada, ya salió Catálogos y Alineamiento."* *(histórico · sep-2026: Alineamiento ya no existe; las secciones son Catálogos · Recetas · Inventario · Equivalencias)*
 - **UN** asistente que se vuelve especialista por sección — NO "8 agentes" como pantallas separadas.
 - **NO** precio · **NO** promesas de integración (POS/Excel/contabilidad) · **NO** fechas · **NO** *"opera tu negocio solo"*.
 - El asistente de Inicio es read-only (explica, no ejecuta).
@@ -350,13 +396,35 @@ Justo al salir (la memoria decae → racionalizas):
 
 ---
 
-## 10. Variantes por construir
+## 10. Instancia #4 — plantilla · perfil ③ (la conversación que falta)
 
-| Variante | Qué añadir sobre la base | Trigger |
-|---|---|---|
-| **Dueño puro** (Alma · San Miguel · Diego) | H6 **pozo de valor real** (presupuesto/WTP · sin forzar el precio exacto) · ángulo payer · cierre-a-conversación (no a venta) · *base: instancia #3 (Miguel · sabor chef-dueño) — falta el sabor casual/perfil 3* | Cuando responda un dueño |
-| **Insider** (Victor · remoto) | Menos "su día operativo", más **feedback experto de la categoría** + pedir intros · demo por videollamada | Guión Mom Test de Victor (pendiente) |
+> Para la próxima conversación con un **independiente sin estandarizar** — el centro del ICP, nueve semanas en cero. Se llena cuando aparezca el nombre; el papel ya está listo. Se exporta con `plantilla-runsheet.html`.
+
+**Brief:** *nombre* · *restaurante · tipo · ciudad* · *sucursales* · *cómo llegó* (referido de __ · CETYS · conocido de conocido · `/hablemos`) · *interlocutor* (dueño-operador / gerente / dueño ausente) · *lo que ya sé* (formalidad · ventas si llegaron por el formulario · algo que mandó).
+
+**Objetivos, en orden:** ① H1 con sus palabras (3+ de 5) · ② **¿hay de dónde extraer?** — la hipótesis del perfil ③ · ③ los nueve checks completos · ④ un ask con fecha.
+
+**Antes de entrar (10 seg):** su vida, no mi idea · nada de Zenet hasta el paso 9 · *"yo SOY el sistema"* · lo que no sondee cuenta como ausente · **no digo el precio salvo que pregunte** (y entonces, con el punto).
+
+**La sesión (25-40 min):** el orden de §2 tal cual — día de ayer → última vez que algo salió mal → última vez que se fue alguien → última vez que subió un insumo (+ *qué hiciste*) → platillo más vendido / cómo sabe cuánto le queda → qué tiene por escrito (**que me lo enseñe**) → platillo estrella / última carta → dónde vive su operación / quién más tendría que verlo → pitch 2 min → qué esperaría que hiciera → **ask**.
+
+**Cheat-sheet (léela en vivo):** *"si no estoy, no sale"* = C4 ✓ · número + emoción = C5 ✓ · *"todo en mi cabeza"* = anota, no descartes · *"yo les enseño"* = ③ · *"que decida por mí"* = A5 · *"no se comprometen"* = A4 · *"ahí va, normal"* = A1.
+
+**El ask (elige uno):** ☐ tres documentos en 48 h — *"¿me mandas tus recetas como las tengas, una lista de insumos y una foto de tu Excel o tu cuaderno?"* · ☐ intro al socio/dueño · ☐ 2ª sesión con fecha para ver su análisis · ☐ link de `/demo`.
+
+**Al salir (≤ 24 h):** los nueve checks · perfil · H1-H6 canon · revelado/declarado · verbatims · ¿suma al N? · el ask con fecha límite en el Pipeline.
 
 ---
 
-*Draft v0.4 · 2026-08-11 · v0.4 añade la instancia #3 Miguel Bahena (chef-dueño fine dining · primera variante de dueño puro · mapa de validación V1-V8 · el ask productizado con /demo). Pendiente: afinar con el uso · el sabor casual/perfil 3 de la variante dueño · guión insider de Victor. El a-quién/cuándo/resultado vive en el Pipeline de Notion, no aquí.*
+## 11. Variantes por construir
+
+| Variante | Qué añadir sobre la base | Trigger |
+|---|---|---|
+| **Cafetería con cocina (②b)** | Confirmar cocina propia en los primeros 5 min (E2) · vigilar H6 desde el rango de ventas · el mismo orden | Cuando aparezca una |
+| **Dueño ausente + gerente** (beachhead anterior · ahora adyacente) | Dos pasos: gerente valida el dolor (H1-H4) → dueño valida el pozo y el precio · H6 nunca por boca del gerente | Cuando la puerta sea un gerente |
+| **Perfil ① — carril de producto** (Alma Verde · Carlos) | No es validación: es **prueba del análisis con sus documentos** + feedback de la app + intros. No suma al N. Corre con los docs que ya están en poder del fundador | Cuando se corran los documentos de Alma Verde |
+| **Insider / conector** (Victor · Alfonso) | Menos "su día", más **intros al perfil ③** (*"¿a quién conoces que tenga un restaurante chico y lo cargue solo?"*) + feedback de categoría | Cada café con un conector |
+
+---
+
+*Draft v0.5 · 2026-09-08 · la base reusable (§1-§5) realineada al ICP de hipótesis de la Fase A (`11-icp-hipotesis-fase-a` §2 · §6 · §7): perfiles por estandarización previa · quién valida qué · los nueve checks · las preguntas "última vez" (dos del fundador) · el orden de 25 min · el precio se dice, no se pregunta · demo con el vocabulario actual del producto (Estandarización → Catálogos · Recetas · Inventario · Equivalencias — "Alineamiento" retirado) · registro en H canon · instancia #4 = plantilla del perfil ③. Instancias #1-#3 intactas como historia. v0.4 (11-ago) añadió la instancia #3 Miguel. El a-quién/cuándo/resultado vive en Notion; la evidencia en `08`; el marcador en `10`.*
