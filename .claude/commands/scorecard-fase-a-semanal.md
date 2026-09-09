@@ -35,7 +35,7 @@ Build a draft with the source of every field:
 
 - **Sessions this week** — name · date · proposed classification (`beachhead` / `adyacente` / `control` / `conector-insider`) · counts toward N? (proposed — the user confirms).
 - **Mensajes → respuestas** — only if the retro states numbers. Otherwise mark **MISSING** (you will ask).
-- **H1–H6 changes** — from the LEARNINGS §3 score table of each session. If a session used a non-H map, translate and **flag the translation**: `V1→H1 · V3→H2 · V4→H4 · V5→H6 · V8→H5` · `T1→H2 · T4→H3 · T5→H1 · precio→H6`.
+- **H1–H6 changes** — from the LEARNINGS §3 score table of each session. H6 is read in two parts since v0.3 of the scorecard: *pozo* (¿le cuesta hoy? — cuantificación revelada) and *precio* (¿aceptó el ancla cuando se le dijo, con el punto?). If a session used a non-H map, translate and **flag the translation**: `V1→H1 · V3→H2 · V4→H4 · V5→H6 · V8→H5` · `T1→H2 · T4→H3 · T5→H1 · precio→H6`.
 - **Gate changes** — (a) N · compromisos revelados · intent-to-join · H6 status · (b) V1 · legal.
 - **Perfil 3 counter** — previous value + 1, unless a perfil-3 operator session actually happened (then it resets and the cell shows the session).
 - **¿Movió?** — `Sí` / `Parcial` / `No` + one line, taken from the retro's own framing (do not soften it).
@@ -45,7 +45,7 @@ Build a draft with the source of every field:
 Ask in one short block (AskUserQuestion or a numbered list). Always ask if the retro does not answer it:
 
 1. **Mensajes enviados → respondidos esta semana.** `0 → 0` is a valid answer — record it. Never leave the cell blank if the user can answer.
-2. **For each session:** ¿suma al N del beachhead? (skip if §4 decision #1 is closed and the classification is unambiguous).
+2. **For each session:** ¿suma al N? Apply the rule in `11-icp-hipotesis-fase-a.md` §2.3 (3 eliminatorios · ≥ 4 of 6 calificadores · quién valida qué · N por cuenta) — propose the result with the checks you could read from `08`, and ask only if a check is unreadable. Also ask: **¿se dijo el precio? ¿con el punto? ¿reacción?** (H6·precio · `11` §7.7).
 3. **¿Hubo compromiso cumplido** (docs enviados · intro dado · 2ª junta agendada) **o intent-to-join?**
 4. **¿Cambió algo en la condición (b) legal?**
 
@@ -55,7 +55,7 @@ Do not ask what the retro already answers. Do not ask about things you can read.
 
 Present, in this order:
 
-a. **The new §2 row**, in the table's exact column order: `Semana · Sesiones con operador · N beachhead / 5-8 · Perfil 3 · Msj → resp · H1 · H2 · H3 · H4 · H5 · H6 · ¿Movió?`. Carry semáforos forward from the last row; **bold only the ones that changed**. `s/r` stays `s/r` if the user did not answer.
+a. **The new §2 row**, in the table's exact column order: `Semana · Sesiones con operador · N ICP Fase A / 5-8 · Perfil 3 · Msj → resp · H1 · H2 · H3 · H4 · H5 · H6 · ¿Movió?`. Carry semáforos forward from the last row; **bold only the ones that changed**. `s/r` stays `s/r` if the user did not answer.
 b. **§1 diff** — only if there is new evidence: which H cell changes (evidence text · kill · read · N), which gate row changes, cobertura de perfil, and the header date `(al YYYY-MM-DD · N semanas de Fase A)`. If nothing changed: *"§1: sin cambios salvo la fecha."*
 c. **The one-line `📊` for the BITACORA** entry, replacing the body of its `**▸ 📊 Scorecard H1–H6**` section (or inserting it before `▸ 🎯` if missing): `**▸ 📊 Scorecard H1–H6** — <delta in one line> · scorecard → \`10-scorecard-fase-a.md\``
 d. **Frontmatter bumps** — SCORECARD `last_updated` + patch version (`0.1 → 0.2 → …`); BITACORA `last_updated` only if you touch it.
