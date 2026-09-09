@@ -2,9 +2,9 @@
 name: Guión de conversación y demo — Fase A
 description: El guión base (reusable) para las conversaciones + demos 1:1 de validación de la Fase A. Estructura Mom Test → cuantifica el costo → demo → compromiso chico. Se construye desde instancias reales (como el kit de mensajes). Incluye el eje de calibración (dueño/payer vs gerente/adopter vs insider), qué escuchar mapeado a las 6 hipótesis, kill criteria, y 3 instancias reales — Carlos (gerente · presencial), Juan Pablo (control · videollamada) y Miguel Bahena (chef-dueño fine dining · presencial · la variante dueño-puro sabor chef · con mapa de validación V1-V8). v0.5 (2026-09-08) — la base reusable (§1-§5) se realinea al ICP de hipótesis de la Fase A (11-icp-hipotesis-fase-a §2 · §6 · §7): perfiles por estandarización previa, los 9 checks, las preguntas 'última vez', el orden de 25 min, cuándo se dice el precio, registro en H canon; el vocabulario de demo pasa al actual del producto (Estandarización → Catálogos · Recetas · Inventario · Equivalencias); instancia #4 = plantilla para el perfil ③. Las instancias #1-#3 se conservan como historia. Operacionaliza 06-plan (§5 Mom Test) y 04-sales-motion.
 type: product-strategy
-last_updated: 2026-09-08
+last_updated: 2026-09-09
 status: draft
-version: 0.5
+version: 0.6
 owner: Alan Bahena
 ---
 
@@ -70,7 +70,7 @@ Dos preguntas antes de sentarte. Cambian el objetivo de la sesión, qué se sond
 
 **10 · Delega la carga, no el criterio.** *"Si esto existiera, ¿qué esperarías que hiciera — y qué no?"* Escucha: *"que me quite X de encima"* ✓ · *"que decida por mí"* ✗ (A5).
 
-**11 · El ask (5 min · la única medida de H4).** Nunca sin uno, **pequeño, concreto y con fecha**: **tres documentos en 48 horas** · **la intro al dueño o al socio** · **segunda sesión con fecha** (para ver su análisis) · **el link de `/demo`** y observar. Que **él** proponga el siguiente paso es la señal más fuerte. *El "sí" no vale; lo que llega, sí.*
+**11 · El ask (5 min · la única medida de H4).** Nunca sin uno, **pequeño, concreto y con fecha**: **las fotos de sus últimas facturas por WhatsApp** (el más fácil — todos las tienen · desde ~14-sep entran directo a Zenet y producen el 2º contacto con *sus* compras y precios) · **tres documentos en 48 horas** (recetas · lista · Excel) · **la intro al dueño o al socio** · **segunda sesión con fecha** (para ver su análisis) · **el link de `/demo`** y observar. Que **él** proponga el siguiente paso es la señal más fuerte. *El "sí" no vale; lo que llega, sí.*
 
 > **El precio (`11` §7.7):** **no en el primer café** — es del 2º contacto, con su análisis en la mano. Pero **nunca se evade si él pregunta**: *"mil quinientos al mes por sucursal; los Socios Fundadores entran con 20-30% menos, para siempre"* — **siempre con el punto**: *"a tus ventas, un punto de food cost son tantos pesos al mes; esto cuesta menos que un punto."* Se anota la reacción: pide los pasos ✓ · compara con su POS = anclaje POS (mensaje, no precio) · *"está caro"* sin contrapropuesta ✗. **"¿Pagarías?" no se pregunta nunca.**
 
@@ -410,7 +410,7 @@ Regístralo, **no lo fuerces**. Busca activamente lo que refuta.
 
 **Cheat-sheet (léela en vivo):** *"si no estoy, no sale"* = C4 ✓ · número + emoción = C5 ✓ · *"todo en mi cabeza"* = anota, no descartes · *"yo les enseño"* = ③ · *"que decida por mí"* = A5 · *"no se comprometen"* = A4 · *"ahí va, normal"* = A1.
 
-**El ask (elige uno):** ☐ tres documentos en 48 h — *"¿me mandas tus recetas como las tengas, una lista de insumos y una foto de tu Excel o tu cuaderno?"* · ☐ intro al socio/dueño · ☐ 2ª sesión con fecha para ver su análisis · ☐ link de `/demo`.
+**El ask (elige uno):** ☐ **facturas por WhatsApp** — *"¿me mandas fotos de tus últimas facturas o recibos al WhatsApp? Con eso te enseño tus compras y qué te subió"* · ☐ tres documentos en 48 h — *"¿me mandas tus recetas como las tengas, una lista de insumos y una foto de tu Excel o tu cuaderno?"* · ☐ intro al socio/dueño · ☐ 2ª sesión con fecha para ver su análisis · ☐ link de `/demo`.
 
 **Al salir (≤ 24 h):** los nueve checks · perfil · H1-H6 canon · revelado/declarado · verbatims · ¿suma al N? · el ask con fecha límite en el Pipeline.
 
@@ -427,4 +427,4 @@ Regístralo, **no lo fuerces**. Busca activamente lo que refuta.
 
 ---
 
-*Draft v0.5 · 2026-09-08 · la base reusable (§1-§5) realineada al ICP de hipótesis de la Fase A (`11-icp-hipotesis-fase-a` §2 · §6 · §7): perfiles por estandarización previa · quién valida qué · los nueve checks · las preguntas "última vez" (dos del fundador) · el orden de 25 min · el precio se dice, no se pregunta · demo con el vocabulario actual del producto (Estandarización → Catálogos · Recetas · Inventario · Equivalencias — "Alineamiento" retirado) · registro en H canon · instancia #4 = plantilla del perfil ③. Instancias #1-#3 intactas como historia. v0.4 (11-ago) añadió la instancia #3 Miguel. El a-quién/cuándo/resultado vive en Notion; la evidencia en `08`; el marcador en `10`.*
+*Draft v0.6 · 2026-09-09 · el ask #1 pasa a **facturas por WhatsApp** (Compras + Zenet en WhatsApp listos para SF ~14-sep · la vía fácil de *extraer* para el perfil ③). v0.5 · 2026-09-08 · la base reusable (§1-§5) realineada al ICP de hipótesis de la Fase A (`11-icp-hipotesis-fase-a` §2 · §6 · §7): perfiles por estandarización previa · quién valida qué · los nueve checks · las preguntas "última vez" (dos del fundador) · el orden de 25 min · el precio se dice, no se pregunta · demo con el vocabulario actual del producto (Estandarización → Catálogos · Recetas · Inventario · Equivalencias — "Alineamiento" retirado) · registro en H canon · instancia #4 = plantilla del perfil ③. Instancias #1-#3 intactas como historia. v0.4 (11-ago) añadió la instancia #3 Miguel. El a-quién/cuándo/resultado vive en Notion; la evidencia en `08`; el marcador en `10`.*

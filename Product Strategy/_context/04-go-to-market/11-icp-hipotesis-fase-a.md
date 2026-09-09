@@ -55,7 +55,7 @@ Los umbrales son los del gate A→B (`06-plan` §9.2), aplicados a **este** perf
 | Señal | Umbral | Por qué |
 |---|---|---|
 | H1-H3 en 🟢 sobre 5-8 conversaciones con el perfil ③/② | 5-8 | El gate, sin cambio |
-| **Hay de dónde extraer:** el onboarding/análisis del producto corre con los documentos que el operador ya tiene (recetas sueltas · un Excel · fotos · el WhatsApp) y produce algo que él reconoce como suyo | ≥ 3 de las primeras 5 sesiones | La hipótesis que el perfil ③ tiene que pasar y el ① no necesitaba — *"Zenet extrae, nunca propone"* `[Campo · S#1]` |
+| **Hay de dónde extraer:** el onboarding/análisis del producto corre con los documentos que el operador ya tiene (recetas sueltas · un Excel · fotos · el WhatsApp) y produce algo que él reconoce como suyo | ≥ 3 de las primeras 5 sesiones | La hipótesis que el perfil ③ tiene que pasar y el ① no necesitaba — *"Zenet extrae, nunca propone"* `[Campo · S#1]`. **Nota 9-sep:** con **Compras + Zenet en WhatsApp** (listos para SF ~14-sep) la barrera baja — puede no tener recetas ni Excel, pero **facturas tiene todos**; una foto al chat ya es extraer. Es la vía de entrada natural del perfil ③ |
 | Compromisos **revelados** (manda docs · agenda 2ª · da un intro) | ≥ 3-4 | El joven-abierto dice que sí a todo; lo que cuenta es lo que hace |
 | Intent-to-join — *"quiero entrar"*, **conociendo el precio y los términos** | ≥ 1-2 | El *pagaría* revelado más alto que existe antes de firmar |
 | **H6 · pozo** no en 🔴 — cuantifica un costo real, aunque sea en horas | — | Con ventas de $200K-2M/mes el precio deja de ser invisible; hay que verlo aparecer como *painkiller* |
@@ -364,7 +364,7 @@ Formalidad y ventas se averiguan **antes** o llegan por `/hablemos`; en la mesa 
 
 Nunca se termina sin un compromiso **pequeño, concreto y con fecha**. Uno de estos, el que la conversación permita:
 
-- **Tres documentos en 48 horas** — recetas, una lista, fotos, lo que tenga (alimenta *extraer* y el análisis).
+- **Las fotos de sus últimas facturas por WhatsApp** (desde ~14-sep, directo a Zenet) **y/o tres documentos en 48 horas** — recetas, una lista, lo que tenga. Las facturas son el ask más fácil que existe: todos las tienen, y con Compras producen el 2º contacto con *sus* números.
 - **La intro al dueño o al socio** — si se habló con el gerente.
 - **Segunda sesión con fecha** — para ver su análisis.
 - **El link de `/demo`** — y observar qué hace con él.
