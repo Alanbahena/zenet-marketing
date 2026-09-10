@@ -2,7 +2,7 @@
 name: Landing page · estrategia y estructura
 description: El fundamento de la landing de Zenet · v0.4 = la estrategia de la v4 (en construcción · la v3.3 sigue en vivo) · su trabajo con dos entradas (primer contacto digital para el ICP de la Fase A + página de confianza tras la conversación presencial) · las 6 decisiones (4 de junio + D0 + D1) · audiencia = el ICP de hipótesis de la Fase A · la narrativa v4 (Sinek + raíz "el caos no es el precio" + hilo "cargar" · el momento sube a §2 con el dominó) · arquitectura de 10 secciones con lector y componente · las capas · las cercas · historial v1→v4. La estrategia vive aquí; el copy en 01-copy; el diseño en 02-prototipo-y-diseno. Agent-readable.
 type: seo-content
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 status: active
 version: 0.4
 owner: Alan Bahena

@@ -38,7 +38,9 @@ owner: Alan Bahena
 > | 12 | **Las facturas NO entran al ask de documentos** | No alimentan el análisis, alimentan Compras. Viven en el paso 04. El ask del bloque 2 se queda intacto |
 > | 13 | **Gate de deploy compartido con la v4** | El PDF y Compras + WhatsApp estarán listos en días (estimado del fundador: semana del 14-sep). La página se escribe en presente y **se deploya cuando los tres sean ciertos** — junto con la landing v4, no antes |
 >
-> **Estado:** ✅ construido en `demo.html` (rama `v4`) · revisado en pantalla por el fundador el 10-sep · **sin deploy** hasta el gate. El lab queda en `lab/v4-demo.html`.
+> **Estado:** ✅ **EN VIVO en `zenetapp.com/demo`** (2026-09-10 · tag `v4.0`, junto con la landing v4). El lab queda en `lab/v4-demo.html`.
+>
+> **Decisión de honestidad al publicar (10-sep):** el **PDF ya corre**; **Compras y Zenet en WhatsApp todavía no** (días). La landing se publicó tal cual porque **describe el camino en narrativa**; **el paso 04 de esta página lleva la píldora *"En construcción — con los primeros Socios Fundadores"*** porque aquí no es narrativa: es una **instrucción** que el operador intentaría el primer día. **Regla que queda:** la narrativa puede describir el camino; **las instrucciones solo pueden pedir lo que ya funciona.** La píldora se retira en el v4.1.
 >
 > **Lo que sigue sin resolver:** el **aviso de privacidad formal** (pendiente desde la v0.1 · el bloque 3 enlaza a `/privacidad`, que existe, pero el aviso formal sube de prioridad al recibir estados de resultados) · las **capturas reales** del PDF cuando exista (hoy la escena es SVG).
 

@@ -2,7 +2,7 @@
 name: Landing page · copy por sección
 description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 status: active
 version: 0.5
 owner: Alan Bahena
@@ -14,7 +14,7 @@ owner: Alan Bahena
 >
 > Estados: ✅ cerrado v3 · ✏️ borrador · 🔧 reescribir · 🔍 comprimir · 📝 boceto capturado, copy pendiente.
 
-> ✅ **v0.5 COMPLETA EN PAPEL (2026-09-09 · 10/10 secciones) — el copy de la landing v4.** Estrategia en `00-estrategia-y-estructura.md` **v0.4** (D0 dos entradas · D1 cifras de contexto en §2 · 10 secciones · Compras + WhatsApp en la Etapa 1 · *ves → ordenas → resistes*). **La v0.4 de abajo (= la v3.3 EN VIVO) se conserva intacta** como base y como historia; cada sección de la v4 se escribe **encima**, una por turno, con OK del fundador antes de pasar a la siguiente. Vocabulario del producto = el de la pantalla (Inicio · Sucursales · Estandarización → Catálogos · Recetas · Inventario · Equivalencias · Manual Operativo · Ajustes). Nunca "agente de compras": **Zenet en WhatsApp**.
+> ✅ **v0.5 ✓ EN VIVO (2026-09-10 · tag `v4.0` · 10/10 secciones) — el copy de la landing v4.** Estrategia en `00-estrategia-y-estructura.md` **v0.4** (D0 dos entradas · D1 cifras de contexto en §2 · 10 secciones · Compras + WhatsApp en la Etapa 1 · *ves → ordenas → resistes*). **La v0.4 de abajo (= la v3.3 EN VIVO) se conserva intacta** como base y como historia; cada sección de la v4 se escribe **encima**, una por turno, con OK del fundador antes de pasar a la siguiente. Vocabulario del producto = el de la pantalla (Inicio · Sucursales · Estandarización → Catálogos · Recetas · Inventario · Equivalencias · Manual Operativo · Ajustes). Nunca "agente de compras": **Zenet en WhatsApp**.
 >
 > | # | Sección v4 | Estado |
 > |---|---|---|
@@ -474,7 +474,7 @@ Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo)
 9. **§8-10 sin cambio**, con dos adiciones opcionales (el historial de compras en el piso · la meta description para el lector frío).
 10. **Honestidad:** cero tags en §5 y §6 · un tag en §4 (04) · Compras + WhatsApp entran porque estarán listos para SF la semana del 14-sep — con degradación escrita por sección si se retrasan.
 
-**Pendientes para el build (`lab/` → v4.0):** ~~fuente/medio del 40%~~ ✅ verificada (El Imparcial 12-ago-2026 · CANIRAC nacional) · el 6-20% queda fuera hasta tener fuente publicada · `02-prototipo-y-diseno` **v4.0 draft** (el spec de diseño de la v4 — el v3.3 ya estaba documentado desde el 2-sep) · las capturas de producto (decisión #8: ilustrativas declaradas o SF con permiso) · pruebas en móvil de 2 · 3 · 6 (las cercas están escritas en cada sección) · `02-demo` v0.2 · nota de research con los datos del fundador (`05-market-insights/02-datos-de-mercado-tijuana-2026.md`).
+**Pendientes tras el deploy (→ v4.1):** ~~fuente/medio del 40%~~ ✅ verificada (El Imparcial 12-ago-2026 · CANIRAC nacional) · el 6-20% queda fuera hasta tener fuente publicada · `02-prototipo-y-diseno` **v4.0 draft** (el spec de diseño de la v4 — el v3.3 ya estaba documentado desde el 2-sep) · las capturas de producto (decisión #8: ilustrativas declaradas o SF con permiso) · pruebas en móvil de 2 · 3 · 6 (las cercas están escritas en cada sección) · `02-demo` v0.2 · nota de research con los datos del fundador (`05-market-insights/02-datos-de-mercado-tijuana-2026.md`).
 
 ---
 

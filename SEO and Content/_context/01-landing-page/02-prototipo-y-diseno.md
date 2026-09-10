@@ -1,10 +1,10 @@
 ---
 name: Landing page · prototipo y diseño
-description: v4.0-DRAFT (2026-09-10) = el spec de diseño de la landing v4, EN CONSTRUCCIÓN, como bloque arriba; debajo, intacto, el spec v3.3 de lo que está EN VIVO. v4 — 10 secciones · pantallas reales donde existe la pantalla · el dominó como gráfica en §2 con micro-motion · el trato sin capturas (§4 promete, §5 prueba) · Etapa 1 = Compras + Zenet en WhatsApp · puntos de progreso en las tres escenas del camino · la consulta se conserva como cierre de §5 · §6 En concreto en acordeón móvil · presupuesto de peso · plan de lab/ · QA y deploy gate v4. Anterior — El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
+description: v4.0 (2026-09-10) = el spec de diseño de la landing v4, **EN VIVO en zenetapp.com (tag v4.0)**, como bloque arriba; debajo, intacto, el spec v3.3 de lo que está EN VIVO. v4 — 10 secciones · pantallas reales donde existe la pantalla · el dominó como gráfica en §2 con micro-motion · el trato sin capturas (§4 promete, §5 prueba) · Etapa 1 = Compras + Zenet en WhatsApp · puntos de progreso en las tres escenas del camino · la consulta se conserva como cierre de §5 · §6 En concreto en acordeón móvil · presupuesto de peso · plan de lab/ · QA y deploy gate v4. Anterior — El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-09-09
+last_updated: 2026-09-10
 status: active
-version: 4.0-draft
+version: 4.0
 owner: Alan Bahena
 ---
 
@@ -116,7 +116,7 @@ Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza
 
 Regla heredada: **el lab decide, el index es la verdad** — verificar el index después de integrar, no solo el lab. Orden elegido por riesgo: primero las tres secciones con cercas de móvil (2 · 6 · 3), luego las de producto (4 · 5), que dependen de las capturas.
 
-## v4 · G-bis. El build — INTEGRADO 2026-09-09 (rama `v4`, sin deploy)
+## v4 · G-bis. El build — ✅ **EN VIVO 2026-09-10 · tag `v4.0`**
 
 Las diez secciones viven ya en `index.html`. **131 KB de HTML · 10 secciones · 9 scripts inline · 47 commits en la rama.** Lo que decidió la integración, más allá de pegar los labs:
 
@@ -132,7 +132,9 @@ Las diez secciones viven ya en `index.html`. **131 KB de HTML · 10 secciones ·
 
 **Recortes de copy hechos en pantalla durante la integración** (todos registrados en `01-copy`): §3 los cinco cuerpos a 4-5 líneas · §4 pasos 01 y 02 (el 02 repetía su propio encabezado) y los dos cierres — el anti-POS a dos líneas y el párrafo final sin *"detecta, sugiere y acompaña"* · §6 tarjetas 02 y 03 · **§2 titular nuevo: "termina en tu día a día"**. La regla que emergió: **en las tres secciones de tarjetas (§3 · §4 · §6), cuerpo corto y remate en negritas**; cuando una tarjeta se ve "grotesca" el problema es el texto, no la caja.
 
-**Lo que falta para el tag `v4.0`:** revisión del fundador en navegador real (animaciones · los puntos) · **móvil real** (§2 · §3 · §6) · las capturas de producto cuando Compras y WhatsApp estén en staging (hoy hay ilustraciones SVG del mismo tamaño: entran sin mover el layout) · OG image + meta description · el gate de §I.
+**Deploy ejecutado 2026-09-10:** merge `--no-ff` `v4`→`main` (`eb46e20`) + tag **`v4.0`** + verificación en vivo (`/` · `/demo` · `/privacidad` · `/hablemos` · OG image = 200, y el copy nuevo presente en las tres páginas). **El gate se levantó con una sola condición del fundador:** el **PDF del análisis ya corre**; **Compras y Zenet en WhatsApp no todavía** (los está terminando, días). Decisión: **la landing describe el camino en narrativa y se publica tal cual** —si en la mesa preguntan, la respuesta es *"eso entra esta semana"*, que es una conversación normal de fundador— pero **`/demo` paso 04 lleva la píldora *En construcción*** porque ahí no es narrativa: es una **instrucción** que el operador intentaría el primer día. La distinción queda como regla: **la narrativa puede describir el camino; las instrucciones solo pueden pedir lo que ya funciona.**
+
+**Pendiente para el v4.1:** retirar la píldora del paso 04 · **las capturas reales** de Compras y WhatsApp (hoy ilustraciones SVG del mismo tamaño: entran sin mover el layout) · refrescar el caché de OG en WhatsApp/FB si el preview sale viejo · aplicar los **puntos de progreso** también a las escenas que quedaron en producción de la v3.3 *(ya no aplica: las tres escenas son las nuevas)*.
 
 ## v4 · H. QA v4 (añade al §8 v3.3)
 
