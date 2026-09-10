@@ -193,7 +193,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 **Los 5 verbos — cada uno con su pantalla** *(componente: **un panel de pantalla, cinco pasos** — la fila de pasos de la v3.3 se conserva; debajo, un solo panel muestra la pantalla del paso activo, que avanza al hacer scroll o al tocar el paso · en móvil, riel vertical con la pantalla plegada bajo cada paso · solo pantallas de lo que corre)*:
 
 **01 · Lo construye desde lo que ya tienes**
-> Recetas en Excel, fotos de tus facturas, el cuaderno de la cocina — los mandas como están, **por WhatsApp o desde la app**, y Zenet los convierte en tu sistema.
+> Recetas en Excel, fotos de tus facturas, el cuaderno — los mandas como están, **por WhatsApp o desde la app**, y Zenet los convierte en tu sistema.
 > *Pantalla:* **Zenet en WhatsApp** — una foto de factura entrando al chat y la respuesta de Zenet confirmando qué leyó.
 
 **02 · Lo refuerza con un solo cerebro operativo** *(🔄 del fundador · elegido 2026-09-09 entre A "refuerza con" · B "conecta en" · C "vuelve un solo"; "amarra" descartado por el fundador)*
