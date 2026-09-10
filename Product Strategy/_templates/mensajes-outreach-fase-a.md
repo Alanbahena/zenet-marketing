@@ -1,14 +1,122 @@
 ---
 name: Mensajes de outreach — Fase A
-description: Los mensajes base (templates) para el outreach 1:1 de la Fase A del reclutamiento de design partners. Se construyen DESDE mensajes reales (no abstractos) — cada prospecto real se redacta y luego se generaliza a template con [variables]. Incluye los 5 levers, el formato de prospect brief, la taxonomía de tipos de mensaje, y los mensajes por tipo (insider · pedido de intro · ICP · LinkedIn DM · seguimiento · intro reenviado por conector). Operacionaliza el plan 06-plan-de-activacion-y-validacion-fase-a. El tracking de a-quién-se-mandó vive en el cockpit de Notion (Pipeline — Fase A), NO aquí.
+description: Los mensajes base (templates) para el outreach 1:1 de la Fase A. v0.2 (10-sep-2026) los realinea al ICP de hipótesis (doc 11): el ask #1 deja de ser una llamada y pasa a ser "mándame fotos de tus últimas facturas", entra el tipo #7 (el ask de la factura, la puerta más barata que tenemos), se redacta el #5 (seguimiento de hilo frío, insider e ICP), y el #4 (LinkedIn) se reencuadra como refuerzo y NO como primer toque. La v0.1 —6 tipos con casos reales de la Ola 1— se conserva íntegra debajo.
 type: product-strategy
-last_updated: 2026-07-17
+last_updated: 2026-09-10
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
 # Mensajes de outreach — Fase A
+
+> ## 🔄 v0.2 (2026-09-10) — realineados al ICP de hipótesis
+>
+> **Qué cambió afuera:** el **doc 11** (`04-go-to-market/11-icp-hipotesis-fase-a.md`) redefinió a quién buscamos, **Compras + Zenet en WhatsApp** dio una puerta nueva, y la **landing v4** ya educa sola. Los mensajes de la v0.1 describen a un operador que ya no es el centro y piden lo que más cuesta dar: una reunión.
+>
+> ### Tres correcciones que atraviesan todos los mensajes
+>
+> | # | Antes (v0.1) | Ahora (v0.2) | De dónde sale |
+> |---|---|---|---|
+> | 1 | *"dueños de restaurantes independientes **en crecimiento (2-3 sucursales)** que batallan con el orden"* | *"dueños de restaurantes **chicos —una o dos sucursales—** que **cargan la operación ellos mismos**"* | `11` §1.1 · §1.2 (el eje es la estandarización previa, no el número de sucursales) |
+> | 2 | **El ask = una llamada / un café** | **El ask #1 = "mándame fotos de tus últimas facturas"** · la conversación viene después, con algo en la mano | `11` §7.8 · guión v0.6 · es lo único que un perfil ③ puede dar **sin preparar nada** |
+> | 3 | *"orden y eficiencia · procesos, protocolos"* | **la carga**: *"que la operación deje de correr con tu energía"* · y el número: *"qué subió y cuánto pesa al mes"* | `11` §3 (la carga es el dolor #1) · §5.3 |
+>
+> **Lo que NO cambia** (invariables de la v0.1, siguen vigentes): coexistencia (*"sobre lo que ya tienes, no reemplaza"*) · *sistema* / *equipo de especialistas*, nunca *herramienta* · *cerebro operativo* / *mano derecha* · co-constructor, no venta · honestidad (*"está temprano"*) · **el link siempre en texto**, nunca dentro de un audio · **nada de precio ni descuentos en el primer toque**.
+>
+> ---
+>
+> ### #7 · NUEVO — El ask de la factura *(la puerta más barata que tenemos)*
+>
+> **Cuándo:** primer toque con un operador tibio, o segundo toque cuando el primero no produjo reunión. **Por qué funciona:** no le pide tiempo, no le pide preparar nada, no le pide decidir. Le pide algo que **ya existe en su teléfono** — y le devuelve un número suyo. Es el mago-de-Oz productizado: hoy lo corres tú a mano; con Compras vivo, lo corre Zenet.
+>
+> **Mensaje (WhatsApp · texto plano):**
+>
+> > Hola [Nombre], ¿cómo va todo? [gancho personal específico].
+> >
+> > Te quería pedir un favor chiquito, y de paso te va a servir a ti: mándame por aquí **fotos de tus últimas 5 facturas de compra** — como estén, de proveedor de abarrotes, de frutas y verduras, de lo que sea.
+> >
+> > Con eso te regreso **qué te subió de precio desde la última vez y cuánto pesa eso al mes** en lo que compras. Es lo que estoy construyendo con Zenet y quiero probarlo con números reales, no con ejemplos.
+> >
+> > Sin compromiso de nada — si te sirve, platicamos; si no, te quedas con el dato.
+>
+> **Reglas del ask:**
+> - **Cinco facturas, no "tus facturas"** — un número cerrado se puede cumplir hoy; un pedido abierto se posterga.
+> - **"Como estén"** — la mitad de la resistencia es creer que hay que ordenar antes.
+> - **Se devuelve algo, siempre.** Si no puedes correrlo en 48 h, no mandes el mensaje: un ask que no se paga quema la relación.
+> - **No mencionar la app, el acceso ni el precio.** Este mensaje pide facturas, nada más.
+> - **Registro:** cada envío al scorecard (`10-scorecard-fase-a` §2) como *mensaje enviado*; si contesta con facturas, es **la señal de canal más limpia que tenemos** (H5) — y un ensayo de H1 sin haberle pedido una hora.
+>
+> ---
+>
+> ### #5 · Seguimiento de hilo frío — *(estaba pendiente desde julio · se redacta aquí)*
+>
+> **Regla:** un solo seguimiento, con **motivo nuevo**. Sin reproche, sin *"solo dándole seguimiento"*, sin preguntar si vio el mensaje. Si este no contesta, **el hilo se cierra** y se registra como tal — no se insiste tres veces.
+>
+> **A · Insider / asesor (caso vivo: Juanjo Gutiérrez · LinkedIn, un mes sin respuesta)**
+>
+> > Hola Juanjo, ¿cómo vas?
+> >
+> > Te escribí hace unas semanas y sé lo que es tener la bandeja llena, así que no te robo tiempo. Te cuento en corto por qué me interesaba tu lectura: construí **Zenet** —un sistema para el back de restaurantes chicos aquí en Tijuana— y tú **ya vendiste software a restaurantes y cafés en esta ciudad**. Eso es exactamente lo que a mí no me está saliendo: las conversaciones.
+> >
+> > No busco venderte nada ni pedirte trabajo. Media hora de tu experiencia, cuando puedas, y te muestro dónde va: **zenetapp.com**
+>
+> > **Por qué así:** el gancho es **su** expertise en lo que Alan está atorado (*"vendiste software a restaurantes en TJ"*), no el producto. Y nombra el problema real —*las conversaciones*— porque a un operador experimentado le interesa más un problema honesto que un pitch pulido. El ask es media hora, sin agenda comercial.
+>
+> **B · Operador ICP que no contestó**
+>
+> > Hola [Nombre], ¿cómo va la operación?
+> >
+> > Te escribí hace un rato de un proyecto para restaurantes; no te vuelvo a insistir con eso. Solo te dejo algo que quizá te sirva: si me mandas **fotos de tus últimas 5 facturas de compra**, te regreso qué te subió de precio y cuánto pesa al mes. Sin compromiso.
+> >
+> > Y si no es el momento, todo bien — aquí sigo: **zenetapp.com**
+>
+> > **Por qué así:** el segundo toque **cambia el ask** (de reunión a facturas) en lugar de repetirlo. *"No te vuelvo a insistir"* baja la guardia y es cierto: es el último.
+>
+> ---
+>
+> ### #8 · NUEVO — Conocido de conocido *(el canal que el doc 11 pone primero)*
+>
+> **Contexto:** `11` §2.1 declara los canales tibios como la puerta principal (**conocidos de conocidos · CETYS · referidos**) y **LinkedIn NO como primer toque**. Este mensaje lo manda **el conocido**, no tú — variante corta del #6, para operadores chicos.
+>
+> > [Nombre], ¿te acuerdas de [conector]? Me pasó tu contacto.
+> >
+> > Estoy construyendo **Zenet**, un sistema para el back de restaurantes chicos aquí en Tijuana — la idea es que la operación deje de correr con la energía del dueño. Está temprano y estoy platicando con unos cuantos operadores para moldearlo con lo que pasa de verdad en la cocina, no con teoría.
+> >
+> > ¿Te late un café de 20 minutos? Y si prefieres algo más fácil: mándame **fotos de tus últimas 5 facturas** y te regreso qué te subió de precio y cuánto pesa al mes.
+> >
+> > Aquí puedes ver por dónde va: **zenetapp.com**
+>
+> > **Doble ask a propósito** (café **o** facturas): el operador elige la barrera que puede pagar hoy. El primero da conversación; el segundo, dato y una razón para volver a escribir.
+>
+> ---
+>
+> ### #4 · DM de LinkedIn — 🔄 reencuadrado: **NO es primer toque**
+>
+> `11` §2.1 lo dice explícito: **LinkedIn no como primer toque** con este ICP — el operador chico de Tijuana no vive ahí. Se usa solo en dos casos:
+> 1. **Refuerzo** de un mensaje ya mandado por WhatsApp o de un encuentro presencial (*"¡[Nombre]! Te escribí por WhatsApp…"*).
+> 2. **Insiders y conectores** (chefs, consultores, proveedores, gente de industria) — ahí sí es su canal, y es donde el borrador de la v0.1 sigue sirviendo.
+>
+> **Con operadores del perfil ③, el borrador de la v0.1 queda archivado**, no borrado: si algún día la landing v4 empieza a traer inbound desde LinkedIn, vuelve.
+>
+> ---
+>
+> ### Estado de los tipos (v0.2)
+>
+> | # | A quién | Estado |
+> |---|---|---|
+> | 1 | Insider (chef/consultor) | ✅ v0.1 vigente |
+> | 2 | Pedido de intro (conector) | ✅ v0.1 vigente · actualizar la descripción del ICP (corrección #1) |
+> | 3 | Operador ICP / re-enganche | 🔄 vigente con las 3 correcciones |
+> | 4 | DM LinkedIn | 🔄 **reencuadrado**: refuerzo o insiders, nunca primer toque con perfil ③ |
+> | 5 | **Seguimiento** | ✅ **redactado aquí** (A insider · B operador) |
+> | 6 | Intro reenviada por el conector | ✅ v0.1 vigente |
+> | **7** | **El ask de la factura** | ✅ **nuevo** — la puerta más barata |
+> | **8** | **Conocido de conocido** | ✅ **nuevo** — el canal #1 del doc 11 |
+>
+> **Pendiente de decidir contigo:** si el mensaje a **Ana** (San Miguel · perfil ③) y al **conocido del brunch de Alfonso** salen con el #8 o con el #7 directo. Yo mandaría **#8 con doble ask** a los dos.
+
+---
 
 > Los **mensajes base** para el outreach tibio 1:1. Se personalizan por prospecto — el template es el punto de partida, la personalización es donde está el 80% del resultado.
 >
