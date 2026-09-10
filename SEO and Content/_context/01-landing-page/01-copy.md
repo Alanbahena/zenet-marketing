@@ -140,7 +140,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 > Los insumos, los costos, los procesos, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
 
 **2 · Se rompe cada vez que algo cambia** *(= P2 · era la T3 "Ordenarlo cuesta años y dinero" · sube de lugar y cambia de encabezado)*
-> Ordenarlo cuesta años y dinero. Y no termina: cambian los costos, cambian los proveedores, cambian las recetas, cambia tu gente. **Lo que ordenaste hace ocho meses ya no describe cómo operas hoy** — y volver a ordenarlo, otra vez, es tu tiempo.
+> Ordenarlo cuesta años y dinero. Y no termina: cambian los costos, los proveedores, tu gente. **Lo que ordenaste hace ocho meses ya no describe cómo operas hoy** — y volver a ordenarlo, otra vez, es tu tiempo.
 
 **3 · Todo se sostiene, pero nada se conecta** *(= P3 · v3.3 T2 sin cambio · baja un lugar)*
 > Recetas en Excel. Pendientes en WhatsApp. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
