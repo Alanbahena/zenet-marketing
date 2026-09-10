@@ -49,7 +49,7 @@ Paleta y tipografía **sin cambio** (`:root` actual: `--offwhite-50/100` · `--p
 | `.shot` | Marco de captura de producto | Borde 1px `--grey-100` · radio 14px · sombra suave (la de `.eN-stage`) · fondo `--offwhite-50` · pie 12px *"datos ilustrativos"* · `img` WebP + fallback · `loading="lazy"` |
 | `.chain` / `.piece` / `.piece-origin` | El dominó gráfico (§2) | Piezas = chips con punto (mismo look que `.d3` pieces) unidas por línea punteada en SVG canónico · `.piece-origin` en `--peach-100` · estado `.is-on` con `transition-delay` escalonado |
 | `.quote-card` | La voz (§2) | Blockquote con barra `--accent` · atribución en versalitas · verbatim con cortes |
-| `.trato-panel` | Panel de pantalla del trato (§4) | Contenedor con los `.shot` apilados · swap por opacidad · controlado por el paso activo |
+| ~~`.trato-panel`~~ | — | **Retirado (10-sep):** §4 va sin capturas (variante C · `01-copy` §4) |
 | `.concreto` / `<details>` | Tarjetas de §6 | Móvil: acordeón nativo `<details>` cerrado por defecto (sin JS) · desktop: grid |
 
 ## v4 · C. Las 10 secciones (v4)
@@ -59,7 +59,7 @@ Paleta y tipografía **sin cambio** (`:root` actual: `--offwhite-50/100` · `--p
 | 1 | Hero | — | Sin cambio: bandera + subhead + `Hablemos` | Motivo red (sólidos) respirando | **Igual** |
 | 2 | El momento | El momento | *"Lo que cambia allá afuera, te cae a ti."* + body + **el dominó** (2 cadenas) + 2 `.anchor` + `.shot--compras` (gráfica precios vs llegada) + `.quote-card` + puente | Dominó gráfico · reveal una pasada | **NUEVA** (sube de §6 v3.3, se vuelve gráfica) |
 | 3 | El problema | La realidad de hoy | Titular sin cambio + **5 `.pain`** (la 2ª con la brecha punteada · la 5ª con figura nueva) + remate de una línea (por evaluar en pantalla) | 5 tarjetas line-art | De 4 a 5 · reorden |
-| 4 | El trato | Cómo trabaja | Headline + subline sin cambio · **5 pasos con `.trato-panel`** (WhatsApp · Recetas · Compras · [04 tag] · Manual móvil) · strip anti-POS nuevo · cierre | Fila de pasos + panel de pantalla | Gana producto real · 02 y 05 nuevos |
+| 4 | El trato | Cómo trabaja | Headline + subline sin cambio · **5 pasos, sin capturas** (variante C · `lab/` 10-sep) · strip anti-POS nuevo · cierre | Fila de pasos (`.verbs` de producción) + strip | Solo copy (02 · 05 · strip) · **las pantallas se concentran en §5** |
 | 5 | El camino | El camino | Headline sin cambio · subline nueva · **Etapa 1 = WhatsApp → Compras** (4 beats) · **Etapa 2 = análisis → Recetas → Inventario → Equivalencias → sucursales** (6 beats) · **Etapa 3 = el dominó** (sin cambio) · cierre *"si saben mandar una foto por WhatsApp…"* | La pieza estrella | Etapas 1-2 nuevas · consulta retirada |
 | 6 | En concreto | En concreto | *"Qué te quita de encima."* + subline *mano derecha* + **5 tarjetas** (título · línea en cursiva · cuerpo · `.shot` mini) + cierre | Grid / acordeón | **NUEVA** |
 | 7 | Qué cambia | El cambio | Headline sin cambio · **4 `.change`** (tu cabeza · tiempo · tranquilidad · el dinero deja de irse) · cierre intacto | 4 cards + cierre | Textos nuevos · patrón igual |
@@ -73,7 +73,7 @@ Paleta y tipografía **sin cambio** (`:root` actual: `--offwhite-50/100` · `--p
 
 - **El dominó gráfico (§2 · `.domino`)** — dos `.chain` horizontales. Cada cadena: `.piece-origin` (peach) → 4-5 `.piece` unidas por una línea punteada dibujada en SVG con el **esquema canónico** (viewBox + dashes en unidades de viewBox + width/height 100%). Bajo la pieza de origen, el `.anchor`. **Movimiento:** IO dispara una vez `.is-on` en la cadena; cada pieza enciende con `transition-delay` escalonado (~120 ms) de izquierda a derecha; la pieza de origen hace un pulso peach único (`@keyframes` de 600 ms); la línea se dibuja con `stroke-dashoffset` en la misma pasada. **Sin loop. `prefers-reduced-motion`: todo encendido desde el inicio.** Móvil: `.chain` en columna (flex `column`), la línea vertical, las piezas a ancho completo. Junto a la cadena 1, `.shot--compras` (desktop a la derecha · móvil debajo, **plegable** — primera cerca). Debajo, `.quote-card`. Todo esto en `lab/v4-momento.html`.
 - **Las 5 tarjetas (§3 · `.pain`)** — mismo componente que v3.3. Desktop: a 1280 caben 5 columnas de ~232 px; se prueba contra 3 + 2. La figura de la 2ª (ex-3ª) conserva la **brecha punteada**. **Figura nueva para la 5ª** — *"el mes que avanza y el número que llega tarde"*: una línea base con cuatro marcas de semana en teal y, al final, un pequeño rectángulo (el número) que aparece en peach; line-art, mismo grosor que las otras cuatro. El **remate** (*"Las ventas traen el dinero. La operación decide cuánto se queda."*) se construye como `.section-end` de una línea y **se juzga en pantalla** — misma prueba que mató al WHY.
-- **El trato con panel (§4 · `.trato-panel`)** — la fila de 5 pasos de v3.3 se conserva (número + ícono line-art + título + cuerpo). Debajo, **un solo panel** con los `.shot` apilados (WhatsApp · Recetas · Compras · Manual móvil); el paso 04 muestra el `tag-wip` en lugar de captura. **Control:** desktop = hover/click en el paso · móvil = **riel vertical** con la captura plegada bajo cada paso (`<details>`), o IO que activa el paso visible — decide `lab/v4-trato.html`. Swap por opacidad, 300 ms.
+- **El trato (§4 · `.verbs`) — sin panel.** La fila de 5 pasos de v3.3 se conserva tal cual (número + ícono + título + cuerpo + línea punteada) y **no lleva capturas** (decisión de `lab/` 10-sep · `01-copy` §4). Cambia solo el copy (02 · 05 · strip anti-POS) y el hover del chip; en móvil, riel vertical. Variantes construidas y descartadas: `lab/v4-trato.html` (panel que sigue al paso activo) y `lab/v4-trato-b.html` (miniatura por paso — ilegible a 230 px). La píldora *En construcción* usa el estilo de producción (teal 10% + borde 25%), **no peach**.
 - **Etapa 1 v4 (`.e1-stage`)** — reutiliza el teatro `.eN-stage` y el patrón beat-loop. 4 beats: **1** burbuja `.bub-user` con thumbnail de factura (SVG genérico de ticket, no una factura real) · **2** `.bub-zenet` con el texto del copy (*"Listo — guardé 12 insumos de Frutas Pérez…"* — proveedor ficticio) con typing dots antes · **3** `.shot--compras-card` (*Mayor movimiento del mes · Aguacate Hass +17%*) · **4** `.shot--compras-chart` con la línea de *tus precios vs tu llegada* dibujándose (SVG propio con `pathLength="1"`, encima de la captura o sustituyéndola). Captions del copy. Snap-reset como e2/d3. Reduced-motion = beat 4.
 - **Etapa 2 v4 (`.e2-stage`)** — 6 beats: **1** el panel de análisis (**reutiliza el beat 4 de la e1 v3.3**: filas + barras que se llenan) · **2** `.shot--recetas` · **3** `.shot--inventario` · **4** `.shot--equivalencias` · **5** las **dos tarjetas de sucursal** conectadas (**reutiliza el beat 5 de la e2 v3.3**) · **6** *"Y la estructura queda hecha"*. Transiciones: crossfade + leve slide; sin coreografía nueva.
 - **Etapa 3 (`.d3-*`)** — **sin cambio.** El pill sigue rotando *sube el tomate · proveedor nuevo · se va tu cocinero · menú de temporada*.
@@ -85,7 +85,7 @@ Paleta y tipografía **sin cambio** (`:root` actual: `--offwhite-50/100` · `--p
 
 Reglas invariables: cross-browser (JS timer + CSS transitions + SMIL · nada de scroll-timeline) · `prefers-reduced-motion` en todo · IO para arrancar · beat-loop con snap-reset · **`str.replace` + `assert count==1` por edición, nunca `re.sub` amplio sobre el CSS.**
 
-Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza el *verb reveal* de v3.3 a `.pain` · `.concreto` · `.change`) · **domino-reveal** (§2 · IO `once` · añade `.is-on`) · **trato-panel** (paso activo → `.shot` visible · hover/click desktop · IO/details móvil) · **e1** v4 · **e2** v4 · **d3** (igual) · *(el driver de la consulta se retira)*. §6 no lleva script: `<details>`. Al portar a Next.js, cada uno → hook con el mismo patrón.
+Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza el *verb reveal* de v3.3 a `.pain` · `.concreto` · `.change`) · **domino-reveal** (§2 · IO `once` · añade `.is-on`) · **e1** v4 · **e2** v4 · **d3** (igual) · *(el driver de la consulta se retira)*. §6 no lleva script: `<details>`. Al portar a Next.js, cada uno → hook con el mismo patrón.
 
 ## v4 · F. Assets nuevos
 
@@ -108,7 +108,7 @@ Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza
 | 1 | `lab/v4-momento.html` | §2 completa: dominó + anclas + `.shot` + cita | ¿Cabe con la captura a 390 px o se pliega? · ritmo del reveal (120 vs 180 ms) · desktop: captura a la derecha o debajo |
 | 2 | `lab/v4-concreto.html` | §6: 5 tarjetas con thumbnails | Acordeón vs abiertas · **5 vs 4** · grid 3+2 vs lista |
 | 3 | `lab/v4-problema.html` | §3: 5 `.pain` + figura nueva + remate | 5 columnas vs 3+2 · la figura del mes · **el remate: se queda o se corta** |
-| 4 | `lab/v4-trato.html` | §4: fila + `.trato-panel` | hover/click vs IO · móvil: `<details>` bajo cada paso · el tag del 04 en el panel |
+| 4 | ~~`lab/v4-trato.html`~~ | ✅ **hecho 10-sep** → variante **C** (`lab/v4-trato-c.html`): sin capturas | Resuelto: §4 promete, §5 prueba |
 | 5 | `lab/v4-etapa1.html` · `lab/v4-etapa2.html` | Las dos secuencias de pantallas | Duraciones de beat · crossfade vs slide · reutilización de e1-b4 y e2-b5 |
 | 6 | Integración | Branch `v4` sobre `main` · secciones en orden · `_qa.html` con `?sel=&scene=&beat=` para los nuevos | Peso total · LCP · reduced-motion · fondos alternos con 10 secciones |
 
@@ -132,7 +132,7 @@ La v3 levantó su gate por decisión del fundador y dejó una deuda (el análisi
 4. **QA móvil del fundador** en teléfono real (2 · 3 · 6 y el camino).
 5. **OG + meta description v4** · refrescar caché de OG (Sharing Debugger).
 
-Branch `v4` → merge `--no-ff` a `main` → tag `v4.0` → verificación en vivo (titular de §2 · `.domino` · `.trato-panel` · Etapa 1 nueva presentes en el HTML servido) → `02-demo` v0.2 en la misma ventana.
+Branch `v4` → merge `--no-ff` a `main` → tag `v4.0` → verificación en vivo (titular de §2 · `.domino` · los 5 `.verb` con el copy nuevo · Etapa 1 nueva presentes en el HTML servido) → `02-demo` v0.2 en la misma ventana.
 
 ## v4 · J. Cross-doc
 
