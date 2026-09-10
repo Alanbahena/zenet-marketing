@@ -116,6 +116,24 @@ Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza
 
 Regla heredada: **el lab decide, el index es la verdad** — verificar el index después de integrar, no solo el lab. Orden elegido por riesgo: primero las tres secciones con cercas de móvil (2 · 6 · 3), luego las de producto (4 · 5), que dependen de las capturas.
 
+## v4 · G-bis. El build — INTEGRADO 2026-09-09 (rama `v4`, sin deploy)
+
+Las diez secciones viven ya en `index.html`. **131 KB de HTML · 10 secciones · 9 scripts inline · 47 commits en la rama.** Lo que decidió la integración, más allá de pegar los labs:
+
+| Decisión | Por qué |
+|---|---|
+| **Nombres propios para lo que colisiona** | §6 llegaba con `.card`, `.grid`, `.num`, `.thumb`, `.foot` y **`.pain`** — los cinco ya existían en el index. Se renombra a `.concreto/.cc/.cc-thumb/.cc-num/.cc-pain/.cc-txt`. El chat de la Etapa 1 igual: `.e1-chat/.e1-bub/.e1-ticket`, porque `.chat`/`.bub` son de la consulta |
+| **El CSS se copia por bloque, no por selector** | Se toma del lab desde su primera regla propia hasta antes de `.lab-bar`, **con sus `@media` y `@keyframes` dentro**. Es la cura del bug del 9-sep (ver §H) |
+| **Los `id` de sección** | `#momento #problema #trato #camino #concreto #cambia #fundador #invitacion #cierre` — anclas para QA, para el harness y para enlaces futuros |
+| **`lab/_shot.html`** | Harness nuevo de captura: `?sel=%23problema&h=1000&off=60` encuadra una sección del index; `?full=1` captura la página entera recortando el hero a 720 px (si no, el hero crece con la ventana y la captura completa es inútil). Necesita `--allow-file-access-from-files` |
+| **Estados finales en headless = `--force-prefers-reduced-motion`** | Sin eso, el reveal por IO no alcanza a correr antes del disparo y las tarjetas salen invisibles. **Para juzgar movimiento, sigue siendo el navegador real** |
+| **Alternancia de fondos recalculada** | Con 10 secciones: alt · normal · alt · normal… desde §2. Seis secciones cambiaron de fondo |
+| **`.e1-*` y `.e2-*` de la v3.3 borrados** | 122 reglas + sus dos drivers. Se rescató a mano la regla móvil `aspect-ratio: 1/1`, que era compartida con `.d3-stage` |
+
+**Recortes de copy hechos en pantalla durante la integración** (todos registrados en `01-copy`): §3 los cinco cuerpos a 4-5 líneas · §4 pasos 01 y 02 (el 02 repetía su propio encabezado) y los dos cierres — el anti-POS a dos líneas y el párrafo final sin *"detecta, sugiere y acompaña"* · §6 tarjetas 02 y 03 · **§2 titular nuevo: "termina en tu día a día"**. La regla que emergió: **en las tres secciones de tarjetas (§3 · §4 · §6), cuerpo corto y remate en negritas**; cuando una tarjeta se ve "grotesca" el problema es el texto, no la caja.
+
+**Lo que falta para el tag `v4.0`:** revisión del fundador en navegador real (animaciones · los puntos) · **móvil real** (§2 · §3 · §6) · las capturas de producto cuando Compras y WhatsApp estén en staging (hoy hay ilustraciones SVG del mismo tamaño: entran sin mover el layout) · OG image + meta description · el gate de §I.
+
 ## v4 · H. QA v4 (añade al §8 v3.3)
 
 - **Móvil real primero** en 2 · 3 · 6 (el lector abre esto en el celular entre dos incendios) · headless solo para estados finales y layout, nunca para ritmo ni viewport móvil (lección v3.3).
