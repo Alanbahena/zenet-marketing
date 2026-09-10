@@ -1,14 +1,48 @@
 ---
 name: Página /demo · estrategia y copy
-description: La página /demo de zenetapp.com — EN VIVO (tag v3.1 · 11-ago-2026) · antesala del análisis (Etapa 1 del camino). Qué trabajo hace, el flujo landing→/demo→app, las decisiones canónicas (acceso cerrado · CTA doble · voz de marca) y el copy completo de los 7 bloques, aprobado bloque por bloque. Incluye la prueba del expediente real, los 6 documentos con lo que desbloquea cada uno, y el par esencial recetario+inventario. El diseño/build vive en 01-prototipo-y-diseno.
+description: La página /demo de zenetapp.com — v0.2 (10-sep-2026): re-encuadrada para la landing v4. Deja de ser "la Etapa 1 del camino" (ahora la Etapa 1 es Compras + WhatsApp), suma el PASO 04 (la primera factura por WhatsApp, ya dentro), el PDF del análisis que el operador se lleva, hero nuevo ("los números reales de tu operación — y qué te está costando no verlos") y la letra honesta reescrita en "qué corre hoy / qué todavía no". La v0.1 (EN VIVO desde el 11-ago, tag v3.1) se conserva abajo íntegra.
 type: seo-content
-last_updated: 2026-08-11
+last_updated: 2026-09-10
 status: active
-version: 0.1
+version: 0.2
 owner: Alan Bahena
 ---
 
 # Página /demo · estrategia y copy
+
+> ## 🔄 v0.2 (2026-09-10) — re-encuadre para la landing v4
+>
+> **Por qué:** la v4 de la landing mueve el análisis de la Etapa 1 a la **Etapa 2** (la 1 pasa a ser **Compras + Zenet en WhatsApp**). Esta página se presentaba como *"la primera etapa del camino"* — dejó de ser cierto el día que la v4 quedó armada. Se re-encuadra, no se rehace.
+>
+> **El flujo real, corregido por el fundador (10-sep):** junta documentos → Zenet los lee → **recibes tu análisis en PDF y lo ves en la app** → **ya dentro**, le mandas una factura por WhatsApp y aparecen tus compras. **Compras no es la puerta del demo: es lo primero que se toca una vez adentro.** (Mi primera propuesta lo ponía como bloque antes del ask de documentos — mal, invertía la secuencia.)
+>
+> ### Lo que cambia, bloque por bloque
+>
+> | Bloque | Cambio |
+> |---|---|
+> | **1 · Hero** | Titular nuevo: **"No verás un producto. Verás los números reales de tu operación — y qué te está costando no verlos."** (era *"…lo que hay detrás de tu restaurante"*). La bajada cierra en *"con el orden en que conviene construir"*. Meta description y OG al mismo marco |
+> | **4 · Cómo funciona** | **Pasa de 3 a 4 pasos.** El 03 suma *"Te lo llevas en PDF y lo ves en la app"*. **04 nuevo: "Le mandas tu primera factura"** — *ya dentro, por WhatsApp: mándale una factura como llegue y mira aparecer tus compras y tus precios. **El mismo día.*** La escena gana un beat 4: el chat, **reusado tal cual de la Etapa 1 de la landing** |
+> | **4 · el reloj** | *"Todo esto toma menos de 10 minutos"* → **"Del primer documento a tu análisis: menos de 10 minutos."** Con un paso 04 el reloj dejaba de ser cierto; ahora cuelga de 01→03, donde lo es |
+> | **5 · Qué vas a ver** | Cierra con **"Todo se va contigo en un PDF."** Las cuatro filas del análisis **no se tocan** — y **no** se añadió una fila de compras: este bloque es lo que entrega el análisis; compras llega en el paso 04. Mezclarlos rompía otra vez la secuencia |
+> | **6 · La letra honesta** | Reescrito. Fuera *"Esto es la primera etapa del camino"*. Ahora: **"Lo que ves aquí, corre hoy"** (análisis · compras por WhatsApp · la construcción área por área) + **"Lo que todavía no"** (que los procesos corran solos — el único tag de la landing) + *"Ver tu análisis no te compromete a nada"*, intacto |
+> | **7 · Cierre** | Espejo del hero: **"Sube lo que ya tienes y mira lo que te está costando no verlo."** |
+> | **En la landing** | *"Mira cómo funciona →"* **baja de la Etapa 1 a la Etapa 2.** Quien hace clic en la Etapa 1 acaba de leer sobre facturas por WhatsApp y aterrizaba en una página cuyo eje es el análisis; en la Etapa 2 acaba de leer exactamente lo que /demo explica. El enlace del navbar (*"Demo"*) no se toca |
+>
+> ### Decisiones nuevas
+>
+> | # | Decisión | Por qué |
+> |---|---|---|
+> | 9 | **/demo ya no se presenta como una etapa del camino** | Es la **antesala del análisis** (Etapa 2) y la puerta a la app. Nombrar etapas aquí obliga a re-sincronizar la página cada vez que el camino se reordena |
+> | 10 | **El titular promete un costo — y la página debe pagarlo** | *"Qué te está costando no verlos"* lo sostiene el análisis (dónde están tus costos hoy · las alertas · la lectura financiera si sube su estado de resultados) y lo refuerza el paso 04. Si algún día el análisis deja de leer costos, el titular vuelve a *"y por dónde empezar"* |
+> | 11 | **El PDF se nombra tres veces** (paso 03 · cierre del bloque 5 · nada más) | Es reversión de riesgo: *se lo lleva*. Rima con el piso de la invitación en la landing (*"es tuyo y te lo llevas"*) |
+> | 12 | **Las facturas NO entran al ask de documentos** | No alimentan el análisis, alimentan Compras. Viven en el paso 04. El ask del bloque 2 se queda intacto |
+> | 13 | **Gate de deploy compartido con la v4** | El PDF y Compras + WhatsApp estarán listos en días (estimado del fundador: semana del 14-sep). La página se escribe en presente y **se deploya cuando los tres sean ciertos** — junto con la landing v4, no antes |
+>
+> **Estado:** ✅ construido en `demo.html` (rama `v4`) · revisado en pantalla por el fundador el 10-sep · **sin deploy** hasta el gate. El lab queda en `lab/v4-demo.html`.
+>
+> **Lo que sigue sin resolver:** el **aviso de privacidad formal** (pendiente desde la v0.1 · el bloque 3 enlaza a `/privacidad`, que existe, pero el aviso formal sube de prioridad al recibir estados de resultados) · las **capturas reales** del PDF cuando exista (hoy la escena es SVG).
+
+---
 
 > **Qué es:** la página que explica el análisis (Etapa 1) antes de que el operador entre a la app — qué es, qué juntar, qué va a ver, qué pasa con sus datos. Nace de una necesidad real: hoy el ask de documentos se hace a mano por WhatsApp cada vez; la página lo vuelve un link.
 >

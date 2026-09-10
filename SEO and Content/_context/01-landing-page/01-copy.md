@@ -456,7 +456,7 @@ Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo)
 | **10 · Cierre** | *"Nos cuentas cómo operas hoy, te mostramos en qué está Zenet"* — es exactamente la Sesión 1 del guión v0.6 y `/demo`. La micro-línea *"Sin compromiso. Una conversación, no un contrato."* ya dice lo que el ICP necesita oír | **Sin cambio** |
 
 **Fuera de las secciones, dos cosas que la v4 cambia y quedan anotadas:**
-- **Navbar:** *"Demo"* se conserva como enlace de texto → `/demo`; en `02-demo` v0.2 la página deja de presentarse como *"la Etapa 1 del camino"* (ahora es la Etapa 2) y crece a demo completo (PDF · WhatsApp · Compras).
+- **Navbar:** *"Demo"* se conserva como enlace de texto → `/demo`. **✅ Hecho 10-sep (`02-demo` v0.2):** la página deja de presentarse como *"la Etapa 1 del camino"*, suma el **paso 04** (la primera factura por WhatsApp, ya dentro) y el **PDF** del análisis. **Y el enlace contextual *"Mira cómo funciona →"* baja de la Etapa 1 a la Etapa 2** — quien lo pulsa en la Etapa 1 acaba de leer sobre facturas y aterrizaba en una página cuyo eje es el análisis.
 - **OG image / meta description:** se revisan al deploy — la description actual habla en el marco de la v3.3; la v4 pide una que quepa el lector frío (*"Le mandas tus facturas por WhatsApp y desde la primera semana ves tus compras, tus precios y lo que subió — mientras tu operación queda en orden."*). Se decide con el build.
 
 ---
