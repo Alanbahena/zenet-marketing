@@ -213,10 +213,10 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 > *Pantalla:* **Manual Operativo en el celular** — lo que consulta el nuevo en su primer turno.
 
 **Strip anti-POS** *(🔄 gana el argumento del fundador)*:
-> **Zenet no es un POS.** Tu punto de venta solo sabe lo que le cargaste — y ve ventas, no lo que hay detrás. Zenet trabaja sobre lo que tu POS no ve: tus recetas reales, tus insumos, lo que pagas por ellos. **Tu POS se queda. El caos se va.**
+> **Zenet no es un POS.** Tu punto de venta ve ventas; Zenet trabaja sobre lo que hay detrás: tus recetas, tus insumos, lo que pagas por ellos. *(🔧 recortado en la integración)* **Tu POS se queda. El caos se va.**
 
 **Cierre** *(sin cambio)*:
-> Zenet detecta, sugiere y acompaña. No reemplaza a tu equipo — lo libera del trabajo de cargar el sistema. Y la última palabra siempre es tuya.
+> Zenet no reemplaza a tu equipo: lo libera del trabajo de cargar el sistema. **La última palabra siempre es tuya.** *(🔧 integración 9-sep: sale "detecta, sugiere y acompaña" — la sección ya son cinco verbos y esos tres eran marca encima del mecanismo)*
 
 *(→ §5 abre el camino: ves → ordenas → resistes.)*
 
@@ -664,7 +664,7 @@ La persona nueva aprende del manual, no de a quién le tocó al lado. Tu criteri
 > **Zenet no es un POS.** No reemplaza tu punto de venta ni tus herramientas — trabaja sobre ellas. **Tu POS se queda. El caos se va.**
 
 **Cierre:**
-> Zenet detecta, sugiere y acompaña. No reemplaza a tu equipo — lo libera del trabajo de cargar el sistema. Y la última palabra siempre es tuya.
+> Zenet no reemplaza a tu equipo: lo libera del trabajo de cargar el sistema. **La última palabra siempre es tuya.** *(🔧 integración 9-sep: sale "detecta, sugiere y acompaña" — la sección ya son cinco verbos y esos tres eran marca encima del mecanismo)*
 
 **El espejo realidad ↔ trato:**
 
