@@ -2,9 +2,9 @@
 name: Landing page · copy por sección
 description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-09-02
+last_updated: 2026-09-09
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -13,10 +13,408 @@ owner: Alan Bahena
 > El copy final, en voz de marca (`Branding/04-voice-and-tone/`). Se trabaja **sección por sección**.
 >
 > Estados: ✅ cerrado v3 · ✏️ borrador · 🔧 reescribir · 🔍 comprimir · 📝 boceto capturado, copy pendiente.
+
+> ✅ **v0.5 COMPLETA EN PAPEL (2026-09-09 · 10/10 secciones) — el copy de la landing v4.** Estrategia en `00-estrategia-y-estructura.md` **v0.4** (D0 dos entradas · D1 cifras de contexto en §2 · 10 secciones · Compras + WhatsApp en la Etapa 1 · *ves → ordenas → resistes*). **La v0.4 de abajo (= la v3.3 EN VIVO) se conserva intacta** como base y como historia; cada sección de la v4 se escribe **encima**, una por turno, con OK del fundador antes de pasar a la siguiente. Vocabulario del producto = el de la pantalla (Inicio · Sucursales · Estandarización → Catálogos · Recetas · Inventario · Equivalencias · Manual Operativo · Ajustes). Nunca "agente de compras": **Zenet en WhatsApp**.
+>
+> | # | Sección v4 | Estado |
+> |---|---|---|
+> | 1 | Hero | ✅ **sin cambio** (2026-09-09) — ver nota abajo |
+> | 2 | El momento — *"Lo que cambió"* *(NUEVA en §2 · el dominó + 2 anclas + la voz)* | ✅ cerrado (9-sep) · pendientes: fuente/nombre · `lab/` móvil |
+| 3 | El problema — los cinco de la carga | ✅ cerrado (9-sep) · remate y 5ª en `lab/` |
+> > | 4 | El trato — con pantallas reales | ✅ cerrado (9-sep) · panel en `lab/` |
+> | 5 | El camino — a la vista · en orden · fuerte · Etapa 1 = Compras + WhatsApp | ✅ cerrado (9-sep) |
+| 6 | Qué hace por ti — en concreto *(NUEVA)* | ✅ cerrado (9-sep) |
+> > | 7 | Qué cambia — recalibrado (sin escalamiento) | ✅ cerrado (9-sep) |
+> | 8-10 | Fundador · Invitación · Cierre | ✅ releídas (9-sep) · sin cambio · 2 adiciones opcionales |
+>
+> **Hero · decisión 2026-09-09: se queda tal cual** — headline, subhead, CTA y **la animación de la red** (es el nombre y el único lugar donde habla la marca antes del producto; la jerarquía *el camino es la estrella · el hero respira* se conserva). Dos notas abiertas para `lab/` móvil, **no cambios**: (a) *"back-of-house"* es vocabulario nuestro, no del perfil ③ — si en pantalla estorba, la alternativa es *"el sistema de tu operación"*; (b) el subhead son 38 palabras / ~4 líneas en celular — se juzga junto con §2, que viene justo debajo. Se descartó (otra vez) un 2º botón en el hero y se descartó producto en el hero; si algún día se quiere "real desde el primer segundo", la opción es **un teléfono quieto con Zenet en WhatsApp junto a la red**, probado A/B en `lab/`. **La animación que sí cambia es la Etapa 1 del camino** (documentos → análisis pasa a factura al chat → tus precios).
 >
 > **✅ v3 COMPLETA EN PAPEL (2026-08-05 · 10/10 secciones).** Reestructura motivada por (a) la 2ª señal independiente de que la VP no aterriza (Carlos 14-jul + Alfonso Arballo 28-jul · cf. `Product Strategy/04-go-to-market/08-learnings-de-validacion` Sesión #2) y (b) la re-articulación con **marco Sinek WHY→HOW→WHAT** + raíz emocional. **La v0.2 completa (= el copy de la landing v2 EN VIVO en `zenetapp.com`) está congelada en `_archive/2026-08-04_01-copy-v0.2.md`** — es lo desplegado hasta que la v3 se construya. La v1 sigue en `_archive/2026-07-20_01-copy-v1.md`.
 >
 > **El BUILD sigue GATEADO** (decisión 2026-07-31): se construye (lab/ → producción) cuando el flujo de onboarding del producto shippee (~2 sem al 05-ago) **y el análisis del cap. 1 haya corrido al menos una vez con documentos reales** (DEPLOY GATE — el copy del Onboarding está en presente por decisión del fundador; la página no sale en vivo hasta que sea verdad).
+
+---
+
+# — COPY v4 (v0.5 · en construcción) —
+
+> Las secciones de la v4 se escriben aquí, en orden de página, una por turno. Debajo de este bloque sigue **el copy v3.3 en vivo** (v0.4), intacto, como base e historia. Cuando la v4 se despliegue, la v0.4 se archiva completa.
+
+## v4 · 1. Hero — ✅ sin cambio (2026-09-09)
+
+Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 abajo). Notas para `lab/` móvil, no cambios: *"back-of-house"* → alternativa *"el sistema de tu operación"* si estorba en pantalla · el subhead (38 palabras) se juzga junto con §2.
+
+## v4 · 2. El momento — *"Lo que cambió"* — ✅ cerrado (2026-09-09 · pendientes: fuente/nombre de la ancla 1 · `lab/` móvil)
+
+**Trabajo:** el contexto para el **lector frío** — *el mundo cambió y tu operación lo siente*. Educa sobre **su mecanismo** (el dominó), no sobre el macro. Sube de §7 (v3.3) a §2. Cierra con el puente a §3.
+
+**Eyebrow:** EL MOMENTO
+
+**Headline:**
+> Lo que cambia allá afuera, te cae a ti.
+
+**Body** *(un párrafo · hereda el primer párrafo de §7 v3.3, afinado)*:
+> Los costos no se quedan quietos. La gente rota más que antes. La exigencia sube. Y lo que antes se absorbía sin sentirlo, hoy se ve en el margen — y en tus horas. Cada cambio de allá afuera entra a tu restaurante por una pieza y mueve todas las demás.
+
+**El componente — el dominó** *(dos cadenas · line-art como las figuras de §3 · la pieza que se mueve en peach, el resto en teal · en móvil las cadenas se apilan en vertical)*:
+
+> **Movimiento (decisión 2026-09-09): micro-motion, no un tercer sistema animado.** Un **reveal en cadena al entrar en pantalla, una sola pasada**: las piezas se encienden de izquierda a derecha con un retraso corto entre cada una; la pieza de origen (*sube un insumo · se va alguien*) pulsa en peach una vez; después todo queda **quieto**. **Sin loop.** Respeta `prefers-reduced-motion` (aparece completo, sin movimiento). En móvil igual, en vertical. La gráfica de Compras es una captura **estática**. Razón: la jerarquía *el camino es la estrella · el hero respira · el resto micro-motion* — y el dominó de la Etapa 3 es el mismo mecanismo resuelto, en loop; **§2 = el cambio se propaga (causa, ligero, una vez) · Etapa 3 = el núcleo lo cacha y las piezas vuelven (resolución, la estrella)**. Dos apariciones, dos pesos, a propósito.
+
+**Cadena 1 · los costos**
+> **Sube un insumo** → cambia la receta → cambia el costo del platillo → se mueve el margen → toca el precio de la carta → **y tú lo persigues a mano: el Excel, el WhatsApp, el cuaderno.**
+>
+> *Ancla (en el origen de la cadena):* **Los insumos clave subieron hasta 40% — carne, lácteos, frutas y verduras. La operación completa, entre 6 y 20%.** <small>CANIRAC Tijuana · 2026</small>
+>
+> *Pantalla (junto a la cadena):* la gráfica real de Compras — **tus precios vs tu llegada** — con el pie *"así se ve en Zenet cuando le mandas tus facturas"*. Datos ilustrativos declarados o de un Socio Fundador con permiso (decisión abierta #8 de `00-estrategia`).
+
+**Cadena 2 · la gente**
+> **Se va alguien** → se lleva lo que sabía → el que entra empieza de cero → **y lo pagas en tiempo y en dinero.**
+>
+> *Ancla:* **En cocina, 3 de cada 4 se van antes de cumplir cinco meses.** <small>CANIRAC · 2024</small>
+
+**La voz** *(card de cita · la única voz externa de la página · verbatim con cortes marcados)*:
+> *"Es una bola de nieve: si aumenta el salario mínimo […] se hace más costosa la operación, también de nuestros proveedores […] el producto que necesitamos adquirir va a aumentar de precio."*
+> — Presidenta de CANIRAC Tijuana · 2026 *(⚠️ nombre pendiente para citar con nombre)*
+
+**Cierre — el puente a §3:**
+> Nada de esto te lo tienen que contar: lo vives cada semana. **Lo que cambió es cuánto pesa — y quién lo carga.**
+
+*(→ §3 abre: "Lo más caro de tu operación no se compra. Se carga.")*
+
+---
+
+**Por qué así:**
+- **El headline nombra el mecanismo, no el mercado.** *"Lo que cambia allá afuera, te cae a ti"* es el dominó en una frase y ya apunta al hilo *cargar*. Se descartó heredar *"El juego cambió — y lo que puedes hacer al respecto, también"* (v3.3): su segunda mitad es el beat de la *posibilidad tecnológica*, que en la v4 ya lo dice el hero (*"un equipo de especialistas…"*) y lo demuestra el trato — repetirlo aquí adelanta la venta antes de la evidencia. **Ese beat queda para evaluarse en §4** (la línea *"hace unos años, lo más que podías comprar era otra herramienta"* rima con el strip anti-POS).
+- **Las cifras cumplen D1 al pie:** dos, con fuente y año visibles, en el origen de cada cadena — el número es el empujón, la cadena es lo que le hace a él. *"Hasta 40%"* se escribe *hasta*, como la fuente. *"3 de cada 4"* = 75%, en lenguaje de operador, con la fuente al lado.
+- **El test del copy doc, aplicado al encuadre:** *"la rotación es del 30-80%"* lo pone cualquier POS mañana; *"se va alguien → se lleva lo que sabía → lo pagas en tiempo y en dinero"* no.
+- **La voz de la presidenta es la tercera ancla sin ser número:** una institución local diciendo el dominó con sus palabras. Verbatim con cortes `[…]` — regla anti-falsificación de la VoC; entra también a `07-voice-of-customer` como voz institucional.
+- **La pantalla de Compras aquí es preludio, no venta:** ilustra la cadena 1 con datos reales y planta la idea de que eso *se ve* — el trato y el camino la explican después. Se muestra tal como es (regla de colores acotada a marketing).
+- **Sin miedo:** cero quiebras, cero *"75% de los restaurantes cierran"*. El lector es un sobreviviente; la sección le explica por qué le pesa, no le anuncia que va a morir.
+- **Vetos respetados:** sin *falta de X* · sin *descontrol · ineficiencia · inflación* como sustantivo de folleto (*"los costos no se quedan quietos"*) · sin nombrar agentes · Zenet aparece una sola vez, en el pie de la pantalla.
+- **Alternativas de headline documentadas:** *"Los costos no se quedan quietos. Tu operación tampoco."* · *"Todo lo que cambia allá afuera termina en tu cocina."* · *"El juego cambió — y cada cambio te llega a ti."*
+
+**Decisión registrada — D1 reabre "cero cifras" (2-sep → 9-sep):** el 2-sep se decidió cero cifras y se documentó abajo en §7. La v4 lo reabre **solo para contexto del sector en esta sección**, por D0: el lector digital no tiene a Alan para darle credibilidad; una o dos anclas verificables le dicen *"esto es el sector, no un vendedor"*. Las cifras de impacto de Zenet siguen prohibidas sin excepción. Detalle en `00-estrategia` §4.4.
+
+**Pendientes de esta sección:** ① medio/URL del reporte de CANIRAC Tijuana (ago-2026) y **nombre de la presidenta** → sin eso, la ancla 1 cae a la alternativa con fuente (Tijuana 2024 · ~15% en la carta · Industrial News BC / El Imparcial / Uniradio Baja; o IIEG Jalisco 2023-24) y la cita se publica sin nombre o no se publica · ② las cifras entran también a `Market Research/05-market-insights/02-datos-de-mercado-tijuana-2026.md` (nota de research con etiquetas de origen) · ③ `lab/` móvil: el dominó en dos cadenas apiladas + pantalla + cita — si pesa, la pantalla se pliega y las cadenas se quedan.
+
+---
+
+## v4 · 3. El problema — *"La realidad de hoy"* — ✅ cerrado (2026-09-09 · el remate y la 5ª se juzgan en `lab/` móvil)
+
+**Trabajo:** que el **lector frío** se reconozca — los cinco de la carga, en el orden que el campo enseñó (`11` §3): **la carga primero, el costo al final**. Hereda de la v3.3 el headline y cuatro tarjetas; **reordena dos y añade la quinta**. Recibe el puente de §2 (*"…y quién lo carga"*).
+
+**Eyebrow:** LA REALIDAD DE HOY
+
+**Headline** *(sin cambio · v0.4 del fundador)*:
+> Lo más caro de tu operación no se compra. **Se carga.**
+> Nadie te ayuda a construir tu sistema, a mantenerlo ni a ejecutarlo.
+
+**Las 5 tarjetas** *(line-art como en v3.3 · la 2ª conserva la brecha punteada · la 5ª estrena figura)*:
+
+**1 · Todo pasa por ti** *(= P1 · v3.3 T1 sin cambio)*
+> Los insumos, los costos, los procesos, cuánto pedir un viernes, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
+
+**2 · Se rompe cada vez que algo cambia** *(= P2 · era la T3 "Ordenarlo cuesta años y dinero" · sube de lugar y cambia de encabezado)*
+> Ordenarlo cuesta años y dinero. Y no termina: cambian los costos, cambian los proveedores, cambian las recetas, cambia tu gente. **Lo que ordenaste hace ocho meses ya no describe cómo operas hoy** — y volver a ordenarlo, otra vez, es tu tiempo.
+
+**3 · Todo se sostiene, pero nada se conecta** *(= P3 · v3.3 T2 sin cambio · baja un lugar)*
+> Recetas en Excel. Pendientes en WhatsApp. Protocolos en un cuaderno. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
+
+**4 · Cada persona nueva vuelve a empezar de cero** *(= P4 · v3.3 T4 sin cambio)*
+> Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
+
+**5 · Sabes cuánto vendes. No siempre cuánto te queda.** *(= P5 · NUEVA · "sientes el número")*
+> Subió el aguacate y te enteraste hasta el cierre. El margen se aprieta, y lo que ves es el número final — no por dónde se fue. **Y ese número te pesa más que a nadie.**
+
+**El remate** *(decisión abierta #3 de `00-estrategia` · por evaluar EN PANTALLA · una línea, del fundador)*:
+> **Las ventas traen el dinero. La operación decide cuánto se queda.**
+
+*(→ §4 abre: "El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet.")*
+
+---
+
+**Por qué así:**
+- **El orden es el del campo.** v3.3 iba: todo pasa por ti → nada se conecta → años y dinero → persona nueva. v4: **la carga → se rompe al cambiar → nada se conecta → persona nueva → el número.** Carlos no habló de food cost, Miguel puso la carga como #1, Alfonso dejó *"números conformes"*: todos tienen costos; el ICP es quien los **siente** — por eso el costo cierra la lista, como señal, no como gancho (`11` §3).
+- **La 2ª cambia de encabezado, no de contenido.** *"Ordenarlo cuesta años y dinero que no tienes"* (v3.3) era la raíz dicha como precio; *"Se rompe cada vez que algo cambia"* es la misma tarjeta dicha como **experiencia** — y es el dolor con más respaldo de campo (Carlos: mantenimiento #1 · Miguel: el costeo muere con cada carta). *"Años y dinero"* sobrevive en la primera línea del cuerpo. Se añade el remate *"volver a ordenarlo, otra vez, es tu tiempo"* para que la tarjeta cierre en la carga, como las demás.
+- **La 5ª es la única nueva, y es la más delicada.** Tiene que decir *"sientes el número"* sin *"descontrol"*, sin *"no sabes tus números"* (ataque a identidad: él **sí** sabe su resultado — *"estoy en 32%"*), sin cifra. Solución: **conoce el resultado, no la composición** (`06-argumentacion` §6.2) en lenguaje de operador — *"lo que ves es el número final, no por dónde se fue"* — y un ejemplo concreto que rima con §2 (*el aguacate*, la pieza que sube en la gráfica de Compras). El cierre *"te pesa más que a nadie"* es el marcador de calificación (A1 al revés) dicho con empatía.
+- **El remate vuelve a la mesa.** La v3 lo cortó (*los componentes hablan*) y el fundador eligió cero. La v4 lo reabre con **una línea suya** (*"las ventas traen el dinero; la operación decide cuánto se queda"*), porque enlaza P5 con el trato que viene: si la operación decide, y Zenet carga la operación… Se prueba en pantalla; si estorba, se corta otra vez sin drama.
+- **Vetos respetados:** sin *falta de X* · sin *descontrol · ineficiencia · robo hormiga · desorden* · sin cifras · sin culpar al equipo (la 4ª habla del proceso, no de la persona) · *"tu sistema"*, nunca *"un sistema"*.
+- **Figuras:** las cuatro de v3.3 se conservan (la de "años y dinero" — la brecha punteada — pasa a la tarjeta 2 con su contenido). La 5ª estrena una: **el mes que avanza y el número que aparece al final** (line-art · la línea del mes en teal, el número que llega tarde en peach).
+
+**Cercas para `lab/` móvil:** cinco tarjetas pesan más que cuatro. Desktop: fila de 5 estrecha o 3 + 2 (decide la pantalla). Móvil: apiladas. **Si pesa, la 5ª se funde con la 2ª** (el número que llega tarde es también "se rompe al cambiar") y la lista vuelve a cuatro — la señal de calificación se conserva en el remate.
+
+---
+
+## v4 · 4. El trato — *"Cómo trabaja Zenet"* — ✅ cerrado (2026-09-09 · panel de pantalla se decide en `lab/`)
+
+**Trabajo:** la promesa — **quién carga ahora** (HOW). Para los dos lectores. Hereda de la v3.3 el headline, la subline, los cinco verbos y el cierre **casi intactos**; lo que cambia es que **cada verbo ahora tiene una pantalla real detrás** (E1a) y el strip anti-POS gana el argumento del fundador. Recibe el remate de §3 (*"la operación decide cuánto se queda"*).
+
+**Eyebrow:** CÓMO TRABAJA
+
+**Headline** *(sin cambio · del fundador, build 06-ago)*:
+> El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet.
+
+**Subline** *(sin cambio · v0.4)*:
+> No suma otra herramienta a las que ya tienes. Toma tu operación como está, y hace contigo lo que una herramienta no hace:
+
+**Los 5 verbos — cada uno con su pantalla** *(componente: **un panel de pantalla, cinco pasos** — la fila de pasos de la v3.3 se conserva; debajo, un solo panel muestra la pantalla del paso activo, que avanza al hacer scroll o al tocar el paso · en móvil, riel vertical con la pantalla plegada bajo cada paso · solo pantallas de lo que corre)*:
+
+**01 · Lo construye desde lo que ya tienes**
+> Recetas en Excel, fotos de tus facturas, el cuaderno de la cocina — los mandas como están, **por WhatsApp o desde la app**, y Zenet los convierte en tu sistema.
+> *Pantalla:* **Zenet en WhatsApp** — una foto de factura entrando al chat y la respuesta de Zenet confirmando qué leyó.
+
+**02 · Lo refuerza con un solo cerebro operativo** *(🔄 del fundador · elegido 2026-09-09 entre A "refuerza con" · B "conecta en" · C "vuelve un solo"; "amarra" descartado por el fundador)*
+> Recetas, insumos, procesos, protocolos dejan de vivir en cinco lugares y se vuelven un solo cerebro operativo que tu equipo consulta desde el celular. Todos ven lo mismo. **Y tu operación deja de depender de que tú la sostengas.**
+> *Pantalla:* **Recetas** — una receta con sus ingredientes ligados al inventario.
+
+**03 · Lo mantiene vivo**
+> Cambias una receta, sube un costo, pruebas algo nuevo — Zenet te ayuda a reacomodar todo lo que ese cambio toca. **El orden se queda.**
+> *Pantalla:* **Compras** — *tus precios vs tu llegada*: el insumo que subió, con quién y cuánto.
+
+**04 · Lo ejecuta cada día** 🏷️ *En construcción — con los primeros Socios Fundadores*
+> Tus procesos corren sin que los empujes. Tú solo ves los resultados.
+> *Sin pantalla — el único paso con etiqueta, como en la v3.3.*
+
+**05 · Se lo pasa a quien llega** *(🔄 del fundador: cuerpo recortado a dos frases · "resiste cambios" entra sin la palabra, sin duplicar el 03)*
+> La persona nueva aprende del cerebro operativo de tu restaurante. **Y lo que sabe tu operación no se va con quien se va.**
+> *Pantalla:* **Manual Operativo en el celular** — lo que consulta el nuevo en su primer turno.
+
+**Strip anti-POS** *(🔄 gana el argumento del fundador)*:
+> **Zenet no es un POS.** Tu punto de venta solo sabe lo que le cargaste — y ve ventas, no lo que hay detrás. Zenet trabaja sobre lo que tu POS no ve: tus recetas reales, tus insumos, lo que pagas por ellos. **Tu POS se queda. El caos se va.**
+
+**Cierre** *(sin cambio)*:
+> Zenet detecta, sugiere y acompaña. No reemplaza a tu equipo — lo libera del trabajo de cargar el sistema. Y la última palabra siempre es tuya.
+
+*(→ §5 abre el camino: ves → ordenas → resistes.)*
+
+---
+
+**El espejo realidad ↔ trato (v4 · los cinco de §3):**
+
+| §3 · lo que carga | §4 · el trabajo hecho |
+|---|---|
+| Todo pasa por ti | 04 · Lo ejecuta cada día |
+| Se rompe cada vez que algo cambia | 03 · Lo mantiene vivo |
+| Todo se sostiene, pero nada se conecta | 02 · Lo refuerza con un solo cerebro operativo |
+| Cada persona nueva empieza de cero | 05 · Se lo pasa a quien llega |
+| Sabes cuánto vendes, no siempre cuánto te queda | 01 · Lo construye desde lo que ya tienes — *tus facturas → tus precios* |
+
+**Por qué así:**
+- **El copy casi no cambia; lo que cambia es la prueba.** En agosto los cinco verbos eran promesa; hoy cuatro tienen pantalla. La regla de forma de la v4 (*una pantalla real vale más que una animación abstracta cuando la pantalla existe*) se aplica aquí por primera vez. El 04 sigue con etiqueta: **un tag en cinco verbos, igual que la v3.3 — afirma mucho, promete poco.**
+- **Un panel, no cinco capturas.** Cinco pantallas en fila pesan y se ven a template de SaaS. Un solo panel que cambia con el paso activo enseña lo mismo con una cuarta parte del peso — y en móvil se pliega. Es el stepper que la v2 absorbió, de vuelta con trabajo real que hacer. Se decide en `lab/`.
+- **El strip anti-POS gana el porqué.** La v3.3 decía *qué* (*no reemplaza tu POS*); el fundador aportó el *por qué* (*inventarios teóricos ficticios: el POS con la receta mal cargada no descuenta nada*). Se escribió **sin prometer integración** — Zenet no le "carga" nada al POS (F7 fuera · regla *no promesas de integración*); trabaja **sobre lo que el POS no ve**. Y *"solo sabe lo que le cargaste"* rima con el hilo *cargar* sin forzarlo.
+- **El beat de la posibilidad tecnológica no entra aquí.** Se evaluó traer de la v3.3 §7 la línea *"hace unos años, lo más que podías comprar era otra herramienta; hoy se puede construir algo distinto"*. Decisión: **fuera de la página** — el hero ya afirma qué es Zenet y este bloque lo demuestra; la línea es buena para el deck y la conversación, en la página era un párrafo más antes del camino (*los componentes hablan*).
+- **El párrafo del dominó (v3.3, ya cortado en build) sigue fuera:** ahora vive en §2 como gráfica y en la Etapa 3 como animación — tres veces sería demasiado.
+- **"Por WhatsApp o desde la app"** es la única adición al 01 — cierta desde la semana del 14-sep (Zenet en WhatsApp listo para SF). Si por cualquier razón el canal se retrasa al deploy, esas cuatro palabras se quitan y el 01 vuelve a la v3.3.
+- **El 02 cambia de verbo por el fundador — y corrige un framing.** *"Lo junta en un solo lugar"* era **framing de contenedor** (*"todo EN Zenet"* — la crítica de Alfonso, vetada en §6 v3). El fundador propuso *"solidifica / refuerza tu operación"*: el efecto correcto, dicho en abstracto. Se ofrecieron *amarra* (descartado por el fundador: coloquial), *conecta en* (roza el contenedor) y *vuelve un solo* (ambiguo); **entró "Lo refuerza con un solo cerebro operativo"** — el verbo del fundador, vuelto concreto por el *"con"*: el cerebro refuerza la operación, no la guarda; *"un solo"* contesta P3 (cinco lugares → uno). El cuerpo dice *"se vuelven un solo cerebro"* (la operación **es** el cerebro, no está *en* él) y cierra en la fuerza: *"deja de depender de que tú la sostengas"*.
+- **El 05 recibe la idea de "resiste cambios" sin la palabra.** El fundador quería decir aquí que la operación resiste; *resistir* es el trabajo del 03 (el dominó) y del camino (*resistes*). Pero *que se vaya alguien* **es un cambio** (cadena 2 de §2) — así que el 05 lo dice en su terreno: *"lo que sabe tu operación no se va con quien se va"*. El 03 resiste costos, recetas y proveedores; el 05 resiste la gente; la palabra *resiste* se guarda para el titular de §5.
+- **Vetos respetados:** sin *plataforma · optimiza · inteligente · impulsa · integración · solidifica* · sin *"agente"* (es *Zenet en WhatsApp*) · *"cerebro operativo"* se conserva (aprobado en build v3) · *refuerza* entra porque va con objeto concreto (*con un solo cerebro*), no como adjetivo de folleto.
+
+**Cercas para `lab/`:** las pantallas se muestran **tal como son** (regla de colores acotada a marketing; Compras trae rojo/verde) · datos ilustrativos declarados o de un SF con permiso (decisión #8) · si el panel de pantalla pesa en móvil, se pliega por defecto y se abre al tocar el paso.
+
+---
+
+## v4 · 5. El camino — ✅ cerrado (2026-09-09 · 2ª versión con las correcciones del fundador · animación de la Etapa 1 ajustada a lo que corre)
+
+**Trabajo:** el mecanismo — **cómo pasa, en tres etapas ciertas** (WHAT). La pieza estrella. Para los dos lectores. Hereda de la v3.3 el headline y los cuerpos aprobados el 2-sep; **la Etapa 1 pasa a ser Compras + Zenet en WhatsApp** (lo que se ve en la primera semana), el análisis se funde en la Etapa 2 con el resto de los documentos, la Etapa 3 gana *tus márgenes* y una línea de cierre. Las etapas se cuentan como **estados** (a la vista · en orden · fuerte), no como acciones del operador — *Zenet lo carga*.
+
+**Eyebrow:** EL CAMINO
+
+**Headline** *(sin cambio · v3)*:
+> Tú pones el criterio. Zenet le pone motor.
+
+**Subline** *(🔄 2ª versión · la 1ª — "la ves, la ordenas, la haces fuerte" — ponía el esfuerzo en el operador; corrección del fundador · la v3.3 decía "corre sola", resto de la automatización)*:
+> De tus facturas a una operación que aguanta lo que venga — en tres etapas: **a la vista, en orden, y fuerte aunque todo cambie.**
+
+### Etapa 1 · Tus compras, a la vista desde la primera semana *(🔄 del fundador · era "Empieza con lo que ya tienes")*
+> Le mandas tus facturas o recibos a Zenet por WhatsApp. Zenet las lee y las guarda — y desde la primera semana tienes tus compras a la vista: precios, proveedores, lo que subió. **Con quién, cuánto y desde cuándo.**
+
+*(Ajuste sobre el borrador del fundador: "analizas tus compras" → "tienes tus compras a la vista" — **Zenet analiza; tú ves**, misma razón que la subline.)*
+
+*Animación — **Zenet en WhatsApp, tal como corre** (🔄 versión final 2026-09-09 · el fundador confirmó: en la versión de SF Zenet **no manda mensajes por su cuenta, solo responde** → el hallazgo sale del chat y vive en la app · 4 beats):*
+
+| Beat | Pantalla | Caption |
+|---|---|---|
+| 1 | El operador manda la foto de una factura al chat | *Le mandas la factura como llega.* |
+| 2 | Zenet responde: *"Listo — guardé 12 insumos de Frutas Pérez: aguacate Hass, jitomate saladet, cebolla… Total $4,860. Ya están en tus compras."* | *Zenet la lee y la guarda.* |
+| 3 | La app — **Compras**: la tarjeta *Mayor movimiento del mes: Aguacate Hass +17% · ~$300 más al mes* | *Y Zenet te dice lo que encontró.* |
+| 4 | La gráfica **tus precios vs tu llegada** se dibuja | *Desde la primera semana.* |
+
+*Reglas del ejemplo:* **un solo insumo para toda la página — el aguacate** (el de la captura de Compras: Hass · +17% · Frutas Pérez · ~$300/mes) en §2, aquí y en §6; *"sube el tomate"* queda solo como uno de los cuatro cambios que rota el dominó · la métrica es la del producto — **"arriba de cuando llegaste"** (*tus precios vs tu llegada*), nunca *"arriba del rango"* · números ilustrativos declarados o de un SF con permiso (decisión #8) · Zenet, nunca "el agente" · la respuesta del beat 2 es **concreta** (insumos · proveedor · total) para que se vea que Zenet **entendió**, no solo que recibió. **Upgrade anotado, no prometido:** si Zenet en WhatsApp llega a contestar preguntas sobre compras (*"¿y mis compras en general?"* → *"van 6% arriba de cuando llegaste; lo que más pesa: aguacate y jitomate"*), entra como beat 3 y el de la app pasa a 4 — recupera la *consulta* de la v3.3. **Descartado por honestidad:** Zenet iniciando el mensaje (*"tu aguacate subió 17%"* sin que el operador pregunte) — no corre hoy.
+
+### Etapa 2 · Tu operación, en orden — desde lo que ya tienes *(🔄 del fundador: absorbe el análisis de la Etapa 1 · cuerpo v0.4 conservado · partido en dos respiraciones)*
+> Empiezas con lo que ya tienes: las recetas en fotos, los inventarios en Excel, el menú en el cuaderno. Zenet los lee, los entiende — y te devuelve algo que hoy no existe: **un análisis honesto de tu operación.** Qué tan estandarizado estás, área por área. Dónde están tus costos hoy.
+>
+> Desde ahí —no desde una plantilla— **Zenet hace el trabajo pesado y tú lo diriges.** Tus recetas quedan escritas y costeadas; tus inventarios, estructurados y en orden. Ves qué platillos te dejan y cuáles te cuestan. Y **la estructura sólida de tu negocio queda hecha**: sucursales, roles, quién hace qué y cómo se hace — el proceso de cada puesto, con sus estándares de calidad. **Lo que a otros les tomó años, aquí avanza área por área — en días, no en meses.**
+
+*(🔄 Adición del fundador, 2026-09-09: "Zenet hace el trabajo pesado, tú lo diriges" entra tal cual — es "tú decides; Zenet lo carga" en la etapa donde más importa. La compresión de tiempo entra **como ritmo, no como meta cumplida**: "avanza área por área, en días" (cierto: cada área sale en días) y no "puedes estandarizar en días" (prometería terminar). Precedente: en §8 se vetó "lo que antes tomaba años, hoy toma unos días" con la nota "la compresión de tiempo vive en el camino, respaldada por mecanismo" — este es ese lugar; y la promesa central de marca ya dice "lo que antes tomaba días, ahora toma horas". La línea **cierra la raíz** (hero: "a los pocos que lo lograron les costó años"). "En días, no en meses" y no "no en años": contra años suena a folleto; contra meses es creíble y sigue siendo enorme — el fundador decide si prefiere el eco con la raíz. Se retira "y qué construiría Zenet contigo primero" — no vino en la fusión y rozaba el "proponer". Consecuencia fuera de la página: `/demo` se presenta hoy como "la Etapa 1 del camino" — pasa a **Etapa 2** en `02-demo` v0.2.)*
+
+*Animación (sustituye a "chips → hexágono → estrella"):* **el análisis primero, luego tres pantallas reales** — el panel del análisis (los índices por área · dónde están tus costos) → **Recetas** → **Inventario** → **Equivalencias** → y el beat final de la v3.3 se conserva como cierre: **las dos tarjetas de sucursal** conectadas (*la estructura se replica*; único lugar donde se cuenta que lo ordenado viaja · contesta la tarjeta 4 de §3 · primer beat que se recorta si pesa en móvil). Captions: *"Zenet lee lo que ya tienes"* → *"Y te dice dónde estás"* → *"Tus recetas, escritas y costeadas"* → *"Tus insumos, en orden"* → *"Todo conectado"* → *"Y la estructura queda hecha."*
+
+### Etapa 3 · Tu operación, fuerte — aunque todo cambie *(🔄 era "se mantiene viva" · + "tus márgenes" · + una línea de cierre)*
+> Sube el tomate. Entra un proveedor nuevo. Se va tu cocinero de años. Cambias el menú de temporada. Ninguno de esos cambios llega solo: mueve tus costos, tus recetas, tus compras, **tus márgenes**, tus procesos.
+>
+> Zenet ve qué se movió y te ayuda a reacomodar todo lo que ese cambio toca — el costo del platillo, la receta, el pedido, el estándar. **Tú apruebas; el orden se queda.**
+>
+> Así tu estructura no se queda escrita en un papel que envejece. Se mantiene al día — y un costo que sube deja de comerse tu margen en silencio. **Una operación fuerte no es la que no cambia: es la que aguanta el cambio.** Tú vuelves a lo tuyo: la calidad y la experiencia.
+
+*Animación:* **el dominó, sin cambio** (`lab/etapa3-domino.html` · 5 beats · el pill rota entre los cuatro cambios · **el núcleo no se mueve**). La estrella; §2 lo anunció como causa, aquí se resuelve.
+
+**Cierre de sección** *(🔄 ahora literal)*:
+> Y tu equipo no necesita un curso: **si saben mandar una foto por WhatsApp, saben usar Zenet.**
+>
+> No es un proyecto de meses que un día "se termina". Cada etapa te deja algo que tu equipo ya usa — desde la primera semana.
+
+*(→ §6 abre: "En concreto — qué te quita de encima.")*
+
+---
+
+**Por qué así (2ª versión):**
+- **Estados, no acciones.** La 1ª versión decía *"la ves, la ordenas, la haces fuerte"* y el fundador lo leyó bien: ponía el esfuerzo en él. Subline y encabezados dicen ahora el **estado** de la operación en cada etapa; el sujeto que trabaja es Zenet. Misma corrección en la Etapa 1 (*"analizas"* → *"tienes a la vista"*).
+- **Una etapa, un trabajo.** 1 = tus compras (WhatsApp · semana uno) · 2 = el resto de tus documentos → el análisis → el orden · 3 = fuerte. La Etapa 1 ya no carga dos cosas; la Etapa 2 respira en dos párrafos.
+- **La animación de WhatsApp enseña lo que el chat hace hoy** — leer y guardar sin que el operador capture — y **el hallazgo vive en la app**, donde existe (*mayor movimiento del mes*). Se evaluó Zenet iniciando el mensaje (*detecta y avisa*): es el diferenciador de *interpretación* hecho visible, pero **no corre en la versión de SF** (solo responde) → descartado por honestidad, con el upgrade anotado.
+- **Un insumo, una historia:** el aguacate atraviesa §2 → §5 → §6 con los mismos números de la captura de Compras. Coherencia entre pantalla y copy.
+- **Honestidad por etapa:** Etapa 1 real desde la semana del 14-sep (Compras + WhatsApp) · Etapa 2 real hoy (análisis + estandarización) · Etapa 3 escrita hasta donde es cierto (*te ayuda a reacomodar*). **Cero tags en §5.** Si Compras/WhatsApp se retrasan al deploy, la Etapa 1 vuelve al Capítulo 1 de la v3.3 y la Etapa 2 devuelve el análisis a su lugar — sin tocar nada más.
+- **Vetos respetados:** sin *agentes* · sin *mejorar tus márgenes* (se dice *"deja de comerse tu margen en silencio"*) · sin *eficiente* · sin *"rango"* externo · *"fuerte"* como adjetivo de la operación.
+
+**Cercas para `lab/`:** pantallas tal como son · datos ilustrativos declarados o de SF con permiso · **un sistema animado en tres etapas + el hero** (Etapas 1-2 = secuencias de pantallas con transiciones simples; la 3 = la única animación compleja) · `prefers-reduced-motion` = último frame · móvil: animación arriba, texto abajo.
+
+---
+
+## v4 · 6. Qué hace por ti — *"En concreto"* — ✅ cerrado (2026-09-09 · NUEVA · acordeón y compresión a 4 se deciden en `lab/` móvil)
+
+**Trabajo:** el detalle — **qué te quita de encima**, en el idioma del operador, con pantalla. Para los dos lectores, ya vieron el camino. Es el espejo de §3 por tercera vez en la página (§3 = el costo · §4 = el trabajo hecho · §6 = **lo que ves y usas**), así que se escribe **corto**: cinco tarjetas, una por problema, cada una *el problema en su voz → lo que Zenet hace → la pantalla*. **Solo lo que corre.** Es la primera sección en comprimirse o plegarse si el scroll pesa (E2).
+
+**Eyebrow:** EN CONCRETO
+
+**Headline:**
+> Qué te quita de encima.
+
+**Subline** *(🔄 del fundador: quería "el asistente o la mano derecha virtual que siempre necesitaste" — entra **mano derecha** (canon: el rol externo de la marca) y sale *asistente* (vetada desde v3: la palabra de Alfonso · categoría chatbot) y *virtual* (dice tecnología cuando la sección quiere decir alguien) · "que conoce tu operación" viene de la voz del ICP en `11` §5.4)*:
+> Cinco cosas que hoy cargas tú. **Así se ven cuando tienes una mano derecha que conoce tu operación.**
+
+**Las 5 tarjetas** *(orden de §3: la carga → se rompe → nada se conecta → persona nueva → el número · cada una: encabezado = lo que Zenet hace · primera línea = el problema, en cursiva · cuerpo de dos líneas · pantalla)*:
+
+**1 · Todo entra por donde ya trabajas** *(← Todo pasa por ti)*
+> *Hoy todo pasa por tu cabeza y por tu WhatsApp.*
+> Sigue siendo tu WhatsApp — pero ahora del otro lado está Zenet. Una foto de la factura, un PDF, y ya está guardado. **Cero capturas. Cero curso.**
+> *Pantalla:* Zenet en WhatsApp — la factura entrando.
+
+**2 · Tus recetas, escritas y costeadas** *(← Se rompe cada vez que algo cambia)*
+> *Cambias la carta y el costeo ya no sirve.*
+> Cada receta con sus ingredientes ligados a tu inventario, con su costo. Cambias algo y Zenet te ayuda a reacomodar lo que ese cambio toca — **con el número enfrente, no de memoria.**
+> *Pantalla:* Recetas — una receta con sus ingredientes y su costo.
+
+**3 · Un solo cerebro operativo** *(← Todo se sostiene, pero nada se conecta)*
+> *Lo único que conecta el Excel, el cuaderno y el POS eres tú.*
+> Insumos con sus unidades y presentaciones. Recetas. Y las equivalencias entre lo que compras y lo que usas — **conectado, no repartido en cinco lugares.** Tu equipo ve lo mismo que tú.
+> *Pantalla:* Equivalencias — qué equivale a qué entre recetas e inventario.
+
+**4 · El manual que el nuevo consulta solo** *(← Cada persona nueva vuelve a empezar de cero)*
+> *Aprende como puede, de quien esté en turno.*
+> Quién hace qué y cómo se hace — el proceso de cada puesto, con sus estándares — en el celular, desde su primer turno. **Lo que sabe tu operación no se va con quien se va.**
+> *Pantalla:* Manual Operativo en el celular.
+
+**5 · Tus compras y tus precios, antes del cierre** *(← Sabes cuánto vendes, no siempre cuánto te queda)*
+> *Subió el aguacate y te enteraste hasta el cierre.*
+> Zenet te dice qué subió, con quién y cuánto te cuesta al mes — y cómo van tus precios contra cuando llegaste. **Lo ves el martes, no en el corte.**
+> *Pantalla:* Compras — *mayor movimiento del mes* y *tus precios vs tu llegada*.
+
+**Cierre** *(una línea · puente a §7)*:
+> Cada una te deja algo que tu equipo ya usa. **Lo que cambia cuando corren juntas es lo que sigue.**
+
+*(→ §7: "Qué cambia cuando tu operación trae motor.")*
+
+---
+
+**Por qué así:**
+- **Cinco, no seis, y en el orden de §3.** Una tarjeta por problema cierra el espejo por tercera vez (costo → trabajo → lo que ves) sin inventar categorías nuevas. El análisis del onboarding **no** tiene tarjeta: ya es el centro de la Etapa 2 — repetirlo aquí sería la cuarta mención.
+- **Cada encabezado es lo que Zenet hace, no un nombre de feature.** *"Tus recetas, escritas y costeadas"* en vez de *"Módulo de recetas"*; *"el manual que el nuevo consulta solo"* en vez de *"Manual Operativo"*. Los nombres de pantalla van en la línea de *Pantalla*, para que el que luego entre a la app reconozca dónde está cada cosa (Inicio · Estandarización → Recetas · Inventario · Equivalencias · Manual Operativo · Compras).
+- **La primera línea de cada tarjeta es el problema en su voz** — la misma frase de §3 o del doc 11, en cursiva. El lector frío que llegó hasta aquí ve que cada cosa contesta algo que él dijo.
+- **La 1ª tarjeta contesta "la carga" con el canal, no con un feature.** Lo que le quita de encima no es una función: es que **no capture nada** y que su equipo **no tome un curso**. Es el argumento zero-training del research (`03-pains` §5.10) y la línea de cierre de §5 dicha como tarjeta.
+- **La 5ª es Compras y cierra la lista** — igual que en §3 el número cierra. *"Lo ves el martes, no en el corte"* rescata la línea de la v3.3 §6 card 2 (*"corriges el martes, no en el corte"*) que en la v4 sale de *Qué cambia*; aquí tiene su lugar exacto.
+- **Honestidad por tarjeta:** 2 · 3 · 4 corren hoy · 1 y 5 corren desde la semana del 14-sep (Compras + WhatsApp) — si se retrasan al deploy, la 1ª pasa a *"desde la app"* y la 5ª se retira · **cero tags** · sin cifras de impacto (el único número es el ejemplo ilustrativo del aguacate, declarado) · sin *agente* · *"cerebro operativo"* aprobado.
+- **Vetos respetados:** sin *módulo · plataforma · funcionalidad · dashboard* (se dice *pantalla* en las notas y nada en el copy) · sin *optimiza · inteligente · eficiente* · sin *"falta de X"*.
+
+**Cercas para `lab/` móvil:** cinco tarjetas con thumbnail pesan. Desktop: dos columnas (3 + 2) o una lista con la pantalla a la derecha. **Móvil: acordeón cerrado por defecto** — se ve el encabezado y la línea en cursiva; se abre al tocar. **Si aun así pesa, se comprime a 4:** la 3ª (cerebro operativo) se funde con la 2ª (recetas ligadas al inventario ya lo dicen).
+
+---
+
+## v4 · 7. Qué cambia — *"El cambio"* — ✅ cerrado (2026-09-09)
+
+**Trabajo:** el WHY cumplido — **qué cambia en tu vida**, lo que ninguna pantalla puede enseñar. Para los dos lectores: cierra el arco de la página. Hereda de la v3.3 el headline, dos cards casi intactas y el cierre; **recalibra las cuatro promesas al ICP de la Fase A** (`11` §5.6): tiempo y tranquilidad son las que compra · el dinero es consecuencia, no gancho · *escalamiento ordenado* sale · **recuperar tu cabeza** entra. Se vuelve más ligera porque §6 ya enseñó lo concreto.
+
+**Eyebrow:** EL CAMBIO
+
+**Headline** *(sin cambio · callback al motor de §5)*:
+> Qué cambia cuando tu operación trae motor.
+
+**Las 4 cards** *(el orden también cambia: primero lo que más quiere)*:
+
+**Recuperas tu cabeza** *(NUEVA · reemplaza a "Creces sin multiplicar el caos")*
+> Los incendios dejan de ser tuyos: el permiso, el proveedor, el pendiente, la persona que faltó. Zenet los carga contigo — y tu cabeza vuelve a estar en lo que te llevó a abrir: la comida, la sala, tu gente.
+
+**Recuperas tiempo** *(v3.3 · sin cambio)*
+> Nadie te marca para preguntarte la receta, el proveedor, el pendiente. Lo que vivía en tu cabeza, tu equipo lo consulta solo — y tus horas vuelven.
+
+**Operas con tranquilidad** *(v3.3 · sin cambio)*
+> Tu restaurante y tus procesos funcionan aunque te tomes un día. El conocimiento se queda, aunque alguien se vaya.
+
+**El dinero deja de irse en silencio** *(🔄 era "Dejas de perder dinero" · reescrita como consecuencia)*
+> El insumo que subió, el costo que se desvió, la merma que nadie contó: los ves a tiempo, con el número enfrente. No porque persigas los números — porque tu operación ya los trae.
+
+**El cierre** *(sin cambio · la resolución de toda la página)*:
+> Pero el cambio más profundo no es operativo. Es este:
+>
+> **Dejas de cargar tu negocio. Vuelves a construirlo.**
+>
+> A pensar en el siguiente paso, no en el siguiente incendio. A lo que te llevó a abrir un restaurante en primer lugar.
+
+*(→ §8 El fundador.)*
+
+---
+
+**Por qué así:**
+- **Cuatro promesas, otro peso.** La marca promete cuatro cosas (tiempo · dinero · tranquilidad · escalamiento). El campo dijo cuáles compra este ICP: **tranquilidad y tiempo**; el dinero es consecuencia; el crecimiento **no** (Miguel: *"que todo lo extra disminuya"* · `11` §5.6, N=1 — se confirma con 2-3 sesiones más). La página no cambia la promesa de marca; cambia **qué pone primero** para este lector.
+- **"Recuperas tu cabeza" abre** porque es lo que más quiere (`11` §5.3) y porque es la respuesta directa a la tarjeta 1 de §3 (*"corre con tu energía"*) y a la subline de §6 (*una mano derecha que conoce tu operación*). Usa *incendios* — vocabulario del propio Miguel — y cierra en *"la comida, la sala, tu gente"*: lo suyo.
+- **"Creces sin multiplicar el caos" sale de la página, no de la marca.** *Escalamiento ordenado* sigue siendo promesa canónica (Multi-Sitio · perfil ①); simplemente no es lo que este ICP vino a buscar. Vuelve el día que la página hable al perfil ①. El beat de *"la estructura se replica"* sobrevive en la animación de la Etapa 2 para quien tiene dos sucursales.
+- **La card del dinero se reescribe como consecuencia:** *"dejas de perder dinero"* prometía resultado; *"el dinero deja de irse en silencio"* describe el mecanismo (visibilidad a tiempo) — rima con la Etapa 3 (*"un costo que sube deja de comerse tu margen en silencio"*) y con §6 tarjeta 5, sin repetir *"el martes, no en el corte"*, que ya se usó. La última frase (*"no porque persigas los números — porque tu operación ya los trae"*) es *cargar* al revés: el número llega solo.
+- **El cierre no se toca.** *"Dejas de cargar tu negocio. Vuelves a construirlo."* resuelve la raíz palabra por palabra y es la mejor línea de la página.
+- **Vetos respetados:** sin *asistente* · sin *"todo en Zenet"* (contenedor) · sin *crecimiento acelerado* · sin cifras · sin *ahorro* como promesa.
+
+**Cercas para `lab/`:** 4 cards, misma malla que la v3.3 · sin animación (2 piezas animadas bastan · decisión v2) · si el cierre emocional compite con §6 en móvil, se recorta el párrafo final del cierre, nunca la línea en negrita.
+
+---
+
+## v4 · 8-10. El fundador · La invitación · Cierre — ✅ releídas contra la v4 (2026-09-09)
+
+Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo). Se releyeron contra el ICP nuevo, el vocabulario del producto y los vetos; nada choca. Dos adiciones **opcionales**, para decidir en `lab/` o dejar como están:
+
+| § | Qué se revisó | Veredicto |
+|---|---|---|
+| **8 · El fundador** | *"back-of-house"* en el headline — aquí es la palabra del descubrimiento (*"se decide atrás"*) y va en boca de Alan, no de la marca: se queda. *"Crecer sin perder la calidad"* es la lección de industria de Alan (1ª persona), no una promesa al ICP: se queda. Candado *"no una herramienta más, sino un sistema"* intacto | **Sin cambio** |
+| **9 · La invitación** | Sigue siendo cierta: *"un sistema en construcción que se afina con tu operación real"*. **Adición opcional al piso:** *"…te vas con tu operación escrita por primera vez: recetas costeadas, procesos documentados, tu manual — **y el historial de tus compras**. Es tuyo y te lo llevas."* Cierto desde que Compras corra; refuerza la reversión de riesgo con lo que el ICP usó desde la semana uno | **Sin cambio · adición opcional** |
+| **10 · Cierre** | *"Nos cuentas cómo operas hoy, te mostramos en qué está Zenet"* — es exactamente la Sesión 1 del guión v0.6 y `/demo`. La micro-línea *"Sin compromiso. Una conversación, no un contrato."* ya dice lo que el ICP necesita oír | **Sin cambio** |
+
+**Fuera de las secciones, dos cosas que la v4 cambia y quedan anotadas:**
+- **Navbar:** *"Demo"* se conserva como enlace de texto → `/demo`; en `02-demo` v0.2 la página deja de presentarse como *"la Etapa 1 del camino"* (ahora es la Etapa 2) y crece a demo completo (PDF · WhatsApp · Compras).
+- **OG image / meta description:** se revisan al deploy — la description actual habla en el marco de la v3.3; la v4 pide una que quepa el lector frío (*"Le mandas tus facturas por WhatsApp y desde la primera semana ves tus compras, tus precios y lo que subió — mientras tu operación queda en orden."*). Se decide con el build.
+
+---
+
+## v4 · Decisiones v0.5 (log de la reestructura · 2026-09-09)
+
+1. **Diez secciones** — la arquitectura de `00-estrategia` v0.4, escrita en un día, sección por sección con OK del fundador en cada una.
+2. **El hero no cambia** — ni el copy ni la red. La animación que cambia es la Etapa 1 del camino.
+3. **§2 El momento (nueva):** el dominó como gráfica con micro-motion (una pasada, sin loop) · dos anclas con fuente y año (CANIRAC Tijuana 2026 · CANIRAC 2024) · la voz de la presidenta verbatim con cortes · cierre *"lo que cambió es cuánto pesa — y quién lo carga"*. **D1 reabre cero cifras solo aquí**; impacto de Zenet sigue prohibido.
+4. **§3 de cuatro a cinco tarjetas**, la carga primero, el número al final; la 2ª cambia de encabezado (*se rompe cada vez que algo cambia*); el remate vuelve con la línea del fundador (*"las ventas traen el dinero; la operación decide cuánto se queda"*), por evaluar en pantalla.
+5. **§4 El trato:** un panel de pantalla para cinco pasos · 02 → *"Lo refuerza con un solo cerebro operativo"* (del fundador; *amarra* y *junta* descartados — contenedor) · 05 en dos frases · strip anti-POS con *"tu POS solo sabe lo que le cargaste"*, sin prometer integración · el beat de la posibilidad tecnológica fuera de la página.
+6. **§5 El camino:** subline y encabezados en **estados, no acciones** (*a la vista · en orden · fuerte*) — corrección del fundador · Etapa 1 = **tus compras por WhatsApp** · el análisis se funde en la Etapa 2 · *"Zenet hace el trabajo pesado y tú lo diriges"* · compresión de tiempo como ritmo (*"en días, no en meses"*) · *tus márgenes* en la Etapa 3 + *"una operación fuerte no es la que no cambia: es la que aguanta el cambio"* · animación de WhatsApp ajustada a lo que corre (Zenet responde, no inicia; el hallazgo vive en la app) · **un solo insumo en toda la página: el aguacate**.
+7. **§6 En concreto (nueva):** cinco tarjetas, una por problema, encabezado = lo que Zenet hace · subline con **mano derecha** (canon) — *asistente* y *virtual* fuera · acordeón en móvil, compresión a 4 si pesa.
+8. **§7 Qué cambia:** *Recuperas tu cabeza* entra y abre · *Creces sin multiplicar el caos* sale de la página (no de la marca) · el dinero como consecuencia · el cierre intacto.
+9. **§8-10 sin cambio**, con dos adiciones opcionales (el historial de compras en el piso · la meta description para el lector frío).
+10. **Honestidad:** cero tags en §5 y §6 · un tag en §4 (04) · Compras + WhatsApp entran porque estarán listos para SF la semana del 14-sep — con degradación escrita por sección si se retrasan.
+
+**Pendientes para el build (`lab/` → v4.0):** fuente/medio del reporte de CANIRAC Tijuana y nombre de la presidenta (§2) · `02-prototipo-y-diseno` a v3.3 antes de abrir la v4 · las capturas de producto (decisión #8: ilustrativas declaradas o SF con permiso) · pruebas en móvil de 2 · 3 · 6 (las cercas están escritas en cada sección) · `02-demo` v0.2 · nota de research con los datos del fundador (`05-market-insights/02-datos-de-mercado-tijuana-2026.md`).
 
 ---
 

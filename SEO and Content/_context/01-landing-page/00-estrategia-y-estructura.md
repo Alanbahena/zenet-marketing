@@ -190,7 +190,7 @@ Rescates y retiros acumulados: el reloj de "En acción" vive en `lab/etapa3.html
 
 ### Estado v0.4
 
-**Estrategia de la v4 cerrada (D0 · D1 · arquitectura · E1-E3) · en construcción.** En vivo sigue la **v3.3** (`zenetapp.com` · tag `v3.3`). **Compras + Zenet en WhatsApp entran en la v4 sin etiqueta** (listos para SF la semana del 14-sep, antes del deploy). Siguiente: `01-copy` v0.5 sección por sección, empezando por **§2 El momento** (entran los datos del fundador) y **§6 Qué hace por ti** (las nuevas) → `lab/` móvil para 2 · 3 · 6 → build → QA → deploy como **v4.0**.
+**Estrategia de la v4 cerrada (D0 · D1 · arquitectura · E1-E3) · en construcción.** En vivo sigue la **v3.3** (`zenetapp.com` · tag `v3.3`). **Compras + Zenet en WhatsApp entran en la v4 sin etiqueta** (listos para SF la semana del 14-sep, antes del deploy). **`01-copy` v0.5 COMPLETA EN PAPEL (2026-09-09 · 10/10 secciones, cada una con OK del fundador).** Ajustes que el copy le hizo a esta estrategia: la Etapa 1 del camino = *tus compras por WhatsApp* y el análisis pasa a la Etapa 2 (→ `/demo` deja de ser "la Etapa 1") · las etapas se dicen como **estados** (a la vista · en orden · fuerte), no como acciones del operador · Zenet en WhatsApp **solo responde** en la versión de SF (no inicia mensajes) — el hallazgo vive en la app · un solo insumo de ejemplo en toda la página (el aguacate). Siguiente: `02-prototipo-y-diseno` a v3.3 → `lab/` móvil para 2 · 3 · 6 → build → QA → deploy como **v4.0**.
 
 ### Decisiones abiertas
 
