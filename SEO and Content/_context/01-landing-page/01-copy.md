@@ -164,7 +164,15 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 ---
 
-## v4 · 4. El trato — *"Cómo trabaja Zenet"* — ✅ cerrado (2026-09-09 · panel de pantalla se decide en `lab/`)
+## v4 · 4. El trato — *"Cómo trabaja Zenet"* — ✅ cerrado en papel (9-sep) · 🔧 **RESUELTO EN `lab/` (10-sep · `lab/v4-trato-c.html`)**
+
+> **Decisión del lab (2026-09-10): §4 va SIN CAPTURAS — variante C.** Se construyeron y se vieron en pantalla las tres:
+> - **A** (`v4-trato.html`): un panel grande bajo la fila que sigue al paso activo, con avance automático. Funciona una vez que los placeholders se redibujaron con densidad de app real — el *"se ve grande"* del fundador era escala del dibujo, no del layout — pero suma un tercer sistema animado y duplica el alto de la sección.
+> - **B** (`v4-trato-b.html`): miniatura al pie de cada paso. **Descartada en pantalla:** a 230 px una captura de app no se lee (queda una mancha) y las miniaturas caen a alturas distintas porque los textos miden distinto. El patrón funciona en §6 porque allá las miniaturas son **dibujos**, no pantallas.
+> - **C** (`v4-trato-c.html`): **elegida.** Los cinco verbos limpios, la línea punteada, un solo tag (04) y el strip anti-POS. La sección mide 952 px y se lee en diez segundos.
+>
+> **Por qué C es además lo correcto:** la estrategia dice que §4 es la **promesa (HOW)** y §5 el **mecanismo (WHAT)**. Meter capturas en §4 duplicaba lo que §5 hace mejor y a mayor tamaño. **Las pantallas se concentran en §5**; §6 se queda con sus miniaturas de dibujo. Corrige el spec `02-prototipo` v4.0-draft §C/§D, que preveía `.trato-panel`.
+> **Detalle de marca:** la píldora *En construcción* usa el estilo de producción (teal 10% + borde teal 25%, versalitas), **no peach** — corrección del fundador. El peach queda para la tensión de las animaciones (dominó · §2), no para etiquetas.
 
 **Trabajo:** la promesa — **quién carga ahora** (HOW). Para los dos lectores. Hereda de la v3.3 el headline, la subline, los cinco verbos y el cierre **casi intactos**; lo que cambia es que **cada verbo ahora tiene una pantalla real detrás** (E1a) y el strip anti-POS gana el argumento del fundador. Recibe el remate de §3 (*"la operación decide cuánto se queda"*).
 
