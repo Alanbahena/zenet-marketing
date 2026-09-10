@@ -213,7 +213,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 > *Pantalla:* **Manual Operativo en el celular** — lo que consulta el nuevo en su primer turno.
 
 **Strip anti-POS** *(🔄 gana el argumento del fundador)*:
-> **Zenet no es un POS.** Tu punto de venta ve ventas; Zenet trabaja sobre lo que hay detrás: tus recetas, tus insumos, lo que pagas por ellos. *(🔧 recortado en la integración)* **Tu POS se queda. El caos se va.**
+> **Zenet no es un POS.** Tu punto de venta ve ventas; Zenet trabaja sobre lo que hay detrás: tus costos, tus compras, tus operaciones. *(🔄 los tres elementos, del fundador)* *(🔧 recortado en la integración)* **Tu POS se queda. El caos se va.**
 
 **Cierre** *(sin cambio)*:
 > Zenet no reemplaza a tu equipo: lo libera del trabajo de cargar el sistema. **La última palabra siempre es tuya.** *(🔧 integración 9-sep: sale "detecta, sugiere y acompaña" — la sección ya son cinco verbos y esos tres eran marca encima del mecanismo)*
