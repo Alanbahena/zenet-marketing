@@ -56,6 +56,8 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 > - **Reveal:** una sola pasada por IO, 120 ms por ficha, dos frames después del primer paint (Safari no transiciona si la clase entra en el mismo frame); botón *repetir* en el lab; `prefers-reduced-motion` = todo encendido.
 > - **Móvil (390 px):** cadena en vertical · tarjeta de datos · la gráfica plegada por defecto (`<details>`).
 >
+> - **Iteración 8 (9-sep · el titular):** *"te cae a ti"* → **"termina en tu día a día"**. El fundador probó primero *"impacta a tu restaurante"* y luego *"influye en tu día a día"*; los dos verbos son de reporte y **no dicen qué pasa** — *influye* deja al lector igual que antes de leer, y *impacta* es de la familia vetada (*optimiza · potencializa · áreas de oportunidad*). Su objeto sí servía: **"día a día" es lenguaje de operador** y es lo que él vive; *termina* dibuja la cadena completa. Y *"te cae a ti"* señalaba al lector en §2, **cuando todavía llega frío**: el giro personal se gana en §3 (*"se carga"*). El cuerpo suelta *"entra a tu restaurante"* para no repetir el verbo: *"Cada cambio de allá afuera entra por una pieza y mueve todas las demás."*
+>
 > El texto de abajo (headline · body · las dos cadenas largas · la voz · el cierre) es la versión en papel del 9-sep; **lo construido manda** hasta que se integre y se reescriba esta sección con la versión final.
 
 **Trabajo:** el contexto para el **lector frío** — *el mundo cambió y tu operación lo siente*. Educa sobre **su mecanismo** (el dominó), no sobre el macro. Sube de §7 (v3.3) a §2. Cierra con el puente a §3.
@@ -63,7 +65,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 **Eyebrow:** EL MOMENTO
 
 **Headline:**
-> Lo que cambia allá afuera, te cae a ti.
+> Lo que cambia allá afuera, termina en tu día a día.  *(🔄 2026-09-09 · era "te cae a ti")*
 
 **Body** *(un párrafo · hereda el primer párrafo de §7 v3.3, afinado)*:
 > Los costos no se quedan quietos. La gente rota más que antes. La exigencia sube. Y lo que antes se absorbía sin sentirlo, hoy se ve en el margen — y en tus horas. Cada cambio de allá afuera entra a tu restaurante por una pieza y mueve todas las demás.
@@ -96,7 +98,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 ---
 
 **Por qué así:**
-- **El headline nombra el mecanismo, no el mercado.** *"Lo que cambia allá afuera, te cae a ti"* es el dominó en una frase y ya apunta al hilo *cargar*. Se descartó heredar *"El juego cambió — y lo que puedes hacer al respecto, también"* (v3.3): su segunda mitad es el beat de la *posibilidad tecnológica*, que en la v4 ya lo dice el hero (*"un equipo de especialistas…"*) y lo demuestra el trato — repetirlo aquí adelanta la venta antes de la evidencia. **Ese beat queda para evaluarse en §4** (la línea *"hace unos años, lo más que podías comprar era otra herramienta"* rima con el strip anti-POS).
+- **El headline nombra el mecanismo, no el mercado.** *"Lo que cambia allá afuera, **termina en tu día a día**"* es el dominó en una frase: empieza afuera y **acaba** en su día — la misma cadena que la animación dibuja dos líneas abajo. Se descartó heredar *"El juego cambió — y lo que puedes hacer al respecto, también"* (v3.3): su segunda mitad es el beat de la *posibilidad tecnológica*, que en la v4 ya lo dice el hero (*"un equipo de especialistas…"*) y lo demuestra el trato — repetirlo aquí adelanta la venta antes de la evidencia. **Ese beat queda para evaluarse en §4** (la línea *"hace unos años, lo más que podías comprar era otra herramienta"* rima con el strip anti-POS).
 - **Las cifras cumplen D1 al pie:** dos, con fuente y año visibles, en el origen de cada cadena — el número es el empujón, la cadena es lo que le hace a él. *"Hasta 40%"* se escribe *hasta*, como la fuente. *"3 de cada 4"* = 75%, en lenguaje de operador, con la fuente al lado.
 - **El test del copy doc, aplicado al encuadre:** *"la rotación es del 30-80%"* lo pone cualquier POS mañana; *"se va alguien → se lleva lo que sabía → lo pagas en tiempo y en dinero"* no.
 - **La voz de la presidenta es la tercera ancla sin ser número:** una institución local diciendo el dominó con sus palabras. Verbatim con cortes `[…]` — regla anti-falsificación de la VoC; entra también a `07-voice-of-customer` como voz institucional.
