@@ -414,7 +414,7 @@ Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo)
 9. **§8-10 sin cambio**, con dos adiciones opcionales (el historial de compras en el piso · la meta description para el lector frío).
 10. **Honestidad:** cero tags en §5 y §6 · un tag en §4 (04) · Compras + WhatsApp entran porque estarán listos para SF la semana del 14-sep — con degradación escrita por sección si se retrasan.
 
-**Pendientes para el build (`lab/` → v4.0):** fuente/medio del reporte de CANIRAC Tijuana y nombre de la presidenta (§2) · `02-prototipo-y-diseno` a v3.3 antes de abrir la v4 · las capturas de producto (decisión #8: ilustrativas declaradas o SF con permiso) · pruebas en móvil de 2 · 3 · 6 (las cercas están escritas en cada sección) · `02-demo` v0.2 · nota de research con los datos del fundador (`05-market-insights/02-datos-de-mercado-tijuana-2026.md`).
+**Pendientes para el build (`lab/` → v4.0):** fuente/medio del reporte de CANIRAC Tijuana y nombre de la presidenta (§2) · `02-prototipo-y-diseno` **v4.0 draft** (el spec de diseño de la v4 — el v3.3 ya estaba documentado desde el 2-sep) · las capturas de producto (decisión #8: ilustrativas declaradas o SF con permiso) · pruebas en móvil de 2 · 3 · 6 (las cercas están escritas en cada sección) · `02-demo` v0.2 · nota de research con los datos del fundador (`05-market-insights/02-datos-de-mercado-tijuana-2026.md`).
 
 ---
 

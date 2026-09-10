@@ -199,7 +199,7 @@ Rescates y retiros acumulados: el reloj de "En acción" vive en `lab/etapa3.html
 | 1 | **Qué cifras van en §2** — las 2-3 finales, con fuente y año confirmados, entre las candidatas del research y los datos nuevos del fundador | En el copy de §2 |
 | 2 | **Cuántas capacidades en §6** (4, 5 o 6) y cuáles — mapeadas a P1-P5, solo lo que corre hoy | En el copy de §6 · se recorta en `lab/` móvil |
 | 3 | **El remate de §3** (*"lo más caro no se compra: se carga"*) — cortado en v3, por reevaluar con el ICP nuevo | En pantalla, no en papel |
-| 4 | **Actualizar `02-prototipo-y-diseno`** a v3.3 (dominó · brecha punteada · retiro del reloj) antes de abrir la v4 | Al arrancar `lab/` |
+| 4 | ~~Actualizar `02-prototipo-y-diseno` a v3.3~~ — **resuelta (verificado 2026-09-10): el spec ya está en v3.3 desde el 2-sep** (dominó · brecha punteada · retiro del reloj documentados). La nota heredada de la v0.3 estaba desactualizada. Lo que sigue es **`02-prototipo` v4.0 (draft)**: el spec de diseño de la v4 antes de abrir `lab/` | ✅ |
 | 8 | **Qué pantallas de Compras y de WhatsApp se enseñan** — y con qué datos: **de ejemplo, declarados** (*"datos ilustrativos"*) o de un Socio Fundador real **con permiso**. Se muestran **tal como son** (regla de colores acotada a marketing) · el vocabulario en la superficie es **"Zenet en WhatsApp"**, nunca "agente de compras" | En el copy de §5 (Etapa 1) y §6 · cuando Compras esté en producción (est. semana del 14-sep) |
 | 5 | **Versión en inglés** — diferida (re-escritura, no traducción) | Mentor/inversionista US concreto **y** copy ES estabilizado |
 | 6 | **"Etapa 4 · Resultados"** — aparcada con gate | Primera curva real de un Socio Fundador |

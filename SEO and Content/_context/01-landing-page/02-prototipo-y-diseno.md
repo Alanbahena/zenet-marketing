@@ -1,10 +1,10 @@
 ---
 name: Landing page · prototipo y diseño
-description: El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
+description: v4.0-DRAFT (2026-09-10) = el spec de diseño de la landing v4, EN CONSTRUCCIÓN, como bloque arriba; debajo, intacto, el spec v3.3 de lo que está EN VIVO. v4 — 10 secciones · pantallas reales donde existe la pantalla · el dominó como gráfica en §2 con micro-motion · un panel de pantalla para el trato · Etapa 1 = Compras + Zenet en WhatsApp · §6 En concreto en acordeón móvil · presupuesto de peso · plan de lab/ · QA y deploy gate v4. Anterior — El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-09-02
+last_updated: 2026-09-10
 status: active
-version: 3.3
+version: 4.0-draft
 owner: Alan Bahena
 ---
 
@@ -15,6 +15,135 @@ owner: Alan Bahena
 > **Artefacto vivo:** el repo **`zenet-landing`** (GitHub privado `Alanbahena/zenet-landing` · en `02_Producto-y-Tech/` · fuera de este workspace) desplegado por **Vercel**.
 >
 > Estado: ✅ **EN VIVO en producción** · tag **`v3.3`** (2026-09-02 · copy v0.4 del fundador + la animación del dominó). Antes: `v3.0` (landing v3, 2026-08-07). El gate original (onboarding + análisis real) fue **levantado por decisión explícita del fundador** el 2026-08-07 — los tags "En construcción" se consideraron honestidad suficiente. ⚠️ El copy habla en presente: **shipear onboarding + análisis real quedó como deuda de producto con prioridad alta.**
+
+---
+
+# — DISEÑO v4 (v4.0-draft · 2026-09-10 · en construcción) —
+
+> **Qué es este bloque:** el spec de diseño de la **landing v4** antes de abrir `lab/` — el papel que precede a la construcción, como en v2 y v3. Aplica `00-estrategia` **v0.4** (10 secciones · dos entradas · D1) y `01-copy` **v0.5** (copy cerrado sección por sección el 9-sep). **Debajo de este bloque sigue el spec v3.3, intacto: es lo que está EN VIVO** y la referencia técnica (repo · workflow · esquema SVG canónico · QA) que la v4 hereda sin cambios.
+>
+> **Estado:** draft — se cierra con el fundador sección por sección y se convierte en el spec v4.0 cuando la v4 se despliegue. **Método:** papel → `lab/` por componente (móvil primero para lo nuevo) → checkpoint visual con Alan → integración a `index.html` en branch `v4` → QA → deploy gate → tag `v4.0`.
+
+## v4 · A. Decisiones de diseño v4
+
+| Decisión | Detalle |
+|---|---|
+| **Pantallas reales donde existe la pantalla** | La regla de forma v4: *una pantalla real vale más que una animación abstracta cuando la pantalla existe*. Entran capturas del producto en el trato (§4), el camino (Etapas 1-2) y §6. Donde no hay pantalla, sigue la metáfora (el dominó) o el texto con etiqueta (paso 04). |
+| **Jerarquía de animación v4** | **El dominó de la Etapa 3 = la estrella** (única animación compleja, en loop) · **hero = respiración** (loop) · **Etapas 1-2 = secuencias de pantallas** con transiciones simples (crossfade/slide, beat-loop del patrón `.eN-stage`) · **§2 dominó gráfico = micro-motion una sola pasada** (reveal en cadena por IO, sin loop) · resto = reveals. La disciplina *"no sobre-animar"* se conserva: solo dos cosas corren en loop complejo. |
+| **Capturas tal como son** | Regla de colores de alerta **acotada a marketing** (`00-estrategia` §4.4): los componentes propios no usan rojo ni ámbar (la tensión va en `--peach-100`); **las capturas del producto traen sus colores** (Compras usa rojo/verde) y no se retocan. Marco uniforme `.shot`. |
+| **Datos en las capturas = ilustrativos declarados, o de un SF con permiso** (decisión #8) | Pie fijo bajo cada `.shot`: *"datos ilustrativos"* (o *"operación de un Socio Fundador, con permiso"*). **Ningún nombre real** de restaurante, proveedor ni persona en pantalla pública — ⚠️ la maqueta de Compras del 9-sep muestra **"Alma Verde"** como cuenta: en las capturas de la landing el tenant es ficticio. **Un solo insumo de ejemplo en toda la página: el aguacate** (Hass · +17% · ~$300/mes), coherente entre §2, §5 y §6. |
+| **Zenet en WhatsApp: se muestra, no se imita** | El chat se representa con el patrón `.bub-user` / `.bub-zenet` que ya existe (mint / blanco con badge *"● Zenet"*) — **no se pinta el verde de WhatsApp ni se copia su UI** (marca de terceros; y una captura "real" de teléfono en una landing se lee como falsificable). El rótulo dice *"Zenet en WhatsApp"*. El contenido del chat es el de `01-copy` §5 Etapa 1 (4 beats): **Zenet responde, no inicia** — el hallazgo se enseña en la app. |
+| **Cifras con fuente visible (D1)** | Componente `.anchor`: cifra grande + una línea de fuente en versalitas (*CANIRAC Tijuana · 2026*). **Solo en §2, máximo 2, nunca sin fuente.** El único número fuera de §2 es el ejemplo ilustrativo del aguacate dentro de las capturas. |
+| **Presupuesto de peso** | Hoy `assets/` pesa 812 KB (la foto de `/hablemos` 314 KB · `app-catalogos.png` 282 KB — esta sale con la v4). La v4 suma ~8 capturas: **cada `.shot` ≤ 120 KB** (WebP con fallback PNG · recorte al panel · 2× solo donde se ve grande) · `loading="lazy"` en todo lo que no sea hero · **objetivo: página completa < 2.5 MB, LCP sin capturas** (el hero sigue siendo SVG/CSS). |
+| **Móvil primero para lo nuevo** | Las secciones nuevas o crecidas (§2 · §3 · §6) se construyen en `lab/` **a 390 px antes que en desktop**, con teléfono real en el checkpoint. Las cercas de `01-copy` (plegar la captura de §2 · fundir la 5ª de §3 · acordeón y compresión de §6) se deciden ahí. |
+| **Lo que se retira** | La **consulta** (strip + chat rotativo + su driver): fundida en la Etapa 1 · `app-catalogos.png` (sustituida por las capturas reales) · las escenas `e1` y `e2` de v3.3 (documentos flotando · chips → estrella) se sustituyen — **el panel de análisis del beat 4 de e1 y las dos tarjetas de sucursal del beat 5 de e2 se reutilizan** en la nueva Etapa 2 · el segundo párrafo de *Por qué ahora* (posibilidad tecnológica) sale de la página. Todo se conserva en `lab/` e historial, como el reloj. |
+| Heredado sin cambio | Acento teal · arquitectura térmica · glass en hero/CTA · Onest + Hanken · container 1280 · **esquema SVG canónico** (§2 v3.3) · hero sólido · brecha punteada · núcleo inmóvil en las animaciones · un solo `tag-wip` (paso 04). |
+
+## v4 · B. Tokens y utilidades nuevas
+
+Paleta y tipografía **sin cambio** (`:root` actual: `--offwhite-50/100` · `--peach-100 #F4DED0` · `--charcoal-900` · `--teal-700` · `--grey-100/300` · `--accent #2E6E62` / `--accent-hover` · `--teal-400` · `--mint-200 #BFE2D9`). Utilidades nuevas, todas sobre tokens existentes:
+
+| Clase | Qué es | Notas |
+|---|---|---|
+| `.anchor` | Cifra + fuente (§2) | Cifra en `--font-display` · `clamp(28px, 4vw, 40px)` · fuente en versalitas 12px `--teal-700` · alineada bajo la pieza de origen de cada cadena |
+| `.shot` | Marco de captura de producto | Borde 1px `--grey-100` · radio 14px · sombra suave (la de `.eN-stage`) · fondo `--offwhite-50` · pie 12px *"datos ilustrativos"* · `img` WebP + fallback · `loading="lazy"` |
+| `.chain` / `.piece` / `.piece-origin` | El dominó gráfico (§2) | Piezas = chips con punto (mismo look que `.d3` pieces) unidas por línea punteada en SVG canónico · `.piece-origin` en `--peach-100` · estado `.is-on` con `transition-delay` escalonado |
+| `.quote-card` | La voz (§2) | Blockquote con barra `--accent` · atribución en versalitas · verbatim con cortes |
+| `.trato-panel` | Panel de pantalla del trato (§4) | Contenedor con los `.shot` apilados · swap por opacidad · controlado por el paso activo |
+| `.concreto` / `<details>` | Tarjetas de §6 | Móvil: acordeón nativo `<details>` cerrado por defecto (sin JS) · desktop: grid |
+
+## v4 · C. Las 10 secciones (v4)
+
+| # | data-screen-label | Eyebrow | Contenido (`01-copy` v0.5) | Componente que la cierra | vs v3.3 |
+|---|---|---|---|---|---|
+| 1 | Hero | — | Sin cambio: bandera + subhead + `Hablemos` | Motivo red (sólidos) respirando | **Igual** |
+| 2 | El momento | El momento | *"Lo que cambia allá afuera, te cae a ti."* + body + **el dominó** (2 cadenas) + 2 `.anchor` + `.shot--compras` (gráfica precios vs llegada) + `.quote-card` + puente | Dominó gráfico · reveal una pasada | **NUEVA** (sube de §6 v3.3, se vuelve gráfica) |
+| 3 | El problema | La realidad de hoy | Titular sin cambio + **5 `.pain`** (la 2ª con la brecha punteada · la 5ª con figura nueva) + remate de una línea (por evaluar en pantalla) | 5 tarjetas line-art | De 4 a 5 · reorden |
+| 4 | El trato | Cómo trabaja | Headline + subline sin cambio · **5 pasos con `.trato-panel`** (WhatsApp · Recetas · Compras · [04 tag] · Manual móvil) · strip anti-POS nuevo · cierre | Fila de pasos + panel de pantalla | Gana producto real · 02 y 05 nuevos |
+| 5 | El camino | El camino | Headline sin cambio · subline nueva · **Etapa 1 = WhatsApp → Compras** (4 beats) · **Etapa 2 = análisis → Recetas → Inventario → Equivalencias → sucursales** (6 beats) · **Etapa 3 = el dominó** (sin cambio) · cierre *"si saben mandar una foto por WhatsApp…"* | La pieza estrella | Etapas 1-2 nuevas · consulta retirada |
+| 6 | En concreto | En concreto | *"Qué te quita de encima."* + subline *mano derecha* + **5 tarjetas** (título · línea en cursiva · cuerpo · `.shot` mini) + cierre | Grid / acordeón | **NUEVA** |
+| 7 | Qué cambia | El cambio | Headline sin cambio · **4 `.change`** (tu cabeza · tiempo · tranquilidad · el dinero deja de irse) · cierre intacto | 4 cards + cierre | Textos nuevos · patrón igual |
+| 8 | El fundador | El fundador | Sin cambio | Foto + 1ª persona | **Igual** |
+| 9 | La invitación | La invitación | Sin cambio (+ opcional *"y el historial de tus compras"* en el piso) | 4 `.benefit` + `.deal` | Igual |
+| 10 | Cierre | — | Sin cambio | Card aurora + `Hablemos` | **Igual** |
+
+`section` / `section-alt` siguen alternando; con 10 secciones el hero y el cierre quedan en fondos distintos a los de v3.3 — se verifica en la integración.
+
+## v4 · D. Componentes nuevos o cambiados
+
+- **El dominó gráfico (§2 · `.domino`)** — dos `.chain` horizontales. Cada cadena: `.piece-origin` (peach) → 4-5 `.piece` unidas por una línea punteada dibujada en SVG con el **esquema canónico** (viewBox + dashes en unidades de viewBox + width/height 100%). Bajo la pieza de origen, el `.anchor`. **Movimiento:** IO dispara una vez `.is-on` en la cadena; cada pieza enciende con `transition-delay` escalonado (~120 ms) de izquierda a derecha; la pieza de origen hace un pulso peach único (`@keyframes` de 600 ms); la línea se dibuja con `stroke-dashoffset` en la misma pasada. **Sin loop. `prefers-reduced-motion`: todo encendido desde el inicio.** Móvil: `.chain` en columna (flex `column`), la línea vertical, las piezas a ancho completo. Junto a la cadena 1, `.shot--compras` (desktop a la derecha · móvil debajo, **plegable** — primera cerca). Debajo, `.quote-card`. Todo esto en `lab/v4-momento.html`.
+- **Las 5 tarjetas (§3 · `.pain`)** — mismo componente que v3.3. Desktop: a 1280 caben 5 columnas de ~232 px; se prueba contra 3 + 2. La figura de la 2ª (ex-3ª) conserva la **brecha punteada**. **Figura nueva para la 5ª** — *"el mes que avanza y el número que llega tarde"*: una línea base con cuatro marcas de semana en teal y, al final, un pequeño rectángulo (el número) que aparece en peach; line-art, mismo grosor que las otras cuatro. El **remate** (*"Las ventas traen el dinero. La operación decide cuánto se queda."*) se construye como `.section-end` de una línea y **se juzga en pantalla** — misma prueba que mató al WHY.
+- **El trato con panel (§4 · `.trato-panel`)** — la fila de 5 pasos de v3.3 se conserva (número + ícono line-art + título + cuerpo). Debajo, **un solo panel** con los `.shot` apilados (WhatsApp · Recetas · Compras · Manual móvil); el paso 04 muestra el `tag-wip` en lugar de captura. **Control:** desktop = hover/click en el paso · móvil = **riel vertical** con la captura plegada bajo cada paso (`<details>`), o IO que activa el paso visible — decide `lab/v4-trato.html`. Swap por opacidad, 300 ms.
+- **Etapa 1 v4 (`.e1-stage`)** — reutiliza el teatro `.eN-stage` y el patrón beat-loop. 4 beats: **1** burbuja `.bub-user` con thumbnail de factura (SVG genérico de ticket, no una factura real) · **2** `.bub-zenet` con el texto del copy (*"Listo — guardé 12 insumos de Frutas Pérez…"* — proveedor ficticio) con typing dots antes · **3** `.shot--compras-card` (*Mayor movimiento del mes · Aguacate Hass +17%*) · **4** `.shot--compras-chart` con la línea de *tus precios vs tu llegada* dibujándose (SVG propio con `pathLength="1"`, encima de la captura o sustituyéndola). Captions del copy. Snap-reset como e2/d3. Reduced-motion = beat 4.
+- **Etapa 2 v4 (`.e2-stage`)** — 6 beats: **1** el panel de análisis (**reutiliza el beat 4 de la e1 v3.3**: filas + barras que se llenan) · **2** `.shot--recetas` · **3** `.shot--inventario` · **4** `.shot--equivalencias` · **5** las **dos tarjetas de sucursal** conectadas (**reutiliza el beat 5 de la e2 v3.3**) · **6** *"Y la estructura queda hecha"*. Transiciones: crossfade + leve slide; sin coreografía nueva.
+- **Etapa 3 (`.d3-*`)** — **sin cambio.** El pill sigue rotando *sube el tomate · proveedor nuevo · se va tu cocinero · menú de temporada*.
+- **En concreto (§6 · `.concreto`)** — 5 tarjetas: título (lo que Zenet hace) · línea en cursiva (el problema) · cuerpo 2 líneas · `.shot` mini (thumbnail 4:3 del mismo asset que usa el trato, recortado). **Móvil: `<details>` nativo, cerrado por defecto** — se ve título + cursiva; sin JS. Desktop: grid 3 + 2 o lista con la captura a la derecha (decide `lab/v4-concreto.html`). Cerca: si pesa, 4 tarjetas (la 3ª se funde en la 2ª).
+- **Qué cambia (§7 · `.change`)** — patrón intacto; cuatro textos nuevos; figuras: la card 2 de v3.3 (con brecha punteada) pasa a ser la 4ª (*el dinero deja de irse en silencio*) — la brecha sigue teniendo sentido ahí; la 1ª (*tu cabeza*) necesita figura nueva: line-art del núcleo con las piezas de los incendios separándose de él (misma familia que el dominó).
+- **Se retiran:** `.verb`? — no: las `.verb` de v3.3 son las de §3 *(el spec v3.3 lo corrige en su §4)*; se retiran la consulta (strip + `.bub-*` rotativo + driver) y las escenas e1/e2 v3.3 completas (a `lab/`).
+
+## v4 · E. Movimiento / inventario de scripts v4
+
+Reglas invariables: cross-browser (JS timer + CSS transitions + SMIL · nada de scroll-timeline) · `prefers-reduced-motion` en todo · IO para arrancar · beat-loop con snap-reset · **`str.replace` + `assert count==1` por edición, nunca `re.sub` amplio sobre el CSS.**
+
+Scripts inline previstos (orden): **cta-glow** (igual) · **reveal** (generaliza el *verb reveal* de v3.3 a `.pain` · `.concreto` · `.change`) · **domino-reveal** (§2 · IO `once` · añade `.is-on`) · **trato-panel** (paso activo → `.shot` visible · hover/click desktop · IO/details móvil) · **e1** v4 · **e2** v4 · **d3** (igual) · *(el driver de la consulta se retira)*. §6 no lleva script: `<details>`. Al portar a Next.js, cada uno → hook con el mismo patrón.
+
+## v4 · F. Assets nuevos
+
+| Asset | Origen | Dónde se usa | Peso objetivo |
+|---|---|---|---|
+| `shot-compras-card.webp` · `shot-compras-chart.webp` | Captura del producto (staging · tenant ficticio · dataset ilustrativo con el aguacate) | §2 · §4 paso 03 · §5 Etapa 1 · §6 t5 | ≤ 120 KB c/u |
+| `shot-recetas.webp` · `shot-inventario.webp` · `shot-equivalencias.webp` | Captura del producto (Estandarización) | §4 paso 02 · §5 Etapa 2 · §6 t2/t3 | ≤ 120 KB c/u |
+| `shot-manual-movil.webp` | Captura del producto en viewport móvil | §4 paso 05 · §6 t4 | ≤ 80 KB |
+| `shot-analisis.webp` *(o el panel SVG de e1 v3.3)* | Producto (el análisis) o SVG existente | §5 Etapa 2 beat 1 | SVG preferido (0 KB extra) |
+| El chat de WhatsApp | **HTML + CSS** (`.bub-*`), no imagen | §4 paso 01 · §5 Etapa 1 · §6 t1 | 0 KB |
+| `og-image.png` v4 | `lab/og-source.html` → Chrome headless 1200×630 · misma bandera; se evalúa sumar *"Le mandas tus facturas por WhatsApp…"* | OG | ≤ 60 KB |
+| Sale: `app-catalogos.png` (282 KB) | — | — | −282 KB |
+
+**Cuándo se toman las capturas:** con Compras + WhatsApp en staging (semana del 14-sep). Mientras, `lab/` trabaja con **placeholders del mismo tamaño** para decidir layout y peso; las capturas se cambian al final sin tocar el layout.
+
+## v4 · G. Plan de `lab/` (orden y qué decide cada uno)
+
+| # | Archivo | Qué se construye | Qué se decide (checkpoint con Alan · móvil real + desktop) |
+|---|---|---|---|
+| 1 | `lab/v4-momento.html` | §2 completa: dominó + anclas + `.shot` + cita | ¿Cabe con la captura a 390 px o se pliega? · ritmo del reveal (120 vs 180 ms) · desktop: captura a la derecha o debajo |
+| 2 | `lab/v4-concreto.html` | §6: 5 tarjetas con thumbnails | Acordeón vs abiertas · **5 vs 4** · grid 3+2 vs lista |
+| 3 | `lab/v4-problema.html` | §3: 5 `.pain` + figura nueva + remate | 5 columnas vs 3+2 · la figura del mes · **el remate: se queda o se corta** |
+| 4 | `lab/v4-trato.html` | §4: fila + `.trato-panel` | hover/click vs IO · móvil: `<details>` bajo cada paso · el tag del 04 en el panel |
+| 5 | `lab/v4-etapa1.html` · `lab/v4-etapa2.html` | Las dos secuencias de pantallas | Duraciones de beat · crossfade vs slide · reutilización de e1-b4 y e2-b5 |
+| 6 | Integración | Branch `v4` sobre `main` · secciones en orden · `_qa.html` con `?sel=&scene=&beat=` para los nuevos | Peso total · LCP · reduced-motion · fondos alternos con 10 secciones |
+
+Regla heredada: **el lab decide, el index es la verdad** — verificar el index después de integrar, no solo el lab. Orden elegido por riesgo: primero las tres secciones con cercas de móvil (2 · 6 · 3), luego las de producto (4 · 5), que dependen de las capturas.
+
+## v4 · H. QA v4 (añade al §8 v3.3)
+
+- **Móvil real primero** en 2 · 3 · 6 (el lector abre esto en el celular entre dos incendios) · headless solo para estados finales y layout, nunca para ritmo ni viewport móvil (lección v3.3).
+- **Peso y LCP:** página completa < 2.5 MB · LCP = hero (sin capturas) · todas las capturas `lazy` · WebP con fallback.
+- **Honestidad en pantalla:** cero nombres reales en capturas · pie *"datos ilustrativos"* presente · el aguacate y solo el aguacate · fuentes visibles en los dos `.anchor` · un solo `tag-wip` (04) · **cero rojo/ámbar en componentes propios** (las capturas exentas) · el copy de Etapa 1 y §4 paso 01 con *"por WhatsApp"* **solo si el canal está en producción** (si no, degradación de `01-copy`).
+- **`prefers-reduced-motion`:** domino-reveal encendido · e1/e2 en último beat · d3 en beat 5.
+- **Regla de oro** (v3): capturar y mirar el propio trabajo del index antes de pedirle a Alan que mire el suyo · avisar solo con deploy Ready + pestaña privada.
+
+## v4 · I. Deploy gate v4 — esta vez real
+
+La v3 levantó su gate por decisión del fundador y dejó una deuda (el análisis en presente sin correr). **La v4 promete más producto en pantalla, así que el gate no se levanta:**
+
+1. **Compras + Zenet en WhatsApp en producción** para Socios Fundadores (estimado semana del 14-sep) — o la degradación por sección de `01-copy` aplicada antes del merge.
+2. **Capturas** con datos ilustrativos declarados o de un SF con permiso · tenant ficticio · sin nombres reales.
+3. **Fuentes de §2 confirmadas** (medio del reporte de CANIRAC Tijuana + nombre de la presidenta) — o la ancla alternativa con fuente (Tijuana 2024 · IIEG Jalisco) y la cita sin nombre o fuera.
+4. **QA móvil del fundador** en teléfono real (2 · 3 · 6 y el camino).
+5. **OG + meta description v4** · refrescar caché de OG (Sharing Debugger).
+
+Branch `v4` → merge `--no-ff` a `main` → tag `v4.0` → verificación en vivo (titular de §2 · `.domino` · `.trato-panel` · Etapa 1 nueva presentes en el HTML servido) → `02-demo` v0.2 en la misma ventana.
+
+## v4 · J. Cross-doc
+
+| Doc | Relación |
+|---|---|
+| `00-estrategia-y-estructura.md` **v0.4** | Las 10 secciones · D0 · D1 · las cercas (upstream) |
+| `01-copy.md` **v0.5** | El copy por sección con sus cercas de `lab/` y las degradaciones por honestidad (upstream) |
+| `02-demo/00-estrategia-y-copy.md` v0.1 → **v0.2** | `/demo` deja de ser "la Etapa 1" y crece a demo completo — se actualiza con el deploy v4 |
+| `Product Strategy/04-go-to-market/11-icp-hipotesis-fase-a.md` | El lector de la página (§1) · el aguacate y "sientes el número" (§3 · §7) |
+| `Branding/03-visual-identity/02-color.md` v2.0 · `04-iconografia-e-imagen.md` | Teal canónico · line-art Braun para las figuras nuevas (§3 t5 · §7 c1) |
+| Repo `zenet-landing` (`index.html` 969 líneas · `lab/` · `assets/`) | El artefacto — el bloque v3.3 de abajo documenta cómo se trabaja en él |
 
 ---
 
@@ -156,4 +285,4 @@ Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva d
 
 ---
 
-*Última actualización: 2026-08-20. v3.2 · EN VIVO en zenetapp.com (tags v3.0 landing · v3.1 /demo · **v3.2 hablemos 3 pasos**) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
+*Última actualización: 2026-09-10. **v4.0-draft** (bloque DISEÑO v4 arriba · en construcción) sobre el spec **v3.3 EN VIVO** en zenetapp.com (tags v3.0 landing · v3.1 /demo · v3.2 hablemos · v3.3 copy del fundador + dominó) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
