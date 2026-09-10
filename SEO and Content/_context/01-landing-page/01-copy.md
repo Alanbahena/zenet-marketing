@@ -1,6 +1,6 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
 last_updated: 2026-09-09
 status: active
@@ -22,7 +22,7 @@ owner: Alan Bahena
 > | 2 | El momento — *"Lo que cambió"* *(NUEVA en §2 · el dominó + 2 anclas + la voz)* | ✅ cerrado (9-sep) · pendientes: fuente/nombre · `lab/` móvil |
 | 3 | El problema — los cinco de la carga | ✅ cerrado (9-sep) · remate y 5ª en `lab/` |
 > > | 4 | El trato — con pantallas reales | ✅ cerrado (9-sep) · panel en `lab/` |
-> | 5 | El camino — a la vista · en orden · fuerte · Etapa 1 = Compras + WhatsApp | ✅ cerrado (9-sep) |
+> | 5 | El camino — a la vista · en orden · fuerte · Etapa 1 = Compras + WhatsApp · **+ la consulta como cierre** | ✅ cerrado (9-sep) |
 | 6 | Qué hace por ti — en concreto *(NUEVA)* | ✅ cerrado (9-sep) |
 > > | 7 | Qué cambia — recalibrado (sin escalamiento) | ✅ cerrado (9-sep) |
 > | 8-10 | Fundador · Invitación · Cierre | ✅ releídas (9-sep) · sin cambio · 2 adiciones opcionales |
@@ -287,9 +287,23 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 *Animación:* **el dominó, sin cambio** (`lab/etapa3-domino.html` · 5 beats · el pill rota entre los cuatro cambios · **el núcleo no se mueve**). La estrella; §2 lo anunció como causa, aquí se resuelve.
 
-**Cierre de sección** *(🔄 ahora literal)*:
-> Y tu equipo no necesita un curso: **si saben mandar una foto por WhatsApp, saben usar Zenet.**
->
+### La consulta — cierre de §5 *(🔄 SE QUEDA · decisión del fundador 2026-09-09 · revierte "se funde con la Etapa 1")*
+
+La tarjeta de dos columnas que ya está en producción: la afirmación + el chat en vivo. **Copy nuevo** (antes abría en *"Sin cursos, sin capacitaciones…"*):
+
+> **No es otra app de dashboards. Es tu operación, contestando.** Sin cursos, sin capacitaciones, sin manuales de software: si sabes usar WhatsApp, sabes usar Zenet — le preguntas, y contesta con lo que tu restaurante ya sabe.
+
+*Los tres intercambios que rotan* — **preguntas de *por qué*, no de *qué*** (propuesta del fundador; un dashboard contesta *cuánto*, un cerebro operativo contesta *por qué*). Los tres se contestan **con los números del propio restaurante**; las cifras son ilustrativas:
+
+| | La pregunta | Lo que contesta Zenet |
+|---|---|---|
+| 1 · el índice | *Zenet, ¿por qué mi estandarización sigue en 55%?* | *Tus recetas van al 90%, pero tu inventario en 12%: sin unidades no hay equivalencias, y sin equivalencias el costo por platillo no cierra.* |
+| 2 · la varianza | *¿Por qué mi food cost está 8% arriba de lo que costeamos?* | *Tres insumos subieron desde que costeaste la carta — aguacate +17%, jitomate +13%. Tus tres platillos más vendidos usan los dos.* |
+| 3 · los huecos | *¿Qué me falta para costear mi menú completo?* | *12 insumos sin unidad de compra y 3 recetas sin porciones. Son los que rompen el costo de 9 platillos.* |
+
+*Retiradas de la v3.3:* *"¿qué falta para cerrar el día?"* · *"¿qué lleva la salsa de la casa?"* · *"¿cuándo vence el permiso?"* — son **consultas de archivo**: cualquier app las contesta, y por eso no defendían el *"no es otra app"*.
+
+**Cierre de sección** *(🔄 la línea del curso se absorbe en la consulta, que la dice con prueba)*:
 > No es un proyecto de meses que un día "se termina". Cada etapa te deja algo que tu equipo ya usa — desde la primera semana.
 
 *(→ §6 abre: "En concreto — qué te quita de encima.")*
@@ -302,6 +316,10 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 - **La animación de WhatsApp enseña lo que el chat hace hoy** — leer y guardar sin que el operador capture — y **el hallazgo vive en la app**, donde existe (*mayor movimiento del mes*). Se evaluó Zenet iniciando el mensaje (*detecta y avisa*): es el diferenciador de *interpretación* hecho visible, pero **no corre en la versión de SF** (solo responde) → descartado por honestidad, con el upgrade anotado.
 - **Un insumo, una historia:** el aguacate atraviesa §2 → §5 → §6 con los mismos números de la captura de Compras. Coherencia entre pantalla y copy.
 - **Honestidad por etapa:** Etapa 1 real desde la semana del 14-sep (Compras + WhatsApp) · Etapa 2 real hoy (análisis + estandarización) · Etapa 3 escrita hasta donde es cierto (*te ayuda a reacomodar*). **Cero tags en §5.** Si Compras/WhatsApp se retrasan al deploy, la Etapa 1 vuelve al Capítulo 1 de la v3.3 y la Etapa 2 devuelve el análisis a su lugar — sin tocar nada más.
+- **La consulta se queda — y era yo el equivocado.** El copy la había mandado a fundirse con la Etapa 1 (*"recupera la consulta de la v3.3"* como upgrade anotado). El fundador la rescató con la razón correcta: es **lo único de la página que prueba que Zenet se usa hablando y que devuelve lo que el restaurante ya sabe** — el *"no es otra app de dashboards"* y la respuesta a la objeción de Alfonso (*"solo es un núcleo de data"*, S#2). Y son **dos usos distintos**: en la Etapa 1 el operador **manda** facturas; aquí **pregunta**. Sigue siendo cierto hoy: Zenet en WhatsApp contesta preguntas — solo no inicia el mensaje.
+- **Las preguntas suben de nivel.** Las tres de la v3.3 se contestaban leyendo un archivo (manual · permisos · cierre del día). Las tres nuevas exigen **interpretar** (índice · varianza de costo · huecos que rompen el costeo) = el diferenciador #2 de marca, *interpretación, no solo medición*, dicho por el producto y no por la marca. Confirmado con el fundador: **Zenet contesta preguntas así hoy.**
+- **La tercera cambió de forma, no de intención.** El fundador propuso *"¿cuál es la mejor forma de estandarizar mi inventario?"*; pedirle un **método** cruza *"Zenet extrae, nunca propone"* (regla de la Fase 1). *"¿Qué me falta para costear mi menú completo?"* dice lo mismo del lado honesto — y contesta mejor, porque contesta con cantidades.
+- **Singular a propósito:** *"si **sabes** usar WhatsApp"* (el operador), no *"si tu equipo sabe"* como en producción — hoy el WhatsApp es el número del dueño. Cuando el equipo tenga acceso, la frase vuelve al plural y gana fuerza. La promesa zero-training **del equipo** no se pierde: vive en la tarjeta 1 de §6 (*no captura nada · nadie toma un curso*), y por eso se retiró de aquí la línea repetida.
 - **Vetos respetados:** sin *agentes* · sin *mejorar tus márgenes* (se dice *"deja de comerse tu margen en silencio"*) · sin *eficiente* · sin *"rango"* externo · *"fuerte"* como adjetivo de la operación.
 
 **Cercas para `lab/`:** pantallas tal como son · datos ilustrativos declarados o de SF con permiso · **un sistema animado en tres etapas + el hero** (Etapas 1-2 = secuencias de pantallas con transiciones simples; la 3 = la única animación compleja) · `prefers-reduced-motion` = último frame · móvil: animación arriba, texto abajo.
@@ -444,7 +462,7 @@ Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo)
 3. **§2 El momento (nueva):** el dominó como gráfica con micro-motion (una pasada, sin loop) · dos anclas con fuente y año (CANIRAC Tijuana 2026 · CANIRAC 2024) · la voz de la presidenta verbatim con cortes · cierre *"lo que cambió es cuánto pesa — y quién lo carga"*. **D1 reabre cero cifras solo aquí**; impacto de Zenet sigue prohibido.
 4. **§3 de cuatro a cinco tarjetas**, la carga primero, el número al final; la 2ª cambia de encabezado (*se rompe cada vez que algo cambia*); el remate vuelve con la línea del fundador (*"las ventas traen el dinero; la operación decide cuánto se queda"*), por evaluar en pantalla.
 5. **§4 El trato:** un panel de pantalla para cinco pasos · 02 → *"Lo refuerza con un solo cerebro operativo"* (del fundador; *amarra* y *junta* descartados — contenedor) · 05 en dos frases · strip anti-POS con *"tu POS solo sabe lo que le cargaste"*, sin prometer integración · el beat de la posibilidad tecnológica fuera de la página.
-6. **§5 El camino:** subline y encabezados en **estados, no acciones** (*a la vista · en orden · fuerte*) — corrección del fundador · Etapa 1 = **tus compras por WhatsApp** · el análisis se funde en la Etapa 2 · *"Zenet hace el trabajo pesado y tú lo diriges"* · compresión de tiempo como ritmo (*"en días, no en meses"*) · *tus márgenes* en la Etapa 3 + *"una operación fuerte no es la que no cambia: es la que aguanta el cambio"* · animación de WhatsApp ajustada a lo que corre (Zenet responde, no inicia; el hallazgo vive en la app) · **un solo insumo en toda la página: el aguacate**.
+6. **§5 El camino:** subline y encabezados en **estados, no acciones** (*a la vista · en orden · fuerte*) — corrección del fundador · Etapa 1 = **tus compras por WhatsApp** · el análisis se funde en la Etapa 2 · *"Zenet hace el trabajo pesado y tú lo diriges"* · compresión de tiempo como ritmo (*"en días, no en meses"*) · *tus márgenes* en la Etapa 3 + *"una operación fuerte no es la que no cambia: es la que aguanta el cambio"* · animación de WhatsApp ajustada a lo que corre (Zenet responde, no inicia; el hallazgo vive en la app) · **un solo insumo en toda la página: el aguacate** · **la consulta SE QUEDA** como cierre de §5, con copy anti-dashboard y tres preguntas de *por qué* (índice · varianza · huecos).
 7. **§6 En concreto (nueva):** cinco tarjetas, una por problema, encabezado = lo que Zenet hace · subline con **mano derecha** (canon) — *asistente* y *virtual* fuera · acordeón en móvil, compresión a 4 si pesa.
 8. **§7 Qué cambia:** *Recuperas tu cabeza* entra y abre · *Creces sin multiplicar el caos* sale de la página (no de la marca) · el dinero como consecuencia · el cierre intacto.
 9. **§8-10 sin cambio**, con dos adiciones opcionales (el historial de compras en el piso · la meta description para el lector frío).
