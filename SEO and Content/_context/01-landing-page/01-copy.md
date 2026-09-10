@@ -111,7 +111,14 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 ---
 
-## v4 · 3. El problema — *"La realidad de hoy"* — ✅ cerrado (2026-09-09 · el remate y la 5ª se juzgan en `lab/` móvil)
+## v4 · 3. El problema — *"La realidad de hoy"* — ✅ cerrado en papel (9-sep) · 🔧 **CONFIRMADO EN `lab/` (10-sep · `lab/v4-problema.html`)**
+
+> **Lo que el lab confirmó, con el fundador en pantalla (2026-09-10):**
+> - **Cinco columnas parejas, no 3+2.** Se probaron las dos con toggle: en 3+2 las tarjetas y sus figuras se agrandan (~350 px) y la sección ocupa dos pantallas. Con cinco cabe en una y **empareja con §6**, que también son cinco.
+> - **El remate SE QUEDA** (decisión del fundador, en pantalla): *"Las ventas traen el dinero. La operación decide cuánto se queda."* — cierra la decisión abierta #3 de `00-estrategia`. Razón: es lo único de la sección que **le da la vuelta al problema hacia la operación**, que es el puente exacto a §4 (*"El trabajo que más esfuerzo te cuesta…"*). En la v3 el remate se cortó por ser prosa que repetía las tarjetas; esta línea no repite, gira.
+> - **Las figuras se reutilizan del index en vivo**, reordenadas: la de *"años y dinero"* — con su **brecha punteada** — pasa a la 2ª (*"Se rompe cada vez que algo cambia"*), donde la línea que se desploma es lo ordenado envejeciendo. Solo se dibuja **una figura nueva, la de la 5ª**: el mes que avanza con sus marcas de semana, la línea subiendo y **el número que llega tarde en peach** — mismo grosor y lenguaje line-art que las otras cuatro.
+> - **Título de la 5ª a una línea:** *"Sabes cuánto vendes, no cuánto te queda"* (en papel eran dos frases; en la retícula desalineaba los cuerpos).
+> - **Alturas parejas** (h3 con altura reservada en desktop, apagada en móvil) y **la 5ª no se funde con la 2ª** — la cerca de comprimir a cuatro no se necesitó.
 
 **Trabajo:** que el **lector frío** se reconozca — los cinco de la carga, en el orden que el campo enseñó (`11` §3): **la carga primero, el costo al final**. Hereda de la v3.3 el headline y cuatro tarjetas; **reordena dos y añade la quinta**. Recibe el puente de §2 (*"…y quién lo carga"*).
 
