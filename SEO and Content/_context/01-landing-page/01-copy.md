@@ -293,7 +293,15 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 ---
 
-## v4 · 6. Qué hace por ti — *"En concreto"* — ✅ cerrado (2026-09-09 · NUEVA · acordeón y compresión a 4 se deciden en `lab/` móvil)
+## v4 · 6. Qué hace por ti — *"En concreto"* — ✅ cerrado en papel (9-sep) · 🔧 **AJUSTADO EN `lab/` (10-sep · `lab/v4-concreto.html`)**
+
+> **Lo que el lab decidió, con el fundador en pantalla (2026-09-10):**
+> - **CINCO tarjetas, abiertas, en cinco columnas parejas.** Se probaron en pantalla las tres variantes con toggles: **5** · **4 sin la 3ª** · **4 fusionando 3+4** (*"Un solo cerebro operativo que tu equipo consulta"*, thumb doble, subline a *cuatro*). Decisión del fundador: **las 5.** Razones que la sostienen: el espejo 1:1 con los cinco problemas de §3 (la subline promete *"cinco cosas que hoy cargas tú"*), la 3ª conserva el argumento anti-contenedor (*"no repartidos en cinco lugares"* — la objeción de Alfonso) y el manual mantiene tarjeta propia (dolor con 2 señales de campo). Las variantes quedan en el lab por si el scroll total pesa al integrar.
+> - **Diagnóstico del fundador sobre la primera versión:** *"se ven muy grandes… grotescas"*. La causa no era el tamaño sino **dos tamaños distintos** (3 tarjetas arriba + 2 más anchas abajo) y el **texto largo** inflando el alto. Fix: **cinco columnas iguales** (~230 px, como las `.pain` de §3) + **cuerpos de dos líneas** + tipografía un punto menor + **el número a la esquina del thumbnail** (como §3).
+> - **Recortes de copy** (de tres líneas a dos, aprobados en pantalla): **01** *"Le mandas la factura como llega y ya está guardada. **Cero capturas, cero curso.**"* · **02** *"Cada receta con sus ingredientes ligados y su costo. Cambias algo y Zenet reacomoda lo que toca, **con el número enfrente.**"* · **03** *"Insumos, recetas y equivalencias conectados, no repartidos en cinco lugares. **Tu equipo ve lo mismo que tú.**"* · **04** *"Quién hace qué y cómo se hace, en el celular. **No se va con quien se va.**"* · **05** *"Qué subió, con quién y cuánto te cuesta al mes. **Lo ves el martes, no en el corte.**"*
+> - **Alturas parejas:** título y línea en cursiva con altura reservada en desktop → los cuerpos arrancan a la misma altura en las cinco. En móvil esas alturas **se apagan** (apiladas no emparejan nada y metían un hueco fantasma) y el thumbnail baja a 16/6.
+> - **Móvil: abiertas, sin acordeón.** Con las tarjetas compactas el scroll es aceptable y esconder el *qué te quita* costaba más que el scroll. El modo acordeón queda construido en el lab como reserva.
+> - **Thumbnails:** placeholders line-art por pantalla (Zenet en WhatsApp · Recetas · Equivalencias · Manual Operativo · Compras) con la etiqueta del nombre real; las capturas entran cuando existan, sin tocar el layout.
 
 **Trabajo:** el detalle — **qué te quita de encima**, en el idioma del operador, con pantalla. Para los dos lectores, ya vieron el camino. Es el espejo de §3 por tercera vez en la página (§3 = el costo · §4 = el trabajo hecho · §6 = **lo que ves y usas**), así que se escribe **corto**: cinco tarjetas, una por problema, cada una *el problema en su voz → lo que Zenet hace → la pantalla*. **Solo lo que corre.** Es la primera sección en comprimirse o plegarse si el scroll pesa (E2).
 
