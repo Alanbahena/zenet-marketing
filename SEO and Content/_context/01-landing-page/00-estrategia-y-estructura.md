@@ -196,7 +196,7 @@ Rescates y retiros acumulados: el reloj de "En acción" vive en `lab/etapa3.html
 
 | # | Abierto | Se cierra |
 |---|---|---|
-| 1 | **Qué cifras van en §2** — las 2-3 finales, con fuente y año confirmados, entre las candidatas del research y los datos nuevos del fundador | En el copy de §2 |
+| 1 | **Qué cifras van en §2** — ✅ **decidido en `lab/` (10-sep): dos datos en una tarjeta** — *hasta 40%* (CANIRAC Tijuana · 2026 · falta medio/URL) y *3 de cada 4* (CANIRAC · 2024). **La cita de la presidenta sale de la página** (va al deck). Queda por confirmar la fuente del 40% antes del deploy; si no aparece, cae a Tijuana 2024 / IIEG Jalisco | ✅ · fuente pendiente |
 | 2 | **Cuántas capacidades en §6** (4, 5 o 6) y cuáles — mapeadas a P1-P5, solo lo que corre hoy | En el copy de §6 · se recorta en `lab/` móvil |
 | 3 | **El remate de §3** (*"lo más caro no se compra: se carga"*) — cortado en v3, por reevaluar con el ICP nuevo | En pantalla, no en papel |
 | 4 | ~~Actualizar `02-prototipo-y-diseno` a v3.3~~ — **resuelta (verificado 2026-09-10): el spec ya está en v3.3 desde el 2-sep** (dominó · brecha punteada · retiro del reloj documentados). La nota heredada de la v0.3 estaba desactualizada. Lo que sigue es **`02-prototipo` v4.0 (draft)**: el spec de diseño de la v4 antes de abrir `lab/` | ✅ |

@@ -43,7 +43,18 @@ owner: Alan Bahena
 
 Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 abajo). Notas para `lab/` móvil, no cambios: *"back-of-house"* → alternativa *"el sistema de tu operación"* si estorba en pantalla · el subhead (38 palabras) se juzga junto con §2.
 
-## v4 · 2. El momento — *"Lo que cambió"* — ✅ cerrado (2026-09-09 · pendientes: fuente/nombre de la ancla 1 · `lab/` móvil)
+## v4 · 2. El momento — *"Lo que cambió"* — ✅ cerrado en papel (9-sep) · 🔧 **AJUSTADO EN `lab/` (10-sep · 4 iteraciones · `lab/v4-momento.html`)**
+
+> **Lo que el lab cambió, con el fundador en pantalla (2026-09-10):**
+> - **Una sola cadena, no dos.** La ficha de origen nombra las dos causas — **"Sube un insumo · se va alguien"** — y de ahí una cadena de efectos que vale para ambas: **→ lo que ya tenías en orden → tus costos → tu margen → "y tú, a mano — con tu tiempo y tu dinero"** (ficha final del fundador). Se descartó intercalar *"se va un empleado"* como pieza intermedia: el dominó es causa → efecto y dos causas en fila se leen como secuencia falsa. Nota bajo la cadena: *"Lo persigues por el Excel, el WhatsApp, el cuaderno — cada vez que algo cambia."*
+> - **Los dos datos van juntos en una tarjeta** a la izquierda de la gráfica, apilados y visibles (sin carrusel automático — sería un loop más y esconde el segundo dato): **"hasta 40%** subieron los insumos clave — carne, lácteos, frutas y verduras. La operación completa, entre 6 y 20%." *(CANIRAC Tijuana · 2026)* · **"3 de cada 4** en cocina se van antes de cumplir cinco meses." *(CANIRAC · 2024)*. La gráfica de Compras a la derecha, ~15% más baja.
+> - **La cita de la presidenta sale de la página** — decía en palabras lo que la cadena ya muestra. Va al deck y a la conversación (voz institucional). **Desaparece el pendiente del nombre.**
+> - **El puente final sale** — era prosa de remate; la última ficha (*"y tú… tu tiempo y tu dinero"*) es el puente a §3 (*"Lo más caro… se carga"*).
+> - **Menos registros:** de ocho bloques tipográficos a tres — cabeza · cadena · [datos][gráfica]. Diagnóstico del fundador: *"toda la información se ve muy junta"*; la solución no fue más espacio sino menos cosas.
+> - **Reveal:** una sola pasada por IO, 120 ms por ficha, dos frames después del primer paint (Safari no transiciona si la clase entra en el mismo frame); botón *repetir* en el lab; `prefers-reduced-motion` = todo encendido.
+> - **Móvil (390 px):** cadena en vertical · tarjeta de datos · la gráfica plegada por defecto (`<details>`).
+>
+> El texto de abajo (headline · body · las dos cadenas largas · la voz · el cierre) es la versión en papel del 9-sep; **lo construido manda** hasta que se integre y se reescriba esta sección con la versión final.
 
 **Trabajo:** el contexto para el **lector frío** — *el mundo cambió y tu operación lo siente*. Educa sobre **su mecanismo** (el dominó), no sobre el macro. Sube de §7 (v3.3) a §2. Cierra con el puente a §3.
 
@@ -94,7 +105,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 **Decisión registrada — D1 reabre "cero cifras" (2-sep → 9-sep):** el 2-sep se decidió cero cifras y se documentó abajo en §7. La v4 lo reabre **solo para contexto del sector en esta sección**, por D0: el lector digital no tiene a Alan para darle credibilidad; una o dos anclas verificables le dicen *"esto es el sector, no un vendedor"*. Las cifras de impacto de Zenet siguen prohibidas sin excepción. Detalle en `00-estrategia` §4.4.
 
-**Pendientes de esta sección:** ① medio/URL del reporte de CANIRAC Tijuana (ago-2026) y **nombre de la presidenta** → sin eso, la ancla 1 cae a la alternativa con fuente (Tijuana 2024 · ~15% en la carta · Industrial News BC / El Imparcial / Uniradio Baja; o IIEG Jalisco 2023-24) y la cita se publica sin nombre o no se publica · ② las cifras entran también a `Market Research/05-market-insights/02-datos-de-mercado-tijuana-2026.md` (nota de research con etiquetas de origen) · ③ `lab/` móvil: el dominó en dos cadenas apiladas + pantalla + cita — si pesa, la pantalla se pliega y las cadenas se quedan.
+**Pendientes de esta sección:** ① medio/URL del reporte de CANIRAC Tijuana (ago-2026) → sin eso, el dato del 40% cae a la alternativa con fuente (Tijuana 2024 · ~15% en la carta · Industrial News BC / El Imparcial / Uniradio Baja; o IIEG Jalisco 2023-24) · ~~nombre de la presidenta~~ (la cita salió de la página el 10-sep) · ② las cifras entran también a `Market Research/05-market-insights/02-datos-de-mercado-tijuana-2026.md` (nota de research con etiquetas de origen) · ③ `lab/` móvil: el dominó en dos cadenas apiladas + pantalla + cita — si pesa, la pantalla se pliega y las cadenas se quedan.
 
 ---
 
