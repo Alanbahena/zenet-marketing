@@ -137,19 +137,19 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 **Las 5 tarjetas** *(line-art como en v3.3 · la 2ª conserva la brecha punteada · la 5ª estrena figura)*:
 
 **1 · Todo pasa por ti** *(= P1 · v3.3 T1 sin cambio)*
-> Los insumos, los costos, los procesos, cuánto pedir un viernes, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
+> Los insumos, los costos, los procesos, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
 
 **2 · Se rompe cada vez que algo cambia** *(= P2 · era la T3 "Ordenarlo cuesta años y dinero" · sube de lugar y cambia de encabezado)*
 > Ordenarlo cuesta años y dinero. Y no termina: cambian los costos, cambian los proveedores, cambian las recetas, cambia tu gente. **Lo que ordenaste hace ocho meses ya no describe cómo operas hoy** — y volver a ordenarlo, otra vez, es tu tiempo.
 
 **3 · Todo se sostiene, pero nada se conecta** *(= P3 · v3.3 T2 sin cambio · baja un lugar)*
-> Recetas en Excel. Pendientes en WhatsApp. Protocolos en un cuaderno. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
+> Recetas en Excel. Pendientes en WhatsApp. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
 
 **4 · Cada persona nueva vuelve a empezar de cero** *(= P4 · v3.3 T4 sin cambio)*
-> Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
+> Aprende de quien esté en turno, y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
 
 **5 · Sabes cuánto vendes. No siempre cuánto te queda.** *(= P5 · NUEVA · "sientes el número")*
-> Subió el aguacate y te enteraste hasta el cierre. El margen se aprieta, y lo que ves es el número final — no por dónde se fue. **Y ese número te pesa más que a nadie.**
+> Subió el aguacate y te enteraste hasta el cierre. Ves el número final, no por dónde se fue. **Y ese número te pesa más que a nadie.**
 
 **El remate** *(decisión abierta #3 de `00-estrategia` · por evaluar EN PANTALLA · una línea, del fundador)*:
 > **Las ventas traen el dinero. La operación decide cuánto se queda.**
@@ -586,16 +586,16 @@ Las tres se conservan **tal como están en la v3.3** (ver §8, §9 y §10 abajo)
 *(las 4 · 🔄 revisadas v0.4 · 2026-09-02)*
 
 **1 · Todo pasa por ti**
-Los insumos, los costos, los procesos, cuánto pedir un viernes, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
+Los insumos, los costos, los procesos, cuándo vence el permiso. Está en tu cabeza porque siempre estuvo ahí. **Y nada de eso corre solo: corre con tu energía.**
 
 **2 · Todo se sostiene, pero nada se conecta**
-Recetas en Excel. Pendientes en WhatsApp. Protocolos en un cuaderno. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
+Recetas en Excel. Pendientes en WhatsApp. Ventas en el punto de venta. **Lo único que las conecta eres tú** — sube un precio y lo persigues por todos lados.
 
 **3 · Ordenarlo cuesta años y dinero que no tienes**
 A los que lo lograron les tomó años. Y no termina: cambian los costos, cambian los proveedores, **cambian las recetas**, cambia tu gente. Lo que ordenaste hace ocho meses ya no describe cómo operan hoy.
 
 **4 · Cada persona nueva vuelve a empezar de cero**
-Aprende como puede, de quien esté en turno. Y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
+Aprende de quien esté en turno, y lo que sale a la mesa depende de quién le tocó enseñarle. **Cuando alguien clave se va, se lleva lo que sabía.**
 
 **Notas v0.4 de las tarjetas:**
 - **T1** cierra ahora en *"corre con tu energía"* — argumenta el titular nuevo (si lo más caro se carga, la tarjeta debe decir **con qué** se carga) y prepara dos contrastes: §5 Etapa 3 y §6 (*"cuando tu operación trae motor"*). El combustible y el motor, misma metáfora.
@@ -974,4 +974,6 @@ Operas desde el orden. Cada persona y cada sucursal nueva aprende del mismo manu
 
 ---
 
-*Última actualización: 2026-09-02. **v0.4 · pasada del fundador aplicada en la rama `v3.3-copy` (11 cambios + 1 retiro) y aprobada en pantalla.** El camino quedó en 3 etapas ciertas, sin tags. **Bloqueo de deploy: la animación del dominó de la Etapa 3** — hasta entonces esa etapa lleva el reloj viejo, que contradice el texto. Siguiente: **QA en móvil real e iPhone Safari** → merge `v3.3-copy` → deploy. La rama trae 2 commits: `f5b18e8` (copy) y `bea20c6` (animación del dominó).*
+*Última actualización: 2026-09-02. **v0.4 · pasada del fundador aplicada en la rama `v3.3-copy` (11 cambios + 1 retiro) y aprobada en pantalla.** El camino quedó en 3 etapas ciertas, sin tags. **Bloqueo de deploy: la animación del dominó de la Etapa 3** — hasta entonces esa etapa lleva el reloj viejo, que contradice el texto. Siguiente: **QA en móvil real e iPhone Safari** → merge `v3.3-copy` → deploy. La rama trae 2 commits: `f5b18e8` (copy) y `bea20c6` (animación del dominó).*- **🔧 Integración (9-sep): los cinco cuerpos se recortan a 4-5 líneas.** En pantalla iban de 4 a 7 y el bloque se veía desparejo — mismo diagnóstico que el fundador hizo en §6 (*"se ven muy grotescas"*), misma cura: menos texto, no más caja. Cada tarjeta conserva su remate en negritas; **lo que sale es lo que ya se dice en otro lugar** (el viernes del 01 · *"volver a ordenarlo, otra vez, es tu tiempo"*, que vive en la Etapa 2 · *Protocolos en un cuaderno* del 03 · *el margen se aprieta* del 05).
+
+
