@@ -197,7 +197,7 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 > *Pantalla:* **Zenet en WhatsApp** — una foto de factura entrando al chat y la respuesta de Zenet confirmando qué leyó.
 
 **02 · Lo refuerza con un solo cerebro operativo** *(🔄 del fundador · elegido 2026-09-09 entre A "refuerza con" · B "conecta en" · C "vuelve un solo"; "amarra" descartado por el fundador)*
-> Recetas, insumos, procesos, protocolos dejan de vivir en cinco lugares y se vuelven un solo cerebro operativo que tu equipo consulta desde el celular. Todos ven lo mismo. **Y tu operación deja de depender de que tú la sostengas.**
+> Recetas, insumos y procesos dejan de vivir en cinco lugares. Tu equipo los consulta desde el celular. **Y deja de depender de que tú la sostengas.**  *(🔧 recortada en la integración 9-sep: el cuerpo repetía "un solo cerebro operativo", que ya está en el encabezado, y salía a siete líneas contra tres o cuatro de los demás pasos)*
 > *Pantalla:* **Recetas** — una receta con sus ingredientes ligados al inventario.
 
 **03 · Lo mantiene vivo**
