@@ -3,9 +3,9 @@ name: Scorecard — Fase A
 description: Los números de la Fase A en un solo lugar. Dos tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil) y la serie semanal (una fila por semana, para ver la tendencia sin leer siete retros). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-08
+last_updated: 2026-09-13
 status: active
-version: 0.3
+version: 0.4
 owner: Alan Bahena
 ---
 
@@ -25,7 +25,7 @@ owner: Alan Bahena
 
 ---
 
-## 1. El tablero del gate *(al 2026-09-08 · 9 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
+## 1. El tablero del gate *(al 2026-09-13 · 10 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
 
 ### 1.1 Gate A→B — las dos condiciones, juntas
 
@@ -64,7 +64,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | ① Estandarizado / gran producción | ya documentado · Zenet extiende y mantiene | Carlos · Alma Verde (14-jul) | ✓ · **carril de producto · no suma al N** — feedback de la app + prueba del análisis con docs reales · vuelve como ICP al cumplirse `11` §0.4 |
 | ② Alta cocina / chef-dueño | preserva calidad y consistencia · *fine dining ≠ documentado* | Miguel Bahena (12-ago) | ✓ · **adyacente · suma al N** |
 | ②b Cafetería con cocina propia | entra si hay BoH que extraer | — | ✗ · sin sesión |
-| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 9ª semana en cero** |
+| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 10ª semana en cero** |
 | *(control)* bajo el beachhead | nada que extraer — pediría construcción | Juan Pablo (7-ago) | fuera · acota **por abajo** |
 
 ---
@@ -84,12 +84,13 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 17–23 ago | 0 | 1 | 0 (7ª) | s/r | 🟢 | ⬜ | 🟡 | 🟡 | 🟢 | 🟡 | No — 2ª consecutiva · onboarding/análisis en construcción · Hablemos v0.4 |
 | 24–30 ago | 0 *(Alfonso · insider)* | 1 | 0 (8ª) | **5 → 0** | 🟢 | ⬜ | **🟢** | 🟡 | 🟢 | 🟡 | No — 3ª consecutiva · **gate (b) ✅ V1 demostrable** |
 | 31 ago–6 sep | 0 | 1 | 0 (9ª) | **2 → 0, ninguno visto** (Juanjo · Algira · ambos por LinkedIn · mensajes sin abrir · links Dub sin clic) | 🟢 | ⬜ | 🟢 | 🟡 | **🟡 partido** | 🟡 | No — 4ª consecutiva · landing v3.3 · deudas de doc cerradas · scorecard v0.1 · **la apuesta cambia de blanco: el ICP de Fase A se redefine** (doc 11 en curso · perfil 2-3 · 1-2 sucursales · early adopters) · gate (b) V1 ✅ · legal sin cambio |
+| 7–13 sep | 0 | 1 *(= Miguel · contra el ICP de Fase A)* | 0 (10ª) | **0 → 0** (nada enviado · Juanjo y Algira siguen sin ver el de LinkedIn, 2ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 5ª consecutiva · **landing v4 + `/demo` v0.2 EN VIVO** (regla del deploy: la narrativa describe, las instrucciones piden solo lo que corre) · **ICP de Fase A v0.1 cerrado** + edición de campo · guión v0.6 · mensajes v0.2 (ask #1 = 5 facturas) · Compras 40.1–40.6 · gate (b) V1 ✅ · legal sin cambio |
 
 *La columna **N ICP Fase A** se llamaba *N beachhead* hasta el 8-sep. Los valores históricos no cambian pero **cambia lo que significa el 1**: hasta el 31 ago–6 sep, 1 = Carlos, contra el beachhead anterior; desde el 7-13 sep, 1 = Miguel, contra el ICP de hipótesis de la Fase A (`11` §2.3). Las filas anteriores conservan su lectura.*
 
 *H5 se lee 🟡 partido desde el 31 ago–6 sep para alinear la serie con §1.2 (decisión #5); las filas anteriores conservan el 🟢 del referido tibio (3-9 ago), que fue su lectura honesta en su momento.*
 
-**Lo que la serie dice de un vistazo:** 9 semanas · 2 sesiones con operador · 1 en el bucket del beachhead · perfil 3 nunca tocado · **7 semanas sin movimiento, 4 consecutivas** · y la columna *Msj → resp* casi vacía — **la entrada no se estuvo midiendo**, que es en sí un hallazgo.
+**Lo que la serie dice de un vistazo:** 10 semanas · 2 sesiones con operador · 1 en el N · perfil ③ nunca tocado · **8 semanas sin movimiento, 5 consecutivas** · la entrada ya se mide (decisión #4): **tres filas seguidas con dato, y las tres en cero**.
 
 ---
 
@@ -113,7 +114,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 1 | **¿Miguel suma al N del gate?** | ✅ **cerrada 8-sep** — regla `11` §2.3: **amplio por perfil** (③ y ② suman) · **estricto por regla** (3 eliminatorios + ≥ 4 de 6 calificadores + quién valida qué · N por cuenta). **Miguel entra (5 de 6) · Alma Verde sale al carril de producto (perfil ①)** |
 | 2 | **¿El soft-commit de Carlos cuenta como intent-to-join?** | ✅ **resuelta por consecuencia 8-sep** — Alma Verde está fuera del N; su soft-commit es señal de H4, no intent del ICP de Fase A. Intent-to-join se lee además *conociendo el precio* |
 | 3 | **Volver al canon H1-H6 en los run-sheets.** Las sesiones #4 (V1-V8) y #5 (T1-T5) usaron mapas propios; aquí se tradujeron (el mapa T lo dice explícito: T1·H2 · T4·H3 · T5·H1 · precio·H6; el V es directo: V1·H1 · V3·H2 · V4·H4 · V5·H6 · V8·H5). Para que la tabla se llene sola, el score de cada sesión debe salir ya en H | ⬜ · aplica desde la próxima sesión · **ya tiene dónde vivir:** `11` §7.9 (nueve checks + perfil + H canon) |
-| 4 | **Medir la entrada.** *Msj → resp* solo tiene dato en 2 de 9 semanas. Cada retro registra enviados y respondidos, aunque sea 0 → 0 | ⬜ · aplica desde la retro del 6-sep |
+| 4 | **Medir la entrada.** *Msj → resp* solo tenía dato en 2 de 9 semanas. Cada retro registra enviados y respondidos, aunque sea 0 → 0 | ✅ **cerrada 13-sep** — aplicada desde el 24-ago: tres filas seguidas con dato (5 → 0 · 2 → 0 · 0 → 0) |
 | 5 | **Medir "visto" y alinear H5.** La entrada se registra como enviados → vistos → respondidos; un no visto es dato del canal, no kill de H5. La serie lee H5 como 🟡 partido desde el 31 ago–6 sep (igual que §1.2); las filas anteriores conservan su lectura. Para contactos tibios, LinkedIn no es canal de primer toque | ✅ **cerrada 6-sep** |
 
 ---

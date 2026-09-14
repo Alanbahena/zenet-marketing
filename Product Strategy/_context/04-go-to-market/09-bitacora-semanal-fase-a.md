@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-09-06
+last_updated: 2026-09-13
 status: active
-version: 0.7
+version: 0.8
 owner: Alan Bahena
 ---
 
@@ -31,6 +31,55 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 7–13 sep — "el tríptico casi cerrado, la landing en dos días — y la quinta semana sin operador"
+
+**▸ Foco que traíamos** (retro 31 ago–6 sep, el tríptico para salir a vender): ① cerrar el doc 11 → ✅ (mar 8 · v0.1 + edición de campo en PDF + scorecard v0.3) · ② copy y landing alineados al ICP → ✅ **y más: la v4 salió EN VIVO** (jue 10 · tag `v4.0`) · ③ proceso de ventas v0.1 → 🟡 **en curso, todavía sin archivo en el repo** (sigue el lun 14). En paralelo: Task 29 / V1 completa → ✅ (mergeada a `main` dom 6, 21:33 — siete minutos después de la retro) · registrar enviados → respondidos → ✅ se registra: **0 → 0** · Juanjo y Algira por WhatsApp → ❌ no se hizo; siguen sin ver el mensaje de LinkedIn (2ª semana).
+
+**▸ 🏆 Logros**
+- **★★ Landing v4 + `/demo` v0.2 EN VIVO** (jue 10 · tag `v4.0` · verificado en producción `/` · `/demo` · `/privacidad` · `/hablemos` · OG). Todo entre el miércoles 14:08 y el jueves 12:50: **papel** (`00-estrategia` v0.4 → `01-copy` v0.5 10/10 → spec v4.0-draft) → **`lab/`** (§2 siete iteraciones · §6 · §3 · §4 variante C sin capturas · Etapa 1 · Etapa 2 de 7 beats · Etapa 3 + la consulta) → **integración** en `index.html` → limpieza, meta, `/demo`, privacidad → deploy. 10 secciones · 284 KB · cero capturas (todo SVG + CSS) · móvil verificado en el teléfono del fundador. Cuatro docs sincronizados con el deploy (estrategia v0.4 · copy v0.5 · spec v4.0 · demo v0.2).
+- **★ El ICP de la Fase A, cerrado y en la mesa** (mar 8): `11-icp-hipotesis-fase-a` v0.1 (§0–§11 · statement · 3 perfiles por estandarización · dónde buscar vs quién califica · regla de conteo §2.3 · §7 cómo se valida) + **edición de campo de 12 páginas en PDF** (pipeline nuevo: pandoc → HTML con CSS de marca → Chrome headless) + `10-scorecard` v0.3 recontado contra el ICP nuevo (**1 · 0 · 0** · H6 en dos partes · #1 y #2 cerradas) + skill sincronizada.
+- **Los assets de campo realineados al ICP:** guión v0.5 → **v0.6** (vocabulario del producto verificado — *Alineamiento* ya no existe · ask #1 = las facturas) · `mensajes-outreach` **v0.2** (#7 nuevo: *"mándame fotos de tus últimas 5 facturas"* con la regla de 48 h · #8 conocido de conocido · #4 LinkedIn nunca primer toque · #5 seguimiento de hilo frío).
+- **La fuente del 40% verificada — y corregida.** Es CANIRAC **nacional** (El Imparcial · 12-ago-2026 · Ignacio Alarcón), no Tijuana: nuestra atribución era falsa. El *6-20% de costos operativos* **se retiró** por no tener publicación. Aviso de privacidad endurecido (responsable con domicilio · encargados sin nombrar proveedores · ARCO 20/15 días).
+- **Producto:** Task 29 en `main` (V1 completa: Recetas · Inventario · Equivalencias · `audit_claims.sh`) · **Task 40 Compras: 40.1–40.6 cerradas en dos días** (mié-jue: cimiento de datos · parser CFDI · revisión · confirmación · lecturas · shell frontend 16/16) · 40.7 en curso · PDF de diagnóstico (Task 43) en worktree, sin commitear. Vie–dom sin avance.
+- CLAUDE.md al día dos veces (§2 bloque del 10-sep · §4 dos decisiones nuevas).
+
+**▸ ✅ Qué funcionó**
+- **Papel antes que pantalla, 3ª vez** (v2 · v3 · v4): el copy v0.5 se aprobó sección por sección **antes** de abrir `lab/`; el diseño nunca tuvo que decidir texto. Es lo que permitió una landing entera en dos días.
+- **Decidir con toggles en pantalla, no con descripciones:** §6 con 5 / 4 / fusionadas · §4 con variantes A / B / C · §2 en siete iteraciones de media hora. Alan eligió viendo; ninguna vuelta.
+- **El gate como pregunta concreta** — *¿qué corre hoy?* — y no como *¿está listo?*. De ahí salió la regla del deploy.
+- **Verificar la fuente antes de publicar la cifra:** la cifra sobrevivió; la atribución, no.
+- **Cerrar el ICP primero pagó:** guión, mensajes, landing y demo salieron alineados a **un solo doc** en vez de a la memoria de cinco sesiones.
+- El método de producto se sostiene: seis subtareas de Compras en dos días con subtasks + PR, mientras la landing se armaba.
+
+**▸ 💡 Learnings**
+1. **★★ El patrón se repitió con otro nombre.** La retro pasada lo escribió por adelantado: *"el riesgo a vigilar es que el doc 11, la landing nueva y el proceso de ventas sean tres piezas más construidas antes de la primera conversación nueva"*. Pasó: dos de tres piezas + la landing entera, **cero mensajes enviados**, 5ª semana consecutiva sin operador, perfil ③ en cero por 10ª. Lo que sí cambia respecto a las semanas anteriores: **ya no queda ningún asset que preceda al mensaje.** ICP, guión, mensajes, landing, demo, producto — todo existe. La secuencia declarada el 5-sep (ICP → landing → ventas → salir) tiene una sola pieza pendiente y se termina mañana. Después de eso no hay "antes de".
+2. **★ Describir ≠ pedir.** La regla que levantó el gate —*la narrativa puede describir el camino; las instrucciones solo pueden pedir lo que ya funciona*— resuelve la tensión que cargó cada deploy desde agosto (la landing prometiendo en presente). Se aplicó a dos superficies con dos respuestas: §5 salió sin tocar; el paso 04 de `/demo` lleva la píldora. Y deja una línea para la mesa: *"eso entra esta semana"*.
+3. **★ D1 funcionó como filtro, no como permiso.** De las cifras candidatas sobrevivieron dos. El 40% conservó el número y perdió la atribución; el 6-20% se cayó aunque la nota que lo respaldaría existe (Uniradio · 18-ago) — confirma lo cualitativo, no publica el porcentaje. **Una cifra sin publicación no es una cifra.**
+4. **★ Cuando una tarjeta se ve "grotesca" o "muy junta", el problema es el texto, no la caja.** Cinco cuerpos de §3, dos pasos de §4, dos tarjetas de §6: todos se arreglaron recortando. Regla para las secciones de tarjetas: cuerpo corto, remate en negritas.
+5. **★ Producto y landing fueron en paralelo por primera vez:** la Etapa 1 del camino se dibujó en SVG el mismo día que su backend se commiteaba (Compras 40.3–40.6). La landing describe lo que está a días, no a meses — por eso la regla del deploy alcanzó.
+6. Técnicas, ya en el spec §G-bis y §H: el CSS entre `lab/` e index se copia **por bloque**, nunca filtrando por selector (un `@media (prefers-reduced-motion)` desenvuelto mató la animación del chat sin dar error) · los nombres genéricos de clase colisionan al integrar · headless con `--force-prefers-reduced-motion` para estados finales; el movimiento se juzga solo en navegador real.
+7. **LinkedIn tibio, 2ª semana sin ver** (Juanjo · Algira). La decisión #5 ya dijo que van por WhatsApp o en persona; no se hizo. Es dato de ejecución, no de canal — y cuesta dos minutos.
+
+**▸ 🔀 Decisiones**
+- **★ La regla del deploy** (canon en CLAUDE.md §2 + spec §G-bis): la narrativa describe el camino; las instrucciones piden solo lo que funciona. Gate levantado con el PDF corriendo, **sin Compras ni WhatsApp**. `/demo` paso 04 con la píldora *En construcción* hasta que corran.
+- **★ El ask #1 de campo son cinco facturas por WhatsApp, no la reunión** — se paga en 48 h o no se manda (`mensajes` #7 · `11` §7.8 · CLAUDE.md §4).
+- **`/demo` no se nombra como etapa del camino** — es la antesala del análisis; Compras es lo primero que se toca ya dentro (paso 04), no la puerta.
+- **Landing v4:** la consulta **se queda** como cierre de §5 (rescate de Alan: es lo único que prueba que Zenet se usa hablando; tres preguntas de *por qué*) · §2 **no nombra a Zenet** · §4 **sin capturas** (variante C: §4 promete, §5 prueba) · puntos de progreso en las tres escenas · fuente en una línea *"CANIRAC · 2024–2026"* · *Recuperas tu cabeza* entra a §7, *Creces sin multiplicar el caos* sale.
+- **Scorecard:** #1 cerrada (Miguel entra, 5 de 6 · Alma Verde al carril ①) · #2 por consecuencia (el soft-commit de Carlos es señal de H4, no intent del ICP de Fase A).
+- **Alan (13-sep):** esta semana se terminan **Compras + WhatsApp**; el doc de ventas sigue el lunes.
+- **Abiertas:** *"tus operaciones"* en el strip anti-POS (canon: *"tu operación"*) · `criterios-icp-y-design-partner` superseded + `plantilla-runsheet` con los 9 checks (`11` §8.3 · 2ª retro que lo carga) · la nota de research con los datos de mercado (`05-market-insights/02-…`) · dónde vive el ICP canónico cuando el experimento gradúe.
+
+**▸ 📊 Scorecard H1–H6** — sin movimiento · **5ª semana consecutiva sin conversaciones con operadores** · N **1** (Miguel · desde esta fila contra el ICP de Fase A) · perfil ③ en cero (**10ª**) · entrada **0 → 0** (nada enviado; Juanjo y Algira siguen sin ver el de LinkedIn) · semáforos sin cambio · gate (b) V1 ✅ · legal sin cambio · scorecard → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 14–20 sep**
+1. **★ Proceso de ventas v0.1** (lunes) — la última pieza del tríptico. Espina: `11` §7 + el onboarding/análisis como demo *"tus números"*. Si cabe, cierra de paso la deuda de `11` §8.3 (criterios superseded · runsheet con los 9 checks).
+2. **★ Compras + WhatsApp corriendo → v4.1** (píldora fuera · capturas reales · caché de OG) — y **usarlo como razón para escribir** a quien ya vio la página.
+3. **★ La entrada, con fecha:** Juanjo y Algira por WhatsApp (decisión #5 · dos minutos) · un ask de cinco facturas (#7) a un perfil ③ · registrar enviados → vistos → respondidos.
+
+*▸ Pipeline: 1 soft-commit frío (Carlos · fuera del N · 3 fechas pasadas) · Miguel en pausa consciente (único en el N) · JP sin retomar · JC Gallina y Alan Jiménez sin respuesta · Juanjo y Algira por LinkedIn, sin ver (2ª semana) · conocido del brunch pospuesto · Ana pospuesta (10ª semana) · 10 prospectos en "Por enviar" desde julio.*
 
 ---
 
