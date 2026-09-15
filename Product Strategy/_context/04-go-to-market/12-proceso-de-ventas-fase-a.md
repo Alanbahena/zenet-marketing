@@ -289,7 +289,46 @@ La objeción **real** suele salir después de la primera: se pregunta *"¿y apar
 
 ## 6. Pipeline y KPIs
 
-`[pendiente]`
+> `[Borrador del fundador · 14-sep]` La idea de medir el embudo es de Alan (*"prospectos mensajeados, sesiones agendadas, prospectos pagados"*). Se define aquí y **se registra en `10-scorecard-fase-a.md`** — los números viven en un solo lugar (regla anti-drift del scorecard). Las columnas nuevas entran al scorecard en su v0.5, después de este doc.
+
+### 6.1 Las etapas — dónde está cada persona y qué la mueve
+
+| # | Etapa | Entra cuando | Sale cuando | Qué se registra | Quién valida |
+|---|---|---|---|---|---|
+| 1 | **Contactado** | Se mandó el mensaje 1:1 (un Dub por persona) | Contestó | fecha · canal · visto/no visto | — |
+| 2 | **Respondió** | Contestó algo | Aceptó café o pidió el ejemplo | qué contestó, textual | — |
+| 3 | **Sesión agendada** | Hay fecha, hora y lugar | Se hizo | fecha · quién va a estar (¿el que paga?) | — |
+| 4 | **Discovery hecho** | La sesión ocurrió | 3+ problemas con episodio + perfil ③/② → Pitch · si no, hilo abierto | los 5 problemas · perfil · lo que intentó · `08-learnings` | gerente/chef validan H1-H4 |
+| 5 | **Oferta dicha** | Se dijo el precio con el punto | Sí · no · pensarlo | precio dicho ✓ · reacción textual · el porqué | **solo el que paga** (H6·precio) |
+| 6 | **Sí (intent)** | Dijo sí conociendo precio y términos | "Va" escrito al kit de bienvenida | fecha del "va" | el que paga |
+| 7 | **Pagado** | Transferencia en la cuenta | Documentos recibidos + fecha de entrega | fecha de pago · CFDI ✓ | — |
+| 8 | **Diagnóstico entregado** | La sesión de entrega ocurrió | Sigue / pide su dinero | *"¿te dijo algo que no supieras?"* textual · decisión | el que paga |
+| 9 | **Socio Fundador activo** | Entró al mes 2 | Retención al mes 3 (GO/NO-GO · `02-programa` §4.3) | uso · check-ins semanales | — |
+
+**Reglas de movimiento:** una persona está en **una sola etapa** y avanza solo con evidencia — un "sí" sin precio dicho se queda en 4, no pasa a 6 · el "va" no es pago: 6 ≠ 7 · si algo se estanca más de una semana, **se anota por qué**, no se empuja · **Notion refleja estas nueve etapas con estos nombres** (hoy tiene otras: se alinean).
+
+### 6.2 Los nueve conteos — el embudo
+
+| # | KPI | Cuenta | Dónde vive en el scorecard |
+|---|---|---|---|
+| 1 | Contactados | mensajes enviados y registrados | **Msj → resp** (existe) |
+| 2 | Respondieron | vistos → respondidos | **Msj → resp** (existe) |
+| 3 | Sesiones | agendadas → realizadas | **Sesiones con operador** (existe) — se parte en agendadas / realizadas |
+| 4 | Discovery con paso a Pitch | 3+ de 5 + perfil ③/② | **N ICP Fase A** (existe) |
+| 5 | Ofertas dichas | precio dicho con el punto | 🆕 columna (v0.5) |
+| 6 | Síes | intent con precio y términos | 🆕 columna (hoy solo en §1.1 del gate) |
+| 7 | Pagados | transferencia + CFDI | 🆕 columna |
+| 8 | Diagnósticos entregados | sesión de entrega hecha | 🆕 columna |
+| 9 | Activos al mes 2 | siguen después del diagnóstico | 🆕 columna (arranca vacía) |
+
+Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **días entre etapas** (se anota en Notion, no en el scorecard).
+
+### 6.3 Cómo se lee — para que sirva y no engañe
+
+- **Conteos, no porcentajes.** Con 5 lugares y diez mensajes, una tasa es ruido. Lo que informa es **dónde se atora la gente**: 10 contactados → 6 respondieron → 0 sesiones = el problema es el ask del mensaje, no el mensaje. El embudo es un diagnóstico, no un reporte.
+- **Metas ya escritas, no nuevas:** semana 14–20 sep **≥ 10 en #1 y ≥ 1 en #3** (retro 13-sep) · el gate A→B pide **5-8 discoveries · 3-4 compromisos revelados · 1-2 síes** (`06-plan` §9.2 · `10` §1.1) · la cohorte son **5 pagados**.
+- **El domingo:** `/scorecard-fase-a-semanal` pregunta los nueve; lo que no se sabe queda `s/r`, nunca se estima.
+
 
 ## 7. Artefactos
 
