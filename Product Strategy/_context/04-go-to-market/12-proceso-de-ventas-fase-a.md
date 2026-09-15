@@ -163,7 +163,54 @@ Que describa el valor **en sus palabras** (*"me quita X de encima"* · *"me ente
 
 ## 3. Cierre
 
-`[pendiente]`
+> `[Borrador del fundador · 15-sep]` La pregunta de cierre, la concesión **sin plazo** (se decide en la sesión de entrega, no en siete días) y el beneficio central del Socio Fundador (*Alan en su operación cada semana*) son de Alan. Dicho como beneficio y no como contrato: nunca *"te construyo features"* → *"lo que te estorbe es lo que se construye primero; tu operación moldea lo que Zenet va a ser"* (veto de la retro 13-sep). La oferta es la de la retro del 13-sep; el argumento del punto es el de `06-argumentación` §4.6.
+
+### Qué busco
+
+Un **sí con el precio dicho** — o un no claro. Solo cierro con quien ya quiere. El precio no se negocia; hay una sola concesión y está decidida de antemano. Y el dato sale igual si dice que no: *un "no" con precio enfrente es dato; un "sí" sin precio es cortesía* (`10-scorecard` §1.1).
+
+### Lo que digo
+
+**La pregunta antes del precio** *(y escuchar la solidez)*
+> *"Antes de hablar de dinero: ¿crees que con esto tu operación dejaría de depender de que tú la cargues — y tendrías más control, más margen y más cabeza para lo que de verdad importa?"*
+> — si dice sí: *"¿Por qué? ¿Qué es lo que ves?"* — que él me venda Zenet. Si suena flojo, un paso atrás: *"¿Qué te falta ver?"* — y se resuelve eso antes de seguir.
+
+**Los beneficios** *(después del sí · antes del precio · el flyer los trae impresos)*
+> *"Como Socio Fundador entras con tres cosas que nadie más va a tener.*
+> *Uno: yo, en tu operación, cada semana. Lo que te estorbe de verdad es lo que se construye primero — tu operación moldea lo que Zenet va a ser. Eso no lo compras después a ningún precio.*
+> *Dos: el precio se te queda fijo para siempre. Los que entren después van a pagar más.*
+> *Tres: cero riesgo. Sin compromiso, te vas cuando quieras — y si el diagnóstico no te sirve, te regreso el dinero."*
+
+**El flyer sobre la mesa** *(la oferta completa, de una vez, sin adornos)*
+> *"El primer mes son dos mil quinientos más IVA, e incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas, y a mí directo cada semana. Desde el segundo mes son mil quinientos más IVA, fijos. Son cinco lugares."*
+
+**El punto** *(por qué el precio es chico · con sus ventas, que salieron en Discovery; si no salieron, se preguntan aquí: "¿andas más cerca de 200 o de 500 al mes?")*
+> *"No sé cuántos puntos hay escondidos en tu operación. Tú tampoco — y ese es justo el problema. A tus ventas, un punto de insumos son como [1% de sus ventas mensuales] pesos al mes. El programa cuesta menos de medio punto. Si encontramos uno solo, salió sobrado. Si no encontramos ninguno, te regreso el diagnóstico."*
+
+**La única concesión** *(decidida de antemano · sin plazo · el momento es la sesión de entrega)*
+> *"Lo pagas hoy, para que arranque tu diagnóstico. Y el día que te lo entrego, si no te dice nada que te sirva, me lo dices ahí mismo y te regreso el dinero."*
+
+Es subjetiva a propósito: una garantía de *"si no te sirve"* funciona porque no se litiga.
+
+**Si pide descuento**
+> *"El precio de fundador ya es el descuento — por eso se queda fijo para siempre. Lo que sí puedo hacer es que no arriesgues nada: si el diagnóstico no te sirve, te regreso el dinero."*
+
+**Si dice *"déjame pensarlo"***
+> *"Claro. ¿Qué te haría falta ver para decidir?"* — y se resuelve **eso**. No se repite el pitch.
+
+**Si dice que no**
+> *"Va, gracias de verdad por el tiempo. ¿Me dices qué fue lo que no te cerró? Me sirve más que un sí."* — se escucha, se registra en sus palabras, y el hilo queda abierto: *"te mando el ejemplo por WhatsApp para que lo tengas."*
+
+### Qué escucho y cuándo paso
+
+**Sí con el precio enfrente = intent** → §4 **hoy mismo, en la mesa**, no mañana. *"Déjame pensarlo"* → la pregunta de qué le falta; si no hay nada concreto, es un no suave y se registra como tal. **No** → el porqué en sus palabras es el dato de H6·precio — se anota tal cual.
+
+**Nunca:** bajar el precio · agregar cosas al mes 1 · insistir tres veces · justificar con ahorros que Zenet no promete · prometer desarrollo a la medida.
+
+**Qué se registra:** precio dicho ✓ · reacción textual · sí / no / pensarlo · el porqué · **solo cuenta como intent si lo dijo el que paga** (`11` §2.3).
+
+**Desviaciones al canon que esta oferta introduce — se registran en `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md`, no aquí:** (1) mes 1 a $2,500 vs *NO setup fee* · (2) sin compromiso vs 90 días mínimos · (3) $1,500 = precio de lista, no 20-30% off — el *"preferencial"* es contra el precio futuro · (4) reembolso sin plazo vs ventana de 7 días. Si funcionan, gradúan; si no, mueren ahí.
+
 
 ## 4. Navegar el final de la venta
 
