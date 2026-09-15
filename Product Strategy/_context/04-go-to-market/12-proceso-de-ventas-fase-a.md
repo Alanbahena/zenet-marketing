@@ -114,9 +114,52 @@ Oro doble: dice **qué ya no le funcionó** (por qué Zenet no es *"otro softwar
 **Qué se registra, el mismo día** (`guión` §5 · `10-scorecard` §3 · `11` §2.3): los 5 problemas (✓/✗ con su episodio) · perfil · lo que ya intentó · quién habló — **gerente o chef validan el dolor (H1-H4), no el precio: eso solo lo valida el que paga** · entrada en `08-learnings` · el contacto en el pipeline con su siguiente paso y fecha.
 
 
-## 2. Pitch
+## 2. Pitch — la demo y el diagnóstico de ejemplo
 
-`[pendiente]`
+> `[Borrador del fundador · 15-sep]` La estructura, el barco, el orden de la demo (diagnóstico de ejemplo → Inicio → Compras) y la línea anti-dashboard son de Alan. Corregido contra el canon: sin *"áreas de oportunidad"* ni *"huecos"* (`01-copy` vetos), sin promesas de resultado (*Zenet muestra la varianza, no promete recuperarla* · `06-argumentación` §1.3), Zenet es uno (CLAUDE.md §8), y **se dice solo lo que corre** (regla del deploy): Compras y WhatsApp *"entran esta semana"* hasta que corran.
+
+### Qué busco
+
+Que entienda **qué hace, cómo lo hace y por qué importa** — y que **el valor lo diga él**. Tres movimientos: educar → demostrar → que él lo venda. Sin prometer nada que no corra hoy.
+
+### Lo que digo
+
+**El espejo · educar** *(90 segundos · solo con lo que él acaba de contar · las dos cifras con fuente: CANIRAC vía El Imparcial 2026 · CANIRAC 2024 — la rotación es de cocina, se cita así)*
+> *"Lo que me cuentas lo escucho en casi todos los restaurantes, y no es que estés haciendo algo mal. Al sector le subieron los insumos hasta 40% este año —carne, lácteos, verduras— y con el consumo a la baja casi nadie puede pasarlo al menú; se absorbe. Y en cocina, tres de cada cuatro se van antes de cumplir cinco meses. Antes se podía aguantar; hoy se ve directo en el margen y en tu tiempo. Lo del [insumo] y lo de [la persona que se fue] es exactamente eso: el cambio entra por una pieza y te mueve todas las demás — y el que las vuelve a acomodar eres tú. Es como un barco en tormenta constante: los que aguantan no son los que evitan la tormenta, son los mejor construidos."*
+
+**El puente** *(30 segundos)*
+> *"Eso es lo que construí: un sistema que arma tu operación desde lo que ya tienes —tus recetas, tu Excel, tus facturas, lo que traes en la cabeza—, te enseña dónde están tus costos hoy y qué te está costando no verlos, lo mantiene vivo cuando algo cambia y lo carga por ti. Tú decides; Zenet lo carga. Y es tan fácil de usar que lo que a otros les tomó años aquí avanza área por área — en días, no en meses."*
+
+**La demo · demostrar** *(≤10 minutos · la pantalla, no un tour · en este orden)*
+
+1. **El diagnóstico de ejemplo** *(el PDF de un restaurante ficticio, dicho como ficticio)*
+   > *"Primero Zenet arma un diagnóstico de tu operación con lo que ya tienes —recetas, inventarios, estado de resultados, protocolos—: tu índice de estandarización y cómo se compone, dónde están tus costos hoy, lo que encontró, y por dónde te conviene empezar. Este es de un restaurante de ejemplo, con datos de ejemplo; el tuyo es igual, con tus números. En PDF, y en la app."*
+2. **Inicio**
+   > *"Ese diagnóstico es tu punto de partida — cada vez que entras ves cómo vas contra donde empezaste. Zenet se vuelve especialista en tu operación: un solo Zenet, en cada parte."*
+3. **Compras** — `[Provisional · hasta que corra]` **hoy se dice así**:
+   > *"Y lo que entra esta semana: dejas de revisar precios a mano. Le tomas foto a la factura o la mandas por WhatsApp, y ves qué subió, con quién y cuánto pesa al mes — antes del cierre, no en el corte."*
+   > *Cuando corra, el bloque pasa a presente y se enseña en pantalla con una factura real de ejemplo.*
+4. **Anti-dashboard**
+   > *"No tienes que entrar a la app a monitorear nada: le preguntas y te contesta con lo que tu restaurante ya sabe."*
+
+**El cierre del pitch**
+> *"Esto es Zenet hoy: un sistema tan fácil de usar que construye, sobre lo que ya tienes, una operación que aguanta los golpes del mercado. Una operación fuerte no es la que no cambia — es la que aguanta el cambio."*
+
+**Que él lo venda · buy-in** *(en este orden, y escuchar completo)*
+> *"¿Cómo se compara esto con lo que haces hoy?"*
+> *"¿Qué harías distinto si tuvieras esto como base?"*
+> *"¿Cómo crees que lo usaría tu gente?"*
+> *"¿Qué cambiaría para ti en el día — no en el negocio?"*
+> *"¿Qué harías con el tiempo que te devuelve?"*
+
+*(Se descartó "¿qué potencial le ves a seguir creciendo?": este ICP no compra crecimiento, compra su vida de vuelta — `11` §5.6.)*
+
+### Qué escucho y cuándo paso
+
+Que describa el valor **en sus palabras** (*"me quita X de encima"* · *"me enteraría antes"* · *"lo podría dejar al nuevo"*). El "aha" a vigilar: cuando el ejemplo le dice algo que reconoce como suyo — o cuando pregunta *"¿y el mío qué diría?"*. **Paso al Cierre cuando él ya dijo para qué lo usaría.** Si pregunta *"¿y cuánto?"* antes de tiempo: es el cierre — se adelanta, no se evade.
+
+**Guardarraíles:** un solo Zenet, nunca *"agentes"* · nada de integraciones ni fechas · las dos cifras con fuente y ninguna de Zenet · el ejemplo se dice **ejemplo** · *"lo que te está costando no ver"*, nunca *"huecos"* ni *"áreas de oportunidad"* · *"transforma"* y *"sistema digital"* fuera (hype y vocabulario tech).
+
 
 ## 3. Cierre
 
