@@ -1,0 +1,253 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+SCRIPT DE VENTA · Fase A — instancia del proceso v0.1 (15-sep-2026)
+═══════════════════════════════════════════════════════════════════
+Fuente de verdad: _context/04-go-to-market/12-proceso-de-ventas-fase-a.md
+Formato: plantilla-runsheet.html (no tocar tokens ni estilos).
+Uso: (1) edición de estudio — se ensaya en voz alta; (2) por prospecto,
+duplicar y llenar título · pills · [corchetes] con lo suyo.
+PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+  --headless=new --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf="_export/script-sesion-de-venta-fase-a.pdf" "$PWD/script-sesion-de-venta-fase-a.html"
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html>
+<html lang="es"><head><title>Script de venta · Fase A</title><meta charset="utf-8" />
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Onest:wght@500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--ac:#2E6E62;--t4:#88BCAF;--mint:#BFE2D9;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif;}
+  *{box-sizing:border-box;margin:0}
+  @page{size:A4;margin:11mm}
+  body{font-family:var(--fb);color:var(--ch);background:#fff;font-size:9.6pt;line-height:1.42}
+  h1{font-family:var(--fd);font-size:17pt;font-weight:700;letter-spacing:-.01em}
+  .sub{color:var(--t7);font-size:9.5pt;margin-top:2px}
+  .meta{display:flex;gap:7px;margin:8px 0 12px;flex-wrap:wrap}
+  .pill{font-family:var(--fd);font-weight:600;font-size:8.2pt;color:var(--ac);background:rgba(46,110,98,.07);
+        border:1px solid rgba(46,110,98,.22);border-radius:99px;padding:2.5px 9px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .box{background:var(--off);border:1px solid rgba(43,55,56,.13);border-radius:9px;padding:8px 11px;margin-bottom:9px;
+       break-inside:avoid}
+  .box h2{font-family:var(--fd);font-size:9.5pt;font-weight:700;color:var(--ac);text-transform:uppercase;letter-spacing:.07em;margin-bottom:5px}
+  .box ul{padding-left:14px}
+  .box li{margin-bottom:2.5px}
+  .beat{border:1px solid rgba(43,55,56,.13);border-radius:9px;margin-bottom:8px;overflow:hidden;break-inside:avoid}
+  .beat header{display:flex;align-items:center;gap:8px;background:var(--off2);padding:5px 11px;border-bottom:1px solid rgba(43,55,56,.09)}
+  .beat header .t{font-family:var(--fd);font-weight:700;font-size:9pt;color:#fff;background:var(--ac);border-radius:99px;padding:1.5px 9px;white-space:nowrap}
+  .beat header .t.soft{background:var(--t4)}
+  .beat header h3{font-family:var(--fd);font-size:10.3pt;font-weight:700}
+  .beat header .star{margin-left:auto;font-size:9pt}
+  .beat .bd{padding:7px 11px}
+  .q{padding-left:15px;counter-reset:q}
+  .q li{margin-bottom:3.2px}
+  .q b{color:var(--ac);font-weight:700}
+  .say{background:var(--off2);border-left:3px solid var(--ac);border-radius:0 7px 7px 0;padding:6px 10px;margin:5px 0;font-size:9.4pt}
+  .say em{color:var(--t7)}
+  .note{color:var(--t7);font-size:8.6pt;margin-top:4px}
+  table{width:100%;border-collapse:collapse;font-size:8.6pt}
+  th{font-family:var(--fd);text-align:left;color:var(--ac);font-weight:700;padding:3px 7px;border-bottom:1.4px solid var(--ac);white-space:nowrap}
+  td{padding:3.4px 7px;border-bottom:1px solid rgba(43,55,56,.1);vertical-align:top}
+  td:first-child{font-weight:700;white-space:nowrap;color:var(--ch)}
+  .sig{display:grid;grid-template-columns:1fr 1fr;gap:9px}
+  .sig .g{border-color:rgba(46,110,98,.35)}
+  .sig .r{border-color:rgba(190,80,60,.4)}
+  .sig .r h2{color:#A8553A}
+  .kill{background:#FBF1EC;border:1px solid rgba(190,80,60,.35);border-radius:9px;padding:7px 11px;margin-bottom:9px;font-size:9.2pt}
+  .kill b{color:#A8553A}
+  .pgbrk{break-before:page}
+</style></head>
+<body>
+<h1>Script de venta · Fase A — la sesión con el dueño</h1>
+<p class="sub">Instancia del proceso v0.1 (<code>12-proceso-de-ventas</code>) · <b>una sola sesión: discovery → pitch → cierre → arranque</b> · perfil ③ centro, ② adyacente</p>
+<div class="meta">
+  <span class="pill">[Nombre · restaurante]</span><span class="pill">[Día · hora]</span><span class="pill">Presencial · café</span>
+  <span class="pill">45–60 min (⭐ = esqueleto de 35)</span><span class="pill">Oferta SF · $2,500 → $1,500 + IVA</span>
+</div>
+
+<div class="grid2">
+  <div class="box">
+    <h2>✔ Antes de salir</h2>
+    <ul>
+      <li><b>Flyer de oferta</b> impreso · <b>diagnóstico de ejemplo</b> en el cel y en PDF</li>
+      <li><b>Kit de bienvenida</b> listo para mandar · CLABE a la mano</li>
+      <li>Averiguado antes: <b>formalidad</b> (factura · RFC) y <b>rango de ventas</b> → <b>el punto calculado a sus ventas</b> (1% de la venta mensual)</li>
+      <li>La app abierta en <b>Inicio</b> · su link Dub</li>
+    </ul>
+  </div>
+  <div class="box">
+    <h2>🧭 Repaso de 10 segundos</h2>
+    <ul>
+      <li><b>Él dice el problema; tú no.</b> Su sistema funciona — lo carga él</li>
+      <li>El problema está <b>afuera</b>; el costo, <b>adentro</b></li>
+      <li>Se promete <b>solo lo que corre</b> · Compras/WhatsApp "entra esta semana"</li>
+      <li>El precio <b>se dice, con el punto</b> · no se negocia · <b>una</b> concesión</li>
+    </ul>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">0–2</span><h3>Apertura — y callarse</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <div class="say">"He platicado con muchos dueños de restaurantes en la región y lo que de verdad le pega a un restaurante está allá afuera: todo lo que subió, la rotación y capacitar gente, los costos y los márgenes apretados, y toda la administración de atrás. <b>¿Algo de esto te suena? ¿O tu negocio depende de una, dos, tres personas clave</b> para aguantar cualquiera de estos?"</div>
+    <p class="note">Lo que conteste decide con qué pregunta arrancas. No se hacen las siete en fila.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">2–18</span><h3>Discovery — cada pregunta abre; la "última vez" es la que cuenta</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"¿Y hoy cómo le haces con eso?" → <b>"¿La última vez que pasó, qué hiciste?"</b></li>
+      <li>"Si te vas tres días, ¿qué se cae?" → <b>"¿Cuándo fue la última vez que te fuiste?"</b> <span class="note">(P1 la carga)</span></li>
+      <li>"Cuando te sube un insumo, ¿qué pasa con el costo de tus platillos?" → <b>"El último que te subió — ¿te enteraste cuándo? ¿y qué hiciste?"</b> <span class="note">(P5 · siente el número)</span></li>
+      <li>"Cuando cambias la carta, ¿qué tienes que actualizar después?" → <b>"¿La última vez qué actualizaste — y qué no?"</b> <span class="note">(P2 · perfil)</span></li>
+      <li>"¿Cómo aprende alguien nuevo tu platillo estrella?" → <b>"¿El último que entró, cuánto tardó? ¿Y el último que se fue, qué se llevó?"</b> <span class="note">(P4 · perfil)</span></li>
+      <li>"¿Cómo sabes cuánto te queda al mes — por tus números o por lo que queda en la cuenta?" → <b>"¿Cuál fue la última sorpresa en costos?"</b></li>
+      <li>"¿Cuándo fue la última vez que algo se rompió en la operación?" → <b>"¿Y qué te costó — en dinero, en tiempo, en dormir?"</b></li>
+      <li><b>Al final, una sola:</b> "¿Y qué has probado para resolverlo — gente, capacitación, algún sistema o POS? ¿Qué pasó con eso?" <span class="note">(adelanta la objeción del cierre)</span></li>
+    </ol>
+    <p class="note">Las cinco áreas se sondean aunque fluya: carga · costos · carta · gente · números. Lo no preguntado cuenta como ausente. Si nombra "margen" solo, vale doble.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">18–23</span><h3>El espejo + el puente — solo con lo que él dijo</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <div class="say">"Lo que me cuentas lo escucho en casi todos los restaurantes, y no es que estés haciendo algo mal. Al sector le subieron los insumos hasta 40% este año —carne, lácteos, verduras— y con el consumo a la baja casi nadie puede pasarlo al menú; se absorbe. Y en cocina, tres de cada cuatro se van antes de cumplir cinco meses. Antes se podía aguantar; hoy se ve directo en el margen y en tu tiempo. <b>Lo del [insumo] y lo de [la persona que se fue] es exactamente eso:</b> el cambio entra por una pieza y te mueve todas las demás — y el que las vuelve a acomodar eres tú. Es como un barco en tormenta constante: los que aguantan no son los que evitan la tormenta, son los mejor construidos."</div>
+    <div class="say">"Eso es lo que construí: un sistema que arma tu operación desde lo que ya tienes —tus recetas, tu Excel, tus facturas, lo que traes en la cabeza—, te enseña dónde están tus costos hoy y qué te está costando no verlos, lo mantiene vivo cuando algo cambia y lo carga por ti. <b>Tú decides; Zenet lo carga.</b> Y es tan fácil de usar que lo que a otros les tomó años aquí avanza área por área — en días, no en meses."</div>
+    <p class="note">Solo las dos cifras con fuente (CANIRAC vía El Imparcial 2026 · CANIRAC 2024, cocina). Ninguna de Zenet.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">23–33</span><h3>La demo — en este orden, sin tour</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li><b>El diagnóstico de ejemplo:</b> <span class="say" style="display:block;margin:4px 0">"Primero Zenet arma un diagnóstico de tu operación con lo que ya tienes —recetas, inventarios, estado de resultados, protocolos—: tu índice de estandarización y cómo se compone, dónde están tus costos hoy, lo que encontró, y por dónde te conviene empezar. <b>Este es de un restaurante de ejemplo, con datos de ejemplo; el tuyo es igual, con tus números.</b> En PDF, y en la app."</span></li>
+      <li><b>Inicio:</b> "Ese diagnóstico es tu punto de partida — cada vez que entras ves cómo vas contra donde empezaste. Un solo Zenet, especialista en cada parte."</li>
+      <li><b>Compras</b> <span class="note">(hoy se dice así; cuando corra, en pantalla)</span>: "Y lo que <b>entra esta semana</b>: dejas de revisar precios a mano. Le tomas foto a la factura o la mandas por WhatsApp, y ves qué subió, con quién y cuánto pesa al mes — antes del cierre, no en el corte."</li>
+      <li><b>Anti-dashboard:</b> "No tienes que entrar a la app a monitorear nada: le preguntas y te contesta con lo que tu restaurante ya sabe."</li>
+    </ol>
+    <div class="say">"Esto es Zenet hoy: un sistema tan fácil de usar que construye, sobre lo que ya tienes, una operación que aguanta los golpes del mercado. <b>Una operación fuerte no es la que no cambia — es la que aguanta el cambio.</b>"</div>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">33–36</span><h3>Que él lo venda — en este orden, escuchar completo</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"¿Cómo se compara esto con lo que haces hoy?"</li>
+      <li>"¿Qué harías distinto si tuvieras esto como base?"</li>
+      <li>"¿Cómo crees que lo usaría tu gente?"</li>
+      <li>"¿Qué cambiaría para ti en el día — no en el negocio?"</li>
+      <li>"¿Qué harías con el tiempo que te devuelve?"</li>
+    </ol>
+    <p class="note">👂 Paso al cierre cuando <b>él ya dijo para qué lo usaría</b>. Si pregunta "¿y cuánto?" antes: es el cierre — se adelanta, no se evade.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">36–42</span><h3>Cierre — un sí con el precio dicho, o un no claro</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <div class="say"><b>Antes del precio:</b> "¿Crees que con esto tu operación dejaría de depender de que tú la cargues — y tendrías más control, más margen y más cabeza para lo que de verdad importa?" → si sí: <b>"¿Por qué? ¿Qué es lo que ves?"</b> <em>(que él te venda Zenet · si suena flojo: "¿qué te falta ver?")</em></div>
+    <div class="say"><b>Los beneficios</b> <em>(el flyer sobre la mesa)</em>: "Como Socio Fundador entras con tres cosas que nadie más va a tener. <b>Uno:</b> yo, en tu operación, cada semana. Lo que te estorbe de verdad es lo que se construye primero — tu operación moldea lo que Zenet va a ser. Eso no lo compras después a ningún precio. <b>Dos:</b> el precio se te queda fijo para siempre; los que entren después van a pagar más. <b>Tres:</b> cero riesgo — sin compromiso, te vas cuando quieras, y si el diagnóstico no te sirve, te regreso el dinero."</div>
+    <div class="say"><b>La oferta:</b> "El primer mes son dos mil quinientos más IVA, e incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas, y a mí directo cada semana. Desde el segundo mes son mil quinientos más IVA, fijos. Son cinco lugares."</div>
+    <div class="say"><b>El punto:</b> "No sé cuántos puntos hay escondidos en tu operación. Tú tampoco — y ese es justo el problema. A tus ventas, un punto de insumos son como <b>[1% de su venta mensual]</b> pesos al mes. El programa cuesta menos de medio punto. Si encontramos uno solo, salió sobrado. Si no encontramos ninguno, te regreso el diagnóstico."</div>
+    <div class="say"><b>La única concesión:</b> "Lo pagas hoy, para que arranque tu diagnóstico. Y el día que te lo entrego, si no te dice nada que te sirva, me lo dices ahí mismo y te regreso el dinero."</div>
+    <p class="note">Descuento → "el precio de fundador ya es el descuento; lo que sí: no arriesgas nada". Pensarlo → "¿qué te haría falta ver para decidir?". No → "¿me dices qué no te cerró? me sirve más que un sí" + el ejemplo por WhatsApp.</p>
+  </div>
+</div>
+
+<div class="beat">
+  <header><span class="t">42–45</span><h3>Navegar el final — pago, documentos y fecha, en la mesa</h3><span class="star">⭐</span></header>
+  <div class="bd">
+    <ol class="q">
+      <li>"Va. Te mando ahorita por WhatsApp <b>tu bienvenida como Socio Fundador</b>: ahí viene todo por escrito y la cuenta para la transferencia. <b>¿A qué correo y con qué RFC te facturo?</b>"</li>
+      <li>"Para armar tu diagnóstico necesito de ti esta semana, <b>como lo tengas</b>: recetas, lista de insumos o inventario, tu carta, fotos de tus últimas facturas — y si quieres la lectura de costos, tu estado de resultados. ¿Te caen bien para el <b>[jueves]</b>?"</li>
+      <li>"Y agendamos la entrega: ¿el <b>[día, una semana después]</b> a esta hora, aquí mismo?"</li>
+    </ol>
+    <p class="note">Si el de la mesa no es el que paga: "¿Quién más tiene que verlo? ¿Lo vemos juntos — cuándo le queda?" — si no lo invita, no está vendido (vale H1-H4, no intent).</p>
+  </div>
+</div>
+
+<div class="pgbrk"></div>
+<h1 style="font-size:13.5pt">Cheat-sheet · qué escucho, cuándo paso, qué no hago</h1>
+<p class="sub" style="margin-bottom:8px">Los 9 checks del ICP (<code>11</code> §2) · los criterios de paso (<code>12</code> §1–§4) · señales · guardrails · objeciones</p>
+
+<div class="box" style="padding:9px 11px">
+<table>
+  <tr><th>Check</th><th>Cómo se detecta</th><th>✓ suma</th></tr>
+  <tr><td>Formal</td><td>antes: factura · RFC · sitio — nunca en tono de auditoría</td><td>factura</td></tr>
+  <tr><td>Cocina propia</td><td>"¿qué haces en tu cocina y qué compras ya hecho?"</td><td>transforma insumos · 2+ en cocina</td></tr>
+  <tr><td>Estructural</td><td>la última vez que algo salió mal → ¿habla del proceso o de la persona?</td><td>"no estaba escrito"</td></tr>
+  <tr><td>Carga la operación</td><td>"si te vas tres días, ¿qué se cae?"</td><td>"si no estoy, no sale"</td></tr>
+  <tr><td>Siente el número</td><td>el último insumo que subió → ¿cuándo se enteró, qué hizo?</td><td>nombra número + emoción</td></tr>
+  <tr><td>Hay algo que extraer</td><td>"¿qué tienes hoy por escrito, aunque sea suelto?"</td><td>2+ fuentes</td></tr>
+  <tr><td>Delega la carga, no el criterio</td><td>"¿qué esperarías que hiciera — y qué no?"</td><td>"que me quite X" ✓ · "que decida por mí" ✗</td></tr>
+  <tr><td>Ventas en rango</td><td>"¿más cerca de 200 o de 500 al mes?"</td><td>$200K–2M</td></tr>
+  <tr><td>Decide solo</td><td>"si te sirviera, ¿quién más tendría que verlo?"</td><td>"yo" · "yo y mi socio, el jueves"</td></tr>
+</table>
+</div>
+
+<div class="box" style="padding:9px 11px">
+<table>
+  <tr><th>Paso</th><th>Cuando</th><th>Si no</th></tr>
+  <tr><td>Discovery → Pitch</td><td><b>3+ de 5 problemas con episodio</b> + perfil ③/②</td><td>no hay pitch · gracias · el ejemplo por WhatsApp · registrar</td></tr>
+  <tr><td>Pitch → Cierre</td><td><b>él dijo para qué lo usaría</b></td><td>"¿qué te falta ver?" · un paso atrás</td></tr>
+  <tr><td>Cierre → Final</td><td><b>sí con el precio enfrente</b> (dicho por el que paga)</td><td>no = dato de H6 · el porqué textual</td></tr>
+  <tr><td>Final → Arranque</td><td>pago en la cuenta + documentos + fecha de entrega</td><td>72 h · un solo mensaje con motivo</td></tr>
+</table>
+</div>
+
+<div class="sig">
+  <div class="box g">
+    <h2>🟢 Señales</h2>
+    <ul>
+      <li>Episodios <b>con fecha y con emoción</b> · "me enteré hasta el cierre" · "si no estoy, no sale"</li>
+      <li>Nombra <b>margen</b> solo · recosteó a mano (ya cuantificó lo que le cuesta)</li>
+      <li>"¿Y el mío qué diría?" · <b>"¿y cuánto?"</b> — es el cierre</li>
+      <li>Describe el valor en sus palabras: "me quita X de encima" · "lo podría dejar al nuevo"</li>
+    </ul>
+  </div>
+  <div class="box r">
+    <h2>⚠️ Guardrails</h2>
+    <ul>
+      <li>NUNCA "te falta", "huecos", "áreas de oportunidad", "no tienes sistema"</li>
+      <li>NO "agentes" — <b>un solo Zenet</b> · NO integraciones ni fechas</li>
+      <li>NO cifras de Zenet · NO ahorros prometidos · NO "features a la medida"</li>
+      <li>NO descuento · NO agregar cosas al mes 1 · NO insistir tres veces</li>
+      <li>Compras/WhatsApp = <b>"entra esta semana"</b> hasta que corra</li>
+    </ul>
+  </div>
+</div>
+
+<div class="kill"><b>El dato sale igual si dice que no:</b> un "no" con el precio enfrente es dato; un "sí" sin precio es cortesía. <b>El kill del proceso</b> no es el no — es no llegar a decir el precio.</div>
+
+<div class="box" style="padding:9px 11px">
+<h2>🗣 Objeciones — escuchar completo · reconocer · preguntar de dónde viene · responder corto</h2>
+<table>
+  <tr><th>Dice</th><th>Digo</th></tr>
+  <tr><td>"Yo sé lo que gasto / yo llevo todo"</td><td>"Se nota — por eso funciona. La pregunta es qué pasa el día que no estás. Zenet no te reemplaza; te extiende a donde no llegas."</td></tr>
+  <tr><td>"Ya tengo un POS"</td><td>"Y se queda. Tu POS sabe lo que vendes; lo que hay detrás es lo que ordena Zenet."</td></tr>
+  <tr><td>"Es otro software más"</td><td>"Yo tampoco compraría otro. Por eso no capturas nada: mandas lo que ya tienes. Si sabes usar WhatsApp, sabes usar Zenet."</td></tr>
+  <tr><td>"Eso ya lo tengo en Excel / solo es data"</td><td>"Sí, y está bien. Hoy cada cambio lo acomodas tú, a mano, en cinco lugares. ¿La última vez que cambiaste un precio lo actualizaste en todos?"</td></tr>
+  <tr><td>"Está caro"</td><td>"¿Comparado con qué?" → el punto a sus ventas · "menos de medio punto" · la devolución</td></tr>
+  <tr><td>"Déjame pensarlo"</td><td>"Claro. ¿Qué te haría falta ver para decidir?" — y se resuelve eso; sin nada concreto, es un no</td></tr>
+  <tr><td>"Mi equipo / mi chef no lo va a usar"</td><td>"No aprende nada nuevo: consulta el manual y manda fotos. Y su criterio queda escrito con su nombre — a él también lo protege."</td></tr>
+  <tr><td>"¿Y mis datos?"</td><td>"Los ve una sola persona: yo. No se comparten ni se venden; si pides borrarlos, se borran. zenetapp.com/privacidad"</td></tr>
+  <tr><td>"¿Y si no está terminado?"</td><td>"No lo está — por eso son cinco lugares y el precio fijo. Lo que viste corre; lo que no, te lo dije."</td></tr>
+  <tr><td>"¿Me das factura / me lo deduzco?"</td><td>"Sí, con factura — por eso te pedí tu RFC."</td></tr>
+  <tr><td>"Ahorita no es el momento"</td><td>"¿Cuándo sí? Te apunto la fecha." — sin presión</td></tr>
+</table>
+</div>
+
+<div class="box">
+  <h2>🚗 Al salir (antes de dos horas)</h2>
+  <ul>
+    <li><b>Kit de bienvenida por WhatsApp</b> — su "va" es la confirmación · o el ejemplo, si fue no</li>
+    <li>Registrar: los 5 problemas ✓/✗ con episodio · perfil · lo que intentó · <b>precio dicho ✓ + reacción textual</b> · quién habló (¿el que paga?)</li>
+    <li><code>08-learnings</code> entrada del día · pipeline: etapa + siguiente paso con fecha · el domingo, el scorecard</li>
+  </ul>
+</div>
+
+</body></html>
