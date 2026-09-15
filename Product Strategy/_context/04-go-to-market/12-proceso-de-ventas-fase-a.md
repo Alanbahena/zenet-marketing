@@ -128,7 +128,7 @@ Que entienda **qué hace, cómo lo hace y por qué importa** — y que **el valo
 > *"Lo que me cuentas lo escucho en casi todos los restaurantes, y no es que estés haciendo algo mal. Al sector le subieron los insumos hasta 40% este año —carne, lácteos, verduras— y con el consumo a la baja casi nadie puede pasarlo al menú; se absorbe. Y en cocina, tres de cada cuatro se van antes de cumplir cinco meses. Antes se podía aguantar; hoy se ve directo en el margen y en tu tiempo. Lo del [insumo] y lo de [la persona que se fue] es exactamente eso: el cambio entra por una pieza y te mueve todas las demás — y el que las vuelve a acomodar eres tú. Es como un barco en tormenta constante: los que aguantan no son los que evitan la tormenta, son los mejor construidos."*
 
 **El puente** *(30 segundos)*
-> *"Eso es lo que construí: un sistema que arma tu operación desde lo que ya tienes —tus recetas, tu Excel, tus facturas, lo que traes en la cabeza—, te enseña dónde están tus costos hoy y qué te está costando no verlos, lo mantiene vivo cuando algo cambia y lo carga por ti. Tú decides; Zenet lo carga. Y es tan fácil de usar que lo que a otros les tomó años aquí avanza área por área — en días, no en meses."*
+> *"Eso es lo que construí: un sistema que arma tu operación desde lo que ya tienes —tus recetas, tu Excel, tus facturas, lo que traes en la cabeza—, te enseña dónde están tu operación y tus costos hoy y qué te está costando no verlos o no tenerlos estructurados, lo mantiene vivo cuando algo cambia y lo carga por ti. Tú decides; Zenet lo carga. Y es tan fácil de usar que lo que a otros les tomó años aquí avanza área por área — en días, no en meses."*
 
 **La demo · demostrar** *(≤10 minutos · la pantalla, no un tour · en este orden)*
 
