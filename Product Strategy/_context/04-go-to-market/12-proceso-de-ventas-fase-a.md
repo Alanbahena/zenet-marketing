@@ -254,9 +254,38 @@ Si el pago no llega en 72 horas: **un solo mensaje** con motivo nuevo (*"ya teng
 `[Provisional · hasta que conteste el contador · 15-sep]` La factura: RESICO vs actividad empresarial · CSD · IVA de frontera · cuenta dedicada. Si el día del primer sí todavía no hay CFDI, **no se cobra sin factura**: se manda el kit, se recibe el diagnóstico, y el cobro se hace en cuanto la factura exista — se le dice así, de frente.
 
 
-## 5. Objeciones
+## 5. Objeciones — atraviesan todo
 
-`[pendiente]`
+> Las objeciones no son una etapa: aparecen en Discovery, en el Pitch y en el Cierre. Las de campo llevan su etiqueta de sesión (`08-learnings`); las demás vienen del catálogo canónico (`04-sales-motion` §8 LAER MX · `06-objeciones-y-fricciones` §3). **Cada objeción nueva que salga en la mesa entra a esta tabla con su etiqueta.**
+
+### Qué busco
+
+Que la objeción **se entienda antes de contestarse**. Casi todas son una de tres cosas: identidad (*yo soy el sistema*), precio, o confianza en que existe. La regla es una: **escuchar completo → reconocer → preguntar de dónde viene → responder corto.** Nunca ganar la discusión, nunca defenderse, nunca presionar — en México eso pierde la relación, no solo la venta.
+
+### Lo que digo
+
+| Lo que dice | De dónde viene | Lo que digo |
+|---|---|---|
+| *"Yo sé lo que gasto"* · *"yo llevo todo"* | **Identidad.** Él ES el sistema (`07-voice-of-customer` V-001/V-010) | *"Se nota — por eso funciona. La pregunta no es si sabes: es qué pasa el día que no estás. Zenet no te reemplaza; te extiende a donde no llegas."* |
+| *"Ya tengo un POS"* | Cree que compite con lo que ya pagó | *"Y se queda. Tu POS sabe lo que vendes; lo que hay detrás —tus recetas reales, tus insumos, lo que pagas por ellos— eso es lo que ordena Zenet. Trabaja sobre lo que ya tienes."* |
+| *"Es otro software más"* | Ya le vendieron software que no usó `[Campo · S#5 Alfonso]` | *"Te entiendo — yo tampoco compraría otro software. Por eso no te pido que captures nada: mandas lo que ya tienes, como está. Si sabes usar WhatsApp, ya sabes usar Zenet."* |
+| *"Eso ya lo tengo en Excel / en mi cabeza"* · *"solo es data"* | Cree que es un contenedor `[Campo · S#5 Alfonso]` | *"Sí, y está bien tenerlo. La diferencia es que hoy cada cambio lo acomodas tú, a mano, en cinco lugares. ¿Cuándo fue la última vez que cambiaste un precio y lo actualizaste en todos?"* |
+| *"Está caro"* | Precio sin referencia | *"¿Comparado con qué lo ves caro?"* (escuchar) → *"A tus ventas, un punto de insumos son [X] al mes; esto cuesta menos de medio punto. Y si el diagnóstico no te sirve, te regreso el dinero."* |
+| *"Déjame pensarlo"* | Falta algo concreto, o es un no suave | *"Claro. ¿Qué te haría falta ver para decidir?"* — y se resuelve eso. Si no hay nada concreto, es un no: se agradece y se registra. |
+| *"Mi equipo no lo va a usar"* · *"mi chef no suelta las recetas"* | Adopción `[Campo · S#4 Miguel: el chef que no suelta]` | *"Tu equipo no aprende nada nuevo: consulta el manual en el celular y manda fotos. Y lo que sabe tu operación deja de irse con quien se va — eso al chef también lo protege: su criterio queda escrito con su nombre, no se lo lleva otro."* |
+| *"¿Y mis datos? ¿mis números?"* | Confianza | *"Los ve una sola persona: yo. No se comparten, no se venden, y si pides que se borren, se borran. Está escrito en zenetapp.com/privacidad."* |
+| *"¿Y si todavía no está terminado?"* | Confianza en que existe | *"No lo está — por eso son cinco lugares y por eso el precio se queda fijo. Lo que te enseñé hoy corre; lo que no, te lo dije. Tu operación moldea lo que se construye."* |
+| *"¿Me lo puedo deducir?"* · *"¿me das factura?"* | El contador, aunque no esté en la mesa | *"Sí, con factura — por eso te pedí tu RFC."* `[Provisional hasta el contador]` |
+| *"Ahorita no es el momento"* | Timing | *"¿Cuándo sí? Te apunto la fecha."* — sin presión; el costo de esperar ya lo dijo él en Discovery, no hace falta repetírselo. |
+
+### Qué escucho y cuándo paso
+
+La objeción **real** suele salir después de la primera: se pregunta *"¿y aparte de eso?"* una vez. Si la objeción es de identidad, **nunca se contesta con features** — se contesta con *extender*, no *reemplazar*. Si es de precio, **nunca con descuento** — con el punto y con la devolución. Si es de confianza, con lo que corre y con lo que no.
+
+**Lo que no se hace** (`04-sales-motion` §8.3): presionar · ganar el argumento · sacar la calculadora antes de que haya relación · defender el producto · interrumpir · descartar la preocupación · prometer de más.
+
+**Qué se registra:** la objeción **textual**, en qué momento salió, y si se resolvió o cerró la conversación — va a `08-learnings` y alimenta esta tabla.
+
 
 ## 6. Pipeline y KPIs
 
