@@ -214,7 +214,45 @@ Es subjetiva a propósito: una garantía de *"si no te sirve"* funciona porque n
 
 ## 4. Navegar el final de la venta
 
-`[pendiente]`
+> `[Borrador del fundador · 15-sep]` Los dos errores que esta sección evita son los de tu lista: *no fijar el siguiente paso* y *seguir vendiendo en el seguimiento*. Idea de Alan que cambia la mecánica: **el kit de bienvenida** — un PDF de dos páginas que hace de confirmación, de lista de documentos y de hoja de acuerdo a la vez (especificado en §7). El flujo de arranque viene del canon (`02-programa` §8: intent → confirmación escrita → arranque) sin DocuSign ni pasarela, que llegan en la v0.2.
+
+### Qué busco
+
+Que el sí se vuelva **pago, documentos y fecha — hoy, en la mesa**. Un sí sin siguiente paso fijado se enfría en 48 horas. Y que el arranque se sienta como lo que es: ya está adentro, ya empezó.
+
+### Lo que digo
+
+**En la mesa, antes de levantarse** *(los tres pasos seguidos, sin pausa)*
+> *"Va. Te mando ahorita por WhatsApp tu bienvenida como Socio Fundador: ahí viene todo por escrito y la cuenta para la transferencia. ¿A qué correo y con qué RFC te facturo?"*
+> *"Para armar tu diagnóstico necesito de ti esta semana, como lo tengas: tus recetas, tu lista de insumos o inventario, tu carta, fotos de tus últimas facturas — y si quieres la lectura de costos, tu estado de resultados. En la bienvenida viene la lista. ¿Te caen bien para el jueves?"*
+> *"Y agendamos la entrega: ¿el [día, una semana después] a esta hora, aquí mismo? Ahí lo vemos juntos."*
+
+**El mensaje de confirmación** *(WhatsApp · el mismo día, antes de dos horas · texto plano · lleva el kit adjunto · su "va" es la confirmación escrita)*
+> *[Nombre], gracias por hoy. Te mando tu bienvenida como Socio Fundador de Zenet: ahí viene lo que incluye tu mes 1, qué documentos mandarme antes del [día], los datos para la transferencia y lo que acordamos. Nos vemos el [fecha] para tu diagnóstico. ¿Va?*
+
+**El kit de bienvenida** *(dos páginas · PDF · ver §7)* — pág. 1 bienvenida · lo que incluye el mes 1 · fechas · qué mandar, como lo tengas · transferencia · pág. 2 *lo que acordamos* (precios · sin compromiso · la devolución · privacidad · firma opcional). **Reemplaza a la hoja de acuerdo y al contrato hasta que haya abogado.**
+
+**El seguimiento de documentos** *(si no llegan el jueves · un solo mensaje, con motivo, sin reproche)*
+> *"[Nombre], ya tengo tu lugar y la fecha apartada para el [día]. Para llegar con tu diagnóstico listo necesito los documentos hoy o mañana — con fotos del celular es suficiente. ¿Te ayudo con algo?"*
+
+**Si el que está en la mesa no es el que paga** *(gerente · chef · socio operativo)*
+> *"¿Quién más tiene que verlo para que se decida? ¿Lo vemos juntos — cuándo le queda?"*
+Si no lo invita, no está vendido: su sí vale como H1-H4, **no como intent**. Se agenda la sesión con el que paga; el kit no se manda hasta entonces.
+
+**La sesión de entrega** *(la semana siguiente · su diagnóstico en pantalla y en PDF · ≤30 min)*
+> *"Esto es tu operación con tus números. [Se recorre: índice y cómo se compone · dónde están tus costos · lo que encontró · por dónde empezar.] ¿Te dice algo que no supieras?"*
+Ahí él decide: **sigue** (mes 2 en adelante, y arranca la estandarización por donde el diagnóstico dijo) o **pide su dinero** — y se regresa sin discutir. En ambos casos se registra.
+
+### Qué escucho y cuándo paso
+
+**Pago recibido + documentos recibidos + fecha de entrega fijada = arranque.** Se registra como *pagado* solo con la transferencia en la cuenta — no con el "va".
+
+Si el pago no llega en 72 horas: **un solo mensaje** con motivo nuevo (*"ya tengo tu carta lista para meter — ¿me confirmas la transferencia para arrancar?"*). Si no llega, se registra como *intent no confirmado* y el hilo queda abierto, sin insistir.
+
+**Los dos errores que no se cometen:** salir de la mesa sin fecha · seguir vendiendo en el seguimiento — el seguimiento **confirma**, no convence.
+
+`[Provisional · hasta que conteste el contador · 15-sep]` La factura: RESICO vs actividad empresarial · CSD · IVA de frontera · cuenta dedicada. Si el día del primer sí todavía no hay CFDI, **no se cobra sin factura**: se manda el kit, se recibe el diagnóstico, y el cobro se hace en cuanto la factura exista — se le dice así, de frente.
+
 
 ## 5. Objeciones
 
