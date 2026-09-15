@@ -1,17 +1,17 @@
 ---
 name: Proceso de ventas — Fase A
-description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 en construcción, sección por sección con el fundador."
+description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 cerrada el 15-sep-2026, escrita sección por sección con el fundador. Deja explícita la deuda de artefactos (mensajes v0.3 · runsheet · flyer · kit de bienvenida · scorecard v0.5)."
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-14
-status: draft
+last_updated: 2026-09-15
+status: active
 version: 0.1
 owner: Alan Bahena
 ---
 
 # Proceso de ventas — Fase A
 
-> **Estado:** v0.1 **en construcción** (14-sep-2026). Se escribe una sección por turno, con OK del fundador antes de la siguiente. Las secciones que todavía no existen aparecen como `[pendiente]`.
+> **Estado:** ✅ **v0.1 cerrada** (15-sep-2026) — las siete secciones escritas una por turno, con OK del fundador en cada una. Lo `[Provisional]` de §4 (la factura) se cierra con el contador; la deuda que deja está en §7.1.
 >
 > **Contexto que lo dispara:** la retro del 13-sep decidió que **la Fase A sale a vender** — cinco sesiones sin precio dicho no produjeron un dato de H6. Este doc es la última pieza del tríptico (ICP → landing → ventas) y la única que nunca se ha ejecutado.
 
@@ -330,6 +330,42 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 - **El domingo:** `/scorecard-fase-a-semanal` pregunta los nueve; lo que no se sabe queda `s/r`, nunca se estima.
 
 
-## 7. Artefactos
+## 7. Artefactos — qué se usa en cada etapa
 
-`[pendiente]`
+| Etapa | Artefacto | Estado (15-sep) | Dónde |
+|---|---|---|---|
+| 1 Contactado | **Mensaje inicial** (§1 · gancho + café + *"cómo se vería el tuyo"*) · variante *"te mando el ejemplo"* | ✅ en este doc · **pendiente pasarlo a `mensajes-outreach` v0.3** (#9 · y retirar #7 como primer toque) | `_templates/mensajes-outreach-fase-a.md` |
+| 1 | **Link Dub por persona** → `zenetapp.com` | ✅ | Dub |
+| 1 | **Tarjeta** (QR → Dub) | 🔜 → imprenta | plan semana 14–20 sep |
+| 2 Respondió | **Diagnóstico de ejemplo** (PDF · restaurante ficticio · datos declarados) | 🔜 mié 16 | producto (Task 43) → `_export/` |
+| 3-4 Sesión | **Landing v4** como página de confianza · **`/demo` → `/diagnostico`** | ✅ en vivo · 🔜 rename en v4.1 | `zenetapp.com` |
+| 4 Discovery | **Run-sheet de sesión** (la apertura · las 7 preguntas · los 9 checks · el perfil · el cierre) | ⚠️ `plantilla-runsheet.html` sin los 9 checks ni el cierre — se actualiza con este doc | `_templates/plantilla-runsheet.html` |
+| 4 | **Guión de conversación** v0.6 (la sesión minuto a minuto) | ✅ · su §2 apunta a este doc para el cierre | `_templates/guion-conversacion-y-demo-fase-a.md` |
+| 4-5 Pitch | **La app** (Inicio · Estandarización · Manual) + el diagnóstico de ejemplo | ✅ / 🔜 | producto |
+| 5 Cierre | **Flyer de oferta** *(una cara)* — 3 beneficios · $2,500 + IVA mes 1 / $1,500 + IVA fijo · 5 lugares · sin compromiso · devolución · QR | 🔜 **nuevo** | `_templates/` → PDF |
+| 6 Sí | **Kit de bienvenida** *(2 págs)* — pág. 1 bienvenida · mes 1 · fechas · qué mandar como lo tengas · transferencia · pág. 2 lo que acordamos | 🔜 **nuevo** (reemplaza a la hoja de acuerdo) | `_templates/` → PDF |
+| 7 Pagado | **CFDI** · cuenta dedicada | ⏳ contador | — |
+| 8 Entrega | **Su diagnóstico** (PDF + app) | ✅ el PDF ya corre | producto |
+| Todas | **Aviso de privacidad** | ✅ | `zenetapp.com/privacidad` |
+| Domingo | **Scorecard** v0.5 (5 columnas nuevas) + skill | 🔜 después de este doc | `10-scorecard-fase-a.md` |
+
+### 7.1 Deuda que este doc deja explícita — en orden
+
+1. `mensajes-outreach` **v0.3** — el #9 con el gancho del ejemplo · #7 deja de ser primer toque · #8 con *"café o te mando el ejemplo"*.
+2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
+3. `criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.
+4. `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3).
+5. `10-scorecard` **v0.5** — las cinco columnas del embudo + la skill del domingo.
+6. Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.
+
+---
+
+## Cómo evoluciona este doc
+
+- **v0.1 → v0.2** cuando exista lo que hoy está fuera: contrato con abogado, DocuSign, pasarela de pago (§0.5) — y cuando el contador cierre lo `[Provisional]` de §4.
+- **Cada sesión real corrige primero el doc 11 (el ICP) y luego este** — el script se afina con lo que el operador contestó, no con lo que creímos que contestaría. Las objeciones nuevas entran a §5 con su etiqueta de sesión.
+- **Kill signal del proceso, no del ICP:** si con ≥ 10 contactados y ≥ 3 discoveries no hay una sola oferta dicha, el problema está en §1-§2 (no se llega al cierre), no en el precio. Se revisa el script antes que la oferta.
+
+---
+
+*v0.1 · 2026-09-15 · escrito sección por sección con el fundador (14-15 sep) · sustituye al borrador `_export/script-ventas-fase-a_borrador-claude.md`, que queda como historia.*
