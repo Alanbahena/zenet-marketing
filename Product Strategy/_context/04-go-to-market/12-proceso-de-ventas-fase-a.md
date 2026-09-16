@@ -230,6 +230,8 @@ Que el sí se vuelva **pago, documentos y fecha — hoy, en la mesa**. Un sí si
 **El mensaje de confirmación** *(WhatsApp · el mismo día, antes de dos horas · texto plano · lleva el kit adjunto · su "va" es la confirmación escrita)*
 > *[Nombre], gracias por hoy. Te mando tu bienvenida como Socio Fundador de Zenet: ahí viene lo que incluye tu mes 1, qué documentos mandarme antes del [día], los datos para la transferencia y lo que acordamos. Nos vemos el [fecha] para tu diagnóstico. ¿Va?*
 
+**Reglas de tiempo y cobro** `[Borrador del fundador · 16-sep · viven en el kit, pág. 2]`: **el mes 1 empieza el día de la entrega del diagnóstico** (la semana entre el pago y la entrega es el arranque) · los meses siguientes corren de **fecha de corte** a fecha de corte (el día del mes de la entrega) · desde el mes 2 se paga **por adelantado en la fecha de corte, con cinco días de margen** y aviso dos días antes · si no llega, **el servicio se pausa, sin recargos**; a los **treinta días el lugar se libera y el precio de fundador se pierde** — la palanca es el precio fijo, no una multa (canon: sin cargos por mora · *acompañar, no abandonar*) · *"te vas cuando quieras: avisas y no se cobra el mes siguiente; el mes pagado no se reembolsa, salvo el mes 1"*.
+
 **El kit de bienvenida** *(dos páginas · PDF · ver §7)* — pág. 1 bienvenida · lo que incluye el mes 1 · fechas · qué mandar, como lo tengas · transferencia · pág. 2 *lo que acordamos* (precios · sin compromiso · la devolución · privacidad · firma opcional). **Reemplaza a la hoja de acuerdo y al contrato hasta que haya abogado.**
 
 **El seguimiento de documentos** *(si no llegan el jueves · un solo mensaje, con motivo, sin reproche)*
