@@ -43,7 +43,7 @@ owner: Alan Bahena
 
 ### 0.3 Frontera con lo que ya existe
 
-`04-sales-motion` = la estrategia (referencia, no checklist) · `_templates/guion-conversacion-y-demo-fase-a.md` v0.6 = la sesión Discovery minuto a minuto · `_templates/mensajes-outreach-fase-a.md` v0.2 = los textos de entrada · `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` = el argumento del punto · `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` = los términos del programa · **este doc = la ruta completa y sus criterios de paso.** No repite; apunta.
+`04-sales-motion` = la estrategia (referencia, no checklist) · `_templates/guion-conversacion-y-demo-fase-a.md` v0.6 = **conocer** al ICP con el Mom Test — dolores y aspiraciones, sin venta (este doc es **la venta**; son dos instrumentos distintos) · `_templates/mensajes-outreach-fase-a.md` v0.2 = los textos de entrada · `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` = el argumento del punto · `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` = los términos del programa · **este doc = la ruta completa y sus criterios de paso.** No repite; apunta.
 
 ### 0.4 Cuatro reglas que atraviesan todo `[Canon]`
 
@@ -353,7 +353,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 
 1. `mensajes-outreach` **v0.3** — el #9 con el gancho del ejemplo · #7 deja de ser primer toque · #8 con *"café o te mando el ejemplo"*.
 2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
-3. `criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.
+3. ~~`criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.~~ ✅ archivado 16-sep (`_templates/_archive/`).
 4. `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3).
 5. `10-scorecard` **v0.5** — las cinco columnas del embudo + la skill del domingo.
 6. Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.
