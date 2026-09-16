@@ -1,11 +1,11 @@
 ---
 name: Scorecard — Fase A
-description: Los números de la Fase A en un solo lugar. Dos tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil) y la serie semanal (una fila por semana, para ver la tendencia sin leer siete retros). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
+description: Los números de la Fase A en un solo lugar. Tres tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil), la serie semanal de hipótesis (una fila por semana, para ver la tendencia sin leer siete retros) y, desde la v0.5, el embudo de ventas (los nueve conteos de 12-proceso-de-ventas §6, una fila por semana, con acumulado). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-13
+last_updated: 2026-09-16
 status: active
-version: 0.4
+version: 0.5
 owner: Alan Bahena
 ---
 
@@ -13,11 +13,14 @@ owner: Alan Bahena
 
 > **Qué es:** el marcador. Dos tablas que contestan dos preguntas distintas:
 > - **§1 · El tablero del gate** — *¿estamos pasando?* Estado acumulado por hipótesis + las dos condiciones del gate A→B.
-> - **§2 · La serie semanal** — *¿nos estamos moviendo?* Una fila por semana; su valor está en la tendencia, no en la última fila.
+> - **§2.1 · La serie de hipótesis** — *¿nos estamos moviendo?* Una fila por semana; su valor está en la tendencia, no en la última fila.
+> - **§2.2 · El embudo de ventas** — *¿dónde se atora la gente?* Los nueve conteos de `12-proceso-de-ventas-fase-a.md` §6, una fila por semana y el acumulado abajo. **Validación y venta no se mezclan en una tabla, pero viven en el mismo doc** — se alimentan: ④ *Discovery → Pitch* es el N · ⑥ *Síes* es el intent-to-join del gate.
 >
 > **Carril:** los números se teclean **solo aquí**. `06-plan` §6.2 **define** el scorecard (hipótesis · señales · kill · umbrales); `08-learnings` guarda la **evidencia** citada por sesión; `09-bitacora` cuenta la **historia** y apunta aquí. Notion se queda con pipeline y tareas (lo vivo del día) — el scorecard H1-H6 que vivía allá pasa a ser espejo o se retira.
 >
 > **Regla anti-drift:** el tablero (§1) **se deriva** de la serie (§2) + `08`. No se edita por separado. Si un día no cuadran, mandan §2 y `08`.
+>
+> **v0.5 (2026-09-16):** entra **§2.2 el embudo de ventas** — los nueve conteos que `12-proceso-de-ventas` §6.2 define, como tabla aparte de la serie de hipótesis (decisión del fundador, 16-sep: *son cosas distintas; mismo doc, tablas distintas*). Arranca la semana del 14-sep, cuando arranca el proceso; lo anterior queda como contexto, no como acumulado. §3 gana las nueve definiciones · §5 el ritual llena dos filas · la skill pide los nueve.
 >
 > **v0.3 (2026-09-08):** el conteo pasa a medirse contra el **ICP de hipótesis de la Fase A** (`11-icp-hipotesis-fase-a.md` §2.3) — Miguel entra al N, Alma Verde sale al carril de producto · fila nueva en el gate: *hay de dónde extraer* (el experimento) · **H6 se lee en dos partes** (pozo · precio) · intent-to-join = *conociendo el precio* · decisiones #1 y #2 cerradas · §1.1 gana la columna *qué hipótesis mide*.
 >
@@ -69,7 +72,9 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 ---
 
-## 2. La serie semanal
+## 2. Las series semanales
+
+### 2.1 La serie de hipótesis — *¿la apuesta se sostiene?*
 
 `s/r` = sin registro en la bitácora · `⚠️` = kill signal presente esa semana · `⬜` = no probado · los semáforos se **arrastran** de la última lectura conocida; la semana en que cambian va en **negrita**.
 
@@ -92,6 +97,22 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 **Lo que la serie dice de un vistazo:** 10 semanas · 2 sesiones con operador · 1 en el N · perfil ③ nunca tocado · **8 semanas sin movimiento, 5 consecutivas** · la entrada ya se mide (decisión #4): **tres filas seguidas con dato, y las tres en cero**.
 
+### 2.2 El embudo de ventas — *¿dónde se atora la gente?* `[desde 12-proceso-de-ventas §6 · v0.5]`
+
+**Qué cuenta cada columna:** los nueve conteos de `12` §6.2, en el orden del pipeline. Cada celda es **lo que pasó esa semana**; la última fila es **el acumulado desde el 14-sep**. **Conteos, no porcentajes** (`12` §6.3: con cinco lugares y diez mensajes, una tasa es ruido — lo que informa es en qué columna se para la gente). Una persona está en una sola etapa y avanza solo con evidencia: un *sí* sin precio dicho se queda en ④, no pasa a ⑥ · el *"va"* no es pago: ⑥ ≠ ⑦.
+
+**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
+
+| Semana | ① Contactados (env → vistos → resp) | ③ Sesiones (agend → hechas) | ④ Discovery → Pitch | ⑤ Ofertas dichas | ⑥ Síes | ⑦ Pagados | ⑧ Diagnósticos entregados | ⑨ Activos al mes 2 | de ellos, perfil ③ |
+|---|---|---|---|---|---|---|---|---|---|
+| *antes del 14-sep (10 semanas · contexto, no acumula)* | *≥ 9 registrados → s/r → 1 (Miguel) · Ola 1 s/r* | *2 → 2 (Carlos 14-jul · Miguel 12-ago) — sesiones de validación, no de venta* | *0 — no había proceso* | *0 — el precio nunca se dijo* | *0* | *0* | *0* | *0* | *0* |
+| 14–20 sep | | | | | | | | | |
+| **Σ desde el 14-sep** | **0 → 0 → 0** | **0 → 0** | **0** | **0** | **0** | **0** | **0** | **0** | **0** |
+
+*② Respondieron es la tercera cifra de ①; ⑧ y ⑨ arrancan vacías por diseño (`12` §6.2). Los días entre etapas se anotan en Notion, no aquí.*
+
+**Lo que el embudo dice de un vistazo:** arranca el 14-sep con el proceso; todavía sin fila cerrada.
+
 ---
 
 ## 3. Qué significa cada columna
@@ -104,6 +125,20 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | **Msj → resp** | Mensajes de outreach enviados esa semana → cuántos los **vieron** → cuántos contestaron. Un no visto es dato del canal, no del mensaje (decisión #5). La **única columna que mide entrada**, no producto | bitácora · Notion Pipeline · clics en Dub · estado "visto" en LinkedIn/WhatsApp |
 | **H1–H6** | Semáforo por hipótesis según `06-plan` §2: 🟢 señal revelada fuerte · 🟡 mixto / poca data · 🔴 kill signals acumulándose · ⚠️ kill signal presente · ⬜ no probado | `08-learnings` §3 de cada sesión |
 | **¿Movió?** | Sí / Parcial / No + una línea. El resumen honesto de la semana | retro |
+
+**Las columnas del embudo (§2.2)** — definidas en `12-proceso-de-ventas-fase-a.md` §6.1; aquí solo qué cuenta y quién lo valida:
+
+| Columna | Cuenta cuando | Quién valida |
+|---|---|---|
+| **① Contactados** | se mandó el mensaje 1:1 (`mensajes` #9 · un Dub por persona) → lo vio → contestó algo. Los insiders y conectores van en cursiva y no suman | — |
+| **③ Sesiones** | hay fecha, hora y lugar → la sesión ocurrió | — |
+| **④ Discovery → Pitch** | reconoció 3+ de los 5 problemas con episodio **y** es perfil ③/② (`12` §1). Es la misma cuenta que el N de §2.1 | gerente/chef validan el dolor |
+| **⑤ Ofertas dichas** | se dijo el precio **con el punto** (`12` §3). Un precio soltado sin el argumento no cuenta | **solo el que paga** |
+| **⑥ Síes** | dijo sí **conociendo precio y términos**. = *intent-to-join* del gate (§1.1). Un *"me interesa"* sin precio dicho se queda en ④ | **solo el que paga** |
+| **⑦ Pagados** | la transferencia está en la cuenta (el *"va"* no es pago) | — |
+| **⑧ Diagnósticos entregados** | la sesión de entrega ocurrió; se registra textual *"¿te dijo algo que no supieras?"* y si pidió su dinero | el que paga |
+| **⑨ Activos al mes 2** | pagó el mes 2 (o siguió sin pedir devolución) | — |
+| **de ellos, perfil ③** | cuántos de los de ④ en adelante son el centro del beachhead | `11` §1.2 |
 
 ---
 
@@ -121,7 +156,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 ## 5. Cómo se actualiza (el ritual del domingo)
 
-1. **Agregar la fila de la semana** en §2 — con lo que haya, incluidos los ceros.
+1. **Agregar las dos filas de la semana** — la de hipótesis en §2.1 y la del embudo en §2.2 — con lo que haya, incluidos los ceros; lo que no se sabe queda `s/r`, nunca se estima. **Recalcular la fila Σ** de §2.2.
 2. **Recalcular §1** solo si la semana produjo evidencia nueva (una sesión, una respuesta, un compromiso cumplido). Si no, cambia la fecha del encabezado y nada más.
 3. **La sección `📊` de la bitácora** se reduce a una línea: el delta + *"scorecard → `10-scorecard-fase-a.md`"*.
 4. **Cuando algo gradúa** (una H llega a 🟢 con N suficiente · un perfil se cubre · una condición del gate cambia), se registra también en `08-learnings` (evidencia) y, si es canónico, en CLAUDE.md §4.
@@ -133,6 +168,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | Doc | Relación |
 |---|---|
 | `06-plan-de-activacion-y-validacion-fase-a.md` §2 · §6.2 · §9.2 | **Define** las hipótesis, el formato del scorecard y los umbrales del gate. Este doc es su instancia con datos |
+| `12-proceso-de-ventas-fase-a.md` §6 | **Define el pipeline y los nueve conteos** del embudo (§2.2): etapas, qué mueve a cada persona, quién valida qué. Este doc los registra |
 | `08-learnings-de-validacion.md` | **La evidencia** citada por sesión (#1 Carlos · #2 Arballo · #3 JP · #4 Miguel · #5 Alfonso). Cada celda de §1.2 apunta a una entrada |
 | `09-bitacora-semanal-fase-a.md` | **La narrativa** por semana. Desde el 5-sep su sección `📊` apunta aquí |
 | `Product Strategy/_templates/criterios-icp-y-design-partner-fase-a.md` | Los criterios con que se decide si una sesión suma al N |

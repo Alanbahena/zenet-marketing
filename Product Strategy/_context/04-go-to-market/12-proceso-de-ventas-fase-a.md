@@ -296,7 +296,7 @@ La objeción **real** suele salir después de la primera: se pregunta *"¿y apar
 
 ## 6. Pipeline y KPIs
 
-> `[Borrador del fundador · 14-sep]` La idea de medir el embudo es de Alan (*"prospectos mensajeados, sesiones agendadas, prospectos pagados"*). Se define aquí y **se registra en `10-scorecard-fase-a.md`** — los números viven en un solo lugar (regla anti-drift del scorecard). Las columnas nuevas entran al scorecard en su v0.5, después de este doc.
+> `[Borrador del fundador · 14-sep]` La idea de medir el embudo es de Alan (*"prospectos mensajeados, sesiones agendadas, prospectos pagados"*). Se define aquí y **se registra en `10-scorecard-fase-a.md`** — los números viven en un solo lugar (regla anti-drift del scorecard). Registrado en `10-scorecard` **v0.5 §2.2** (16-sep): tabla propia del embudo, aparte de la serie de hipótesis.
 
 ### 6.1 Las etapas — dónde está cada persona y qué la mueve
 
@@ -318,15 +318,15 @@ La objeción **real** suele salir después de la primera: se pregunta *"¿y apar
 
 | # | KPI | Cuenta | Dónde vive en el scorecard |
 |---|---|---|---|
-| 1 | Contactados | mensajes enviados y registrados | **Msj → resp** (existe) |
-| 2 | Respondieron | vistos → respondidos | **Msj → resp** (existe) |
-| 3 | Sesiones | agendadas → realizadas | **Sesiones con operador** (existe) — se parte en agendadas / realizadas |
-| 4 | Discovery con paso a Pitch | 3+ de 5 + perfil ③/② | **N ICP Fase A** (existe) |
-| 5 | Ofertas dichas | precio dicho con el punto | 🆕 columna (v0.5) |
-| 6 | Síes | intent con precio y términos | 🆕 columna (hoy solo en §1.1 del gate) |
-| 7 | Pagados | transferencia + CFDI | 🆕 columna |
-| 8 | Diagnósticos entregados | sesión de entrega hecha | 🆕 columna |
-| 9 | Activos al mes 2 | siguen después del diagnóstico | 🆕 columna (arranca vacía) |
+| 1 | Contactados | mensajes enviados y registrados | `10` §2.2 ① (y **Msj → resp** en §2.1) |
+| 2 | Respondieron | vistos → respondidos | `10` §2.2 ①, tercera cifra |
+| 3 | Sesiones | agendadas → realizadas | `10` §2.2 ③ |
+| 4 | Discovery con paso a Pitch | 3+ de 5 + perfil ③/② | `10` §2.2 ④ (= el N de §2.1) |
+| 5 | Ofertas dichas | precio dicho con el punto | `10` §2.2 ⑤ |
+| 6 | Síes | intent con precio y términos | `10` §2.2 ⑥ (= intent-to-join del gate §1.1) |
+| 7 | Pagados | transferencia + CFDI | `10` §2.2 ⑦ |
+| 8 | Diagnósticos entregados | sesión de entrega hecha | `10` §2.2 ⑧ |
+| 9 | Activos al mes 2 | siguen después del diagnóstico | `10` §2.2 ⑨ (arranca vacía) |
 
 Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **días entre etapas** (se anota en Notion, no en el scorecard).
 
@@ -354,7 +354,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 | 7 Pagado | **CFDI** · cuenta dedicada | ⏳ contador | — |
 | 8 Entrega | **Su diagnóstico** (PDF + app) | ✅ el PDF ya corre | producto |
 | Todas | **Aviso de privacidad** | ✅ | `zenetapp.com/privacidad` |
-| Domingo | **Scorecard** v0.5 (5 columnas nuevas) + skill | 🔜 después de este doc | `10-scorecard-fase-a.md` |
+| Domingo | **Scorecard** v0.5 (§2.2 el embudo) + skill | ✅ 16-sep | `10-scorecard-fase-a.md` · `/scorecard-fase-a-semanal` |
 
 ### 7.1 Deuda que este doc deja explícita — en orden
 
@@ -362,7 +362,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
 3. ~~`criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.~~ ✅ archivado 16-sep (`_templates/_archive/`).
 4. `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3).
-5. `10-scorecard` **v0.5** — las cinco columnas del embudo + la skill del domingo.
+5. ~~`10-scorecard` **v0.5**~~ ✅ **16-sep** — §2.2 el embudo como tabla propia + la skill pide los nueve.
 6. Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.
 
 ---
