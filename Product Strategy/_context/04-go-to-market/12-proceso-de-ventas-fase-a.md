@@ -3,7 +3,7 @@ name: Proceso de ventas — Fase A
 description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 cerrada el 15-sep-2026, escrita sección por sección con el fundador. Deja explícita la deuda de artefactos (mensajes v0.3 · runsheet · flyer · kit de bienvenida · scorecard v0.5)."
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-15
+last_updated: 2026-09-16
 status: active
 version: 0.1
 owner: Alan Bahena
@@ -43,7 +43,7 @@ owner: Alan Bahena
 
 ### 0.3 Frontera con lo que ya existe
 
-`04-sales-motion` = la estrategia (referencia, no checklist) · `_templates/guion-conversacion-y-demo-fase-a.md` v0.6 = **conocer** al ICP con el Mom Test — dolores y aspiraciones, sin venta (este doc es **la venta**; son dos instrumentos distintos) · `_templates/mensajes-outreach-fase-a.md` v0.2 = los textos de entrada · `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` = el argumento del punto · `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` = los términos del programa · **este doc = la ruta completa y sus criterios de paso.** No repite; apunta.
+`04-sales-motion` = la estrategia (referencia, no checklist) · `_templates/guion-conversacion-y-demo-fase-a.md` v0.6 = **conocer** al ICP con el Mom Test — dolores y aspiraciones, sin venta (este doc es **la venta**; son dos instrumentos distintos) · `_templates/mensajes-outreach-fase-a.md` v0.3 = los textos de entrada · `03-oferta-y-pricing/06-argumentacion-de-valor-y-precio.md` = el argumento del punto · `03-oferta-y-pricing/02-programa-socio-fundador-offer.md` = los términos del programa · **este doc = la ruta completa y sus criterios de paso.** No repite; apunta.
 
 ### 0.4 Cuatro reglas que atraviesan todo `[Canon]`
 
@@ -68,11 +68,16 @@ Que él **diga** que tiene el problema — qué lo causa, qué ya le costó, qu�
 
 ### Lo que digo
 
-**El mensaje inicial · WhatsApp · sin precio** *(≈60 palabras · el gancho personal o el referente va primero)*
-> *Buen día [Nombre], [gancho personal / me pasó tu contacto X]. Llevo un año metido con dueños de restaurantes aquí en Tijuana en lo que más está pegando: todo lo que subió, la gente que se va, los costos que no se ven hasta el cierre. Construí algo que le quita esa carga al dueño. ¿Te late un café de 20 minutos? Te enseño cómo se ve el diagnóstico de un restaurante — y cómo se vería el tuyo. Sin compromiso. Aquí puedes ver por dónde va: [link Dub personal]*
+**El mensaje inicial · WhatsApp · sin precio** *(el ejemplo va adjunto, no se promete · la primera línea es lo único que se personaliza — canónico en `mensajes-outreach` v0.3 #9)* `[Borrador del fundador · 16-sep]`
+> *[Primera línea según la entrada: red propia · referido · re-enganche.] Llevo tiempo trabajando de cerca con dueños de restaurantes aquí en Tijuana, en lo que más les está pegando: todo lo que subió, los costos que cambian de un mes a otro, la rotación y capacitar gente — y estar persiguiendo todo cada vez que algo cambia. Construí algo que le quita esa carga al dueño y a la gente clave del negocio.*
+>
+> *Te mando el diagnóstico de un restaurante de ejemplo para que veas de qué hablo: [PDF del ejemplo]*
+>
+> *Si te late ver cómo se vería el tuyo, nos tomamos un café de 20 minutos y te enseño cómo funciona. Sin compromiso.*
+>
+> *Aquí puedes ver por dónde va el proyecto: [link Dub personal]*
 
-*Variante para quien no puede el café — el ejemplo en línea:*
-> *Te mando el diagnóstico de un restaurante de ejemplo para que veas de qué hablo: [link al PDF de ejemplo]. Si te late ver cómo se vería el tuyo, nos tomamos un café.*
+Lo que subió se dice como lo dice él, no como el noticiero · no se le dice qué le falta · *"sin compromiso"* una vez y nunca *"de compra"* · el PDF del diagnóstico de ejemplo tiene que existir antes del primer envío `[Pendiente del fundador]`.
 
 **La apertura en la mesa** *(60 segundos — y callarse)*
 > *"He platicado con muchos dueños de restaurantes en la región y lo que de verdad le pega a un restaurante está allá afuera: todo lo que subió, la rotación y capacitar gente, los costos y los márgenes apretados, y toda la administración de atrás. ¿Algo de esto te suena? ¿O tu negocio depende de una, dos, tres personas clave para aguantar cualquiera de estos?"*
@@ -336,7 +341,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 
 | Etapa | Artefacto | Estado (15-sep) | Dónde |
 |---|---|---|---|
-| 1 Contactado | **Mensaje inicial** (§1 · gancho + café + *"cómo se vería el tuyo"*) · variante *"te mando el ejemplo"* | ✅ en este doc · **pendiente pasarlo a `mensajes-outreach` v0.3** (#9 · y retirar #7 como primer toque) | `_templates/mensajes-outreach-fase-a.md` |
+| 1 Contactado | **Mensaje inicial** (§1 · el ejemplo adjunto + café + *"cómo se vería el tuyo"*) | ✅ `mensajes-outreach` **v0.3 #9** (16-sep · #7 acotado a material del ejemplo · #8 y #5B con el ejemplo) | `_templates/mensajes-outreach-fase-a.md` |
 | 1 | **Link Dub por persona** → `zenetapp.com` | ✅ | Dub |
 | 1 | **Tarjeta** (QR → Dub) | 🔜 → imprenta | plan semana 14–20 sep |
 | 2 Respondió | **Diagnóstico de ejemplo** (PDF · restaurante ficticio · datos declarados) | 🔜 mié 16 | producto (Task 43) → `_export/` |
@@ -353,7 +358,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 
 ### 7.1 Deuda que este doc deja explícita — en orden
 
-1. `mensajes-outreach` **v0.3** — el #9 con el gancho del ejemplo · #7 deja de ser primer toque · #8 con *"café o te mando el ejemplo"*.
+1. ~~`mensajes-outreach` **v0.3**~~ ✅ **16-sep** — #9 con el ejemplo adjunto · #7 acotado a material del ejemplo · #8 y #5B con *"te mando el ejemplo"*.
 2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
 3. ~~`criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.~~ ✅ archivado 16-sep (`_templates/_archive/`).
 4. `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3).

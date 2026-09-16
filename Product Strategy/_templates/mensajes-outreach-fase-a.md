@@ -1,14 +1,109 @@
 ---
 name: Mensajes de outreach — Fase A
-description: Los mensajes base (templates) para el outreach 1:1 de la Fase A. v0.2 (10-sep-2026) los realinea al ICP de hipótesis (doc 11): el ask #1 deja de ser una llamada y pasa a ser "mándame fotos de tus últimas facturas", entra el tipo #7 (el ask de la factura, la puerta más barata que tenemos), se redacta el #5 (seguimiento de hilo frío, insider e ICP), y el #4 (LinkedIn) se reencuadra como refuerzo y NO como primer toque. La v0.1 —6 tipos con casos reales de la Ola 1— se conserva íntegra debajo.
+description: Los mensajes base (templates) para el outreach 1:1 de la Fase A. v0.3 (16-sep-2026) los alinea al proceso de ventas (doc 12): el diagnóstico se paga, así que el primer toque ya no pide facturas — entra el tipo #9 (primer toque al operador ICP con el diagnóstico de ejemplo adjunto y el café como ask), el #7 se acota a conseguir material del ejemplo, y #8 y #5B cambian su segundo ask a "te mando el ejemplo". v0.2 (10-sep-2026) los realinea al ICP de hipótesis (doc 11): el ask #1 deja de ser una llamada y pasa a ser "mándame fotos de tus últimas facturas", entra el tipo #7 (el ask de la factura, la puerta más barata que tenemos), se redacta el #5 (seguimiento de hilo frío, insider e ICP), y el #4 (LinkedIn) se reencuadra como refuerzo y NO como primer toque. La v0.1 —6 tipos con casos reales de la Ola 1— se conserva íntegra debajo.
 type: product-strategy
-last_updated: 2026-09-10
+last_updated: 2026-09-16
 status: active
-version: 0.2
+version: 0.3
 owner: Alan Bahena
 ---
 
 # Mensajes de outreach — Fase A
+
+> ## 🔄 v0.3 (2026-09-16) — alineados al proceso de ventas (doc 12)
+>
+> **Qué cambió afuera:** `04-go-to-market/12-proceso-de-ventas-fase-a.md` v0.1 fijó la venta: hay oferta (cinco lugares · mes 1 con diagnóstico · precio que se dice en la mesa) y **el diagnóstico se paga antes de recibirse**. La v0.2 pedía facturas gratis como primer toque y prometía regresar un número — eso ahora regala lo que se cobra. `[Canon · doc 12 §1]`
+>
+> ### Tres correcciones que atraviesan todos los mensajes
+>
+> | # | Antes (v0.2) | Ahora (v0.3) | De dónde sale |
+> |---|---|---|---|
+> | 1 | **El ask #1 = "mándame fotos de tus últimas 5 facturas"** | **El ask #1 = un café de 20 minutos, con el diagnóstico de ejemplo ya en su teléfono** | doc 12 §1 · el ejemplo se manda, no se promete `[Borrador del fundador · 16-sep]` |
+> | 2 | El gancho = *"te regreso qué te subió y cuánto pesa al mes"* (un número gratis) | El gancho = **el diagnóstico de un restaurante de ejemplo** + *"cómo se vería el tuyo"* | doc 12 §1 · revelado > declarado aplicado al primer toque |
+> | 3 | El primer toque no menciona precio ni app | Igual — y **tampoco facturas ni "compra"**. Lo único que se pide es el café; lo único que se enseña es lo que él se llevaría | doc 12 §0.4 · §3 (el precio se dice en la mesa, con el diagnóstico enfrente) |
+>
+> **Lo que NO cambia:** las invariables de la v0.1 y la corrección #1 de la v0.2 (el ICP es el operador chico que carga la operación él mismo). El link siempre en texto · nada de precio en el primer toque · *sistema*, nunca *herramienta* · honestidad.
+>
+> ---
+>
+> ### #9 · NUEVO — Primer toque al operador ICP *(el mensaje de doc 12 §1, canónico)*
+>
+> **Cuándo:** todo primer mensaje a un dueño del perfil ③/② — venga de tu red, de un referido o de alguien con quien ya hablaste hace meses. **Qué pide:** un café de 20 minutos, con algo concreto que ver. **Qué manda:** el PDF del diagnóstico de ejemplo, en el mismo mensaje. **Qué no dice:** precio, facturas, app, acceso.
+>
+> **El cuerpo (fijo · texto plano para WhatsApp):**
+>
+> > [primera línea según la entrada — ver tabla]
+> >
+> > Llevo tiempo trabajando de cerca con dueños de restaurantes aquí en Tijuana, en lo que más les está pegando: todo lo que subió, los costos que cambian de un mes a otro, la rotación y capacitar gente — y estar persiguiendo todo cada vez que algo cambia. Construí algo que le quita esa carga al dueño y a la gente clave del negocio.
+> >
+> > Te mando el diagnóstico de un restaurante de ejemplo para que veas de qué hablo: [PDF del ejemplo]
+> >
+> > Si te late ver cómo se vería el tuyo, nos tomamos un café de 20 minutos y te enseño cómo funciona. Sin compromiso.
+> >
+> > Aquí puedes ver por dónde va el proyecto: [link Dub personal → zenetapp.com]
+>
+> **La primera línea cambia según la entrada** — es lo único que se personaliza, y es donde está el 80%:
+>
+> | Entrada | Primera línea |
+> |---|---|
+> | **Red propia** | *Buen día [Nombre], ¿cómo va todo? [gancho específico: la sucursal nueva · lo que me contaste de X · nos vimos en Y].* |
+> | **Referido** | *Buen día [Nombre], soy Alan Bahena — [conector] me pasó tu contacto y me dijo que [lo que el conector dijo de él, en una frase].* |
+> | **Re-enganche** | *Hola [Nombre], ¿cómo has estado? Hace [tiempo] te platiqué de un proyecto para restaurantes; ya está en otro nivel y por eso te vuelvo a escribir.* |
+>
+> **Reglas:**
+> - **El ejemplo es el gancho, no el producto.** Nunca *"te enseño la app"* ni *"esta nueva tecnología"*. Lo que se enseña es lo que él se llevaría.
+> - **"Cómo se vería el tuyo"** va siempre — es la frase que convierte un ejemplo ajeno en algo suyo.
+> - **Lo que subió se dice como lo dice él** (*"todo lo que subió"*, *"los costos que cambian de un mes a otro"*), no como el noticiero (*"inflación"*, *"variación de costos de insumos"*).
+> - **No se le dice qué le falta.** Nada de *"para tener un restaurante eficiente"*: su sistema funciona, se carga (`07-voice-of-customer` V-001/V-010). *"Le quita esa carga"* ya es la promesa.
+> - **"Sin compromiso" una vez, al final del ask — y nunca "de compra".** *Compra* siembra la venta donde todavía no hay nada que comprar.
+> - **Un solo seguimiento** si no contesta (#5B). Después, el hilo se cierra y se registra.
+> - **Registro** (doc 12 §6.2): el envío = *contactado* · la respuesta = *respondió* · el café agendado = *ask cumplido*.
+>
+> **Dependencia:** el **PDF del diagnóstico de ejemplo** tiene que existir antes del primer envío — un restaurante ficticio o uno real anonimizado, corrido en Zenet. `[Pendiente del fundador]` Junto con el link de Dub.
+>
+> ---
+>
+> ### #7 · El ask de la factura — 🔄 acotado: **ya no es primer toque ni segundo**
+>
+> Con el diagnóstico de pago, pedir cinco facturas gratis y regresar *"qué subió y cuánto pesa"* **regala lo que se cobra** y le enseña al operador que el número se consigue sin pagar. **Queda vivo solo para conseguir material:** facturas reales de amigos, familia e insiders (no de nadie en el pipeline) para construir o refrescar el diagnóstico de ejemplo. Las reglas del ask (*cinco, como estén, se devuelve algo en 48 h*) siguen valiendo ahí. El texto de la v0.2 se conserva abajo para ese uso.
+>
+> ### #8 · Conocido de conocido — 🔄 el doble ask cambia
+>
+> El café sigue; la salida fácil ya no son las facturas, es el ejemplo:
+>
+> > ¿Te late un café de 20 minutos? Te enseño cómo se ve el diagnóstico de un restaurante — y cómo se vería el tuyo. Y si prefieres verlo primero con calma, te lo mando por aquí.
+>
+> Lo demás del #8 (la voz del conector, *"está temprano"*, el link) no cambia.
+>
+> ### #5B · Seguimiento al operador que no contestó — 🔄 el motivo nuevo es el ejemplo
+>
+> > Hola [Nombre], ¿cómo va la operación?
+> >
+> > Te escribí hace unos días; no te vuelvo a insistir con eso. Solo te dejo el diagnóstico de un restaurante de ejemplo, para que veas de qué hablaba: [PDF del ejemplo]. Si algún día quieres ver cómo se vería el tuyo, aquí sigo.
+>
+> Si el #9 ya llevaba el PDF, el seguimiento **no lo repite**: cambia a una sola línea con motivo nuevo (*"salió el diagnóstico de [otro tipo de restaurante], te lo paso por si te sirve de referencia"*) o se cierra el hilo. Un seguimiento, nunca dos.
+>
+> ### #6 · Intro por el conector — una frase más
+>
+> Al bloque del conector se le puede sumar, antes del link: *"Te enseña el diagnóstico de un restaurante para que veas de qué va."* Y se retira *"moldearlo a la medida de tu operación"* — el canon ya no vende a la medida; Zenet se construye sobre su operación.
+>
+> ---
+>
+> ### Estado de los tipos (v0.3)
+>
+> | # | A quién | Estado |
+> |---|---|---|
+> | 1 | Insider (chef/consultor) | ✅ v0.1 vigente |
+> | 2 | Pedido de intro (conector) | ✅ v0.1 vigente · con el ICP de la v0.2 |
+> | 3 | Operador ICP / re-enganche (casos Ola 1) | 📁 histórico — **el primer toque al operador es ahora el #9** |
+> | 4 | DM LinkedIn | 🔄 refuerzo o insiders, nunca primer toque (v0.2) |
+> | 5 | Seguimiento | ✅ A insider (v0.2) · **B operador reescrito aquí** |
+> | 6 | Intro por el conector | ✅ v0.1 vigente · + una frase · − "a la medida" |
+> | 7 | El ask de la factura | 🔄 **acotado a material del ejemplo** — no al pipeline |
+> | 8 | Conocido de conocido | 🔄 **doble ask: café o el ejemplo** |
+> | **9** | **Primer toque al operador ICP** | ✅ **nuevo — el canónico** (doc 12 §1) |
+>
+> **Los 5 levers, lever 4 corregido:** el ask de baja barrera ya no es *"una llamada"* — es **el café con el ejemplo ya en su teléfono**.
 
 > ## 🔄 v0.2 (2026-09-10) — realineados al ICP de hipótesis
 >
