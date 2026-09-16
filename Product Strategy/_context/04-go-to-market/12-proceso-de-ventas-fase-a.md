@@ -137,7 +137,7 @@ Que entienda **qué hace, cómo lo hace y por qué importa** — y que **el valo
 2. **Inicio**
    > *"Ese diagnóstico es tu punto de partida — cada vez que entras ves cómo vas contra donde empezaste. Zenet se vuelve especialista en tu operación: un solo Zenet, en cada parte."*
 3. **Compras** — `[Provisional · hasta que corra]` **hoy se dice así**:
-   > *"Y lo que entra esta semana: dejas de revisar precios a mano. Le tomas foto a la factura o la mandas por WhatsApp, y ves qué subió, con quién y cuánto pesa al mes — antes del cierre, no en el corte."*
+   > *"Y lo que entra esta semana: dejas de revisar precios a mano. Le tomas foto a la factura o la mandas por WhatsApp, y ves qué subió, con quién y cuánto pesan los cambios al mes — antes del cierre, no en el corte."*
    > *Cuando corra, el bloque pasa a presente y se enseña en pantalla con una factura real de ejemplo.*
 4. **Anti-dashboard**
    > *"No tienes que entrar a la app a monitorear nada: le preguntas y te contesta con lo que tu restaurante ya sabe."*
