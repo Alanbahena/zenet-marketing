@@ -3,13 +3,32 @@ name: Programa Socio Fundador · offer y deal terms
 description: Documenta los deal terms específicos del Programa Socio Fundador (Fase 0 design partners) — la oferta comercial cliente-facing para el cohort selectivo 3-5 design partners que inaugura Zenet Phase 1. Estructura 3-tier graceful step-down (Tier 1 Programa Active Day 8-90 con weekly + founder direct + co-creación · Tier 2 Estatus VIP Mes 4-12 con bi-weekly + founder same-day + quarterly review · Tier 3 Estatus Permanente Year 2+ con monthly + founder on-call + annual dinner) · GO/NO-GO checkpoint Mes 3 para Phase 1 commercial GA decision · descuento Socio Fundador 20-30% lock-in permanente · 10 beneficios enhanced honestos (founder presence onboarding · WhatsApp direct · co-creación · weekly→bi-weekly→monthly · priority escalation · Phase 2 preview · brand recognition · annual cohort event · adaptive onboarding · custom config) · 6 reciprocidades esperadas (structured feedback · case study rights · referrals 1-3/año · WTP validation · behavioral data sharing · honest exit) · 10-step flow refinado (prospecting → intent confirmation email/WhatsApp → DocuSign signing event ceremonial Day 1 con MSA + Order Form + Adendum Socio Fundador) · NO LOI formal upstream · NO fake "agent training adicional" · cap cohort 5 partners max · honors decisión canonical heredada del marco doc 00. Para program operations detallado (cohort management · criteria scoring) referencia 08_Estrategia-Producto/_context/05-customer-development/methodology/programa-design-partners.md v1.1.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-30
+last_updated: 2026-09-16
 status: active
-version: 0.1
+version: 0.1.1
 owner: Alan Bahena
 ---
 
 # Programa Socio Fundador · offer y deal terms
+
+> ## 🔄 Nota de campo · 2026-09-16 — la oferta Socio Fundador que está en la calle se desvía de este canon en cinco puntos
+>
+> **De dónde sale:** retro del 13-sep + `04-go-to-market/12-proceso-de-ventas-fase-a.md` §3 (la oferta como se dice en la mesa) · escrita en el **flyer** y en el **kit de bienvenida** (`_templates/kit-bienvenida-socio-fundador.html` p.2 *"Lo que acordamos"*). **Este doc no se reescribe:** el canon sigue siendo la hipótesis para el cliente regular post-Fase A; lo de abajo es lo que la Fase A prueba con los primeros cinco. **Si funciona, gradúa a la v0.2 de este doc; si no, muere aquí** (trigger: §9.3 · el primer Socio Fundador pagado, y con más peso los cinco + retención al mes 3).
+>
+> **La oferta, en una línea:** *mes 1 $2,500 + IVA (diagnóstico de la operación + Compras corriendo con sus facturas + Alan directo cada semana) · desde el mes 2 $1,500 + IVA al mes por sucursal, fijo para siempre · cinco lugares · sin compromiso · precio no negociable · única concesión: se paga hoy y, el día de la entrega, si el diagnóstico no le dice nada que le sirva, se regresa el mes 1 completo.*
+>
+> | # | El canon de este doc dice | La oferta en la calle hace | Por qué se desvía `[Borrador del fundador · retro 13-sep]` |
+> |---|---|---|---|
+> | **1** | Descuento Socio Fundador **20-30 % sobre el precio de lista**, lock-in permanente (§5.1 · §5.2) | **$1,500 + IVA = el precio de lista, sin descuento.** Lo *preferencial* es que **se congela para siempre**: quien entre después pagará más | Descontar el ancla antes de validarla contamina el dato de H6·precio — no sabríamos si alguien paga $1,500. El beneficio de fundador se mueve **del descuento al congelamiento** |
+> | **2** | Mes 1 dentro de la suscripción normal; **sin setup fee** (heredado de `01-modelo` §2.1) | **Mes 1 a $2,500 + IVA**, por adelantado, con el diagnóstico como entregable | No es setup fee: es **el primer mes con el diagnóstico y a Alan adentro** — el trabajo real del fundador esas semanas. Y pagar antes de recibir es el **compromiso revelado** que H4 pedía y la Fase A nunca obtuvo |
+> | **3** | **90 días de compromiso** aplican al SF sin modificación (§5.4); salir antes = perder el lock-in | **Sin compromiso:** avisa y no se cobra el mes siguiente. El candado es el precio: **si sale, pierde el precio de fundador** | Con cinco lugares y cero confianza previa, los 90 días son fricción en la mesa. El lock-in se sustituye por algo que él sí valora perder |
+> | **4** | Ventana de cancelación de 7 días antes del primer cargo (heredado de `01-modelo` §4.2) | **Devolución sin plazo previo, anclada a un evento:** el día de la entrega, si el diagnóstico *"no te dice nada que te sirva"*, se regresa el mes 1 completo | El valor no llega por calendario, llega en la entrega. La garantía se pone **donde está el riesgo del cliente**, no siete días antes de que exista |
+> | **5** | Intent confirmation → **signing event Día 1 con MSA + Order Form + Adendum en DocuSign** (§8.1 · §8.3 · §8.4) | **El acuerdo es el kit de bienvenida** (dos páginas): queda acordado con su *"va"* por WhatsApp o su firma en papel · pago por transferencia | Sin sociedad constituida ni abogado contratado (`05-capital` §Tier 2.0 con gate), el MSA no existe. El kit dice lo mismo en llano; la cláusula *Vigencia* pasa el acuerdo a la sociedad cuando exista, con las mismas condiciones |
+>
+> **Lo que sí se conserva del canon:** suscripción mensual por sucursal · sin per-user ni per-query · CFDI por cada pago · coexistencia con su POS · cap de cinco · Alan directo semanal en el mes 1 (= Tier 1 del programa) · el mes pagado no se reembolsa salvo el mes 1 · la reciprocidad (retroalimentación honesta · dejarse ver la operación).
+>
+> **Regla de lectura:** cada desviación es una hipótesis con su propio dato en el embudo (`10-scorecard` §2.2): la (1) se lee en ⑤→⑥ (¿el precio del mes 1 mata la conversación?) · la (2) y la (3) en ⑨ (¿se quedan sin candado?) · la (4) en ⑧ (¿alguien pide su dinero?) · la (5) en ⑥→⑦ (¿el "va" por WhatsApp se convierte en transferencia?).
+
 
 > Documenta los deal terms específicos comerciales del Programa Socio Fundador (Fase 0 design partners) · la oferta cliente-facing para el cohort selectivo 3-5 partners que inaugura Zenet Phase 1. Estructura 3-tier graceful step-down · GO/NO-GO Mes 3 · 10-step flow refinado con intent confirmation + DocuSign signing.
 >

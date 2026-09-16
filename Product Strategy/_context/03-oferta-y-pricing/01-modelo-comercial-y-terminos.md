@@ -3,13 +3,32 @@ name: Modelo comercial y términos
 description: Documenta la estructura comercial cliente-facing de Zenet Phase 1 · cómo se compra, qué se firma, qué se cobra, cómo se cancela. Define modelo canónico pure subscription (NO setup fee · NO project pricing · NO Mantenimiento) · 5 razones canónicas · términos de compromiso (90-day minimum + annual prepay) · términos de inicio (ventana de cancelación 7 días + primer cargo Day 8 con agency trabajando desde Day 1 cleanup + estandarización · NO fase gratuita framing) · self-serve in-app cancellation (Owner role · admin panel) · 9 anti-positions con razón estructural · estructura contractual virtual diferenciada (click-wrap Esencial-Pro-Multi · e-signature Enterprise) · 5 compliance anchors (governing law MX · LFPDPPP · CFDI · WhatsApp · Anthropic) con pointer a operational readiness doc. Hereda 10 decisiones canónicas de marco doc 00. Validation pending design partners.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-29
+last_updated: 2026-09-16
 status: active
-version: 0.1
+version: 0.1.1
 owner: Alan Bahena
 ---
 
 # Modelo comercial y términos
+
+> ## 🔄 Nota de campo · 2026-09-16 — la oferta Socio Fundador que está en la calle se desvía de este canon en cinco puntos
+>
+> **De dónde sale:** retro del 13-sep + `04-go-to-market/12-proceso-de-ventas-fase-a.md` §3 (la oferta como se dice en la mesa) · escrita en el **flyer** y en el **kit de bienvenida** (`_templates/kit-bienvenida-socio-fundador.html` p.2 *"Lo que acordamos"*). **Este doc no se reescribe:** el canon sigue siendo la hipótesis para el cliente regular post-Fase A; lo de abajo es lo que la Fase A prueba con los primeros cinco. **Si funciona, gradúa a la v0.2 de este doc; si no, muere aquí** (trigger: §8.2 · 3+ Socios Fundadores pagados).
+>
+> **La oferta, en una línea:** *mes 1 $2,500 + IVA (diagnóstico de la operación + Compras corriendo con sus facturas + Alan directo cada semana) · desde el mes 2 $1,500 + IVA al mes por sucursal, fijo para siempre · cinco lugares · sin compromiso · precio no negociable · única concesión: se paga hoy y, el día de la entrega, si el diagnóstico no le dice nada que le sirva, se regresa el mes 1 completo.*
+>
+> | # | El canon de este doc dice | La oferta en la calle hace | Por qué se desvía `[Borrador del fundador · retro 13-sep]` |
+> |---|---|---|---|
+> | **1** | **Sin setup fee** — anti-position estructural (§2.1 · §6) | **Mes 1 a $2,500 + IVA**, por adelantado, con el diagnóstico como entregable; desde el mes 2, $1,500 | No es setup fee: es **el primer mes con el diagnóstico y a Alan adentro**. Y pagar antes de recibir es el **compromiso revelado** que la Fase A nunca obtuvo |
+> | **2** | **90 días de compromiso mínimo** desde el primer cargo (§3.1) | **Sin compromiso:** avisa y no se cobra el mes siguiente; el mes pagado no se reembolsa (salvo el mes 1) | Con cinco lugares y cero confianza previa, los 90 días son fricción en la mesa. El candado es el precio de fundador, que se pierde al salir |
+> | **3** | **Ventana de cancelación de 7 días + primer cargo el Día 8** (§4.2 · §4.3) · matriz de reembolsos por calendario (§5.2) | **Se paga hoy; devolución sin plazo previo, anclada a la entrega:** si el diagnóstico *"no te dice nada que te sirva"*, se regresa el mes 1 completo ese día | El valor llega en un evento, no por calendario. La garantía va **donde está el riesgo del cliente** |
+> | **4** | Precio de lista con **descuento SF 20-30 %** (vía `02-programa` §5.1) | **$1,500 = precio de lista, congelado para siempre** para el fundador | El beneficio se mueve del descuento al congelamiento; el dato de H6·precio se toma al precio real |
+> | **5** | **Click-wrap MSA + Order Form** · Stripe/Conekta · cancelación self-serve in-app (§5.1 · §7.1 · §7.2) | **El acuerdo es el kit de bienvenida** (dos páginas, *"va"* por WhatsApp o firma en papel) · transferencia bancaria · se cancela avisando por WhatsApp | Sin sociedad ni abogado todavía, no hay MSA ni pasarela. Reglas de pago en el kit p.2: fecha de corte · 5 días · pausa sin recargos · 30 días → lugar liberado |
+>
+> **Lo que sí se conserva del canon:** suscripción mensual por sucursal · sin per-user ni per-query · CFDI por cada pago · coexistencia con su POS · cap de cinco · Alan directo semanal en el mes 1 (= Tier 1 del programa) · el mes pagado no se reembolsa salvo el mes 1 · la reciprocidad (retroalimentación honesta · dejarse ver la operación).
+>
+> **Regla de lectura:** cada desviación es una hipótesis con su propio dato en el embudo (`10-scorecard` §2.2): la (1) se lee en ⑤→⑥ (¿el precio del mes 1 mata la conversación?) · la (2) y la (3) en ⑨ (¿se quedan sin candado?) · la (4) en ⑧ (¿alguien pide su dinero?) · la (5) en ⑥→⑦ (¿el "va" por WhatsApp se convierte en transferencia?).
+
 
 > Documenta la estructura comercial cliente-facing de Zenet Phase 1 — cómo se compra, qué se firma, qué se cobra, cómo se cancela. Hereda 10 decisiones canónicas del marco doc 00 sin relitigar · profundiza mecánica operacional · referencia compliance anchoring + operational readiness en docs adyacentes.
 >

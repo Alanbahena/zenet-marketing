@@ -214,7 +214,7 @@ Es subjetiva a propósito: una garantía de *"si no te sirve"* funciona porque n
 
 **Qué se registra:** precio dicho ✓ · reacción textual · sí / no / pensarlo · el porqué · **solo cuenta como intent si lo dijo el que paga** (`11` §2.3).
 
-**Desviaciones al canon que esta oferta introduce — se registran en `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md`, no aquí:** (1) mes 1 a $2,500 vs *NO setup fee* · (2) sin compromiso vs 90 días mínimos · (3) $1,500 = precio de lista, no 20-30% off — el *"preferencial"* es contra el precio futuro · (4) reembolso sin plazo vs ventana de 7 días. Si funcionan, gradúan; si no, mueren ahí.
+**Desviaciones al canon que esta oferta introduce — se registran en `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md`, no aquí:** (1) mes 1 a $2,500 vs *NO setup fee* · (2) sin compromiso vs 90 días mínimos · (3) $1,500 = precio de lista, no 20-30% off — el *"preferencial"* es contra el precio futuro · (4) reembolso sin plazo vs ventana de 7 días · **(5)** el acuerdo es el kit + *"va"* por WhatsApp vs MSA + DocuSign. Si funcionan, gradúan; si no, mueren ahí. ✅ registradas el 16-sep.
 
 
 ## 4. Navegar el final de la venta
@@ -361,7 +361,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 1. ~~`mensajes-outreach` **v0.3**~~ ✅ **16-sep** — #9 con el ejemplo adjunto · #7 acotado a material del ejemplo · #8 y #5B con *"te mando el ejemplo"*.
 2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
 3. ~~`criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.~~ ✅ archivado 16-sep (`_templates/_archive/`).
-4. `02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3).
+4. ~~`02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3)~~ ✅ **16-sep** — nota de campo arriba de cada doc (v0.1.1) · **salieron cinco, no cuatro:** la quinta es el acuerdo mismo (kit de bienvenida + *"va"* por WhatsApp en vez de MSA + DocuSign).
 5. ~~`10-scorecard` **v0.5**~~ ✅ **16-sep** — §2.2 el embudo como tabla propia + la skill pide los nueve.
 6. Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.
 
