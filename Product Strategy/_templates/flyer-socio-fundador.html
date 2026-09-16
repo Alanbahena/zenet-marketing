@@ -1,0 +1,97 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+FLYER · Programa Socio Fundador — v0.1 (16-sep-2026)
+═══════════════════════════════════════════════════════════════════
+Se pone sobre la mesa al cerrar (12-proceso-de-ventas §3). Media carta (5.5 × 8.5 in),
+una cara — dos por hoja carta. Copy = la oferta del 13-sep. Tokens = Branding/03-visual-identity.
+PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu   --no-pdf-header-footer --print-to-pdf="_export/flyer-socio-fundador.pdf" "$PWD/flyer-socio-fundador.html"
+Cambiar el destino del QR: regenerar con segno (python: segno.make(url).save(...)) y sustituir el bloque svg del QR.
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Socio Fundador</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--peach:#F4DED0;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:5.5in 8.5in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);width:5.5in;height:8.5in;padding:.36in .42in .3in;display:flex;flex-direction:column;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .top{display:flex;justify-content:space-between;align-items:center}
+  .logo{height:.31in;width:auto}
+  .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  h1{font-family:var(--fd);font-weight:700;font-size:19.5pt;line-height:1.1;letter-spacing:-.015em;margin:.16in 0 .08in;text-wrap:balance}
+  h1 .mark{background-image:linear-gradient(180deg,transparent 62%,rgba(46,110,98,.24) 62%);padding:0 .04em}
+  .lead{font-size:10pt;color:var(--t7);line-height:1.45;max-width:4.5in}
+  .ben{margin:.16in 0 0;display:grid;gap:.06in;flex-shrink:0}
+  .b{display:grid;grid-template-columns:.34in 1fr;gap:.1in;align-items:start}
+  .n{width:.3in;height:.3in;border-radius:50%;background:var(--ac);color:#fff;font-family:var(--fd);font-weight:700;font-size:10.5pt;display:grid;place-items:center}
+  .b h3{font-family:var(--fd);font-weight:600;font-size:10.6pt;line-height:1.22;margin:.02in 0 .02in}
+  .b p{font-size:9pt;color:var(--t7);line-height:1.38}
+  .b p b{color:var(--ch);font-weight:600}
+  .price{margin:.16in 0 0;border:1px solid rgba(46,110,98,.28);border-radius:12px;background:#fff;display:grid;grid-template-columns:1fr 1fr;flex-shrink:0}
+  .price>div{padding:.1in .15in}
+  .price>div+div{border-left:1px solid rgba(46,110,98,.18)}
+  .price .k{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+  .price .v{font-family:var(--fd);font-weight:700;font-size:18pt;line-height:1.05;margin:.04in 0 .03in;letter-spacing:-.01em}
+  .price .v small{font-size:9pt;font-weight:600;color:var(--t7);letter-spacing:0}
+  .price .d{font-size:8.3pt;color:var(--t7);line-height:1.4}
+  .terms{margin:.1in 0 0;flex-shrink:0;display:flex;flex-wrap:wrap;gap:.06in}
+  .pill{font-family:var(--fd);font-weight:600;font-size:7.8pt;color:var(--ac);background:rgba(46,110,98,.07);border:1px solid rgba(46,110,98,.25);border-radius:99px;padding:.035in .1in}
+  .guar{margin:.1in 0 0;flex-shrink:0;padding:.09in .13in;border-radius:10px;background:var(--off2);font-size:9pt;line-height:1.4}
+  .guar b{font-weight:600}
+  .foot{margin-top:auto;display:grid;grid-template-columns:1fr .95in;gap:.16in;align-items:end;padding-top:.1in}
+  .foot .who{font-size:8.8pt;color:var(--t7);line-height:1.45}
+  .foot .who b{color:var(--ch);font-weight:600}
+  .foot .url{font-family:var(--fd);font-weight:600;color:var(--ac);font-size:9.6pt}
+  .qr{width:.95in;height:.95in;display:block}
+  .tiny{font-size:7pt;color:var(--g3);margin-top:.04in}
+</style></head><body>
+
+<div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2E6E62" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>
+<span class="eyebrow">Programa Socio Fundador · 2026</span></div>
+
+<h1>Cinco lugares para construir Zenet <span class="mark">sobre tu operación.</span></h1>
+<p class="lead">Un sistema que arma tu operación desde lo que ya tienes, te enseña dónde están tu operación y tus costos hoy — y qué te está costando no verlos — y lo carga por ti. <b>Tú decides; Zenet lo carga.</b></p>
+
+<div class="ben">
+  <div class="b"><span class="n">1</span><div><h3>Alan, en tu operación, cada semana.</h3><p>Lo que te estorbe de verdad es lo que se construye primero — <b>tu operación moldea lo que Zenet va a ser.</b> Eso no lo compras después a ningún precio.</p></div></div>
+  <div class="b"><span class="n">2</span><div><h3>Tu precio se queda fijo para siempre.</h3><p>Los que entren después van a pagar más. El precio de fundador <b>ya es el descuento.</b></p></div></div>
+  <div class="b"><span class="n">3</span><div><h3>Cero riesgo.</h3><p>Sin compromiso: te vas cuando quieras. Y <b>si tu diagnóstico no te sirve, te regreso el dinero.</b></p></div></div>
+</div>
+
+<div class="price">
+  <div><div class="k">Mes 1</div><div class="v">$2,500 <small>+ IVA</small></div><div class="d">Tu diagnóstico con tus documentos · tus compras corriendo con tus facturas · Alan directo cada semana.</div></div>
+  <div><div class="k">Desde el mes 2</div><div class="v">$1,500 <small>+ IVA · al mes</small></div><div class="d">Fijo para siempre. Por sucursal.</div></div>
+</div>
+
+<div class="terms"><span class="pill">5 lugares</span><span class="pill">Sin compromiso</span><span class="pill">Te vas cuando quieras</span><span class="pill">Con factura</span></div>
+
+<div class="guar"><b>Cómo funciona:</b> lo pagas hoy para que arranque tu diagnóstico. El día que te lo entrego, si no te dice nada que te sirva, me lo dices ahí mismo y te regreso el dinero.</div>
+
+<div class="foot">
+  <div class="who"><b>Alan Bahena</b> · fundador de Zenet · Tijuana<br><span class="url">zenetapp.com</span> · hola@zenetapp.com<div class="tiny">Precios en MXN. Programa limitado a los primeros cinco restaurantes.</div></div>
+  <svg class="qr" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" style="width:.95in;height:.95in;display:block" shape-rendering="crispEdges"><path class="qrline" stroke="#2b3738" d="M1 1.5h7m2 0h1m1 0h1m1 0h2m3 0h7m-25 1h1m5 0h1m4 0h1m1 0h1m4 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m2 0h3m1 0h1m4 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m3 0h3m2 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m1 0h1m1 0h1m2 0h2m3 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-17 1h1m1 0h3m1 0h1m-14 1h2m3 0h1m3 0h2m3 0h1m2 0h2m1 0h1m-20 1h2m5 0h1m2 0h2m1 0h2m1 0h2m1 0h1m1 0h2m-23 1h3m1 0h1m2 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h1m-22 1h1m4 0h1m5 0h1m2 0h1m2 0h2m-20 1h2m1 0h2m1 0h3m1 0h4m2 0h1m5 0h1m-22 1h3m1 0h2m1 0h4m1 0h2m1 0h2m3 0h2m-25 1h4m1 0h6m2 0h3m5 0h2m1 0h1m-23 1h1m1 0h1m2 0h1m1 0h2m2 0h1m4 0h4m-22 1h5m1 0h2m2 0h1m1 0h1m1 0h7m2 0h1m-16 1h1m1 0h2m1 0h1m2 0h1m3 0h1m3 0h1m-25 1h7m3 0h2m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h4m3 0h1m-21 1h1m1 0h3m1 0h1m3 0h1m1 0h9m3 0h1m-25 1h1m1 0h3m1 0h1m3 0h2m5 0h1m2 0h1m1 0h2m-24 1h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h2m1 0h3m1 0h2m-25 1h1m5 0h1m1 0h1m2 0h1m2 0h4m1 0h2m-21 1h7m2 0h1m6 0h1m1 0h1m2 0h1m2 0h1"/></svg>
+
+</div>
+
+</body></html>
