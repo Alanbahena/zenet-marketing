@@ -16,31 +16,33 @@ Cambiar el destino del QR: regenerar con segno (python: segno.make(url).save(...
   *{box-sizing:border-box;margin:0}
   @page{size:5.5in 8.5in;margin:0}
   html,body{background:var(--off)}
-  body{font-family:var(--fb);color:var(--ch);width:5.5in;height:8.5in;padding:.36in .42in .3in;display:flex;flex-direction:column;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:var(--fb);color:var(--ch);width:5.5in;height:8.5in;padding:.3in .42in .24in;display:flex;flex-direction:column;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .top{display:flex;justify-content:space-between;align-items:center}
   .logo{height:.31in;width:auto}
   .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
-  h1{font-family:var(--fd);font-weight:700;font-size:19.5pt;line-height:1.1;letter-spacing:-.015em;margin:.16in 0 .08in;text-wrap:balance}
+  h1{font-family:var(--fd);font-weight:700;font-size:18.5pt;line-height:1.08;letter-spacing:-.015em;margin:.12in 0 .06in;text-wrap:balance}
   h1 .mark{background-image:linear-gradient(180deg,transparent 62%,rgba(46,110,98,.24) 62%);padding:0 .04em}
-  .lead{font-size:10pt;color:var(--t7);line-height:1.45;max-width:4.5in}
-  .ben{margin:.16in 0 0;display:grid;gap:.06in;flex-shrink:0}
+  .lead{font-size:9.8pt;color:var(--t7);line-height:1.42;max-width:4.5in}
+  .quote{margin:.1in 0 0;padding:.07in .13in;border-left:3px solid var(--ac);background:var(--off2);border-radius:0 8px 8px 0;font-family:var(--fd);font-weight:500;font-size:9.8pt;line-height:1.36;color:var(--ch);flex-shrink:0}
+  .h2{margin:.12in 0 0;font-family:var(--fd);font-weight:600;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  .ben{margin:.07in 0 0;display:grid;gap:.05in;flex-shrink:0}
   .b{display:grid;grid-template-columns:.34in 1fr;gap:.1in;align-items:start}
   .n{width:.3in;height:.3in;border-radius:50%;background:var(--ac);color:#fff;font-family:var(--fd);font-weight:700;font-size:10.5pt;display:grid;place-items:center}
   .b h3{font-family:var(--fd);font-weight:600;font-size:10.6pt;line-height:1.22;margin:.02in 0 .02in}
-  .b p{font-size:9pt;color:var(--t7);line-height:1.38}
+  .b p{font-size:8.8pt;color:var(--t7);line-height:1.34}
   .b p b{color:var(--ch);font-weight:600}
-  .price{margin:.16in 0 0;border:1px solid rgba(46,110,98,.28);border-radius:12px;background:#fff;display:grid;grid-template-columns:1fr 1fr;flex-shrink:0}
-  .price>div{padding:.1in .15in}
+  .price{margin:.13in 0 0;border:1px solid rgba(46,110,98,.28);border-radius:12px;background:#fff;display:grid;grid-template-columns:1fr 1fr;flex-shrink:0}
+  .price>div{padding:.09in .14in}
   .price>div+div{border-left:1px solid rgba(46,110,98,.18)}
   .price .k{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
   .price .v{font-family:var(--fd);font-weight:700;font-size:18pt;line-height:1.05;margin:.04in 0 .03in;letter-spacing:-.01em}
   .price .v small{font-size:9pt;font-weight:600;color:var(--t7);letter-spacing:0}
-  .price .d{font-size:8.3pt;color:var(--t7);line-height:1.4}
-  .terms{margin:.1in 0 0;flex-shrink:0;display:flex;flex-wrap:wrap;gap:.06in}
+  .price .d{font-size:8pt;color:var(--t7);line-height:1.4}
+  .terms{margin:.08in 0 0;flex-shrink:0;display:flex;flex-wrap:wrap;gap:.06in}
   .pill{font-family:var(--fd);font-weight:600;font-size:7.8pt;color:var(--ac);background:rgba(46,110,98,.07);border:1px solid rgba(46,110,98,.25);border-radius:99px;padding:.035in .1in}
-  .guar{margin:.1in 0 0;flex-shrink:0;padding:.09in .13in;border-radius:10px;background:var(--off2);font-size:9pt;line-height:1.4}
+  .guar{margin:.08in 0 0;flex-shrink:0;padding:.08in .12in;border-radius:10px;background:var(--off2);font-size:9pt;line-height:1.4}
   .guar b{font-weight:600}
-  .foot{margin-top:auto;display:grid;grid-template-columns:1fr .95in;gap:.16in;align-items:end;padding-top:.1in}
+  .foot{margin-top:auto;display:grid;grid-template-columns:1fr .82in;gap:.14in;align-items:end;padding-top:.06in}
   .foot .who{font-size:8.8pt;color:var(--t7);line-height:1.45}
   .foot .who b{color:var(--ch);font-weight:600}
   .foot .url{font-family:var(--fd);font-weight:600;color:var(--ac);font-size:9.6pt}
@@ -71,7 +73,11 @@ Cambiar el destino del QR: regenerar con segno (python: segno.make(url).save(...
 <span class="eyebrow">Programa Socio Fundador · 2026</span></div>
 
 <h1>Cinco lugares para construir Zenet <span class="mark">sobre tu operación.</span></h1>
-<p class="lead">Un sistema que arma tu operación desde lo que ya tienes, te enseña dónde están tu operación y tus costos hoy — y qué te está costando no verlos — y lo carga por ti. <b>Tú decides; Zenet lo carga.</b></p>
+<p class="lead">Un sistema tan fácil de usar que arma tu operación desde lo que ya tienes, te enseña dónde están tu operación y tus costos hoy —y qué te está costando no verlos— y lo carga por ti. <b>Tú decides; Zenet lo carga.</b></p>
+
+<blockquote class="quote">“Tan fácil como chatear: le mandas tus facturas por WhatsApp y desde la primera semana ves qué subió, con quién y cuánto pesa al mes.”</blockquote>
+
+<p class="h2">Como Socio Fundador entras con:</p>
 
 <div class="ben">
   <div class="b"><span class="n">1</span><div><h3>Alan, en tu operación, cada semana.</h3><p>Lo que te estorbe de verdad es lo que se construye primero — <b>tu operación moldea lo que Zenet va a ser.</b> Eso no lo compras después a ningún precio.</p></div></div>
@@ -90,7 +96,7 @@ Cambiar el destino del QR: regenerar con segno (python: segno.make(url).save(...
 
 <div class="foot">
   <div class="who"><b>Alan Bahena</b> · fundador de Zenet · Tijuana<br><span class="url">zenetapp.com</span> · hola@zenetapp.com<div class="tiny">Precios en MXN. Programa limitado a los primeros Socios Fundadores.</div></div>
-  <svg class="qr" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" style="width:.95in;height:.95in;display:block" shape-rendering="crispEdges"><path class="qrline" stroke="#2b3738" d="M1 1.5h7m2 0h1m1 0h1m1 0h2m3 0h7m-25 1h1m5 0h1m4 0h1m1 0h1m4 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m2 0h3m1 0h1m4 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m3 0h3m2 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m1 0h1m1 0h1m2 0h2m3 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-17 1h1m1 0h3m1 0h1m-14 1h2m3 0h1m3 0h2m3 0h1m2 0h2m1 0h1m-20 1h2m5 0h1m2 0h2m1 0h2m1 0h2m1 0h1m1 0h2m-23 1h3m1 0h1m2 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h1m-22 1h1m4 0h1m5 0h1m2 0h1m2 0h2m-20 1h2m1 0h2m1 0h3m1 0h4m2 0h1m5 0h1m-22 1h3m1 0h2m1 0h4m1 0h2m1 0h2m3 0h2m-25 1h4m1 0h6m2 0h3m5 0h2m1 0h1m-23 1h1m1 0h1m2 0h1m1 0h2m2 0h1m4 0h4m-22 1h5m1 0h2m2 0h1m1 0h1m1 0h7m2 0h1m-16 1h1m1 0h2m1 0h1m2 0h1m3 0h1m3 0h1m-25 1h7m3 0h2m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h4m3 0h1m-21 1h1m1 0h3m1 0h1m3 0h1m1 0h9m3 0h1m-25 1h1m1 0h3m1 0h1m3 0h2m5 0h1m2 0h1m1 0h2m-24 1h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h2m1 0h3m1 0h2m-25 1h1m5 0h1m1 0h1m2 0h1m2 0h4m1 0h2m-21 1h7m2 0h1m6 0h1m1 0h1m2 0h1m2 0h1"/></svg>
+  <svg class="qr" viewBox="0 0 35 35" xmlns="http://www.w3.org/2000/svg" style="width:.82in;height:.82in;display:block" shape-rendering="crispEdges"><path class="qrline" stroke="#2b3738" d="M1 1.5h7m2 0h1m1 0h1m1 0h2m3 0h7m-25 1h1m5 0h1m4 0h1m1 0h1m4 0h1m5 0h1m-25 1h1m1 0h3m1 0h1m2 0h3m1 0h1m4 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m1 0h2m3 0h3m2 0h1m1 0h3m1 0h1m-25 1h1m1 0h3m1 0h1m2 0h2m1 0h1m1 0h1m1 0h1m1 0h1m1 0h3m1 0h1m-25 1h1m5 0h1m1 0h1m1 0h1m2 0h2m3 0h1m5 0h1m-25 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-17 1h1m1 0h3m1 0h1m-14 1h2m3 0h1m3 0h2m3 0h1m2 0h2m1 0h1m-20 1h2m5 0h1m2 0h2m1 0h2m1 0h2m1 0h1m1 0h2m-23 1h3m1 0h1m2 0h1m1 0h3m1 0h2m1 0h2m1 0h2m1 0h1m-22 1h1m4 0h1m5 0h1m2 0h1m2 0h2m-20 1h2m1 0h2m1 0h3m1 0h4m2 0h1m5 0h1m-22 1h3m1 0h2m1 0h4m1 0h2m1 0h2m3 0h2m-25 1h4m1 0h6m2 0h3m5 0h2m1 0h1m-23 1h1m1 0h1m2 0h1m1 0h2m2 0h1m4 0h4m-22 1h5m1 0h2m2 0h1m1 0h1m1 0h7m2 0h1m-16 1h1m1 0h2m1 0h1m2 0h1m3 0h1m3 0h1m-25 1h7m3 0h2m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-25 1h1m5 0h1m2 0h1m1 0h1m1 0h4m3 0h1m-21 1h1m1 0h3m1 0h1m3 0h1m1 0h9m3 0h1m-25 1h1m1 0h3m1 0h1m3 0h2m5 0h1m2 0h1m1 0h2m-24 1h1m1 0h3m1 0h1m1 0h5m1 0h1m1 0h2m1 0h3m1 0h2m-25 1h1m5 0h1m1 0h1m2 0h1m2 0h4m1 0h2m-21 1h7m2 0h1m6 0h1m1 0h1m2 0h1m2 0h1"/></svg>
 
 </div>
 
