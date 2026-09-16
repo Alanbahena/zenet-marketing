@@ -1,0 +1,178 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+KIT DE BIENVENIDA · Socio Fundador — v0.1 (16-sep-2026)
+═══════════════════════════════════════════════════════════════════
+Se manda por WhatsApp el mismo día del sí (12-proceso-de-ventas §4). Dos páginas, media carta.
+Pág. 1 = bienvenida · lo que incluye el mes 1 · fechas · qué mandar · transferencia.
+Pág. 2 = lo que acordamos (la hoja de acuerdo; sustituye al contrato hasta que haya abogado).
+Por prospecto: duplicar, llenar los [corchetes], y generar el PDF:
+"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf="_export/kit-bienvenida-[nombre].pdf" "$PWD/kit-bienvenida-socio-fundador.html"
+La CLABE queda como [CLABE] hasta que se defina la cuenta.
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Bienvenida Socio Fundador</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:5.5in 8.5in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:5.5in;height:8.5in;padding:.3in .42in .22in;overflow:hidden;display:flex;flex-direction:column;break-after:page;position:relative}
+  .page:last-child{break-after:auto}
+  .top{display:flex;justify-content:space-between;align-items:center}
+  .logo{height:.29in;width:auto}
+  .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  h1{font-family:var(--fd);font-weight:700;font-size:17pt;line-height:1.08;letter-spacing:-.015em;margin:.1in 0 .05in;text-wrap:balance}
+  h1 .mark{background-image:linear-gradient(180deg,transparent 62%,rgba(46,110,98,.24) 62%);padding:0 .04em}
+  .lead{font-size:9.2pt;color:var(--t7);line-height:1.38}
+  .lead b{color:var(--ch);font-weight:600}
+  .h2{margin:.1in 0 .04in;font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  .box{border:1px solid rgba(43,55,56,.12);border-radius:10px;background:#fff;padding:.08in .12in;font-size:8.7pt;line-height:1.36;flex-shrink:0}
+  .box.soft{background:var(--off2);border-color:transparent}
+  .box b{font-weight:600;color:var(--ch)}
+  .box ul{padding-left:.16in;margin:.02in 0 0}
+  .box li{margin:0 0 .025in}
+  .box li b{color:var(--ch)}
+  .dates{display:grid;grid-template-columns:1fr 1fr;gap:.08in;flex-shrink:0}
+  .dates .k{font-family:var(--fd);font-weight:600;font-size:7.2pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+  .dates .v{font-family:var(--fd);font-weight:700;font-size:10.5pt;line-height:1.12;margin:.02in 0 .015in}
+  .dates .d{font-size:8.4pt;color:var(--t7)}
+  .pay{display:grid;grid-template-columns:1fr 1fr;gap:.03in .16in;font-size:8.5pt}
+  .pay .k{color:var(--t7)}
+  .pay .v{font-family:var(--fd);font-weight:600}
+  .note{font-size:8pt;color:var(--t7);line-height:1.35;margin-top:.04in}
+  .foot{margin-top:auto;padding-top:.1in;font-size:8.6pt;color:var(--t7);line-height:1.42}
+  .foot b{color:var(--ch);font-weight:600}
+  .foot .url{font-family:var(--fd);font-weight:600;color:var(--ac)}
+  .tiny{font-size:6.8pt;color:var(--g3);margin-top:.04in}
+  /* página 2 · el acuerdo */
+  .cl{display:grid;grid-template-columns:1.05in 1fr;gap:.05in .14in;font-size:8.8pt;line-height:1.4;flex-shrink:0}
+  .cl .k{font-family:var(--fd);font-weight:600;font-size:8.2pt;color:var(--ac);padding-top:.01in}
+  .cl .v b{font-weight:600}
+  .cl .sep{grid-column:1/-1;border-top:1px solid rgba(43,55,56,.1);margin:.02in 0}
+  .sign{margin-top:auto;padding-top:.14in;display:grid;grid-template-columns:1fr 1fr;gap:.3in;flex-shrink:0}
+  .sign div{border-top:1px solid var(--ch);padding-top:.05in;font-size:8.2pt;color:var(--t7)}
+  .sign div b{display:block;color:var(--ch);font-weight:600;font-size:8.8pt}
+</style></head><body>
+
+<!-- ═══ PÁGINA 1 · BIENVENIDA ═══ -->
+<section class="page">
+  <div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>
+<span class="eyebrow">Socio Fundador · bienvenida</span></div>
+
+  <h1>Bienvenido, <span class="mark">[Nombre].</span><br>Entras con los primeros cinco.</h1>
+  <p class="lead">Desde hoy, <b>tu operación moldea lo que Zenet va a ser</b>. Aquí está todo lo que necesitas para arrancar: qué incluye tu primer mes, tus fechas, qué mandarme y cómo se paga. Nada más.</p>
+
+  <p class="h2">Lo que incluye tu mes 1</p>
+  <div class="box soft"><b>Tu diagnóstico</b> con tus documentos — en PDF y en la app · <b>tus compras</b> corriendo con tus facturas · y <b>yo, directo, cada semana</b>.</div>
+
+  <p class="h2">Tus fechas</p>
+  <div class="dates">
+    <div class="box"><div class="k">Tus documentos</div><div class="v">antes del [día]</div><div class="d">por WhatsApp, como los tengas</div></div>
+    <div class="box"><div class="k">Tu diagnóstico</div><div class="v">[día] · [hora]</div><div class="d">[lugar] · lo vemos juntos, 30 min</div></div>
+  </div>
+
+  <p class="h2">Qué mandar — como lo tengas</p>
+  <div class="box">
+    <ul>
+      <li><b>Empieza por estos dos</b> <i>(juntos valen más que separados)</i>: tu <b>recetario o fichas técnicas</b> · tu <b>inventario</b> — perecederos y no perecederos, o tu lista de insumos con unidades y presentación de compra.</li>
+      <li><b>Tu carta o menú</b> <i>(fotos sirven)</i>.</li>
+      <li><b>Tus últimas facturas de compra</b> — cinco o más, fotos del celular.</li>
+      <li><b>Tus costos</b>: estado de resultados, o los costos de operación y servicios desglosados — renta, nómina, luz, gas, agua, internet, plataformas — lo que tengas, aunque sea en un cuaderno.</li>
+      <li><b>Cómo operas</b>: manuales, protocolos, roles, checklists — lo que esté escrito. Si ya tienes costeo de recetas, también.</li>
+    </ul>
+    <p class="note"><b>¿Tienes poco de esto? También sirve.</b> No limpies, no ordenes, no conviertas nada — mándalo tal cual, por WhatsApp.</p>
+  </div>
+
+  <p class="h2">Cómo se paga</p>
+  <div class="box">
+    <div class="pay">
+      <span class="k">Mes 1</span><span class="v">$2,500 + IVA · una sola vez, hoy</span>
+      <span class="k">Beneficiario</span><span class="v">[Beneficiario]</span>
+      <span class="k">Banco · CLABE</span><span class="v">[Banco] · [CLABE]</span>
+      <span class="k">Concepto</span><span class="v">Zenet · mes 1 · [Restaurante]</span>
+    </div>
+    <p class="note">En cuanto llegue la transferencia te mando la <b>factura</b> a [correo] con el RFC que me diste. Desde el mes 2: $1,500 + IVA al mes, fijo para siempre.</p>
+  </div>
+
+  <div class="foot"><div class="tiny"><b>Alan Bahena</b> · <span class="url">zenetapp.com</span> · alan@zenetapp.com · © 2026 Zenet® · Página 1 de 2</div></div>
+</section>
+
+<!-- ═══ PÁGINA 2 · LO QUE ACORDAMOS ═══ -->
+<section class="page">
+  <div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>
+<span class="eyebrow">Socio Fundador · lo que acordamos</span></div>
+
+  <h1>Lo que acordamos.</h1>
+  <p class="lead">Escrito para que los dos lo tengamos igual. Sin letras chiquitas.</p>
+
+  <div class="cl" style="margin-top:.12in">
+    <span class="k">Las partes</span><span class="v"><b>[Nombre]</b> · [Restaurante] · RFC [RFC] — y <b>Alan Bahena</b>, fundador de Zenet, Tijuana, Baja California.</span>
+    <span class="sep"></span>
+    <span class="k">El programa</span><span class="v">Entras como <b>Socio Fundador de Zenet</b>, uno de los primeros cinco. <b>Mes 1: $2,500 + IVA</b> — incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas y a Alan directo cada semana. <b>Desde el mes 2: $1,500 + IVA al mes, por sucursal, fijo para siempre</b> mientras seas Socio Fundador. Quien entre después pagará más.</span>
+    <span class="sep"></span>
+    <span class="k">Sin compromiso</span><span class="v">Te vas cuando quieras: me avisas y no se cobra el mes siguiente. El mes ya pagado no se reembolsa — salvo el mes 1, si el diagnóstico no te sirve.</span>
+    <span class="sep"></span>
+    <span class="k">La devolución</span><span class="v">El día que te entrego tu diagnóstico, si no te dice nada que te sirva, me lo dices ahí mismo y <b>te regreso el pago del mes 1 completo</b>. Sin explicaciones.</span>
+    <span class="sep"></span>
+    <span class="k">Tus documentos</span><span class="v">Los ve una sola persona: Alan. No se comparten, no se venden, no se usan para otra cosa. Si pides que se borren, se borran. Detalle en <b>zenetapp.com/privacidad</b>.</span>
+    <span class="sep"></span>
+    <span class="k">Lo que Zenet te pide</span><span class="v">Tu retroalimentación honesta y dejarme ver tu operación de verdad — así se construye algo que sirva contigo, no para ti en abstracto.</span>
+    <span class="sep"></span>
+    <span class="k">Facturación</span><span class="v">Cada pago con factura (CFDI) al RFC y correo que me diste. Pagos por transferencia.</span>
+    <span class="sep"></span>
+    <span class="k">Vigencia</span><span class="v">Mientras seas Socio Fundador. Cuando Zenet se constituya formalmente, este acuerdo pasa a nombre de la sociedad con las mismas condiciones para ti.</span>
+  </div>
+
+  <p class="note" style="margin-top:.12in">Queda acordado con tu <b>"va"</b> por WhatsApp — o con tu firma aquí, si prefieres tenerlo en papel.</p>
+
+  <div class="sign">
+    <div><b>[Nombre]</b>[Restaurante] · fecha: ________</div>
+    <div><b>Alan Bahena</b>Zenet · fecha: ________</div>
+  </div>
+
+  <div class="foot" style="margin-top:.12in"><div class="tiny">© 2026 Zenet® · Marca registrada ante el IMPI · Página 2 de 2 · v0.1 · [fecha]</div></div>
+</section>
+
+</body></html>
