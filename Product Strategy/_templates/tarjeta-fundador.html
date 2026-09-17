@@ -1,0 +1,113 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+TARJETA DE PRESENTACIÓN · Fundador — v0.1 (16-sep-2026)
+═══════════════════════════════════════════════════════════════════
+Tamaño 3.5 × 2 in (8.9 × 5.1 cm) = la retícula de las hojas precortadas (Avery 8371 / 5371 · 10 por hoja carta).
+Frente: logo + slogan (teal en "no es el precio"). Reverso: Ing. Alan Bahena · Fundador de Zenet · WhatsApp · correo · LinkedIn · panel teal con el QR. Tokens = Branding/03-visual-identity. Sin sangrado (hojas precortadas).
+
+PREVIEW (2 páginas: frente · reverso):
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="_export/tarjeta-fundador_preview.pdf" "$PWD/tarjeta-fundador.html"
+HOJA 10-UP (2 páginas carta: frente · reverso — imprimir dúplex, voltear por el lado largo, escala 100 %, sin "ajustar a página"; fondo = papel):
+  … --print-to-pdf="_export/tarjeta-fundador_10up-carta.pdf" "file://$PWD/tarjeta-fundador.html?sheet=1"
+  con marcas de corte para cartulina normal: …?sheet=1&marks=1 → _export/tarjeta-fundador_10up-carta_marcas.pdf
+QR → https://go.zenetapp.com/tarjeta (Dub · 16-sep). Cambiar el destino del QR: segno.make(url,error='m').save(path,scale=1,border=1,dark='#2B3738',light=None) y sustituir el bloque svg.qr.
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Tarjeta</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style id="pagecss">@page{size:3.5in 2in;margin:0}</style>
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--peach:#F4DED0;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  html,body{background:#fff}
+  body{font-family:var(--fb);color:var(--ch);-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .card{width:3.5in;height:2in;background:var(--off);padding:.17in .2in;display:flex;overflow:hidden;position:relative;page-break-after:always;break-after:page}
+  body.sheet .card{page-break-after:auto;break-after:auto;background:transparent} /* hojas precortadas: sin fondo, para que el corte no deje filo */
+  /* ── frente ── */
+  .front{flex-direction:column;align-items:center;justify-content:center;gap:.11in;text-align:center}
+  .front .logo{height:.36in;width:auto;display:block}
+  .front .rule{width:.26in;height:1.5px;background:var(--ac);border-radius:2px}
+  .front .slogan{font-family:var(--fd);font-weight:600;font-size:9.4pt;line-height:1.28;letter-spacing:-.006em;color:var(--ch);text-wrap:balance;max-width:2.6in}
+  .front .slogan i{font-style:normal;color:var(--ac)}
+  /* ── reverso ── */
+  .back .name{font-family:var(--fd);font-weight:700;font-size:11.8pt;line-height:1.08;letter-spacing:-.016em}
+  .back .role{font-family:var(--fd);font-weight:600;font-size:6.5pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);margin-top:.05in}
+  .back .rule{width:.26in;height:1.5px;background:var(--ac);border-radius:2px;margin:.1in 0}
+  .back .lines{list-style:none;padding:0;display:flex;flex-direction:column;gap:.04in}
+  .back .lines li{font-size:8.1pt;line-height:1.2;white-space:nowrap;color:var(--ch);font-weight:500}
+  .back .lines li small{font-size:7pt;font-weight:400;color:var(--t7);margin-right:.05in}
+  /* R3 · panel teal a la derecha, inset */
+  .r3{flex-direction:row;align-items:stretch;justify-content:space-between;padding:.13in .13in .13in .21in;gap:.14in}
+  .r3 .info{display:flex;flex-direction:column;justify-content:center}
+  .r3 .panel{flex:none;width:1.08in;background:var(--ac);border-radius:.1in;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.07in}
+  .r3 .chip{background:#fff;border-radius:.07in;padding:.06in;display:block;line-height:0}
+  .r3 .qr{width:.76in;height:.76in;display:block}
+  .r3 .panel span{font-family:var(--fd);font-weight:600;font-size:6.8pt;color:var(--mint);letter-spacing:.01em}
+  /* ── hoja 10-up (Avery 8371: 0.5in arriba · 0.75in izq · 2 × 5 sin separación) ── */
+  .sheetpage{width:8.5in;height:11in;padding:.5in .75in;display:grid;grid-template-columns:3.5in 3.5in;grid-auto-rows:2in;page-break-after:always;break-after:page;background:#fff}
+  .sheetpage .card{page-break-after:auto;break-after:auto}
+  /* marcas de corte (?marks=1): en los márgenes, nunca sobre las tarjetas */
+  .sheetpage{position:relative}
+  .mark{position:absolute;background:#9AA5A0}
+  .mark.v{width:.5pt;height:.32in}
+  .mark.h{height:.5pt;width:.32in}
+</style></head><body>
+
+<section class="card front" data-variant="A">
+  <svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>
+  <div class="rule"></div>
+  <p class="slogan">El caos <i>no es el precio</i><br>de tener un restaurante.</p>
+</section>
+<section class="card back r3">
+  <div class="info">
+    <div class="name">Ing. Alan Bahena</div>
+    <div class="role">Fundador de Zenet</div>
+    <div class="rule"></div>
+    <ul class="lines">
+      <li><small>WhatsApp</small>+52 664 194 6634</li>
+      <li>alan@zenetapp.com</li>
+      <li>linkedin.com/in/alanbahena</li>
+    </ul>
+  </div>
+  <div class="panel"><span class="chip"><svg shape-rendering="crispEdges"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" class="qr"><path class="qrline" stroke="#2b3738" d="M1 1.5h7m1 0h1m2 0h1m2 0h6m2 0h7m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h1m5 0h2m2 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h3m1 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m2 0h3m1 0h2m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h4m1 0h1m1 0h3m1 0h2m1 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m2 0h3m1 0h3m3 0h2m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-21 1h3m3 0h2m1 0h1m2 0h1m-20 1h2m1 0h1m1 0h2m2 0h2m2 0h2m1 0h1m1 0h1m2 0h1m1 0h5m-29 1h1m1 0h2m5 0h4m7 0h3m2 0h1m2 0h1m-29 1h2m1 0h4m1 0h2m1 0h2m3 0h3m4 0h1m2 0h3m-28 1h1m1 0h1m3 0h2m2 0h1m3 0h3m1 0h1m1 0h2m1 0h1m2 0h1m-28 1h4m1 0h3m2 0h1m6 0h1m2 0h1m1 0h2m1 0h1m-26 1h2m1 0h1m1 0h1m5 0h1m1 0h3m1 0h1m2 0h4m4 0h1m-29 1h1m1 0h6m1 0h1m1 0h3m2 0h1m4 0h1m1 0h1m2 0h3m-29 1h1m2 0h3m1 0h1m2 0h3m4 0h2m1 0h1m2 0h1m-23 1h2m2 0h4m1 0h1m1 0h1m1 0h4m2 0h1m1 0h1m2 0h1m2 0h1m-28 1h1m1 0h1m6 0h4m1 0h1m1 0h2m1 0h3m2 0h1m1 0h2m-29 1h1m1 0h2m2 0h1m1 0h1m4 0h2m1 0h1m3 0h2m1 0h1m2 0h3m-28 1h2m2 0h1m1 0h1m1 0h1m5 0h1m1 0h4m1 0h2m1 0h1m2 0h1m-29 1h1m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m3 0h1m2 0h5m2 0h1m-20 1h5m1 0h1m1 0h2m1 0h2m3 0h1m2 0h2m-29 1h7m1 0h1m2 0h1m2 0h1m4 0h2m1 0h1m1 0h1m1 0h3m-29 1h1m5 0h1m3 0h1m1 0h6m2 0h1m3 0h1m2 0h1m-28 1h1m1 0h3m1 0h1m1 0h1m1 0h1m3 0h1m1 0h2m2 0h6m1 0h2m-29 1h1m1 0h3m1 0h1m8 0h1m4 0h2m2 0h1m1 0h1m-27 1h1m1 0h3m1 0h1m1 0h3m1 0h3m2 0h1m1 0h1m3 0h2m3 0h1m-29 1h1m5 0h1m1 0h2m1 0h3m1 0h1m1 0h1m2 0h1m1 0h2m3 0h1m-28 1h7m4 0h2m3 0h2m1 0h3m2 0h1m2 0h2"/></svg>
+
+</span><span>zenetapp.com</span></div>
+</section>
+<script>
+(function(){
+  if(!/sheet=1/.test(location.search)) return;
+  document.body.classList.add('sheet');
+  document.getElementById('pagecss').textContent='@page{size:8.5in 11in;margin:0}';
+  var front=document.querySelector('.front'), back=document.querySelector('.back');
+  function sheet(node){var p=document.createElement('div');p.className='sheetpage';for(var i=0;i<10;i++){p.appendChild(node.cloneNode(true));}return p;}
+  var f=sheet(front), b=sheet(back);
+  if(/marks=1/.test(location.search)){
+    [f,b].forEach(function(p){
+      [0.75,4.25,7.75].forEach(function(x){['top:.1in','bottom:.1in'].forEach(function(pos){var m=document.createElement('i');m.className='mark v';m.style.cssText='left:'+x+'in;'+pos;p.appendChild(m);});});
+      [0.5,2.5,4.5,6.5,8.5,10.5].forEach(function(y){['left:.36in','right:.36in'].forEach(function(pos){var m=document.createElement('i');m.className='mark h';m.style.cssText='top:'+y+'in;'+pos;p.appendChild(m);});});
+    });
+  }
+  document.body.innerHTML=''; document.body.appendChild(f); document.body.appendChild(b);
+})();
+</script>
+</body></html>
