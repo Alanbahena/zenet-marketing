@@ -1,11 +1,11 @@
 ---
 name: Proceso de ventas — Fase A
-description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 cerrada el 15-sep-2026, escrita sección por sección con el fundador. Deja explícita la deuda de artefactos (mensajes v0.3 · runsheet · flyer · kit de bienvenida · scorecard v0.5)."
+description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 cerrada el 15-sep-2026, escrita sección por sección con el fundador. Deja explícita la deuda de artefactos (mensajes v0.3 · runsheet · flyer · kit de bienvenida · scorecard v0.5 — todo cerrado al 16-sep; queda el flyer de primer toque, el #9 en papel). 16-sep: §1 gana el primer toque en persona y la regla enseñar ≠ recorrer el diagnóstico de ejemplo."
 type: product-strategy
 research_stage: discovery-pre-PMF
 last_updated: 2026-09-16
 status: active
-version: 0.1
+version: 0.1.1
 owner: Alan Bahena
 ---
 
@@ -34,7 +34,7 @@ owner: Alan Bahena
 1. **Red 1:1** — conocidos y conocidos de conocidos, por WhatsApp.
 2. **Referidos** — quien ya habló contigo te presenta al siguiente.
 3. **Cámaras** (CANACO · CANIRAC · cámaras de emprendimiento) — **como puente a personas, no como canal**: sirven para llegar a un dueño concreto y escribirle 1:1. Awareness, no revenue (`08-learnings-de-validacion.md` S#5 Alfonso · `05-channel-partner-strategy.md` Tier 2).
-4. **Frío presencial en Tijuana**, con flyer y el ask de las cinco facturas — solo si 1-3 no producen sesiones.
+4. **Frío presencial en Tijuana**, con el **flyer de primer toque** (sin precio · con un fragmento del diagnóstico de ejemplo) y la tarjeta; el ask es el mismo del #9: el café de 20 minutos — solo si 1-3 no producen sesiones. `[16-sep: sustituye al ask de las cinco facturas — el diagnóstico se paga, no se regala]`
 
 ### 0.2 Dos capas en este doc
 
@@ -49,7 +49,7 @@ owner: Alan Bahena
 
 1. **Revelado > declarado.** Un *"me encanta"* no mueve nada; un documento que llega el jueves, sí. (`06-plan-de-activacion-y-validacion-fase-a.md` · `11` §7.1)
 2. **Cero cifras de impacto de Zenet.** Solo cifras del sector con fuente — y **la varianza del propio operador** cuando ya corrió su diagnóstico. (CLAUDE.md §4 · `06-argumentación` §1.3)
-3. **El precio se dice, no se pregunta** — en el **2º contacto, con su diagnóstico en la mano**, siempre con el argumento del punto; nunca se evade si él pregunta antes. En frío presencial el flyer lo trae impreso: ahí no hay café que cuidar. (`11` §7.7)
+3. **El precio se dice, no se pregunta** — en el **2º contacto, con su diagnóstico en la mano**, siempre con el argumento del punto; nunca se evade si él pregunta antes. En frío presencial tampoco: el flyer de primer toque va **sin precio**; el precio llega con el flyer de la oferta, en el cierre. (`11` §7.7 · `[corregido 16-sep]`)
 4. **Tú decides; Zenet lo carga.** Zenet extrae, no propone. Y en la mesa **se promete solo lo que corre** — la regla del deploy aplica al pitch (CLAUDE.md §2 · 10-sep).
 
 ### 0.5 Fuera de la v0.1
@@ -78,6 +78,15 @@ Que él **diga** que tiene el problema — qué lo causa, qué ya le costó, qu�
 > *Aquí puedes ver por dónde va el proyecto: [link Dub personal]*
 
 Lo que subió se dice como lo dice él, no como el noticiero · no se le dice qué le falta · *"sin compromiso"* una vez y nunca *"de compra"* · el PDF del diagnóstico de ejemplo tiene que existir antes del primer envío `[Pendiente del fundador]`.
+
+**El primer toque en persona** *(frío en Tijuana, o un conocido sin tiempo de café — el #9 en papel)* `[Decisión del fundador · 16-sep]`
+1. **El flyer de primer toque en la mano** — la frase, el mecanismo en tres tiempos y **un fragmento impreso del diagnóstico de ejemplo**. Con eso el flyer ya *enseña*; el teléfono se queda en la bolsa.
+2. **Si quiere ver más,** una página del PDF en el teléfono, un minuto. Nada más.
+3. **El ask:** *"¿Tienes 20 minutos ahora, o te caigo mañana a las cuatro?"*
+4. **Si es ahora,** el PDF vuelve a la bolsa y arranca el Discovery normal (la apertura y las siete preguntas). El PDF reaparece en el Pitch.
+5. **Si es otro día,** el flyer se queda y se agenda. Si el dueño no está, el flyer se queda con el gerente.
+
+**Regla: el diagnóstico de ejemplo se *enseña* en el primer toque y se *recorre* en el Pitch.** Enseñar = una página, un minuto, *"esto es lo que le sale a un restaurante como el tuyo"*: gana los 20 minutos. Recorrer = página por página, *"así se vería el tuyo"*: solo después de que él dijo el problema — si se recorre antes, evalúa el producto en vez de hablar de su operación y el Discovery ya no ocurre. Y **nunca se recorre de pie, en servicio, con el dueño a medias**: un *"ahora"* de verdad se nota porque se sienta. En el embudo, el flyer dejado cuenta en **contactados**, como un mensaje enviado; su QR lleva Dub propio.
 
 **La apertura en la mesa** *(60 segundos — y callarse)*
 > *"He platicado con muchos dueños de restaurantes en la región y lo que de verdad le pega a un restaurante está allá afuera: todo lo que subió, la rotación y capacitar gente, los costos y los márgenes apretados, y toda la administración de atrás. ¿Algo de esto te suena? ¿O tu negocio depende de una, dos, tres personas clave para aguantar cualquiera de estos?"*
@@ -339,18 +348,19 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 
 ## 7. Artefactos — qué se usa en cada etapa
 
-| Etapa | Artefacto | Estado (15-sep) | Dónde |
+| Etapa | Artefacto | Estado (16-sep) | Dónde |
 |---|---|---|---|
 | 1 Contactado | **Mensaje inicial** (§1 · el ejemplo adjunto + café + *"cómo se vería el tuyo"*) | ✅ `mensajes-outreach` **v0.3 #9** (16-sep · #7 acotado a material del ejemplo · #8 y #5B con el ejemplo) | `_templates/mensajes-outreach-fase-a.md` |
 | 1 | **Link Dub por persona** → `zenetapp.com` | ✅ | Dub |
-| 1 | **Tarjeta** (QR → Dub) | 🔜 → imprenta | plan semana 14–20 sep |
+| 1 | **Tarjeta** (frente logo + frase · reverso Ing. Alan Bahena + panel teal con QR → `go.zenetapp.com/tarjeta`) | ✅ diseño cerrado **16-sep** · 🔜 imprimir (hoja de 10, carta) | `_templates/tarjeta-fundador.html` → `_export/` |
+| 1 | **Flyer de primer toque** *(media carta · una cara · SIN precio)* — la frase · el mecanismo en tres tiempos · un fragmento del diagnóstico de ejemplo · 3-4 problemas como preguntas en sus palabras · el ask de los 20 min · WhatsApp · QR → Dub propio. Es el #9 en papel: frío presencial y conocidos sin tiempo de café. **Nunca junto al flyer de la oferta** | 🔜 **nuevo** (16-sep) · depende del diagnóstico de ejemplo | `_templates/` → PDF |
 | 2 Respondió | **Diagnóstico de ejemplo** (PDF · restaurante ficticio · datos declarados) | 🔜 mié 16 | producto (Task 43) → `_export/` |
 | 3-4 Sesión | **Landing v4** como página de confianza · **`/demo` → `/diagnostico`** | ✅ en vivo · 🔜 rename en v4.1 | `zenetapp.com` |
-| 4 Discovery | **Run-sheet de sesión** (la apertura · las 7 preguntas · los 9 checks · el perfil · el cierre) | ⚠️ `plantilla-runsheet.html` sin los 9 checks ni el cierre — se actualiza con este doc | `_templates/plantilla-runsheet.html` |
+| 4 Discovery | **Script de sesión** (run-sheet por beats · las 7 preguntas · cheat-sheet con los 9 checks · criterios de paso · guardrails · objeciones · el cierre) | ✅ **15-sep** `script-sesion-de-venta-fase-a` (PDF 5 págs; `plantilla-runsheet.html` queda como base de formato) | `_templates/script-sesion-de-venta-fase-a.html` → `_export/` |
 | 4 | **Guión de conversación** v0.6 (la sesión minuto a minuto) | ✅ · su §2 apunta a este doc para el cierre | `_templates/guion-conversacion-y-demo-fase-a.md` |
 | 4-5 Pitch | **La app** (Inicio · Estandarización · Manual) + el diagnóstico de ejemplo | ✅ / 🔜 | producto |
-| 5 Cierre | **Flyer de oferta** *(una cara)* — 3 beneficios · $2,500 + IVA mes 1 / $1,500 + IVA fijo · 5 lugares · sin compromiso · devolución · QR | 🔜 **nuevo** | `_templates/` → PDF |
-| 6 Sí | **Kit de bienvenida** *(2 págs)* — pág. 1 bienvenida · mes 1 · fechas · qué mandar como lo tengas · transferencia · pág. 2 lo que acordamos | 🔜 **nuevo** (reemplaza a la hoja de acuerdo) | `_templates/` → PDF |
+| 5 Cierre | **Flyer de oferta** *(una cara)* — 3 beneficios · $2,500 + IVA mes 1 / $1,500 + IVA fijo · 5 lugares · sin compromiso · devolución · QR | ✅ **16-sep** (media carta · QR → `go.zenetapp.com/flyer-sf` · *"Alan, el fundador, en tu operación cada semana"*) | `_templates/flyer-socio-fundador.html` → `_export/` |
+| 6 Sí | **Kit de bienvenida** *(2 págs)* — pág. 1 bienvenida · mes 1 · fechas · qué mandar como lo tengas · transferencia · pág. 2 lo que acordamos | ✅ **16-sep** (CLABE y facturación `[Provisional]`) | `_templates/kit-bienvenida-socio-fundador.html` → `_export/` |
 | 7 Pagado | **CFDI** · cuenta dedicada | ⏳ contador | — |
 | 8 Entrega | **Su diagnóstico** (PDF + app) | ✅ el PDF ya corre | producto |
 | Todas | **Aviso de privacidad** | ✅ | `zenetapp.com/privacidad` |
@@ -359,11 +369,12 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 ### 7.1 Deuda que este doc deja explícita — en orden
 
 1. ~~`mensajes-outreach` **v0.3**~~ ✅ **16-sep** — #9 con el ejemplo adjunto · #7 acotado a material del ejemplo · #8 y #5B con *"te mando el ejemplo"*.
-2. `plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.
+2. ~~`plantilla-runsheet.html` con los 9 checks, el perfil y el cierre de §3.~~ ✅ **15-sep** — resuelto como `script-sesion-de-venta-fase-a` (PDF de 5 págs).
 3. ~~`criterios-icp-y-design-partner-fase-a.md` marcado **superseded** por el doc 11.~~ ✅ archivado 16-sep (`_templates/_archive/`).
 4. ~~`02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3)~~ ✅ **16-sep** — nota de campo arriba de cada doc (v0.1.1) · **salieron cinco, no cuatro:** la quinta es el acuerdo mismo (kit de bienvenida + *"va"* por WhatsApp en vez de MSA + DocuSign).
 5. ~~`10-scorecard` **v0.5**~~ ✅ **16-sep** — §2.2 el embudo como tabla propia + la skill pide los nueve.
-6. Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.
+6. ~~Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.~~ ✅ **16-sep** (+ la tarjeta, QR a Dub en tarjeta y flyer).
+7. **Flyer de primer toque** *(nuevo · 16-sep)* — el #9 en papel, sin precio, con el fragmento del diagnóstico de ejemplo (§1 · §7). Se construye cuando exista el PDF de ejemplo; su momento real es el frío presencial (§0.1 #4).
 
 ---
 

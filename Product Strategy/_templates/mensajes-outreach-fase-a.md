@@ -4,7 +4,7 @@ description: Los mensajes base (templates) para el outreach 1:1 de la Fase A. v0
 type: product-strategy
 last_updated: 2026-09-16
 status: active
-version: 0.3
+version: 0.3.1
 owner: Alan Bahena
 ---
 
@@ -29,6 +29,8 @@ owner: Alan Bahena
 > ### #9 · NUEVO — Primer toque al operador ICP *(el mensaje de doc 12 §1, canónico)*
 >
 > **Cuándo:** todo primer mensaje a un dueño del perfil ③/② — venga de tu red, de un referido o de alguien con quien ya hablaste hace meses. **Qué pide:** un café de 20 minutos, con algo concreto que ver. **Qué manda:** el PDF del diagnóstico de ejemplo, en el mismo mensaje. **Qué no dice:** precio, facturas, app, acceso.
+>
+> **Variante en persona (16-sep):** cuando el primer toque es cara a cara —frío en Tijuana, o un conocido sin tiempo de café— el #9 va en papel: el **flyer de primer toque** (sin precio · con un fragmento del diagnóstico de ejemplo · QR con Dub propio) 🔜. El ejemplo se *enseña* (una página, un minuto), no se *recorre*; el ask es el mismo: *"¿tienes 20 minutos ahora, o te caigo mañana a las cuatro?"*. Secuencia y regla en doc 12 §1. Nunca junto al flyer de la oferta.
 >
 > **El cuerpo (fijo · texto plano para WhatsApp):**
 >
