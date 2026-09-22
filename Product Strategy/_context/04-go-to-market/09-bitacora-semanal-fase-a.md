@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-09-13
+last_updated: 2026-09-20
 status: active
-version: 0.8
+version: 0.9
 owner: Alan Bahena
 ---
 
@@ -31,6 +31,66 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 14–20 sep — "el kit entero, cero mensajes: la semana se atoró en un PDF"
+
+**▸ Foco que traíamos** (plan por día de la retro 13-sep): **Lun 14** contador → ✅ mensaje enviado (respuesta y propuesta de trabajo: lun-mar 21-22 · el cambio de régimen ya está en curso) · doc de ventas v0.1 → ✅ (mar 15) · mensaje #9 → ✅ (v0.3 · 16-sep) · flyer v0.1 → ✅ (16-sep) · **Mar 15** flyer → PDF ✅ · tarjeta → ✅ (diseñada 16 · **impresa 17**) · **primera tanda 8-10 contactos → ❌ 0 envíos** · **Mié 16** diagnóstico de ejemplo → ❌ (se convirtió en el rediseño v2: crítica + mock, pág. 1 cerrada) · hoja de acuerdo → ✅ como **kit de bienvenida** de 2 págs · landing `/demo → /diagnostico` → ❌ · segunda tanda → ❌ · **Jue 17** seguimiento + sesiones → ❌ · docs (canon · CLAUDE.md · runsheet · criterios) → ✅ un día antes (16) · **Vie 18** deploy v4.1 → ❌ · tarjetas → ✅. **Mínimo de la semana:** contador arrancado ✅ · ventas v0.1 ✅ · kit completo 🟡 (flyer ✅ · kit ✅ · tarjeta ✅ · **diagnóstico de ejemplo ❌**) · **≥ 10 mensajes → 0** · **≥ 1 sesión → 0**.
+
+**▸ 🏆 Logros**
+- **★★ El tríptico cerrado y el kit de venta entero, salvo una pieza.** `12-proceso-de-ventas-fase-a` **v0.1** (mar 15 · 7 secciones sobre la estructura del fundador: Discovery · Pitch · Cierre · Navegar el final · Objeciones + pipeline de 9 etapas y 9 conteos) → **script de sesión** en PDF (5 págs · beats + cheat-sheet) → **flyer Socio Fundador** (media carta · $2,500 / $1,500 + IVA · `Zenet®`) → **kit de bienvenida** (2 págs · fechas · qué mandar · cómo se paga · *Lo que acordamos* con las reglas de tiempo y cobro) → **tarjeta del fundador** (diseñada mié 16 · **impresa jue 17** · QR a Dub) → `mensajes-outreach` **v0.3** (#9 con el ejemplo ADJUNTO + café de 20 min) → `10-scorecard` **v0.5** (§2.2 el embudo) → canon `01-modelo` y `02-programa` **v0.1.1** con las **cinco desviaciones** → CLAUDE.md al 16-sep. Todo pusheado (`a885f0a` · `7e9692a`). Logo vectorizado del EPS del brandbook; Dub físicos `go.zenetapp.com/tarjeta` y `/flyer-sf` verificados.
+- **★ Marca: el IMPI otorgó el registro de Zenet (14-sep)** → `Zenet®` en flyer y kit.
+- **Flyer de primer toque decidido** (16-sep · el #9 en papel, sin precio) y la regla **enseñar ≠ recorrer** registrada en doc 12 v0.1.1, script y mensajes.
+- **El diagnóstico se rediseña.** Crítica del reporte actual en 8 puntos (tres *"fuera de rango"* que son buenas noticias con la misma píldora · *"brecha $0.00"* como único renglón en pesos · gramática de déficit y *"huecos"* · nombres viejos de la app · **y adentro los datos de Alma Verde** — no podía ser el ejemplo) → **mock v2 "Marea Baja"** de 4 págs · **pág. 1 cerrada el 18-sep** (dos índices lado a lado · banda del dinero con tres cifras · *"declarado por ti"* · regla de píldoras · lista fija de 8 procesos clave).
+- Contador contactado el lunes; cambio de régimen en curso.
+- Producto: **sin avance esta semana** (Task 43 · Compras 40.7+ · WhatsApp) — la semana se fue al kit y al diagnóstico v2.
+
+**▸ ✅ Qué funcionó**
+- **El doc de ventas sobre la estructura del fundador, sección por sección:** 7 secciones en 3 días, cada una con OK antes de la siguiente. Los artefactos salieron *del* doc (§7 los especificó; flyer y kit se construyeron después), no antes.
+- **Una sola base de diseño para todo el papel:** HTML con tokens de marca → Chrome headless. Script, flyer, kit y tarjeta salieron en dos días sin abrir una herramienta de diseño.
+- **Auditar el reporte antes de mandarlo.** El PDF que se iba a adjuntar decía "Alma Morada" y traía el recetario real de Alma Verde. Se detectó antes del primer envío.
+- Cerrar la deuda de doc 12 §7.1 en bloque (seis puntos en un día, 16-sep), como con las deudas del 5-sep.
+
+**▸ 💡 Learnings**
+1. **★★ Toda la entrada de la semana quedó colgada de una sola pieza.** El #9 lleva el PDF de ejemplo adjunto; el PDF no existió; **no salió ni un mensaje** — 6ª semana consecutiva sin operador, perfil ③ en cero por 11ª. El kit se terminó entero y a mitad de semana la pieza que faltaba **creció** (de *corpus ficticio → onboarding → PDF* a *rediseñar el reporte*), sin timebox. Es el patrón de las dos retros anteriores por tercera vez, ahora con nombre exacto: **una dependencia sin fecha se come la semana.**
+2. **★ La dependencia era más chica de lo declarado.** El flyer de primer toque no necesita el PDF completo: necesita **un fragmento de la pág. 1**, que ya está cerrada. Y el PDF de ejemplo no necesita la Task 43 ni el repo de producción: **el mock v2 terminado ES el ejemplo** (restaurante ficticio, declarado). Dos piezas que parecían bloqueadas no lo estaban.
+3. **★ El rediseño fue necesario, no evasión** — el reporte actual no se podía mostrar a un tercero. Lo que faltó fue acotarlo: la pág. 1 tomó dos sesiones; las págs. 2-4 tienen que tomar una.
+4. La regla escrita el 13-sep — *el kit existe antes de la primera sesión, no antes del primer mensaje* — se escribió y no se aplicó: el kit se construyó antes del primer mensaje de todos modos. Escribir la regla no la ejecuta; la fecha sí.
+5. **El ejemplo es un mock de un reporte que el producto todavía genera en la forma vieja.** No bloquea el envío, pero **el reporte real tiene que alcanzar al ejemplo antes de la primera entrega** (2-3 semanas después del primer sí). Eso pone la Task 43 v2 como lo primero del carril de producto.
+6. Técnicos, ya en memoria: `$2,500` dentro de un heredoc sin comillas expande `$2` · el `viewBox` del QR debe ser el que escribe segno (el viejo de 35 para un código de 27 lo encogía a la esquina).
+
+**▸ 🔀 Decisiones**
+- **★ La oferta Socio Fundador con cinco desviaciones al canon, registradas** (`01-modelo` · `02-programa` v0.1.1 · CLAUDE.md §4): precio de lista congelado · mes 1 $2,500 por adelantado · sin compromiso · devolución anclada a la entrega, sin plazo · el kit + *"va"* como acuerdo. Gradúan a v0.2 con el primer SF pagado.
+- **★ El diagnóstico se paga → el primer toque no pide facturas ni promete un número gratis:** manda el ejemplo adjunto y pide el café (`mensajes` #9 · supersede el ask del 10-sep).
+- **Enseñar ≠ recorrer:** el ejemplo se *enseña* en el primer toque (una página, un minuto) y se *recorre* en el Pitch; nunca de pie en servicio. Flyer de primer toque sin precio; nunca junto al flyer de la oferta.
+- **Validación y venta en el mismo scorecard, en tablas distintas** (§2.1 hipótesis · §2.2 embudo); conteos, no porcentajes.
+- **Reglas de tiempo y cobro del SF** (kit p. 2 · doc 12 §4): el mes 1 corre desde la entrega · corte mensual · pago por adelantado con 5 días · pausa sin recargos · 30 días → lugar liberado.
+- **Diagnóstico v2 (18-sep):** dos índices — estandarización (Recetas + Inventario; Normalización *informa, no califica*) y **"qué tanto se puede enseñar sin una persona clave"** (8 procesos fijos + recetas ejecutables) · onboarding pide 2 preguntas nuevas (personas por área · altas/bajas 6 meses) → tercer origen *"declarado por ti"* · costo de rotación en pesos hasta tener su dato · **fuera** "capacidad de crecimiento" y teórico vs real · nunca *"huecos"*.
+- **Tarjeta:** "Ing." sí · LinkedIn sí · Tijuana fuera · "software" no · el teal nunca en "caos".
+- **★ Retro 20-sep — el ejemplo sale del mock v2** (págs. 2-4), **acotado al lunes 21**; no se espera a la Task 43. El flyer de primer toque se construye el mismo lunes con el fragmento de la pág. 1.
+- **★ CANACO Jóvenes (mar 22) es entrada, no cierre.** *Cámaras como puente* (doc 12 §0) + targeting del ICP de Fase A (joven · abierto). El ask es el café de 20 min; **un contacto cuenta en ① cuando sale su WhatsApp con Dub al día siguiente**, no cuando se entrega la tarjeta.
+- **Landing v4.1 condicionada:** solo si ya salieron ≥ 10 mensajes. No bloquea nada (`/demo` funciona; el Dub y el #9 apuntan a `zenetapp.com`).
+- **Abiertas:** dónde vive el ICP canónico al graduar el experimento · `"tus operaciones"` en el strip anti-POS · la nota de research con los datos de mercado · **lista de los 8 procesos clave contra el Manual Operativo del repo** (Alan) · `[CLABE]` y facturación `[Provisional]` (se cierran con BBVA y el contador esta semana).
+
+**▸ 📊 Scorecard H1–H6** — sin movimiento · **6ª semana consecutiva sin conversaciones con operadores** · N **1** (Miguel) · perfil ③ en cero (**11ª**) · entrada **0 → 0 → 0** (nada enviado: el #9 dependía del PDF de ejemplo · Juanjo y Algira sin ver el de LinkedIn, 3ª semana) · semáforos sin cambio · **embudo §2.2, primera fila real: 0 en los nueve** · gate (a) sin cambio · (b) V1 ✅ · legal: **IMPI ® otorgado 14-sep** + régimen fiscal en curso · scorecard → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 21–27 sep — la fecha primero; los builds al servicio de la fecha** *(el ancla es CANACO Jóvenes el martes · producto en su carril aparte)*
+
+| Día | Ventas · kit · entrada | Admin (según caiga) |
+|---|---|---|
+| **Lun 21** | ★ **PDF de ejemplo:** cerrar págs. 2-4 del mock v2 "Marea Baja" → PDF final (**acotado al día**) · **flyer de primer toque** (fragmento de la pág. 1 · sin precio · QR con Dub propio) → PDF → imprimir · **lista de la primera tanda** (8-10 nombres: Miguel · Juanjo · Algira · Ana · Alan Jiménez · los "por enviar") + un Dub por persona | Contador si llama (propuesta de trabajo · régimen listo) |
+| **Mar 22** | **Mañana: sale la primera tanda** — #9 con el PDF adjunto · cada envío al scorecard §2.2 · **Tarde: CANACO Jóvenes** con tarjeta + flyer de primer toque + la pág. 1 en el teléfono · el ask es el café de 20 min, nunca el pitch de pie | Contador si llama |
+| **Mié 23** | Seguimiento a los de CANACO por WhatsApp (#9 con primera línea *"nos conocimos ayer en CANACO"* — agregarla a la tabla del mensaje) · **segunda tanda** | **BBVA** → cuenta → CLABE → cierra `[CLABE]` en el kit |
+| **Jue 24** | Seguimiento + **agendar sesiones** · si cae una: script + flyer SF + kit · kit p. 2 y doc 12 §4 con lo que dijo el contador (cierra facturación `[Provisional]`) | |
+| **Vie 25** | **Landing v4.1** (`/demo → /diagnostico` + redirect + copy que dice *demo*) + deploy — **solo si ya salieron ≥ 10 mensajes**; si no, más mensajes | |
+| **Dom 27** | Retro + scorecard (dos filas: hipótesis + embudo) | |
+
+**Producto (carril aparte):** **Task 43 v2** — el reporte real hacia la estructura del mock (la entrega tiene que parecerse al ejemplo) → Compras 40.7–40.13 → Task 41 WhatsApp.
+
+**Mínimo de la semana** (lo que la retro del 27 lee): PDF de ejemplo cerrado **el lunes** · **≥ 10 contactados** (tanda + CANACO con WhatsApp de seguimiento) · **≥ 1 sesión agendada** · CLABE y facturación cerradas. Fuera a propósito: pasarela de pago · abogado · precio en la landing · más rediseño del diagnóstico después del lunes.
+
+*▸ Pipeline: 1 soft-commit frío (Carlos · fuera del N · 3 fechas pasadas) · Miguel en pausa consciente (único en el N · reentra con la oferta en la primera tanda) · JP sin retomar · JC Gallina y Alan Jiménez sin respuesta · Juanjo y Algira por LinkedIn, sin ver (3ª semana) → van por WhatsApp en la tanda · conocido del brunch pospuesto · Ana pospuesta (11ª semana) · 10 prospectos en "Por enviar" desde julio · **entrada nueva: CANACO Jóvenes mar 22**.*
 
 ---
 

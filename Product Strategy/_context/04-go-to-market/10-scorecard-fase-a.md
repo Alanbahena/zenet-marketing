@@ -3,9 +3,9 @@ name: Scorecard — Fase A
 description: Los números de la Fase A en un solo lugar. Tres tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil), la serie semanal de hipótesis (una fila por semana, para ver la tendencia sin leer siete retros) y, desde la v0.5, el embudo de ventas (los nueve conteos de 12-proceso-de-ventas §6, una fila por semana, con acumulado). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-16
+last_updated: 2026-09-20
 status: active
-version: 0.5
+version: 0.6
 owner: Alan Bahena
 ---
 
@@ -28,7 +28,7 @@ owner: Alan Bahena
 
 ---
 
-## 1. El tablero del gate *(al 2026-09-13 · 10 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
+## 1. El tablero del gate *(al 2026-09-20 · 11 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
 
 ### 1.1 Gate A→B — las dos condiciones, juntas
 
@@ -42,7 +42,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | **(a)** Intent-to-join — *"quiero entrar al programa"*, **conociendo el precio y los términos** | H4 + H6·precio, al nivel del que paga | ≥ 1-2 | **0** — el soft-commit de Carlos sale con Alma Verde (decisión #2) | ✗ |
 | **(a)** El problema le cuesta algo hoy | H6 · pozo | no en 🔴 | 🟡 — cero cuantificaciones reveladas; Miguel *"realmente pagaría"* es declarado | ✓ |
 | **(b)** App V1 demostrable | readiness | — | ✅ **desde el 30-ago** (desktop + móvil · Task 28 verificada en producción) | ✓ |
-| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ sin registro en el workspace · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
+| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ **marca registrada ante el IMPI (otorgada 14-sep)** · régimen fiscal en cambio (contador · respuesta 21-22 sep) · sin entidad ni abogado: **el acuerdo de la Fase A es el kit de bienvenida** (5ª desviación · `02-programa` v0.1.1) · abogado detrás del primer sí · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
 
 **Lectura:** al recontar contra el ICP de Fase A el marcador **baja y se vuelve honesto** — de *1 · 1 · 1* (Alma Verde, perfil ①) a **1 conversación · 0 compromisos · 0 intent** (Miguel). Las hipótesis no cambiaron; cambió a quién se le pregunta. Lo que sí hay es dirección (H1 y H3 con señal) y un experimento sin correr (extraer). La condición **(b)** ya no bloquea nada del lado del producto.
 
@@ -67,7 +67,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | ① Estandarizado / gran producción | ya documentado · Zenet extiende y mantiene | Carlos · Alma Verde (14-jul) | ✓ · **carril de producto · no suma al N** — feedback de la app + prueba del análisis con docs reales · vuelve como ICP al cumplirse `11` §0.4 |
 | ② Alta cocina / chef-dueño | preserva calidad y consistencia · *fine dining ≠ documentado* | Miguel Bahena (12-ago) | ✓ · **adyacente · suma al N** |
 | ②b Cafetería con cocina propia | entra si hay BoH que extraer | — | ✗ · sin sesión |
-| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 10ª semana en cero** |
+| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 11ª semana en cero** |
 | *(control)* bajo el beachhead | nada que extraer — pediría construcción | Juan Pablo (7-ago) | fuera · acota **por abajo** |
 
 ---
@@ -90,28 +90,29 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 24–30 ago | 0 *(Alfonso · insider)* | 1 | 0 (8ª) | **5 → 0** | 🟢 | ⬜ | **🟢** | 🟡 | 🟢 | 🟡 | No — 3ª consecutiva · **gate (b) ✅ V1 demostrable** |
 | 31 ago–6 sep | 0 | 1 | 0 (9ª) | **2 → 0, ninguno visto** (Juanjo · Algira · ambos por LinkedIn · mensajes sin abrir · links Dub sin clic) | 🟢 | ⬜ | 🟢 | 🟡 | **🟡 partido** | 🟡 | No — 4ª consecutiva · landing v3.3 · deudas de doc cerradas · scorecard v0.1 · **la apuesta cambia de blanco: el ICP de Fase A se redefine** (doc 11 en curso · perfil 2-3 · 1-2 sucursales · early adopters) · gate (b) V1 ✅ · legal sin cambio |
 | 7–13 sep | 0 | 1 *(= Miguel · contra el ICP de Fase A)* | 0 (10ª) | **0 → 0** (nada enviado · Juanjo y Algira siguen sin ver el de LinkedIn, 2ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 5ª consecutiva · **landing v4 + `/demo` v0.2 EN VIVO** (regla del deploy: la narrativa describe, las instrucciones piden solo lo que corre) · **ICP de Fase A v0.1 cerrado** + edición de campo · guión v0.6 · mensajes v0.2 (ask #1 = 5 facturas) · Compras 40.1–40.6 · gate (b) V1 ✅ · legal sin cambio |
+| 14–20 sep | 0 | 1 | 0 (11ª) | **0 → 0 → 0** (nada enviado — el #9 adjunta el ejemplo y el ejemplo no existió · Juanjo y Algira siguen sin ver el de LinkedIn, 3ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 6ª consecutiva · **el kit de venta entero** (doc 12 v0.1 · script · flyer SF · kit de bienvenida · tarjeta impresa · mensajes v0.3 · canon con 5 desviaciones) · **IMPI ® otorgado** · diagnóstico v2 pág. 1 · producto sin avance · gate (b) V1 ✅ · legal: ® + régimen fiscal en curso |
 
 *La columna **N ICP Fase A** se llamaba *N beachhead* hasta el 8-sep. Los valores históricos no cambian pero **cambia lo que significa el 1**: hasta el 31 ago–6 sep, 1 = Carlos, contra el beachhead anterior; desde el 7-13 sep, 1 = Miguel, contra el ICP de hipótesis de la Fase A (`11` §2.3). Las filas anteriores conservan su lectura.*
 
 *H5 se lee 🟡 partido desde el 31 ago–6 sep para alinear la serie con §1.2 (decisión #5); las filas anteriores conservan el 🟢 del referido tibio (3-9 ago), que fue su lectura honesta en su momento.*
 
-**Lo que la serie dice de un vistazo:** 10 semanas · 2 sesiones con operador · 1 en el N · perfil ③ nunca tocado · **8 semanas sin movimiento, 5 consecutivas** · la entrada ya se mide (decisión #4): **tres filas seguidas con dato, y las tres en cero**.
+**Lo que la serie dice de un vistazo:** 11 semanas · 2 sesiones con operador · 1 en el N · perfil ③ nunca tocado · **9 semanas sin movimiento, 6 consecutivas** · la entrada ya se mide (decisión #4): **cuatro filas seguidas con dato, y las cuatro en cero** — la última porque el mensaje dependía de un adjunto que no existió.
 
 ### 2.2 El embudo de ventas — *¿dónde se atora la gente?* `[desde 12-proceso-de-ventas §6 · v0.5]`
 
 **Qué cuenta cada columna:** los nueve conteos de `12` §6.2, en el orden del pipeline. Cada celda es **lo que pasó esa semana**; la última fila es **el acumulado desde el 14-sep**. **Conteos, no porcentajes** (`12` §6.3: con cinco lugares y diez mensajes, una tasa es ruido — lo que informa es en qué columna se para la gente). Una persona está en una sola etapa y avanza solo con evidencia: un *sí* sin precio dicho se queda en ④, no pasa a ⑥ · el *"va"* no es pago: ⑥ ≠ ⑦.
 
-**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
+**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep · **no se cumplió: 0 · 0**) · **semana 21–27 sep → las mismas** (retro 20-sep) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
 
 | Semana | ① Contactados (env → vistos → resp) | ③ Sesiones (agend → hechas) | ④ Discovery → Pitch | ⑤ Ofertas dichas | ⑥ Síes | ⑦ Pagados | ⑧ Diagnósticos entregados | ⑨ Activos al mes 2 | de ellos, perfil ③ |
 |---|---|---|---|---|---|---|---|---|---|
 | *antes del 14-sep (10 semanas · contexto, no acumula)* | *≥ 9 registrados → s/r → 1 (Miguel) · Ola 1 s/r* | *2 → 2 (Carlos 14-jul · Miguel 12-ago) — sesiones de validación, no de venta* | *0 — no había proceso* | *0 — el precio nunca se dijo* | *0* | *0* | *0* | *0* | *0* |
-| 14–20 sep | | | | | | | | | |
+| 14–20 sep | **0 → 0 → 0** — el #9 no salió: dependía del PDF de ejemplo | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **Σ desde el 14-sep** | **0 → 0 → 0** | **0 → 0** | **0** | **0** | **0** | **0** | **0** | **0** | **0** |
 
 *② Respondieron es la tercera cifra de ①; ⑧ y ⑨ arrancan vacías por diseño (`12` §6.2). Los días entre etapas se anotan en Notion, no aquí.*
 
-**Lo que el embudo dice de un vistazo:** arranca el 14-sep con el proceso; todavía sin fila cerrada.
+**Lo que el embudo dice de un vistazo:** primera fila cerrada, en cero. Nadie se atoró en una etapa: nadie entró — el mensaje no salió porque el adjunto (el PDF de ejemplo) no existió. La meta se repite para el 21–27.
 
 ---
 
