@@ -1,0 +1,78 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Bloque · cabecera e índice</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--mint2:#E4F2EE;--peach:#F4DED0;--fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:7.5in 4.2in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);font-size:9.2pt;line-height:1.4;padding:.1in;display:flex;flex-direction:column;gap:.13in;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .row{display:flex;justify-content:space-between;align-items:flex-start;gap:.2in}
+  .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  h1{font-family:var(--fd);font-weight:700;font-size:22pt;line-height:1.05;letter-spacing:-.02em}
+  .sub{color:var(--t7);font-size:8.6pt}
+  .ejemplo{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--ch);background:var(--peach);border-radius:99px;padding:.02in .1in;white-space:nowrap}
+  .when{font-size:8.2pt;color:var(--t7);margin-top:.07in}
+  .when b{font-family:var(--fd);font-weight:600;color:var(--ch)}
+  .src{margin-top:.05in}
+  .src .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7);margin-right:.06in}
+  .chips{display:inline-flex;flex-wrap:wrap;gap:.05in;vertical-align:middle}
+  .chip{font-size:7.6pt;border:1px solid var(--g1);border-radius:99px;padding:.02in .1in;background:#fff;color:var(--t7)}
+  .chip b{color:var(--ch);font-weight:600}
+  .box{background:#fff;border:1px solid var(--g1);border-radius:.09in;padding:.13in .15in}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:.12in}
+  h2{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:.07in}
+  .big{font-family:var(--fd);font-weight:700;font-size:38pt;line-height:1;letter-spacing:-.03em}
+  .big small{font-size:10pt;font-weight:500;color:var(--t7);letter-spacing:0;margin-left:.04in}
+  .bar{height:.06in;background:var(--off2);border-radius:99px;overflow:hidden;margin:.03in 0 .02in}
+  .bar i{display:block;height:100%;background:var(--ac);border-radius:99px}
+  .bar.info i{background:var(--g1)}
+  .r{display:flex;justify-content:space-between;align-items:baseline;gap:.08in}
+  .r b{font-family:var(--fd);font-weight:600}
+  .why{font-size:7.4pt;color:var(--t7)}
+  .pill{font-family:var(--fd);font-weight:600;font-size:6.4pt;border-radius:99px;padding:.012in .07in;white-space:nowrap;background:var(--off2);color:var(--t7);margin-left:.05in;vertical-align:middle}
+  .mueve{margin-top:.08in;padding-top:.08in;border-top:1px dashed var(--g1)}
+  .mueve .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.02in}
+  .mueve p{font-size:8.6pt;line-height:1.35}
+  .mueve p b{font-family:var(--fd);font-weight:600}
+  .comp .r{margin-top:.06in}
+  .comp .why{margin-bottom:.01in}
+  .decl{font-size:7.4pt;color:var(--t7);margin-top:.07in;padding-top:.06in;border-top:1px solid var(--off2);line-height:1.35}
+  .decl b{font-family:var(--fd);font-weight:600;color:var(--ch)} .decl .r{font-size:8.2pt;color:var(--ch)}
+  .tag{font-family:var(--fd);font-weight:600;font-size:6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--t7);background:var(--off2);border-radius:99px;padding:.01in .06in;margin-left:.04in;vertical-align:middle}
+</style></head><body>
+
+<div class="g2">
+  <div class="box">
+    <h2>Tu índice de estandarización, hoy</h2>
+    <div class="big">46<small>de 100</small></div>
+    <p class="why" style="margin-top:.05in">El sistema de tu cocina: promedio de Recetas e Inventario.</p>
+    <div class="comp">
+      <div class="r"><span>Recetas</span><b>71%</b></div><div class="bar"><i style="width:71%"></i></div>
+      <p class="why">48 recetas · procedimiento 100% · cantidades 92% · porciones 60%</p>
+      <div class="r"><span>Inventario</span><b>52%</b></div><div class="bar"><i style="width:52%"></i></div>
+      <p class="why">86 insumos · con unidad 83% · con presentación de compra 44%</p>
+      <div class="r"><span>Normalización<span class="pill">informa · no califica</span></span><b style="color:var(--t7)">15%</b></div><div class="bar info"><i style="width:15%"></i></div>
+      <p class="why">11 unidades sin equivalencia · 9 ingredientes medidos distinto</p>
+    </div>
+    <div class="mueve"><span class="k">Qué lo sube más rápido</span><p><b>Porciones en 19 recetas</b> y <b>presentación de compra en 48 insumos</b> → se recalcula a <b>~70</b>.</p></div>
+  </div>
+  <div class="box">
+    <h2>Qué tanto se puede enseñar sin una persona clave, hoy</h2>
+    <div class="big">29<small>de 100</small></div>
+    <p class="why" style="margin-top:.05in">El sistema de tu gente: promedio de procesos escritos y recetas que alguien nuevo puede ejecutar igual.</p>
+    <div class="comp">
+      <div class="r"><span>Procesos clave escritos</span><b>13%</b></div><div class="bar"><i style="width:13%"></i></div>
+      <p class="why">1 de 8: apertura y cierre. Los otros 7 se ejecutan de memoria</p>
+      <div class="r"><span>Recetas que alguien nuevo ejecuta igual</span><b>44%</b></div><div class="bar"><i style="width:44%"></i></div>
+      <p class="why">21 de 48: con porción y con unidades que tienen equivalencia</p>
+    </div>
+    <div class="decl">
+      <div class="r" style="margin-bottom:.03in"><span class="k" style="font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)">Tu equipo</span><span class="tag" style="margin:0">declarado por ti</span></div>
+      <div class="r"><span>Personas</span><b>14 · cocina 8 · piso 4 · otros 2</b></div>
+      <div class="r" style="margin-top:.03in"><span>Trabajan con procesos no escritos</span><b>12 de 14</b></div>
+      <div class="r" style="margin-top:.03in"><span>Rotación en seis meses</span><b>salieron 5 · entraron 4</b></div>
+    </div>
+    <div class="mueve"><span class="k">Qué lo sube más rápido</span><p><b>Escribir los 4 procesos de cocina y caja</b> que hoy van de memoria → se recalcula a <b>~55</b>.</p></div>
+  </div>
+</div>
+</body></html>

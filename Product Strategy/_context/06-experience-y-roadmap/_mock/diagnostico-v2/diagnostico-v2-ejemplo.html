@@ -1,0 +1,603 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Diagnóstico v2 · ejemplo</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--mint2:#E4F2EE;--peach:#F4DED0;--peach2:#FBF0E9;
+        --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:8.5in 11in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);font-size:9.2pt;line-height:1.4;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:8.5in;height:11in;padding:.5in .6in .55in;position:relative;break-after:page;display:flex;flex-direction:column;gap:.13in}
+  .page:last-child{break-after:auto}
+  .hdr{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--g1);padding-bottom:.08in;margin-bottom:.02in}
+  .hdr .l{display:flex;align-items:center;gap:.08in;font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7)}
+  .hdr .l svg{height:.2in;width:auto}
+  .hdr .l .hlogo{height:.21in;width:auto;margin-right:.04in}
+  .hdr .r{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+  .ftr{position:absolute;left:.6in;right:.6in;bottom:.3in;border-top:1px solid var(--g1);padding-top:.06in;display:flex;justify-content:space-between;font-size:7pt;color:var(--t7)}
+  .ejemplo{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--ch);background:var(--peach);border-radius:99px;padding:.02in .1in}
+  h1{font-family:var(--fd);font-weight:700;font-size:22pt;line-height:1.05;letter-spacing:-.02em}
+  .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.2pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
+  h2{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:.07in}
+  .sub{color:var(--t7);font-size:8.6pt}
+  .chips{display:flex;flex-wrap:wrap;gap:.05in;margin-top:.06in}
+  .chip{font-size:7.6pt;border:1px solid var(--g1);border-radius:99px;padding:.02in .1in;background:#fff;color:var(--t7)}
+  .chip b{color:var(--ch);font-weight:600}
+  .box{background:#fff;border:1px solid var(--g1);border-radius:.09in;padding:.13in .15in}
+  .g2{display:grid;grid-template-columns:1fr 1fr;gap:.12in}
+  .g3{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:.12in}
+  .big{font-family:var(--fd);font-weight:700;font-size:38pt;line-height:1;letter-spacing:-.03em}
+  .big small{font-size:10pt;font-weight:500;color:var(--t7);letter-spacing:0;margin-left:.04in}
+  .bar{height:.06in;background:var(--off2);border-radius:99px;overflow:hidden;margin:.03in 0 .02in}
+  .bar i{display:block;height:100%;background:var(--ac);border-radius:99px}
+  .row{display:flex;justify-content:space-between;align-items:baseline;gap:.08in}
+  .row b{font-family:var(--fd);font-weight:600}
+  .pill{font-family:var(--fd);font-weight:600;font-size:6.8pt;border-radius:99px;padding:.015in .08in;white-space:nowrap}
+  .ok{background:var(--mint2);color:var(--ac)}
+  .up{background:var(--peach2);color:#8A4A2E}
+  .chk{background:var(--off2);color:var(--t7)}
+  .kpi{display:grid;grid-template-columns:1fr 1fr;gap:.06in .2in}
+  .kpi .k{display:flex;justify-content:space-between;align-items:baseline;gap:.06in}
+  .kpi .k .n{font-family:var(--fd);font-weight:700;font-size:11pt}
+  .kpi .k .lbl{font-weight:500}
+  .kpi .rng{position:relative;height:.055in;background:var(--off2);border-radius:99px;margin:.03in 0 .015in}
+  .kpi .rng i{position:absolute;top:0;bottom:0;background:var(--mint);border-radius:99px}
+  .kpi .rng s{position:absolute;top:-.02in;width:2px;height:.095in;background:var(--ch);border-radius:1px}
+  .kpi .why{font-size:7.4pt;color:var(--t7);line-height:1.3}
+  .money{display:grid;grid-template-columns:auto 1fr;gap:.04in .18in;align-items:baseline}
+  .money .m{font-family:var(--fd);font-weight:700;font-size:20pt;letter-spacing:-.02em;line-height:1}
+  .money .m small{font-size:8pt;font-weight:500;color:var(--t7);letter-spacing:0}
+  .risk{display:grid;grid-template-columns:1fr 1fr;gap:.08in .14in}
+  .risk div{padding-left:.1in;border-left:2px solid var(--peach);font-size:8.6pt;line-height:1.35}
+  .risk div b{font-family:var(--fd);font-weight:600;display:block;margin-bottom:.01in}
+  .quote{border-left:3px solid var(--ac);padding:.1in .15in;background:#fff;border-radius:0 .09in .09in 0;font-family:var(--fd);font-weight:500;font-size:10.2pt;line-height:1.35}
+  .area{display:grid;grid-template-columns:1.15in 1fr;gap:.12in;padding:.11in 0;border-top:1px solid var(--g1)}
+  .area:first-of-type{border-top:0;padding-top:0}
+  .area .t{font-family:var(--fd);font-weight:600;font-size:9.4pt;line-height:1.2}
+  .area .t small{display:block;font-family:var(--fb);font-weight:400;font-size:7.4pt;color:var(--t7);margin-top:.03in}
+  .area .b{display:grid;grid-template-columns:1fr 1fr;gap:.06in .16in}
+  .area .b p{font-size:8.5pt;line-height:1.35}
+  .area .b p b{font-family:var(--fd);font-weight:600;color:var(--ac);font-size:6.8pt;letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:.015in}
+  .area .full{grid-column:1/-1}
+  table{width:100%;border-collapse:collapse;font-size:8.2pt}
+  th{font-family:var(--fd);font-weight:600;font-size:6.6pt;letter-spacing:.1em;text-transform:uppercase;color:var(--t7);text-align:left;padding:.03in .06in;border-bottom:1px solid var(--g1)}
+  td{padding:.035in .06in;border-bottom:1px solid var(--off2);vertical-align:top}
+  td.n{font-family:var(--fd);font-weight:600;text-align:right;white-space:nowrap}
+  .step{display:grid;grid-template-columns:.26in 1fr 1.55in;gap:.1in;padding:.085in 0;border-bottom:1px solid var(--off2);align-items:start}
+  .step .no{width:.24in;height:.24in;border-radius:50%;background:var(--mint2);color:var(--ac);font-family:var(--fd);font-weight:700;font-size:8.5pt;display:grid;place-items:center}
+  .step .no.dot{background:var(--off2);color:var(--g3)}
+  .step .what{font-family:var(--fd);font-weight:600;font-size:9.2pt;line-height:1.25}
+  .step .what small{display:block;font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);margin-top:.02in}
+  .step .where{font-size:7.8pt;color:var(--t7);padding-top:.02in}
+  .step .where b{font-family:var(--fd);font-weight:600;color:var(--ch);display:block}
+  .next{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.1in}
+  .next .c{background:var(--off2);border-radius:.07in;padding:.09in .11in;font-size:8.2pt;line-height:1.3}
+  .next .c b{font-family:var(--fd);font-weight:700;font-size:13pt;display:block;letter-spacing:-.01em}
+  .next .c b small{font-size:8pt;font-weight:500;color:var(--t7);letter-spacing:0}
+  ul.find{list-style:none;padding:0;display:flex;flex-direction:column;gap:.05in}
+  ul.find li{padding-left:.14in;position:relative;font-size:8.4pt;line-height:1.35}
+  ul.find li:before{content:"";position:absolute;left:0;top:.075in;width:.05in;height:.05in;border-radius:50%;background:var(--mint)}
+  .files{display:grid;grid-template-columns:repeat(4,1fr);gap:.1in;font-size:8pt}
+  .files b{font-family:var(--fd);font-weight:600;display:block;margin-bottom:.02in}
+  .files i{color:var(--t7)}
+  .legal{font-size:7.6pt;color:var(--t7);line-height:1.4}
+  .foot1{margin-top:auto}
+
+  .ejemplo{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--ch);background:var(--peach);border-radius:99px;padding:.02in .1in;white-space:nowrap}
+  .when{font-size:8.2pt;color:var(--t7);margin-top:.07in}
+  .when b{font-family:var(--fd);font-weight:600;color:var(--ch)}
+  .src{margin-top:.05in}
+  .src .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7);margin-right:.06in}
+  .bar.info i{background:var(--g1)}
+  .r{display:flex;justify-content:space-between;align-items:baseline;gap:.08in}
+  .r b{font-family:var(--fd);font-weight:600}
+  .why{font-size:7.4pt;color:var(--t7)}
+  .mueve{margin-top:.08in;padding-top:.08in;border-top:1px dashed var(--g1)}
+  .mueve .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.02in}
+  .mueve p{font-size:8.6pt;line-height:1.35}
+  .mueve p b{font-family:var(--fd);font-weight:600}
+
+  .ejemplo{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.08em;text-transform:uppercase;color:var(--ch);background:var(--peach);border-radius:99px;padding:.02in .1in;white-space:nowrap}
+  .when{font-size:8.2pt;color:var(--t7);margin-top:.07in}
+  .when b{font-family:var(--fd);font-weight:600;color:var(--ch)}
+  .src{margin-top:.05in}
+  .src .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7);margin-right:.06in}
+  .bar.info i{background:var(--g1)}
+  .r{display:flex;justify-content:space-between;align-items:baseline;gap:.08in}
+  .r b{font-family:var(--fd);font-weight:600}
+  .why{font-size:7.4pt;color:var(--t7)}
+  .mueve{margin-top:.08in;padding-top:.08in;border-top:1px dashed var(--g1)}
+  .mueve .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.02in}
+  .mueve p{font-size:8.6pt;line-height:1.35}
+  .mueve p b{font-family:var(--fd);font-weight:600}
+  .comp .r{margin-top:.06in}
+  .comp .why{margin-bottom:.01in}
+  .decl{font-size:7.4pt;color:var(--t7);margin-top:.07in;padding-top:.06in;border-top:1px solid var(--off2);line-height:1.35}
+  .decl b{font-family:var(--fd);font-weight:600;color:var(--ch)} .decl .r{font-size:8.2pt;color:var(--ch)}
+  .tag{font-family:var(--fd);font-weight:600;font-size:6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--t7);background:var(--off2);border-radius:99px;padding:.01in .06in;margin-left:.04in;vertical-align:middle}
+
+  h2 span{color:var(--t7);letter-spacing:0;text-transform:none;font-weight:400;font-family:var(--fb);font-size:8.2pt}
+  .wrap{display:grid;grid-template-columns:2.55in 1fr;gap:.18in}
+  /* hero */
+  .hero{border-right:1px solid var(--g1);padding-right:.18in}
+  .hero .lbl{font-family:var(--fd);font-weight:600;font-size:9.4pt}
+  .hero .n{font-family:var(--fd);font-weight:700;font-size:30pt;letter-spacing:-.03em;line-height:1;margin:.03in 0 .06in}
+  .hero .n .pill{font-size:7.2pt;letter-spacing:0;font-weight:600}
+  .hero .src{font-size:7.4pt;color:var(--t7)}
+  .scale{position:relative;height:.42in;margin:.08in 0 .02in}
+  .scale .track{position:absolute;left:0;right:0;top:.2in;height:.06in;background:var(--off2);border-radius:99px}
+  .scale .band{position:absolute;top:.2in;height:.06in;background:var(--mint);border-radius:99px}
+  .scale .end{position:absolute;top:.29in;font-size:6.8pt;color:var(--t7);transform:translateX(-50%)}
+  .scale .tick{position:absolute;top:.165in;width:2px;height:.13in;background:var(--ch);border-radius:1px;transform:translateX(-50%)}
+  .scale .val{position:absolute;top:0;font-family:var(--fd);font-weight:700;font-size:8pt;transform:translateX(-50%);white-space:nowrap}
+  .trend{display:grid;grid-template-columns:auto 1fr;gap:.12in;align-items:center;margin-top:.1in;padding-top:.09in;border-top:1px dashed var(--g1)}
+  .trend svg{width:1.1in;height:.5in;display:block;overflow:visible}
+  .trend .t{font-size:7.8pt;line-height:1.35;color:var(--t7)}
+  .trend .t b{font-family:var(--fd);font-weight:600;color:var(--ch)}
+  /* cells */
+  .cells{display:grid;grid-template-columns:1fr 1fr;gap:.12in .2in;align-content:start}
+  .cell .k{display:flex;justify-content:space-between;align-items:baseline;gap:.06in}
+  .cell .k .lbl{font-weight:500;font-size:8.8pt}
+  .cell .k .n{font-family:var(--fd);font-weight:700;font-size:11.5pt;letter-spacing:-.01em}
+  .cell .scale{height:.34in;margin:.03in 0 0}
+  .cell .scale .track,.cell .scale .band{top:.13in;height:.05in}
+  .cell .scale .tick{top:.105in;height:.1in}
+  .cell .scale .end{top:.21in}
+  .cell .scale .val{display:none}
+  .cell .src{font-size:7.2pt;color:var(--t7);line-height:1.3}
+  .money{grid-column:1/-1;margin-top:.06in;padding-top:.11in;border-top:1px dashed var(--g1);display:grid;grid-template-columns:1fr 1fr 1fr;gap:.14in}
+  .money .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.03in}
+  .money .m{font-family:var(--fd);font-weight:700;font-size:15.5pt;letter-spacing:-.02em;line-height:1}
+  .money .m small{font-size:7.6pt;font-weight:500;color:var(--t7);letter-spacing:0;margin-left:.03in}
+  .money .why{margin-top:.03in;font-size:7.4pt;color:var(--t7);line-height:1.3}
+  .money .conteo{grid-column:1/-1;font-size:7.6pt;color:var(--t7);line-height:1.3;margin-top:.02in}
+  .money .conteo b{color:var(--ch);font-family:var(--fd);font-weight:600}
+  .page1 .big{font-size:28pt}
+  .page1 .box h2{margin-bottom:.05in}
+  .page1 .comp .why,.page1 .why{font-size:7pt;line-height:1.25}
+  .page1 .decl{margin-top:.05in;padding-top:.04in}
+  .page1 .decl .r{font-size:7.8pt}
+  .page1 .mueve{margin-top:.05in;padding-top:.05in}
+  .page1 .mueve p{font-size:8.2pt}
+  .page1 .kpi .src,.page1 .cell .src{font-size:6.9pt}
+  .page1 .cell .scale{height:.3in}
+  .page1 .money{padding-top:.08in}
+  .page1 .money .why{font-size:6.9pt}
+  .page1 .trend{margin-top:.06in;padding-top:.06in}
+  .page1 .trend .t{font-size:7.4pt}
+  .page1 .hero .src{font-size:7pt}
+  .page1 .chips{margin-top:.03in}
+  .page1 h1{font-size:20pt}
+  .page1 .hero .n{font-size:26pt;margin:.02in 0 .04in}
+  .page1 .money .m{font-size:14pt}
+  .page1 .box{padding:.11in .14in}
+  .page1 .comp .r{margin-top:.045in}
+  .page1 .scale{height:.38in}
+  .page1 .trend svg{width:1in;height:.46in}
+  .page1 .wrap{grid-template-columns:2.45in 1fr}
+  .carga{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.14in}
+  .carga div{padding-left:.1in;border-left:2px solid var(--peach);font-size:8.4pt;line-height:1.33}
+  .carga div b{font-family:var(--fd);font-weight:600;display:block;margin-bottom:.01in}
+  .page1 .quote{font-size:9.6pt;padding:.09in .14in}
+  .page1 .when{margin-top:.05in}
+  .page1 .src{margin-top:.04in}
+  .page1{gap:.09in;padding-top:.42in;padding-bottom:.5in}
+  .page1 .ftr{bottom:.24in}
+  .page1 .big{font-size:26pt}
+  .page1 .hero .n{font-size:24pt}
+  .page1 .quote{font-size:9pt;line-height:1.3;padding:.08in .13in}
+  .espejo{border-left:3px solid var(--ac);background:#fff;border-radius:0 .09in .09in 0;padding:.12in .16in;display:grid;grid-template-columns:1.05fr 1fr;gap:.06in .22in}
+  .espejo .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.03in}
+  .espejo .q{font-family:var(--fd);font-weight:500;font-size:10.4pt;line-height:1.35;color:var(--ch)}
+  .espejo .q .tag{font-family:var(--fd);font-weight:600;font-size:6pt;letter-spacing:.08em;text-transform:uppercase;color:var(--t7);background:var(--off2);border-radius:99px;padding:.01in .06in;margin-left:.06in;vertical-align:middle}
+  .espejo ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:.035in}
+  .espejo li{font-size:8.4pt;line-height:1.35;padding-left:.13in;position:relative}
+  .espejo li:before{content:"";position:absolute;left:0;top:.07in;width:.05in;height:.05in;border-radius:50%;background:var(--mint)}
+  .espejo .por{grid-column:1/-1;margin-top:.04in;padding-top:.08in;border-top:1px dashed var(--g1);display:grid;grid-template-columns:1.05fr 1fr;gap:.22in}
+  .espejo .por p{font-size:8.6pt;line-height:1.38}
+  .espejo .por p b{font-family:var(--fd);font-weight:600}
+  .page2{gap:.08in;padding-top:.4in}
+  .page2 .box{padding:.1in .14in .06in}
+  .page2 .sub{font-size:8.2pt}
+  .page2 .area{padding:.08in 0;gap:.1in}
+  .page2 .area .b{gap:.04in .14in}
+  .page2 .area .b p{font-size:8.1pt;line-height:1.32}
+  .page2 .carga div{font-size:8pt;line-height:1.3}
+  .page2 table{font-size:7.9pt} .page2 td{padding:.028in .06in}
+  .page2 h1{font-size:14pt}
+  .page2 .espejo{padding:.1in .14in;gap:.04in .2in}
+  .page2 .espejo .q{font-size:9.6pt;line-height:1.3}
+  .page2 .espejo li{font-size:8pt;line-height:1.3}
+  .page2 .espejo .por{margin-top:.02in;padding-top:.06in}
+  .page2 .espejo .por p{font-size:8.2pt;line-height:1.33}
+  .page2 .ftr{bottom:.24in}
+  .page3{gap:.09in;padding-top:.4in}
+  .page3 .ftr{bottom:.24in}
+  .page3 .espejo{padding:.1in .14in;gap:.04in .2in}
+  .page3 .espejo .q{font-size:9.6pt;line-height:1.3}
+  .page3 .espejo li{font-size:8pt;line-height:1.3}
+  .page3 .step{padding:.045in 0;grid-template-columns:.24in 1fr 1.45in;gap:.08in}
+  .page3 .step .what{font-size:8.6pt}
+  .page3 .step .what small{font-size:7.6pt}
+  .page3 .step .where{font-size:7.3pt}
+  .page3 .step .no{width:.22in;height:.22in;font-size:8pt}
+  .page3 .box{padding:.09in .14in .05in}
+  .mapa{display:grid;grid-template-columns:repeat(5,1fr);gap:.08in}
+  .mapa .c{background:var(--off2);border-radius:.07in;padding:.08in .09in;font-size:7.4pt;line-height:1.3}
+  .mapa .c h4{font-family:var(--fd);font-weight:600;font-size:8.2pt;line-height:1.2;margin-bottom:.04in}
+  .mapa .c ul{list-style:none;padding:0;display:flex;flex-direction:column;gap:.025in}
+  .mapa .c li{padding-left:.1in;position:relative;color:var(--ch)}
+  .mapa .c li:before{content:"";position:absolute;left:0;top:.065in;width:.045in;height:.045in;border-radius:50%;background:var(--ac)}
+  .mapa .c li.soon{color:var(--t7)} .mapa .c li.soon:before{background:var(--g1)}
+  .mapa .c .st{display:inline-block;font-family:var(--fd);font-weight:600;font-size:5.8pt;letter-spacing:.08em;text-transform:uppercase;border-radius:99px;padding:.008in .05in;margin-bottom:.04in}
+  .mapa .c .st.hoy{background:var(--mint2);color:var(--ac)} .mapa .c .st.soon{background:#fff;color:var(--t7);border:1px solid var(--g1)}
+  .mapa .c .p{margin-top:.04in;font-size:6.8pt;color:var(--t7)}
+  .mapa .c .p b{font-family:var(--fd);font-weight:600;color:var(--ac)}
+  .page3 .next{gap:.08in}
+  .page3 .next .c{padding:.07in .09in;font-size:7.6pt}
+  .page3 .next .c b{font-size:11.5pt}
+  .page3 .quote{font-size:9pt;line-height:1.3;padding:.08in .13in}
+  .page3 .lbl{font-family:var(--fd);font-weight:600;font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7);padding:.05in 0 .02in;border-bottom:1px solid var(--off2)}
+  .page3 .step .no.rut{background:var(--peach);color:#8A4A2E;font-size:7pt}
+  .page4{gap:.08in;padding-top:.4in;padding-bottom:.5in}
+  .page4 .ftr{bottom:.24in}
+  .page4 .box{padding:.09in .14in}
+  .page4 .legal{font-size:7.2pt;line-height:1.35}
+  .page4 ul.find li{font-size:8pt;line-height:1.3}
+  .page4 td{padding:.025in .06in}
+</style></head><body>
+
+<!-- ═══════════ PÁGINA 1 · Tu operación en una página ═══════════ -->
+<section class="page page1">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg></div><div class="r">Tu operación en una página</div></div>
+  <div class="row">
+  <div>
+    <div class="eyebrow">Diagnóstico de tu operación</div>
+    <h1>Marea Baja</h1>
+    <div class="sub">Mariscos · casual · Zona Río, Tijuana · 1 sucursal</div>
+    <div class="when">Diagnóstico al <b>17 de septiembre de 2026</b> · describe tu operación a esa fecha; el mes que viene se compara contra este.</div>
+    <div class="src"><span class="k">Lo que leímos</span><span class="chips">
+      <span class="chip"><b>Recetario</b> 48 recetas</span><span class="chip"><b>Menú</b> 52 platillos</span><span class="chip"><b>Inventario</b> 86 insumos</span>
+      <span class="chip"><b>Costos desglosados</b> jul–ago</span><span class="chip"><b>Estado de resultados</b> jun–ago</span><span class="chip"><b>Operación escrita</b> 1 documento</span></span>
+    </div>
+  </div>
+  <span class="ejemplo">Ejemplo · datos ficticios</span>
+</div>
+  <div class="g2">
+  <div class="box">
+    <h2>Tu índice de estandarización, hoy</h2>
+    <div class="big">46<small>de 100</small></div>
+    <p class="why" style="margin-top:.05in">El sistema de tu cocina: promedio de Recetas e Inventario.</p>
+    <div class="comp">
+      <div class="r"><span>Recetas</span><b>71%</b></div><div class="bar"><i style="width:71%"></i></div>
+      <p class="why">48 recetas · procedimiento 100% · cantidades 92% · porciones 60%</p>
+      <div class="r"><span>Inventario</span><b>52%</b></div><div class="bar"><i style="width:52%"></i></div>
+      <p class="why">86 insumos · con unidad 83% · con presentación de compra 44%</p>
+      <div class="r"><span>Normalización<span class="pill">informa · no califica</span></span><b style="color:var(--t7)">15%</b></div><div class="bar info"><i style="width:15%"></i></div>
+      <p class="why">11 unidades sin equivalencia · 9 ingredientes medidos distinto</p>
+    </div>
+    <div class="mueve"><span class="k">Qué lo sube más rápido</span><p><b>Porciones en 19 recetas</b> y <b>presentación de compra en 48 insumos</b> → se recalcula a <b>~70</b>.</p></div>
+  </div>
+  <div class="box">
+    <h2>Qué tanto se puede enseñar sin una persona clave, hoy</h2>
+    <div class="big">29<small>de 100</small></div>
+    <p class="why" style="margin-top:.05in">El sistema de tu gente: promedio de procesos escritos y recetas que alguien nuevo puede ejecutar igual.</p>
+    <div class="comp">
+      <div class="r"><span>Procesos clave escritos</span><b>13%</b></div><div class="bar"><i style="width:13%"></i></div>
+      <p class="why">1 de 8: apertura y cierre. Los otros 7 se ejecutan de memoria</p>
+      <div class="r"><span>Recetas que alguien nuevo ejecuta igual</span><b>44%</b></div><div class="bar"><i style="width:44%"></i></div>
+      <p class="why">21 de 48: con porción y con unidades que tienen equivalencia</p>
+    </div>
+    <div class="decl">
+      <div class="r" style="margin-bottom:.03in"><span class="k" style="font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)">Tu equipo</span><span class="tag" style="margin:0">declarado por ti</span></div>
+      <div class="r"><span>Personas</span><b>14 · cocina 8 · piso 4 · otros 2</b></div>
+      <div class="r" style="margin-top:.03in"><span>Trabajan con procesos no escritos</span><b>12 de 14</b></div>
+      <div class="r" style="margin-top:.03in"><span>Rotación en seis meses</span><b>salieron 5 · entraron 4</b></div>
+    </div>
+    <div class="mueve"><span class="k">Qué lo sube más rápido</span><p><b>Escribir los 4 procesos de cocina y caja</b> que hoy van de memoria → se recalcula a <b>~55</b>.</p></div>
+  </div>
+</div>
+  <div class="box">
+  <h2>Tus números <span>· contra el rango de tu segmento. Un rango es una señal, no un veredicto. Cada cifra dice de dónde sale.</span></h2>
+  <div class="wrap">
+    <div class="hero">
+      <div class="lbl">Food cost</div>
+      <div class="n">34.6%</div>
+      <div style="margin:0 0 .06in"><span class="pill up" style="font-size:7.2pt;letter-spacing:0">1.6 puntos arriba del techo</span></div>
+      <div class="src">Tuyo · estado de resultados de agosto · rango de tu segmento 28–33%</div>
+      <div class="scale">
+        <div class="track"></div>
+        <div class="band" style="left:28%;width:33%"></div>
+        <span class="end" style="left:28%">28%</span><span class="end" style="left:61%">33%</span>
+        <span class="tick" style="left:72%"></span><span class="val" style="left:72%">34.6%</span>
+      </div>
+      <div class="trend">
+        <svg viewBox="0 0 110 50">
+          <line x1="8" y1="42" x2="102" y2="42" stroke="#D1DBD7" stroke-width="1"/>
+          <polyline points="12,36 55,20 98,10" fill="none" stroke="#2E6E62" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="36" r="3" fill="#2E6E62"/><circle cx="55" cy="20" r="3" fill="#2E6E62"/><circle cx="98" cy="10" r="3.4" fill="#2B3738"/>
+          <text x="12" y="31" font-size="7.5" font-family="Onest" font-weight="600" text-anchor="middle" fill="#4B5E5E">31.9</text>
+          <text x="55" y="15" font-size="7.5" font-family="Onest" font-weight="600" text-anchor="middle" fill="#4B5E5E">33.8</text>
+          <text x="98" y="5" font-size="7.5" font-family="Onest" font-weight="700" text-anchor="middle" fill="#2B3738">34.6</text>
+          <text x="12" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">jun</text>
+          <text x="55" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">jul</text>
+          <text x="98" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">ago</text>
+        </svg>
+        <div class="t"><b>Subió 2.7 puntos en dos meses.</b> Las ventas se movieron menos de 3%. En tus compras, lo que más subió: <b>camarón +18% · aguacate +31% · aceite +9%</b>.</div>
+      </div>
+    </div>
+    <div class="cells">
+      <div class="cell"><div class="k"><span class="lbl">Costo de nómina</span><span><span class="n">27.8%</span> <span class="pill ok">dentro</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:25%;width:45%"></div><span class="end" style="left:25%">25%</span><span class="end" style="left:70%">35%</span><span class="tick" style="left:38%"></span></div>
+        <div class="src">Tuyo · nómina de agosto, 14 personas</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Prime cost</span><span><span class="n">62.4%</span> <span class="pill ok">dentro</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:25%;width:50%"></div><span class="end" style="left:25%">55%</span><span class="end" style="left:75%">65%</span><span class="tick" style="left:62%"></span></div>
+        <div class="src">Food cost + nómina · cerca del techo por el food cost</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Costo de ocupación</span><span><span class="n">9.1%</span> <span class="pill chk">revisa el dato</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:30%;width:50%"></div><span class="end" style="left:30%">10%</span><span class="end" style="left:80%">20%</span><span class="tick" style="left:25%"></span></div>
+        <div class="src">Por debajo. Tu renta aparece; <b>no vimos luz, agua ni gas</b>. Si están en otra línea, sube</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Margen operativo</span><span><span class="n">7.2%</span> <span class="pill up">por debajo</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:35%;width:40%"></div><span class="end" style="left:35%">8%</span><span class="end" style="left:75%">12%</span><span class="tick" style="left:27%"></span></div>
+        <div class="src">Tuyo · utilidad de operación de agosto · 0.8 puntos abajo del piso</div></div>
+      <div class="money">
+        <div><span class="k">Lo que vale un punto</span><div class="m">$4,100<small>al mes</small></div><div class="why">Un punto de food cost sobre tus ventas promedio de $410,000 (jun–ago)</div></div>
+        <div><span class="k">Lo que hoy estás arriba del techo</span><div class="m">$6,560<small>al mes</small></div><div class="why" style="margin-top:0;color:var(--ch);font-weight:500">$78,720 al año</div><div class="why">1.6 puntos × $4,100 = $6,560. Es lo que hay entre tu 34.6% y el techo del 33%.</div></div>
+        <div><span class="k">Cada $10,000 más que vendas</span><div class="m">$6,540<small>se quedan</small></div><div class="why">Después de insumos, con tu food cost de hoy. De ahí salen nómina, renta y el resto: vender más solo ayuda si esto sube.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="quote foot1">Tus recetas ya dicen qué llevan y cómo se hacen. Cuando además digan cuánto rinden y tu inventario diga cuánto cuesta cada gramo, sabrás qué platillo te deja dinero y cuál no — el día que suba el camarón, no al cierre del mes.</div>
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 1 de 4</span></div>
+</section>
+
+<!-- ═══════════ PÁGINA 2 · Lo que sale de tus documentos ═══════════ -->
+<section class="page page2">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>Diagnóstico · Marea Baja</div><div class="r">Lo que sale de tus documentos</div></div>
+
+  <div><h1 style="font-size:14pt">Lo que sale de tus documentos <span style="font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);letter-spacing:0;margin-left:.08in">· por área, solo donde hubo documento: qué hay, qué frena, qué permite</span></h1></div>
+
+  <div class="box" style="padding-top:.08in;padding-bottom:.04in">
+    <div class="area">
+      <div class="t">Recetas y menú<small>48 recetas · 52 platillos en el menú · 31 costeadas</small></div>
+      <div class="b">
+        <div class="full">
+          <p><b>Lo que dicen tus 31 recetas costeadas</b></p>
+          <div class="g2" style="gap:.08in .2in">
+            <table><tr><th>Food cost más alto</th><th style="text-align:right">%</th></tr>
+              <tr><td>Torre de mariscos</td><td class="n">47%</td></tr><tr><td>Pulpo zarandeado</td><td class="n">44%</td></tr><tr><td>Camarón roca</td><td class="n">41%</td></tr><tr><td>Aguachile negro</td><td class="n">39%</td></tr><tr><td>Tostada de atún</td><td class="n">38%</td></tr></table>
+            <table><tr><th>Food cost más bajo</th><th style="text-align:right">%</th></tr>
+              <tr><td>Sopa de mariscos</td><td class="n">18%</td></tr><tr><td>Tacos de pescado</td><td class="n">21%</td></tr><tr><td>Ceviche clásico</td><td class="n">22%</td></tr><tr><td>Empanadas de camarón</td><td class="n">23%</td></tr><tr><td>Tostada de jaiba</td><td class="n">24%</td></tr></table>
+          </div>
+          <p class="why" style="font-size:7.6pt;color:var(--t7);margin-top:.05in">Van de 18% a 47%. Cuatro de las cinco más altas llevan camarón o pulpo, los dos insumos que más subieron. Ese costeo es de julio y <strong>no se ha recalculado</strong> con los precios de agosto.</p>
+        </div>
+        <p><b>Qué hay</b>48 recetas con procedimiento · 44 con cantidades completas · 29 con porción · 31 con costo.</p>
+        <p><b>Qué frena</b>19 recetas sin porción: dicen qué llevan, no para cuántos.<br>7 platillos del menú sin receta: se venden sin saber qué dejan.<br>3 recetas que ya no están en el menú.</p>
+      </div>
+    </div>
+
+    <div class="area">
+      <div class="t">Inventario y compras<small>86 insumos · 6 familias · compras jul–ago</small></div>
+      <div class="b">
+        <p><b>Qué hay</b>71 insumos con unidad y 38 con presentación de compra. El 78% de los ingredientes de tus recetas existe en el inventario.</p>
+        <p><b>Qué frena</b>48 insumos sin presentación de compra: sabes que compras "una caja de camarón", no cuánto cuesta el gramo que va a la receta. 14 ingredientes de recetas no están en el inventario.</p>
+        <p class="full"><b>Qué permite</b>Con la presentación de compra en los 48, el costo por platillo se recalcula solo cada vez que entra una factura.</p>
+      </div>
+    </div>
+
+    <div class="area">
+      <div class="t">Costos y resultados<small>estado de resultados jun–ago · costos desglosados jul–ago</small></div>
+      <div class="b">
+        <p><b>Qué hay</b>Tres meses completos: ventas, costo de venta, nómina y renta. Compras por proveedor jul–ago.</p>
+        <p><b>Qué frena</b>Luz, agua y gas no aparecen como línea propia. Sin ellos, el costo de ocupación se ve más bajo de lo que es.</p>
+        <p class="full"><b>Qué se movió</b>Food cost 31.9% → 34.6% en dos meses. En compras: camarón +18%, aguacate +31%, aceite +9%. Las ventas se movieron menos de 3%. La subida es de insumos, no de volumen.</p>
+      </div>
+    </div>
+
+    <div class="area">
+      <div class="t">Lo que hoy depende de una persona clave<small>operación escrita · 1 documento</small></div>
+      <div class="b">
+        <p><b>Qué hay</b>Un protocolo de apertura y cierre, con la parte de higiene adentro. Está completo y se usa. Es 1 de los 8 procesos clave.</p>
+        <p><b>Qué se ejecuta de memoria</b>Recibir mercancía, almacenar y rotar, porcionar, servicio, limpieza, caja e inducción.</p>
+        <div class="full" style="margin-top:.04in">
+          <p><b>Dónde se nota</b></p>
+          <div class="carga" style="margin-top:.03in">
+            <div><b>Porcionar el camarón y el pulpo.</b> 19 recetas sin porción: rinden lo que decida quien está en la línea.</div>
+            <div><b>Recibir mercancía.</b> 48 insumos sin presentación de compra: el precio por gramo vive en la cabeza de quien recibe.</div>
+            <div><b>Enseñar a alguien nuevo.</b> 7 de 8 procesos clave van de memoria. En seis meses entraron 4 personas: cada una aprendió viendo.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="espejo">
+    <div><span class="k">Lo que nos dijiste <span class="tag" style="margin-left:.06in">declarado por ti</span></span><p class="q">"Los insumos suben cada mes y yo me entero hasta el cierre. Y si no estoy, la cocina no sale igual."</p></div>
+    <div><span class="k">Lo que vimos en tus documentos</span><ul>
+      <li>Tu food cost subió 2.7 puntos de junio a agosto; el camarón +18% y el aguacate +31%.</li>
+      <li>El camarón está en 31 de tus 48 recetas. Tu costeo es de julio: 17 recetas no tienen costo y las 31 no se han recalculado.</li>
+      <li>19 recetas sin porción y 7 de 8 procesos de memoria: la cocina sale como la saque quien esté.</li>
+    </ul></div>
+    <div class="por">
+      <div><span class="k">Por qué pasa</span><p>El precio cambia en la factura, pero el costo de cada platillo se quedó en julio. Nada conecta las dos cosas, así que la diferencia aparece donde se juntan todas: en el cierre.</p></div>
+      <div><span class="k">Qué lo cambia</span><p>Que cada receta diga cuánto rinde y cada insumo cuánto cuesta por gramo: así el costo se recalcula el día que entra la factura. <b>Por ahí empieza tu camino, en la página siguiente.</b></p></div>
+    </div>
+  </div>
+
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 2 de 4</span></div>
+</section>
+
+<!-- ═══════════ PÁGINA 3 · Tu camino, en orden ═══════════ -->
+<section class="page page3">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>Diagnóstico · Marea Baja</div><div class="r">Tu camino, en orden</div></div>
+
+  <div><h1 style="font-size:14pt">Tu camino, en orden <span style="font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);letter-spacing:0;margin-left:.08in">· primero lo que desbloquea dinero; solo se pide lo que ya corre en Zenet</span></h1></div>
+
+  <div class="espejo">
+    <div><span class="k">Lo que quieres que cambie <span class="tag" style="margin-left:.06in">declarado por ti</span></span><p class="q">"Quiero saber cuánto me deja cada platillo sin esperar al cierre, y poder irme tres días sin que la cocina cambie."</p></div>
+    <div><span class="k">Qué lo hace posible</span><ul>
+      <li><b>Cuánto te deja cada platillo, el día que sube un insumo:</b> pasos 1 y 2 hoy; el recosteo automático entra con Compras.</li>
+      <li><b>Irte tres días:</b> pasos 1 y 3 hoy hacen que las recetas salgan igual con quien sea; los procesos escritos entran con el Manual Operativo.</li>
+    </ul></div>
+  </div>
+
+  <div class="box" style="padding-top:.02in;padding-bottom:.02in">
+    <div class="lbl">Una vez · capturas</div>
+    <div class="step"><div class="no">1</div><div class="what">Porciones en las 19 recetas que no las tienen<small>Desbloquea el costo de las 17 sin costo y que el costeo se recalcule cuando suba un insumo · mueve los dos índices</small></div><div class="where"><b>Recetas</b>19 capturas · tú dices cuánto rinde, Zenet lo carga</div></div>
+    <div class="step"><div class="no">2</div><div class="what">Presentación de compra en 48 insumos<small>Desbloquea el precio por gramo de cada insumo y el recosteo con cada factura · mueve el índice de la cocina</small></div><div class="where"><b>Inventario</b>48 insumos · con la factura en la mano</div></div>
+    <div class="step"><div class="no">3</div><div class="what">Equivalencia para 11 unidades de cocina<small>"Puño", "chorrito", "taza" y 8 más, en gramos o mililitros: la receta rinde igual con quien sea · mueve el índice de la gente</small></div><div class="where"><b>Equivalencias</b>11 definiciones · una sola vez</div></div>
+    <div class="step"><div class="no">4</div><div class="what">Receta para los 7 platillos del menú que no la tienen<small>Desbloquea que el menú completo tenga costo</small></div><div class="where"><b>Recetas</b>7 recetas nuevas</div></div>
+    <div class="step"><div class="no">5</div><div class="what">Los 14 ingredientes que las recetas usan y el inventario no tiene<small>Desbloquea que el 100% de las recetas cruce con inventario</small></div><div class="where"><b>Inventario</b>14 altas</div></div>
+    <div class="step"><div class="no">6</div><div class="what">Categoría para las 48 recetas<small>Desbloquea ver el food cost por área: crudos, calientes, tostadas, bebidas</small></div><div class="where"><b>Catálogos</b>48 asignaciones</div></div>
+    <div class="step"><div class="no dot">·</div><div class="what" style="color:var(--t7);font-weight:500">Escribir los 7 procesos que hoy van de memoria<small>Se dictan y Zenet los escribe. Es lo que más sube el índice de la gente.</small></div><div class="where"><b style="color:var(--t7)">Manual Operativo · en construcción</b></div></div>
+    <div class="lbl" style="margin-top:.03in">Cada semana, cada mes · rutinas — son las que mantienen vivos los números</div>
+    <div class="step"><div class="no rut">sem</div><div class="what">Cada factura, a Compras, el día que llega<small>Desbloquea saber qué subió y cuánto ese mismo día, no al cierre; y con los pasos 1 y 2, cuánto le pega a cada platillo</small></div><div class="where"><b>Compras</b>foto o PDF · hoy</div></div>
+    <div class="step" style="border-bottom:0"><div class="no rut">mes</div><div class="what" style="color:var(--t7);font-weight:500">El estado de resultados de cada mes<small>Desbloquea tus números contra el rango cada mes, y que este diagnóstico se vuelva a correr y se compare contra hoy</small></div><div class="where"><b style="color:var(--t7)">Costos · en construcción</b>mientras, se manda a Zenet y se corre a mano</div></div>
+  </div>
+
+  <div class="box">
+    <h2>Cómo se completa en Zenet <span style="color:var(--t7);letter-spacing:0;text-transform:none;font-weight:400;font-family:var(--fb);font-size:7.8pt">· la versión completa, en construcción con los primeros Socios Fundadores. Lo que dice "hoy" ya corre; lo demás, tu operación lo moldea.</span></h2>
+    <div class="mapa">
+      <div class="c"><span class="st hoy">hoy</span><h4>Compras</h4><ul><li>Qué subió y cuánto, con cada factura</li><li>Costo por insumo, al día</li><li class="soon">Recosteo: qué platillo te deja qué</li></ul><div class="p">Aquí aterrizan los pasos <b>2</b> y <b>5</b></div></div>
+      <div class="c"><span class="st hoy">hoy</span><h4>Estandarización</h4><ul><li>Catálogos</li><li>Recetas</li><li>Inventario</li><li>Equivalencias</li><li class="soon">Protocolos</li></ul><div class="p">Aquí aterrizan los pasos <b>1, 3, 4</b> y <b>6</b></div></div>
+      <div class="c"><span class="st soon">en construcción</span><h4>Costos</h4><ul><li class="soon">Tus números contra el rango, cada mes</li><li class="soon">Qué se movió y por qué</li></ul><div class="p">Lo que hoy lees en este diagnóstico, vivo</div></div>
+      <div class="c"><span class="st soon">en construcción</span><h4>Manual Operativo</h4><ul><li class="soon">Los 8 procesos clave, escritos</li><li class="soon">Roles y accesos para tu equipo</li></ul><div class="p">Aquí aterriza el paso <b>·</b></div></div>
+      <div class="c"><span class="st soon">en construcción</span><h4>Zenet por WhatsApp</h4><ul><li class="soon">Le preguntas sobre este diagnóstico</li><li class="soon">Le mandas la factura y te dice qué tocó</li></ul><div class="p">La consulta, sin abrir la app</div></div>
+    </div>
+  </div>
+
+  <div class="quote">Lo que este documento no dice: qué platillo subir de precio, qué proveedor cambiar ni qué quitar del menú. Eso lo decides tú. Zenet te pone los números enfrente y los mantiene al día.</div>
+
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 3 de 4</span></div>
+</section>
+
+<!-- ═══════════ PÁGINA 4 · Anexo ═══════════ -->
+<section class="page page4">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>Diagnóstico · Marea Baja</div><div class="r">Anexo</div></div>
+
+  <div><h1 style="font-size:14pt">El mes que viene, y el detalle <span style="font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);letter-spacing:0;margin-left:.08in">· qué pasa con este documento después, y el anexo que respalda las páginas anteriores</span></h1></div>
+  <div class="quote" style="font-size:9.4pt">Este diagnóstico es tu línea base. El mes que viene se vuelve a correr con tus documentos nuevos y cada número de aquí —los dos índices, tu food cost, lo que vale un punto— aparece junto al nuevo, con lo que se movió. Lo que cambie será por lo que hayas capturado; lo que no, también se verá.</div>
+
+  <div><div class="eyebrow" style="margin-top:.04in">Anexo · se consulta, no se lee de corrido</div></div>
+
+  <div class="box">
+    <h2>Lo que encontramos en las unidades</h2>
+    <ul class="find">
+      <li><b>"Puño" y "puñito"</b> aparecen como dos unidades en 6 recetas. Es la misma mano; cuenta como dos.</li>
+      <li><b>"Pza" y "pz"</b> conviven en 12 recetas. Es la única unidad con doble escritura y es fácil de cerrar.</li>
+      <li><b>"Taza"</b> se usa para camarón, arroz y salsa. Para camarón es peso, no volumen: es la que más mueve el costo.</li>
+      <li><b>"Caja", "bolsa" y "charola"</b> aparecen como unidad de receta. Son presentaciones de compra; van al inventario, no a la receta.</li>
+      <li><b>9 ingredientes</b> se miden distinto según la receta: camarón (pieza / gramo / taza), cebolla morada (pieza / gramo), limón (pieza / mililitro), cilantro, aguacate, chile serrano, salsa negra, aceite y mayonesa.</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Lo que se nombró en las páginas anteriores</h2>
+    <div class="g2" style="gap:.1in .25in">
+      <div><p style="font-family:var(--fd);font-weight:600;font-size:8.4pt;margin-bottom:.03in">7 platillos del menú sin receta <span style="font-weight:400;color:var(--t7);font-family:var(--fb);font-size:7.6pt">· paso 4</span></p>
+        <p style="font-size:8.2pt;line-height:1.45">Torre Marea · Molcajete de mariscos · Tostada de pulpo · Coctel campechano · Filete a la diabla · Camarones al coco · Sopa azteca</p></div>
+      <div><p style="font-family:var(--fd);font-weight:600;font-size:8.4pt;margin-bottom:.03in">14 ingredientes que las recetas usan y el inventario no tiene <span style="font-weight:400;color:var(--t7);font-family:var(--fb);font-size:7.6pt">· paso 5</span></p>
+        <p style="font-size:8.2pt;line-height:1.45">Salsa negra · chile de árbol · cebolla morada · sal kosher · aceite de ajonjolí · soya · jengibre · mango · pepino · tostadas · totopos · queso crema · chipotle · perejil</p></div>
+    </div>
+    <p class="why" style="font-size:7.4pt;color:var(--t7);margin-top:.07in">3 recetas que ya no están en el menú: Aguachile de mango · Tostada de camarón al pastor · Sopa de tortilla. Se conservan en Recetas; no cuentan para el menú.</p>
+  </div>
+
+  <div class="box">
+    <h2>Lo que leímos</h2>
+    <div class="files">
+      <div><b>Recetas y menú</b>recetario-marea-2026.xlsx<br>menu-verano-2026.pdf</div>
+      <div><b>Inventario y compras</b>inventario-cocina.xlsx<br>compras-jul.pdf · compras-ago.pdf</div>
+      <div><b>Costos y resultados</b>edo-resultados-jun-ago.xlsx<br>nomina-ago.xlsx</div>
+      <div><b>Operación</b>apertura-cierre-cocina.docx</div>
+    </div>
+    <p class="why" style="font-size:7.6pt;color:var(--t7);margin-top:.08in">No leímos: conteos de inventario, recetas de bebidas, roles ni manual de servicio. Cuando existan, este diagnóstico los incorpora.</p>
+  </div>
+
+  <div class="box">
+    <h2>De dónde salen los rangos</h2>
+    <p style="font-size:8.4pt">Los rangos de referencia que Zenet usa para restaurante casual independiente en México: food cost 28–33% · nómina 25–35% · prime cost 55–65% · ocupación 10–20% · margen operativo 8–12%. Un rango es una señal, no un veredicto: tu segmento, tu ticket y tu renta mueven dónde te conviene estar. En tu diagnóstico se leen contra tu propio segmento.</p>
+  </div>
+
+  <div class="legal" style="margin-bottom:.06in"><b style="color:var(--ch)">¿Dudas sobre este diagnóstico?</b> Escríbele a Alan por WhatsApp al <b style="color:var(--ch)">+52 664 194 6634</b> o a <b style="color:var(--ch)">alan@zenetapp.com</b>. En la Fase de Socios Fundadores, Alan está en tu operación cada semana.</div>
+  <div class="legal"><b style="color:var(--ch)">Sobre este documento.</b> Zenet elaboró este diagnóstico a partir de los documentos que Marea Baja compartió el 17 de septiembre de 2026, y describe lo que esos documentos muestran a esa fecha. Contiene información financiera de tu operación. La operación y los datos son de Marea Baja: es tuyo, compártelo con quien decide contigo. El método de análisis, los índices y este formato son de Zenet. <b style="color:var(--ch)">Este ejemplar es un ejemplo con datos ficticios</b>, elaborado para mostrar cómo se ve un diagnóstico; ningún dato corresponde a un restaurante real. © 2026 Zenet® · zenetapp.com</div>
+
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 4 de 4</span></div>
+</section>
+</body></html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Bloque · Tus números</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--mint2:#E4F2EE;--peach:#F4DED0;--peach2:#FBF0E9;--fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:7.5in 4.6in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);font-size:9.2pt;line-height:1.4;padding:.1in;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .box{background:#fff;border:1px solid var(--g1);border-radius:.09in;padding:.13in .15in}
+  h2{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);margin-bottom:.1in}
+  h2 span{color:var(--t7);letter-spacing:0;text-transform:none;font-weight:400;font-family:var(--fb);font-size:8.2pt}
+  .pill{font-family:var(--fd);font-weight:600;font-size:6.8pt;border-radius:99px;padding:.015in .08in;white-space:nowrap;vertical-align:middle}
+  .ok{background:var(--mint2);color:var(--ac)} .up{background:var(--peach2);color:#8A4A2E} .chk{background:var(--off2);color:var(--t7)}
+  .wrap{display:grid;grid-template-columns:2.55in 1fr;gap:.18in}
+  /* hero */
+  .hero{border-right:1px solid var(--g1);padding-right:.18in}
+  .hero .lbl{font-family:var(--fd);font-weight:600;font-size:9.4pt}
+  .hero .n{font-family:var(--fd);font-weight:700;font-size:30pt;letter-spacing:-.03em;line-height:1;margin:.03in 0 .06in}
+  .hero .n .pill{font-size:7.2pt;letter-spacing:0;font-weight:600}
+  .hero .src{font-size:7.4pt;color:var(--t7)}
+  .scale{position:relative;height:.42in;margin:.08in 0 .02in}
+  .scale .track{position:absolute;left:0;right:0;top:.2in;height:.06in;background:var(--off2);border-radius:99px}
+  .scale .band{position:absolute;top:.2in;height:.06in;background:var(--mint);border-radius:99px}
+  .scale .end{position:absolute;top:.29in;font-size:6.8pt;color:var(--t7);transform:translateX(-50%)}
+  .scale .tick{position:absolute;top:.165in;width:2px;height:.13in;background:var(--ch);border-radius:1px;transform:translateX(-50%)}
+  .scale .val{position:absolute;top:0;font-family:var(--fd);font-weight:700;font-size:8pt;transform:translateX(-50%);white-space:nowrap}
+  .trend{display:grid;grid-template-columns:auto 1fr;gap:.12in;align-items:center;margin-top:.1in;padding-top:.09in;border-top:1px dashed var(--g1)}
+  .trend svg{width:1.1in;height:.5in;display:block;overflow:visible}
+  .trend .t{font-size:7.8pt;line-height:1.35;color:var(--t7)}
+  .trend .t b{font-family:var(--fd);font-weight:600;color:var(--ch)}
+  /* cells */
+  .cells{display:grid;grid-template-columns:1fr 1fr;gap:.12in .2in;align-content:start}
+  .cell .k{display:flex;justify-content:space-between;align-items:baseline;gap:.06in}
+  .cell .k .lbl{font-weight:500;font-size:8.8pt}
+  .cell .k .n{font-family:var(--fd);font-weight:700;font-size:11.5pt;letter-spacing:-.01em}
+  .cell .scale{height:.34in;margin:.03in 0 0}
+  .cell .scale .track,.cell .scale .band{top:.13in;height:.05in}
+  .cell .scale .tick{top:.105in;height:.1in}
+  .cell .scale .end{top:.21in}
+  .cell .scale .val{display:none}
+  .cell .src{font-size:7.2pt;color:var(--t7);line-height:1.3}
+  .money{grid-column:1/-1;margin-top:.06in;padding-top:.11in;border-top:1px dashed var(--g1);display:grid;grid-template-columns:1fr 1fr 1fr;gap:.14in}
+  .money .k{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac);display:block;margin-bottom:.03in}
+  .money .m{font-family:var(--fd);font-weight:700;font-size:15.5pt;letter-spacing:-.02em;line-height:1}
+  .money .m small{font-size:7.6pt;font-weight:500;color:var(--t7);letter-spacing:0;margin-left:.03in}
+  .money .why{margin-top:.03in;font-size:7.4pt;color:var(--t7);line-height:1.3}
+  .money .conteo{grid-column:1/-1;font-size:7.6pt;color:var(--t7);line-height:1.3;margin-top:.02in}
+  .money .conteo b{color:var(--ch);font-family:var(--fd);font-weight:600}
+</style></head><body>
+<div class="box">
+  <h2>Tus números <span>· contra el rango de tu segmento. Un rango es una señal, no un veredicto. Cada cifra dice de dónde sale.</span></h2>
+  <div class="wrap">
+    <div class="hero">
+      <div class="lbl">Food cost</div>
+      <div class="n">34.6%</div>
+      <div style="margin:0 0 .06in"><span class="pill up" style="font-size:7.2pt;letter-spacing:0">1.6 puntos arriba del techo</span></div>
+      <div class="src">Tuyo · estado de resultados de agosto · rango de tu segmento 28–33%</div>
+      <div class="scale">
+        <div class="track"></div>
+        <div class="band" style="left:28%;width:33%"></div>
+        <span class="end" style="left:28%">28%</span><span class="end" style="left:61%">33%</span>
+        <span class="tick" style="left:72%"></span><span class="val" style="left:72%">34.6%</span>
+      </div>
+      <div class="trend">
+        <svg viewBox="0 0 110 50">
+          <line x1="8" y1="42" x2="102" y2="42" stroke="#D1DBD7" stroke-width="1"/>
+          <polyline points="12,36 55,20 98,10" fill="none" stroke="#2E6E62" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="12" cy="36" r="3" fill="#2E6E62"/><circle cx="55" cy="20" r="3" fill="#2E6E62"/><circle cx="98" cy="10" r="3.4" fill="#2B3738"/>
+          <text x="12" y="31" font-size="7.5" font-family="Onest" font-weight="600" text-anchor="middle" fill="#4B5E5E">31.9</text>
+          <text x="55" y="15" font-size="7.5" font-family="Onest" font-weight="600" text-anchor="middle" fill="#4B5E5E">33.8</text>
+          <text x="98" y="5" font-size="7.5" font-family="Onest" font-weight="700" text-anchor="middle" fill="#2B3738">34.6</text>
+          <text x="12" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">jun</text>
+          <text x="55" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">jul</text>
+          <text x="98" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">ago</text>
+        </svg>
+        <div class="t"><b>Subió 2.7 puntos en dos meses.</b> Las ventas se movieron menos de 3%. En tus compras, lo que más subió: <b>camarón +18% · aguacate +31% · aceite +9%</b>.</div>
+      </div>
+    </div>
+    <div class="cells">
+      <div class="cell"><div class="k"><span class="lbl">Costo de nómina</span><span><span class="n">27.8%</span> <span class="pill ok">dentro</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:25%;width:45%"></div><span class="end" style="left:25%">25%</span><span class="end" style="left:70%">35%</span><span class="tick" style="left:38%"></span></div>
+        <div class="src">Tuyo · nómina de agosto, 14 personas</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Prime cost</span><span><span class="n">62.4%</span> <span class="pill ok">dentro</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:25%;width:50%"></div><span class="end" style="left:25%">55%</span><span class="end" style="left:75%">65%</span><span class="tick" style="left:62%"></span></div>
+        <div class="src">Food cost + nómina · cerca del techo por el food cost</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Costo de ocupación</span><span><span class="n">9.1%</span> <span class="pill chk">revisa el dato</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:30%;width:50%"></div><span class="end" style="left:30%">10%</span><span class="end" style="left:80%">20%</span><span class="tick" style="left:25%"></span></div>
+        <div class="src">Por debajo. Tu renta aparece; <b>no vimos luz, agua ni gas</b>. Si están en otra línea, sube</div></div>
+      <div class="cell"><div class="k"><span class="lbl">Margen operativo</span><span><span class="n">7.2%</span> <span class="pill up">por debajo</span></span></div>
+        <div class="scale"><div class="track"></div><div class="band" style="left:35%;width:40%"></div><span class="end" style="left:35%">8%</span><span class="end" style="left:75%">12%</span><span class="tick" style="left:27%"></span></div>
+        <div class="src">Tuyo · utilidad de operación de agosto · 0.8 puntos abajo del piso</div></div>
+      <div class="money">
+        <div><span class="k">Lo que vale un punto</span><div class="m">$4,100<small>al mes</small></div><div class="why">Un punto de food cost sobre tus ventas promedio de $410,000 (jun–ago)</div></div>
+        <div><span class="k">Lo que hoy estás arriba del techo</span><div class="m">$6,560<small>al mes</small></div><div class="why" style="margin-top:0;color:var(--ch);font-weight:500">$78,720 al año</div><div class="why">1.6 puntos × $4,100 = $6,560. Es lo que hay entre tu 34.6% y el techo del 33%.</div></div>
+        <div><span class="k">Cada $10,000 más que vendas</span><div class="m">$6,540<small>se quedan</small></div><div class="why">Después de insumos, con tu food cost de hoy. Lo demás lo paga nómina, renta y el resto. Vender más solo ayuda si esto sube.</div></div>
+      </div>
+    </div>
+  </div>
+</div>
+</body></html>

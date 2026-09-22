@@ -77,7 +77,7 @@ Que él **diga** que tiene el problema — qué lo causa, qué ya le costó, qu�
 >
 > *Aquí puedes ver por dónde va el proyecto: [link Dub personal]*
 
-Lo que subió se dice como lo dice él, no como el noticiero · no se le dice qué le falta · *"sin compromiso"* una vez y nunca *"de compra"* · el PDF del diagnóstico de ejemplo tiene que existir antes del primer envío `[Pendiente del fundador]`.
+Lo que subió se dice como lo dice él, no como el noticiero · no se le dice qué le falta · *"sin compromiso"* una vez y nunca *"de compra"* · el PDF del diagnóstico de ejemplo tiene que existir antes del primer envío ✅ (21-sep · `_export/diagnostico-v2/Diagnóstico de ejemplo · Zenet.pdf`).
 
 **El primer toque en persona** *(frío en Tijuana, o un conocido sin tiempo de café — el #9 en papel)* `[Decisión del fundador · 16-sep]`
 1. **El flyer de primer toque en la mano** — la frase, el mecanismo en tres tiempos y **un fragmento impreso del diagnóstico de ejemplo**. Con eso el flyer ya *enseña*; el teléfono se queda en la bolsa.
@@ -353,8 +353,8 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 | 1 Contactado | **Mensaje inicial** (§1 · el ejemplo adjunto + café + *"cómo se vería el tuyo"*) | ✅ `mensajes-outreach` **v0.3 #9** (16-sep · #7 acotado a material del ejemplo · #8 y #5B con el ejemplo) | `_templates/mensajes-outreach-fase-a.md` |
 | 1 | **Link Dub por persona** → `zenetapp.com` | ✅ | Dub |
 | 1 | **Tarjeta** (frente logo + frase · reverso Ing. Alan Bahena + panel teal con QR → `go.zenetapp.com/tarjeta`) | ✅ diseño cerrado **16-sep** · 🔜 imprimir (hoja de 10, carta) | `_templates/tarjeta-fundador.html` → `_export/` |
-| 1 | **Flyer de primer toque** *(media carta · una cara · SIN precio)* — la frase · el mecanismo en tres tiempos · un fragmento del diagnóstico de ejemplo · 3-4 problemas como preguntas en sus palabras · el ask de los 20 min · WhatsApp · QR → Dub propio. Es el #9 en papel: frío presencial y conocidos sin tiempo de café. **Nunca junto al flyer de la oferta** | 🔜 **nuevo** (16-sep) · depende del diagnóstico de ejemplo | `_templates/` → PDF |
-| 2 Respondió | **Diagnóstico de ejemplo** (PDF · restaurante ficticio · datos declarados) | 🔜 mié 16 | producto (Task 43) → `_export/` |
+| 1 | **Flyer de primer toque** *(media carta · una cara · SIN precio)* — la frase · el mecanismo en tres tiempos · un fragmento del diagnóstico de ejemplo · 3-4 problemas como preguntas en sus palabras · el ask de los 20 min · WhatsApp · QR → Dub propio. Es el #9 en papel: frío presencial y conocidos sin tiempo de café. **Nunca junto al flyer de la oferta** | ✅ **21-sep** v0.1 — QR → `go.zenetapp.com/primer-toque` (Dub por crear con ese slug) · fragmento = "tus números" de la pág. 1 del ejemplo | `_templates/flyer-primer-toque.html` → `_export/flyer-primer-toque.pdf` |
+| 2 Respondió | **Diagnóstico de ejemplo** (PDF · restaurante ficticio "Marea Baja" · datos declarados · **con el diseño v2 del reporte**) | ✅ **21-sep** — mock v2 (spec `06-experience-y-roadmap/01-diagnostico-v2-spec.md`); el producto se regenera con ese diseño; mientras, el primer diagnóstico real se arma a mano sobre la misma plantilla | `_templates/_export/diagnostico-v2/Diagnóstico de ejemplo · Zenet.pdf` |
 | 3-4 Sesión | **Landing v4** como página de confianza · **`/demo` → `/diagnostico`** | ✅ en vivo · 🔜 rename en v4.1 | `zenetapp.com` |
 | 4 Discovery | **Script de sesión** (run-sheet por beats · las 7 preguntas · cheat-sheet con los 9 checks · criterios de paso · guardrails · objeciones · el cierre) | ✅ **15-sep** `script-sesion-de-venta-fase-a` (PDF 5 págs; `plantilla-runsheet.html` queda como base de formato) | `_templates/script-sesion-de-venta-fase-a.html` → `_export/` |
 | 4 | **Guión de conversación** v0.6 (la sesión minuto a minuto) | ✅ · su §2 apunta a este doc para el cierre | `_templates/guion-conversacion-y-demo-fase-a.md` |
@@ -374,7 +374,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 4. ~~`02-programa-socio-fundador-offer.md` y `01-modelo-comercial-y-terminos.md` con las **cuatro desviaciones** de la oferta (§3)~~ ✅ **16-sep** — nota de campo arriba de cada doc (v0.1.1) · **salieron cinco, no cuatro:** la quinta es el acuerdo mismo (kit de bienvenida + *"va"* por WhatsApp en vez de MSA + DocuSign).
 5. ~~`10-scorecard` **v0.5**~~ ✅ **16-sep** — §2.2 el embudo como tabla propia + la skill pide los nueve.
 6. ~~Los dos PDFs nuevos — **flyer de oferta** y **kit de bienvenida** — sobre la base de diseño de los run-sheets.~~ ✅ **16-sep** (+ la tarjeta, QR a Dub en tarjeta y flyer).
-7. **Flyer de primer toque** *(nuevo · 16-sep)* — el #9 en papel, sin precio, con el fragmento del diagnóstico de ejemplo (§1 · §7). Se construye cuando exista el PDF de ejemplo; su momento real es el frío presencial (§0.1 #4).
+7. ~~**Flyer de primer toque** *(nuevo · 16-sep)* — el #9 en papel, sin precio, con el fragmento del diagnóstico de ejemplo (§1 · §7).~~ ✅ **21-sep** v0.1 (falta el Dub `primer-toque`). Primer uso: CANACO Jóvenes, 22-sep.
 
 ---
 
