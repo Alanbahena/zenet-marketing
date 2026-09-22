@@ -1,0 +1,179 @@
+<!--
+═══════════════════════════════════════════════════════════════════
+FLYER · Primer toque — v0.5 (21-sep-2026 · media carta a DOS CARAS)
+═══════════════════════════════════════════════════════════════════
+El mensaje #9 en papel, para el primer contacto EN PERSONA (frío en Tijuana · un conocido sin tiempo de café · CANACO Jóvenes).
+Media carta (5.5 × 8.5 in), DOS caras (frente: la historia · reverso: la prueba y el ask) — dos por hoja carta, dúplex por el lado corto. SIN PRECIO. Nunca junto al flyer de la oferta (doc 12 §1 · §7).
+v0.5: el mismo contenido de la v0.4 (orden de la landia), repartido en dos caras para que cada una tenga una sola ilustración y aire. v0.4 (propuesta del fundador): la frase + el momento (copy de la landing §2) · "¿te suena?" · la escena de la landing (documentos → núcleo → análisis de tu operación) · Compras por WhatsApp (el teléfono + 3 pasos), etiquetado como lo que corre hoy · franja teal con el ask y el QR.
+PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer --print-to-pdf="_export/flyer-primer-toque/flyer-primer-toque_v05_dos-caras.pdf" "$PWD/flyer-primer-toque.html"
+QR → https://go.zenetapp.com/primer-toque (Dub · crear con ese slug).
+═══════════════════════════════════════════════════════════════════
+-->
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Primer toque</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--mint2:#E4F2EE;--peach:#F4DED0;--fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
+  *{box-sizing:border-box;margin:0}
+  @page{size:5.5in 8.5in;margin:0}
+  html,body{background:var(--off)}
+  body{font-family:var(--fb);color:var(--ch);line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .side{width:5.5in;height:8.5in;padding:.4in .45in .34in;display:flex;flex-direction:column;break-after:page}
+  .side:last-child{break-after:auto}
+  .top{display:flex;align-items:center;height:.28in}
+  .logo{height:.26in;width:auto;display:block}
+  h1{font-family:var(--fd);font-weight:700;font-size:25pt;line-height:1.06;letter-spacing:-.02em;margin:.22in 0 .1in;text-wrap:balance}
+  h1 i{font-style:normal;color:var(--ac)}
+  .lead{font-size:10.4pt;line-height:1.42;color:var(--ch)}
+  h2{font-family:var(--fd);font-weight:700;font-size:13pt;letter-spacing:-.012em;line-height:1.15}
+  .suena{margin-top:.36in}
+  .suena ul{list-style:none;padding:0;display:grid;grid-template-columns:1fr 1fr 1fr;gap:.14in;margin-top:.09in}
+  .suena li{font-size:9pt;line-height:1.32;padding-top:.08in;border-top:2.5px solid var(--peach)}
+  .suena li b{font-family:var(--fd);font-weight:600;display:block;font-size:9.6pt;margin-bottom:.02in}
+  .have{margin-top:.36in;display:flex;flex-direction:column;flex:1}
+  .have .def{font-size:9.8pt;line-height:1.42;color:var(--ch);margin-top:.05in}
+  .have .def b{font-family:var(--fd);font-weight:600;color:var(--ac)}
+  .land{display:grid;grid-template-columns:1.1in .9in 1fr;align-items:center;margin-top:.16in}
+  .docs{position:relative;height:1.3in}
+  .doc{position:absolute;left:0;width:1in;height:.4in;background:#fff;border-radius:.07in;box-shadow:0 .02in .07in rgba(43,55,56,.12);padding:.06in .08in}
+  .doc b{font-family:var(--fd);font-weight:600;font-size:7.6pt;color:var(--ac);display:block;text-align:center;line-height:1}
+  .doc i{display:block;height:.035in;border-radius:2px;background:var(--mint);margin-top:.04in}
+  .doc i:nth-of-type(2){width:80%;background:var(--g1)} .doc i:nth-of-type(3){width:60%}
+  .doc:nth-child(1){top:0;transform:rotate(-2deg)} .doc:nth-child(2){top:.44in} .doc:nth-child(3){top:.88in;transform:rotate(1.5deg)}
+  .link{position:relative;height:.7in;display:flex;align-items:center;justify-content:center}
+  .link:before{content:"";position:absolute;left:0;right:0;top:50%;border-top:1.5px dashed var(--mint)}
+  .core{position:relative;width:.56in;height:.56in;border-radius:50%;background:#6FA396;box-shadow:0 0 0 .08in rgba(111,163,150,.22),0 0 0 .16in rgba(111,163,150,.10)}
+  .an{background:#fff;border-radius:.09in;box-shadow:0 .02in .09in rgba(43,55,56,.12);padding:.1in .12in .09in}
+  .an .t{font-family:var(--fd);font-weight:600;font-size:9pt;display:flex;align-items:center;gap:.06in;margin-bottom:.06in}
+  .an .t:before{content:"";width:.08in;height:.08in;border-radius:50%;background:var(--ac)}
+  .an .r{font-size:7.6pt;color:var(--t7);text-align:center;margin-top:.05in}
+  .an .bar{height:.05in;border-radius:99px;background:var(--mint);margin-top:.025in;overflow:hidden}
+  .an .bar i{display:block;height:100%;background:var(--ac);border-radius:99px}
+  .flip{margin-top:auto;font-family:var(--fd);font-weight:600;font-size:9pt;color:var(--ac);display:flex;align-items:center;gap:.06in}
+  .flip:after{content:"→"}
+  /* reverso */
+  .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac);display:flex;align-items:center;gap:.08in}
+  .eyebrow .pill{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.06em;background:var(--mint2);color:var(--ac);border-radius:99px;padding:.015in .08in}
+  .back h2{margin:.06in 0 .04in}
+  .back .sub{font-size:9.6pt;color:var(--t7);line-height:1.4}
+  .scene{display:grid;grid-template-columns:2.35in 1fr;gap:.22in;align-items:start;margin-top:.22in}
+  .phone{background:#fff;border:2px solid var(--ch);border-radius:.24in;padding:.13in .11in .11in;box-shadow:.05in .06in 0 var(--g1)}
+  .phone .bar{display:flex;align-items:center;gap:.07in;padding-bottom:.08in;border-bottom:1px solid var(--off2);margin-bottom:.1in}
+  .phone .bar .av{width:.3in;height:.3in;border-radius:50%;background:var(--ac);display:grid;place-items:center}
+  .phone .bar .av svg{width:.19in;height:auto}
+  .phone .bar b{font-family:var(--fd);font-weight:600;font-size:9.4pt;display:block;line-height:1.1}
+  .phone .bar small{font-size:7pt;color:var(--t7)}
+  .msg{max-width:90%;border-radius:.11in;padding:.07in .09in;font-size:8.8pt;line-height:1.34;margin-bottom:.07in}
+  .me{margin-left:auto;background:var(--mint2);border-bottom-right-radius:.02in}
+  .zn{background:var(--off2);border-bottom-left-radius:.02in}
+  .msg b{font-family:var(--fd);font-weight:600}
+  .msg .ft{display:flex;align-items:center;gap:.07in;font-size:8.2pt;color:var(--t7)}
+  .msg .ft svg{width:.32in;height:auto}
+  .steps{display:flex;flex-direction:column;gap:.16in}
+  .st{display:grid;grid-template-columns:.32in 1fr;gap:.09in;align-items:start}
+  .st .n{width:.3in;height:.3in;border-radius:50%;background:var(--ac);color:#fff;font-family:var(--fd);font-weight:700;font-size:10.5pt;display:grid;place-items:center}
+  .st b{font-family:var(--fd);font-weight:600;font-size:10pt;display:block;line-height:1.15}
+  .st small{display:block;font-size:8.4pt;color:var(--t7);line-height:1.3;margin-top:.02in}
+  .ask{margin-top:auto;background:var(--ac);color:#fff;border-radius:.13in;padding:.18in .2in;display:grid;grid-template-columns:1fr auto;gap:.18in;align-items:center}
+  .ask h3{font-family:var(--fd);font-weight:700;font-size:14pt;line-height:1.15;letter-spacing:-.01em}
+  .ask p{font-size:9.2pt;line-height:1.38;margin-top:.06in;color:var(--mint)}
+  .ask .c{margin-top:.09in;font-family:var(--fd);font-weight:600;font-size:9.6pt;color:#fff;line-height:1.35}
+  .qrbox{background:#fff;border-radius:.09in;padding:.07in;line-height:0}
+  .foot{margin-top:.12in;display:flex;justify-content:space-between;align-items:baseline;gap:.12in;white-space:nowrap}
+  .who{font-size:7.6pt}
+  .who b{font-family:var(--fd);font-weight:600}
+  .tiny{font-size:6.2pt;color:var(--t7)}
+  /* el chat, como en la landing (§5 la consulta): sin marco de teléfono, panel suave, burbujas */
+  .chat{background:#EDEDE8;border-radius:.16in;padding:.13in .12in;display:grid;gap:.075in;align-content:start}
+  .bub{max-width:90%;padding:.065in .09in;border-radius:.13in;font-size:8.4pt;line-height:1.42;color:var(--ch)}
+  .bub-user{justify-self:end;background:var(--mint);border-bottom-right-radius:.035in}
+  .bub-zenet{justify-self:start;background:#fff;border:1px solid rgba(43,55,56,.08);border-bottom-left-radius:.035in;box-shadow:0 .06in .12in -.1in rgba(43,55,56,.4)}
+  .bub-zenet .who{display:flex;align-items:center;gap:.04in;font-family:var(--fd);font-weight:700;font-size:6.8pt;color:var(--ac);margin:0 0 .025in}
+  .bub-zenet .who:before{content:"";width:.055in;height:.055in;border-radius:50%;background:var(--ac)}
+  .bub b{font-family:var(--fd);font-weight:600}
+  .bub .ft{display:flex;align-items:center;gap:.06in;font-size:8pt;color:var(--t7)}
+  .bub .ft svg{width:.26in;height:auto;flex:none}
+</style></head><body>
+
+<!-- ═══ FRENTE ═══ -->
+<section class="side">
+  <div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg></div>
+  <h1>El caos <i>no es el precio</i><br>de tener un restaurante.</h1>
+  <p class="lead">Lo que antes se absorbía sin sentirlo, hoy se ve en el margen — y en tus horas. Cada cambio de allá afuera entra por una pieza y mueve todas las demás.</p>
+
+  <div class="suena">
+    <h2>¿Te suena?</h2>
+    <ul>
+      <li><b>Todo pasa por ti.</b>Si te vas tres días, ¿sale igual?</li>
+      <li><b>Los insumos suben.</b>¿Cuánto te pegó el precio del aguacate este mes?</li>
+      <li><b>La gente se va.</b>¿Cuánto tarda un nuevo empleado en hacerlo igual?</li>
+    </ul>
+  </div>
+
+  <div class="have">
+    <h2>Qué es Zenet</h2>
+    <p class="def">Zenet es un equipo de especialistas que construye contigo el sistema de tu operación, desde lo que ya tienes, lo mantiene vivo y lo hace correr todos los días. <b>Tú decides; Zenet lo carga.</b></p>
+    <div class="land">
+      <div class="docs"><div class="doc"><b>Recetas</b><i></i><i></i><i></i></div><div class="doc"><b>Inventarios</b><i></i><i></i><i></i></div><div class="doc"><b>Menú</b><i></i><i></i><i></i></div></div>
+      <div class="link"><div class="core"></div></div>
+      <div class="an"><div class="t">Análisis de tu operación</div>
+        <div class="r">Qué tan estandarizado estás · área por área</div><div class="bar"><i style="width:58%"></i></div>
+        <div class="r">Dónde están tus costos hoy</div><div class="bar"><i style="width:40%"></i></div>
+        <div class="r">Qué construir primero</div><div class="bar"><i style="width:74%"></i></div>
+      </div>
+    </div>
+    <div class="flip">Dale la vuelta: así se ve hoy, en tu WhatsApp</div>
+  </div>
+</section>
+
+<!-- ═══ REVERSO ═══ -->
+<section class="side back">
+  <div class="eyebrow">Compras · lo que corre hoy</div>
+  <h2>Empieza solo con tus facturas.</h2>
+  <p class="sub">Sin capturar nada y sin cambiar cómo trabajas: le mandas la factura y Zenet te contesta.</p>
+
+  <div class="scene">
+    <div class="chat">
+      <div class="bub bub-user"><div class="ft"><svg viewBox="0 0 30 38" fill="none" stroke="#4B5E5E" stroke-width="1.6"><path d="M2 2h18l8 8v26H2z"/><path d="M20 2v8h8"/><path d="M7 16h16M7 22h16M7 28h9"/></svg>Factura · Mariscos del Pacífico</div></div>
+      <div class="bub bub-zenet"><p class="who">Zenet</p>Leí tu factura. <b>El aguacate subió 31%</b> y el camarón 18% desde julio.</div>
+      <div class="bub bub-zenet"><p class="who">Zenet</p>Toca <b>22 de tus 48 platillos</b>. El aguachile te deja <b>4 puntos menos</b> que en julio. <b>Qué hacer, lo decides tú.</b></div>
+    </div>
+    <div class="steps">
+      <div class="st"><div class="n">1</div><div><b>Le mandas tus facturas</b><small>Foto o PDF, como las tengas.</small></div></div>
+      <div class="st"><div class="n">2</div><div><b>Zenet las lee y las cruza con tus recetas</b><small>Precio por precio, platillo por platillo.</small></div></div>
+      <div class="st"><div class="n">3</div><div><b>Te dice qué subió y cuánto te pega</b><small>El mismo día, no al cierre del mes.</small></div></div>
+    </div>
+  </div>
+
+  <div class="ask">
+    <div>
+      <h3>¿Quieres ver cómo se vería el tuyo?</h3>
+      <p>Son 20 minutos, con tus documentos como los tengas. Sin compromiso.</p>
+      <div class="c">WhatsApp +52 664 194 6634<br>alan@zenetapp.com</div>
+    </div>
+    <div class="qrbox"><svg shape-rendering="crispEdges" style="width:.95in;height:.95in;display:block" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31" class="qr"><path class="qrline" stroke="#2b3738" d="M1 1.5h7m1 0h1m1 0h7m1 0h1m3 0h7m-29 1h1m5 0h1m3 0h1m1 0h1m3 0h1m1 0h1m1 0h1m1 0h1m5 0h1m-29 1h1m1 0h3m1 0h1m1 0h2m1 0h1m1 0h3m1 0h1m4 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m3 0h1m1 0h1m4 0h1m1 0h1m2 0h1m1 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m2 0h1m1 0h2m1 0h1m3 0h1m3 0h1m1 0h3m1 0h1m-29 1h1m5 0h1m1 0h1m1 0h1m1 0h3m1 0h3m1 0h1m1 0h1m5 0h1m-29 1h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7m-20 1h1m1 0h1m1 0h1m2 0h1m1 0h2m-20 1h1m1 0h1m3 0h2m1 0h1m1 0h1m1 0h1m1 0h1m3 0h2m2 0h1m2 0h1m1 0h1m-29 1h1m3 0h1m2 0h1m1 0h4m2 0h2m1 0h3m1 0h2m3 0h2m-28 1h3m1 0h2m1 0h4m1 0h3m1 0h4m1 0h2m1 0h2m1 0h1m-29 1h2m3 0h1m1 0h4m3 0h1m4 0h3m2 0h2m-23 1h1m1 0h2m3 0h1m2 0h3m4 0h1m1 0h1m5 0h1m-29 1h2m2 0h2m2 0h1m3 0h5m1 0h2m2 0h2m3 0h2m-29 1h1m3 0h3m2 0h1m1 0h2m2 0h1m2 0h3m2 0h1m4 0h1m-29 1h1m1 0h2m1 0h1m1 0h1m1 0h1m2 0h2m1 0h2m5 0h3m-22 1h1m1 0h3m4 0h2m2 0h1m2 0h1m2 0h2m4 0h1m-27 1h1m4 0h1m1 0h2m1 0h1m2 0h3m1 0h2m1 0h1m3 0h3m-29 1h2m2 0h3m3 0h1m2 0h8m1 0h1m2 0h1m2 0h1m-26 1h3m3 0h2m3 0h1m1 0h1m1 0h1m2 0h1m1 0h2m-25 1h3m3 0h2m4 0h4m3 0h7m1 0h1m-20 1h3m2 0h5m1 0h2m3 0h3m1 0h1m-29 1h7m1 0h2m1 0h1m3 0h1m1 0h1m2 0h1m1 0h1m1 0h1m3 0h1m-29 1h1m5 0h1m6 0h1m2 0h1m1 0h3m3 0h1m-25 1h1m1 0h3m1 0h1m2 0h1m1 0h1m1 0h1m2 0h1m2 0h7m2 0h1m-29 1h1m1 0h3m1 0h1m4 0h1m1 0h1m1 0h1m3 0h1m1 0h1m2 0h3m1 0h1m-29 1h1m1 0h3m1 0h1m1 0h1m1 0h8m1 0h2m3 0h1m2 0h2m-29 1h1m5 0h1m4 0h2m2 0h1m2 0h1m1 0h2m1 0h3m-26 1h7m1 0h2m1 0h1m1 0h1m1 0h1m4 0h3m1 0h2m2 0h1"/></svg></div>
+  </div>
+  <div class="foot">
+    <div class="who"><b>Ing. Alan Bahena</b> · fundador de Zenet · Tijuana · <span style="color:var(--ac);font-family:var(--fd);font-weight:600">zenetapp.com</span></div>
+    <div class="tiny">© 2026 Zenet® · Marca registrada ante el IMPI</div>
+  </div>
+</section>
+</body></html>
