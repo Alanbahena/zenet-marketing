@@ -4,7 +4,7 @@ FLYER · Programa Socio Fundador — v0.1 (16-sep-2026)
 ═══════════════════════════════════════════════════════════════════
 Se pone sobre la mesa al cerrar (12-proceso-de-ventas §3). Media carta (5.5 × 8.5 in),
 una cara — dos por hoja carta. Copy = la oferta del 13-sep. Tokens = Branding/03-visual-identity.
-PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu   --no-pdf-header-footer --print-to-pdf="_export/flyer-socio-fundador.pdf" "$PWD/flyer-socio-fundador.html"
+PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu   --no-pdf-header-footer --print-to-pdf="_export/flyer-socio-fundador/flyer-socio-fundador.pdf"   (2-up: pypdf, misma receta que el flyer de primer toque → _export/flyer-socio-fundador/flyer-socio-fundador_2up-carta.pdf) "$PWD/flyer-socio-fundador.html"
 QR → https://go.zenetapp.com/flyer-sf (Dub · 16-sep). Cambiar el destino del QR: regenerar con segno (python: segno.make(url).save(...)) y sustituir el bloque svg del QR.
 ═══════════════════════════════════════════════════════════════════
 -->
@@ -16,7 +16,7 @@ QR → https://go.zenetapp.com/flyer-sf (Dub · 16-sep). Cambiar el destino del 
   *{box-sizing:border-box;margin:0}
   @page{size:5.5in 8.5in;margin:0}
   html,body{background:var(--off)}
-  body{font-family:var(--fb);color:var(--ch);width:5.5in;height:8.5in;padding:.3in .42in .24in;display:flex;flex-direction:column;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  body{font-family:var(--fb);color:var(--ch);width:5.5in;height:8.5in;padding:.28in .42in .45in;display:flex;flex-direction:column;line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
   .top{display:flex;justify-content:space-between;align-items:center}
   .logo{height:.31in;width:auto}
   .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.6pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}

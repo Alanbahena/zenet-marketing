@@ -166,7 +166,7 @@
   .page1 .trend{margin-top:.06in;padding-top:.06in}
   .page1 .trend .t{font-size:7.4pt}
   .page1 .hero .src{font-size:7pt}
-  .page1 .chips{margin-top:.03in}
+  .page1 .chips{margin-top:.03in;gap:.04in} .page1 .chip{font-size:7.3pt;padding:.02in .085in}
   .page1 h1{font-size:20pt}
   .page1 .hero .n{font-size:26pt;margin:.02in 0 .04in}
   .page1 .money .m{font-size:14pt}
@@ -239,6 +239,36 @@
   .page3 .quote{font-size:9pt;line-height:1.3;padding:.08in .13in}
   .page3 .lbl{font-family:var(--fd);font-weight:600;font-size:6.6pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7);padding:.05in 0 .02in;border-bottom:1px solid var(--off2)}
   .page3 .step .no.rut{background:var(--peach);color:#8A4A2E;font-size:7pt}
+  .page4{gap:.08in;padding-top:.4in;padding-bottom:.5in}
+  .page4 .ftr{bottom:.24in}
+  .page4 .box{padding:.09in .14in}
+  .page4 .legal{font-size:7.2pt;line-height:1.35}
+  .page4 ul.find li{font-size:8pt;line-height:1.3}
+  .page4 td{padding:.025in .06in}
+  .page3b{gap:.1in;padding-top:.4in}
+  .page3b .procs{grid-column:1/-1}
+  .page3b .procs table{font-size:7.9pt} .page3b .procs td{padding:.022in .06in} .page3b .procs th{padding:.02in .06in}
+  .page3b .box{padding:.1in .15in .06in}
+  .page3b .area{padding:.09in 0;gap:.12in}
+  .page3b .area .b{gap:.07in .18in}
+  .page3b .area .b p{font-size:8.5pt;line-height:1.36}
+  .page3b .carga{gap:.12in .18in}
+  .page3b .carga div{font-size:8.3pt;line-height:1.35}
+  .page3b .espejo{margin-top:.02in;padding:.11in .15in;gap:.04in .2in}
+  .page3b .espejo .q{font-size:9.8pt;line-height:1.3}
+  .page3b .espejo li{font-size:8.1pt;line-height:1.32}
+  .page3b .espejo .por{margin-top:.03in;padding-top:.07in}
+  .page3b .espejo .por p{font-size:8.3pt;line-height:1.35}
+  .page3b .ftr{bottom:.3in}
+  .prov{display:grid;gap:.035in;margin-top:.03in}
+  .pr{display:grid;grid-template-columns:1.05in 1fr .3in;align-items:center;gap:.06in;font-size:7.6pt}
+  .pr span{color:var(--ch);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .pr i{display:block;height:.11in;border-radius:3px;background:var(--mint)}
+  .pr b{font-family:var(--fd);font-weight:600;text-align:right}
+  .page5m{gap:.07in;padding-bottom:.5in} .page5m .ftr{bottom:.24in}
+  .page5m table{font-size:8pt} .page5m td{padding:.02in .06in} .page5m th{padding:.02in .06in}
+  .page5m ul.find li{font-size:7.8pt;line-height:1.28} .page5m .files{grid-template-columns:repeat(5,1fr);font-size:7.8pt}
+  .page5m .box{padding:.08in .14in} .page5m .legal{font-size:7pt;line-height:1.3} .page5m .why{margin-top:.05in!important}
 </style></head><body>
 
 <!-- ═══════════ PÁGINA 1 · Tu operación en una página ═══════════ -->
@@ -271,7 +301,7 @@
     <div class="when">Diagnóstico al <b>17 de octubre de 2026</b> · segundo mes · comparado contra tu línea base del 17 de septiembre.</div>
     <div class="src"><span class="k">Lo que leímos</span><span class="chips">
       <span class="chip"><b>Recetario</b> 48 recetas</span><span class="chip"><b>Menú</b> 52 platillos</span><span class="chip"><b>Inventario</b> 86 insumos</span>
-      <span class="chip"><b>Costos desglosados</b> jul–sep</span><span class="chip"><b>Estado de resultados</b> jun–sep</span><span class="chip"><b>Operación escrita</b> 1 documento</span></span>
+      <span class="chip"><b>Compras</b> 141 renglones · 7 proveedores</span><span class="chip"><b>Estado de resultados</b> jun–sep</span><span class="chip"><b>Operación escrita</b> 1 documento</span></span>
     </div>
   </div>
   <span class="ejemplo">Ejemplo · datos ficticios</span>
@@ -338,7 +368,7 @@
           <text x="70" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">ago</text>
           <text x="100" y="49" font-size="6" font-family="Hanken Grotesk" text-anchor="middle" fill="#A3B2AC">sep</text>
         </svg>
-        <div class="t"><b>Bajó 1.7 puntos en un mes.</b> Las ventas se movieron menos de 2%. El camarón siguió +4%; <b>el aguacate bajó 12%</b>. El resto es porción: 19 recetas ya dicen cuánto rinden.</div>
+        <div class="t"><b>Bajó 1.7 puntos en un mes</b> con ventas casi iguales. En compras, <b>−$1,500 al mes</b>: el aguacate bajó 12%, el camarón siguió +4%. El resto es porción: 19 recetas ya dicen cuánto rinden.</div>
       </div>
     </div>
     <div class="cells">
@@ -407,33 +437,100 @@
           <p class="why" style="font-size:7.6pt;color:var(--t7);margin-top:.05in">Van de 18% a 47%. Cuatro de las cinco más altas llevan camarón o pulpo, los dos insumos que más subieron. Ese costeo es de julio y <strong>no se ha recalculado</strong> con los precios de agosto.</p>
         </div>
         <p><b>Qué hay</b>48 recetas con procedimiento · 44 con cantidades completas · 29 con porción · 31 con costo.</p>
-        <p><b>Qué frena</b>19 recetas sin porción: dicen qué llevan, no para cuántos.<br>7 platillos del menú sin receta: se venden sin saber qué dejan.<br>3 recetas que ya no están en el menú.</p>
+        <p><b>Qué frena</b>19 recetas sin porción: dicen qué llevan, no para cuántos.<br>7 platillos del menú sin receta: se venden sin saber qué dejan — <span style="color:var(--t7)">Torre Marea · Molcajete de mariscos · Tostada de pulpo · Coctel campechano · Filete a la diabla · Camarones al coco · Sopa azteca</span>.<br>3 recetas que ya no están en el menú: <span style="color:var(--t7)">Aguachile de mango · Tostada de camarón al pastor · Sopa de tortilla</span>.</p>
       </div>
     </div>
 
     <div class="area">
-      <div class="t">Inventario y compras<small>86 insumos · 6 familias · compras jul–ago</small></div>
+      <div class="t">Inventario<small>86 insumos · 6 familias</small></div>
       <div class="b">
         <p><b>Qué hay</b>71 insumos con unidad y 38 con presentación de compra. El 78% de los ingredientes de tus recetas existe en el inventario.</p>
-        <p><b>Qué frena</b>48 insumos sin presentación de compra: sabes que compras "una caja de camarón", no cuánto cuesta el gramo que va a la receta. 14 ingredientes de recetas no están en el inventario.</p>
+        <p><b>Qué frena</b>48 insumos sin presentación de compra: sabes que compras "una caja de camarón", no cuánto cuesta el gramo que va a la receta. 14 ingredientes de recetas no están en el inventario: <span style="color:var(--t7)">salsa negra · chile de árbol · cebolla morada · sal kosher · aceite de ajonjolí · soya · jengibre · mango · pepino · tostadas · totopos · queso crema · chipotle · perejil</span>.</p>
         <p class="full"><b>Qué permite</b>Con la presentación de compra en los 48, el costo por platillo se recalcula solo cada vez que entra una factura.</p>
       </div>
     </div>
 
     <div class="area">
-      <div class="t">Costos y resultados<small>estado de resultados jun–ago · costos desglosados jul–ago</small></div>
+      <div class="t">Compras<small>tu registro de compras jul–ago · 94 renglones · 7 proveedores</small></div>
       <div class="b">
-        <p><b>Qué hay</b>Tres meses completos: ventas, costo de venta, nómina y renta. Compras por proveedor jul–ago.</p>
+        <p><b>Qué hay</b>Dos meses de compras: 94 renglones, 7 proveedores, 61 de tus 86 insumos con precio. Gasto promedio $118,400 al mes.</p>
+        <div><p><b>Tus proveedores · de cada $100 que compras</b></p>
+          <div class="prov">
+            <div class="pr"><span>Mariscos del Pacífico</span><i style="width:46%;background:var(--ac)"></i><b>$46</b></div>
+            <div class="pr"><span>Frutas Beltrán</span><i style="width:22%"></i><b>$22</b></div>
+            <div class="pr"><span>Abarrotes La Mesa</span><i style="width:14%"></i><b>$14</b></div>
+            <div class="pr"><span>Lácteos del Valle</span><i style="width:8%"></i><b>$8</b></div>
+            <div class="pr"><span>Otros 3</span><i style="width:10%"></i><b>$10</b></div>
+          </div>
+          <p class="why" style="font-size:7.4pt;color:var(--t7);margin-top:.03in">Camarón y aguacate los compras a dos proveedores en el mismo mes, a precios distintos.</p></div>
+        <div class="full" style="margin-top:.04in">
+          <p><b>Lo que se movió · julio → agosto</b></p>
+          <div class="g2" style="gap:.08in .2in">
+            <table><tr><th>Subió</th><th style="text-align:right">precio</th><th style="text-align:right">al mes</th></tr>
+              <tr><td>Aguacate Hass</td><td class="n">+31%</td><td class="n">+$1,860</td></tr><tr><td>Camarón 21/25</td><td class="n">+18%</td><td class="n">+$4,120</td></tr><tr><td>Aceite vegetal</td><td class="n">+9%</td><td class="n">+$540</td></tr><tr><td>Limón</td><td class="n">+7%</td><td class="n">+$210</td></tr><tr><td>Pulpo</td><td class="n">+6%</td><td class="n">+$690</td></tr></table>
+            <table><tr><th>Mismo insumo, dos precios</th><th style="text-align:right">A</th><th style="text-align:right">B</th></tr>
+              <tr><td>Camarón 21/25 · kg</td><td class="n">$318</td><td class="n">$342</td></tr><tr><td>Aguacate Hass · kg</td><td class="n">$58</td><td class="n">$71</td></tr><tr><td>Cebolla morada · kg</td><td class="n">$22</td><td class="n">$22</td></tr><tr><td colspan="3" style="color:var(--ch);font-size:7.4pt;padding-top:.04in">La diferencia, sobre lo que compras al más caro: <b>$1,740 al mes</b> (camarón $960 · aguacate $780)</td></tr><tr><td colspan="3" style="color:var(--t7);font-size:7.4pt;padding-top:.02in">Bajó: jitomate −12% · cilantro −4%</td></tr></table>
+          </div>
+          <p class="why" style="font-size:7.6pt;color:var(--t7);margin-top:.05in">Cinco insumos suben <strong>$7,420 al mes</strong> sobre lo que compras. El camarón está en 31 de tus 48 recetas y el aguacate en 22: por ahí entra al menú. Quién subió más: Mariscos del Pacífico, +14% en promedio.</p>
+        </div>
+        <p class="full"><b>Qué permite</b>Con estos precios y las porciones, el costo de cada platillo se recalcula con cada factura nueva.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 2 de 5</span></div>
+</section>
+
+<!-- ═══════════ PÁGINA 3 · Lo que sale de tus documentos (II) + el espejo ═══════════ -->
+<section class="page page3b">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<defs>
+<clipPath id="clip-0">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath>
+<clipPath id="clip-1">
+<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
+</clipPath>
+</defs>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
+<g clip-path="url(#clip-0)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
+</g>
+<g clip-path="url(#clip-1)">
+<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+</g>
+</svg>Diagnóstico · Marea Baja</div><div class="r">Lo que sale de tus documentos · II</div></div>
+  <div><h1 style="font-size:14pt">Lo que sale de tus documentos <span style="font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);letter-spacing:0;margin-left:.08in">· continuación: tus costos, tu gente, y lo que nos dijiste</span></h1></div>
+  <div class="box" style="padding-top:.08in;padding-bottom:.04in">
+    <div class="area">
+      <div class="t">Costos y resultados<small>estado de resultados jun–ago · nómina de agosto</small></div>
+      <div class="b">
+        <p><b>Qué hay</b>Tres meses completos: ventas, costo de venta, nómina y renta.</p>
         <p><b>Qué frena</b>Luz, agua y gas no aparecen como línea propia. Sin ellos, el costo de ocupación se ve más bajo de lo que es.</p>
-        <p class="full"><b>Qué se movió</b>Food cost 31.9% → 34.6% en dos meses. En compras: camarón +18%, aguacate +31%, aceite +9%. Las ventas se movieron menos de 3%. La subida es de insumos, no de volumen.</p>
+        <p class="full"><b>Qué se movió</b>Food cost 31.9% → 34.6% en dos meses. Las ventas se movieron menos de 3%: la subida es de insumos, no de volumen (ver Compras).</p>
       </div>
     </div>
 
     <div class="area">
       <div class="t">Lo que hoy depende de una persona clave<small>operación escrita · 1 documento</small></div>
       <div class="b">
-        <p><b>Qué hay</b>Un protocolo de apertura y cierre, con la parte de higiene adentro. Está completo y se usa. Es 1 de los 8 procesos clave.</p>
-        <p><b>Qué se ejecuta de memoria</b>Recibir mercancía, almacenar y rotar, porcionar, servicio, limpieza, caja e inducción.</p>
+        <p><b>Qué hay</b>Un protocolo de apertura y cierre, con la parte de higiene adentro. Está completo y se usa. Es 1 de los 8 procesos clave; los otros 7 se ejecutan de memoria.</p>
+        <div class="procs"><p><b>Los 8 procesos clave · cómo están hoy</b></p>
+          <div class="g2" style="gap:.04in .2in;margin-top:.02in">
+          <table><tr><td>Apertura y cierre</td><td style="color:var(--ac);font-weight:600">escrito</td></tr>
+            <tr><td>Recibir mercancía</td><td style="color:var(--t7)">de memoria</td></tr>
+            <tr><td>Almacenar y rotar</td><td style="color:var(--t7)">de memoria</td></tr>
+            <tr><td>Producción y porcionado</td><td style="color:var(--t7)">de memoria</td></tr></table>
+          <table><tr><td>Servicio</td><td style="color:var(--t7)">de memoria</td></tr>
+            <tr><td>Limpieza e higiene</td><td style="color:var(--ac);font-weight:600">en el de apertura</td></tr>
+            <tr><td>Caja y cierre de caja</td><td style="color:var(--t7)">de memoria</td></tr>
+            <tr><td>Inducción de alguien nuevo</td><td style="color:var(--t7)">de memoria</td></tr></table>
+          </div>
+          <p class="why" style="font-size:7.3pt;color:var(--t7);margin-top:.03in">Cuáles están escritos sale de tu documento de operación; quién los conoce se confirma en la primera semana.</p></div>
         <div class="full" style="margin-top:.04in">
           <p><b>Dónde se nota</b></p>
           <div class="carga" style="margin-top:.03in">
@@ -459,10 +556,10 @@
     </div>
   </div>
 
-  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 2 de 5</span></div>
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 3 de 5</span></div>
 </section>
 
-<!-- ═══════════ PÁGINA 3 · Tu camino, en orden ═══════════ -->
+<!-- ═══════════ PÁGINA 4 · Tu camino, en orden ═══════════ -->
 <section class="page page3">
   <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
 <defs>
@@ -512,21 +609,21 @@
   <div class="box">
     <h2>Cómo se completa en Zenet <span style="color:var(--t7);letter-spacing:0;text-transform:none;font-weight:400;font-family:var(--fb);font-size:7.8pt">· la versión completa, en construcción con los primeros Socios Fundadores. Lo que dice "hoy" ya corre; lo demás, tu operación lo moldea.</span></h2>
     <div class="mapa">
-      <div class="c"><span class="st hoy">hoy</span><h4>Compras</h4><ul><li>Qué subió y cuánto, con cada factura</li><li>Costo por insumo, al día</li><li class="soon">Recosteo: qué platillo te deja qué</li></ul><div class="p">Aquí aterrizan los pasos <b>2</b> y <b>5</b></div></div>
-      <div class="c"><span class="st hoy">hoy</span><h4>Estandarización</h4><ul><li>Catálogos</li><li>Recetas</li><li>Inventario</li><li>Equivalencias</li><li class="soon">Protocolos</li></ul><div class="p">Aquí aterrizan los pasos <b>1, 3, 4</b> y <b>6</b></div></div>
+      <div class="c"><span class="st hoy">hoy</span><h4>Compras</h4><ul><li>Qué subió y cuánto, con cada factura</li><li>Costo por insumo, al día</li><li class="soon">Recosteo: qué platillo te deja qué</li></ul><div class="p">Aquí aterriza la rutina <b>sem</b> · los pasos <b>2</b> y <b>5</b> la encienden</div></div>
+      <div class="c"><span class="st hoy">hoy</span><h4>Estandarización</h4><ul><li>Catálogos</li><li>Recetas</li><li>Inventario</li><li>Equivalencias</li><li class="soon">Protocolos</li></ul><div class="p">Aquí aterrizan los pasos <b>1</b> al <b>6</b></div></div>
       <div class="c"><span class="st soon">en construcción</span><h4>Costos</h4><ul><li class="soon">Tus números contra el rango, cada mes</li><li class="soon">Qué se movió y por qué</li></ul><div class="p">Lo que hoy lees en este diagnóstico, vivo</div></div>
-      <div class="c"><span class="st soon">en construcción</span><h4>Manual Operativo</h4><ul><li class="soon">Los 8 procesos clave, escritos</li><li class="soon">Roles y accesos para tu equipo</li></ul><div class="p">Aquí aterriza el paso <b>·</b></div></div>
+      <div class="c"><span class="st soon">en construcción</span><h4>Manual Operativo</h4><ul><li class="soon">Los 8 procesos clave, escritos</li><li class="soon">Roles y accesos para tu equipo</li></ul><div class="p">Aquí aterriza <b>escribir los procesos</b></div></div>
       <div class="c"><span class="st soon">en construcción</span><h4>Zenet por WhatsApp</h4><ul><li class="soon">Le preguntas sobre este diagnóstico</li><li class="soon">Le mandas la factura y te dice qué tocó</li></ul><div class="p">La consulta, sin abrir la app</div></div>
     </div>
   </div>
 
   <div class="quote">Lo que este documento no dice: qué platillo subir de precio, qué proveedor cambiar ni qué quitar del menú. Eso lo decides tú. Zenet te pone los números enfrente y los mantiene al día.</div>
 
-  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 3 de 5</span></div>
+  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 4 de 5</span></div>
 </section>
 
-<!-- ═══════════ PÁGINA 4 · Anexo ═══════════ -->
-<section class="page page4">
+<!-- ═══════════ PÁGINA 5 · Anexo ═══════════ -->
+<section class="page page4 page5m">
   <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
 <defs>
 <clipPath id="clip-0">
@@ -551,7 +648,7 @@
   <div><h1 style="font-size:14pt">Lo que se movió, y el detalle <span style="font-family:var(--fb);font-weight:400;font-size:8.2pt;color:var(--t7);letter-spacing:0;margin-left:.08in">· la comparación contra tu línea base, y el anexo que respalda las páginas anteriores</span></h1></div>
   <div class="box">
     <h2>Hoy contra tu línea base <span style="color:var(--t7);letter-spacing:0;text-transform:none;font-weight:400;font-family:var(--fb);font-size:7.8pt">· cada número de septiembre junto al de octubre. Lo que cambió es por lo que capturaste; lo que no, también se ve.</span></h2>
-    <table style="font-size:8.4pt">
+    <table>
       <tr><th style="width:34%">&nbsp;</th><th style="text-align:right">Línea base · 17 sep</th><th style="text-align:right">Hoy · 17 oct</th><th style="text-align:right">Se movió</th><th>Por qué</th></tr>
       <tr><td>Índice de estandarización</td><td class="n" style="color:var(--t7)">46</td><td class="n">68</td><td class="n" style="color:var(--ac)">+22</td><td style="color:var(--t7)">porciones en 19 recetas · presentación de compra en 48</td></tr>
       <tr><td>Qué tanto se puede enseñar sin una persona clave</td><td class="n" style="color:var(--t7)">29</td><td class="n">44</td><td class="n" style="color:var(--ac)">+15</td><td style="color:var(--t7)">recetas ejecutables 21 → 36 · procesos escritos igual</td></tr>
@@ -560,6 +657,8 @@
       <tr><td>Margen operativo</td><td class="n" style="color:var(--t7)">7.2%</td><td class="n">8.9%</td><td class="n" style="color:var(--ac)">+1.7 pts</td><td style="color:var(--t7)">entró al rango</td></tr>
       <tr><td>Costo de nómina · ocupación</td><td class="n" style="color:var(--t7)">27.8% · 9.1%</td><td class="n">27.8% · 9.1%</td><td class="n" style="color:var(--t7)">igual</td><td style="color:var(--t7)">ocupación sigue sin luz, agua ni gas en el desglose</td></tr>
       <tr><td>Lo que se movió, en pesos</td><td class="n" style="color:var(--t7)">—</td><td class="n">$6,970 / mes</td><td class="n" style="color:var(--ac)">1.7 × $4,100</td><td style="color:var(--t7)">$83,640 al año si se sostiene</td></tr>
+      <tr><td>Compras · gasto al mes</td><td class="n" style="color:var(--t7)">$118,400</td><td class="n">$116,900</td><td class="n" style="color:var(--ac)">−$1,500</td><td style="color:var(--t7)">aguacate −12%; camarón siguió +4%</td></tr>
+      <tr><td>Camarón 21/25 · precio kg</td><td class="n" style="color:var(--t7)">$318 / $342</td><td class="n">$331 / $355</td><td class="n" style="color:var(--t7)">+4%</td><td style="color:var(--t7)">sigues comprando a dos proveedores</td></tr>
       <tr><td>Recetas con costo</td><td class="n" style="color:var(--t7)">31 de 48</td><td class="n">48 de 48</td><td class="n" style="color:var(--ac)">+17</td><td style="color:var(--t7)">recalculadas con cada factura de septiembre</td></tr>
       <tr><td>Platillos del menú sin receta</td><td class="n" style="color:var(--t7)">7</td><td class="n">7</td><td class="n" style="color:var(--t7)">igual</td><td style="color:var(--t7)">paso 4 pendiente; los nombres, en tu diagnóstico de septiembre</td></tr>
       <tr><td>Procesos clave escritos</td><td class="n" style="color:var(--t7)">1 de 8</td><td class="n">1 de 8</td><td class="n" style="color:var(--t7)">igual</td><td style="color:var(--t7)">se mueve con el Manual Operativo</td></tr>
@@ -579,37 +678,12 @@
     </ul>
   </div>
 
-  <div class="ftr"><span>Elaborado por Zenet · zenetapp.com · © 2026 Zenet</span><span>Marea Baja · ejemplo · 4 de 5</span></div>
-</section>
-
-<!-- ═══════════ PÁGINA 5 · Anexo (cont.) ═══════════ -->
-<section class="page">
-  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
-<defs>
-<clipPath id="clip-0">
-<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
-</clipPath>
-<clipPath id="clip-1">
-<path clip-rule="nonzero" d="M 1.570312 0 L 601 0 L 601 416.300781 L 1.570312 416.300781 Z M 1.570312 0 "/>
-</clipPath>
-</defs>
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/>
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/>
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/>
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/>
-<g clip-path="url(#clip-0)">
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 "/>
-</g>
-<g clip-path="url(#clip-1)">
-<path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
-</g>
-</svg>Diagnóstico · Marea Baja</div><div class="r">Anexo</div></div>
-  <div><div class="eyebrow">Anexo · continuación</div></div>
   <div class="box">
     <h2>Lo que leímos</h2>
     <div class="files">
       <div><b>Recetas y menú</b>recetario-marea-2026.xlsx<br>menu-verano-2026.pdf</div>
-      <div><b>Inventario y compras</b>inventario-cocina.xlsx<br>compras-jul.pdf · compras-ago.pdf</div>
+      <div><b>Inventario</b>inventario-cocina.xlsx</div>
+      <div><b>Compras</b>compras-jul-ago.xlsx</div>
       <div><b>Costos y resultados</b>edo-resultados-jun-ago.xlsx<br>nomina-ago.xlsx</div>
       <div><b>Operación</b>apertura-cierre-cocina.docx</div>
     </div>
