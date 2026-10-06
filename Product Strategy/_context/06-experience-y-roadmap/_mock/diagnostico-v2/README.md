@@ -7,6 +7,7 @@ HTML con los tokens de marca (Onest + Hanken Grotesk vía Google Fonts · teal `
 | `diagnostico-v2-ejemplo.html` | Primer diagnóstico, todos los documentos leídos (con el área de Compras desde el 23-sep) · es también el **diagnóstico de ejemplo de venta** | 5 |
 | `diagnostico-v2-ejemplo_mes2.html` | Segundo diagnóstico, comparado contra la línea base (+ filas de compras) | 5 |
 | `diagnostico-v2-ejemplo_sin-costeo.html` | Primer diagnóstico con solo recetario y menú (Inventario y Compras colapsados a una línea) | 4 |
+| `diagnostico-v2-ejemplo_2-sucursales.html` | Primer diagnóstico con dos sucursales (Zona Río y Playas): total en la pág. 1 y tabla por sucursal en Costos y resultados (26-sep) | 5 |
 | `bloque-cabecera.html` · `bloque-indices.html` · `bloque-numeros.html` | Los bloques de la pág. 1 aislados, para verlos grandes | — |
 
 **Regenerar el PDF** (macOS, Chrome instalado; necesita red para las fuentes):

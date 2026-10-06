@@ -5,7 +5,7 @@ type: product-strategy
 research_stage: discovery-pre-PMF
 last_updated: 2026-09-23
 status: active
-version: 1.1.2
+version: 1.4.1
 owner: Alan Bahena
 ---
 
@@ -63,7 +63,7 @@ Lo que el dueño lee de pie, en dos minutos. Cabe en carta con cuatro bloques: c
 
 - Eyebrow *Diagnóstico de tu operación* · nombre del restaurante · línea de contexto (*Mariscos · casual · Zona Río, Tijuana · 1 sucursal*). El número de sucursales siempre va aquí.
 - **Fecha explicada:** *"Diagnóstico al 17 de septiembre de 2026 · describe tu operación a esa fecha; el mes que viene se compara contra este."* No una fecha suelta.
-- **"Lo que leímos"** como fichas con documento + alcance: *Recetario · 48 recetas* · *Menú · 52 platillos* · *Inventario · 86 insumos* · *Compras · 94 renglones · 7 proveedores* (v1.1.1: antes decía "Costos desglosados"; la ficha nombra el documento tal como lo lista el anexo) · *Estado de resultados · jun–ago* · *Operación escrita · 1 documento*. Con 2+ sucursales, cada ficha dice de cuál vino el documento (o "consolidado").
+- **"Lo que leímos"** como fichas con documento + alcance: *Recetario · 48 recetas · 6 sub-recetas* · *Menú · 52 platillos* · *Inventario · 86 insumos* · *Compras · 94 renglones · 7 proveedores* (v1.1.1: antes decía "Costos desglosados"; la ficha nombra el documento tal como lo lista el anexo) · *Estado de resultados · jun–ago* · *Operación escrita · 1 documento*. Con 2+ sucursales, cada ficha dice de cuál vino el documento (o "consolidado").
 - En el ejemplar de ejemplo: píldora *Ejemplo · datos ficticios* arriba a la derecha, en peach.
 
 ### 3.2 Dos índices, lado a lado
@@ -78,7 +78,7 @@ Lo que el dueño lee de pie, en dos minutos. Cabe en carta con cuatro bloques: c
 - Número de 0 a 100 = promedio de dos componentes:
   - **Procesos clave escritos** = escritos ÷ 8. **Lista fija de 8, igual para todos los restaurantes** (para que sea comparable entre restaurantes y mes a mes): 1 apertura y cierre · 2 recibir mercancía · 3 almacenar y rotar inventario · 4 producción y porcionado · 5 servicio al cliente · 6 limpieza e higiene · 7 caja y cierre de caja · 8 inducción de alguien nuevo. `[Alan verifica]` la lista contra las secciones del Manual Operativo y las cinco categorías que hoy lee operación escrita (roles · protocolos · servicio · higiene · capacitación); si el manual tiene otra taxonomía, la lista se alinea a ella.
   - **Recetas que alguien nuevo ejecuta igual** = recetas con porción **y** con todas sus unidades con equivalencia ÷ total de recetas.
-- **Bloque "Tu equipo · declarado por ti"** (tres filas, una sola etiqueta): *Personas · 14 · cocina 8 · piso 4 · otros 2* · *Trabajan con procesos no escritos · 12 de 14* · *Rotación en seis meses · salieron 5 · entraron 4*. Con 2+ sucursales, se parte por sucursal con total.
+- **Bloque "Tu equipo · declarado por ti"** (tres filas, una sola etiqueta): *Personas · 14 · cocina 8 · piso 4 · administración 2* (v1.4.1: el mismo nombre que el plano de la pág. 4 y que la pregunta del onboarding; antes decía "otros") · *Trabajan con procesos no escritos · 12 de 14* · *Rotación en seis meses · salieron 5 · entraron 4*. Con 2+ sucursales, se parte por sucursal con total.
 - **"Qué lo sube más rápido"**: igual que en A (*"escribir los 4 procesos de cocina y caja que hoy van de memoria → ~55"*).
 - **El costo de la rotación en pesos NO se muestra** hasta que el dato sea suyo (altas y bajas capturadas en Zenet, mes 2+). Nunca con dato del sector.
 
@@ -87,6 +87,13 @@ Lo que el dueño lee de pie, en dos minutos. Cabe en carta con cuatro bloques: c
 Cabecera del bloque: *"Tus números · contra el rango de tu segmento. Un rango es una señal, no un veredicto. Cada cifra dice de dónde sale."*
 
 **Food cost como cifra principal** (columna izquierda): número grande · píldora con la magnitud (*"1.6 puntos arriba del techo"*), debajo del número, no al lado · línea de origen (*"Tuyo · estado de resultados de agosto · rango de tu segmento 28–33%"*) · escala con la banda del rango **rotulada en los extremos** (28% · 33%) y la marca con su valor encima · **tendencia** de los meses leídos como gráfica de puntos con valores (31.9 → 33.8 → 34.6) + texto: cuánto subió, si las ventas se movieron, **el peso en pesos de lo que subió en compras y qué subió** (*"Cinco insumos suben $7,420 al mes sobre lo que compras: camarón +18% · aguacate +31% · aceite +9%. Ver Compras, pág. 2."*, del área §4.3). **v1.1.1 (23-sep):** el $7,420 va en la pág. 1 porque es en pesos, es suyo y explica el *"arriba del techo"* ($6,560): uno es sobre ventas y otro sobre compras, así que se ponen lado a lado, nunca se suman ni se igualan. No es un cuarto bloque de la banda de dinero (esa cuenta la aritmética del punto); vive en la tendencia.
+
+**Con dos o más sucursales (v1.2 · 26-sep):** *Tus números* muestra **siempre el total de las sucursales juntas**; el desglose vive en Costos y resultados (§4.4). Reglas:
+- **Ponderado, nunca promedio de porcentajes:** food cost de las juntas = Σ costo de venta ÷ Σ ventas (igual nómina, prime cost, ocupación, margen). Si una sucursal vende el doble, pesa el doble.
+- **Solo se suma lo completo:** mismo mes en todas; si falta el estado de resultados de una, la pág. 1 no inventa un total — muestra la que hay y la nombra (*"solo Zona Río · de Playas no leímos números"*).
+- **Línea de origen** del food cost: *"Tuyo · las 2 sucursales juntas · agosto · rango de tu segmento 28–33%"*.
+- **Una línea por sucursal bajo el food cost** (*"Zona Río 32.8% · Playas 37.7% · por sucursal, en la pág. 3"*) **solo cuando una está dentro del rango y otra fuera**: es el caso en que el total esconde lo importante. Si todas están del mismo lado, no aparece. Las cuatro celdas compactas no llevan esa línea (no cabe); el desglose queda en la tabla.
+- La banda del dinero (el punto · arriba del techo · cada $10,000) se calcula sobre el total.
 
 **Cuatro celdas compactas** (columna derecha): costo de nómina · prime cost · costo de ocupación · margen operativo. Cada una: etiqueta · cifra · píldora · escala rotulada · una línea de origen.
 
@@ -148,6 +155,13 @@ Por área, **solo donde hubo documento**, y cada área con el mismo patrón: **q
 
 **Con menú:** siempre se cruza menú ↔ recetario (platillos sin receta · recetas fuera del menú).
 
+**Sub-recetas (v1.3 · 26-sep).** Una sub-receta es lo que la cocina prepara y entra como ingrediente en otros platillos (salsas, bases, marinados, caldos). Es donde más se esconden el costo y el conocimiento: una salsa de la casa sin escribir deja sin costo real a todos los platillos que la llevan y los hace depender de quien la prepara.
+- **Se cuentan aparte de las recetas de platillo:** la ficha dice *"Recetario · 48 recetas · 6 sub-recetas"* y los índices se siguen calculando sobre las 48. Es la misma regla que ya usa el análisis en producción (`internal_preparations`): una preparación interna sale de los dos lados del cruce recetas↔inventario, así que **nunca aparece como "ingrediente que falta en el inventario"**.
+- **Qué hay** suma *"· 6 sub-recetas"* al final de la línea.
+- **Una línea a todo lo ancho, rótulo "Sub-recetas"**, solo si hay preparaciones que entran como ingrediente y no tienen receta propia: *"4 preparaciones de la casa entran como ingrediente sin receta propia: su costo y cómo se hacen viven en quien las prepara — salsa negra (en 9 platillos) · mayonesa de chipotle (6) · aguachile verde base (5) · caldo de camarón (3)."* Nombres en gris, con el número de platillos que la llevan, de mayor a menor. Si todas tienen receta, la línea no aparece.
+- **Camino:** un paso *"Receta para las N preparaciones de la casa · entran en X platillos · desbloquea que salgan igual sin quien las prepara"*, destino Recetas. Va después de las recetas de platillos del menú y antes de las altas de inventario. **No promete que el costo de la sub-receta suba solo a los platillos** que la usan: eso depende de que la app ligue una receta como ingrediente de otra, y hoy no hay señal de que lo haga.
+- **Fuera por ahora:** que las sub-recetas sin escribir cuenten en el índice de persona clave. Tiene sentido, pero cambia la fórmula; se evalúa viéndolo primero en el reporte.
+
 ### 4.2 Inventario
 
 *(v1.1: Compras se separa en §4.3; aquí queda solo el catálogo.)*
@@ -171,6 +185,8 @@ Cinco datos, todos calculados del documento, con origen *"tuyo · compras de jul
 
 - **Con documento:** qué hay (meses completos, líneas presentes, compras por proveedor) · qué frena (líneas que no aparecen como propias, p. ej. luz/agua/gas) · **qué se movió** (food cost por mes; qué subió en compras; si las ventas se movieron: *"la subida es de insumos, no de volumen"*).
 - **Sin documento:** *"No leímos costos ni estado de resultados. Cuando los tengas, aquí se leen contra el rango de tu segmento y sale lo que vale un punto de food cost en tu operación, en pesos. Basta con el estado de resultados de un mes."*
+- **Por sucursal (v1.2 · 26-sep) — solo si el dueño mandó un estado de resultados por sucursal.** Tabla de texto, sin gráfica, entre *qué hay / qué frena* y *qué se movió*, con título *"Por sucursal · agosto"*. Columnas: métrica · rango · una por sucursal · **Juntas**. Filas: ventas del mes · food cost · nómina · prime cost · margen operativo · **food cost arriba del techo, en pesos** (por sucursal: *"dentro"* o la cifra; juntas: la misma de la pág. 1). Lo que queda fuera del rango, con fondo peach; la columna *Juntas*, con fondo crema. Debajo, una línea de lectura que **nombra la métrica** (la tabla tiene cinco): *"El food cost de las dos juntas está 1.6 puntos arriba del techo del 33%. Por separado, el de Zona Río está dentro y el de Playas lleva toda la diferencia: $7,050 al mes, más que el total, porque Zona Río la compensa. En peach, lo que queda fuera del rango."* *Qué se movió* dice *"food cost de las dos juntas"*.
+- **Varias sucursales con un solo estado de resultados consolidado:** sin tabla; una línea: *"Tu estado de resultados viene de las dos juntas; con uno por sucursal, aquí ves cuál pesa más."*
 
 ### 4.5 Lo que hoy depende de una persona clave
 
@@ -194,36 +210,61 @@ Nota de maquetación (v1.1): con Compras, la pág. 2 lleva recetas · inventario
 
 ### 4.7 Con dos o más sucursales
 
-Entra una comparación lado a lado (inventario · equipo · costos) por sucursal, con total. El recetario suele ser uno para todas; inventario, equipo y procesos son por lugar. `[Diseño pendiente]`.
+**Regla (v1.2 · 26-sep): el total arriba, el desglose en su área.** La pág. 1 lee el negocio completo; la pregunta *"¿cuál sucursal me está jalando?"* es una segunda lectura y va en el área que corresponde. **Hoy solo Costos y resultados se desglosa** (§3.3 · §4.4), porque es donde el desglose cambia una decisión. Inventario, compras, equipo y procesos por sucursal quedan pendientes; el recetario suele ser uno para todas. Mock: `_mock/diagnostico-v2/diagnostico-v2-ejemplo_2-sucursales.html` (Marea Baja con Zona Río y Playas).
 
-## 5. Página 3 · Tu camino, en orden — construida 21-sep
+## 5. Página 4 · Tu camino, en orden — rediseñada 28-sep (v1.4)
 
-Se lee de arriba abajo como la respuesta a lo que él pidió. Título en una línea: *"Tu camino, en orden · primero lo que desbloquea dinero; solo se pide lo que ya corre en Zenet"*.
+Se lee de arriba abajo: **lo que pidió → dónde entra Zenet en su restaurante → cómo se completa, por área.** Título en una línea: *"Tu camino, en orden · primero lo que desbloquea dinero; lo que está en construcción lo trabajamos juntos"*.
+
+*(v1.4 · 28-sep, cerrada con el fundador bloque por bloque. Sustituye al camino "en dos tiempos" (capturas + rutinas) y al mapa de la 1.0 de cinco columnas de v1.0-v1.3: su contenido vive ahora en el plano y en las tarjetas por área.)*
 
 ### 5.1 "Lo que quieres que cambie" — el deseo, arriba
 
-Misma caja que el espejo de la pág. 2: **su deseo textual** con la etiqueta "declarado por ti" (*"Quiero saber cuánto me deja cada platillo sin esperar al cierre, y poder irme tres días sin que la cocina cambie."*) y al lado **"Qué lo hace posible"**: dos o tres líneas que apuntan a pasos y secciones concretas, marcando qué es hoy y qué entra con cada sección en construcción.
+Misma caja que el espejo: **su deseo textual** con la etiqueta "declarado por ti" (*"Quiero saber cuánto me deja cada platillo sin esperar al cierre, y poder irme tres días sin que la cocina cambie."*) y al lado **"Qué lo hace posible"**: dos o tres líneas que apuntan a pasos y secciones (*"pasos 1 y 2; el recosteo entra con Compras"* · *"irte tres días: pasos 1, 3 y 8"*), sin decir "hoy" de lo que está en construcción.
 
-### 5.2 El camino, en dos tiempos
+### 5.2 "Tu restaurante, por dentro" — el plano
 
-**Regla dura:** es la parte de *instrucciones* del documento → **solo se numera lo que ya corre en Zenet**. Lo que no corre va sin número, en gris, con *"[Sección] · en construcción"*. (Misma regla que la landing: la narrativa describe el camino; las instrucciones solo piden lo que funciona.)
+Un plano 2D del restaurante con **tres zonas**, las que el dueño ya usa para pensar su local. Cabecera: *"Tu restaurante, por dentro · 14 personas, declarado por ti · dónde trabaja Zenet"* — **sin nombrar sucursal** (la cabecera de la pág. 1 ya lo dice).
 
-- **"Una vez · capturas":** los pasos numerados, cada uno con qué (con el conteo) · **qué desbloquea** · **a qué índice le pega** · dónde y cuántas capturas (*Recetas · 19 capturas · tú dices cuánto rinde, Zenet lo carga*). Orden: primero lo que desbloquea dinero. Escribir los procesos va sin número mientras el Manual Operativo esté en construcción.
-- **"Cada semana, cada mes · rutinas — son las que mantienen vivos los números":** marca propia (*sem* / *mes* en peach). **Cada factura a Compras el día que llega** (hoy) → *saber qué subió y cuánto ese mismo día, no al cierre; con los pasos 1 y 2, cuánto le pega a cada platillo*. **El estado de resultados de cada mes** → Costos, en construcción; mientras, se manda a Zenet y se corre a mano → *tus números contra el rango cada mes, y que este diagnóstico se vuelva a correr*. Razón: el modo de falla post-firma no es el software, es la disciplina (`02-customer-research/06` §4.6); el reporte tiene que pedir las rutinas.
-- **No entra aquí** el hallazgo *"tus costos están altos"*: vive en la pág. 1 (cifra) y en el espejo de la 2 (porqué). Un solo lugar.
+| Zona | Personas | Departamentos de Zenet (chips) | Texto |
+|---|---|---|---|
+| **Cocina** | *8 personas* | Recetas · Inventario · Equivalencias · Catálogos | *"Aquí vive el criterio: lo que se escribe, lo que rinde, lo que se guarda."* |
+| **Piso** (gris, rayado) | *4 personas* | ninguno | *"Tu POS se queda. De aquí, Zenet solo escribe los procesos: servicio y caja."* |
+| **Administración** (borde punteado teal, fondo mint claro) | *2 personas* | Compras · Costos · Manual Operativo | ***"Lo que hoy cargas tú."** Aquí entra Zenet.* |
 
-### 5.3 "Cómo se completa en Zenet" — el mapa de la 1.0
+Reglas del plano:
+- **Cada departamento va en la zona donde trabaja**, no todos en administración: el criterio vive en la cocina. **Manual Operativo va en administración** — escribir y mantener los procesos es trabajo de administración —, aunque los 8 procesos se ejecuten en las tres zonas (cocina: recibir · almacenar · producción · limpieza; piso: servicio · caja; administración: inducción · apertura y cierre).
+- **La línea punteada nunca dice "el área de Zenet"**: suena a reemplazo y el primer valor es *aumentar, no reemplazar*. Dice *"lo que hoy cargas tú; aquí entra Zenet"* — el *"tú decides; Zenet lo carga"* dibujado.
+- **Chips:** mint relleno = ya corre · blanco con borde punteado = en construcción. Leyenda bajo el plano: *ya corre · en construcción*.
+- **Personas por zona** = lo declarado en el onboarding (§7). La pregunta *"otros"* pasa a **"administración y otros"** para que el plano tenga su dato.
+- **Con 2+ sucursales: un solo plano**, con el total por zona y el desglose en la misma línea (*"Cocina · 8 personas · Zona Río 5 · Playas 3"*); cabecera *"2 sucursales · 14 personas"*. Nunca un plano por sucursal (repite los chips y con tres ya no cabe). Es la regla §4.7: el total arriba, el desglose en su lugar.
 
-*(Decisión del fundador, 21-sep: mostrar la versión completa para que el dueño vea hacia dónde va lo suyo.)* Es **narrativa**, separada de las instrucciones. Cabecera: *"la versión completa, en construcción con los primeros Socios Fundadores. Lo que dice 'hoy' ya corre; lo demás, tu operación lo moldea."* **Sin fechas.**
+### 5.3 "Cómo se completa, por área"
 
-Cinco columnas, alineadas a la navegación, cada una con etiqueta **hoy** (mint) o **en construcción** (borde gris), ítems con punto teal (hoy) o gris (en construcción), y una línea de cierre que dice qué le llega del camino. **v1.1.2 — dos verbos, no uno:** *"aquí aterrizan los pasos N"* significa "aquí los haces" y solo lo dice la columna donde vive el destino del paso (Inventario y Recetas viven en Estandarización, así que **Estandarización reclama los pasos 1 al 6**); **Compras** dice *"aquí aterriza la rutina sem · los pasos 2 y 5 la encienden"* (la presentación de compra y las altas de inventario son lo que enciende el recosteo, pero no se hacen ahí); **Manual Operativo** dice *"aquí aterriza escribir los procesos"* (el paso sin número no se cita por su marcador). Regla: ningún paso reclamado por una columna y omitido por la suya. Variante sin costeo: Estandarización 1 al 5 · Compras *"el paso 2 la enciende"*.
-1. **Compras** — hoy: qué subió y cuánto, con cada factura · costo por insumo, al día · en construcción: recosteo, qué platillo te deja qué.
-2. **Estandarización** — hoy: Catálogos · Recetas · Inventario · Equivalencias · en construcción: Protocolos.
-3. **Costos** — en construcción: tus números contra el rango, cada mes · qué se movió y por qué (*"lo que hoy lees en este diagnóstico, vivo"*).
-4. **Manual Operativo** — en construcción: los 8 procesos clave, escritos · roles y accesos para tu equipo (multiusuario).
-5. **Zenet por WhatsApp** — en construcción: le preguntas sobre este diagnóstico · le mandas la factura y te dice qué tocó. *(El asistente no se nombra como entidad: es "le preguntas a Zenet".)*
+Subtítulo: *"el orden es el que desbloquea dinero primero"*.
 
-`[Alan verifica]` qué está "hoy" en cada columna (asumido: Compras con variación y costo por insumo; Estandarización sin Protocolos) y si el recosteo vive en Compras o en Costos. **Vocabulario:** nunca "ingeniería de menú" → *"recosteo: qué platillo te deja qué"*.
+**Arriba, cuatro tarjetas** — primero lo que ya corre —, cada una con etiqueta (*hoy* / *hoy en la app* / *en construcción*), nombre, **ritmo** y viñetas cortas (punto teal = ya corre · gris = en construcción):
+
+| Tarjeta | Etiqueta · ritmo | Viñetas |
+|---|---|---|
+| **Compras** | hoy · *cada semana* | Cada factura, el día que llega · Por foto o PDF · Qué subió y cuánto, ese mismo día · Recosteo: qué platillo te deja qué *(en construcción)* |
+| **Zenet · tu mano derecha operativa** | hoy en la app · *cuando quieras* | Le preguntas por tus números, tus recetas y este diagnóstico · **Por WhatsApp**, tu buzón de compras *(en construcción)* · Le mandas tus facturas y Zenet las analiza |
+| **Costos** | en construcción · *cada mes* | Tu estado de resultados del mes · Tus números contra el rango · **Lo que se movió desde este diagnóstico**, en pesos · Mientras, se manda a Zenet y se corre a mano |
+| **Manual Operativo** | en construcción · *cuando entre* | Todo lo estandarizado, en un manual vivo · Catálogos, recetas estándar, equivalencias y normalización · Los procesos del paso 8, ya escritos · Roles para tu equipo |
+
+- **Un solo dueño por cosa (v1.4.1):** *los procesos se hacen en un lugar* — el paso 8 (pill *Protocolos*); el Manual Operativo es donde quedan (*"los procesos del paso 8, ya escritos"*) y "Qué lo hace posible" apunta al paso 8, no al Manual. *El recosteo vive en Compras* (viñeta en construcción), el mismo lugar al que apunta "Qué lo hace posible".
+- **Costos es donde se ve el cambio**, siempre como *"lo que se movió desde este diagnóstico"*, nunca *"ahorros con Zenet"* (§3.5 · §6).
+- **Manual Operativo *reúne* lo estandarizado**; no dice que recetas o catálogos estén en construcción por estar ahí. Lo nuevo del manual son los procesos escritos y los roles.
+- **"Tu mano derecha operativa"** es el rol de marca; la tarjeta lo ancla a lo que hace. WhatsApp se marca *en construcción* (el asistente en la app sí corre: el agente de Bienvenida contesta sobre Zenet y sobre el diagnóstico). **Decisión del fundador (28-sep): WhatsApp está en construcción, sin fecha** — supersede el *"puede no construirse"* del 21-ago; `docs/agents/grounding.md` del repo de producción ya lo dice así (§ 1.3 · lista de próximamente · fila E4). Pendiente de código: volver a meterlo en la lista cerrada de próximamente del sintetizador (se sacó en 26.7).
+
+**Abajo, a lo ancho: Estandarización** · *en construcción* · **sin plazo ni ritmo** (decisión del fundador, 28-sep: se quitó *"en un par de semanas"* — junto a *en construcción* se leía como fecha de producto, y `grounding.md` prohíbe que los agentes den plazos — y tampoco va *"con Alan cada semana"*). Los pasos **1 al 8**, en dos columnas, cada uno con **el chip de su departamento** junto al título y una línea de lo que desbloquea:
+
+1. Porciones en 19 recetas `Recetas` · 2. Presentación de compra en 48 insumos `Inventario` · 3. Equivalencia para 11 unidades `Equivalencias` · 4. Receta para 7 platillos del menú `Recetas` · 5. Receta para 4 preparaciones de la casa `Recetas` · 6. 14 ingredientes que faltan en el inventario `Inventario` · 7. Categoría para las 48 recetas `Catálogos` · 8. Escribir los 7 procesos de memoria `Protocolos`.
+
+**Regla de los pasos (v1.4, sustituye a "solo se numera lo que ya corre"):** los pasos se numeran **en el orden que desbloquea dinero**; lo que está en construcción se marca así. **Ningún plazo en la página** (ni del producto ni del trabajo del operador). Todos los pasos llevan el mismo círculo; ningún paso "sin número". El estado de Estandarización lo fija el fundador (28-sep: *en construcción*, V1 por terminar).
+
+- **No entra aquí** el hallazgo *"tus costos están altos"*: vive en la pág. 1 (cifra) y en el espejo (porqué). Un solo lugar.
+- **Vocabulario:** nunca "ingeniería de menú" → *"recosteo: qué platillo te deja qué"*; *"datos"*, no *"capturas"*, frente al dueño.
 
 ### 5.4 Cierre — la frontera honesta
 
@@ -240,7 +281,7 @@ Dos estados de la misma página:
 
 **Anexo** (rótulo *"se consulta, no se lee de corrido"*):
 - **Lo que encontramos en las unidades**: unidades duplicadas e inconsistentes, una sola vez aquí.
-- **Lo que leímos** por tipo · **"no leímos"** y que se incorpora cuando exista.
+- **Lo que leímos** por tipo · **"no leímos"** y que se incorpora cuando exista. **Con 2+ sucursales, un archivo por renglón con su atribución** (*"edo-resultados-zona-rio-jun-ago.xlsx · Zona Río"* · *"nomina-ago.xlsx · las dos"*), como en la pantalla de documentos del onboarding; si la ficha de la pág. 1 dice *"por sucursal"*, el anexo lo tiene que mostrar.
 - **De dónde salen los rangos** con su fuente. `[Alan verifica]` la fuente real de los rangos del motor; en el ejemplo, ilustrativos.
 - **¿Dudas sobre este diagnóstico?** — línea de contacto antes de la nota legal: en la Fase A, *"Escríbele a Alan por WhatsApp al +52 664 194 6634 o a alan@zenetapp.com. En la Fase de Socios Fundadores, Alan está en tu operación cada semana."* Cuando exista el asistente (§9), pasa a *"pregúntale a Zenet por WhatsApp"*. No en el pie de página (se repite y se ensucia). Un buzón genérico (hola@) solo si existe y le llega a alguien.
 - **Sobre este documento**: fecha, propiedad de los datos, método e índices de Zenet, © Zenet®; en el ejemplo, la nota de datos ficticios.
@@ -252,7 +293,7 @@ Dos estados de la misma página:
 ## 7. Lo que el onboarding pide de más
 
 Tres preguntas nuevas. Las dos primeras en la misma pantalla donde declara sucursales y alimentan el índice B y el bloque "Tu equipo":
-1. **Personas que trabajan hoy, por área:** cocina · piso · otros. Si mandó nómina, Zenet propone el número y él confirma.
+1. **Personas que trabajan hoy, por área:** cocina · piso · **administración y otros** (v1.4: antes "otros"; el plano de la pág. 4 lo usa como zona). Si mandó nómina, Zenet propone el número y él confirma.
 2. **Cuántas personas entraron y cuántas salieron en los últimos seis meses.**
 3. **Qué es lo que más te está pegando hoy** y **qué quieres que cambie** — **el agente de onboarding ya lo pregunta en la fase de análisis (confirmado 23-sep)**; lo que falta es guardar la respuesta textual con la etiqueta *declarado por ti* y pasarla al reporte (espejo §4.5 · deseo §5.1). Los cinco problemas del ICP pueden ir como opciones, pero la frase se guarda como la dijo.
 
@@ -318,7 +359,7 @@ El reporte lo generan los agentes de Zenet a partir de los documentos leídos en
 
 | Entrada | De dónde | Alimenta |
 |---|---|---|
-| Recetario (recetas con procedimiento, cantidades, unidades, porciones, categoría, costo si lo hay) | documento | índice A · pág. 2 recetas · camino · anexo unidades |
+| Recetario (recetas con procedimiento, cantidades, unidades, porciones, categoría, costo si lo hay; ingredientes marcados como preparación interna) | documento | índice A · pág. 2 recetas y sub-recetas · camino · anexo unidades |
 | Menú (platillos, precios) | documento | cruce menú ↔ recetario |
 | Inventario (insumos, unidad, familia, presentación de compra, precio) | documento | índice A · pág. 2 inventario · camino |
 | Compras (Excel: fecha · insumo · proveedor · cantidad · precio; o facturas sueltas) | documento | **área de Compras §4.3** · "qué subió en tus compras" en la pág. 1 · tendencia |
@@ -336,8 +377,10 @@ El reporte lo generan los agentes de Zenet a partir de los documentos leídos en
 - **Índice B** = promedio(procesos clave escritos ÷ 8, recetas con porción **y** todas sus unidades con equivalencia ÷ total).
 - **"Qué lo sube más rápido"** = simular las 1-2 capturas que más mueven el promedio y reportar el índice resultante (redondeado, con "~"). Si no hay simulación, solo nombrar las capturas.
 - **Tus números** = cada métrica ÷ ventas del último mes leído; rango del sector; tres lecturas (dentro · tensión real · por debajo favorable) + "revisa el dato" cuando falte una línea esperada (luz/agua/gas en ocupación).
+- **Varias sucursales:** cada métrica de las juntas = Σ numerador ÷ Σ ventas del mismo mes (ponderado); **arriba del techo por sucursal** = costo de venta de la sucursal − techo × ventas de la sucursal, solo si > 0.
 - **Lo que vale un punto** = 1% del promedio de ventas de los meses leídos. **Arriba del techo** = (métrica − techo) × punto, solo si > 0. **Cada $10,000** = 10,000 × (1 − food cost).
 - **Tendencia** = la métrica por mes leído; "qué subió en tus compras" = los 3 insumos con mayor variación de precio entre los dos últimos meses **+ la suma en $/mes de los 5 que más subieron** (misma cifra que §4.3, dato 4); si no hay documento de compras, la tendencia se queda en porcentajes.
+- **Sub-recetas** = recetas del recetario que son preparaciones (no platillos del menú); **preparaciones sin receta** = ingredientes marcados como preparación interna que no encuentran receta propia en el recetario; por cada una, número de recetas que la llevan. Fuera del denominador de los índices y del cruce recetas↔inventario.
 - **Insumos que más pesan** (sin costeo) = ingredientes ordenados por número de recetas que los llevan.
 - **Compras (§4.3):** precio unitario por insumo = precio ÷ cantidad, normalizado a la unidad del inventario · **variación** = (precio último mes − precio primer mes) ÷ primer mes, solo con ≥ 2 meses · **peso en $/mes** = Δ precio unitario × cantidad mensual promedio · **concentración** = gasto por proveedor ÷ gasto total del periodo · **mismo insumo, dos precios** = insumos con ≥ 2 proveedores en el mismo mes, precio unitario de cada uno; **brecha en $/mes** = Σ por insumo de (precio del proveedor más caro − precio del más barato) × cantidad mensual comprada al más caro · **quién subió más** = promedio de variación de los insumos de cada proveedor · **gasto promedio al mes** = total ÷ meses cubiertos.
 - **Costeadas** = las 5 recetas de mayor y las 5 de menor food cost; la línea de lectura cruza con los insumos que subieron.
@@ -351,17 +394,18 @@ El reporte lo generan los agentes de Zenet a partir de los documentos leídos en
 4. Las frases del dueño (problema, deseo) van **textuales**, entre comillas, sin corregir ni parafrasear.
 5. En "por qué pasa" y "qué lo cambia": causa → mecanismo → efecto, una o dos oraciones, sin "no sabes / no conoces".
 6. Los ejemplos de "dónde se nota" se eligen según lo que haya: porcionar (recetas sin porción) · recibir mercancía (insumos sin presentación) o medir en la cocina (unidades sin equivalencia) · enseñar a alguien nuevo (procesos de memoria + rotación declarada).
-7. Nombres de sección = navegación actual de la app. Solo se numera lo que ya corre; lo demás, *"[Sección] · en construcción"*, sin fecha.
+7. Nombres de sección = navegación actual de la app. Los pasos se numeran en el orden que desbloquea dinero; lo que no corre se marca *"en construcción"*, sin fecha (v1.4).
 8. Nunca comparar con el precio de Zenet ni afirmar que Zenet recupera un punto.
 9. En Compras, **nunca recomendar proveedor** ni calificarlo ("caro", "mejor"): se muestran precios y variación; decidir es del dueño.
+10. **Los factores impresos dan el resultado impreso (v1.4.1).** El motor calcula con cifras exactas, pero toda cifra en pesos que el lector puede reconstruir con cifras mostradas en el reporte se calcula con esas cifras **redondeadas como se imprimen**: la pág. 1 enseña a multiplicar (*"1.6 × $4,100"*), y el lector lo repite en la tabla por sucursal (*Playas 4.7 × $1,500 = $7,050*, no el $7,080 del 37.72 % exacto). La columna *Juntas* sigue cuadrando al peso con la pág. 1.
 
 ### 8.4 Control de calidad antes de emitir
 
-- [ ] Ninguna palabra prohibida (§8.3.2). — [ ] Ningún cero sin su razón. — [ ] Cada cifra con origen. — [ ] Las frases del dueño textuales. — [ ] Nombres de sección vigentes. — [ ] Pasos numerados = solo lo que corre. — [ ] 5 páginas con todos los documentos (6 en el mes 2; 4 sin compras ni números); ninguna página con un solo párrafo ni con más de un cuarto vacío. — [ ] Sin sangrado de bloques sobre el pie. — [ ] El ejemplo de venta lleva *"Ejemplo · datos ficticios"* en cada página, sin precio, sin "lo que se movió".
+- [ ] Ninguna palabra prohibida (§8.3.2). — [ ] Ningún cero sin su razón. — [ ] Cada cifra con origen. — [ ] Las frases del dueño textuales. — [ ] Con varias sucursales, la columna *Juntas* de la tabla cuadra al peso con la pág. 1. — [ ] Nombres de sección vigentes. — [ ] Pasos numerados = solo lo que corre. — [ ] 5 páginas con todos los documentos (6 en el mes 2; 4 sin compras ni números); ninguna página con un solo párrafo ni con más de un cuarto vacío. — [ ] Sin sangrado de bloques sobre el pie. — [ ] El ejemplo de venta lleva *"Ejemplo · datos ficticios"* en cada página, sin precio, sin "lo que se movió".
 
 ## 9. El asistente del diagnóstico — "le preguntas a Zenet"
 
-Es la primera columna "en construcción" que el dueño ve en el mapa de la 1.0: *Zenet por WhatsApp · le preguntas sobre este diagnóstico*. Define lo mínimo para diseñarlo en el repo de producción; el nombre interno del agente no aparece nunca frente al dueño (los agentes no se nombran; es Zenet).
+Es la tarjeta *"Zenet · tu mano derecha operativa"* de la pág. 4 (§5.3): en la app corre hoy (el agente de Bienvenida); por WhatsApp, en construcción. Define lo mínimo para diseñarlo en el repo de producción; el nombre interno del agente no aparece nunca frente al dueño (los agentes no se nombran; es Zenet).
 
 - **Qué sabe:** este documento completo, los datos de los que salió (recetas, inventario, estado de resultados…), este spec (para explicar qué significa cada bloque y cómo se calculó), y el diagnóstico anterior si existe.
 - **Para qué sirve:** aclarar el diagnóstico. *"¿Por qué mi índice es 46?"* → los dos componentes y qué lo sube. *"¿De dónde sale el $4,100?"* → la cuenta y el documento. *"¿Qué recetas no tienen porción?"* → la lista. *"¿Qué pasa si subo el precio del aguachile?"* → **no propone**: dice cuánto cuesta hoy el aguachile y qué margen tiene, y que decidir el precio es suyo.
@@ -384,11 +428,13 @@ Es la primera columna "en construcción" que el dueño ve en el mapa de la 1.0: 
 
 ## 11. Pendientes
 
-- Diseño de la comparación por sucursal (§4.7).
+- Desglose por sucursal de inventario, compras, equipo y procesos (§4.7); hoy solo Costos.
 - Rediseñar el reporte actual del onboarding con esta estructura (repo de producción) · alinear los agentes que lo generan al contrato de §8 · diseñar el asistente de §9.
-- `[Alan verifica]` la lista de 8 procesos clave contra el Manual Operativo · qué está "hoy" en cada columna del mapa 1.0 · dónde vive el recosteo · la fuente real de los rangos · el mapa por fase de §7b contra el flujo real · formatos aceptados por tipo de documento.
+- **Estandarización: el reporte dice *en construcción* (decisión del fundador, 28-sep) y `grounding.md` dice *E2 ✅ Shipped 4/4*.** Los agentes van a contestar que corre. Alinear en la siguiente revisión de grounding: qué parte está en construcción (¿normalización · receta estándar · protocolos?) y qué parte corre.
+- **Copy de producción:** la página *Manual Operativo — próximamente* de la app habla de *"huecos"* y *"sugerencias de ahorro"*; choca con §1.3 y §1.6 (vocabulario vetado · Zenet no propone). El reporte manda al operador a esa sección → corregir en el repo.
+- `[Alan verifica]` la lista de 8 procesos clave contra el Manual Operativo · qué está "hoy" en cada tarjeta y chip de la pág. 4 · dónde vive el recosteo · la fuente real de los rangos · el mapa por fase de §7b contra el flujo real · formatos aceptados por tipo de documento.
 - Decidir si el diagnóstico de ejemplo de la venta (Task 43) sale de este mock o del reporte actual con corpus ficticio.
 
 ---
 
-*Historial: v1.1.2 (2026-09-23) — mapa de la 1.0: los pasos 2 y 5 estaban reclamados por Compras y omitidos por Estandarización → Estandarización 1 al 6, Compras "la rutina sem · 2 y 5 la encienden", Manual Operativo "escribir los procesos" · "mismo insumo, dos precios" cierra con la brecha en pesos. v1.1.1 (2026-09-23) — tres observaciones del fundador: el $7,420 sube a la tendencia de la pág. 1 · la ficha "Costos desglosados" pasa a "Compras · renglones · proveedores" · la tabla de los 8 procesos pierde la columna "quién lo sabe" (dato que el onboarding no recoge). v1.1 (2026-09-23) — §4.3 el área de Compras (5 datos · gráfica de proveedores · especialista propio) · págs. 2-3 repartidas · los nombres de platillos e ingredientes y la tabla de 8 procesos suben del anexo a su área · §7c y §8 actualizados. v1.0.2 (2026-09-23) — §7c: el onboarding v2 en cuatro pantallas (tabla de áreas con estados leyendo / necesita algo de ti / listo · conversación en paralelo · botón generar · pág. 1 en web + descarga) y la tabla de agentes. v1.0.1 (2026-09-23) — §7b: mapa de datos por fase del onboarding existente (4 fases + agente de onboarding); el problema y el deseo ya se preguntan. v1.0 (2026-09-21) — primera versión oficial: las cuatro páginas cerradas en tres versiones + contrato de generación (§8) + asistente (§9) + fuente de los mocks en git. v0.1 (2026-09-21) — págs. 1 y 2 cerradas con el fundador el 18 y el 21 de septiembre (la 2 con el espejo "lo que nos dijiste y lo que vimos"); págs. 3 y 4 construidas con él el 21 (deseo · camino en dos tiempos · mapa 1.0 · línea base) y la versión del mes 2 ("lo que se movió"); pendiente la revisión completa.*
+*Historial: v1.4.1 (2026-09-28) — Estandarización sin plazo (decisión del fundador) · seis correcciones de la revisión: pág. 1 de 2 sucursales sin sangrar sobre el pie · "administración 2" en vez de "otros 2" · los procesos se hacen en un solo lugar (paso 8) · el recosteo vive en Compras · anexo con un archivo por sucursal · regla 10 de §8.3 (los factores impresos dan el resultado impreso: Playas $7,050). v1.4 (2026-09-28) — pág. 4 rediseñada: plano "tu restaurante, por dentro" (cocina · piso · administración, departamentos en su zona, administración punteada "lo que hoy cargas tú") + cuatro tarjetas por área con ritmo y viñetas + Estandarización en construcción con pasos 1-8 y chip de departamento; sale el mapa de la 1.0 de cinco columnas; regla de pasos nueva; onboarding pregunta "administración y otros". v1.3 (2026-09-26) — sub-recetas en Recetas y menú: se cuentan aparte, línea de preparaciones sin receta propia con los platillos que la llevan, paso nuevo en el camino (sin prometer costo en cadena); mapa 1.0 renumerado. v1.2 (2026-09-26) — varias sucursales: la pág. 1 muestra el total ponderado (con una línea por sucursal bajo el food cost solo cuando una está dentro y otra fuera) y Costos y resultados lleva la tabla por sucursal con *Juntas*; regla "el total arriba, el desglose en su área"; mock de 2 sucursales. v1.1.2 (2026-09-23) — mapa de la 1.0: los pasos 2 y 5 estaban reclamados por Compras y omitidos por Estandarización → Estandarización 1 al 6, Compras "la rutina sem · 2 y 5 la encienden", Manual Operativo "escribir los procesos" · "mismo insumo, dos precios" cierra con la brecha en pesos. v1.1.1 (2026-09-23) — tres observaciones del fundador: el $7,420 sube a la tendencia de la pág. 1 · la ficha "Costos desglosados" pasa a "Compras · renglones · proveedores" · la tabla de los 8 procesos pierde la columna "quién lo sabe" (dato que el onboarding no recoge). v1.1 (2026-09-23) — §4.3 el área de Compras (5 datos · gráfica de proveedores · especialista propio) · págs. 2-3 repartidas · los nombres de platillos e ingredientes y la tabla de 8 procesos suben del anexo a su área · §7c y §8 actualizados. v1.0.2 (2026-09-23) — §7c: el onboarding v2 en cuatro pantallas (tabla de áreas con estados leyendo / necesita algo de ti / listo · conversación en paralelo · botón generar · pág. 1 en web + descarga) y la tabla de agentes. v1.0.1 (2026-09-23) — §7b: mapa de datos por fase del onboarding existente (4 fases + agente de onboarding); el problema y el deseo ya se preguntan. v1.0 (2026-09-21) — primera versión oficial: las cuatro páginas cerradas en tres versiones + contrato de generación (§8) + asistente (§9) + fuente de los mocks en git. v0.1 (2026-09-21) — págs. 1 y 2 cerradas con el fundador el 18 y el 21 de septiembre (la 2 con el espejo "lo que nos dijiste y lo que vimos"); págs. 3 y 4 construidas con él el 21 (deseo · camino en dos tiempos · mapa 1.0 · línea base) y la versión del mes 2 ("lo que se movió"); pendiente la revisión completa.*
