@@ -1,0 +1,1493 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Video demo · Zenet</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600&family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<!--
+  Video demo de Zenet — fuente de la animación.
+  · Lienzo de 960×540 px que se exporta a 2× (1920×1080). Se diseña a la escala de los ejemplos de referencia.
+  · Todo movimiento vive en UNA línea de tiempo de GSAP (sin transiciones CSS): así el render puede
+    adelantarla cuadro por cuadro y el video sale sin tirones.
+  · Vista previa: abrir este archivo en el navegador (barra para reproducir y adelantar).
+    ?scene=acto1 · ?scene=compras · ?scene=documentos,base  → un acto o escenas sueltas   ·   ?t=3.2 → congelado en ese segundo
+  · Render: build/render.mjs (Chrome headless → ffmpeg). Ver 00-guion.md §0.
+-->
+<style>
+:root{
+  --offwhite-50:#FFFCFA; --offwhite-100:#F9F4EF; --peach-100:#F4DED0;
+  --charcoal-900:#2B3738; --teal-700:#4B5E5E; --grey-300:#A3B2AC; --grey-100:#D1DBD7;
+  --accent:#2E6E62; --accent-hover:#265C52; --teal-400:#88BCAF; --mint-200:#BFE2D9;
+  --font-display:"Onest",system-ui,sans-serif; --font-body:"Hanken Grotesk",system-ui,sans-serif;
+  --line:rgba(43,55,56,.12);
+  --shadow:0 26px 50px -30px rgba(43,55,56,.42),0 3px 10px -4px rgba(43,55,56,.10);
+}
+html,body{margin:0;padding:0}
+body{background:#E6E0D7;font-family:var(--font-body);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+
+/* ── el lienzo ── */
+#frame{position:relative;margin:24px auto 0;width:960px;height:540px;transform-origin:top left}
+#stage{position:relative;width:960px;height:540px;overflow:hidden;background:var(--offwhite-100);color:var(--charcoal-900);border-radius:6px;box-shadow:0 30px 60px -30px rgba(43,55,56,.45)}
+body.render{background:var(--offwhite-100)}
+body.render #frame{margin:0}
+body.render #stage{border-radius:0;box-shadow:none}
+body.render #controls{display:none}
+
+/* ── piezas compartidas ── */
+.scene{position:absolute;inset:0;visibility:hidden}
+.eyebrow{position:absolute;left:0;right:0;top:34px;margin:0;text-align:center;font-family:var(--font-display);font-weight:600;font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+.subtitle{position:absolute;left:60px;right:60px;bottom:44px;margin:0;text-align:center;font-family:var(--font-display);font-weight:600;font-size:22px;line-height:1.3;letter-spacing:-.01em;color:var(--charcoal-900);text-wrap:balance}
+.ejemplo{position:absolute;right:18px;bottom:14px;margin:0;font-size:10px;letter-spacing:.02em;color:var(--grey-300)}
+
+.card{position:absolute;background:var(--offwhite-50);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.card-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 18px;background:#ECEFEC;border-bottom:1px solid var(--line)}
+.card-title{font-family:var(--font-display);font-weight:600;font-size:15px;letter-spacing:-.005em}
+.card-title em{font-style:normal;font-family:var(--font-body);font-weight:400;font-size:12px;color:var(--teal-700);margin-left:6px}
+.muted{font-size:12px;color:var(--teal-700)}
+
+.pill{display:inline-flex;align-items:center;gap:6px;padding:4px 10px 4px 8px;border-radius:999px;background:rgba(46,110,98,.10);border:1px solid rgba(46,110,98,.25);font-family:var(--font-display);font-weight:600;font-size:11.5px;color:var(--accent);white-space:nowrap}
+.pill svg{width:12px;height:12px}
+
+.chip{display:inline-flex;align-items:center;gap:4px;padding:4px 9px;border-radius:999px;font-family:var(--font-display);font-weight:700;font-size:12px;white-space:nowrap}
+.chip svg{width:9px;height:9px}
+.chip.up{background:var(--peach-100);color:var(--charcoal-900)}
+.chip.down{background:rgba(191,226,217,.7);color:var(--accent-hover)}
+
+.row{display:grid;grid-template-columns:1fr auto 74px;align-items:center;gap:14px;padding:10px 18px;border-top:1px solid var(--line)}
+.row{position:relative}
+.row:first-child{border-top:0}
+.skel{position:absolute;inset:0;display:grid;grid-template-columns:1fr auto 74px;align-items:center;gap:14px;padding:0 18px}
+.skel i{display:block;height:9px;border-radius:5px;background:rgba(75,94,94,.13)}
+.skel .s1{width:130px}.skel .s2{width:96px;height:8px}.skel .s3{width:58px;height:22px;border-radius:999px;justify-self:end}
+.r-name{font-weight:600;font-size:14.5px;line-height:1.25}
+.r-name small{display:block;font-weight:400;font-size:12px;color:var(--teal-700);margin-top:2px}
+.r-price{font-size:13.5px;color:var(--teal-700);white-space:nowrap}
+.r-price b{font-weight:600;color:var(--charcoal-900)}
+.r-price small{font-size:11.5px}
+.row .chip{justify-self:end}
+
+.ticket{position:absolute;display:flex;align-items:center;gap:9px;padding:8px 12px 8px 9px;background:#fff;border:1px solid var(--line);border-radius:11px;box-shadow:var(--shadow);font-size:12px;white-space:nowrap}
+.ticket .doc{width:22px;height:26px;flex:none}
+.ticket b{display:block;font-weight:600;font-size:13px}
+.ticket span{color:var(--teal-700);font-size:12px}
+
+#cursor{position:absolute;left:0;top:0;width:26px;height:30px;z-index:50;pointer-events:none}
+#cursor svg{width:26px;height:30px;margin:-2px 0 0 -2px;filter:drop-shadow(0 2px 3px rgba(43,55,56,.25))}
+.ripple{position:absolute;left:0;top:0;width:44px;height:44px;border-radius:50%;border:2px solid var(--accent);z-index:49;pointer-events:none}
+
+/* ── escena 6 · compras ── */
+#c-mov{left:270px;top:96px;width:420px}
+#c-det{left:470px;top:146px;width:372px}
+.det-body{padding:14px 18px 14px}
+.det-price{display:flex;align-items:center;gap:10px}
+.det-price .big{font-family:var(--font-display);font-weight:700;font-size:30px;letter-spacing:-.02em;line-height:1}
+.det-sub{margin:6px 0 4px;font-size:12px;color:var(--teal-700)}
+.chart{display:block;width:336px;height:112px}
+.chart text{font-family:var(--font-body);font-size:10.5px;fill:var(--teal-700)}
+.legend{display:grid;gap:6px;margin-top:6px}
+.lg{display:grid;grid-template-columns:10px 1fr auto;align-items:center;gap:8px;font-size:12.5px}
+.lg i{width:10px;height:10px;border-radius:50%}
+.lg b{font-family:var(--font-display);font-weight:600;font-size:13px}
+
+/* ── escena 1 · tus documentos ── */
+#up{left:290px;top:104px;width:380px}
+.drop{margin:14px 18px;height:92px;border:1.5px dashed rgba(46,110,98,.35);border-radius:12px;background:rgba(191,226,217,.12);display:grid;place-items:center;align-content:center;gap:7px;color:var(--teal-700);font-size:12.5px}
+.drop svg{width:26px;height:26px}
+.files{padding:0 18px 6px}
+.file{display:flex;align-items:center;gap:9px;height:30px;overflow:hidden;font-size:13px;border-top:1px solid var(--line)}
+.file:first-child{border-top:0}
+.file .fi{width:14px;height:17px;flex:none}
+.file span{flex:1}
+.file .ok{width:16px;height:16px;flex:none}
+#s-docs .doc{position:absolute;left:0;top:0;width:104px;height:130px;box-sizing:border-box;padding:30px 12px 12px;background:#fff;border:1px solid var(--line);border-radius:10px;box-shadow:var(--shadow);z-index:5}
+#s-docs .doc-type{position:absolute;right:8px;top:8px;padding:2px 6px;border-radius:4px;background:#ECEFEC;color:var(--teal-700);font:700 8.5px/1.3 var(--font-display);letter-spacing:.06em}
+#s-docs .doc b{display:block;font:600 10.5px/1.2 var(--font-display);margin-bottom:8px}
+#s-docs .doc i{display:block;height:4px;border-radius:2px;background:var(--teal-700);opacity:.22;margin-bottom:7px}
+#s-docs .doc svg.grid{display:block;width:80px;height:64px}
+#s-docs .doc.photo{background:#D9D1C5;padding:0;overflow:hidden}
+#s-docs .doc.photo .doc-type{background:rgba(255,255,255,.85)}
+#s-docs .receipt{position:absolute;left:15px;top:22px;width:70px;height:98px;box-sizing:border-box;padding:9px 8px;background:#fff;border-radius:2px;transform:rotate(-4deg);box-shadow:0 5px 12px -5px rgba(0,0,0,.3)}
+#s-docs .receipt b{font:700 7.5px/1 var(--font-display);letter-spacing:.1em;margin-bottom:7px}
+#s-docs .receipt i{height:3px;margin-bottom:5px;opacity:.25}
+#s-docs .receipt i.t{width:55%;height:4px;margin:10px 0 0 auto;opacity:.5}
+
+/* ── escena 2 · la base ── */
+.raw{position:absolute;left:480px;display:flex;align-items:center;gap:10px;padding:9px 16px 9px 10px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);font-size:15px;white-space:nowrap}
+.src{padding:3px 7px;border-radius:6px;background:#ECEFEC;color:var(--teal-700);font:600 9.5px/1.3 var(--font-display);letter-spacing:.12em;text-transform:uppercase}
+.node{position:absolute;top:186px;width:160px;height:72px;box-sizing:border-box;padding:0 13px;display:flex;flex-direction:column;justify-content:center;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow)}
+.node .nl{font:600 9.5px/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-700);margin-bottom:6px}
+.node b{font:600 13.5px/1.22 var(--font-display);color:var(--charcoal-900)}
+.node.key{border:1.5px solid var(--accent);background:#F6FBF9}
+.conn{position:absolute;top:216px;width:25px;height:12px}
+#merge-pill{position:absolute;left:480px;top:274px}
+
+/* ── escena 3 · el diagnóstico ── */
+.pulse{position:absolute;left:0;top:0;width:960px;height:540px;pointer-events:none;z-index:6}
+#rep{left:230px;top:58px;width:500px}
+.rep-view{position:relative;height:300px;overflow:hidden}
+.rep-in{padding:14px 26px 18px 20px}
+.strip{margin:0 0 14px;font-size:12.5px;color:var(--teal-700)}
+.strip b{font-family:var(--font-display);font-weight:600;color:var(--charcoal-900)}
+.idx{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ix{display:grid;grid-template-columns:62px 1fr;align-items:center;gap:12px;padding:12px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.ring{position:relative;width:62px;height:62px}
+.ring svg{width:62px;height:62px;display:block}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font:700 20px/1 var(--font-display);letter-spacing:-.02em}
+.ix b{display:block;font:600 13.5px/1.2 var(--font-display)}
+.ix small{display:block;margin-top:3px;font-size:11.5px;line-height:1.3;color:var(--teal-700)}
+.sec{margin:18px 0 4px;font:600 9.5px/1.3 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-700)}
+.lr{display:grid;grid-template-columns:120px 62px 1fr 98px;align-items:center;gap:12px;padding:11px 0;border-top:1px solid var(--line)}
+.lr:first-child{border-top:0}
+.ln{font-weight:600;font-size:13.5px;line-height:1.2}
+.ln small{display:block;font-weight:400;font-size:11px;color:var(--teal-700);margin-top:2px}
+.lv{font:700 16px/1 var(--font-display);letter-spacing:-.01em}
+.bar{position:relative;height:6px;border-radius:3px;background:#ECEFEC}
+.band{position:absolute;top:0;bottom:0;border-radius:3px;background:var(--mint-200)}
+.mk{position:absolute;left:0;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--charcoal-900);border:2px solid #fff;box-sizing:border-box;box-shadow:0 1px 3px rgba(43,55,56,.35)}
+.lr .chip{justify-self:end;font-size:11.5px}
+.chip.ok{background:rgba(191,226,217,.7);color:var(--accent-hover)}
+.sb{position:absolute;right:6px;top:8px;bottom:8px;width:4px;border-radius:2px;background:rgba(75,94,94,.08)}
+.sb i{position:absolute;left:0;right:0;top:0;border-radius:2px;background:rgba(75,94,94,.32)}
+
+/* ── escenas 4 y 5 · la red y el cambio ── */
+.net{position:absolute;left:0;top:0;width:960px;height:540px;pointer-events:none}
+.net .ln{stroke:#2E6E62;stroke-opacity:.28;stroke-width:1.5;stroke-linecap:round}
+.net .pl{stroke:#2E6E62;stroke-width:3;stroke-linecap:round}
+.area{position:absolute;width:214px;height:56px;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:0 14px 0 10px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);z-index:4}
+.ai{width:34px;height:34px;flex:none;border-radius:10px;display:grid;place-items:center;background:#ECEFEC}
+.ai svg{width:18px;height:18px}
+.area b{display:block;font:600 14px/1.15 var(--font-display)}
+.job{display:block;position:relative;height:16px;margin-top:3px;font-size:12px;color:var(--teal-700)}
+.job em{position:absolute;left:0;top:0;font-style:normal;white-space:nowrap}
+.job em.jb{color:var(--accent);font-weight:600}
+.adot{position:absolute;right:11px;top:11px;width:7px;height:7px;border-radius:50%;background:var(--grey-300)}
+.sphere{position:absolute;left:442px;top:184px;width:76px;height:76px;border-radius:50%;display:grid;place-items:center;z-index:8;background:radial-gradient(circle at 34% 30%,#6FA99C 0%,#2E6E62 56%,#22524A 100%);box-shadow:0 18px 36px -14px rgba(46,110,98,.6),inset 0 -6px 12px rgba(0,0,0,.12)}
+.sphere span{font:600 15px/1 var(--font-display);color:#fff;letter-spacing:-.01em}
+.halo{position:absolute;inset:-11px;border-radius:50%;border:1.5px solid rgba(46,110,98,.32)}
+.change{position:absolute;left:480px;top:118px;display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border-radius:10px;background:var(--peach-100);border:1px solid rgba(43,55,56,.14);box-shadow:0 10px 22px -14px rgba(43,55,56,.5);font:600 13px/1.2 var(--font-display);white-space:nowrap;z-index:9}
+.change svg{width:11px;height:11px}
+#alday{position:absolute;left:480px;top:276px;z-index:9}
+
+/* ── escena 7 · cotizaciones ── */
+#q-card{left:130px;top:88px;width:700px}
+.q-ctx{margin:0;padding:10px 18px;font-size:12px;color:var(--teal-700);border-bottom:1px solid var(--line)}
+.q-ctx b{font-family:var(--font-display);font-weight:600;color:var(--charcoal-900)}
+.qrow{position:relative;display:grid;grid-template-columns:1fr 86px 104px 104px 96px;align-items:center;gap:10px;padding:11px 18px;border-top:1px solid var(--line)}
+.qrow.qh{padding:8px 18px;border-top:0;font-size:11px;font-weight:600;color:var(--teal-700)}
+.qn{display:flex;align-items:center;gap:10px;font-weight:600;font-size:14px;line-height:1.25}
+.qav{width:30px;height:30px;flex:none;border-radius:50%;display:grid;place-items:center;background:#ECEFEC;color:var(--teal-700);font:700 10.5px/1 var(--font-display);letter-spacing:.02em}
+#q-done{position:absolute;left:480px;top:400px;font-size:12.5px;padding:7px 14px 7px 11px}
+#q-done b{font-weight:700}
+.qn small{display:block;font-weight:400;font-size:11.5px;color:var(--teal-700);margin-top:2px;white-space:nowrap}
+.qp{font:700 16px/1 var(--font-display);letter-spacing:-.01em}
+.qrow .chip{justify-self:start;font-size:11.5px}
+.lowest{display:inline-block;margin-left:6px;padding:1px 6px;border-radius:999px;border:1px solid rgba(46,110,98,.4);color:var(--accent);font:600 9.5px/1.4 var(--font-display)}
+.qbtn{justify-self:end;display:inline-flex;align-items:center;gap:5px;padding:6px 13px;border-radius:9px;border:1.5px solid var(--accent);background:#fff;color:var(--accent);font:600 12px/1 var(--font-display);white-space:nowrap}
+.qbtn svg{width:11px;height:11px}
+#s-quotes .ticket{z-index:6}
+
+/* ── escena 8 · zenet en whatsapp ── */
+.phone{position:absolute;left:365px;top:22px;width:230px;height:430px;box-sizing:border-box;padding:8px;border-radius:36px;background:#1F2A2B;box-shadow:0 30px 60px -28px rgba(43,55,56,.55)}
+.screen{position:relative;width:100%;height:100%;border-radius:29px;overflow:hidden;background:#EFE8DF;display:flex;flex-direction:column}
+.wa-head{display:flex;align-items:center;gap:8px;padding:26px 12px 9px;background:var(--accent);color:#fff}
+.wa-av{width:24px;height:24px;flex:none;border-radius:50%;background:radial-gradient(circle at 34% 30%,#A6D3C8 0%,#5E9C8F 52%,#3B786B 100%);box-shadow:0 0 0 1.5px rgba(255,255,255,.55)}
+.wa-head b{display:block;font:600 12.5px/1.1 var(--font-display)}
+.wa-head small{display:block;font-size:9.5px;opacity:.8;margin-top:1px}
+.wa-body{position:relative;flex:1;overflow:hidden}
+.wa-msgs{position:absolute;left:0;right:0;bottom:0;padding:0 9px 8px;display:flex;flex-direction:column}
+.bub{max-width:80%;margin-top:7px;padding:7px 9px 5px;border-radius:11px;font-size:11.5px;line-height:1.38;box-shadow:0 1px 1px rgba(43,55,56,.08);box-sizing:border-box}
+.bub.me{align-self:flex-end;background:#D3EDE5;border-bottom-right-radius:4px}
+.bub.zn{align-self:flex-start;background:#fff;border-bottom-left-radius:4px}
+.bub .who{display:block;font:700 9.5px/1 var(--font-display);color:var(--accent);margin-bottom:3px}
+.bub .meta{display:flex;justify-content:flex-end;align-items:center;gap:3px;font-size:8.5px;color:var(--teal-700);margin-top:2px}
+.bub .meta svg{width:13px;height:8px}
+.typing{align-self:flex-start;margin-top:7px;display:flex;gap:3px;padding:8px 10px;border-radius:11px;background:#fff;box-sizing:border-box}
+.typing i{width:5px;height:5px;border-radius:50%;background:var(--grey-300)}
+.photo{position:relative;width:128px;height:84px;margin-bottom:4px;border-radius:7px;background:#D9D1C5;overflow:hidden}
+.photo .rc{position:absolute;left:34px;top:9px;width:60px;height:84px;box-sizing:border-box;padding:8px 7px;background:#fff;border-radius:2px;transform:rotate(-5deg);box-shadow:0 4px 10px -4px rgba(0,0,0,.3)}
+.photo .rc b{display:block;font:700 6.5px/1 var(--font-display);letter-spacing:.1em;margin-bottom:6px}
+.photo .rc i{display:block;height:2.5px;margin-bottom:4px;border-radius:1px;background:var(--teal-700);opacity:.25}
+.wa-input{display:flex;align-items:center;gap:6px;padding:7px 8px 14px;background:#EFE8DF}
+.wa-field{position:relative;flex:1;display:flex;align-items:center;height:28px;padding:0 9px;border-radius:14px;background:#fff;font-size:10.5px;color:var(--grey-300)}
+.wa-field .ph,.wa-field .tx{position:absolute;left:10px;white-space:nowrap}
+.wa-field .tx{color:var(--charcoal-900)}
+.wa-field .cam{position:absolute;right:8px;top:7px;width:14px;height:14px}
+.wa-send{width:28px;height:28px;flex:none;border-radius:50%;background:var(--accent);display:grid;place-items:center}
+.wa-send svg{width:12px;height:12px}
+#finger{position:absolute;left:0;top:0;visibility:hidden;width:30px;height:30px;margin:-15px 0 0 -15px;border-radius:50%;box-sizing:border-box;background:rgba(43,55,56,.22);border:2px solid rgba(255,255,255,.95);box-shadow:0 2px 8px rgba(43,55,56,.3);z-index:51;pointer-events:none}
+
+/* ── escena 9 · cada mes ── */
+.mdiag{width:230px;height:200px}
+.mdiag .card-head{padding:10px 14px}
+.mdiag .card-title{font-size:13.5px}
+.mdiag .pill{font-size:10.5px;padding:3px 9px}
+.md-body{display:grid;grid-template-columns:46px 1fr;gap:12px;align-items:center;padding:16px 14px 0}
+.md-body svg{width:46px;height:46px;display:block}
+.md-lines i{display:block;height:6px;border-radius:3px;background:rgba(75,94,94,.14);margin:5px 0 9px}
+.md-bars{display:grid;gap:9px;padding:14px 14px 0}
+.md-bars span{position:relative;display:block;height:6px;border-radius:3px;background:#ECEFEC}
+.md-bars span i{position:absolute;left:0;top:0;bottom:0;border-radius:3px;background:var(--mint-200)}
+#mv{left:470px;top:118px;width:360px}
+.mvr{display:grid;grid-template-columns:92px 1fr 34px;align-items:center;gap:12px;padding:12px 18px;border-top:1px solid var(--line)}
+.mvr:first-child{border-top:0}
+.mvr b{font:600 14px/1.2 var(--font-display)}
+.mvr svg.sp{display:block;width:170px;height:40px}
+.mvr .chip{justify-self:end;padding:5px 7px}
+
+/* ── escena 10 · cierre ── */
+.logo{position:absolute;left:255px;top:150px;width:450px;height:95px;overflow:visible}
+.lrule{position:absolute;left:446px;top:274px;width:68px;height:4px;border-radius:2px;background:var(--accent)}
+.tagline{position:absolute;left:60px;right:60px;top:307px;margin:0;text-align:center;font:600 32px/1.28 var(--font-display);letter-spacing:-.006em;color:var(--charcoal-900)}
+.tagline i{font-style:normal}
+
+/* ── pitch · acto del problema (todas las clases con prefijo p- o con id de sección) ── */
+.p-big{position:absolute;left:70px;right:70px;margin:0;text-align:center;font:600 32px/1.3 var(--font-display);letter-spacing:-.012em;color:var(--charcoal-900);text-wrap:balance}
+.p-big > span{display:block}
+.p-mark{background:linear-gradient(var(--peach-100),var(--peach-100)) no-repeat 0 85% / 0% 45%;padding:0 6px;border-radius:3px}
+.p-stat{position:absolute;width:230px;box-sizing:border-box;padding:16px 18px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.p-stat .sn{display:block;font:700 30px/1.05 var(--font-display);letter-spacing:-.02em}
+.p-stat p{margin:7px 0 10px;font-size:13px;line-height:1.4}
+.p-stat small{display:block;font-size:10.5px;color:var(--teal-700)}
+#s-pers .plines{position:absolute;left:0;top:0;width:960px;height:540px}
+.bchip{position:absolute;top:104px;width:88px;height:30px;box-sizing:border-box;display:grid;place-items:center;background:#fff;border:1px solid var(--line);border-radius:999px;box-shadow:0 8px 18px -12px rgba(43,55,56,.35);font:600 11.5px/1 var(--font-display)}
+.pcard{position:absolute;top:212px;width:130px;height:96px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow);text-align:center}
+.pcard .pav{width:34px;height:34px;border-radius:50%;background:#ECEFEC;display:grid;place-items:center}
+.pcard .pav svg{width:18px;height:18px}
+.pcard b{font:600 13.5px/1.1 var(--font-display)}
+.pcard small{font-size:11px;color:var(--teal-700)}
+.pcard.away{border:1.5px dashed rgba(75,94,94,.4);background:rgba(255,255,255,.55);box-shadow:none}
+.p-badge{position:absolute;top:-10px;right:-10px;min-width:28px;height:28px;padding:0 7px;box-sizing:border-box;border-radius:14px;background:var(--peach-100);border:1.5px solid #E2B79F;font:700 12.5px/25px var(--font-display);text-align:center;color:var(--charcoal-900)}
+.p-msg{position:absolute;padding:7px 11px;border-radius:11px;border-top-left-radius:3px;background:#fff;border:1px solid var(--line);box-shadow:0 10px 22px -14px rgba(43,55,56,.45);font-size:12px;white-space:nowrap}
+#s-cons .sgrid,#s-cons .blines{position:absolute;left:0;top:0;width:960px;height:540px}
+.slabel{position:absolute;margin:0;font:600 9.5px/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-700)}
+.scard{position:absolute;width:160px;height:56px;box-sizing:border-box;display:flex;align-items:center;gap:9px;padding:0 12px;background:#fff;border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);font:600 13px/1.2 var(--font-display)}
+.scard .ck{width:16px;height:16px;flex:none}
+.p-person{position:absolute;box-sizing:border-box;display:flex;align-items:center;gap:10px;padding:12px 14px;background:#fff;border:1px solid var(--line);border-radius:14px;box-shadow:var(--shadow)}
+.p-person .pav{width:34px;height:34px;flex:none;border-radius:50%;background:#ECEFEC;display:grid;place-items:center}
+.p-person .pav svg{width:18px;height:18px}
+.p-person b{display:block;font:600 13.5px/1.15 var(--font-display)}
+.p-person small{display:block;font-size:11px;color:var(--teal-700);margin-top:2px}
+.p-chipk{position:absolute;display:inline-flex;align-items:center;gap:6px;padding:6px 11px;border-radius:10px;background:var(--peach-100);border:1px solid rgba(43,55,56,.14);font:600 12px/1.2 var(--font-display);white-space:nowrap;box-shadow:0 10px 22px -14px rgba(43,55,56,.5)}
+.p-chipk svg{width:11px;height:11px}
+.p-track{width:150px;height:7px;margin-top:7px;border-radius:4px;background:#ECEFEC;overflow:hidden}
+.p-track i{display:block;height:100%;width:0;border-radius:4px;background:#E2B79F}
+#m-card{left:460px;top:132px;width:300px}
+.m-body{padding:18px 18px 16px}
+.m-track{height:16px;border-radius:8px;background:#ECEFEC;overflow:hidden}
+#m-fill{display:block;height:100%;width:100%;border-radius:8px;background:#88BCAF}
+.m-cap{margin:8px 0 0;font-size:12px;color:var(--teal-700)}
+#m-hand{position:absolute;left:460px;top:264px;display:flex;align-items:center;gap:8px;font:600 12.5px/1 var(--font-display)}
+.p-tool{padding:6px 10px;border-radius:8px;background:#fff;border:1px solid var(--line);font:600 11.5px/1 var(--font-display);color:var(--teal-700)}
+#n-card{left:220px;top:96px;width:520px}
+.n-body{display:grid;grid-template-columns:250px 1fr;gap:26px;padding:18px 22px 20px}
+.n-bars{height:120px;display:flex;align-items:flex-end;gap:14px;border-bottom:1px solid var(--line)}
+.nbar{flex:1;border-radius:6px 6px 0 0;background:var(--teal-400)}
+.n-wks{display:flex;gap:14px;margin-top:6px}
+.nwk{flex:1;text-align:center;font-size:11px;color:var(--teal-700)}
+.nk small{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--teal-700)}
+.nk b{display:inline-block;margin:3px 0 0 -7px;padding:2px 7px;border-radius:8px;font:700 28px/1.1 var(--font-display);letter-spacing:-.02em}
+.nk + .nk{margin-top:12px}
+.nclose{padding:2px 7px;border-radius:999px;background:var(--peach-100);font:600 10px/1.4 var(--font-display);color:var(--charcoal-900)}
+#n-note{margin:8px 0 0;font-size:12.5px;line-height:1.35;color:var(--teal-700)}
+.p-glow{position:absolute;left:220px;top:-40px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(244,222,208,.9) 0%,rgba(244,222,208,0) 64%)}
+.p-glow.teal{background:radial-gradient(circle,rgba(191,226,217,.85) 0%,rgba(191,226,217,0) 64%)}
+
+/* ── pitch v2 · el dato con su propio momento · la barra de lo que sabe tu operación · la píldora del margen ── */
+.p-bigstat{position:absolute;left:80px;right:80px;top:140px;margin:0;text-align:center}
+.p-bigstat .bn{display:block;font:700 76px/1 var(--font-display);letter-spacing:-.03em;color:var(--charcoal-900)}
+.p-bigstat .bl{display:block;margin:16px auto 0;max-width:640px;font:600 22px/1.35 var(--font-display);color:var(--charcoal-900);text-wrap:balance}
+.p-bigstat .bs{display:block;margin-top:14px;font-size:12.5px;color:var(--teal-700)}
+.p-know{position:absolute;left:250px;top:124px;width:460px;box-sizing:border-box;padding:18px 20px 16px;background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.p-know .kh{display:flex;align-items:center;gap:11px}
+.p-know .pav{width:38px;height:38px;flex:none;border-radius:50%;background:#ECEFEC;display:grid;place-items:center}
+.p-know .pav svg{width:20px;height:20px}
+.p-know b{display:block;font:600 15px/1.15 var(--font-display)}
+.p-know small{display:block;margin-top:2px;font-size:11.5px;color:var(--teal-700)}
+.p-know .ktag{margin-left:auto;padding:4px 10px;border-radius:999px;background:var(--peach-100);border:1px solid #E2B79F;font:700 11.5px/1.2 var(--font-display)}
+.p-know .klabel{margin:16px 0 7px;font:600 9.5px/1 var(--font-display);letter-spacing:.14em;text-transform:uppercase;color:var(--teal-700)}
+.p-know .kbar{height:12px;border-radius:6px;background:#ECEFEC;overflow:hidden}
+.p-know .kbar i{display:block;height:100%;width:0;border-radius:6px;background:var(--accent)}
+.p-know.nw .kbar i{background:#E2B79F}
+.p-know .kms{display:grid;grid-template-columns:1fr 1fr;gap:7px 16px;margin-top:12px}
+.p-know .km{display:flex;align-items:flex-start;gap:6px;font-size:11.5px;line-height:1.25;color:var(--teal-700)}
+.p-know .km i{width:13px;height:13px;flex:none;margin-top:1px;border-radius:50%;border:1.5px solid #A3B2AC;box-sizing:border-box}
+.p-know .kcap{margin:12px 0 0;font-size:12px;color:var(--teal-700)}
+.n-pct{display:inline-flex;align-items:center;gap:5px;margin-top:5px;padding:4px 10px;border-radius:999px;background:var(--peach-100);border:1px solid #E2B79F;font:700 11.5px/1.2 var(--font-display)}
+.n-pct svg{width:10px;height:10px}
+
+/* ── controles de la vista previa ── */
+#controls{position:fixed;left:0;right:0;bottom:0;display:flex;align-items:center;gap:12px;padding:10px 16px;background:var(--charcoal-900);color:#fff;font:600 12px/1 var(--font-display);letter-spacing:.02em}
+#controls button,#controls select{font:inherit;color:#fff;background:transparent;border:1px solid rgba(255,255,255,.5);border-radius:6px;padding:6px 10px;cursor:pointer}
+#controls select option{color:#000}
+#scrub{flex:1;accent-color:var(--teal-400)}
+#time{min-width:92px;text-align:right;font-variant-numeric:tabular-nums}
+</style>
+</head>
+<body>
+
+<div id="frame"><div id="stage">
+
+  <!-- ═══ Pitch · 0 · La apertura ═══ -->
+  <section class="scene" id="s-carga">
+    <p class="p-big" style="top:196px"><span class="l1">Lo más caro de tu operación no se compra.</span><span class="l2"><span class="p-mark">Se carga.</span></span></p>
+  </section>
+
+  <!-- ═══ Pitch · A · Personas clave ═══ -->
+  <section class="scene" id="s-pers">
+    <svg class="plines" viewBox="0 0 960 540" aria-hidden="true" style="left:146px"><line x1="94" y1="134" x2="115" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="190" y1="134" x2="261" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="190" y1="134" x2="407" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="286" y1="134" x2="407" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="286" y1="134" x2="115" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="382" y1="134" x2="115" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="382" y1="134" x2="261" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="478" y1="134" x2="261" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="478" y1="134" x2="115" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line x1="574" y1="134" x2="407" y2="212" stroke="#4B5E5E" stroke-opacity=".35" stroke-width="1.4" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="weak" x1="286" y1="134" x2="553" y2="212" stroke="#4B5E5E" stroke-opacity=".3" stroke-width="1.2" stroke-dasharray="3 4"/></svg>
+    <div class="bchip" style="left:196px">Recetas</div><div class="bchip" style="left:292px">Compras</div><div class="bchip" style="left:388px">Costos</div><div class="bchip" style="left:484px">Inventario</div><div class="bchip" style="left:580px">Procesos</div><div class="bchip" style="left:676px">Permisos</div>
+    <div class="pcard" style="left:196px"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="6.3" r="3"/><path d="M3.4 15.6c.6-3 2.8-4.7 5.6-4.7s5 1.7 5.6 4.7"/></svg></span><b>Chef</b><small>la cocina</small><span class="p-badge">1</span></div><div class="pcard" style="left:342px"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="6.3" r="3"/><path d="M3.4 15.6c.6-3 2.8-4.7 5.6-4.7s5 1.7 5.6 4.7"/></svg></span><b>Gerente</b><small>la operación</small><span class="p-badge">1</span></div><div class="pcard" style="left:488px"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="6.3" r="3"/><path d="M3.4 15.6c.6-3 2.8-4.7 5.6-4.7s5 1.7 5.6 4.7"/></svg></span><b>Administrador</b><small>compras y pagos</small><span class="p-badge">1</span></div><div class="pcard away" style="left:634px"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="6.3" r="3"/><path d="M3.4 15.6c.6-3 2.8-4.7 5.6-4.7s5 1.7 5.6 4.7"/></svg></span><b>Dueño</b><small>no siempre está</small></div>
+    <div class="p-msg" style="left:198px;top:324px">Se acabó el aguacate</div><div class="p-msg" style="left:352px;top:358px">¿Cuánto pedimos?</div><div class="p-msg" style="left:496px;top:324px">¿Ya pagamos al proveedor?</div>
+    <p class="p-bigstat"><span class="bn">3 de cada 4</span><span class="bl">en cocina se van antes de cumplir cinco meses.</span><span class="bs">CANIRAC · 2024</span></p>
+    <p class="subtitle">Todo depende de dos o tres personas clave.</p>
+  </section>
+
+  <!-- ═══ Pitch · C · Se va quien lo construyó ═══ -->
+  <section class="scene" id="s-cons">
+    <div class="p-know" id="k-old"><div class="kh"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><circle cx="9" cy="6.3" r="3"/><path d="M3.4 15.6c.6-3 2.8-4.7 5.6-4.7s5 1.7 5.6 4.7"/></svg></span><div><b>Gerente</b><small>quien lo armó y lo administra</small></div></div>
+      <p class="klabel">Lo que sabe tu operación</p><div class="kbar"><i></i></div><div class="kms"><span class="km"><i></i>Recetas estandarizadas</span><span class="km"><i></i>Compras y proveedores</span><span class="km"><i></i>Estándares de calidad</span><span class="km"><i></i>Servicio y experiencia del cliente</span></div><p class="kcap">Años de prueba y error.</p></div>
+    <div class="p-know nw" id="k-new"><div class="kh"><span class="pav"><svg viewBox="0 0 18 18" fill="none" stroke="#4B5E5E" stroke-width="1.5" stroke-linecap="round"><path d="M6.6 6.4a2.4 2.4 0 1 1 3.4 2.2c-.6.3-1 .9-1 1.6v.6M9 13.6v.1"/></svg></span><div><b>Alguien nuevo</b><small>acaba de llegar</small></div><span class="ktag">Empieza de cero</span></div>
+      <p class="klabel">Lo que sabe tu operación</p><div class="kbar"><i></i></div><div class="kms"><span class="km"><i></i>Recetas estandarizadas</span><span class="km"><i></i>Compras y proveedores</span><span class="km"><i></i>Estándares de calidad</span><span class="km"><i></i>Servicio y experiencia del cliente</span></div><p class="kcap">Desde el principio, y otra vez dependiendo de una persona clave.</p></div>
+    <p class="subtitle">Cuando se va quien lo construyó, se van años de prueba y error.</p>
+  </section>
+
+  <!-- ═══ Pitch · B · Los cambios de costo ═══ -->
+  <section class="scene" id="s-cost">
+    <span class="p-chipk cpill" style="left:190px;top:126px"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2.5M3 5.5l3-3 3 3"/></svg>Subió un insumo</span><span class="p-chipk cpill" style="left:190px;top:172px"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2.5M3 5.5l3-3 3 3"/></svg>Aumentó la renta</span><span class="p-chipk cpill" style="left:190px;top:218px"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2.5M3 5.5l3-3 3 3"/></svg>La nómina sube</span><span class="p-chipk cpill" style="left:190px;top:264px"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2.5M3 5.5l3-3 3 3"/></svg>Capacitar otra vez a alguien nuevo</span>
+    <div class="card" id="m-card"><div class="card-head"><span class="card-title">Tu margen</span><span class="muted">lo que te queda</span></div><div class="m-body"><div class="m-track"><i id="m-fill"></i></div><p class="m-cap">de cada venta, después de todo</p></div></div>
+    <div id="m-hand"><span>Y tú, a mano:</span><span class="p-tool">Excel</span><span class="p-tool">WhatsApp</span><span class="p-tool">Cuaderno</span></div>
+    <p class="p-bigstat"><span class="bn">Hasta 40%</span><span class="bl">subieron carne, lácteos y verduras en el primer semestre de 2026. Lo absorbe tu margen.</span><span class="bs">CANIRAC vía El Imparcial · agosto 2026</span></p>
+    <p class="subtitle">Se rompe cada vez que algo cambia.</p>
+  </section>
+
+  <!-- ═══ Pitch · D · El número llega tarde ═══ -->
+  <section class="scene" id="s-num">
+    <div class="card" id="n-card"><div class="card-head"><span class="card-title">Tu mes<em>octubre</em></span></div>
+      <div class="n-body">
+        <div><div class="n-bars"><span class="nbar" style="height:25%"></span><span class="nbar" style="height:50%"></span><span class="nbar" style="height:75%"></span><span class="nbar" style="height:100%"></span></div>
+          <div class="n-wks"><span class="nwk">Sem 1</span><span class="nwk">Sem 2</span><span class="nwk">Sem 3</span><span class="nwk">Sem 4</span></div></div>
+        <div><div class="nk"><small>Ventas</small><b id="n-sales">$0</b></div>
+          <div class="nk"><small>Lo que te queda <span class="nclose" id="n-close">al cierre</span></small><b id="n-left">—</b><br><span class="n-pct" id="n-pct"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>7.2% · abajo de tu rango</span></div>
+          <p id="n-note">Subió el aguacate y te enteraste hasta el cierre.</p></div>
+      </div>
+    </div>
+    <p class="subtitle">Sabes cuánto vendes. No siempre cuánto te queda.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Pitch · El puente ═══ -->
+  <section class="scene" id="s-puente">
+    <div class="p-glow" id="p-glow-peach"></div><div class="p-glow teal" id="p-glow-teal"></div>
+    <p class="p-big" id="pt1" style="top:176px"><span class="a">Las ventas traen el dinero.</span><span class="b">La operación decide cuánto se queda.</span></p>
+    <div class="sphere" id="p-sphere" style="top:122px"><i class="halo"></i><span>Zenet</span></div>
+    <p class="p-big" id="pt2" style="top:236px;font-size:28px"><span>El trabajo que más esfuerzo te cuesta:</span><span>ese es el que hace Zenet.</span></p>
+  </section>
+
+  <!-- ═══ Escena 1 · Tus documentos ═══ -->
+  <section class="scene" id="s-docs">
+    <div class="card" id="up">
+      <div class="card-head"><span class="card-title">Sube tus documentos</span><span class="muted">PDF, Excel o fotos</span></div>
+      <div class="drop" id="drop"><svg viewBox="0 0 26 26" fill="none" stroke="#2E6E62" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M13 16V4M8 9l5-5 5 5"/><path d="M4 15v5a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"/></svg><span>Arrastra aquí tus archivos</span></div>
+      <div class="files">
+        <div class="file"><svg class="fi" viewBox="0 0 14 17"><rect x=".6" y=".6" width="12.8" height="15.8" rx="2" fill="#fff" stroke="#A3B2AC" stroke-width="1.2"/><path d="M3.5 5h7M3.5 8h5M3.5 11h6" stroke="#4B5E5E" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round"/></svg><span>recetario.pdf</span><svg class="ok" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2E6E62"/><path d="M4.6 8.2 7 10.5l4.4-4.8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="file"><svg class="fi" viewBox="0 0 14 17"><rect x=".6" y=".6" width="12.8" height="15.8" rx="2" fill="#fff" stroke="#A3B2AC" stroke-width="1.2"/><path d="M3.5 5h7M3.5 8h5M3.5 11h6" stroke="#4B5E5E" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round"/></svg><span>factura-mariscos.jpg</span><svg class="ok" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2E6E62"/><path d="M4.6 8.2 7 10.5l4.4-4.8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="file"><svg class="fi" viewBox="0 0 14 17"><rect x=".6" y=".6" width="12.8" height="15.8" rx="2" fill="#fff" stroke="#A3B2AC" stroke-width="1.2"/><path d="M3.5 5h7M3.5 8h5M3.5 11h6" stroke="#4B5E5E" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round"/></svg><span>inventario.xlsx</span><svg class="ok" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2E6E62"/><path d="M4.6 8.2 7 10.5l4.4-4.8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="file"><svg class="fi" viewBox="0 0 14 17"><rect x=".6" y=".6" width="12.8" height="15.8" rx="2" fill="#fff" stroke="#A3B2AC" stroke-width="1.2"/><path d="M3.5 5h7M3.5 8h5M3.5 11h6" stroke="#4B5E5E" stroke-opacity=".45" stroke-width="1.2" stroke-linecap="round"/></svg><span>estado-de-resultados.xlsx</span><svg class="ok" viewBox="0 0 16 16"><circle cx="8" cy="8" r="8" fill="#2E6E62"/><path d="M4.6 8.2 7 10.5l4.4-4.8" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      </div>
+    </div>
+    <div class="doc" id="d-rec"><span class="doc-type">PDF</span><b>Recetario</b><i style="width:82%"></i><i style="width:60%"></i><i style="width:74%"></i><i style="width:48%"></i><i style="width:66%"></i></div>
+    <div class="doc" id="d-inv"><span class="doc-type">XLSX</span><b>Inventario</b><svg class="grid" viewBox="0 0 80 64"><rect width="80" height="10" fill="#ECEFEC"/><path d="M0 .5H80M0 10.5H80M0 21.5H80M0 32.5H80M0 43.5H80M0 54.5H80M0 63.5H80M.5 0V64M27.5 0V64M54.5 0V64M79.5 0V64" stroke="rgba(75,94,94,.22)" stroke-width="1" fill="none"/><g fill="#4B5E5E" opacity=".35"><rect x="4" y="14.5" width="18" height="3" rx="1.5"/><rect x="31" y="14.5" width="12" height="3" rx="1.5"/><rect x="58" y="14.5" width="15" height="3" rx="1.5"/><rect x="4" y="25.5" width="14" height="3" rx="1.5"/><rect x="31" y="25.5" width="16" height="3" rx="1.5"/><rect x="58" y="25.5" width="10" height="3" rx="1.5"/><rect x="4" y="36.5" width="19" height="3" rx="1.5"/><rect x="31" y="36.5" width="10" height="3" rx="1.5"/><rect x="58" y="36.5" width="14" height="3" rx="1.5"/><rect x="4" y="47.5" width="12" height="3" rx="1.5"/><rect x="31" y="47.5" width="15" height="3" rx="1.5"/><rect x="58" y="47.5" width="12" height="3" rx="1.5"/></g></svg></div>
+    <div class="doc photo" id="d-fac"><span class="doc-type">FOTO</span><div class="receipt"><b>FACTURA</b><i></i><i style="width:80%"></i><i></i><i style="width:70%"></i><i class="t"></i></div></div>
+    <div class="doc" id="d-est"><span class="doc-type">XLSX</span><b>Estado de resultados</b><svg class="grid" viewBox="0 0 80 64"><rect width="80" height="10" fill="#ECEFEC"/><path d="M0 .5H80M0 10.5H80M0 21.5H80M0 32.5H80M0 43.5H80M0 54.5H80M0 63.5H80M.5 0V64M27.5 0V64M54.5 0V64M79.5 0V64" stroke="rgba(75,94,94,.22)" stroke-width="1" fill="none"/><g fill="#4B5E5E" opacity=".35"><rect x="4" y="14.5" width="18" height="3" rx="1.5"/><rect x="31" y="14.5" width="12" height="3" rx="1.5"/><rect x="58" y="14.5" width="15" height="3" rx="1.5"/><rect x="4" y="25.5" width="14" height="3" rx="1.5"/><rect x="31" y="25.5" width="16" height="3" rx="1.5"/><rect x="58" y="25.5" width="10" height="3" rx="1.5"/><rect x="4" y="36.5" width="19" height="3" rx="1.5"/><rect x="31" y="36.5" width="10" height="3" rx="1.5"/><rect x="58" y="36.5" width="14" height="3" rx="1.5"/><rect x="4" y="47.5" width="12" height="3" rx="1.5"/><rect x="31" y="47.5" width="15" height="3" rx="1.5"/><rect x="58" y="47.5" width="12" height="3" rx="1.5"/></g></svg></div>
+    <p class="subtitle">Tus documentos, como los tienes.</p>
+  </section>
+
+  <!-- ═══ Escena 2 · La base ═══ -->
+  <section class="scene" id="s-base">
+    <div class="raw" id="raw1"><span class="src">Factura</span>camaron 21-25</div>
+    <div class="raw" id="raw2"><span class="src">Inventario</span>CAMARÓN 21/25 KG</div>
+    <div class="raw" id="raw3"><span class="src">Recetario</span>camarón grande</div>
+    <div class="node" style="left:30px"><span class="nl">Platillo</span><b>Aguachile verde</b></div><div class="node" style="left:215px"><span class="nl">Receta</span><b>180 g de camarón</b></div><div class="node key" style="left:400px"><span class="nl">Insumo</span><b>Camarón 21/25 · kg</b></div><div class="node" style="left:585px"><span class="nl">Proveedor</span><b>Mariscos del Pacífico</b></div><div class="node" style="left:770px"><span class="nl">Compra</span><b>$342 / kg</b></div>
+    <svg class="conn" viewBox="0 0 25 12" style="left:190px"><line x1="2" y1="6" x2="21" y2="6" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><polyline class="ah" points="16.5,2 21.5,6 16.5,10" fill="none" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="conn" viewBox="0 0 25 12" style="left:375px"><line x1="2" y1="6" x2="21" y2="6" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><polyline class="ah" points="16.5,2 21.5,6 16.5,10" fill="none" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="conn" viewBox="0 0 25 12" style="left:560px"><line x1="2" y1="6" x2="21" y2="6" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><polyline class="ah" points="16.5,2 21.5,6 16.5,10" fill="none" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg><svg class="conn" viewBox="0 0 25 12" style="left:745px"><line x1="2" y1="6" x2="21" y2="6" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><polyline class="ah" points="16.5,2 21.5,6 16.5,10" fill="none" stroke="#88BCAF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <span class="pill" id="merge-pill"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg>3 nombres, un solo insumo</span>
+    <p class="subtitle">Zenet los ordena y los conecta: del platillo a la compra.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escena 3 · El diagnóstico ═══ -->
+  <section class="scene" id="s-diag">
+    <svg class="pulse" viewBox="0 0 960 540" aria-hidden="true"><path id="pulse" d="M0 222H428L442 222L453 192L466 256L477 204L487 222H960" fill="none" stroke="#2E6E62" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></svg>
+    <div class="card" id="rep">
+      <div class="card-head"><span class="card-title">Diagnóstico de tu operación</span><span class="muted">Marea Baja · 17 sep</span></div>
+      <div class="rep-view" id="rep-view">
+        <div class="rep-in" id="rep-in">
+          <p class="strip" id="rep-strip">Lo que leímos: <b>48</b> recetas · <b>52</b> platillos · <b>86</b> insumos · <b>7</b> proveedores</p>
+          <div class="idx">
+            <div class="ix"><div class="ring"><svg viewBox="0 0 62 62"><circle cx="31" cy="31" r="25" fill="none" stroke="#ECEFEC" stroke-width="7"/><circle class="ring-v" cx="31" cy="31" r="25" fill="none" stroke="#2E6E62" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 31 31)" data-v="46"/></svg><span>0</span></div><div><b>Estandarización</b><small>el sistema de tu cocina</small></div></div>
+            <div class="ix"><div class="ring"><svg viewBox="0 0 62 62"><circle cx="31" cy="31" r="25" fill="none" stroke="#ECEFEC" stroke-width="7"/><circle class="ring-v" cx="31" cy="31" r="25" fill="none" stroke="#2E6E62" stroke-width="7" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100" transform="rotate(-90 31 31)" data-v="29"/></svg><span>0</span></div><div><b>Se puede enseñar</b><small>sin depender de una persona clave</small></div></div>
+          </div>
+          <p class="sec" id="rep-sec">Tus números · contra el rango de tu segmento</p>
+          <div class="lab">
+            <div class="lr"><div class="ln">Food cost<small>rango 28–33%</small></div><b class="lv" data-v="34.6">–</b><div class="bar"><span class="band" style="left:32%;width:20%"></span><i class="mk" data-x="58.4"></i></div><span class="chip up">1.6 pts arriba</span></div>
+            <div class="lr"><div class="ln">Nómina<small>rango 25–35%</small></div><b class="lv" data-v="27.8">–</b><div class="bar"><span class="band" style="left:33.3%;width:33.3%"></span><i class="mk" data-x="42.7"></i></div><span class="chip ok">dentro</span></div>
+            <div class="lr"><div class="ln">Margen operativo<small>rango 8–12%</small></div><b class="lv" data-v="7.2">–</b><div class="bar"><span class="band" style="left:40%;width:20%"></span><i class="mk" data-x="36"></i></div><span class="chip up">0.8 pts abajo</span></div>
+          </div>
+        </div>
+        <div class="sb"><i id="sb-thumb"></i></div>
+      </div>
+    </div>
+    <p class="subtitle">Tu primer diagnóstico: dónde está tu operación hoy.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escenas 4 y 5 · La red y el cambio (comparten el lienzo) ═══ -->
+  <section class="scene" id="s-red">
+    <svg class="net" viewBox="0 0 960 540" aria-hidden="true"><line class="ln" id="ln-compras" x1="480" y1="222" x2="297" y2="112" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="ln" id="ln-costos" x1="480" y1="222" x2="257" y2="222" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="ln" id="ln-recetas" x1="480" y1="222" x2="297" y2="332" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="ln" id="ln-inventario" x1="480" y1="222" x2="663" y2="112" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="ln" id="ln-procesos" x1="480" y1="222" x2="703" y2="222" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="ln" id="ln-equipo" x1="480" y1="222" x2="663" y2="332" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><line class="pl" id="pl-compras" x1="480" y1="222" x2="297" y2="112" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/><line class="pl" id="pl-costos" x1="480" y1="222" x2="257" y2="222" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/><line class="pl" id="pl-recetas" x1="480" y1="222" x2="297" y2="332" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/><line class="pl" id="pl-inventario" x1="480" y1="222" x2="663" y2="112" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/><line class="pl" id="pl-procesos" x1="480" y1="222" x2="703" y2="222" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/><line class="pl" id="pl-equipo" x1="480" y1="222" x2="663" y2="332" pathLength="1" stroke-dasharray="0.14 1" stroke-dashoffset="0.14" opacity="0"/></svg>
+    <div class="area" id="a-compras" style="left:83px;top:84px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 2.5h8v11l-1.6-1-1.6 1-1.6-1-1.6 1-1.6-1z"/><path d="M6 6h4M6 8.5h4"/></svg></span><div><b>Compras</b><span class="job"><em class="ja">lee tus facturas</em></span></div><i class="adot"></i></div>
+    <div class="area" id="a-costos" style="left:43px;top:194px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="8" cy="8" r="5.6"/><path d="M9.6 6.2c-.3-.6-1-.9-1.7-.9-.9 0-1.6.5-1.6 1.2 0 1.6 3.4.8 3.4 2.5 0 .7-.7 1.2-1.7 1.2-.8 0-1.5-.3-1.8-1M8 4.4v.9M8 10.8v.8"/></svg></span><div><b>Costos</b><span class="job"><em class="ja">recalcula cada platillo</em><em class="jb">costos recalculados</em></span></div><i class="adot"></i></div>
+    <div class="area" id="a-recetas" style="left:83px;top:304px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.8 3.5H7a2 2 0 0 1 1 .3 2 2 0 0 1 1-.3h4.2v9H9a1.5 1.5 0 0 0-1 .4 1.5 1.5 0 0 0-1-.4H2.8z"/><path d="M8 3.8v9"/></svg></span><div><b>Recetas</b><span class="job"><em class="ja">las escribe y costea</em><em class="jb">31 recetas, al día</em></span></div><i class="adot"></i></div>
+    <div class="area" id="a-inventario" style="left:663px;top:84px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 5.4 8 2.8l5.5 2.6v5.2L8 13.2l-5.5-2.6z"/><path d="M2.5 5.4 8 8l5.5-2.6M8 8v5.2"/></svg></span><div><b>Inventario</b><span class="job"><em class="ja">lo pone en orden</em></span></div><i class="adot"></i></div>
+    <div class="area" id="a-procesos" style="left:703px;top:194px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6.8 4.5H13M6.8 8H13M6.8 11.5H13M2.7 4.5l.9.9 1.5-1.6M2.7 8l.9.9 1.5-1.6M2.7 11.5l.9.9 1.5-1.6"/></svg></span><div><b>Procesos</b><span class="job"><em class="ja">los deja escritos</em></span></div><i class="adot"></i></div>
+    <div class="area" id="a-equipo" style="left:663px;top:304px"><span class="ai"><svg viewBox="0 0 16 16" fill="none" stroke="#2E6E62" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="5.4" r="2"/><circle cx="11.2" cy="6" r="1.6"/><path d="M2.4 12.6c.4-2 1.8-3.1 3.6-3.1s3.2 1.1 3.6 3.1M10.2 9.6c1.6-.2 3 .7 3.4 2.7"/></svg></span><div><b>Equipo</b><span class="job"><em class="ja">enseña a quien llega</em></span></div><i class="adot"></i></div>
+    <div class="sphere" id="sphere"><i class="halo"></i><span>Zenet</span></div>
+    <span class="change" id="change"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10V2.5M3 5.5l3-3 3 3"/></svg>Sube el camarón</span>
+    <span class="pill" id="alday"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg>Al día</span>
+    <p class="subtitle" id="sub-areas">Un especialista por área. Un solo cerebro operativo.</p>
+    <p class="subtitle" id="sub-cambio">Sube el camarón: Zenet reacomoda lo que toca. Tú apruebas.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escena 6 · Compras ═══ -->
+  <section class="scene" id="s-compras">
+    <p class="eyebrow">Empieza con tus compras</p>
+
+    <div class="card" id="c-mov">
+      <div class="card-head">
+        <span class="card-title">Movimientos<em>desde julio</em></span>
+        <span class="pill" id="c-pill"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg><span id="c-count">1 factura nueva</span></span>
+      </div>
+      <div class="rows">
+        <div class="row" id="r-camaron">
+          <div class="r-name">Camarón 21/25<small>Mariscos del Pacífico</small></div>
+          <div class="r-price">$290 → <b>$342</b><small> / kg</small></div>
+          <span class="chip up"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg>+18%</span>
+        </div>
+        <div class="row">
+          <div class="r-name">Aguacate Hass<small>Frutas Beltrán</small></div>
+          <div class="r-price">$54 → <b>$71</b><small> / kg</small></div>
+          <span class="chip up"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg>+31%</span>
+        </div>
+        <div class="row">
+          <div class="r-name">Aceite vegetal<small>Abarrotes La Mesa</small></div>
+          <div class="r-price">$412 → <b>$449</b><small> / caja</small></div>
+          <span class="chip up"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg>+9%</span>
+        </div>
+        <div class="row">
+          <div class="r-name">Jitomate saladet<small>Frutas Beltrán</small></div>
+          <div class="r-price">$450 → <b>$396</b><small> / caja</small></div>
+          <span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−12%</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="ticket" id="t1"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Mariscos del Pacífico</b><span>Factura · $18,420</span></div></div>
+    <div class="ticket" id="t2"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Frutas Beltrán</b><span>Factura · $6,310</span></div></div>
+    <div class="ticket" id="t3"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Abarrotes La Mesa</b><span>Factura · $4,870</span></div></div>
+
+    <div class="card" id="c-det">
+      <div class="card-head">
+        <span class="card-title">Camarón 21/25 · kg</span>
+        <span class="muted">historial</span>
+      </div>
+      <div class="det-body">
+        <div class="det-price">
+          <span class="big">$342</span>
+          <span class="chip up" id="det-chip"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg>+18% desde julio</span>
+        </div>
+        <p class="det-sub">tu última compra · Mariscos del Pacífico</p>
+        <svg class="chart" viewBox="0 0 336 112" aria-hidden="true">
+          <line x1="14" y1="92" x2="322" y2="92" stroke="#D1DBD7" stroke-width="1" stroke-dasharray="2 4"/>
+          <line x1="14" y1="56" x2="322" y2="56" stroke="#D1DBD7" stroke-width="1" stroke-dasharray="2 4" opacity=".6"/>
+          <line x1="14" y1="20" x2="322" y2="20" stroke="#D1DBD7" stroke-width="1" stroke-dasharray="2 4" opacity=".6"/>
+          <polyline id="l2" points="14,80.6 116.7,69.1 219.3,57.7 322,48.6" fill="none" stroke="#88BCAF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+          <polyline id="l1" points="14,80.6 116.7,48.6 219.3,29.1 322,21.1" fill="none" stroke="#2E6E62" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/>
+          <circle id="d2" cx="322" cy="48.6" r="4" fill="#88BCAF"/>
+          <circle id="d1" cx="322" cy="21.1" r="4.5" fill="#2E6E62"/>
+          <text x="14" y="108">jul</text><text x="116.7" y="108" text-anchor="middle">ago</text><text x="219.3" y="108" text-anchor="middle">sep</text><text x="322" y="108" text-anchor="end">oct</text>
+        </svg>
+        <div class="legend">
+          <div class="lg" id="lg1"><i style="background:#2E6E62"></i>Mariscos del Pacífico<b>$342</b></div>
+          <div class="lg" id="lg2"><i style="background:#88BCAF"></i>Pescadería del Puerto<b>$318</b></div>
+        </div>
+      </div>
+    </div>
+
+    <p class="subtitle">Cada factura, guardada: qué subió, con quién y desde cuándo.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escena 7 · Cotizaciones ═══ -->
+  <section class="scene" id="s-quotes">
+    <p class="eyebrow">Empieza con tus compras</p>
+    <div class="card" id="q-card">
+      <div class="card-head">
+        <span class="card-title">Cotizaciones<em>camarón 21/25 · 20 kg</em></span>
+        <span class="pill" id="q-pill"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg><span id="q-count">1 cotización</span></span>
+      </div>
+      <p class="q-ctx">Contra tu última compra (<b>$342/kg</b>) y tu promedio de 3 meses (<b>$330/kg</b>)</p>
+      <div class="qrow qh"><span>Proveedor</span><span>Precio / kg</span><span>vs tu última compra</span><span>vs tu promedio</span><span></span></div>
+      <div class="qrow" id="q1"><div class="qn"><span class="qav">MP</span><div>Mariscos del Pacífico<small>cotización · 3 oct</small></div></div><b class="qp">$338</b><span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−$4</span><span class="chip up"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg>+$8</span><span class="qbtn"><span class="lbl">Elegir</span></span></div><div class="qrow" id="q2"><div class="qn"><span class="qav">PP</span><div>Pescadería del Puerto<small>cotización · 3 oct<span class="lowest">el más bajo</span></small></div></div><b class="qp">$318</b><span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−$24</span><span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−$12</span><span class="qbtn"><span class="lbl">Elegir</span></span></div><div class="qrow" id="q3"><div class="qn"><span class="qav">MC</span><div>Mar de Cortés<small>cotización · 2 oct</small></div></div><b class="qp">$326</b><span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−$16</span><span class="chip down"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg>−$4</span><span class="qbtn"><span class="lbl">Elegir</span></span></div>
+    </div>
+    <div class="ticket" id="qt1"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Mariscos del Pacífico</b><span>Cotización · $338/kg</span></div></div><div class="ticket" id="qt2"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Pescadería del Puerto</b><span>Cotización · $318/kg</span></div></div><div class="ticket" id="qt3"><svg class="doc" viewBox="0 0 22 26"><rect x=".75" y=".75" width="20.5" height="24.5" rx="3" fill="#FFFCFA" stroke="#A3B2AC" stroke-width="1.5"/><g fill="#4B5E5E" opacity=".45"><rect x="5" y="7" width="12" height="2" rx="1"/><rect x="5" y="12" width="9" height="2" rx="1"/><rect x="5" y="17" width="11" height="2" rx="1"/></g></svg><div><b>Mar de Cortés</b><span>Cotización · $326/kg</span></div></div>
+    <span class="pill" id="q-done"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg>Proveedor elegido: <b>Pescadería del Puerto</b> · $318/kg</span>
+    <p class="subtitle">Subes tus cotizaciones. Zenet las compara. Tú eliges al proveedor.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escena 8 · Zenet en WhatsApp ═══ -->
+  <section class="scene" id="s-wa">
+    <div class="phone" id="phone"><div class="screen">
+      <div class="wa-head"><span class="wa-av"></span><div><b>Zenet</b><small>en línea</small></div></div>
+      <div class="wa-body"><div class="wa-msgs" id="wa-msgs">
+        <div class="bub me" id="m1"><div class="photo"><div class="rc"><b>FACTURA</b><i></i><i style="width:80%"></i><i></i><i style="width:65%"></i><i style="width:55%;margin:8px 0 0 auto;opacity:.5"></i></div></div>Factura de hoy<span class="meta">10:42 <svg viewBox="0 0 13 8" fill="none" stroke="#2E6E62" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4.3 3.2 6.5 7.6 1.5M5.6 6.5l4.4-5"/></svg></span></div>
+        <div class="typing" id="t1"><i></i><i></i><i></i></div>
+        <div class="bub zn" id="m2"><span class="who">Zenet</span>Listo, guardé 12 insumos de Mariscos del Pacífico. Total $18,420. Ya están en tus compras.<span class="meta">10:42</span></div>
+        <div class="bub me" id="m3">¿Por qué subió mi food cost?<span class="meta">10:44 <svg viewBox="0 0 13 8" fill="none" stroke="#2E6E62" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M1 4.3 3.2 6.5 7.6 1.5M5.6 6.5l4.4-5"/></svg></span></div>
+        <div class="typing" id="t2"><i></i><i></i><i></i></div>
+        <div class="bub zn" id="m4"><span class="who">Zenet</span>Camarón +18% y aguacate +31% desde julio. Están en 31 y 22 de tus recetas.<span class="meta">10:44</span></div>
+      </div></div>
+      <div class="wa-input">
+        <div class="wa-field" id="wa-field"><span class="ph">Mensaje</span><span class="tx">¿Por qué subió mi food cost?</span><svg class="cam" id="wa-cam" viewBox="0 0 14 14" fill="none" stroke="#4B5E5E" stroke-width="1.3" stroke-linejoin="round"><path d="M1.5 4.5h2.2l1-1.5h4.6l1 1.5h2.2v7h-11z"/><circle cx="7" cy="7.8" r="2.1"/></svg></div>
+        <span class="wa-send" id="wa-send"><svg viewBox="0 0 12 12" fill="#fff"><path d="M1.5 1.6 11 6 1.5 10.4l.9-3.6L7 6 2.4 5.2z"/></svg></span>
+      </div>
+    </div></div>
+    <p class="subtitle">Si sabes usar WhatsApp, sabes usar Zenet.</p>
+    <p class="ejemplo">Ejemplo · datos ficticios</p>
+  </section>
+
+  <!-- ═══ Escena 9 · Cada mes ═══ -->
+  <section class="scene" id="s-mes">
+    <div class="card mdiag" id="md1" style="left:120px;top:92px"><div class="card-head"><span class="card-title">Septiembre</span><span class="pill"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.3 5 8.6 9.6 3.6"/></svg>línea base</span></div><div class="md-body"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="18" fill="none" stroke="#ECEFEC" stroke-width="6"/><circle cx="23" cy="23" r="18" fill="none" stroke="#2E6E62" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="54" transform="rotate(-90 23 23)"/></svg><div class="md-lines"><i style="width:90%"></i><i style="width:64%"></i></div></div><div class="md-bars"><span><i style="width:38%"></i></span><span><i style="width:52%"></i></span><span><i style="width:30%"></i></span></div></div><div class="card mdiag" id="md2" style="left:146px;top:128px"><div class="card-head"><span class="card-title">Octubre</span><span class="muted">diagnóstico</span></div><div class="md-body"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="18" fill="none" stroke="#ECEFEC" stroke-width="6"/><circle cx="23" cy="23" r="18" fill="none" stroke="#2E6E62" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="42" transform="rotate(-90 23 23)"/></svg><div class="md-lines"><i style="width:90%"></i><i style="width:64%"></i></div></div><div class="md-bars"><span><i style="width:50%"></i></span><span><i style="width:60%"></i></span><span><i style="width:44%"></i></span></div></div><div class="card mdiag" id="md3" style="left:172px;top:164px"><div class="card-head"><span class="card-title">Noviembre</span><span class="muted">diagnóstico</span></div><div class="md-body"><svg viewBox="0 0 46 46"><circle cx="23" cy="23" r="18" fill="none" stroke="#ECEFEC" stroke-width="6"/><circle cx="23" cy="23" r="18" fill="none" stroke="#2E6E62" stroke-width="6" stroke-linecap="round" pathLength="100" stroke-dasharray="100" stroke-dashoffset="34" transform="rotate(-90 23 23)"/></svg><div class="md-lines"><i style="width:90%"></i><i style="width:64%"></i></div></div><div class="md-bars"><span><i style="width:62%"></i></span><span><i style="width:70%"></i></span><span><i style="width:56%"></i></span></div></div>
+    <div class="card" id="mv"><div class="card-head"><span class="card-title">Lo que se movió<em>desde tu línea base</em></span></div><div class="mvr" id="mv-t"><b>Tu tiempo</b><svg class="sp" viewBox="0 0 170 40"><path d="M6 9L85 22L164 31" fill="none" stroke="#2E6E62" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><circle class="dt" cx="6" cy="9" r="3.6" fill="#2E6E62"/><circle class="dt" cx="85" cy="22" r="3.6" fill="#2E6E62"/><circle class="dt" cx="164" cy="31" r="3.6" fill="#2E6E62"/></svg><span class="chip ok"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg></span></div><div class="mvr" id="mv-e"><b>Tu esfuerzo</b><svg class="sp" viewBox="0 0 170 40"><path d="M6 8L85 19L164 29" fill="none" stroke="#2E6E62" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><circle class="dt" cx="6" cy="8" r="3.6" fill="#2E6E62"/><circle class="dt" cx="85" cy="19" r="3.6" fill="#2E6E62"/><circle class="dt" cx="164" cy="29" r="3.6" fill="#2E6E62"/></svg><span class="chip ok"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 2 8 8M8 3.5V8H3.5"/></svg></span></div><div class="mvr" id="mv-m"><b>Tu margen</b><svg class="sp" viewBox="0 0 170 40"><path d="M6 31L85 22L164 10" fill="none" stroke="#2E6E62" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><circle class="dt" cx="6" cy="31" r="3.6" fill="#2E6E62"/><circle class="dt" cx="85" cy="22" r="3.6" fill="#2E6E62"/><circle class="dt" cx="164" cy="10" r="3.6" fill="#2E6E62"/></svg><span class="chip ok"><svg viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8 8 2M3.5 2H8v4.5"/></svg></span></div></div>
+    <p class="subtitle">Cada mes, lo que se movió: tiempo, esfuerzo, margen.</p>
+  </section>
+
+  <!-- ═══ Escena 10 · Cierre ═══ -->
+  <section class="scene" id="s-cierre">
+    <svg class="logo" viewBox="0 0 1975.12 417.15" aria-label="Zenet">
+      <defs><clipPath id="lg-clip-t">
+<path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
+</clipPath></defs>
+      <g class="iso-lines" fill="none" stroke="#2B3738" stroke-width="9" stroke-linejoin="round" stroke-linecap="round"><path d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><path d="M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/><path d="M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"/></g>
+      <path class="iso-fill" fill="#2B3738" fill-rule="nonzero" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
+      <path class="lt" fill="#2B3738" d="M 804.300781 315.300781 L 936.113281 149.488281 L 806.617188 149.488281 L 806.617188 107.617188 L 973.433594 107.617188 C 988.582031 107.617188 1000.863281 119.898438 1000.863281 135.042969 C 1000.863281 141.242188 998.761719 147.257812 994.902344 152.109375 L 863.09375 317.925781 L 1005.734375 317.925781 L 1005.734375 359.792969 L 825.769531 359.792969 C 810.625 359.792969 798.34375 347.515625 798.34375 332.367188 C 798.34375 326.167969 800.445312 320.152344 804.300781 315.300781 "/><path class="lt" fill="#2B3738" d="M 1088.023438 217.640625 L 1176.625 217.640625 C 1198.042969 217.640625 1209.726562 211.3125 1209.726562 190.378906 C 1209.726562 163.605469 1191.714844 143.644531 1155.699219 143.644531 C 1115.289062 143.644531 1088.515625 167.007812 1088.023438 217.640625 Z M 1088.023438 258.046875 C 1091.917969 306.726562 1122.585938 323.765625 1166.394531 323.765625 C 1192.203125 323.765625 1217.03125 317.441406 1243.808594 300.886719 L 1243.808594 347.621094 C 1218.976562 359.792969 1192.683594 365.636719 1165.917969 365.636719 C 1079.261719 365.636719 1037.386719 321.820312 1037.386719 245.875 L 1037.386719 221.535156 C 1037.386719 145.589844 1079.261719 101.777344 1156.175781 101.777344 C 1230.664062 101.777344 1260.84375 144.617188 1260.84375 190.378906 C 1260.84375 238.574219 1234.066406 258.046875 1188.3125 258.046875 L 1088.023438 258.046875 "/><path class="lt" fill="#2B3738" d="M 1360.171875 359.792969 L 1309.542969 359.792969 L 1309.542969 133.421875 C 1339.722656 114.433594 1380.128906 101.777344 1419.570312 101.777344 C 1496.484375 101.777344 1526.171875 136.339844 1526.171875 207.417969 L 1526.171875 359.792969 L 1475.546875 359.792969 L 1475.546875 211.800781 C 1475.546875 164.578125 1457.53125 144.617188 1413.234375 144.617188 C 1394.730469 144.617188 1377.207031 148.511719 1360.171875 157.761719 L 1360.171875 359.792969 "/><path class="lt" fill="#2B3738" d="M 1625.511719 217.640625 L 1714.109375 217.640625 C 1735.527344 217.640625 1747.210938 211.3125 1747.210938 190.378906 C 1747.210938 163.605469 1729.199219 143.644531 1693.171875 143.644531 C 1652.765625 143.644531 1626 167.007812 1625.511719 217.640625 Z M 1625.511719 258.046875 C 1629.402344 306.726562 1660.070312 323.765625 1703.878906 323.765625 C 1729.6875 323.765625 1754.515625 317.441406 1781.292969 300.886719 L 1781.292969 347.621094 C 1756.464844 359.792969 1730.167969 365.636719 1703.390625 365.636719 C 1616.738281 365.636719 1574.875 321.820312 1574.875 245.875 L 1574.875 221.535156 C 1574.875 145.589844 1616.738281 101.777344 1693.660156 101.777344 C 1768.140625 101.777344 1798.328125 144.617188 1798.328125 190.378906 C 1798.328125 238.574219 1771.550781 258.046875 1725.796875 258.046875 L 1625.511719 258.046875 "/><path class="lt" fill="#2B3738" d="M 1848.046875 32.648438 L 1898.683594 32.648438 L 1898.683594 107.617188 L 1972.671875 107.617188 L 1972.671875 150.457031 L 1898.683594 150.457031 L 1898.683594 286.769531 C 1898.683594 312.085938 1906.46875 322.792969 1929.839844 322.792969 C 1945.410156 322.792969 1959.039062 320.363281 1972.671875 315.003906 L 1972.671875 356.382812 C 1959.039062 362.226562 1938.59375 365.636719 1919.609375 365.636719 C 1867.527344 365.636719 1848.046875 336.425781 1848.046875 288.230469 L 1848.046875 32.648438 " clip-path="url(#lg-clip-t)"/>
+    </svg>
+    <span class="lrule"></span>
+    <p class="tagline">El caos <i>no es el precio</i><br>de tener un restaurante.</p>
+  </section>
+
+  <!-- el cursor = el operador (compartido entre escenas) -->
+  <div id="finger"></div>
+  <div id="cursor"><svg viewBox="0 0 26 30"><path d="M3 2.5v21.2l5.6-5.3 3.7 8.6 4-1.7-3.7-8.5h7.7z" fill="#1F2A2B" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+
+</div></div>
+
+<div id="controls">
+  <select id="pick"><option value="">Video demo</option><option value="pitch">Pitch completo</option><option value="problema">Pitch · acto del problema</option><option value="acto1">Acto 1</option><option value="acto2">Acto 2 (entra desde el diagnóstico)</option><option value="acto3">Acto 3 (entra desde Compras)</option><option value="cierre">Cierre (entra desde WhatsApp)</option><option value="compras">Escena 6 · Compras</option></select>
+  <button id="play">Pausa</button>
+  <select id="speed"><option value="1">1×</option><option value="0.5">0.5×</option><option value="0.25">0.25×</option></select>
+  <input id="scrub" type="range" min="0" max="1000" value="0">
+  <span id="time">0.00 / 0.00 s</span>
+</div>
+
+<script src="lib/gsap.min.js"></script>
+<script>
+(function(){
+  const qs = new URLSearchParams(location.search);
+  const RENDER = qs.has('render');
+  document.body.classList.toggle('render', RENDER);
+  const stage = document.getElementById('stage');
+  const cursor = document.getElementById('cursor');
+  const cursorIcon = cursor.querySelector('svg');
+
+  /* ── utilidades ── */
+  // posición de un elemento en el lienzo (ignora transforms: sirve con la vista escalada y antes de que entren las tarjetas)
+  function pos(el, fx = .5, fy = .5){
+    let x = 0, y = 0, e = el;
+    while (e && e !== stage){ x += e.offsetLeft; y += e.offsetTop; e = e.offsetParent; }
+    return { x: x + el.offsetWidth * fx, y: y + el.offsetHeight * fy };
+  }
+  // el cursor viaja con un arco suave: x e y con curvas distintas
+  function moveCursor(tl, p, at, dur){
+    tl.to(cursor, { x: p.x, duration: dur, ease: 'power2.inOut' }, at)
+      .to(cursor, { y: p.y, duration: dur, ease: 'power2.out' }, at);
+  }
+  // clic: el cursor se hunde y deja una onda teal
+  function click(tl, p, at){
+    tl.to(cursorIcon, { scale: .8, duration: .08, ease: 'power1.in', transformOrigin: '3px 3px' }, at)
+      .to(cursorIcon, { scale: 1, duration: .18, ease: 'power2.out' }, at + .08);
+    const r = document.createElement('div');
+    r.className = 'ripple';
+    stage.appendChild(r);
+    gsap.set(r, { x: p.x, y: p.y, xPercent: -50, yPercent: -50, scale: .1, autoAlpha: 0 });
+    tl.set(r, { autoAlpha: .6 }, at + .04)
+      .to(r, { scale: 1, autoAlpha: 0, duration: .5, ease: 'power2.out' }, at + .04);
+  }
+  function subtitleIn(tl, el, at){
+    tl.fromTo(el, { autoAlpha: 0, y: 8 }, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, at);
+  }
+
+  function subtitleOut(tl, el, at){
+    tl.to(el, { autoAlpha: 0, y: -6, duration: .3, ease: 'power1.in' }, at);
+  }
+  const sec = id => document.getElementById(id);
+  const PULSE = .75;                              // lo que tarda la línea de pulso en cruzar (escena 2 → 3)
+  // primero se lee, luego se ve: en cada cambio de escena el escenario se vacía y el subtítulo nuevo
+  // aparece al centro, grande; cuando entran las figuras baja a su lugar y se hace chico.
+  // el tiempo al centro depende del largo de la frase: ~1.65 s (5 palabras) a ~2.2 s (10)
+  const TITLE_Y = -222;     // del lugar del subtítulo (abajo) al centro del escenario
+  const SUB_SEL = { personas: '#s-pers .subtitle', construyo: '#s-cons .subtitle', costos: '#s-cost .subtitle', numero: '#s-num .subtitle',
+                    documentos: '#s-docs .subtitle', base: '#s-base .subtitle', diagnostico: '#s-diag .subtitle', areas: '#sub-areas',
+                    cambio: '#sub-cambio', compras: '#s-compras .subtitle', cotizaciones: '#s-quotes .subtitle', whatsapp: '#s-wa .subtitle', mes: '#s-mes .subtitle' };
+  const titleTime = name => { const el = document.querySelector(SUB_SEL[name]); const w = el ? el.textContent.trim().split(/\s+/).length : 8; return 1.1 + .11 * w; };
+  const NO_SUB = ['carga', 'puente', 'cierre'];   // escenas que son su propio título
+  const isTitle = (prev, name) => !(NO_SUB.includes(name) || (prev === 'areas' && name === 'cambio'));
+  const gapFor = (prev, name) => name === 'carga' ? .3 : name === 'puente' ? .4 : name === 'cierre' ? .3 : !isTitle(prev, name) ? 1.0 : titleTime(name);
+  function titleIn(tl, el, t0, o){
+    const g = o.gap || 0;
+    if (o.title){
+      tl.fromTo(el, { autoAlpha: 0, y: TITLE_Y + 10, scale: 1.3, transformOrigin: '50% 50%' }, { autoAlpha: 1, y: TITLE_Y, duration: .45, ease: 'power2.out' }, t0 - g + .3)
+        .to(el, { y: 0, scale: 1, duration: .55, ease: 'power2.inOut' }, t0 - .25);
+    } else subtitleIn(tl, el, t0 - g + .15);   // la red de la escena 4 se queda: solo cambia el texto abajo
+  }
+
+  const NODE_X = [30, 215, 400, 585, 770];        // = las posiciones de los nodos en el HTML
+
+  /* ═══ Escena 1 · Tus documentos (5.0 s) ═══ */
+  function documentos(tl, t0, o){
+    const s = sec('s-docs'), q = sel => s.querySelector(sel);
+    const card = q('#up'), drop = q('#drop'), sub = q('.subtitle');
+    const files = [...s.querySelectorAll('.file')];
+    const docs = { rec: q('#d-rec'), fac: q('#d-fac'), inv: q('#d-inv'), est: q('#d-est') };
+    const spot = { rec: { x: 92, y: 92, r: -7 }, fac: { x: 764, y: 96, r: 6 }, inv: { x: 118, y: 270, r: 5 }, est: { x: 742, y: 280, r: -4 } };
+
+    gsap.set(card, { autoAlpha: 0, y: 20, scale: .97 });
+    gsap.set(files, { height: 0, autoAlpha: 0 });
+    gsap.set(s.querySelectorAll('.file .ok'), { scale: 0, transformOrigin: '50% 50%' });
+    Object.keys(docs).forEach(k => gsap.set(docs[k], { x: spot[k].x, y: -190, rotation: spot[k].r * 3, transformOrigin: '50% 50%' }));
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.set(cursor, { x: 990, y: 580, autoAlpha: 0 }, t0);
+    tl.to(card, { autoAlpha: 1, y: 0, scale: 1, duration: .55, ease: 'power3.out' }, t0 + .05);
+    // caen sueltos, como están
+    ['rec', 'fac', 'inv', 'est'].forEach((k, i) => {
+      const at = t0 + .15 + i * .12;
+      tl.to(docs[k], { y: spot[k].y + 6, rotation: spot[k].r, duration: .5, ease: 'power2.in' }, at)
+        .to(docs[k], { y: spot[k].y, duration: .22, ease: 'power2.out' }, at + .5);
+    });
+    titleIn(tl, sub, t0, o);
+
+    const D = pos(drop);
+    const fileIn = (f, at) => {
+      tl.to(f, { height: 30, autoAlpha: 1, duration: .3, ease: 'power2.out' }, at)
+        .to(f.querySelector('.ok'), { scale: 1, duration: .3, ease: 'back.out(2.5)' }, at + .18);
+    };
+    const dropGlow = (at, dur) => {
+      tl.to(drop, { backgroundColor: 'rgba(191,226,217,.4)', borderColor: 'rgba(46,110,98,.75)', duration: .15 }, at)
+        .to(drop, { backgroundColor: 'rgba(191,226,217,.12)', borderColor: 'rgba(46,110,98,.35)', duration: .25 }, at + dur);
+    };
+    // el operador arrastra un documento a la tarjeta
+    const drag = (k, at, file) => {
+      const grab = { x: spot[k].x + 52, y: spot[k].y + 60 };
+      moveCursor(tl, grab, at, .5);
+      tl.to(cursorIcon, { scale: .82, duration: .08, ease: 'power1.in', transformOrigin: '3px 3px' }, at + .52)
+        .to(docs[k], { scale: 1.06, rotation: 0, duration: .16, ease: 'power2.out' }, at + .52)
+        .to(cursor, { x: D.x, y: D.y, duration: .55, ease: 'power2.inOut' }, at + .64)
+        .to(docs[k], { x: D.x - 52, y: D.y - 60, duration: .55, ease: 'power2.inOut' }, at + .64);
+      dropGlow(at + .98, .3);
+      tl.to(cursorIcon, { scale: 1, duration: .16, ease: 'power2.out' }, at + 1.2)
+        .to(docs[k], { scale: .3, autoAlpha: 0, duration: .26, ease: 'power2.in' }, at + 1.2);
+      fileIn(file, at + 1.28);
+    };
+    tl.to(cursor, { autoAlpha: 1, duration: .15 }, t0 + 1.05);
+    drag('rec', t0 + 1.05, files[0]);
+    drag('fac', t0 + 2.3, files[1]);
+    // los otros dos entran solos y el operador se va: ahora trabaja Zenet
+    tl.to(cursor, { x: '+=40', y: '+=60', autoAlpha: 0, duration: .45, ease: 'power2.in' }, t0 + 3.62);
+    ['inv', 'est'].forEach((k, i) => {
+      const at = t0 + 3.55 + i * .14;
+      tl.to(docs[k], { x: D.x - 52, y: D.y - 60, rotation: 0, duration: .5, ease: 'power2.inOut' }, at)
+        .to(docs[k], { scale: .3, autoAlpha: 0, duration: .22, ease: 'power2.in' }, at + .38);
+      fileIn(files[2 + i], at + .5);
+    });
+
+    const dur = 5.6;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to(card, { autoAlpha: 0, scale: .95, duration: .35, ease: 'power2.in' }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 2 · La base (5.2 s) ═══ */
+  function base(tl, t0, o){
+    const s = sec('s-base'), q = sel => s.querySelector(sel);
+    const raws = [q('#raw1'), q('#raw2'), q('#raw3')];
+    const nodes = [...s.querySelectorAll('.node')];          // platillo · receta · insumo · proveedor · compra
+    const conns = [...s.querySelectorAll('.conn')];
+    const pill = q('#merge-pill'), sub = q('.subtitle'), ej = q('.ejemplo');
+    const rawY = [160, 207, 254], rawX = [-34, 26, -12], rawR = [-2, 1.5, -1];
+
+    raws.forEach((r, i) => gsap.set(r, { top: rawY[i], xPercent: -50, x: rawX[i], y: 10, rotation: rawR[i], autoAlpha: 0 }));
+    gsap.set(nodes, { autoAlpha: 0, scale: .94 });
+    nodes.forEach((n, i) => { if (i !== 2) gsap.set(n, { x: i < 2 ? 18 : -18 }); });
+    conns.forEach(c => gsap.set(c.querySelector('.ah'), { autoAlpha: 0 }));
+    gsap.set(pill, { xPercent: -50, autoAlpha: 0, y: -4 });
+    gsap.set([sub, ej], { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    // tres nombres del mismo insumo, uno por documento
+    raws.forEach((r, i) => tl.to(r, { y: 0, autoAlpha: 1, duration: .35, ease: 'power2.out' }, t0 + .15 + i * .15));
+    titleIn(tl, sub, t0, o);
+    tl.to(ej, { autoAlpha: 1, duration: .4 }, t0 + .4);
+    // se juntan y quedan en uno
+    raws.forEach((r, i) => tl.to(r, { x: 0, y: 204 - rawY[i], rotation: 0, scale: .96, duration: .45, ease: 'power3.inOut' }, t0 + 1.15));
+    tl.to(raws, { autoAlpha: 0, duration: .16 }, t0 + 1.55);
+    tl.to(nodes[2], { autoAlpha: 1, scale: 1, duration: .4, ease: 'back.out(2)' }, t0 + 1.55);
+    tl.to(pill, { autoAlpha: 1, y: 0, duration: .3, ease: 'power2.out' }, t0 + 1.8);
+    tl.to(pill, { autoAlpha: 0, duration: .25 }, t0 + 2.55);
+    // la cadena crece desde el insumo hacia los dos lados
+    const grow = (ci, ni, at) => {
+      const c = conns[ci];
+      tl.to(c.querySelector('line'), { attr: { 'stroke-dashoffset': 0 }, duration: .28, ease: 'power1.inOut' }, at)
+        .to(c.querySelector('.ah'), { autoAlpha: 1, duration: .12 }, at + .22)
+        .to(nodes[ni], { autoAlpha: 1, scale: 1, x: 0, duration: .38, ease: 'power3.out' }, at + .18);
+    };
+    grow(1, 1, t0 + 2.7); grow(2, 3, t0 + 2.7);
+    grow(0, 0, t0 + 3.15); grow(3, 4, t0 + 3.15);
+    // todo conectado: una pasada de izquierda a derecha
+    nodes.forEach((n, i) => {
+      const at = t0 + 3.85 + i * .13;
+      if (i === 2){ tl.to(n, { scale: 1.04, duration: .14, yoyo: true, repeat: 1 }, at); return; }
+      tl.to(n, { borderColor: 'rgba(46,110,98,.85)', backgroundColor: '#F2F9F6', duration: .14 }, at)
+        .to(n, { borderColor: 'rgba(43,55,56,.12)', backgroundColor: '#FFFFFF', duration: .35 }, at + .2);
+    });
+
+    const dur = 5.65;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([...nodes, ...conns, ej], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 3 · El diagnóstico (5.6 s) ═══ */
+  function diagnostico(tl, t0, o){
+    const s = sec('s-diag'), q = sel => s.querySelector(sel);
+    const pulse = q('#pulse'), rep = q('#rep'), view = q('#rep-view'), inner = q('#rep-in'), thumb = q('#sb-thumb');
+    const sub = q('.subtitle'), ej = q('.ejemplo');
+    const rings = [...s.querySelectorAll('.ring')];
+    const rows = [...s.querySelectorAll('.lr')];
+
+    // el reporte es más alto que su ventana: el operador baja para ver sus números
+    const SCROLL = Math.max(0, inner.offsetHeight - view.offsetHeight);
+    const track = view.offsetHeight - 16;
+    const thumbH = Math.round(track * view.offsetHeight / inner.offsetHeight);
+    gsap.set(thumb, { height: thumbH });
+
+    gsap.set(rep, { autoAlpha: 0, y: 30, scale: .97 });
+    gsap.set([q('#rep-strip'), q('.idx'), q('#rep-sec')], { autoAlpha: 0, y: 8 });
+    gsap.set(rows, { autoAlpha: 0, y: 8 });
+    gsap.set(s.querySelectorAll('.lr .chip'), { scale: .6, autoAlpha: 0 });
+    gsap.set([sub, ej], { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.set(cursor, { x: 990, y: 580, autoAlpha: 0 }, t0);
+    // el guiño del doctor: una línea de pulso cruza una vez…
+    tl.to(pulse, { attr: { 'stroke-dashoffset': 0 }, duration: PULSE, ease: 'power1.inOut' }, t0);
+    tl.to(pulse, { autoAlpha: 0, duration: .3 }, t0 + PULSE);
+    // …y se vuelve el reporte
+    tl.to(rep, { autoAlpha: 1, y: 0, scale: 1, duration: .6, ease: 'power3.out' }, t0 + .7);
+    titleIn(tl, sub, t0, o);
+    tl.to(ej, { autoAlpha: 1, duration: .4 }, t0 + .9);
+    tl.to([q('#rep-strip'), q('.idx')], { autoAlpha: 1, y: 0, duration: .4, ease: 'power2.out', stagger: .12 }, t0 + 1.05);
+    rings.forEach((r, i) => {
+      const c = r.querySelector('.ring-v'), n = r.querySelector('span'), v = +c.dataset.v, p = { v: 0 };
+      const at = t0 + 1.35 + i * .15;
+      tl.to(c, { attr: { 'stroke-dashoffset': 100 - v }, duration: .9, ease: 'power2.out' }, at)
+        .to(p, { v, duration: .9, ease: 'power2.out', onUpdate(){ n.textContent = Math.round(p.v); } }, at);
+    });
+    tl.to(q('#rep-sec'), { autoAlpha: 1, y: 0, duration: .35 }, t0 + 1.9);
+    tl.to(rows, { autoAlpha: 1, y: 0, duration: .35, ease: 'power2.out', stagger: .1 }, t0 + 2.0);
+    tl.to(cursor, { autoAlpha: 1, duration: .15 }, t0 + 1.9);
+    moveCursor(tl, { x: 704, y: 250 }, t0 + 1.9, .55);
+    tl.to(inner, { y: -SCROLL, duration: .7, ease: 'power2.inOut' }, t0 + 2.6);
+    tl.to(thumb, { y: track - thumbH, duration: .7, ease: 'power2.inOut' }, t0 + 2.6);
+    moveCursor(tl, { x: 778, y: 318 }, t0 + 3.45, .6);
+    // los números, como un examen: valor, rango y dónde caes
+    rows.forEach((r, i) => {
+      const at = t0 + 2.9 + i * .18;
+      const lv = r.querySelector('.lv'), mk = r.querySelector('.mk'), v = +lv.dataset.v, p = { v: 0 };
+      tl.to(mk, { left: mk.dataset.x + '%', duration: .7, ease: 'power3.out' }, at + .1)
+        .to(p, { v, duration: .7, ease: 'power3.out', onUpdate(){ lv.textContent = p.v ? p.v.toFixed(1) + '%' : '–'; } }, at + .1)
+        .to(r.querySelector('.chip'), { autoAlpha: 1, scale: 1, duration: .32, ease: 'back.out(2.2)' }, at + .65);
+    });
+
+    const dur = 5.35;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to(rep, { scale: .14, duration: .5, ease: 'power3.in' }, t0 + dur - .1)
+        .to(rep, { autoAlpha: 0, duration: .18 }, t0 + dur + .25);
+      tl.to(ej, { autoAlpha: 0, duration: .3 }, t0 + dur - .05);
+      tl.to(cursor, { autoAlpha: 0, duration: .2 }, t0 + dur - .1);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 4 · Las áreas (4.0 s) ═══ */
+  const AREA_IDS = ['compras', 'costos', 'recetas', 'inventario', 'procesos', 'equipo'];
+  function areas(tl, t0, o){
+    const s = sec('s-red'), q = sel => s.querySelector(sel);
+    const sphere = q('#sphere'), halo = q('.halo'), sub = q('#sub-areas');
+    const A = Object.fromEntries(AREA_IDS.map(k => [k, q('#a-' + k)]));
+
+    gsap.set(sphere, { autoAlpha: 0, scale: .3 });
+    gsap.set(Object.values(A), { autoAlpha: 0, scale: .9 });
+    gsap.set([q('#change'), q('#alday'), q('#sub-cambio'), q('.ejemplo'), sub], { autoAlpha: 0 });
+    gsap.set(s.querySelectorAll('.job .jb'), { autoAlpha: 0 });
+    gsap.set([q('#change'), q('#alday')], { xPercent: -50 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    // el reporte se encoge y queda la esfera: Zenet
+    tl.to(sphere, { autoAlpha: 1, scale: 1, duration: .55, ease: 'back.out(1.8)' }, t0 + .3);
+    titleIn(tl, sub, t0, o);
+    // se encienden las áreas, de arriba abajo, en pares
+    [['compras', 'inventario'], ['costos', 'procesos'], ['recetas', 'equipo']].forEach((pair, i) => {
+      const at = t0 + .6 + i * .28;
+      pair.forEach(k => {
+        tl.to(q('#ln-' + k), { attr: { 'stroke-dashoffset': 0 }, duration: .32, ease: 'power1.out' }, at)
+          .to(A[k], { autoAlpha: 1, scale: 1, duration: .38, ease: 'back.out(1.6)' }, at + .18)
+          .to(A[k].querySelector('.ai'), { backgroundColor: 'rgba(191,226,217,.65)', duration: .3 }, at + .42)
+          .to(A[k].querySelector('.adot'), { backgroundColor: '#2E6E62', boxShadow: '0 0 0 3px rgba(46,110,98,.16)', duration: .3 }, at + .42);
+      });
+    });
+    // un solo cerebro: la esfera late y las seis áreas responden juntas
+    tl.fromTo(halo, { scale: 1, autoAlpha: 1 }, { scale: 1.5, autoAlpha: 0, duration: .8, ease: 'power2.out', immediateRender: false }, t0 + 1.75);
+    tl.to(Object.values(A), { borderColor: 'rgba(46,110,98,.55)', duration: .2 }, t0 + 1.9)
+      .to(Object.values(A), { borderColor: 'rgba(43,55,56,.12)', duration: .5 }, t0 + 2.15);
+    tl.set(halo, { scale: 1, autoAlpha: 1 }, t0 + 2.7);
+
+    const dur = 3.8;
+    if (!o.last) subtitleOut(tl, sub, t0 + dur - .05);
+    if (!o.last && o.next !== 'cambio'){ tl.to(s, { autoAlpha: 0, duration: .35 }, t0 + dur); tl.set(s, { visibility: 'hidden' }, t0 + dur + .4); }
+    return dur;
+  }
+
+  /* ═══ Escena 5 · El cambio (4.4 s) — sigue sobre la red de la escena 4 ═══ */
+  function cambio(tl, t0, o){
+    const s = sec('s-red'), q = sel => s.querySelector(sel);
+    const sphere = q('#sphere'), halo = q('.halo'), change = q('#change'), alday = q('#alday');
+    const sub = q('#sub-cambio'), ej = q('.ejemplo');
+    const A = Object.fromEntries(AREA_IDS.map(k => [k, q('#a-' + k)]));
+    const hit = ['costos', 'recetas'];                    // lo que toca el camarón
+    const shake = { costos: { x: -7, y: 5, r: -3 }, recetas: { x: 6, y: -5, r: 2.5 } };
+    gsap.set(change, { y: -150, scale: .9 });
+    gsap.set(alday, { y: 6, scale: .9 });
+
+    titleIn(tl, sub, t0, o);
+    tl.to(ej, { autoAlpha: 1, duration: .4 }, t0 + .2);
+    // entra el cambio
+    tl.to(change, { autoAlpha: 1, y: 0, scale: 1, duration: .7, ease: 'power3.out' }, t0 + .1);
+    // turbulencia: lo que toca se sacude y se descose. La esfera no se mueve.
+    hit.forEach((k, i) => {
+      const at = t0 + .75 + i * .1, sh = shake[k];
+      tl.set(q('#ln-' + k), { attr: { 'stroke-dasharray': '0.03 0.025', 'stroke-dashoffset': 0 } }, at)
+        .to(A[k], { x: sh.x, y: sh.y, rotation: sh.r, backgroundColor: '#FCF1EA', borderColor: 'rgba(43,55,56,.2)', duration: .22, ease: 'power2.out' }, at)
+        .to(A[k].querySelector('.adot'), { backgroundColor: '#E2B79F', boxShadow: '0 0 0 3px rgba(244,222,208,.9)', duration: .2 }, at)
+        .to(A[k], { y: sh.y - 3, duration: .2, ease: 'sine.inOut', yoyo: true, repeat: 3 }, at + .22);
+    });
+    tl.to(change, { y: -3, duration: .2, ease: 'sine.inOut', yoyo: true, repeat: 3 }, t0 + .8);
+    // Zenet lo recibe…
+    tl.to(change, { y: 82, scale: .5, autoAlpha: 0, duration: .45, ease: 'power2.in' }, t0 + 1.6);
+    tl.fromTo(halo, { scale: 1, autoAlpha: 1 }, { scale: 1.6, autoAlpha: 0, duration: .7, ease: 'power2.out', immediateRender: false }, t0 + 1.95);
+    tl.set(halo, { scale: 1, autoAlpha: 1 }, t0 + 2.7);
+    // …y reacomoda pieza por pieza
+    hit.forEach((k, i) => {
+      const at = t0 + 2.05 + i * .35, ln = q('#ln-' + k), pl = q('#pl-' + k);
+      tl.set(pl, { opacity: 1 }, at)
+        .fromTo(pl, { attr: { 'stroke-dashoffset': .14 } }, { attr: { 'stroke-dashoffset': -1 }, duration: .45, ease: 'power1.in', immediateRender: false }, at)
+        .set(pl, { opacity: 0 }, at + .46)
+        .set(ln, { attr: { 'stroke-dasharray': '1', 'stroke-dashoffset': 0 } }, at + .42)
+        .to(A[k], { x: 0, y: 0, rotation: 0, backgroundColor: '#FFFFFF', borderColor: 'rgba(46,110,98,.5)', duration: .45, ease: 'back.out(2)' }, at + .42)
+        .to(A[k].querySelector('.adot'), { backgroundColor: '#2E6E62', boxShadow: '0 0 0 3px rgba(46,110,98,.16)', duration: .25 }, at + .42)
+        .to(A[k].querySelector('.ja'), { autoAlpha: 0, duration: .2 }, at + .5)
+        .fromTo(A[k].querySelector('.jb'), { autoAlpha: 0, y: 4 }, { autoAlpha: 1, y: 0, duration: .3, ease: 'power2.out', immediateRender: false }, at + .6);
+    });
+    tl.to(alday, { autoAlpha: 1, y: 0, scale: 1, duration: .4, ease: 'back.out(2)' }, t0 + 3.15);
+
+    const dur = 4.65;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to(ej, { autoAlpha: 0, duration: .3 }, t0 + dur - .1);
+      // hacia Compras: todo se apaga menos el área de Compras, que crece hacia el centro
+      const keep = A.compras;
+      tl.to([sphere, alday, q('.net'), ...AREA_IDS.filter(k => k !== 'compras').map(k => A[k])], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.to(keep, { x: 290, y: 28, scale: 1.3, borderColor: 'rgba(46,110,98,.6)', duration: .45, ease: 'power3.inOut' }, t0 + dur - .05)
+        .to(keep, { autoAlpha: 0, duration: .3 }, t0 + dur + .1);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .6);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 6 · Compras (6 s) ═══ */
+  function compras(tl, t0, o = {}){
+    const s = document.getElementById('s-compras');
+    const q = sel => s.querySelector(sel);
+    const card = q('#c-mov'), det = q('#c-det'), pill = q('#c-pill'), count = q('#c-count');
+    const rows = s.querySelectorAll('.row'), camaron = q('#r-camaron');
+    const tickets = [q('#t1'), q('#t2'), q('#t3')];
+
+    // estados iniciales
+    gsap.set(card, { autoAlpha: 0, y: 24, scale: .97 });
+    const skels = [...rows].map(r => { const k = document.createElement('div'); k.className = 'skel'; k.innerHTML = '<i class="s1"></i><i class="s2"></i><i class="s3"></i>'; r.appendChild(k); return k; });
+    const parts = [...rows].map(r => r.querySelectorAll('.r-name, .r-price'));
+    gsap.set(parts.map(p => [...p]).flat(), { autoAlpha: 0, y: 6 });
+    gsap.set(s.querySelectorAll('.row .chip'), { autoAlpha: 0 });
+    gsap.set(s.querySelectorAll('.row .chip'), { scale: .6 });
+    gsap.set(pill, { autoAlpha: 0, scale: .8 });
+    gsap.set(det, { autoAlpha: 0, x: 28, y: 10, scale: .96 });
+    gsap.set(q('#det-chip'), { scale: .6, autoAlpha: 0 });
+    gsap.set([q('#d1'), q('#d2')], { scale: 0, transformOrigin: '50% 50%' });
+    gsap.set(q('.legend').children, { autoAlpha: 0, y: 4 });
+    gsap.set([q('.eyebrow'), q('.subtitle'), q('.ejemplo')], { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.fromTo(q('.eyebrow'), { autoAlpha: 0, y: -6 }, { autoAlpha: 1, y: 0, duration: .45, ease: 'power2.out' }, t0);
+    tl.to(card, { autoAlpha: 1, y: 0, scale: 1, duration: .6, ease: 'power3.out' }, t0 + .1);
+    titleIn(tl, q('.subtitle'), t0, o);
+    tl.to(q('.ejemplo'), { autoAlpha: 1, duration: .4 }, t0 + .4);
+
+    // 1 · llegan las facturas y caen en la píldora del encabezado
+    const target = pos(pill, .25, .5);
+    // aparecen una por una a la izquierda y se quedan ~1 s para que se lean; luego vuelan a la píldora
+    tickets.forEach((tk, i) => {
+      gsap.set(tk, { left: 0, top: 0, x: 46 + i * 8, y: 168 + i * 60, rotation: [-3, 2, -2][i], autoAlpha: 0, scale: .9, transformOrigin: '0% 50%' });
+      const show = t0 + .35 + i * .16, fly = t0 + 1.45 + i * .2;
+      tl.fromTo(tk, { y: '+=12' }, { y: '-=12', autoAlpha: 1, scale: 1, duration: .42, ease: 'back.out(1.6)', immediateRender: false }, show)
+        .to(tk, { x: target.x - 10, duration: .62, ease: 'power2.inOut' }, fly)
+        .to(tk, { y: target.y - 20, duration: .62, ease: 'power3.inOut' }, fly)
+        .to(tk, { scale: .32, rotation: 0, duration: .62, ease: 'power2.in' }, fly)
+        .to(tk, { autoAlpha: 0, duration: .14 }, fly + .52);
+    });
+    const n = { v: 0 };
+    tl.to(pill, { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2)' }, t0 + 2.03);
+    tl.to(n, { v: 3, duration: .42, ease: 'none',
+      onUpdate(){ const k = Math.max(1, Math.min(3, Math.floor(n.v) + 1)); count.textContent = k === 1 ? '1 factura nueva' : k + ' facturas nuevas'; } }, t0 + 2.05);
+    [2.27, 2.47].forEach(d => tl.fromTo(pill, { scale: 1.1 }, { scale: 1, duration: .25, ease: 'power2.out', immediateRender: false }, t0 + d));
+
+    // del aquí en adelante, todo corre D segundos después que en la v1
+    const D = .9;
+
+    // 2 · se llenan los renglones
+    rows.forEach((r, i) => {
+      const at = t0 + D + 1.25 + i * .13;
+      tl.to(skels[i], { autoAlpha: 0, duration: .25, ease: 'power1.out' }, at)
+        .to(parts[i], { autoAlpha: 1, y: 0, duration: .38, ease: 'power2.out' }, at)
+        .to(r.querySelector('.chip'), { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2.2)' }, at + .15);
+    });
+
+    // 3 · el operador va al camarón y hace clic
+    const hit = pos(camaron, .43, .5);
+    tl.set(cursor, { x: 990, y: 580, autoAlpha: 0 }, t0);
+    tl.to(cursor, { autoAlpha: 1, duration: .15 }, t0 + D + 2.1);
+    moveCursor(tl, hit, t0 + D + 2.1, .85);
+    tl.to(camaron, { backgroundColor: 'rgba(191,226,217,.22)', duration: .15 }, t0 + D + 2.85);
+    click(tl, hit, t0 + D + 3.02);
+    tl.to(camaron, { backgroundColor: 'rgba(191,226,217,.5)', boxShadow: 'inset 3px 0 0 #2E6E62', duration: .15 }, t0 + D + 3.06);
+
+    // 4 · se abre el detalle: con quién y desde cuándo
+    tl.to(card, { x: -120, duration: .65, ease: 'power3.inOut' }, t0 + D + 3.15);
+    tl.to(det, { autoAlpha: 1, x: 0, y: 0, scale: 1, duration: .6, ease: 'power3.out' }, t0 + D + 3.2);
+    moveCursor(tl, { x: hit.x - 70, y: 418 }, t0 + D + 3.25, .7);   // el cursor se hace a un lado
+    tl.to(q('#det-chip'), { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2.2)' }, t0 + D + 3.6);
+    tl.to(q('#l2'), { attr: { 'stroke-dashoffset': 0 }, duration: .9, ease: 'power2.inOut' }, t0 + D + 3.65);
+    tl.to(q('#l1'), { attr: { 'stroke-dashoffset': 0 }, duration: 1.0, ease: 'power2.inOut' }, t0 + D + 3.6);
+    tl.to(q('#d1'), { scale: 1, duration: .3, ease: 'back.out(3)' }, t0 + D + 4.55);
+    tl.to(q('#d2'), { scale: 1, duration: .3, ease: 'back.out(3)' }, t0 + D + 4.5);
+    tl.to(q('.legend').children, { autoAlpha: 1, y: 0, duration: .35, ease: 'power2.out', stagger: .1 }, t0 + D + 4.45);
+
+    const dur = 6.9;   // el último beat termina en 5.8 s; ~1.1 s de pausa final antes del momento de título
+    if (!o.last){
+      subtitleOut(tl, q('.subtitle'), t0 + dur - .05);
+      tl.to([card, det], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.to(cursor, { autoAlpha: 0, duration: .2 }, t0 + dur - .1);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 7 · Cotizaciones (6.4 s) ═══ */
+  function cotizaciones(tl, t0, o){
+    const s = sec('s-quotes'), q = sel => s.querySelector(sel);
+    const card = q('#q-card'), pill = q('#q-pill'), count = q('#q-count'), done = q('#q-done'), sub = q('.subtitle');
+    const rows = [q('#q1'), q('#q2'), q('#q3')], tickets = [q('#qt1'), q('#qt2'), q('#qt3')];
+    const cont = o.prev === 'compras';                 // viene de Compras: el eyebrow y la etiqueta ya están en pantalla
+    const parts = rows.map(r => r.querySelectorAll('.qn, .qp, .qbtn'));
+
+    gsap.set(card, { autoAlpha: 0, y: 18, scale: .97 });
+    gsap.set(pill, { autoAlpha: 0, scale: .8 });
+    gsap.set(parts.map(p => [...p]).flat(), { autoAlpha: 0 });
+    gsap.set(s.querySelectorAll('.qrow .chip'), { autoAlpha: 0, scale: .6 });
+    gsap.set(q('.lowest'), { autoAlpha: 0, scale: .7 });
+    gsap.set(done, { xPercent: -50, autoAlpha: 0, y: -6, scale: .92 });
+    gsap.set([q('.eyebrow'), q('.ejemplo')], { autoAlpha: cont ? 1 : 0 });
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    if (!cont) tl.to([q('.eyebrow'), q('.ejemplo')], { autoAlpha: 1, duration: .4 }, t0);
+    // la tabla aparece vacía…
+    tl.to(card, { autoAlpha: 1, y: 0, scale: 1, duration: .5, ease: 'power3.out' }, t0 + .1);
+    titleIn(tl, sub, t0, o);
+    // …y cada cotización entra a su lugar: ahí se vuelve el renglón de ese proveedor
+    const rot = [-2.5, 2, -1.5], n = { v: 0 };
+    tickets.forEach((tk, i) => {
+      const slot = pos(rows[i], 0, .5);
+      gsap.set(tk, { left: 0, top: 0, x: -230, y: slot.y - 22, rotation: rot[i] * 2, autoAlpha: 0 });
+      const at = t0 + .5 + i * .2;
+      tl.to(tk, { x: slot.x + 12, rotation: rot[i], autoAlpha: 1, duration: .5, ease: 'power3.out' }, at);
+      const morph = t0 + 1.65 + i * .15;
+      tl.to(tk, { x: slot.x + 18, rotation: 0, scale: .96, autoAlpha: 0, duration: .3, ease: 'power2.in' }, morph)
+        .to(parts[i], { autoAlpha: 1, duration: .3, ease: 'power2.out' }, morph + .12);
+    });
+    tl.to(pill, { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2)' }, t0 + 1.75);
+    tl.to(n, { v: 3, duration: .32, ease: 'none',
+      onUpdate(){ const k = Math.max(1, Math.min(3, Math.floor(n.v) + 1)); count.textContent = k === 1 ? '1 cotización' : k + ' cotizaciones'; } }, t0 + 1.77);
+    // Zenet las compara: contra tu última compra, luego contra tu promedio
+    [2, 3].forEach((col, c) => rows.forEach((r, i) =>
+      tl.to(r.children[col], { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2.2)' }, t0 + 2.35 + c * .4 + i * .09)));
+    tl.to(q('.lowest'), { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2.2)' }, t0 + 3.2);
+    // el operador elige a su proveedor
+    const btn = q('#q2 .qbtn'), hit = pos(btn, .45, .55), lbl = btn.querySelector('.lbl'), sw = { v: 0 };
+    tl.set(cursor, { x: 990, y: 580, autoAlpha: 0 }, t0);
+    tl.to(cursor, { autoAlpha: 1, duration: .15 }, t0 + 3.3);
+    moveCursor(tl, hit, t0 + 3.3, .75);
+    tl.to([q('#q2'), btn], { backgroundColor: 'rgba(191,226,217,.28)', duration: .2 }, t0 + 3.85);
+    click(tl, hit, t0 + 4.15);
+    tl.to(btn, { backgroundColor: '#2E6E62', color: '#FFFFFF', duration: .18 }, t0 + 4.2)
+      .to(sw, { v: 1, duration: .01, onUpdate(){ lbl.textContent = sw.v >= 1 ? 'Elegido ✓' : 'Elegir'; } }, t0 + 4.22)
+      .to(q('#q2'), { backgroundColor: 'rgba(191,226,217,.42)', boxShadow: 'inset 3px 0 0 #2E6E62', duration: .2 }, t0 + 4.2)
+      .to(q('#q2 .qav'), { backgroundColor: '#2E6E62', color: '#FFFFFF', duration: .2 }, t0 + 4.2)
+      .to([q('#q1'), q('#q3')], { autoAlpha: .3, duration: .3 }, t0 + 4.3)
+      .to(done, { autoAlpha: 1, y: 0, scale: 1, duration: .38, ease: 'back.out(2)' }, t0 + 4.5);
+    moveCursor(tl, { x: 868, y: 360 }, t0 + 4.6, .55);   // fuera de la tarjeta, sin tapar la confirmación
+
+    const dur = 6.0;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([card, done, q('.eyebrow')], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.to(cursor, { autoAlpha: 0, duration: .2 }, t0 + dur - .1);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 8 · Zenet en WhatsApp (6.2 s) ═══ */
+  function whatsapp(tl, t0, o){
+    const s = sec('s-wa'), q = sel => s.querySelector(sel);
+    const phone = q('#phone'), sub = q('.subtitle'), field = q('#wa-field');
+    const finger = document.getElementById('finger');
+    const msgs = ['m1', 't1', 'm2', 'm3', 't2', 'm4'].map(id => q('#' + id));
+    const cont = o.prev === 'cotizaciones';
+    // cada mensaje entra creciendo desde cero: los anteriores suben como en un chat de verdad
+    const H = new Map(msgs.map(m => [m, m.offsetHeight]));
+    gsap.set(msgs, { height: 0, marginTop: 0, autoAlpha: 0, overflow: 'hidden' });
+    const show = (m, at) => tl.to(m, { height: H.get(m), marginTop: 7, duration: .3, ease: 'power2.out' }, at)
+                               .to(m, { autoAlpha: 1, duration: .25 }, at + .08);
+    const hide = (m, at) => tl.to(m, { height: 0, marginTop: 0, autoAlpha: 0, duration: .25, ease: 'power2.in' }, at);
+    const dots = (m, at) => tl.to(m.children, { y: -2, duration: .18, yoyo: true, repeat: 3, stagger: .08, ease: 'sine.inOut' }, at);
+    const tap = (p, at) => {
+      tl.to(finger, { scale: .82, duration: .08 }, at).to(finger, { scale: 1, duration: .16 }, at + .08);
+      const r = document.createElement('div'); r.className = 'ripple'; stage.appendChild(r);
+      gsap.set(r, { x: p.x, y: p.y, xPercent: -50, yPercent: -50, scale: .1, autoAlpha: 0 });
+      tl.set(r, { autoAlpha: .6 }, at + .04).to(r, { scale: 1, autoAlpha: 0, duration: .5, ease: 'power2.out' }, at + .04);
+    };
+    const moveFinger = (p, at, d) => tl.to(finger, { x: p.x, duration: d, ease: 'power2.inOut' }, at).to(finger, { y: p.y, duration: d, ease: 'power2.out' }, at);
+
+    gsap.set(phone, { autoAlpha: 0, y: 40 });
+    gsap.set(q('.wa-field .tx'), { autoAlpha: 0 });
+    gsap.set(q('.ejemplo'), { autoAlpha: cont ? 1 : 0 });
+    gsap.set(sub, { autoAlpha: 0 });
+    gsap.set(finger, { x: 640, y: 560, autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.to(phone, { autoAlpha: 1, y: 0, duration: .55, ease: 'power3.out' }, t0 + .05);
+    if (!cont) tl.to(q('.ejemplo'), { autoAlpha: 1, duration: .4 }, t0 + .3);
+    titleIn(tl, sub, t0, o);
+    // 1 · manda la foto de una factura
+    const cam = pos(q('#wa-cam')), fld = pos(field, .35, .5), send = pos(q('#wa-send'));
+    tl.to(finger, { autoAlpha: 1, duration: .15 }, t0 + .5);
+    moveFinger(cam, t0 + .5, .4);
+    tap(cam, t0 + .95);
+    show(msgs[0], t0 + 1.05);
+    show(msgs[1], t0 + 1.45); dots(msgs[1], t0 + 1.5);
+    hide(msgs[1], t0 + 1.95); show(msgs[2], t0 + 1.95);
+    // 2 · le pregunta algo
+    moveFinger(fld, t0 + 2.55, .35);
+    tap(fld, t0 + 2.92);
+    tl.to(q('.wa-field .ph'), { autoAlpha: 0, duration: .12 }, t0 + 3.0).to(q('.wa-field .tx'), { autoAlpha: 1, duration: .2 }, t0 + 3.02);
+    moveFinger(send, t0 + 3.3, .25);
+    tap(send, t0 + 3.58);
+    tl.to(q('.wa-field .tx'), { autoAlpha: 0, duration: .12 }, t0 + 3.64).to(q('.wa-field .ph'), { autoAlpha: 1, duration: .2 }, t0 + 3.7);
+    show(msgs[3], t0 + 3.64);
+    show(msgs[4], t0 + 4.0); dots(msgs[4], t0 + 4.05);
+    hide(msgs[4], t0 + 4.5); show(msgs[5], t0 + 4.5);
+    tl.to(finger, { y: '+=50', autoAlpha: 0, duration: .4, ease: 'power2.in' }, t0 + 4.7);
+
+    const dur = 5.95;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([phone, q('.ejemplo')], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 9 · Cada mes (6.0 s) ═══ */
+  function mes(tl, t0, o){
+    const s = sec('s-mes'), q = sel => s.querySelector(sel);
+    const cards = [q('#md1'), q('#md2'), q('#md3')], mv = q('#mv'), sub = q('.subtitle');
+    const lines = [...s.querySelectorAll('.mvr path')];
+    const dots = ['t', 'e', 'm'].map(k => [...q('#mv-' + k).querySelectorAll('.dt')]);
+    gsap.set(cards, { autoAlpha: 0, y: 22 });
+    gsap.set(mv, { autoAlpha: 0, y: 18, scale: .97 });
+    gsap.set(dots.flat(), { scale: 0, transformOrigin: '50% 50%' });
+    gsap.set(s.querySelectorAll('.mvr .chip'), { autoAlpha: 0, scale: .6 });
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    titleIn(tl, sub, t0, o);
+    tl.to(mv, { autoAlpha: 1, y: 0, scale: 1, duration: .5, ease: 'power3.out' }, t0 + .4);
+    // un diagnóstico por mes; el primero es tu línea base
+    cards.forEach((c, i) => {
+      const at = t0 + .15 + i * .8;
+      tl.to(c, { autoAlpha: 1, y: 0, duration: .45, ease: 'power3.out' }, at);
+      // cada mes se suma un tramo a las tres líneas
+      dots.forEach(d => tl.to(d[i], { scale: 1, duration: .25, ease: 'back.out(3)' }, at + .3));
+      if (i > 0) lines.forEach(l => tl.to(l, { attr: { 'stroke-dashoffset': 1 - i / 2 }, duration: .45, ease: 'power1.inOut' }, at - .1));
+    });
+    tl.to(s.querySelectorAll('.mvr .chip'), { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2.2)', stagger: .08 }, t0 + 2.55);
+
+    const dur = 6.0;   // la escena que cierra el argumento: ~3 s quieta para leerla (fundador)
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([...cards, mv], { autoAlpha: 0, duration: .4 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Escena 10 · Cierre (3.9 s) ═══ */
+  function cierre(tl, t0, o){
+    const s = sec('s-cierre'), q = sel => s.querySelector(sel);
+    const strokes = [...s.querySelectorAll('.iso-lines path')], fill = q('.iso-fill'), letters = [...s.querySelectorAll('.lt')], tag = q('.tagline');
+    gsap.set(fill, { autoAlpha: 0 });
+    gsap.set(letters, { autoAlpha: 0, y: 60 });
+    gsap.set(tag, { autoAlpha: 0, y: 8 });
+    gsap.set(q('.lrule'), { scaleX: 0, transformOrigin: '50% 50%' });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    // el contorno del isotipo se dibuja solo y se rellena: nunca aparece partido
+    strokes.forEach((p, i) => tl.to(p, { attr: { 'stroke-dashoffset': 0 }, duration: .8, ease: 'power2.inOut' }, t0 + .3 + i * .06));
+    tl.to(fill, { autoAlpha: 1, duration: .35, ease: 'power1.out' }, t0 + 1.0)
+      .to(q('.iso-lines'), { autoAlpha: 0, duration: .3 }, t0 + 1.12);
+    tl.to(letters, { autoAlpha: 1, y: 0, duration: .4, ease: 'power3.out', stagger: .06 }, t0 + 1.2);
+    tl.to(q('.lrule'), { scaleX: 1, duration: .4, ease: 'power3.out' }, t0 + 1.6);
+    tl.to(tag, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, t0 + 1.8);
+    tl.to(tag.querySelector('i'), { color: '#2E6E62', duration: .4, ease: 'power1.inOut' }, t0 + 2.35);   // como en la tarjeta
+
+    const dur = 3.9;   // ~1.1 s quieto al final; el reproductor se queda en el último cuadro
+    if (!o.last) tl.set(s, { visibility: 'hidden' }, t0 + dur);
+    return dur;
+  }
+
+  /* ═══ Pitch · 0 · La apertura (3.8 s) ═══ */
+  function carga(tl, t0, o){
+    const s = sec('s-carga'), q = sel => s.querySelector(sel);
+    const l1 = q('.l1'), l2 = q('.l2'), mk = q('.p-mark');
+    gsap.set([l1, l2], { autoAlpha: 0, y: 10 });
+    gsap.set(mk, { backgroundSize: '0% 45%' });
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.to(l1, { autoAlpha: 1, y: 0, duration: .55, ease: 'power2.out' }, t0 + .15)
+      .to(l2, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, t0 + 1.35)
+      .to(mk, { backgroundSize: '100% 45%', duration: .5, ease: 'power2.inOut' }, t0 + 1.8);
+    const dur = 3.8;
+    if (!o.last){ tl.to([l1, l2], { autoAlpha: 0, duration: .35 }, t0 + dur - .05); tl.set(s, { visibility: 'hidden' }, t0 + dur + .5); }
+    return dur;
+  }
+
+  /* ═══ Pitch · A · Personas clave (8.8 s) ═══ */
+  function personas(tl, t0, o){
+    const s = sec('s-pers'), q = sel => s.querySelector(sel);
+    const cards = [...s.querySelectorAll('.pcard')], chips = [...s.querySelectorAll('.bchip')];
+    const all = [...s.querySelectorAll('.plines line')], lines = all.filter(l => !l.classList.contains('weak')), weak = all.filter(l => l.classList.contains('weak'));
+    const msgs = [...s.querySelectorAll('.p-msg')], badges = [...s.querySelectorAll('.p-badge')], stat = q('.p-bigstat'), sub = q('.subtitle');
+    gsap.set(cards, { autoAlpha: 0, y: 14 });
+    gsap.set(chips, { autoAlpha: 0, y: -8 });
+    gsap.set(weak, { autoAlpha: 0 });
+    gsap.set(msgs, { autoAlpha: 0, y: 6, scale: .9, transformOrigin: '15% 0%' });
+    gsap.set(badges, { autoAlpha: 0, scale: .5 });
+    gsap.set(stat, { autoAlpha: 0, y: 12, scale: .96 });
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    titleIn(tl, sub, t0, o);
+    tl.to(cards, { autoAlpha: 1, y: 0, duration: .45, ease: 'power3.out', stagger: .1 }, t0 + .1);
+    tl.to(chips, { autoAlpha: 1, y: 0, duration: .35, ease: 'power2.out', stagger: .06 }, t0 + .55);
+    // casi todo cuelga de las mismas tres personas
+    lines.forEach((l, i) => tl.to(l, { attr: { 'stroke-dashoffset': 0 }, duration: .4, ease: 'power1.out' }, t0 + 1.0 + i * .07));
+    tl.to(weak, { autoAlpha: 1, duration: .4 }, t0 + 1.5);
+    // y todo les llega a ellas
+    msgs.forEach((m, i) => tl.to(m, { autoAlpha: 1, y: 0, scale: 1, duration: .32, ease: 'back.out(2)' }, t0 + 2.05 + i * .32));
+    const fin = [23, 17, 14];
+    badges.forEach((b, i) => {
+      const c = { v: 1 }, at = t0 + 2.15 + i * .32;
+      tl.to(b, { autoAlpha: 1, scale: 1, duration: .3, ease: 'back.out(2.5)' }, at)
+        .to(c, { v: fin[i], duration: 1.2, ease: 'power1.in', onUpdate(){ b.textContent = Math.round(c.v); } }, at);
+    });
+    tl.to(lines, { stroke: '#E2B79F', strokeOpacity: .9, duration: .6 }, t0 + 2.6);
+    // el dato, con su propio momento: las figuras se apagan al fondo
+    tl.to([...cards, ...chips, ...msgs, q('.plines')], { autoAlpha: 0, duration: .6, ease: 'power1.inOut' }, t0 + 5.2);   // pantalla limpia
+    tl.to(stat, { autoAlpha: 1, y: 0, scale: 1, duration: .7, ease: 'power2.out' }, t0 + 5.85);
+
+    const dur = 8.8;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([...cards, ...chips, ...msgs, stat, q('.plines')], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Pitch · C · Se va quien lo construyó (6.6 s) ═══ */
+  function construyo(tl, t0, o){
+    const s = sec('s-cons'), q = sel => s.querySelector(sel);
+    const old = q('#k-old'), nw = q('#k-new'), ofill = old.querySelector('.kbar i'), nfill = nw.querySelector('.kbar i');
+    const oms = [...old.querySelectorAll('.km i')], tag = nw.querySelector('.ktag'), sub = q('.subtitle');
+    gsap.set(old, { autoAlpha: 0, y: 14 });
+    gsap.set(nw, { autoAlpha: 0, x: -300 });
+    gsap.set(tag, { autoAlpha: 0, scale: .7 });
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    titleIn(tl, sub, t0, o);
+    tl.to(old, { autoAlpha: 1, y: 0, duration: .5, ease: 'power3.out' }, t0 + .1);
+    // años de prueba y error: lo que sabe tu operación se va armando… en su cabeza
+    tl.to(ofill, { width: '100%', duration: 1.9, ease: 'power1.inOut' }, t0 + .55);
+    oms.forEach((m, i) => tl.to(m, { backgroundColor: '#2E6E62', borderColor: '#2E6E62', duration: .2 }, t0 + .55 + (i + 1) * .44));
+    // se va, y se lo lleva
+    tl.to(old, { x: 320, autoAlpha: 0, duration: .8, ease: 'power2.in' }, t0 + 2.9);
+    // llega alguien nuevo: empieza de cero
+    tl.to(nw, { autoAlpha: 1, x: 0, duration: .7, ease: 'power3.out' }, t0 + 3.5);
+    tl.to(tag, { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2.2)' }, t0 + 4.1);
+    tl.to(nfill, { width: '4%', duration: 1.4, ease: 'power1.out' }, t0 + 4.2);
+
+    const dur = 6.6;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to(nw, { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Pitch · B · Los cambios de costo (6.6 s) ═══ */
+  function costos(tl, t0, o){
+    const s = sec('s-cost'), q = sel => s.querySelector(sel);
+    const pills = [...s.querySelectorAll('.cpill')], card = q('#m-card'), fill = q('#m-fill');
+    const hand = q('#m-hand'), stat = q('.p-bigstat'), sub = q('.subtitle');
+    gsap.set(pills, { autoAlpha: 0, y: -60 });
+    gsap.set(card, { autoAlpha: 0, y: 14 });
+    gsap.set(hand, { autoAlpha: 0, y: 6 });
+    gsap.set(stat, { autoAlpha: 0, y: 12, scale: .96 });
+    gsap.set(sub, { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    titleIn(tl, sub, t0, o);
+    tl.to(card, { autoAlpha: 1, y: 0, duration: .5, ease: 'power3.out' }, t0 + .1);
+    // los cambios caen uno por uno; cada uno sacude la operación y se come un tramo del margen
+    const steps = [80, 63, 49, 38], tone = ['#9FBBAA', '#B7B9A3', '#CDB69F', '#E2B79F'];
+    pills.forEach((p, i) => {
+      const at = t0 + .75 + i * .85;
+      tl.to(p, { autoAlpha: 1, y: 0, duration: .45, ease: 'power3.in' }, at)
+        .to(card, { x: i % 2 ? 5 : -5, duration: .07, yoyo: true, repeat: 3, ease: 'sine.inOut' }, at + .43)
+        .to(fill, { width: steps[i] + '%', backgroundColor: tone[i], duration: .45, ease: 'power2.out' }, at + .45);
+    });
+    // y tú lo persigues a mano
+    tl.to(hand, { autoAlpha: 1, y: 0, duration: .4, ease: 'power2.out' }, t0 + 4.3);
+    // el dato, con su propio momento
+    tl.to([...pills, card, hand], { autoAlpha: 0, duration: .6, ease: 'power1.inOut' }, t0 + 6.0);   // pantalla limpia
+    tl.to(stat, { autoAlpha: 1, y: 0, scale: 1, duration: .7, ease: 'power2.out' }, t0 + 6.65);
+
+    const dur = 9.6;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([...pills, card, hand, stat], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Pitch · D · El número llega tarde (6.2 s) ═══ */
+  function numero(tl, t0, o){
+    const s = sec('s-num'), q = sel => s.querySelector(sel);
+    const card = q('#n-card'), bars = [...s.querySelectorAll('.nbar')], wks = [...s.querySelectorAll('.nwk')];
+    const sales = q('#n-sales'), left = q('#n-left'), note = q('#n-note'), close = q('#n-close'), ej = q('.ejemplo'), sub = q('.subtitle');
+    gsap.set(card, { autoAlpha: 0, y: 14 });
+    gsap.set(bars, { scaleY: 0, transformOrigin: '50% 100%' });
+    gsap.set(wks, { opacity: .35 });
+    const pct = q('#n-pct');
+    gsap.set([note, close], { autoAlpha: 0 });
+    gsap.set(pct, { autoAlpha: 0, scale: .7, transformOrigin: '0% 50%' });
+    gsap.set([ej, sub], { autoAlpha: 0 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    titleIn(tl, sub, t0, o);
+    tl.to(card, { autoAlpha: 1, y: 0, duration: .5, ease: 'power3.out' }, t0 + .1);
+    tl.to(ej, { autoAlpha: 1, duration: .4 }, t0 + .3);
+    // las ventas se ven semana a semana…
+    const vals = [102000, 205000, 307000, 410000], n = { v: 0 };
+    const fmt = v => '$' + (Math.round(v / 1000) * 1000).toLocaleString('en-US');
+    vals.forEach((v, i) => {
+      const at = t0 + .7 + i * .65;
+      tl.to(bars[i], { scaleY: 1, duration: .45, ease: 'power2.out' }, at)
+        .to(wks[i], { opacity: 1, duration: .2 }, at)
+        .to(n, { v, duration: .45, ease: 'power1.out', onUpdate(){ sales.textContent = fmt(n.v); } }, at);
+    });
+    // …lo que te queda llega hasta el cierre
+    const at = t0 + 3.5, sw = { v: 0 };
+    tl.to(close, { autoAlpha: 1, duration: .3 }, at)
+      .to(sw, { v: 1, duration: .01, onUpdate(){ left.textContent = sw.v >= 1 ? '$29,500' : '—'; } }, at + .3)
+      .fromTo(left, { backgroundColor: 'rgba(244,222,208,0)', scale: .85 }, { backgroundColor: 'rgba(244,222,208,1)', scale: 1, duration: .4, ease: 'back.out(2)', immediateRender: false }, at + .3)
+      .to(pct, { autoAlpha: 1, scale: 1, duration: .35, ease: 'back.out(2.2)' }, at + .7)
+      .to(note, { autoAlpha: 1, duration: .4 }, at + 1.05);
+
+    const dur = 6.5;
+    if (!o.last){
+      subtitleOut(tl, sub, t0 + dur - .05);
+      tl.to([card, ej], { autoAlpha: 0, duration: .35 }, t0 + dur - .05);
+      tl.set(s, { visibility: 'hidden' }, t0 + dur + .5);
+    }
+    return dur;
+  }
+
+  /* ═══ Pitch · El puente (6.7 s) ═══ */
+  function puente(tl, t0, o){
+    const s = sec('s-puente'), q = sel => s.querySelector(sel);
+    const t1 = q('#pt1'), t1a = q('#pt1 .a'), t1b = q('#pt1 .b'), t2 = q('#pt2'), sph = q('#p-sphere'), halo = sph.querySelector('.halo');
+    const gp = q('#p-glow-peach'), gt = q('#p-glow-teal');
+    gsap.set([t1a, t1b, t2], { autoAlpha: 0, y: 10 });
+    gsap.set(sph, { autoAlpha: 0, scale: .3 });
+    gsap.set([gp, gt], { autoAlpha: 0, scale: .8 });
+
+    tl.set(s, { visibility: 'visible' }, t0 - (o.gap || 0));
+    tl.to(gp, { autoAlpha: 1, scale: 1, duration: .8, ease: 'power2.out' }, t0 + .05);
+    tl.to(t1a, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, t0 + .15)
+      .to(t1b, { autoAlpha: 1, y: 0, duration: .5, ease: 'power2.out' }, t0 + .95);
+    tl.to(t1, { autoAlpha: 0, duration: .35 }, t0 + 2.6);
+    // entra Zenet: el peach se apaga y vuelve la calma teal
+    tl.to(gp, { autoAlpha: 0, duration: .6 }, t0 + 2.85).to(gt, { autoAlpha: 1, scale: 1, duration: .8, ease: 'power2.out' }, t0 + 2.85);
+    tl.to(sph, { autoAlpha: 1, scale: 1, duration: .55, ease: 'back.out(1.8)' }, t0 + 2.9);
+    tl.to(t2, { autoAlpha: 1, y: 0, duration: .55, ease: 'power2.out' }, t0 + 3.25);
+    // Zenet respira: crece y vuelve, dos veces; en cada latido el halo se expande
+    tl.to(sph, { scale: 1.12, duration: .7, ease: 'sine.inOut', yoyo: true, repeat: 3 }, t0 + 3.6);
+    [3.6, 5.0].forEach(d => tl.fromTo(halo, { scale: 1, autoAlpha: 1 }, { scale: 1.75, autoAlpha: 0, duration: 1.05, ease: 'power2.out', immediateRender: false }, t0 + d));
+    tl.to(halo, { scale: 1, autoAlpha: 1, duration: .4 }, t0 + 6.1);
+
+    const dur = 6.7;
+    if (!o.last){ tl.to([t2, sph, gt], { autoAlpha: 0, duration: .4 }, t0 + dur - .05); tl.set(s, { visibility: 'hidden' }, t0 + dur + .5); }
+    return dur;
+  }
+
+  const SCENES = { carga, personas, construyo, costos, numero, puente, documentos, base, diagnostico, areas, cambio, compras, cotizaciones, whatsapp, mes, cierre };
+  // acto2 entra desde el diagnóstico para revisar la transición; la escena 5 nunca va sola (vive sobre la red de la 4)
+  const ACTS = { acto1: ['documentos', 'base', 'diagnostico'], acto2: ['diagnostico', 'areas', 'cambio'], acto3: ['compras', 'cotizaciones', 'whatsapp'], cierre: ['whatsapp', 'mes', 'cierre'] };
+  const ORDER = ['documentos', 'base', 'diagnostico', 'areas', 'cambio', 'compras', 'cotizaciones', 'whatsapp', 'mes', 'cierre'];   // el video demo
+  const PROBLEMA = ['carga', 'personas', 'construyo', 'costos', 'numero', 'puente'];                                         // el acto del problema del pitch
+  ACTS.pitch = [...PROBLEMA, ...ORDER];
+  ACTS.problema = [...PROBLEMA, 'documentos'];   // revisión: entra al demo para ver el puente   // las escenas hechas, en el orden del video
+
+  /* ── la línea de tiempo maestra ── */
+  const master = gsap.timeline({ paused: true });
+  let duration = 0;
+
+  function build(){
+    gsap.set([cursor, document.getElementById('finger')], { autoAlpha: 0 });   // el dedo también: si la escena de WhatsApp no está en el corte, asomaba en la esquina
+    const pick = qs.get('scene');
+    const list = pick ? (ACTS[pick] || pick.split(',')) : ORDER;
+    let t = 0;
+    list.forEach((name, i) => {
+      const gap = gapFor(list[i - 1], name);
+      t += gap;
+      t += SCENES[name](master, t, { last: i === list.length - 1, prev: list[i - 1], next: list[i + 1], gap, title: isTitle(list[i - 1], name) });
+    });
+    duration = t;
+    master.set({}, {}, duration);   // fija la duración aunque el último tween termine antes
+  }
+
+  const fonts = Promise.all([
+    document.fonts.load('600 16px Onest'), document.fonts.load('700 16px Onest'),
+    document.fonts.load('400 16px "Hanken Grotesk"'), document.fonts.load('600 16px "Hanken Grotesk"')
+  ]).then(() => document.fonts.ready);
+
+  window.__ready = fonts.then(() => { build(); window.__duration = duration; master.seek(0, false); });
+  window.__seek = t => { master.seek(t, false); };
+
+  if (RENDER) return;
+
+  /* ── vista previa ── */
+  const frame = document.getElementById('frame');
+  const play = document.getElementById('play'), scrub = document.getElementById('scrub');
+  const time = document.getElementById('time'), speed = document.getElementById('speed');
+  function fit(){
+    const s = Math.min((innerWidth - 48) / 960, (innerHeight - 100) / 540);
+    frame.style.transform = `scale(${s})`;
+    frame.style.marginLeft = Math.max(24, (innerWidth - 960 * s) / 2) + 'px';
+    frame.style.marginBottom = (540 * s - 540) + 'px';
+  }
+  fit(); addEventListener('resize', fit);
+  function tick(){
+    scrub.value = Math.round(master.time() / duration * 1000);
+    time.textContent = master.time().toFixed(2) + ' / ' + duration.toFixed(2) + ' s';
+  }
+  window.__ready.then(() => {
+    master.eventCallback('onUpdate', tick);
+    master.eventCallback('onComplete', () => { setTimeout(() => { if (!master.paused()) master.restart(); }, 900); });
+    const t = parseFloat(qs.get('t'));
+    if (!isNaN(t)){ master.seek(t, false); tick(); play.textContent = 'Reproducir'; return; }
+    master.play();
+  });
+  play.onclick = () => {
+    if (master.paused()){ if (master.progress() >= 1) master.restart(); else master.play(); play.textContent = 'Pausa'; }
+    else { master.pause(); play.textContent = 'Reproducir'; }
+  };
+  scrub.oninput = () => { master.pause(); play.textContent = 'Reproducir'; master.seek(scrub.value / 1000 * duration, false); tick(); };
+  speed.onchange = () => master.timeScale(+speed.value);
+  const pick = document.getElementById('pick');
+  pick.value = qs.get('scene') || '';
+  pick.onchange = () => {
+    const u = new URL(location.href);
+    if (pick.value) u.searchParams.set('scene', pick.value); else u.searchParams.delete('scene');
+    u.searchParams.delete('t');
+    location.href = u.href;
+  };
+})();
+</script>
+</body>
+</html>

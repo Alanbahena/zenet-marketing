@@ -2,9 +2,9 @@
 name: Landing page · prototipo y diseño
 description: v4.0 (2026-09-10) = el spec de diseño de la landing v4, **EN VIVO en zenetapp.com (tag v4.0)**, como bloque arriba; debajo, intacto, el spec v3.3 de lo que está EN VIVO. v4 — 10 secciones · pantallas reales donde existe la pantalla · el dominó como gráfica en §2 con micro-motion · el trato sin capturas (§4 promete, §5 prueba) · Etapa 1 = Compras + Zenet en WhatsApp · puntos de progreso en las tres escenas del camino · la consulta se conserva como cierre de §5 · §6 En concreto en acordeón móvil · presupuesto de peso · plan de lab/ · QA y deploy gate v4. Anterior — El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-09-10
+last_updated: 2026-10-06
 status: active
-version: 4.0
+version: 4.3
 owner: Alan Bahena
 ---
 
@@ -309,3 +309,39 @@ Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva d
 ---
 
 *Última actualización: 2026-09-10. **v4.0-draft** (bloque DISEÑO v4 arriba · en construcción) sobre el spec **v3.3 EN VIVO** en zenetapp.com (tags v3.0 landing · v3.1 /demo · v3.2 hablemos · v3.3 copy del fundador + dominó) · v2 del spec archivada en `_archive/2026-08-07_02-prototipo-y-diseno-v2.md`.*
+
+---
+
+**Build v4.0.1 (2026-10-05):** solo el subhead del hero (`01-copy` v0.6 · v4.0.1 · 1. Hero). Rama `hero-subhead` → merge `--no-ff` a `main` → tag `v4.0.1` → Vercel. Verificado en producción: el texto nuevo en `/` · `/`, `/demo`, `/hablemos` = 200. La meta description y el OG **no** repetían el subhead (hablan de facturas por WhatsApp); se quedan. En móvil el subhead ocupa una línea más; la captura headless a 390 px se ve cortada igual que la versión anterior (artefacto conocido del headless, §H): la verificación de móvil es en el teléfono del fundador.
+
+**Build v4.0.2 (2026-10-05):** el hero en tres piezas (`01-copy` v0.7 · v4.0.2 · 1. Hero). Rama `hero-v402` → merge `--no-ff` a `main` → tag `v4.0.2` → Vercel. Verificado en producción: texto nuevo en `/` · `/`, `/demo`, `/hablemos`, `/privacidad` = 200 · captura a 1440 px igual a la aprobada.
+- **Marcado:** `.subhead` (definición, mismo estilo de siempre) · `.hero-tag.t1/.t2/.t3` dentro de `.motif` (la figura) · `.hero-tags` (la misma lista en `<ul>`, debajo de la figura) · `.hero-close` (el remate, después de la figura).
+- **Posición de las etiquetas:** absolutas respecto a `.motif`, ancladas al borde de su nodo (t1 → n6 · t2 → n2 · t3 → n5) con una línea punteada de 28 px hacia el nodo. Las clases `.l1–.l6` ya existen en la Etapa 2: **no reusar** nombres cortos en el hero.
+- **Móvil (≤ 760 px):** las etiquetas se ocultan y `.hero-tags` aparece debajo de la figura (2 + 1 píldoras); el remate gana aire arriba y corta en dos renglones parejos (`text-wrap: balance` · `max-width: 20em`).
+- **Accesibilidad:** `.hero-visual` es `aria-hidden`, así que en escritorio `.hero-tags` queda visualmente oculta pero legible para lectores de pantalla.
+- **Altura:** `.motif` baja de `42vh` a `38vh` para que el remate quepa sin scroll en 1280×800 (en 1280×720 queda ~30 px abajo: aceptado).
+- **Animación:** `.hero-tags` y `.hero-close` entran con `rise` a 340 ms; con *reduced motion*, sin animación.
+
+**Build v4.0.3 (2026-10-05):** en celular las píldoras de `.hero-tags` bajan a `.82rem` con relleno `.28rem .7rem` y `gap: .45rem` (antes `.95rem`, el tamaño de escritorio, se veían pesadas junto a la definición). Siguen 2 + 1. Revisado por Alan en su teléfono con la vista previa de Vercel antes del merge. Escritorio sin cambio.
+
+**Build v4.1 (2026-10-05) · Cómo trabaja = el video demo** (`01-copy` v0.8 · v4.1 · 4. El trato). Rama `trato-video` revisada en tres vistas previas de Vercel → merge `--no-ff` → tag `v4.1`. Verificado en producción: `/`, `/demo`, `/hablemos`, `/privacidad` = 200 · `/assets/zenet-demo.mp4` = `video/mp4` con respuesta por rangos (206) · póster = `image/jpeg`.
+- **Archivos:** `assets/zenet-demo.mp4` (1920×1080 · 71 s · sin audio · **H.264 Main nivel 4.0** · `+faststart` · 2.5 MB) y `assets/zenet-demo-poster.jpg` (fotograma del segundo 3).
+- **La trampa del celular:** el MP4 original venía en H.264 **High nivel 5.0** (4.8 MB). En iPhone se veía el póster pero el video no arrancaba ni tocándolo. Re-codificado con `libx264 -profile:v main -level:v 4.0 -pix_fmt yuv420p -crf 24 -preset slow -movflags +faststart` funcionó. **Todo video de la landing va en Main 4.0 o menor.** ffmpeg no está en el sistema: se usa `imageio-ffmpeg` en un venv del scratchpad.
+- **Comportamiento:** `muted loop playsinline preload="none"`; un IntersectionObserver lo carga y lo reproduce al entrar en pantalla (35 %) y lo pausa al salir. **Botón *"Ver cómo funciona · 1 min"*** encima mientras está detenido: cubre el autoplay bloqueado (Modo de Bajo Consumo de iPhone). Tocar el video pausa/reanuda y recuerda la pausa del usuario. Con *reduced motion* no arranca solo.
+- **Marcado y estilo:** `figure.demo-video > .demo-frame#demoFrame > video#demoVideo + button.demo-play` · tarjeta de 18 px de radio (12 px en celular), fondo `#F7F2ED` = el fondo del video, borde y sombra suaves · el bloque final usa `.notpos`.
+- **Limpieza:** fuera los estilos `.verbs/.verb*` y su script de aparición (ya no hay pasos). `.cierre` y `.tag-wip` se quedan: los usan otras secciones.
+- **Vista previa de Vercel:** está protegida y pide la sesión de Alan; sirvió para revisar en su teléfono antes de publicar.
+
+**Build v4.2 (2026-10-05) · La realidad de hoy en tres tarjetas** (`01-copy` v0.9 · v4.2 · 3. El problema). Rama `problema-tres` revisada en tres vistas previas → merge `--no-ff` → tag `v4.2`. Verificado en producción: tres `.pain` en `/` · `/`, `/demo`, `/hablemos`, `/privacidad`, el video = 200.
+- **Grid:** `.pains` pasa de `repeat(5, 1fr)` a `repeat(3, 1fr)` con `gap: clamp(18px, 2.4vw, 28px)` y `max-width: 1080px`. Fuera el quiebre de 1100 px (6 columnas con spans); se queda el de 820 px (una columna).
+- **Títulos:** `.pains .pain h3 { min-height: 0; }` — la altura mínima de 2.5em era para títulos de dos renglones en cinco columnas; con tres dejaba un hueco entre título y texto.
+- **Dibujos:** se reusan los SVG de la 01, la 02 y la 04 (renumerados 01-03). Los de la 03 y la 05 salen.
+
+**Build v4.2.1 (2026-10-05):** solo el `.section-sub` de `#problema` (`01-copy` v0.9 · v4.2 · subtítulo nuevo). Rama `problema-subtitulo` → vista previa → merge → tag `v4.2.1`. Verificado en producción.
+
+**Build v4.3 (2026-10-06) · En concreto = pestañas + el plano** (`01-copy` v0.10 · v4.3 · 6. En concreto). Prototipo en `lab/v5-concreto-plano.html` (rama `concreto-plano`, siete vistas previas con el fundador) → integrado al index **por bloque** (CSS, marcado y script) → merge `--no-ff` → tag `v4.3`. Verificado en producción: cinco `.cz-tab` en `/` · `/`, `/demo`, `/hablemos`, `/privacidad`, el video = 200.
+- **Estructura:** `.cz` = grid 5fr / 7fr · izquierda `.cz-tabs` (`role="tablist"`, cinco `div.cz-tab[role=tab][tabindex=0]` con `.cz-n` · `.cz-t` · `.cz-x` (texto que se abre con `grid-template-rows: 0fr → 1fr`) · `.cz-slot` · `.cz-bar`) · derecha `.cz-side > .cz-stage[data-step]` con `.cz-plano` (las tres zonas y seis `.cz-d[data-k]`: rec · inv · eq · com · cos · man) y `.cz-views` (un `.cz-v[data-for=N]` por pestaña).
+- **Cada paso:** `[data-step=N]` apaga las etiquetas (`opacity .38`) y enciende las suyas en teal; `.run` dispara las animaciones (se reinicia quitando la clase y forzando reflow). Las animaciones usan `fill-mode: both`, así que **el estilo base es el estado final** y con *reduced motion* (o `?still=1`) se ve el final sin movimiento. Paso 5: todo el plano se enciende con contorno teal y el núcleo (`.cz-core`, la esfera del hero) va **debajo del plano** con una línea punteada hacia arriba.
+- **Avance:** solo cada 7.5 s mientras la sección está a la vista (IntersectionObserver 35 %), con barra de progreso; al primer clic o tecla (Enter · Espacio · flechas arriba/abajo) se detiene. `?step=N` abre en esa pestaña sin avanzar (para QA).
+- **Celular (≤ 820 px):** una columna; el escenario se **mueve dentro de la pestaña abierta** (`.cz-slot`) como acordeón; las vistas dejan de ser absolutas; en Compras la burbuja de WhatsApp va arriba de la tabla y la respuesta de Zenet se oculta. Los clics dentro del escenario no cambian de pestaña.
+- **Prefijo `cz-`** en todo (no choca con el index). Se retiraron los estilos `.concreto`/`.cc*` de la v4.

@@ -2,9 +2,9 @@
 name: Vocabulario
 description: El diccionario operativo de Zenet — qué palabras usamos, cuáles evitamos, cómo nombramos lo nuestro, y cómo se traducen los términos entre idiomas.
 type: voice-and-tone
-last_updated: 2026-06-02
+last_updated: 2026-10-05
 status: active
-version: 1.4
+version: 1.5
 owner: Alan Bahena
 ---
 
@@ -221,7 +221,7 @@ Zenet evita el vocabulario técnico cuando habla con operadores, agencias, prens
 
 | Evitar                                  | Reemplazar con                                                                                       |
 | --------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| IA, inteligencia artificial             | *(omitir cuando se pueda; describir el comportamiento)* — *"Zenet detecta..."*, *"Zenet sugiere..."* |
+| IA, inteligencia artificial             | *(omitir cuando se pueda; describir el comportamiento)* — *"Zenet detecta..."*, *"Zenet sugiere..."*. **Excepción (2026-10-05, decisión del fundador):** *"inteligencia artificial"* se permite **solo en la definición de qué es Zenet** (hero de la landing, flyer, una línea de presentación) y **siempre pegada a lo que hace** — *"un sistema con inteligencia artificial… que analiza lo que ya tienes, lo pone en orden y lo mantiene al día"*. Nunca sola, nunca como adjetivo de cada función, nunca *"IA"* en siglas frente al dueño, nunca *"agentes"*. |
 | Modelo, LLM, modelo de lenguaje         | *"el sistema"*, *"Zenet"*                                                                            |
 | Agente, IA agéntica                     | *"Zenet"* directamente                                                                               |
 | RAG, embedding, vector store            | (no mencionar)                                                                                       |

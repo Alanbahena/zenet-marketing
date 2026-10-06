@@ -1,10 +1,10 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-09-10
+last_updated: 2026-10-05
 status: active
-version: 0.5
+version: 0.10
 owner: Alan Bahena
 ---
 
@@ -18,12 +18,12 @@ owner: Alan Bahena
 >
 > | # | Sección v4 | Estado |
 > |---|---|---|
-> | 1 | Hero | ✅ **sin cambio** (2026-09-09) — ver nota abajo |
+> | 1 | Hero | ✅ **v4.0.2 EN VIVO (2026-10-05 · tag `v4.0.2`)** · definición + tres etiquetas en la figura + remate debajo · titular y CTA sin cambio |
 > | 2 | El momento — *"Lo que cambió"* *(NUEVA en §2 · el dominó + 2 anclas + la voz)* | ✅ cerrado (9-sep) · pendientes: fuente/nombre · `lab/` móvil |
-| 3 | El problema — los cinco de la carga | ✅ cerrado (9-sep) · remate y 5ª en `lab/` |
-> > | 4 | El trato — con pantallas reales | ✅ cerrado (9-sep) · panel en `lab/` |
+> | 3 | El problema — *La realidad de hoy* | ✅ **v4.2 EN VIVO (2026-10-05 · tag `v4.2`)** · tres problemas, los del flyer · titular, subtítulo y cierre sin cambio |
+> | 4 | El trato — *Cómo trabaja* | ✅ **v4.1 EN VIVO (2026-10-05 · tag `v4.1`)** · el video demo en lugar de los cinco pasos · POS y equipo en un solo bloque |
 > | 5 | El camino — a la vista · en orden · fuerte · Etapa 1 = Compras + WhatsApp · **+ la consulta como cierre** | ✅ cerrado (9-sep) |
-| 6 | Qué hace por ti — en concreto *(NUEVA)* | ✅ cerrado (9-sep) |
+> | 6 | Qué hace por ti — *En concreto* | ✅ **v4.3 EN VIVO (2026-10-06 · tag `v4.3`)** · cinco pestañas + el plano del restaurante que cambia con cada una |
 > > | 7 | Qué cambia — recalibrado (sin escalamiento) | ✅ cerrado (9-sep) |
 > | 8-10 | Fundador · Invitación · Cierre | ✅ releídas (9-sep) · sin cambio · 2 adiciones opcionales |
 >
@@ -39,7 +39,55 @@ owner: Alan Bahena
 
 > Las secciones de la v4 se escriben aquí, en orden de página, una por turno. Debajo de este bloque sigue **el copy v3.3 en vivo** (v0.4), intacto, como base e historia. Cuando la v4 se despliegue, la v0.4 se archiva completa.
 
-## v4 · 1. Hero — ✅ sin cambio (2026-09-09)
+## v4.0.2 · 1. Hero — ✅ EN VIVO (2026-10-05 · tag `v4.0.2`)
+
+El mismo día que el v4.0.1, el fundador pidió que el hero no se viera amontonado. El párrafo único se reparte en **tres piezas**, cada una en su lugar:
+
+**Headline:** sin cambio.
+> El caos no es el precio de tener un restaurante.
+
+**Definición (debajo del titular, mismo estilo que el subhead v4.0.1):**
+> Zenet es un sistema con inteligencia artificial, fácil de usar, para el back-of-house de tu restaurante: desde tus compras y tus procesos hasta tus recetas.
+
+**CTA:** *Hablemos*, sin cambio.
+
+**Tres etiquetas junto a los nodos de la red** (en zigzag: arriba a la izquierda · arriba a la derecha · abajo a la izquierda; en celular pasan debajo de la figura, más chicas desde la `v4.0.3`):
+> Analiza lo que ya tienes · Lo pone en orden · Lo mantiene al día
+
+**Remate (debajo de la figura, teal y en negritas):**
+> Tú decides, Zenet lo carga y tu margen lo nota.
+
+**Por qué así:**
+- **La definición dice dónde trabaja Zenet** y traduce *"back-of-house"* a palabras del operador (compras, procesos, recetas). Los verbos dicen qué hace. Antes competían en el mismo párrafo.
+- **Las etiquetas convierten la red en un diagrama.** Dejó de ser adorno: el centro analiza, ordena y mantiene.
+- **El remate cierra el diagrama** como su consecuencia y es lo único del hero que habla de dinero, sin cifra.
+- **Mismo texto que el flyer de primer toque v0.17**: el orden *compras → procesos → recetas* y *"…y tu margen lo nota"*.
+
+**Probado y descartado en la sesión (variantes A–H):** párrafo en tres capas de texto (A) · píldoras entre la definición y el botón (B: parecían botones) · píldoras debajo de la figura (C) · etiquetas sin fondo (D: se perdían junto a las esferas) · tercera etiqueta abajo a la derecha (F: carga el peso a la derecha) · definición en carbón y más grande (G: competía con el titular) · remate pegado al botón (H).
+
+**A vigilar:** *"Zenet lo carga"* puede leerse como *"lo cobra"* (en México *cargar* = cobrar a la tarjeta) antes de que la página explique *"se carga"* en §3. Prueba propuesta: los cinco segundos con Carlos el 7-oct (*"¿qué crees que hace Zenet?"*). Con tres etiquetas y cuatro lugares, abajo a la derecha queda un hueco: aceptado.
+
+## v4.0.1 · 1. Hero — subhead EN VIVO hasta la v4.0.2, el mismo día (2026-10-05 · tag `v4.0.1`) *(superado por la v4.0.2 de arriba)*
+
+**Headline:** sin cambio.
+> El caos no es el precio de tener un restaurante.
+
+**Subhead nuevo:**
+> Zenet es un sistema con inteligencia artificial, fácil de usar, para el back-of-house de tu restaurante. Analiza lo que ya tienes, lo pone en orden y lo mantiene al día: desde tus compras y tus recetas hasta tus procesos. Tú decides; Zenet lo carga.
+
+**CTA y animación de la red:** sin cambio.
+
+**Por qué cambia:** el subhead v3.3 (*"Zenet es un equipo de especialistas que construye contigo el sistema de tu back-of-house…"*) no decía **qué es** Zenet en la primera línea, y el fundador sentía que no transmitía que es **tecnología nueva** frente a las apps simples. El nuevo dice qué es (sistema), con qué (inteligencia artificial, pegada a lo que hace), qué hace (analiza · ordena · mantiene al día) y hasta dónde (compras → recetas → procesos), y conserva *"tú decides; Zenet lo carga"* como equilibrio humano. Alinea la landing con la definición del flyer de primer toque.
+
+**Descartado en la conversación, con razón:** *"el primero"* (no se puede probar; Marble hace algo parecido en EE. UU.) · *"autónomo"* (contradice *"tú decides"*) · *"inteligente"* a secas (lo dice cualquier app) · *"potenciando / fortalecer / maximizando la eficiencia"* (abstracto, lenguaje de consultoría) · *"más sólido y rentable"* (promesa de resultado: vive en *Qué cambia*) · *"hasta el servicio al cliente"* (Zenet es back-of-house; el piso es del POS) · *"plataforma"* (vetada).
+
+**Lo que se pierde:** *"un equipo de especialistas"* sale del hero. En el flyer vive en el título del plano; en la landing puede vivir en *El trato*.
+
+**Excepción de voz registrada:** *"inteligencia artificial"* entra **solo** en la definición de qué es Zenet y siempre pegada a lo que hace (`Branding/_context/04-voice-and-tone/vocabulario.md` §3).
+
+**Al construir (repo `zenet-landing`):** revisar si la meta description y el OG repiten el subhead viejo; el subhead nuevo tiene 46 palabras (el viejo, 38): probarlo en móvil a 390 px.
+
+## v4 · 1. Hero — ✅ sin cambio (2026-09-09) *(superado por la v4.0.1 y la v4.0.2 de arriba)*
 
 Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 abajo). Notas para `lab/` móvil, no cambios: *"back-of-house"* → alternativa *"el sistema de tu operación"* si estorba en pantalla · el subhead (38 palabras) se juzga junto con §2.
 
@@ -117,6 +165,28 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 
 ---
 
+## v4.2 · 3. El problema — *La realidad de hoy* — ✅ EN VIVO (2026-10-05 · tag `v4.2`)
+
+**Decisión del fundador:** había demasiados problemas (cinco). Bajan a **tres, los mismos del flyer de primer toque v0.18**, cada uno con su dibujo. Eyebrow, titular (*"Lo más caro de tu operación no se compra. Se carga."*) y cierre (*"Las ventas traen el dinero. La operación decide cuánto se queda."*) sin cambio.
+
+**Subtítulo nuevo (v4.2.1 · mismo día · tag `v4.2.1`):**
+> Muchos restaurantes sobreviven buscando más ventas, cuando lo que necesitan es una operación rentable y eficiente.
+
+Sustituye a *"Nadie te ayuda a construir tu sistema, a mantenerlo ni a ejecutarlo."* Idea del fundador: muchos restaurantes en México creen que les faltan ventas cuando lo que necesitan es una buena estructura. Plantea la creencia; el cierre de la sección la responde. *"Muchos restaurantes"* en vez de *"tú"* para que el operador se reconozca sin sentirse acusado. Descartados: *"el que no conoce sus números…"* (ataque a la identidad) · *"no te queda cabeza para vender más"* (Claude; al fundador no le gustó) · *"en México"* (el fundador lo quitó). **Excepción registrada:** *"eficiente"* entra por decisión del fundador, después de que Claude advirtió que es palabra de consultor y que insinúa que la operación de hoy es ineficiente. Se va aquí en tercera persona (*"muchos restaurantes"*), no dicho al lector.
+
+1. **Todo depende de 1 a 3 personas clave.** *(dibujo de la 01 · absorbe la 03 "Todo se sostiene, pero nada se conecta")*
+   Los costos, los procesos, las compras, cuándo vence el permiso: viven en su cabeza. El Excel y tus documentos tienen los datos; solo esas personas saben cómo se conectan. **Si una falta o renuncia, ¿qué se rompe?**
+2. **Cada cambio se come tu margen.** *(dibujo de la 02 · absorbe la 05 "Sabes cuánto vendes, no cuánto te queda")*
+   Sube el precio de un insumo, cambia un proveedor, bajan las ventas, sube la renta, y lo que ordenaste hace meses ya no sirve. **Te enteras hasta el cierre: ves cuánto vendes, no cuánto te queda.**
+3. **Trabajo pesado y alta rotación.** *(dibujo de la 04)*
+   Inventario, compras, protocolos: todo a mano, y cada persona nueva aprende de quien esté en turno. **Cuando alguien se va, se lleva lo que sabía.**
+
+**Por qué tres y no cuatro:** la cuarta candidata era la del dinero, y ya vive dos veces: en *El momento* (el aumento que absorbe el restaurante) y en el cierre de esta sección. Flyer, video y landing dicen ahora los mismos tres problemas.
+
+**Redacción trabajada con el fundador:** *"estructura operativa"* → *"El Excel y tus documentos tienen los datos; solo esas personas saben cómo se conectan"* (lenguaje de cocina, no de consultor) · *"estructuraste"* → *"ordenaste"* · fuera *"pediste de más inventario"* (es un error del operador, no un cambio de afuera, y en segunda persona se lee como regaño) · fuera *"conteos"* (repite *inventario*) · *"protocolos"* entra (el dolor #1 de Carlos).
+
+**A revisar después:** *En concreto* (§6) sigue con cinco tarjetas que reflejaban los cinco problemas de antes. Es candidata natural a la siguiente pasada para bajar texto.
+
 ## v4 · 3. El problema — *"La realidad de hoy"* — ✅ cerrado en papel (9-sep) · 🔧 **CONFIRMADO EN `lab/` (10-sep · `lab/v4-problema.html`)**
 
 > **Lo que el lab confirmó, con el fundador en pantalla (2026-09-10):**
@@ -169,6 +239,29 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 **Cercas para `lab/` móvil:** cinco tarjetas pesan más que cuatro. Desktop: fila de 5 estrecha o 3 + 2 (decide la pantalla). Móvil: apiladas. **Si pesa, la 5ª se funde con la 2ª** (el número que llega tarde es también "se rompe al cambiar") y la lista vuelve a cuatro — la señal de calificación se conserva en el remate.
 
 ---
+
+## v4.1 · 4. El trato — *Cómo trabaja* — ✅ EN VIVO (2026-10-05 · tag `v4.1`)
+
+**Decisión del fundador:** la landing ya tenía mucho texto; el video demo (`SEO and Content/_context/03-video-demo/`, 71 s, sin sonido) enseña lo que los cinco pasos explicaban.
+
+**Eyebrow y titular:** sin cambio.
+> Cómo trabaja · El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet.
+
+**Sale:** la introducción (*"No suma otra herramienta…"*) y los cinco pasos (construye · refuerza · mantiene vivo · ejecuta *En construcción* · se lo pasa a quien llega).
+
+**Entra:** el video demo en una tarjeta, con un botón *"Ver cómo funciona · 1 min"* cuando está detenido. Sin nota debajo: la aclaración *"Ejemplo · datos ficticios"* ya va en la esquina del propio video.
+
+**Un solo bloque al final** (sustituye a las dos líneas *"Zenet no es un POS…"* y *"Zenet no reemplaza a tu equipo…"*):
+> **Tu POS se queda. Tu equipo también.** Zenet trabaja detrás: en tus costos, tus compras y tu operación, y le quita a tu equipo el trabajo de cargar el sistema. **La última palabra siempre es tuya.**
+
+**Por qué así:**
+- **El video enseña en vez de explicar** y baja el texto de la página de forma notable.
+- **El bloque final responde la misma duda dos veces dicha antes** (*"¿qué me quitas?"*): ni el POS ni el equipo. Conserva la objeción anti-POS de Carlos (V-035) y el valor *Aumentar, no reemplazar*.
+- **Corrige *"tus operaciones"* a *"tu operación"*** (canon de marca). Sale *"El caos se va"*, que ya vive en el titular del hero.
+
+**Honestidad del contenido:** el video enseña partes que todavía se terminan (Zenet en WhatsApp, cotizaciones). El fundador decidió el 5-oct que se queda así: *"muchas ya están listas y otras están casi listas"*. Se probó una nota *"Algunas partes se terminan junto a los primeros Socios Fundadores"* y se retiró por decisión suya. Si alguien pregunta en la mesa, la respuesta es la de la v4: *"eso entra esta semana"*.
+
+**A vigilar:** *El camino*, justo debajo, cuenta una historia parecida con sus tres animaciones. Si la página se siente repetida, se recorta *El camino*, no el video.
 
 ## v4 · 4. El trato — *"Cómo trabaja Zenet"* — ✅ cerrado en papel (9-sep) · 🔧 **RESUELTO EN `lab/` (10-sep · `lab/v4-trato-c.html`)**
 
@@ -331,6 +424,29 @@ La tarjeta de dos columnas que ya está en producción: la afirmación + el chat
 **Cercas para `lab/`:** pantallas tal como son · datos ilustrativos declarados o de SF con permiso · **un sistema animado en tres etapas + el hero** (Etapas 1-2 = secuencias de pantallas con transiciones simples; la 3 = la única animación compleja) · `prefers-reduced-motion` = último frame · móvil: animación arriba, texto abajo.
 
 ---
+
+## v4.3 · 6. En concreto — ✅ EN VIVO (2026-10-06 · tag `v4.3`)
+
+**Decisión del fundador:** reordenar la sección de acuerdo al video demo y a lo que ya se actualizó (flyer v0.18 · *La realidad de hoy* en tres problemas), y cambiar el diseño a **pestañas que se abren al hacer clic, con una animación que tiene de base el plano del restaurante del flyer de primer toque** (Cocina · Administración · Piso) y cambia con cada pestaña. Referencia de diseño traída por él: lista numerada a la izquierda (una activa, las demás en gris) y escena a la derecha.
+
+**Eyebrow y titular:** sin cambio — *En concreto · Qué te quita de encima.*
+**Subtítulo:** *Elige una y mira dónde entra Zenet en tu restaurante.* · **sin cierre** (sale *"Cada una te deja algo que tu equipo ya usa…"*).
+
+| # | Pestaña | Texto | En el plano | Lo que aparece abajo |
+|---|---|---|---|---|
+| 01 | Tu operación en orden | Recetas, facturas, inventario, protocolos: los mandas como los tienes, y Zenet junta los tres nombres de un insumo en uno solo. **Del platillo a la compra, todo conectado.** | Inventario · Equivalencias | tres nombres del camarón → *Camarón 21/25 · kg* · *✓ 3 nombres, un solo insumo* |
+| 02 | Tus recetas, escritas y costeadas | Cada receta con sus ingredientes y su costo. Sube el camarón y Zenet reacomoda lo que toca. **Tú apruebas.** | Costos → Recetas | *Aguachile de camarón* · costo del plato $58 → $61 · *✓ Aprobado* |
+| 03 | Tus compras y tus proveedores | Le mandas la factura por WhatsApp y ves qué subió, con quién y cuánto te cuesta al mes. **Lo ves el martes, no en el corte.** | Compras | *Factura de hoy* → *Movimientos* (camarón +18 % · aguacate +31 % · jitomate −12 %) |
+| 04 | El manual que el nuevo consulta solo | Quién hace qué y cómo se hace, en el celular. **Lo que sabe tu operación no se va con quien se va.** | Manual Operativo (+ Cocina) | el celular con *Apertura de cocina* paso a paso · *Nuevo en turno* |
+| 05 | Tu mano derecha, que conoce todo | Zenet conecta tu operación. Te contesta con tus números y te dice dónde puedes ajustar. **La decisión sigue siendo tuya.** | todo el plano se enciende + el núcleo debajo | *¿Por qué mi food cost está en 35%?* → *Subió 2 puntos desde agosto. Casi todo viene del camarón, el aguacate y el aceite, y lo cargan sobre todo el aguachile y la tostada de atún.* · *Lo saqué de Compras · Recetas · Costos* |
+
+Piso (*"Tu POS se queda."*) queda fijo, siempre visible. Datos de ejemplo de Marea Baja (los del video y del diagnóstico), con *"Ejemplo · datos ficticios"*.
+
+**Trabajado con el fundador:** *"Tus documentos, en orden"* → *"Tu operación en orden"* · *protocolos* entra en la 01 · Compras → *"Tus compras y tus proveedores"* (sin *"antes del cierre"*, que ya dice el remate) · la 05 es idea suya (*"Zenet como núcleo que conoce todo"*); *"copiloto"* → *"tu mano derecha"* (palabra de la marca; *copiloto* se confunde con Copilot) · la 1ª versión de la 05 (esfera en el pase con líneas a las seis áreas + pregunta del aguachile) **no le gustó**: el núcleo pasa **debajo del plano** y la pregunta pasa a ser la del **food cost** (idea suya) · *"optimizar"* → *"te dice dónde puedes ajustar"*; texto final de la 05 suyo. **La respuesta del chat explica y no aconseja** (regla del asistente del diagnóstico); *"te dice dónde puedes ajustar"* vive solo en el texto de la pestaña — es cierto si Zenet en el día a día sugiere ajustes.
+
+**Sale:** *"Todo entra por donde ya trabajas"* como tarjeta propia (WhatsApp vive ahora dentro de Compras) · las frases en cursiva de cada tarjeta (los problemas ya los dice *La realidad de hoy*).
+
+**A vigilar:** *El camino* (§5) termina con una consulta parecida a la 05. Si en la página completa se siente repetida, se recorta la de *El camino*.
 
 ## v4 · 6. Qué hace por ti — *"En concreto"* — ✅ cerrado en papel (9-sep) · 🔧 **AJUSTADO EN `lab/` (10-sep · `lab/v4-concreto.html`)**
 
