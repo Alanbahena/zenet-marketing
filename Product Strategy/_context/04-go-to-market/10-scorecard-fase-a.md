@@ -3,9 +3,9 @@ name: Scorecard — Fase A
 description: Los números de la Fase A en un solo lugar. Tres tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil), la serie semanal de hipótesis (una fila por semana, para ver la tendencia sin leer siete retros) y, desde la v0.5, el embudo de ventas (los nueve conteos de 12-proceso-de-ventas §6, una fila por semana, con acumulado). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-20
+last_updated: 2026-10-04
 status: active
-version: 0.6
+version: 0.8
 owner: Alan Bahena
 ---
 
@@ -28,7 +28,7 @@ owner: Alan Bahena
 
 ---
 
-## 1. El tablero del gate *(al 2026-09-20 · 11 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
+## 1. El tablero del gate *(al 2026-10-04 · 13 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
 
 ### 1.1 Gate A→B — las dos condiciones, juntas
 
@@ -42,7 +42,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | **(a)** Intent-to-join — *"quiero entrar al programa"*, **conociendo el precio y los términos** | H4 + H6·precio, al nivel del que paga | ≥ 1-2 | **0** — el soft-commit de Carlos sale con Alma Verde (decisión #2) | ✗ |
 | **(a)** El problema le cuesta algo hoy | H6 · pozo | no en 🔴 | 🟡 — cero cuantificaciones reveladas; Miguel *"realmente pagaría"* es declarado | ✓ |
 | **(b)** App V1 demostrable | readiness | — | ✅ **desde el 30-ago** (desktop + móvil · Task 28 verificada en producción) | ✓ |
-| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ **marca registrada ante el IMPI (otorgada 14-sep)** · régimen fiscal en cambio (contador · respuesta 21-22 sep) · sin entidad ni abogado: **el acuerdo de la Fase A es el kit de bienvenida** (5ª desviación · `02-programa` v0.1.1) · abogado detrás del primer sí · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
+| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ **marca registrada ante el IMPI (otorgada 14-sep)** · **régimen fiscal cambiado (27-sep)** · cuenta de banco nueva con **CLABE lista** (entra al kit de bienvenida la semana del 5-oct) · facturación (CFDI) por confirmar con el contador antes del primer cobro · sin entidad ni abogado: **el acuerdo de la Fase A es el kit de bienvenida** (5ª desviación · `02-programa` v0.1.1) · abogado detrás del primer sí · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
 
 **Lectura:** al recontar contra el ICP de Fase A el marcador **baja y se vuelve honesto** — de *1 · 1 · 1* (Alma Verde, perfil ①) a **1 conversación · 0 compromisos · 0 intent** (Miguel). Las hipótesis no cambiaron; cambió a quién se le pregunta. Lo que sí hay es dirección (H1 y H3 con señal) y un experimento sin correr (extraer). La condición **(b)** ya no bloquea nada del lado del producto.
 
@@ -91,6 +91,8 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 31 ago–6 sep | 0 | 1 | 0 (9ª) | **2 → 0, ninguno visto** (Juanjo · Algira · ambos por LinkedIn · mensajes sin abrir · links Dub sin clic) | 🟢 | ⬜ | 🟢 | 🟡 | **🟡 partido** | 🟡 | No — 4ª consecutiva · landing v3.3 · deudas de doc cerradas · scorecard v0.1 · **la apuesta cambia de blanco: el ICP de Fase A se redefine** (doc 11 en curso · perfil 2-3 · 1-2 sucursales · early adopters) · gate (b) V1 ✅ · legal sin cambio |
 | 7–13 sep | 0 | 1 *(= Miguel · contra el ICP de Fase A)* | 0 (10ª) | **0 → 0** (nada enviado · Juanjo y Algira siguen sin ver el de LinkedIn, 2ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 5ª consecutiva · **landing v4 + `/demo` v0.2 EN VIVO** (regla del deploy: la narrativa describe, las instrucciones piden solo lo que corre) · **ICP de Fase A v0.1 cerrado** + edición de campo · guión v0.6 · mensajes v0.2 (ask #1 = 5 facturas) · Compras 40.1–40.6 · gate (b) V1 ✅ · legal sin cambio |
 | 14–20 sep | 0 | 1 | 0 (11ª) | **0 → 0 → 0** (nada enviado — el #9 adjunta el ejemplo y el ejemplo no existió · Juanjo y Algira siguen sin ver el de LinkedIn, 3ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 6ª consecutiva · **el kit de venta entero** (doc 12 v0.1 · script · flyer SF · kit de bienvenida · tarjeta impresa · mensajes v0.3 · canon con 5 desviaciones) · **IMPI ® otorgado** · diagnóstico v2 pág. 1 · producto sin avance · gate (b) V1 ✅ · legal: ® + régimen fiscal en curso |
+| 21–27 sep | 0 | 1 | 0 (12ª) | **0 → 0 → 0** (la tanda no salió · CANACO y CANIRAC sin contactos de restaurante) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 7ª consecutiva · **PDF de ejemplo cerrado el lunes** y el spec del diagnóstico hasta v1.3 · primeras sesiones en CANACO Jóvenes y CANIRAC (0 contactos · puerta con la directora de CANIRAC) · banco abierto · **régimen fiscal cambiado** · competidor con nombre: **Marble (YC S26)** |
+| 28 sep–4 oct | 0 | 1 | 0 (13ª) | **0 → 0 → 0** (los seguimientos pasaron al 5-oct por decisión del fundador · 5 contactos de eventos en *Conversación*, que entran a ① cuando salga su WhatsApp) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 8ª consecutiva sin sesión agendada · **primera respuesta abierta en persona** (brunch: Carlos Lomelí · Daniel Betancourt, director de CANIRAC Jóvenes · vie: Juan Carlos Eguiluz, alta cocina, que delegó en su gerente Ali García · + Mike de Café La Lechuza, CANACO 22-sep) — todo declarado · flyer v0.16 impreso · spec del diagnóstico v1.4.1 · CLABE lista |
 
 *La columna **N ICP Fase A** se llamaba *N beachhead* hasta el 8-sep. Los valores históricos no cambian pero **cambia lo que significa el 1**: hasta el 31 ago–6 sep, 1 = Carlos, contra el beachhead anterior; desde el 7-13 sep, 1 = Miguel, contra el ICP de hipótesis de la Fase A (`11` §2.3). Las filas anteriores conservan su lectura.*
 
@@ -102,17 +104,19 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 **Qué cuenta cada columna:** los nueve conteos de `12` §6.2, en el orden del pipeline. Cada celda es **lo que pasó esa semana**; la última fila es **el acumulado desde el 14-sep**. **Conteos, no porcentajes** (`12` §6.3: con cinco lugares y diez mensajes, una tasa es ruido — lo que informa es en qué columna se para la gente). Una persona está en una sola etapa y avanza solo con evidencia: un *sí* sin precio dicho se queda en ④, no pasa a ⑥ · el *"va"* no es pago: ⑥ ≠ ⑦.
 
-**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep · **no se cumplió: 0 · 0**) · **semana 21–27 sep → las mismas** (retro 20-sep) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
+**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep · **no se cumplió: 0 · 0**) · **semana 21–27 sep → las mismas** (retro 20-sep · **no se cumplió: 0 · 0**) · **semana 28 sep–4 oct → ≥ 1 en ③** (el café del brunch · retro 27-sep; la tanda, ≥ 10 en ①, pasa a la semana del 5-oct por decisión del fundador · **no se cumplió: 0**) · **semana 5–11 oct → ≥ 4 en ① y ≥ 1 en ③** (retro 4-oct, ajustada con el fundador) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
 
 | Semana | ① Contactados (env → vistos → resp) | ③ Sesiones (agend → hechas) | ④ Discovery → Pitch | ⑤ Ofertas dichas | ⑥ Síes | ⑦ Pagados | ⑧ Diagnósticos entregados | ⑨ Activos al mes 2 | de ellos, perfil ③ |
 |---|---|---|---|---|---|---|---|---|---|
 | *antes del 14-sep (10 semanas · contexto, no acumula)* | *≥ 9 registrados → s/r → 1 (Miguel) · Ola 1 s/r* | *2 → 2 (Carlos 14-jul · Miguel 12-ago) — sesiones de validación, no de venta* | *0 — no había proceso* | *0 — el precio nunca se dijo* | *0* | *0* | *0* | *0* | *0* |
 | 14–20 sep | **0 → 0 → 0** — el #9 no salió: dependía del PDF de ejemplo | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 21–27 sep | **0 → 0 → 0** — la tanda no salió; las dos cámaras no dieron contactos de restaurante | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 28 sep–4 oct | **0 → 0 → 0** — los seguimientos pasaron al 5-oct; los 5 contactos de eventos aún no cuentan en ① | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | **Σ desde el 14-sep** | **0 → 0 → 0** | **0 → 0** | **0** | **0** | **0** | **0** | **0** | **0** | **0** |
 
 *② Respondieron es la tercera cifra de ①; ⑧ y ⑨ arrancan vacías por diseño (`12` §6.2). Los días entre etapas se anotan en Notion, no aquí.*
 
-**Lo que el embudo dice de un vistazo:** primera fila cerrada, en cero. Nadie se atoró en una etapa: nadie entró — el mensaje no salió porque el adjunto (el PDF de ejemplo) no existió. La meta se repite para el 21–27.
+**Lo que el embudo dice de un vistazo:** tercera semana en cero en los conteos, pero por primera vez hay gente esperando en la puerta: cinco contactos con restaurante de eventos en persona, con interés declarado. Entran a ① el día que salga su WhatsApp; la meta del 5–11 oct es que salgan y que uno acepte el café.
 
 ---
 

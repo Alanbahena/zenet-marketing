@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-09-20
+last_updated: 2026-10-04
 status: active
-version: 0.9
+version: 0.11
 owner: Alan Bahena
 ---
 
@@ -31,6 +31,108 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 28 sep–4 oct — "la primera puerta abierta: cuatro dueños en persona, cero mensajes"
+
+**▸ Foco que traíamos** (plan ajustado con el fundador el 27-sep): **Lun 28** flyer de primer toque → ✅ **v0.16 cerrado e impreso** · guía del brunch → 🟡 versión de bolsillo el martes en la mañana · CLABE al kit → 🟡 cuenta nueva con CLABE; falta pasarla al kit · **Mar 29** ★ brunch → ✅ **meta de conversaciones cumplida** (2 dueños de restaurante + parte de la directiva de CANIRAC Jóvenes) · café agendado → ❌ · contador → 🟡 régimen ya cambiado; la forma de facturar sigue `[Provisional]` · **Mié 30** punto de decisión de la tanda → ❌ · seguimiento por WhatsApp a los del brunch → ❌ **pospuesto a la semana del 5-oct por decisión del fundador** (primero dejar el producto listo para usarse) · **Vie 2** misión y visión → ❌ no se trabajó · **Dom 4** carne asada de CANIRAC → ✅ fue, 0 contactos de restaurante · retro → ✅.
+
+**▸ 🏆 Logros**
+- **★★ Primera respuesta abierta a explorar Zenet, en persona.** En el brunch de la cámara de emprendimiento (estuvo CANIRAC Jóvenes): **Carlos Lomelí** (empresario; uno de sus negocios es un restaurante — abrió la puerta a probarlo en él) y **Daniel Betancourt** (director de CANIRAC Jóvenes, chef, dos restaurantes — abrió la puerta a platicar y a colaborar con CANIRAC). El viernes en la noche, **Juan Carlos Eguiluz** (dueño de dos restaurantes de alta cocina, empresario argentino) escuchó el pitch en minutos, dio su tarjeta y **delegó el tema de software a su gerente general, Ali García**, que también pasó su contacto. Más **Mike, de Café La Lechuza** (CANACO, 22-sep, no registrado antes). **Cinco contactos con restaurante en el pipeline**, todos en *Conversación* — interés **declarado**.
+- **Lo que se enseñó funcionó:** presentarse (quién soy · qué hago · cómo) → el diagnóstico de ejemplo → una mini-demo de Compras por WhatsApp.
+- **Kit:** flyer de primer toque **v0.16 cerrado e impreso** (logo y frase en una franja · ¿Te suena? · *"Zenet es un sistema digital para la administración del back-of-house…"* · *"Un equipo de especialistas, trabajando en tu restaurante"* con el plano · compras · demo). Hoja 2-up armada en Chrome.
+- **Diagnóstico v2 · spec v1.4.1:** pág. 4 rediseñada (plano por zonas · tarjetas por área · Estandarización en construcción con pasos 1-8 y chip de departamento) · seis correcciones de una revisión (pie, "administración 2", un solo lugar para los procesos, recosteo en Compras, anexo por sucursal, regla de factores impresos) · sin plazos en la página · **`grounding.md` de producción: WhatsApp "en construcción, sin fecha"**.
+- **Producto:** el fundador trabajó en la **Task 47** y en el **rediseño del onboarding**.
+- **Admin:** cuenta de banco nueva con CLABE.
+
+**▸ ✅ Qué funcionó**
+- **El formato abierto.** El brunch (gente que no se conocía) dio dos dueños; la carne asada (cerrada, entre conocidos de varios gremios) dio cero.
+- **Construir confianza antes de enseñar.** Lectura del fundador: *"en B2B el tema de la confianza es muy importante: les digo quién soy, qué hago y cómo lo hago"*.
+- **Llevar el diagnóstico impreso.** Es lo que convirtió una plática en *"quiero ver cómo funciona"*.
+
+**▸ 💡 Learnings**
+1. **★★ La entrada sí existe en persona; lo que falta es el siguiente paso.** Cinco dueños de restaurante en dos semanas, contra cero en las siete anteriores. Pero el interés de un evento es declarado y se enfría en días; la primera señal revelada es que acepten el café de 20 minutos. Esta semana no salió ningún mensaje de seguimiento — **8ª semana sin una conversación agendada con un operador**, aunque es la primera con interés real.
+2. **★ El dueño delega el software al gerente** (Juan Carlos → Ali). Es el buying committee del research tal cual: el gerente evalúa y usa, el dueño paga y decide (`11` §2.3). Seguir la instrucción del dueño es la primera forma de ganarse su confianza.
+3. **★ Cliente primero, inversionista después.** La idea del fundador: Juan Carlos como cliente, mentor e inversionista. Recomendación registrada: dos conversaciones separadas — con Ali, el producto; con Juan Carlos, consejo concreto (la mentoría nace de pedir consejo, no de pedirla); la inversión cuando haya visto el diagnóstico de su propio restaurante. Decisión pendiente del fundador.
+4. **★ Las cámaras son políticas.** Lectura del fundador en la carne asada: *"un espacio un poco político en donde las personas buscan obtener algo a cambio de la posible ayuda que ofrecen"*. Regla de eventos: ir a los abiertos (la gente llega a conocer gente); a los cerrados, solo para cuidar una relación que ya existe.
+5. **Los dueños de alta cocina y los gremios piensan fino** (se repite la lectura del 24-sep): el diagnóstico con aritmética visible es el tono correcto.
+
+**▸ 🔀 Decisiones**
+- **El seguimiento a Carlos, Daniel y Mike pasa a la semana del 5-oct** (fundador, 29-sep: primero dejar el producto listo para usarse). Se sugirió un mensaje corto de gracias el 30-sep que no pedía nada; no se adoptó.
+- **Diagnóstico v2 · v1.4 → v1.4.1:** pág. 4 nueva · Estandarización *en construcción* y sin plazo · WhatsApp en construcción, sin fecha, también en `grounding.md`.
+- **Flyer de primer toque v0.16** es la versión viva.
+- **Abiertas:** cómo abrir con Juan Carlos Eguiluz y Ali García · misión y visión (no se hizo) · facturación con el contador · la CLABE al kit · la conversación con la directora de CANIRAC (en persona, hasta nuevo aviso).
+
+**▸ 📊 Scorecard H1–H6** — sin movimiento en los semáforos · **8ª semana consecutiva sin sesión agendada con un operador** · N **1** (Miguel) · perfil ③ en cero (**13ª**) · entrada **0 → 0 → 0** (los seguimientos pasaron al 5-oct) — pero **5 contactos con restaurante de eventos en persona, en *Conversación*** · embudo §2.2 en cero por **3ª** semana · gate (a) sin cambio · (b) V1 ✅ · legal: IMPI ® + régimen cambiado + **CLABE lista** · facturación por confirmar · scorecard → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 5–11 oct — precio fijo, demos a tres restaurantes; el producto sigue en su carril** *(ajustado con el fundador el 4-oct)*
+
+| Día | Ventas · entrada | Producto · admin |
+|---|---|---|
+| **Lun 5** | ★ **Precio mensual fijo**, en la mañana: correr los números (horas del primer mes · costo de servir a un cliente · lo que vale un punto · anclas de POS) → 2-3 opciones → el fundador elige · después, el **kit de bienvenida** rediseñado con la CLABE, y el precio nuevo en flyer de la oferta, script y doc 12 · ★ **mensajes para la demo:** Ali García (Cocina Palermo · *"[Juan Carlos] me sugirió verlo contigo"*) · Ana, para pedir la reunión con el dueño de San Miguel (perfil ③) · Carlos de Alma Verde (ya vio Zenet en julio; perfil ①, fuera del N) | Producto |
+| **Mar 6** | Mensaje a Juan Carlos Eguiluz (gracias · "ya hablé con Ali" · 30 min de su visión) · **Carlos Lomelí, Daniel Betancourt, Mike y Miguel pasan a la semana del 12-oct** (decisión del fundador) | Contador: confirmar que ya se puede timbrar CFDI **antes del primer cobro** · ★ **tarde: la cuenta de demo en producción** con los datos de Marea Baja (los mismos del diagnóstico de ejemplo), separada de clientes reales, con la demo de Compras lista y **ensayada de punta a punta** — requisito de la primera demo |
+| **Mié 7 · Jue 8** | **Las demos** (30-40 min, en la cuenta de demo): 10 de escuchar (Mom Test) · 10 de enseñar (diagnóstico de ejemplo + Compras) · el cierre solo si encaja (*"¿quieres que hagamos el tuyo?"*, el precio con el punto, pago el día del sí, el mes 1 corre desde la entrega) · ensayar antes con datos limpios · enseñar solo lo pulido · prometer la fecha del diagnóstico, no la del producto | Producto |
+| **Vie 9** | Misión y visión (2-3 h) | Producto |
+| **Dom 11** | Retro + scorecard | |
+
+**Producto (carril aparte):** Task 47 y el rediseño del onboarding — lo que necesita la primera entrega (2-3 semanas después del primer sí).
+
+**Mínimo de la semana:** **precio fijo decidido y kit actualizado** · **≥ 4 mensajes enviados** · **≥ 1 demo hecha** · facturación confirmada antes de cobrar · avance de producto hacia la primera entrega.
+
+*▸ Pipeline: **5 contactos nuevos de eventos, en Conversación** (Carlos Lomelí · Daniel Betancourt · Juan Carlos Eguiluz + Ali García · Mike de Café La Lechuza) · Miguel en pausa consciente (único en el N) · Carlos de Alma Verde frío (fuera del N) · JP sin retomar · JC Gallina y Alan Jiménez sin respuesta · Juanjo y Algira por LinkedIn sin ver · Ana pospuesta (13ª semana) · 10 "por enviar" desde julio · CANIRAC: la directora, en persona.*
+
+---
+
+## Semana 21–27 sep — "dos cámaras por dentro, cero mensajes, y un competidor con nombre"
+
+**▸ Foco que traíamos** (plan por día de la retro 20-sep): **Lun 21** PDF de ejemplo → ✅ **cerrado el mismo lunes** (mock v2 "Marea Baja" = el diagnóstico de ejemplo) · flyer de primer toque → ✅ diseño v0.15 + Dub `primer-toque` + prueba de impresión corregida (22-sep) · lista de la tanda + Dub por persona → ❌ · **Mar 22** primera tanda → ❌ **0 envíos** · CANACO Jóvenes → ✅ fue, **0 contactos con restaurante** · **Mié 23** seguimiento CANACO → ❌ (no hubo a quién) · BBVA → ✅ **cuenta abierta** (la CLABE todavía no entra al kit) · **Jue 24** desayuno de socios CANIRAC → ✅ fue en modo Mom Test (entró fuera del plan) · **0 contactos nuevos** · agendar sesiones → ❌ · contador → ✅ **cambio de régimen hecho** (falta cómo se factura → el `[Provisional]` sigue) · **Vie 25** landing v4.1 → ❌ **correcto**: la condición (≥ 10 mensajes) no se cumplió · **Dom 27** retro → ✅.
+
+**▸ 🏆 Logros**
+- **★ Primeras sesiones dentro de las dos cámaras** — CANACO Jóvenes (mar 22) y el desayuno de socios de CANIRAC (jue 24). Ninguna dio un contacto; las dos dieron mapa: quién está, cómo se habla ahí y por dónde entra una colaboración. En CANIRAC se abrió la posibilidad de **platicar con la directora** sobre cómo colaborar.
+- **Admin cerrado en la semana planeada:** cuenta de banco abierta y **régimen fiscal cambiado**. Lo que falta es pasar la CLABE y la forma de facturar al kit de bienvenida.
+- **El diagnóstico de ejemplo, cerrado el lunes y afinado toda la semana:** spec `06-experience-y-roadmap/01-diagnostico-v2-spec.md` **v1.0 → v1.3** — área de **Compras** con especialista propio y gráfica de proveedores (5 págs) · el **$7,420 sube a la pág. 1** · la columna *"quién lo sabe"* se retiró (dato que el onboarding no recoge) · mapa de la 1.0 con *aterriza / enciende* · brecha en pesos de *"mismo insumo, dos precios"* · **varias sucursales** (total arriba, tabla por sucursal en Costos) · **sub-recetas** (se cuentan aparte; las preparaciones sin receta propia, con cuántos platillos las llevan) · **onboarding v2 diseñado** (4 pantallas · tabla de áreas · conversación en paralelo · sintetizador). Es el handoff del reporte al repo de producción.
+- **Kit físico:** flyer de primer toque v0.15 · hojas 2-up con marcas de corte para los dos flyers · margen inferior de .45 in por la impresora. Commit + push el 23-sep.
+- **Producto:** el fundador siguió desarrollando en el repo de producción.
+- **Inteligencia competitiva: Marble** (ver learning 4).
+
+**▸ ✅ Qué funcionó**
+- **El timebox del lunes sí se cumplió:** el PDF de ejemplo cerró el día que se dijo, a diferencia de la semana anterior. Fijar la fecha funcionó para construir.
+- **Ir aunque no se sintiera listo.** La duda del jueves fue *"Zenet no está completo, ¿voy?"*; fue, escuchó en modo Mom Test y salió con lectura del terreno. El kit (tarjeta + ejemplo) bastó para estar ahí.
+- **El admin en su día:** banco y régimen se resolvieron en la semana en que estaban planeados.
+- **Revisar el reporte con ojos de tercero:** las observaciones del fundador (cifra en pesos que faltaba en la pág. 1, columna sin dato, mapa que se contradecía) salieron de leerlo como lo leería un dueño.
+
+**▸ 💡 Learnings**
+1. **★★ Se quitó el bloqueo declarado y el mensaje tampoco salió.** La semana pasada el #9 dependía del PDF; el PDF quedó el lunes y aun así salieron **cero** mensajes. **7ª semana consecutiva sin conversación con un operador · perfil ③ en cero por 12ª.** La energía se fue a dos cámaras, al producto y a afinar el diagnóstico (v1.1 → v1.3), todo útil y nada de eso es entrada. Con el adjunto listo, lo que falta ya no es una pieza: **es el acto de mandar**. La tanda a la red tibia no necesita nada más desde el lunes 21.
+2. **★ Las cámaras son canal de relaciones, no de conversaciones esta semana.** *(Corrección 29-sep: en CANACO sí hubo un dueño de restaurante — Mike, de Café La Lechuza — que no se registró en la retro; entra al pipeline y al seguimiento del 30-sep.)* Dos eventos → cero restaurantes contactados. CANACO es cámara general (no había dueños de restaurante); en CANIRAC sí había, pero el formato (desayuno, tema de inspección) no produjo contactos. Coincide con el canon: **institucional = awareness y puente, no entrada inmediata** (`05-channel-partner` Tier 2). Vale seguir yendo; no cuenta como la entrada de la semana.
+3. **★ Los dueños piensan más fino de lo esperado.** Lectura del fundador en CANIRAC: *"muchos dueños tienen una capacidad intelectual muy alta, mucho mayor de la que esperaba"*. Implicación: el diagnóstico y el pitch no se simplifican ni se endulzan; la aritmética visible, el origen de cada cifra y *"nunca 'no tienes sistema'"* van en la dirección correcta. N=1 evento, declarado; sin frase textual de un operador.
+4. **★ Marble (YC S26) es la misma tesis en EE. UU.** — [joinmarble.ai](https://joinmarble.ai) · *"the first self-driving operating system for restaurant groups"* · inventario con visión por computadora y voz, compras con agentes, conciliación de facturas, horarios, P&L en vivo · integra Toast, Square, Clover, QuickBooks, Restaurant365 · clientes multi-unidad en EE. UU. y Canadá (A&W, The Kati Roll Company, Sophie's Cuban…). **Lo que valida:** la categoría existe y el capital la está financiando ahora (refuerza `05-market-insights/00-por-que-ahora`). **Lo que no cambia:** el espacio *AI-native ∩ BoH-first ∩ MX* sigue vacío — Marble es inglés, grupos multi-unidad, integración por POS de EE. UU.; Zenet es español-MX, 1-3 sucursales, WhatsApp, sin API de POS. **El riesgo nuevo:** un competidor financiado puede mirar a LATAM; el *head start* de 18-36 meses (`03-competitive-analysis/07` §4.13) empieza a correr contra un nombre, no contra una hipótesis. Y para la narrativa de inversión, *"Marble para México y LATAM"* es una comparación que un inversionista entiende en una frase. Sus cifras (−40 % merma, +30 h/semana, 97 % de precisión) son de su marketing; no se citan como dato.
+5. CANACO dejó una lectura de ciudad: hacia dónde va el comercio en Tijuana y que **el sector gastronómico es una oportunidad grande** dentro de él. Declarado, sin cifra; se guarda como contexto.
+
+**▸ 🔀 Decisiones**
+- **Diagnóstico v2 · spec v1.1 → v1.3** (23 y 26-sep, cada una con OK del fundador): Compras es área propia y nunca recomienda proveedor · el $ de lo que subió va en la pág. 1 · cada columna del reporte mapea a un dato que el onboarding recoge, si no, no va · *aterriza* = aquí lo haces, *enciende* = lo activa · con varias sucursales, el total arriba y el desglose en su área · las sub-recetas se cuentan aparte y el paso del camino no promete costo en cadena.
+- **CANIRAC en modo Mom Test:** escuchar, no presentar Zenet de pie.
+- **27-sep, con el fundador:** la tanda y Miguel pasan a la semana del 5-oct · CANIRAC con la directora solo en persona · misión y visión se revisan el viernes 2-oct.
+- **Abiertas:** CLABE y forma de facturar al kit (`[CLABE]` · `[Provisional]`) · qué entra en "V1 completa" · entrada de Marble en el análisis competitivo · lista de los 8 procesos contra el Manual Operativo (Alan) · dónde vive el ICP canónico al graduar.
+
+**▸ 📊 Scorecard H1–H6** — sin movimiento · **7ª semana consecutiva sin conversaciones con operadores** · N **1** (Miguel) · perfil ③ en cero (**12ª**) · entrada **0 → 0 → 0** (la tanda no salió; CANACO y CANIRAC sin contactos de restaurante) · semáforos sin cambio · embudo §2.2 en cero por **2ª** semana · gate (a) sin cambio · (b) V1 ✅ · legal: IMPI ® + **régimen fiscal cambiado** · scorecard → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 28 sep–4 oct — el brunch como entrada, producto como carril principal** *(ajustado con el fundador el 27-sep: la tanda y el mensaje a Miguel pasan a la semana del 5-oct por decisión del fundador — "todavía no tengo contactos"; la conversación con la directora de CANIRAC será en persona, en una reunión o evento, hasta nuevo aviso)*
+
+| Día | Mañana | Tarde |
+|---|---|---|
+| **Lun 28** | Producto · CLABE y beneficiario al kit de bienvenida → regenerar PDF | Producto |
+| **Mar 29** | ★ **Brunch de la cámara de emprendimiento** — meta: **2-3 conversaciones con dueños de restaurante** en modo escucha y **1 café de 20 min agendado** (ahí se recorre el diagnóstico). Si no hay restauranteros: *"¿conoces a alguien con restaurante?"* | Producto · contador: cómo se factura → quitar `[Provisional]` |
+| **Mié 30** | ★ **Punto de decisión:** con lo que dejó el brunch y el pipeline, quién recibe el #9 la semana del 5-oct (Miguel incluido); los que no, salen del pipeline con una nota | Producto · seguimiento por WhatsApp a los del brunch (#9 con *"nos conocimos ayer en el brunch"*) |
+| **Jue 1** | Producto | Producto · agendar el café si alguien respondió |
+| **Vie 2** | **Misión y visión — revisión en un bloque de 2-3 h:** leer la v1.1 · listar qué cambió desde junio (la definición del flyer *"tú decides; Zenet lo carga"* · *"el caos no es el precio"* · el ICP de la Fase A · qué es Zenet que Marble no es) · 2-3 versiones de cada una · el fundador elige. La propagación a los docs que las citan va aparte | Producto · Marble al análisis competitivo si sobra la hora · landing v4.1 solo con ≥ 10 mensajes enviados (esta semana no aplica) |
+| **Dom 4** | Retro + scorecard | |
+
+**Producto (carril principal esta semana):** lo que necesita la **primera entrega** a un Socio Fundador, no toda la 1.0 — el onboarding que genere el reporte con la forma del ejemplo (Task 43 v2 · spec v1.3) y Compras corriendo (40.7+). La oferta da el margen: el SF paga, manda documentos y recibe el diagnóstico 2-3 semanas después. `[El fundador define qué entra en "V1 completa"]`.
+
+**Mínimo de la semana** (lo que lee la retro del 4-oct): **brunch con ≥ 2 conversaciones con dueños y ≥ 1 café agendado** · la lista del #9 para el 5-oct decidida el miércoles · kit de bienvenida sin `[CLABE]` ni `[Provisional]` · misión y visión revisadas · avance de producto hacia la primera entrega. **Registro honesto:** con esta decisión, la 8ª semana sin mensaje a la red tibia; la entrada depende de un solo evento.
+
+*▸ Pipeline: 1 soft-commit frío (Carlos · fuera del N) · Miguel en pausa consciente (único en el N · el #9 con la oferta, la semana del 5-oct) · JP sin retomar · JC Gallina y Alan Jiménez sin respuesta · Juanjo y Algira por LinkedIn sin ver (4ª semana) → van por WhatsApp en la tanda · conocido del brunch pospuesto · Ana pospuesta (12ª semana) · 10 prospectos en "Por enviar" desde julio · **entradas nuevas: CANACO (sin restauranteros) · CANIRAC (la directora, en persona, hasta nuevo aviso) · brunch de la cámara de emprendimiento (mar 29)**.*
 
 ---
 
