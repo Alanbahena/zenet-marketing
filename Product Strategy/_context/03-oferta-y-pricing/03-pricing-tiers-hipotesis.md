@@ -3,11 +3,13 @@ name: Pricing tiers hipótesis
 description: Documenta la estructura 4 tiers Phase 1 de Zenet (Esencial · Pro · Multi-Sitio · Enterprise) con pricing hipótesis · cap users · internal caps invisibles · WhatsApp service level diferenciado (Esencial ventana 10 hrs/día customizable · Pro/Multi-Sitio 24/7 · Enterprise 24/7 + SLA) · AI agents Phase 1 full cross-tier (NO gating sustractivo) · tier differentiation aditiva NO sustractiva (cf. doc 00 §6.7) · competitive anchoring DUAL framing (wallet calibration vs Bistrosoft/PoloTab/Fudo + category claim vs vertical AI premium global) · 3 escenarios pricing canónicos (downside $1,200 · anchor $1,500/$1,999/$1,799 · upside $1,800-2,000) · 12+ edge cases (contable · founder dual role · user dormant · trial · multi-sucursal cancellation · window split · upgrade paths automáticos · outlier abuse) · add-ons roadmap Phase 1.5+ (Heavy Usage Pack ~$600-800 · Specialty Agent Pack ~$400/agente) · 8 decisiones abiertas con triggers de cierre · validation con design partners Months 1-3 + PSM. Doc más denso del subfolder porque concentra toda la complejidad tier structure + sensitivity + edge cases.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-05-30
+last_updated: 2026-10-05
 status: active
 version: 0.1
 owner: Alan Bahena
 ---
+
+> **Nota 5-oct-2026 (decisión del fundador):** el precio de lista que se dice hoy en la Fase A es **$3,000 + IVA por sucursal al mes**, y el de Socio Fundador **$2,000** (desde la 3ª sucursal, $1,500). Las tiers de este doc (Esencial $1,500 · Pro $1,999 · Multi-Sitio $1,799) quedan como la hipótesis anterior; se revisan contra la lista de $3,000 al abrir a clientes comerciales, con los datos de los primeros Socios Fundadores. → `02-programa-socio-fundador-offer.md` (actualización 5-oct).
 
 # Pricing tiers hipótesis
 

@@ -3,7 +3,7 @@ name: Proceso de ventas — Fase A
 description: "El proceso operativo de la Fase A, del primer mensaje al Socio Fundador activo. Dos capas: el script ensayable (Discovery · Pitch · Cierre · Navegar el final · Objeciones, cada uno con Qué busco / Lo que digo / Qué escucho) y el pipeline con sus nueve conteos. Comprime las 8 etapas del sales motion al ICP de la Fase A (el dueño que carga la operación y decide solo). Termina en un sí a la oferta Socio Fundador con el precio dicho. v0.1 cerrada el 15-sep-2026, escrita sección por sección con el fundador. Deja explícita la deuda de artefactos (mensajes v0.3 · runsheet · flyer · kit de bienvenida · scorecard v0.5 — todo cerrado al 16-sep; queda el flyer de primer toque, el #9 en papel). 16-sep: §1 gana el primer toque en persona y la regla enseñar ≠ recorrer el diagnóstico de ejemplo."
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-16
+last_updated: 2026-10-05
 status: active
 version: 0.1.1
 owner: Alan Bahena
@@ -196,10 +196,10 @@ Un **sí con el precio dicho** — o un no claro. Solo cierro con quien ya quier
 > *Tres: cero riesgo. Sin compromiso, te vas cuando quieras — y si el diagnóstico no te sirve, te regreso el dinero."*
 
 **El flyer sobre la mesa** *(la oferta completa, de una vez, sin adornos)*
-> *"El primer mes son dos mil quinientos más IVA, e incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas, y a mí directo cada semana. Desde el segundo mes son mil quinientos más IVA, fijos. Son cinco lugares."*
+> *"El precio de lista es de tres mil más IVA por sucursal. Como Socio Fundador pagas dos mil más IVA, desde el primer mes, y no te sube nunca mientras sigas conmigo; desde la tercera sucursal, mil quinientos. El primer mes incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas y a mí directo cada semana. Son cinco lugares."* *(5-oct: precio fijo — antes, mes 1 $2,500 y desde el mes 2 $1,500; ver `02-programa`.)*
 
 **El punto** *(por qué el precio es chico · con sus ventas, que salieron en Discovery; si no salieron, se preguntan aquí: "¿andas más cerca de 200 o de 500 al mes?")*
-> *"No sé cuántos puntos hay escondidos en tu operación. Tú tampoco — y ese es justo el problema. A tus ventas, un punto de insumos son como [1% de sus ventas mensuales] pesos al mes. El programa cuesta menos de medio punto. Si encontramos uno solo, salió sobrado. Si no encontramos ninguno, te regreso el diagnóstico."*
+> *"No sé cuántos puntos hay escondidos en tu operación. Tú tampoco — y ese es justo el problema. A tus ventas, un punto de insumos son como [1% de sus ventas mensuales] pesos al mes. El programa cuesta menos de un punto. Si encontramos uno solo, salió sobrado. Si no encontramos ninguno, te regreso el diagnóstico."*
 
 **La única concesión** *(decidida de antemano · sin plazo · el momento es la sesión de entrega)*
 > *"Lo pagas hoy, para que arranque tu diagnóstico. Y el día que te lo entrego, si no te dice nada que te sirva, me lo dices ahí mismo y te regreso el dinero."*
@@ -286,7 +286,7 @@ Que la objeción **se entienda antes de contestarse**. Casi todas son una de tre
 | *"Ya tengo un POS"* | Cree que compite con lo que ya pagó | *"Y se queda. Tu POS sabe lo que vendes; lo que hay detrás —tus recetas reales, tus insumos, lo que pagas por ellos— eso es lo que ordena Zenet. Trabaja sobre lo que ya tienes."* |
 | *"Es otro software más"* | Ya le vendieron software que no usó `[Campo · S#5 Alfonso]` | *"Te entiendo — yo tampoco compraría otro software. Por eso no te pido que captures nada: mandas lo que ya tienes, como está. Si sabes usar WhatsApp, ya sabes usar Zenet."* |
 | *"Eso ya lo tengo en Excel / en mi cabeza"* · *"solo es data"* | Cree que es un contenedor `[Campo · S#5 Alfonso]` | *"Sí, y está bien tenerlo. La diferencia es que hoy cada cambio lo acomodas tú, a mano, en cinco lugares. ¿Cuándo fue la última vez que cambiaste un precio y lo actualizaste en todos?"* |
-| *"Está caro"* | Precio sin referencia | *"¿Comparado con qué lo ves caro?"* (escuchar) → *"A tus ventas, un punto de insumos son [X] al mes; esto cuesta menos de medio punto. Y si el diagnóstico no te sirve, te regreso el dinero."* |
+| *"Está caro"* | Precio sin referencia | *"¿Comparado con qué lo ves caro?"* (escuchar) → *"A tus ventas, un punto de insumos son [X] al mes; esto cuesta menos de un punto. Y si el diagnóstico no te sirve, te regreso el dinero."* |
 | *"Déjame pensarlo"* | Falta algo concreto, o es un no suave | *"Claro. ¿Qué te haría falta ver para decidir?"* — y se resuelve eso. Si no hay nada concreto, es un no: se agradece y se registra. |
 | *"Mi equipo no lo va a usar"* · *"mi chef no suelta las recetas"* | Adopción `[Campo · S#4 Miguel: el chef que no suelta]` | *"Tu equipo no aprende nada nuevo: consulta el manual en el celular y manda fotos. Y lo que sabe tu operación deja de irse con quien se va — eso al chef también lo protege: su criterio queda escrito con su nombre, no se lo lleva otro."* |
 | *"¿Y mis datos? ¿mis números?"* | Confianza | *"Los ve una sola persona: yo. No se comparten, no se venden, y si pides que se borren, se borran. Está escrito en zenetapp.com/privacidad."* |
@@ -359,7 +359,7 @@ Más dos que cruzan todo: **cuántos son perfil ③** (columna existente) y **d�
 | 4 Discovery | **Script de sesión** (run-sheet por beats · las 7 preguntas · cheat-sheet con los 9 checks · criterios de paso · guardrails · objeciones · el cierre) | ✅ **15-sep** `script-sesion-de-venta-fase-a` (PDF 5 págs; `plantilla-runsheet.html` queda como base de formato) | `_templates/script-sesion-de-venta-fase-a.html` → `_export/` |
 | 4 | **Guión de conversación** v0.6 (la sesión minuto a minuto) | ✅ · su §2 apunta a este doc para el cierre | `_templates/guion-conversacion-y-demo-fase-a.md` |
 | 4-5 Pitch | **La app** (Inicio · Estandarización · Manual) + el diagnóstico de ejemplo | ✅ / 🔜 | producto |
-| 5 Cierre | **Flyer de oferta** *(una cara)* — 3 beneficios · $2,500 + IVA mes 1 / $1,500 + IVA fijo · 5 lugares · sin compromiso · devolución · QR | ✅ **16-sep** (media carta · QR → `go.zenetapp.com/flyer-sf` · *"Alan, el fundador, en tu operación cada semana"*) | `_templates/flyer-socio-fundador.html` → `_export/` |
+| 5 Cierre | **Flyer de oferta** *(una cara)* — 3 beneficios · lista $3,000 tachada / fundador $2,000 + IVA fijo desde el mes 1 (3ª sucursal $1,500) · 5 lugares · sin compromiso · devolución · QR | ✅ **16-sep** (media carta · QR → `go.zenetapp.com/flyer-sf` · *"Alan, el fundador, en tu operación cada semana"*) | `_templates/flyer-socio-fundador.html` → `_export/` |
 | 6 Sí | **Kit de bienvenida** *(2 págs)* — pág. 1 bienvenida · mes 1 · fechas · qué mandar como lo tengas · transferencia · pág. 2 lo que acordamos | ✅ **16-sep** (CLABE y facturación `[Provisional]`) | `_templates/kit-bienvenida-socio-fundador.html` → `_export/` |
 | 7 Pagado | **CFDI** · cuenta dedicada | ⏳ contador | — |
 | 8 Entrega | **Su diagnóstico** (PDF + app) | ✅ el PDF ya corre | producto |

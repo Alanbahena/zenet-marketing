@@ -1,66 +1,71 @@
 <!--
 ═══════════════════════════════════════════════════════════════════
-KIT DE BIENVENIDA · Socio Fundador — v0.1 (16-sep-2026)
+KIT DE BIENVENIDA · Socio Fundador — v0.2 (5-oct-2026) · DOCUMENTO FORMAL
 ═══════════════════════════════════════════════════════════════════
-Se manda por WhatsApp el mismo día del sí (12-proceso-de-ventas §4). Dos páginas, media carta.
-Pág. 1 = bienvenida · lo que incluye el mes 1 · fechas · qué mandar · transferencia.
-Pág. 2 = lo que acordamos (la hoja de acuerdo; sustituye al contrato hasta que haya abogado).
-Por prospecto: duplicar, llenar los [corchetes], y generar el PDF:
-"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
-  --print-to-pdf="_export/kit-bienvenida-[nombre].pdf" "$PWD/kit-bienvenida-socio-fundador.html"
-La CLABE queda como [CLABE] hasta que se defina la cuenta.
+Se manda por WhatsApp el mismo día del sí (12-proceso-de-ventas §4). Dos páginas, HOJA CARTA, con el formato del diagnóstico
+(encabezado con logo · secciones numeradas · tablas · pie con página). v0.1 (media carta, tipo flyer) en _archive/.
+Pág. 1 = carta de bienvenida: lo que incluye el primer mes · fechas · qué mandar · datos para el pago.
+Pág. 2 = lo que acordamos: cláusulas numeradas, aceptación y firmas (sustituye al contrato hasta que haya abogado).
+Precio (decisión 5-oct): $2,000 + IVA por sucursal desde el primer mes · 3ª sucursal $1,500 · lista $3,000.
+Por socio: llenar los [corchetes] (nombre · restaurante · RFC · correo · fechas · lugar · folio) en una copia y generar el PDF.
+DATOS BANCARIOS: NO se guardan en este archivo. El HTML se queda con [Beneficiario] · [Banco] · [CLABE]; el PDF se genera desde
+una copia temporal con los datos reales de la cuenta dedicada a Zenet (los tiene Alan). Así no quedan en git ni en GitHub.
+PDF: "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --disable-gpu --no-pdf-header-footer \
+  --print-to-pdf="_export/kit-bienvenida-[restaurante].pdf" "$PWD/<copia con datos>.html"
 ═══════════════════════════════════════════════════════════════════
 -->
-<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Bienvenida Socio Fundador</title>
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><title>Zenet · Bienvenida al Programa Socio Fundador</title>
 <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,400;0,500;0,600;1,400&family=Onest:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;
+  :root{--off:#FFFCFA;--off2:#F9F4EF;--ch:#2B3738;--t7:#4B5E5E;--g3:#A3B2AC;--g1:#D1DBD7;--ac:#2E6E62;--mint:#BFE2D9;--mint2:#E4F2EE;
         --fd:"Onest",sans-serif;--fb:"Hanken Grotesk",sans-serif}
   *{box-sizing:border-box;margin:0}
-  @page{size:5.5in 8.5in;margin:0}
+  @page{size:8.5in 11in;margin:0}
   html,body{background:var(--off)}
-  body{font-family:var(--fb);color:var(--ch);line-height:1.38;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-  .page{width:5.5in;height:8.5in;padding:.3in .42in .22in;overflow:hidden;display:flex;flex-direction:column;break-after:page;position:relative}
+  body{font-family:var(--fb);color:var(--ch);font-size:9.4pt;line-height:1.45;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .page{width:8.5in;height:11in;padding:.5in .7in .7in;position:relative;break-after:page;display:flex;flex-direction:column;gap:.16in}
   .page:last-child{break-after:auto}
-  .top{display:flex;justify-content:space-between;align-items:center}
-  .logo{height:.29in;width:auto}
+  .hdr{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--g1);padding-bottom:.08in}
+  .hdr .l{display:flex;align-items:center;gap:.1in;font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--t7)}
+  .hdr .l .hlogo{height:.21in;width:auto;margin-right:.04in}
+  .hdr .r{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
+  .ftr{position:absolute;left:.7in;right:.7in;bottom:.35in;border-top:1px solid var(--g1);padding-top:.06in;display:flex;justify-content:space-between;font-size:7pt;color:var(--t7)}
   .eyebrow{font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
-  h1{font-family:var(--fd);font-weight:700;font-size:17pt;line-height:1.08;letter-spacing:-.015em;margin:.1in 0 .05in;text-wrap:balance}
-  h1 .mark{background-image:linear-gradient(180deg,transparent 62%,rgba(46,110,98,.24) 62%);padding:0 .04em}
-  .lead{font-size:9.2pt;color:var(--t7);line-height:1.38}
-  .lead b{color:var(--ch);font-weight:600}
-  .h2{margin:.1in 0 .04in;font-family:var(--fd);font-weight:600;font-size:7.4pt;letter-spacing:.14em;text-transform:uppercase;color:var(--ac)}
-  .box{border:1px solid rgba(43,55,56,.12);border-radius:10px;background:#fff;padding:.08in .12in;font-size:8.7pt;line-height:1.36;flex-shrink:0}
-  .box.soft{background:var(--off2);border-color:transparent}
-  .box b{font-weight:600;color:var(--ch)}
-  .box ul{padding-left:.16in;margin:.02in 0 0}
-  .box li{margin:0 0 .025in}
-  .box li b{color:var(--ch)}
-  .dates{display:grid;grid-template-columns:1fr 1fr;gap:.08in;flex-shrink:0}
-  .dates .k{font-family:var(--fd);font-weight:600;font-size:7.2pt;letter-spacing:.12em;text-transform:uppercase;color:var(--ac)}
-  .dates .v{font-family:var(--fd);font-weight:700;font-size:10.5pt;line-height:1.12;margin:.02in 0 .015in}
-  .dates .d{font-size:8.4pt;color:var(--t7)}
-  .pay{display:grid;grid-template-columns:1fr 1fr;gap:.03in .16in;font-size:8.5pt}
-  .pay .k{color:var(--t7)}
-  .pay .v{font-family:var(--fd);font-weight:600}
-  .note{font-size:8pt;color:var(--t7);line-height:1.35;margin-top:.04in}
-  .foot{margin-top:auto;padding-top:.1in;font-size:8.6pt;color:var(--t7);line-height:1.42}
-  .foot b{color:var(--ch);font-weight:600}
-  .foot .url{font-family:var(--fd);font-weight:600;color:var(--ac)}
-  .tiny{font-size:6.8pt;color:var(--g3);margin-top:.04in}
-  /* página 2 · el acuerdo */
-  .cl{display:grid;grid-template-columns:1.02in 1fr;gap:.03in .13in;font-size:8.3pt;line-height:1.33;flex-shrink:0}
-  .cl .k{font-family:var(--fd);font-weight:600;font-size:8.2pt;color:var(--ac);padding-top:.01in}
-  .cl .v b{font-weight:600}
-  .cl .sep{grid-column:1/-1;border-top:1px solid rgba(43,55,56,.1);margin:.02in 0}
-  .sign{margin-top:auto;padding-top:.08in;display:grid;grid-template-columns:1fr 1fr;gap:.3in;flex-shrink:0}
-  .sign div{border-top:1px solid var(--ch);padding-top:.05in;font-size:8.2pt;color:var(--t7)}
-  .sign div b{display:block;color:var(--ch);font-weight:600;font-size:8.8pt}
+  h1{font-family:var(--fd);font-weight:700;font-size:21pt;line-height:1.1;letter-spacing:-.02em;margin-top:.04in}
+  .meta{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--g1);border-bottom:1px solid var(--g1);margin-top:.1in}
+  .meta div{padding:.06in .1in .06in 0} .meta div+div{padding-left:.1in;border-left:1px solid var(--off2)}
+  .meta span{display:block;font-family:var(--fd);font-weight:600;font-size:6.6pt;letter-spacing:.1em;text-transform:uppercase;color:var(--t7)}
+  .meta b{font-family:var(--fd);font-weight:600;font-size:9pt}
+  p.intro{font-size:9.8pt;line-height:1.5}
+  h2{font-family:var(--fd);font-weight:600;font-size:10.5pt;letter-spacing:-.005em;display:flex;align-items:baseline;gap:.08in;margin-bottom:.05in}
+  h2 .n{font-size:8pt;color:var(--ac);font-weight:700}
+  table{width:100%;border-collapse:collapse;font-size:9pt}
+  th{font-family:var(--fd);font-weight:600;font-size:6.8pt;letter-spacing:.1em;text-transform:uppercase;color:var(--t7);text-align:left;padding:.04in .08in;border-bottom:1px solid var(--g1)}
+  td{padding:.06in .08in;border-bottom:1px solid var(--off2);vertical-align:top;line-height:1.4}
+  td.k{width:1.75in;font-family:var(--fd);font-weight:600;color:var(--ch)}
+  td .s{display:block;color:var(--t7);font-size:8.4pt}
+  .tag{font-family:var(--fd);font-weight:600;font-size:6.6pt;letter-spacing:.06em;text-transform:uppercase;color:var(--ac);background:var(--mint2);border-radius:99px;padding:.01in .07in;margin-left:.05in;white-space:nowrap}
+  .note{font-size:8.6pt;color:var(--t7);margin-top:.06in}
+  .note b{color:var(--ch)}
+  .pay td.k{width:1.75in} .pay td b{font-family:var(--fd);font-weight:600}
+  .cl td.num{width:.3in;font-family:var(--fd);font-weight:700;color:var(--ac)}
+  .cl td.k{width:1.45in}
+  .sign{display:grid;grid-template-columns:1fr 1fr;gap:.6in;margin-top:.35in}
+  .sign div{border-top:1px solid var(--ch);padding-top:.05in;font-size:8.4pt;color:var(--t7)}
+  .sign b{display:block;font-family:var(--fd);font-weight:600;font-size:9.2pt;color:var(--ch)}
+  .accept{font-size:9pt;padding:.1in .14in;background:#fff;border:1px solid var(--g1);border-radius:.08in}
+  .p1{gap:.1in}
+  .p1 td{padding:.035in .08in}
+  .p1 h2{margin-bottom:.02in}
+  .p1 .note{margin-top:.03in}
+  .p1 p.intro{font-size:9.4pt;line-height:1.45}
+  .p1 .meta{margin-top:.07in}
+  .p1 table{font-size:8.8pt}
 </style></head><body>
 
-<!-- ═══ PÁGINA 1 · BIENVENIDA ═══ -->
-<section class="page">
-  <div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+<!-- ═══ PÁGINA 1 · CARTA DE BIENVENIDA ═══ -->
+<section class="page p1">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
 <defs>
 <clipPath id="clip-0">
 <path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
@@ -79,50 +84,70 @@ La CLABE queda como [CLABE] hasta que se defina la cuenta.
 <g clip-path="url(#clip-1)">
 <path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
 </g>
-</svg>
-<span class="eyebrow">Socio Fundador · bienvenida</span></div>
-
-  <h1>Bienvenido, <span class="mark">[Nombre].</span><br>Entras con los primeros cinco.</h1>
-  <p class="lead">Desde hoy, <b>tu operación moldea lo que Zenet va a ser</b>. Aquí está todo lo que necesitas para arrancar: qué incluye tu primer mes, tus fechas, qué mandarme y cómo se paga. Nada más.</p>
-
-  <p class="h2">Lo que incluye tu mes 1</p>
-  <div class="box soft"><b>Tu diagnóstico</b> con tus documentos — en PDF y en la app · <b>tus compras</b> corriendo con tus facturas · y <b>yo, directo, cada semana</b>.</div>
-
-  <p class="h2">Tus fechas</p>
-  <div class="dates">
-    <div class="box"><div class="k">Tus documentos</div><div class="v">antes del [día]</div><div class="d">por WhatsApp, como los tengas</div></div>
-    <div class="box"><div class="k">Tu diagnóstico</div><div class="v">[día] · [hora]</div><div class="d">[lugar] · lo vemos juntos, 30 min. <b>Tu mes 1 empieza ese día</b>; tu fecha de corte cada mes: el [día].</div></div>
-  </div>
-
-  <p class="h2">Qué mandar — como lo tengas</p>
-  <div class="box">
-    <ul>
-      <li><b>Empieza por estos dos</b> <i>(juntos valen más que separados)</i>: tu <b>recetario o fichas técnicas</b> · tu <b>inventario</b> — perecederos y no perecederos, o tu lista de insumos con unidades y presentación de compra.</li>
-      <li><b>Tu carta o menú</b> <i>(fotos sirven)</i>.</li>
-      <li><b>Tus últimas facturas de compra</b> — cinco o más, fotos del celular.</li>
-      <li><b>Tus costos</b>: estado de resultados, o los costos de operación y servicios desglosados — renta, nómina, luz, gas, agua, internet, plataformas — lo que tengas, aunque sea en un cuaderno.</li>
-      <li><b>Cómo operas</b>: manuales, protocolos, roles, checklists — lo que esté escrito. Si ya tienes costeo de recetas, también.</li>
-    </ul>
-    <p class="note"><b>¿Tienes poco de esto? También sirve.</b> No limpies, no ordenes, no conviertas nada — mándalo tal cual, por WhatsApp.</p>
-  </div>
-
-  <p class="h2">Cómo se paga</p>
-  <div class="box">
-    <div class="pay">
-      <span class="k">Mes 1</span><span class="v">$2,500 + IVA · una sola vez, hoy</span>
-      <span class="k">Beneficiario</span><span class="v">[Beneficiario]</span>
-      <span class="k">Banco · CLABE</span><span class="v">[Banco] · [CLABE]</span>
-      <span class="k">Concepto</span><span class="v">Zenet · mes 1 · [Restaurante]</span>
+</svg>Programa Socio Fundador</div><div class="r">Carta de bienvenida</div></div>
+  <div>
+    <div class="eyebrow">Programa Socio Fundador · lugar [n] de 5</div>
+    <h1>Bienvenido, [Nombre].</h1>
+    <div class="meta">
+      <div><span>Restaurante</span><b>[Restaurante]</b></div>
+      <div><span>Sucursales</span><b>[n]</b></div>
+      <div><span>RFC</span><b>[RFC]</b></div>
+      <div><span>Fecha</span><b>[fecha]</b></div>
     </div>
-    <p class="note">En cuanto llegue la transferencia te mando la <b>factura</b> a [correo] con el RFC que me diste. Desde el mes 2: <b>$1,500 + IVA por adelantado, en tu fecha de corte</b>, con cinco días para pagar. Te aviso dos días antes.</p>
+  </div>
+  <p class="intro">Desde hoy entras con los primeros cinco Socios Fundadores de Zenet: <b>tu operación moldea lo que Zenet va a ser</b>. En este documento está lo que necesitas para arrancar: qué incluye tu primer mes, tus fechas, qué mandarme y los datos para el pago. En la página 2 está lo que acordamos.</p>
+
+  <div>
+    <h2><span class="n">1</span>Lo que incluye tu primer mes</h2>
+    <table>
+      <tr><td class="k">Tu diagnóstico</td><td>De tu operación, con tus documentos. Te lo entrego en PDF y queda en la app; lo vemos juntos.</td></tr>
+      <tr><td class="k">Compras</td><td>Tus compras corriendo con tus facturas desde la primera semana.</td></tr>
+      <tr><td class="k">Acompañamiento</td><td>Alan, directo, cada semana.</td></tr>
+    </table>
   </div>
 
-  <div class="foot"><div class="tiny"><b>Alan Bahena</b> · <span class="url">zenetapp.com</span> · alan@zenetapp.com · © 2026 Zenet® · Página 1 de 2</div></div>
+  <div>
+    <h2><span class="n">2</span>Tus fechas</h2>
+    <table>
+      <tr><td class="k">Envío de documentos</td><td>Antes del <b>[día]</b>, por WhatsApp, como los tengas.</td></tr>
+      <tr><td class="k">Entrega del diagnóstico</td><td><b>[día] · [hora]</b> · [lugar] · lo vemos juntos, 30 minutos.</td></tr>
+      <tr><td class="k">Inicio del primer mes</td><td>El día que recibes tu diagnóstico.</td></tr>
+      <tr><td class="k">Fecha de corte</td><td>El <b>[día]</b> de cada mes.</td></tr>
+    </table>
+  </div>
+
+  <div>
+    <h2><span class="n">3</span>Qué mandar, como lo tengas</h2>
+    <table>
+      <tr><th>Documento</th><th>Qué sirve</th></tr>
+      <tr><td class="k">Recetario o fichas técnicas</td><td>Lo que tengas: recetas con cantidades, fichas técnicas o notas.</td></tr>
+      <tr><td class="k">Inventario</td><td>Perecederos y no perecederos, o tu lista de insumos con unidades y presentación de compra.</td></tr>
+      <tr><td class="k">Carta o menú</td><td>Fotos sirven.</td></tr>
+      <tr><td class="k">Historial de compras</td><td>Un documento con tus compras de las últimas semanas o meses: fecha, insumo, proveedor, cantidad y precio. En Excel o PDF; si no lo tienes así, fotos de tus facturas.</td></tr>
+      <tr><td class="k">Costos</td><td>Estado de resultados, o los costos de operación desglosados: renta, nómina, luz, gas, agua, internet, plataformas. Aunque sea en un cuaderno.</td></tr>
+      <tr><td class="k">Cómo operas</td><td>Manuales, protocolos, roles, checklists: lo que esté escrito. Si ya tienes costeo de recetas, también.</td></tr>
+    </table>
+    <p class="note"><b>¿Tienes poco de esto? También sirve.</b> No limpies, no ordenes, no conviertas nada: mándalo tal cual. El recetario y el inventario juntos valen más que separados.</p>
+  </div>
+
+  <div>
+    <h2><span class="n">4</span>Datos para el pago</h2>
+    <table class="pay">
+      <tr><td class="k">Mensualidad</td><td><b>$2,000 + IVA por sucursal al mes</b> · desde la tercera sucursal, $1,500. El primer mes se paga hoy.</td></tr>
+      <tr><td class="k">Beneficiario</td><td>[Beneficiario]</td></tr>
+      <tr><td class="k">Banco</td><td>[Banco]</td></tr>
+      <tr><td class="k">CLABE</td><td><b>[CLABE]</b></td></tr>
+      <tr><td class="k">Concepto</td><td>Zenet · primer mes · [Restaurante]</td></tr>
+    </table>
+    <p class="note">En cuanto llegue la transferencia te mando la <b>factura</b> a [correo] con el RFC de arriba. Los meses siguientes se pagan por adelantado en tu fecha de corte, con cinco días para pagar. Te aviso dos días antes.</p>
+  </div>
+
+  <div class="ftr"><span>Zenet · zenetapp.com · alan@zenetapp.com · © 2026 Zenet® · Marca registrada ante el IMPI</span><span>[Restaurante] · página 1 de 2</span></div>
 </section>
 
 <!-- ═══ PÁGINA 2 · LO QUE ACORDAMOS ═══ -->
 <section class="page">
-  <div class="top"><svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
+  <div class="hdr"><div class="l"><svg class="hlogo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1975.12 417.15">
 <defs>
 <clipPath id="clip-0">
 <path clip-rule="nonzero" d="M 1848 32 L 1972.671875 32 L 1972.671875 366 L 1848 366 Z M 1848 32 "/>
@@ -141,42 +166,35 @@ La CLABE queda como [CLABE] hasta que se defina la cuenta.
 <g clip-path="url(#clip-1)">
 <path fill-rule="nonzero" fill="#2B3738" fill-opacity="1" d="M 300.960938 380.738281 L 300.960938 380.726562 C 139.863281 380.488281 37.132812 334.8125 37.132812 303.335938 C 37.132812 294.953125 44.613281 285.570312 58.34375 276.296875 C 107.78125 302.496094 189.070312 320.976562 300.960938 321.117188 C 412.980469 320.976562 494.425781 302.476562 543.875 276.238281 C 557.328125 285.480469 564.785156 294.984375 564.785156 303.34375 C 564.785156 334.816406 462.054688 380.5 300.960938 380.738281 Z M 300.960938 95.183594 C 188.9375 95.320312 107.492188 113.824219 58.042969 140.0625 C 44.589844 130.820312 37.132812 121.3125 37.132812 112.957031 C 37.132812 81.484375 139.863281 35.800781 300.960938 35.558594 L 300.960938 35.570312 C 462.054688 35.808594 564.785156 81.488281 564.785156 112.960938 C 564.785156 121.34375 557.304688 130.730469 543.574219 140 C 494.132812 113.804688 412.847656 95.320312 300.960938 95.183594 Z M 600.347656 208.15625 C 600.347656 201.25 598.765625 194.335938 595.65625 187.511719 C 582.027344 228.644531 527.957031 245.621094 501.457031 255.582031 C 455.472656 272.425781 386.570312 285.421875 300.960938 285.546875 L 300.960938 285.539062 C 215.613281 285.410156 147 272.472656 101.023438 255.703125 C 147.003906 238.953125 215.695312 226.0625 300.960938 225.933594 C 497.515625 225.6875 600.347656 168.984375 600.347656 112.960938 C 600.347656 56.945312 497.515625 0.242188 300.960938 -0.00390625 C 104.402344 0.242188 1.570312 56.941406 1.570312 112.957031 C 1.570312 125.972656 6.746094 143.410156 27.15625 161.039062 C 10.359375 175.90625 1.570312 192.03125 1.570312 208.140625 C 1.570312 215.046875 3.152344 221.964844 6.261719 228.785156 C 19.890625 187.65625 73.960938 170.679688 100.460938 160.71875 C 146.445312 143.871094 215.347656 130.878906 300.960938 130.75 L 300.960938 130.761719 C 386.304688 130.890625 454.917969 143.828125 500.894531 160.597656 C 454.914062 177.34375 386.222656 190.238281 300.960938 190.363281 L 300.960938 190.367188 C 104.402344 190.609375 1.570312 247.3125 1.570312 303.335938 C 1.570312 359.355469 104.402344 416.058594 300.960938 416.300781 C 497.515625 416.058594 600.347656 359.359375 600.347656 303.34375 C 600.347656 290.324219 595.171875 272.890625 574.761719 255.261719 C 591.558594 240.394531 600.347656 224.269531 600.347656 208.15625 "/>
 </g>
-</svg>
-<span class="eyebrow">Socio Fundador · lo que acordamos</span></div>
-
-  <h1>Lo que acordamos.</h1>
-  <p class="lead">Escrito para que los dos lo tengamos igual. Sin letras chiquitas.</p>
-
-  <div class="cl" style="margin-top:.08in">
-    <span class="k">Las partes</span><span class="v"><b>[Nombre]</b> · [Restaurante] · RFC [RFC] — y <b>Alan Bahena</b>, fundador de Zenet, Tijuana, Baja California.</span>
-    <span class="sep"></span>
-    <span class="k">El programa</span><span class="v">Entras como <b>Socio Fundador de Zenet</b>, uno de los primeros cinco. <b>Mes 1: $2,500 + IVA</b> — incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas y a Alan directo cada semana. <b>Desde el mes 2: $1,500 + IVA al mes, por sucursal, fijo para siempre</b> mientras seas Socio Fundador. Quien entre después pagará más.</span>
-    <span class="sep"></span>
-    <span class="k">Sin compromiso</span><span class="v">Te vas cuando quieras: me avisas y no se cobra el mes siguiente. El mes ya pagado no se reembolsa — salvo el mes 1, si el diagnóstico no te sirve.</span>
-    <span class="sep"></span>
-    <span class="k">La devolución</span><span class="v">El día que te entrego tu diagnóstico, si no te dice nada que te sirva, me lo dices ahí mismo y <b>te regreso el pago del mes 1 completo</b>. Sin explicaciones.</span>
-    <span class="sep"></span>
-    <span class="k">Tus documentos</span><span class="v">Los ve una sola persona: Alan. No se comparten, no se venden, no se usan para otra cosa. Si pides que se borren, se borran. Detalle en <b>zenetapp.com/privacidad</b>.</span>
-    <span class="sep"></span>
-    <span class="k">Lo que Zenet te pide</span><span class="v">Tu retroalimentación honesta y dejarme ver tu operación de verdad — así se construye algo que sirva contigo, no para ti en abstracto.</span>
-    <span class="sep"></span>
-    <span class="k">Cuándo corre</span><span class="v">Tu mes 1 empieza el día que recibes tu diagnóstico. Los meses siguientes corren de fecha de corte a fecha de corte.</span>
-    <span class="sep"></span>
-    <span class="k">Pagos</span><span class="v">Cada mes se paga por adelantado en tu fecha de corte, con cinco días de margen. Si no llega, el servicio se pausa hasta que llegue — sin recargos. Si pasan treinta días, el lugar se libera y el precio de fundador se pierde.</span>
-    <span class="sep"></span>
-    <span class="k">Facturación</span><span class="v">Cada pago con factura (CFDI) al RFC y correo que me diste. Pagos por transferencia.</span>
-    <span class="sep"></span>
-    <span class="k">Vigencia</span><span class="v">Mientras seas Socio Fundador. Cuando Zenet se constituya formalmente, este acuerdo pasa a nombre de la sociedad con las mismas condiciones para ti.</span>
+</svg>Programa Socio Fundador</div><div class="r">Lo que acordamos</div></div>
+  <div>
+    <div class="eyebrow">Programa Socio Fundador · acuerdo</div>
+    <h1>Lo que acordamos.</h1>
+    <p class="note" style="margin-top:.06in;font-size:9.2pt">Escrito para que los dos lo tengamos igual. Sin letras chiquitas.</p>
   </div>
 
-  <p class="note" style="margin-top:.08in">Queda acordado con tu <b>"va"</b> por WhatsApp — o con tu firma aquí, si prefieres tenerlo en papel.</p>
+  <table class="cl">
+    <tr><td class="num">1</td><td class="k">Las partes</td><td><b>[Nombre]</b> · [Restaurante] · RFC [RFC], y <b>Alan Bahena Muñoz</b>, fundador de Zenet, con domicilio en Tijuana, Baja California.</td></tr>
+    <tr><td class="num">2</td><td class="k">El programa</td><td>Entras como <b>Socio Fundador de Zenet</b>, uno de los primeros cinco. <b>$2,000 + IVA al mes por sucursal, desde el primer mes</b>; desde la tercera sucursal, $1,500. El primer mes incluye tu diagnóstico con tus documentos, tus compras corriendo con tus facturas y a Alan directo cada semana. El precio de lista es de $3,000 por sucursal.</td></tr>
+    <tr><td class="num">3</td><td class="k">Tu precio</td><td><b>Fijo para siempre</b> mientras seas Socio Fundador, sin aumentos.</td></tr>
+    <tr><td class="num">4</td><td class="k">Sin compromiso</td><td>Te vas cuando quieras: me avisas y no se cobra el mes siguiente. El mes ya pagado no se reembolsa, salvo el primer mes si el diagnóstico no te sirve.</td></tr>
+    <tr><td class="num">5</td><td class="k">La devolución</td><td>El día que te entrego tu diagnóstico, si no te dice nada que te sirva, me lo dices ahí mismo y <b>te regreso el pago del primer mes completo</b>. Sin explicaciones.</td></tr>
+    <tr><td class="num">6</td><td class="k">Cuándo corre</td><td>Tu primer mes empieza el día que recibes tu diagnóstico. Los meses siguientes corren de fecha de corte a fecha de corte.</td></tr>
+    <tr><td class="num">7</td><td class="k">Pagos</td><td>Cada mes se paga por adelantado en tu fecha de corte, con cinco días de margen. Si no llega, el servicio se pausa hasta que llegue, sin recargos. Si pasan treinta días, el lugar se libera y el precio de fundador se pierde.</td></tr>
+    <tr><td class="num">8</td><td class="k">Facturación</td><td>Cada pago con factura (CFDI) al RFC y correo que me diste. Pagos por transferencia.</td></tr>
+    <tr><td class="num">9</td><td class="k">Tus documentos</td><td>Los ve una sola persona: Alan. No se comparten, no se venden y no se usan para otra cosa. Si pides que se borren, se borran. Detalle en <b>zenetapp.com/privacidad</b>.</td></tr>
+    <tr><td class="num">10</td><td class="k">Lo que Zenet te pide</td><td>Tu retroalimentación honesta y dejarme ver tu operación de verdad: así se construye algo que sirva contigo, no para ti en abstracto.</td></tr>
+    <tr><td class="num">11</td><td class="k">Vigencia</td><td>Mientras seas Socio Fundador. Cuando Zenet se constituya formalmente, este acuerdo pasa a nombre de la sociedad con las mismas condiciones para ti.</td></tr>
+  </table>
+
+  <p class="accept">Las partes aceptan las condiciones de este acuerdo con su firma, en papel o electrónica.</p>
 
   <div class="sign">
-    <div><b>[Nombre]</b>[Restaurante] · fecha: ________</div>
-    <div><b>Alan Bahena</b>Zenet · fecha: ________</div>
+    <div><b>[Nombre]</b>[Restaurante] · fecha: ______________</div>
+    <div><b>Alan Bahena Muñoz</b>Fundador de Zenet · fecha: ______________</div>
   </div>
 
-  <div class="foot" style="margin-top:.08in;padding-top:.06in"><div class="tiny">© 2026 Zenet® · Marca registrada ante el IMPI · Página 2 de 2 · v0.1 · [fecha]</div></div>
+  <div class="ftr"><span>Zenet · zenetapp.com · alan@zenetapp.com · © 2026 Zenet® · Marca registrada ante el IMPI</span><span>[Restaurante] · página 2 de 2</span></div>
 </section>
 
 </body></html>

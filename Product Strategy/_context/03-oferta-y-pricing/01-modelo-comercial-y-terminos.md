@@ -3,7 +3,7 @@ name: Modelo comercial y términos
 description: Documenta la estructura comercial cliente-facing de Zenet Phase 1 · cómo se compra, qué se firma, qué se cobra, cómo se cancela. Define modelo canónico pure subscription (NO setup fee · NO project pricing · NO Mantenimiento) · 5 razones canónicas · términos de compromiso (90-day minimum + annual prepay) · términos de inicio (ventana de cancelación 7 días + primer cargo Day 8 con agency trabajando desde Day 1 cleanup + estandarización · NO fase gratuita framing) · self-serve in-app cancellation (Owner role · admin panel) · 9 anti-positions con razón estructural · estructura contractual virtual diferenciada (click-wrap Esencial-Pro-Multi · e-signature Enterprise) · 5 compliance anchors (governing law MX · LFPDPPP · CFDI · WhatsApp · Anthropic) con pointer a operational readiness doc. Hereda 10 decisiones canónicas de marco doc 00. Validation pending design partners.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-09-16
+last_updated: 2026-10-05
 status: active
 version: 0.1.1
 owner: Alan Bahena
@@ -14,6 +14,8 @@ owner: Alan Bahena
 > ## 🔄 Nota de campo · 2026-09-16 — la oferta Socio Fundador que está en la calle se desvía de este canon en cinco puntos
 >
 > **De dónde sale:** retro del 13-sep + `04-go-to-market/12-proceso-de-ventas-fase-a.md` §3 (la oferta como se dice en la mesa) · escrita en el **flyer** y en el **kit de bienvenida** (`_templates/kit-bienvenida-socio-fundador.html` p.2 *"Lo que acordamos"*). **Este doc no se reescribe:** el canon sigue siendo la hipótesis para el cliente regular post-Fase A; lo de abajo es lo que la Fase A prueba con los primeros cinco. **Si funciona, gradúa a la v0.2 de este doc; si no, muere aquí** (trigger: §8.2 · 3+ Socios Fundadores pagados).
+>
+> **Actualización 5-oct-2026 (decisión del fundador): precio fijo, sin mes 1 más caro.** *Precio de lista $3,000 + IVA por sucursal al mes · precio de Socio Fundador **$2,000 + IVA por sucursal al mes, desde el primer mes**, congelado para siempre mientras siga activo · desde la tercera sucursal, $1,500 · sin mínimo de sucursales · se paga el día del sí; el mes 1 corre desde la entrega del diagnóstico; si ese día no le sirve, se regresa el primer mes.* Cambian las desviaciones **(1)** — vuelve un descuento sobre la lista (33 %), porque la lista ya existe y es la del cliente comercial; el ancla que se prueba es $2,000 — y **(2)** — desaparece el mes 1 de $2,500; el trabajo del primer mes lo absorbe el fundador como inversión de la Fase A. Margen estimado con uso promedio: ~60 % (`04-viabilidad` §3, sin el tiempo del fundador). Materiales al día: flyer de la oferta, kit de bienvenida, script de sesión. Lo de abajo queda como registro de la versión del 13-sep.
 >
 > **La oferta, en una línea:** *mes 1 $2,500 + IVA (diagnóstico de la operación + Compras corriendo con sus facturas + Alan directo cada semana) · desde el mes 2 $1,500 + IVA al mes por sucursal, fijo para siempre · cinco lugares · sin compromiso · precio no negociable · única concesión: se paga hoy y, el día de la entrega, si el diagnóstico no le dice nada que le sirva, se regresa el mes 1 completo.*
 >
