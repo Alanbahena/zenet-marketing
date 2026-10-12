@@ -9,7 +9,7 @@ version: 0.1
 owner: Alan Bahena
 ---
 
-> **Nota 5-oct-2026 (decisión del fundador):** el precio de lista que se dice hoy en la Fase A es **$3,000 + IVA por sucursal al mes**, y el de Socio Fundador **$2,000** (desde la 3ª sucursal, $1,500). Las tiers de este doc (Esencial $1,500 · Pro $1,999 · Multi-Sitio $1,799) quedan como la hipótesis anterior; se revisan contra la lista de $3,000 al abrir a clientes comerciales, con los datos de los primeros Socios Fundadores. → `02-programa-socio-fundador-offer.md` (actualización 5-oct).
+> **Nota 5-oct-2026 (decisión del fundador):** el precio de lista que se dice hoy en la Fase A es **$4,000 + IVA por sucursal al mes** (8-oct; el 5-oct era $3,000), y el de Socio Fundador **$2,000** (8-oct: con 5 usuarios incluidos por sucursal y $250 por usuario extra; sin descuento desde la 3ª sucursal; grupos a la medida, como Enterprise). Las tiers de este doc (Esencial $1,500 · Pro $1,999 · Multi-Sitio $1,799) quedan como la hipótesis anterior; se revisan contra la lista de $3,000 al abrir a clientes comerciales, con los datos de los primeros Socios Fundadores. → `02-programa-socio-fundador-offer.md` (actualización 5-oct).
 
 # Pricing tiers hipótesis
 
