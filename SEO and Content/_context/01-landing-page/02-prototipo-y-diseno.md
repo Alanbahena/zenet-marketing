@@ -2,9 +2,9 @@
 name: Landing page · prototipo y diseño
 description: v4.0 (2026-09-10) = el spec de diseño de la landing v4, **EN VIVO en zenetapp.com (tag v4.0)**, como bloque arriba; debajo, intacto, el spec v3.3 de lo que está EN VIVO. v4 — 10 secciones · pantallas reales donde existe la pantalla · el dominó como gráfica en §2 con micro-motion · el trato sin capturas (§4 promete, §5 prueba) · Etapa 1 = Compras + Zenet en WhatsApp · puntos de progreso en las tres escenas del camino · la consulta se conserva como cierre de §5 · §6 En concreto en acordeón móvil · presupuesto de peso · plan de lab/ · QA y deploy gate v4. Anterior — El spec de diseño de la landing v3 de Zenet — EN VIVO en zenetapp.com (v3.0 landing 2026-08-07 · v3.1 /demo · v3.2 hablemos 3 pasos 2026-08-20 · **v3.3 pasada de copy del fundador + la animación del dominó en la Etapa 3, 2026-09-02**). 9 secciones, regla "los componentes hablan", pieza estrella = El camino (3 etapas animadas + la consulta), hero sólido con colores compuestos, esquema SVG canónico anti-WebKit, tokens :root teal, Onest+Hanken, grid 12-col 1280. Workflow de edición (scripts python + asserts) y QA (harness lab/_qa.html + Chrome headless). Fuente de verdad del diseño. Agent-readable.
 type: seo-content
-last_updated: 2026-10-06
+last_updated: 2026-10-08
 status: active
-version: 4.3
+version: 4.6
 owner: Alan Bahena
 ---
 
@@ -345,3 +345,16 @@ Idea estacionada con gate: **"Etapa 4 · Resultados"** (animación de la curva d
 - **Avance:** solo cada 7.5 s mientras la sección está a la vista (IntersectionObserver 35 %), con barra de progreso; al primer clic o tecla (Enter · Espacio · flechas arriba/abajo) se detiene. `?step=N` abre en esa pestaña sin avanzar (para QA).
 - **Celular (≤ 820 px):** una columna; el escenario se **mueve dentro de la pestaña abierta** (`.cz-slot`) como acordeón; las vistas dejan de ser absolutas; en Compras la burbuja de WhatsApp va arriba de la tabla y la respuesta de Zenet se oculta. Los clics dentro del escenario no cambian de pestaña.
 - **Prefijo `cz-`** en todo (no choca con el index). Se retiraron los estilos `.concreto`/`.cc*` de la v4.
+
+**Build v4.4 · hero alineado con el flyer** (`01-copy` v0.11). Rama `hero-v44` (tres vistas previas) → merge `--no-ff` → tag `v4.4`. Verificado en producción.
+- `.subhead` con la definición nueva + `.hero .subhead { text-wrap: balance; }` (evita el renglón huérfano).
+- **4ª etiqueta** `.hero-tag.t4` *"Con menos trabajo a mano"*: anclada al nodo n3 (abajo a la derecha) con `left: calc(86.4% + 10px); top: 67%` y la línea punteada a la izquierda (`::before`, igual que t2). `.hero-tags` (celular y lectores de pantalla) suma el 4º `<li>`.
+
+**Build v4.5 · La realidad de hoy antes de El momento** (`01-copy` v0.12). Rama `problema-v45` (tres vistas previas) → merge `--no-ff` → tag `v4.5`. Verificado en producción (orden `#problema` → `#momento`).
+- **Orden:** los bloques `<section id="problema">` y `<section id="momento">` se intercambiaron; `#problema` pasa a `section-alt` y `#momento` a `section` para conservar la alternancia de fondos.
+- **Tarjetas:** texto nuevo; el dibujo de personas clave pasa a la 03; **dibujo nuevo en la 01** (mismo esquema: `viewBox 0 0 100 56`, trazo `#2B3738` a .62): 5 renglones (punto + línea de largo variable + valor corto a .35) y el 4º con fondo `#F4DED0` como el error — sin rojo.
+
+**Build v4.6 · plano de En concreto = el del flyer v0.22** (`01-copy` v0.13). Rama `concreto-v46` → merge → tag `v4.6`. Verificado en producción.
+- `data-k` nuevos: `rec · est · pro` (Cocina) y `com · prov · alm · cos` (Administración). `ON = {1:[est, alm], 2:[cos, rec], 3:[com, prov], 4:[pro], 5:[]}` · `ORDER5` con las siete.
+- `.cz-plano` pasa a `grid-template-columns: 2.1fr 1fr` y `.cz-pase` a `left: 67.7%` (Piso más angosto, como el flyer) para que las cuatro de Administración quepan en un renglón en escritorio; en celular la 4ª baja de renglón y la caja crece.
+- QA con un harness temporal (copia de `lab/_shot.html` que pasa `?step=N` al iframe; no se commitea).

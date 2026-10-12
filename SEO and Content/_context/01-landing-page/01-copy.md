@@ -1,10 +1,10 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.13 = plano de §6 En concreto con las etiquetas del flyer v0.22 (tag v4.6). v0.12 = §2/§3 intercambiadas: La realidad de hoy va justo después del hero con los tres problemas del flyer v0.22 y subtítulo nuevo; El momento pasa a §3 (tag v4.5). v0.11 = hero v4.4: definición con "tu inventario" y una 4ª etiqueta "Con menos trabajo a mano" (tag v4.4). v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-10-05
+last_updated: 2026-10-08
 status: active
-version: 0.10
+version: 0.13
 owner: Alan Bahena
 ---
 
@@ -38,6 +38,21 @@ owner: Alan Bahena
 # — COPY v4 (v0.5 · en construcción) —
 
 > Las secciones de la v4 se escriben aquí, en orden de página, una por turno. Debajo de este bloque sigue **el copy v3.3 en vivo** (v0.4), intacto, como base e historia. Cuando la v4 se despliegue, la v0.4 se archiva completa.
+
+## v4.4 · 1. Hero — ✅ EN VIVO (tag `v4.4`)
+
+Alineado con el flyer de primer toque v0.21-v0.22, después de la 2ª visita a Alma Verde.
+
+**Definición:**
+> Zenet es un sistema con inteligencia artificial, fácil de usar, para el back-of-house de tu restaurante: desde tus compras, tu inventario y tus procesos hasta tus recetas.
+
+**Etiquetas de la figura (cuatro, dos por lado):** *Analiza lo que ya tienes · Lo pone en orden · Lo mantiene al día · **Con menos trabajo a mano*** (nueva, abajo a la derecha · en celular, 2 + 2 debajo de la figura).
+
+**Remate:** sin cambio — *"Tú decides, Zenet lo carga y tu margen lo nota."*
+
+**Por qué:** *"tu inventario"* entra como en el flyer · *"con menos trabajo a mano"* responde al nuevo problema #1 (*"Todo se hace a mano"*). Se probó al final de la definición (4 renglones; luego `text-wrap: balance` para evitar el renglón huérfano) y el fundador prefirió sacarlo a una **4ª etiqueta**, que además llena el hueco de abajo a la derecha que tenía la figura. Las otras tres etiquetas empiezan con verbo y esta no: se lee como el resultado de las tres (alternativa con verbo: *"Te quita trabajo a mano"*). *"Menos"*, no *"sin"*: el operador todavía manda documentos y revisa.
+
+**Pendiente para coincidir con el flyer:** §3 *La realidad de hoy* (los tres problemas nuevos) y las etiquetas del plano de §6 *En concreto*.
 
 ## v4.0.2 · 1. Hero — ✅ EN VIVO (2026-10-05 · tag `v4.0.2`)
 
@@ -164,6 +179,27 @@ Headline, subhead, CTA y animación de la red **iguales a la v3.3** (ver §1 aba
 **Pendientes de esta sección:** ① ~~medio/URL del 40%~~ ✅ · ~~nombre de la presidenta~~ (la cita salió de la página el 10-sep) · ② las cifras entran también a `Market Research/05-market-insights/02-datos-de-mercado-tijuana-2026.md` (nota de research con etiquetas de origen) · ③ `lab/` móvil: el dominó en dos cadenas apiladas + pantalla + cita — si pesa, la pantalla se pliega y las cadenas se quedan.
 
 ---
+
+## v4.5 · 2. La realidad de hoy — ✅ EN VIVO (tag `v4.5`) · **ahora es la sección 2**
+
+**Orden nuevo (decisión del fundador):** hero → **La realidad de hoy** → **El momento** → Cómo trabaja → … Primero el reconocimiento (*¿esto me pasa?*), después el contexto con datos. Es el orden del flyer de primer toque (*¿Te suena?* justo después del logo). Los fondos se intercambiaron para que sigan alternando.
+
+**Eyebrow y titular:** sin cambio — *La realidad de hoy · Lo más caro de tu operación no se compra. Se carga.*
+**Subtítulo (del fundador):**
+> Detrás de cada restaurante, la administración se hace a mano, cambia todo el tiempo y depende de unas cuantas personas.
+
+Anticipa las tres tarjetas en orden. *"Detrás de"* = el back-of-house. Se ofreció *"casi todos"* en vez de *"cada"* (más preciso); el fundador se quedó con *"cada"*. Sale *"Muchos restaurantes sobreviven buscando más ventas…"*; la idea de ventas ≠ dinero sigue en el cierre.
+
+1. **Todo se hace a mano** *(dibujo nuevo: 5 renglones de captura, uno marcado en durazno como el error)*
+   Capturar facturas, contar el inventario, pasar todo al Excel renglón por renglón, llenar formatos. Son horas de trabajo y de desgaste que nadie ve. **Y cada captura a mano es un error esperando a pasar.**
+2. **Cada cambio se come tu margen** *(dibujo de la línea que cae)*
+   Sube el precio de un insumo, cambia un proveedor, sube la renta o la nómina, bajan las ventas, y lo que ordenaste hace meses ya no sirve. **Te enteras hasta el cierre, y toca rehacerlo todo.**
+3. **Todo depende de 1 a 3 personas clave** *(dibujo de las líneas que llegan a un punto)*
+   Puede ser tu administrador, tu gerente, tu chef o tú. Diseñan los procesos y los mantienen al día, cuidan el inventario y el margen, y toman las decisiones. Es un trabajo enorme, y vive en su cabeza. **Si una falta o se va, ¿qué se rompe?**
+
+**Cierre:** sin cambio — *Las ventas traen el dinero. La operación decide cuánto se queda.*
+
+**Trabajado con el fundador:** *"fricción"* → *"desgaste"* (palabra de cocina) · el cierre de la 2 pasa de *"ves cuánto vendes, no cuánto te queda"* (repetía el cierre de la sección) a *"y toca rehacerlo todo"* (*"estructurar"* → *"rehacer"*) · *"tu administrador"* entra (lo que vio en Alma Verde) · sale *"Trabajo pesado y alta rotación"* (lo manual pasa a la 1; quien se va, a la 3).
 
 ## v4.2 · 3. El problema — *La realidad de hoy* — ✅ EN VIVO (2026-10-05 · tag `v4.2`)
 
@@ -424,6 +460,20 @@ La tarjeta de dos columnas que ya está en producción: la afirmación + el chat
 **Cercas para `lab/`:** pantallas tal como son · datos ilustrativos declarados o de SF con permiso · **un sistema animado en tres etapas + el hero** (Etapas 1-2 = secuencias de pantallas con transiciones simples; la 3 = la única animación compleja) · `prefers-reduced-motion` = último frame · móvil: animación arriba, texto abajo.
 
 ---
+
+## v4.6 · 6. En concreto — plano alineado con el flyer v0.22 — ✅ EN VIVO (tag `v4.6`)
+
+Textos de las cinco pestañas sin cambio. Cambian las etiquetas del plano y lo que se enciende:
+- **Cocina:** Recetas · Estandarización · Protocolos *(antes: Recetas · Inventario · Equivalencias)*
+- **Administración:** Compras · Proveedores · Almacén · Costos *(antes: Compras · Costos · Manual Operativo)*
+
+| Pestaña | Se enciende |
+|---|---|
+| 01 Tu operación en orden | Estandarización · Almacén |
+| 02 Tus recetas, escritas y costeadas | Costos → Recetas |
+| 03 Tus compras y tus proveedores | Compras · Proveedores |
+| 04 El manual que el nuevo consulta solo | Protocolos (+ la Cocina) |
+| 05 Tu mano derecha, que conoce todo | todo el plano |
 
 ## v4.3 · 6. En concreto — ✅ EN VIVO (2026-10-06 · tag `v4.3`)
 
