@@ -2,9 +2,9 @@
 name: Bitácora semanal — Fase A
 description: Log corrido de las retros semanales de la Fase A (reclutamiento/validación de design partners). Una entrada por semana, la más reciente arriba, con formato fijo (foco previo · logros · qué funcionó · learnings · decisiones · scorecard H1-H6 · foco próxima semana). Carril: Notion ejecuta (Pipeline/tareas/Scorecard vivos) · esta bitácora recuerda (registro histórico agent-readable). Los learnings grandes gradúan a los docs canónicos (ICP/segmentación · learnings de validación `08` · decisions log de CLAUDE.md §4).
 type: product-strategy
-last_updated: 2026-10-04
+last_updated: 2026-10-11
 status: active
-version: 0.11
+version: 0.12
 owner: Alan Bahena
 ---
 
@@ -31,6 +31,66 @@ owner: Alan Bahena
 > ▸ 📊 Scorecard H1–H6 → delta de la semana + pointer a `10-scorecard-fase-a.md`
 > ▸ 🎯 Foco próxima semana
 > ```
+
+---
+
+## Semana 5–11 oct — "dos demos, la sesión más fuerte de la Fase A y un 'todavía no'"
+
+**▸ Foco que traíamos** (plan del 4-oct): **Lun 5** precio fijo → ✅ decidido (y ajustado el 8-oct, ver decisiones) · kit de bienvenida con la CLABE → ✅ **documento formal en hoja carta** · mensajes para la demo a Ali, Ana y Carlos de Alma Verde → ✅ **los tres, con el video de 2 min** · **Mar 6** mensaje a Juan Carlos Eguiluz → ✅ · contador (CFDI antes del primer cobro) → ❌ · mensaje al abogado → ✅ (contestó) · **Mié 7** ★ demo con Carlos de Alma Verde → ✅ · **Vie 9** demo con Ali en Palermo → ✅ · misión y visión → ❌.
+
+**▸ 🏆 Logros**
+- **★★ Las primeras dos sesiones con operador desde agosto.** Tres de los cuatro prospectos contestaron (Carlos de Alma Verde el mismo día, Juan Carlos el mismo día, Ali al día siguiente); solo Ana no.
+- **★★★ Alma Verde (mié 7): la sesión más fuerte de la Fase A.** Carlos, gerente de la sucursal Cacho, *"sorprendido y fascinado"*; Zenet como *"un servicio no negociable, como la luz o el agua"*. Llevó al fundador al **centro de distribución** (surte sucursales incluidas Tulum, Cancún y Mexicali): compras y almacén, todo a mano. Almacén: *"tienes nuestro apoyo para implementarlo"*. **Acuerdo:** documentos de Cacho → diagnóstico → presentación a Alma y al administrador de las sucursales → propuesta de primer Socio Fundador. Entrada #6 en `08`.
+- **Palermo (vie 9):** demo completa con Ali, gerente general. Le gustó y entendió el video, pero cree que el dueño no lo acepte hoy (procesos propios, cultura reservada, producto en construcción). Se llevó el diagnóstico de ejemplo y los dos flyers; pidió retomar en **enero**. **El precio se dijo con el punto y lo aceptó; su preocupación fue que suba antes de enero.** Entrada #7 en `08` (no suma al N: 2 de 6).
+- **La landing alineada con el flyer, de la v4.0.1 a la v4.6:** hero nuevo con la definición y cuatro etiquetas en la figura · *Cómo trabaja* = el video demo · *La realidad de hoy* pasa a §2 con los tres problemas nuevos · *En concreto* = cinco pestañas con el plano del restaurante.
+- **Flyer de primer toque v0.17 → v0.22** (problemas nuevos: todo a mano · cada cambio se come tu margen · personas clave; definición con *"con menos trabajo a mano"*; plano con Estandarización, Protocolos, Proveedores y Almacén).
+- **Precio y kit:** lista **$4,000**, Socio Fundador **$2,000** (la mitad), 5 usuarios incluidos y $250 por usuario extra; kit formal con cláusulas y firmas; run-sheets para las dos demos.
+- **Producto:** el fundador avanzó hasta la **Task 49**.
+
+**▸ ✅ Qué funcionó**
+- **El video de 2 minutos para abrir.** Los tres que contestaron lo vieron; Ali además entendió qué hace Zenet con el video y la landing.
+- **Enseñar el producto en vivo.** Con la app delante los dos gerentes enganchan; Carlos, que en la prueba de los cinco segundos no entendió la animación del hero, se fascinó con la demo.
+- **Ser honesto con lo que está en construcción.** No le costó la relación con ninguno de los dos.
+
+**▸ 💡 Learnings**
+1. **★★ Documentado no es digitalizado.** Alma Verde quedó como perfil ① (estandarizado) porque sus procesos están escritos, pero todo se ejecuta a mano y la carga está repartida en compras, almacén e inventario. A revisar en el ICP si se repite.
+2. **★★ La cultura pesa más que el tamaño.** Alma Verde (abierta) te enseñó todo; Palermo (alta cocina, clientela de alto poder adquisitivo, dueño fuera de la operación) cuida cómo hace las cosas y tardó en abrirse. Con el producto en construcción, lo que decide quién entra hoy parece ser **cuánto le duele el trabajo a mano y qué tan abierta es la operación**.
+3. **★★ Así llegan de verdad las compras:** perecederos comprados en persona en el mercado de abastos, sin factura · recibos que casi no se ven, cortados, con unidades mal escritas. Compras tiene que leer recibos malos (y avisar cuando no puede), capturar compras sin factura y normalizar unidades → repo de producción.
+4. **★ El contador engancha.** Lo que más le atrajo a Ali fue que las compras facturadas lleguen al contador. Segunda aparición del contador (en mayo, como el que puede frenar la venta).
+5. **★ El precio de un gerente de cadena no es el del ICP.** *"Quizá es barato por sucursal"* (Carlos, para 12-15 personas por lugar) → usuarios incluidos y grupos aparte, sin subir el precio de fundador. **No volver a mover el precio hasta que lo oiga un dueño del ICP.**
+6. **★★ Ofrecimos antes de calificar.** Con Ali la plática se fue a la demo desde el principio porque él la pidió; sabemos poco de sus problemas fuera de compras y el contador. En las dos demos el precio se dijo a gerentes que no pasan el filtro (⑤ = 2, ④ = 0). **Los primeros 10 minutos son para los seis calificadores**, aunque el otro pida ver el producto.
+7. **★★ El precio congelado engancha.** Lo dijimos dos veces con el punto y nadie lo rechazó; Ali no preguntó cuánto, preguntó si iba a subir. Declarado y de quien no paga, pero es la primera señal de campo sobre el candado del Socio Fundador.
+8. **★★ La entrada se destrabó al mandar.** Después de ocho semanas en cero: 4 mensajes → 3 respuestas → 2 demos. El freno era no mandar, no el mensaje.
+9. **★ Le estamos vendiendo a quien no es el centro.** Las dos sesiones fueron con gerentes de restaurantes más grandes y más ordenados; ninguno paga. El perfil ③ lleva 14 semanas en cero y la única de ese perfil (Ana) no contestó. Los eventos dan gerentes y empresarios; si se repite, es dato del canal.
+10. **Las dos cuentas dependen de quien no decide.** Alma Verde avanza si Carlos manda los documentos; Palermo, si Ali se lo lleva al dueño en enero.
+11. **Más tiempo en materiales que en conversaciones.** Seis versiones de la landing, cuatro del flyer y dos cambios de precio en una semana. Quedó todo alineado; el riesgo es que pulir sustituya a hablar.
+12. **El CFDI ya no es teórico.** El precio se está diciendo en la mesa y todavía no está confirmado cómo se factura.
+
+**▸ 🔀 Decisiones**
+- **Precio (5-oct, ajustado 8-oct):** lista **$4,000** + IVA por sucursal al mes · Socio Fundador **$2,000**, fijo para siempre · **5 usuarios incluidos por sucursal · usuario extra $250 + IVA al mes** · sin descuento desde la tercera sucursal; los grupos se cotizan aparte · el contador del cliente no cuenta como usuario (regla interna). Kit, flyer de la oferta, script, doc 12 y documentos de precio al día.
+- **Diagnóstico de Cacho gratis = excepción consciente** a la regla del 16-sep: una sola sucursal y la entrega amarrada a una reunión con Alma y el administrador.
+- **Palermo → enero** (lo pidió Ali). El seguimiento de la venta lo lleva Ali con el dueño; **el fundador decidió no mandar seguimiento a Juan Carlos**.
+- **Landing v4.1–v4.6 y flyer de primer toque v0.22** son las versiones vivas.
+- **Abiertas:** el abogado cotizó **$80,000** por un paquete básico (privacidad, licencias, constitución) — recomendación registrada: no contratar ahora; pedir el precio solo de revisar el kit y la cláusula de datos, y una segunda cotización · facturación con el contador · cómo cotizar Alma Verde como grupo · misión y visión.
+
+**▸ 📊 Scorecard H1–H6** — 2 sesiones con operador (Alma Verde ① · Palermo ②, gerente), ninguna suma · **N = 1** (Miguel) · perfil ③ en cero (14ª) · mensajes **4 → 3** · H2 ⬜→🟡 · H5 🟡 partido → 🟢 direccional · **H6·precio dicho con el punto por primera vez** (2 gerentes que no pagan) · embudo: ① 4 → 3 · ③ 2 → 2 · ④ 0 · **⑤ 2** · resto en 0 · legal sin cambio (abogado cotizó, no contratado; CFDI pendiente) · scorecard v0.9 → `10-scorecard-fase-a.md`
+
+**▸ 🎯 Foco semana 12–18 oct — tres demos con dueños, escuchar antes de enseñar** *(ajustado con el fundador el 11-oct)*
+
+| Día | Ventas · entrada | Producto · admin |
+|---|---|---|
+| **Lun 12** | ★ **La lista de documentos a Carlos** (sucursal Cacho: compras directas y salidas del centro de distribución de 2-3 meses · recetario con preparaciones base · menú · ventas por platillo · estado de resultados · inventario · procesos) · **mensajes:** segundo toque a **Ana** (corto, sin video: que presente a Alan con Miguel, dueño de San Miguel, para 20 min esta semana) · **Mike** (Café La Lechuza: café o demo de 30 min; confirmar si tiene cocina propia) · **Betuccini** (fijar la demo del sábado, fuera del servicio) | Contador: cómo se factura (CFDI) antes del primer cobro · abogado: pedir el precio solo de revisar el kit y la cláusula de datos, y una segunda cotización |
+| **Mar 13** | **Misión y visión** (2-3 h) · **ajustar el run-sheet base:** los primeros 10 min son para los seis calificadores; el precio va después de saber si siente el número y cuánto vende | Producto |
+| **Mié 14 · Jue 15** | Demos con **San Miguel** y/o **Café La Lechuza**, según contesten | Producto: Compras con recibos malos, compras sin factura y unidades |
+| **Vie 16** | Run-sheet de Betuccini | Producto |
+| **Sáb 17** | ★ **Demo con el dueño de Betuccini** (en la mañana, antes del servicio · el domingo como respaldo) | |
+| **Dom 18** | Retro + scorecard | |
+
+**Mínimo de la semana:** lista de documentos enviada a Carlos · **los 3 mensajes enviados** · **≥ 2 demos**, con los seis calificadores sondeados antes de decir el precio · facturación confirmada con el contador.
+
+**La señal de la semana:** que lleguen los documentos de Cacho (compromiso revelado de Alma Verde) y que **al menos una demo sea con un dueño que pase el filtro** — el N no se mueve desde agosto.
+
+*▸ Pipeline: **Alma Verde en Soft-commit** (documentos de Cacho → diagnóstico → Alma y el administrador) · **Palermo pausado hasta enero** · demos de la semana: **Betuccini · San Miguel (vía Ana) · Café La Lechuza** · Daniel Betancourt, Carlos Lomelí y Miguel Bahena siguen en el CRM sin fecha (decisión del fundador) · Juan Carlos sin seguimiento · Miguel sigue siendo el único en el N.*
 
 ---
 

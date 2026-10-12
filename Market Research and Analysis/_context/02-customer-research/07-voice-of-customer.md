@@ -4,9 +4,9 @@
 description: Library plana de verbatims curados (gold / load-bearing / illustrative) con metadata estructurada por entry (persona × theme × stage × marketing use-case) + indices de navegación + coverage gaps. Designed for retrieval/reuse across marketing operations (copy, landing, social, sales enablement). NO repite docs 03/06 — esos usan verbatims como evidence; este ES la library misma.  
 type: customer-research  
 research_stage: discovery-pre-PMF  
-last_updated: 2026-07-19  
+last_updated: 2026-10-07  
 status: active  
-version: 0.1.2  
+version: 0.1.3  
 owner: Alan Bahena
 
 # Voice of customer — verbatim library
@@ -648,9 +648,37 @@ Ordenada por tier descending. Dentro de cada tier, agrupada por theme primario.
 - **Cited en:** Product Strategy `04-go-to-market/08-learnings-de-validacion` §7 (Sesión #1)
 - **Por qué es load-bearing:** primer verbatim de **design partner** que confirma la posición de **coexistencia** ("capa sobre el POS, no reemplazo") desde la voz del operador — y que la **desea**. Blinda el scope (Zenet = back-of-house, NO POS) en positioning + sales-disarm. ⚠️ N=1 · gerente (no payer) · confirmar con más sesiones.
 
+
+#### V-036 • [PARAPHRASE] · cited
+
+> Carlos, gerente de Alma Verde, sucursal Cacho (demo presencial · resumen del fundador, NO grabación literal):
+> *"Zenet se puede convertir en un servicio no negociable para el restaurante, como la luz o el agua."*
+
+- **Source:** [Demo Alma Verde 2026-10-07] — segunda sesión con el gerente de la sucursal Cacho
+- **Persona:** gerente (adopter, NO payer · account Alma Verde)
+- **Theme:** must-have · servicio esencial · pozo de valor
+- **Stage:** Evaluation (demo)
+- **Use-case tags:** sales-proof · positioning (de "herramienta" a "servicio esencial") · investor-pitch (must-have declarado)
+- **Cited en:** Product Strategy `04-go-to-market/08-learnings-de-validacion` §2 (Sesión #6)
+- **Por qué es gold:** la imagen del servicio básico (luz, agua) dice "no negociable" en palabras del operador. ⚠️ Declarado y post-demo: usar como señal de lenguaje, no como prueba de compra
+
 ---
 
-> **Library v0.1.2 cierra en V-035.** Total: 10 gold + 14 load-bearing + 11 illustrative = **35 entries**. V-035 (design partner · demo Alma Verde 2026-07-14) añadida 2026-07-19 — **primera verbatim de una sesión de validación con design partner** (cf. `04-go-to-market/08-learnings-de-validacion`). V-031 → V-034 añadidas 2026-05-23 (Perplexity Pro report · Mexican Restaurant Accountant Workflow). Coverage gaps en §5.
+#### V-037 • [PARAPHRASE] · cited
+
+> Equipo de almacén del centro de distribución de Alma Verde (recorrido · resumen del fundador, NO grabación literal):
+> *"Esto debería haber existido desde ayer. Tienes nuestro apoyo para implementarlo."*
+
+- **Source:** [Demo Alma Verde 2026-10-07] — recorrido por el centro de distribución (compras y almacén)
+- **Persona:** equipo operativo (almacén · usuarios finales)
+- **Theme:** adopción desde abajo · trabajo manual · urgencia
+- **Stage:** Evaluation (recorrido)
+- **Use-case tags:** sales-proof (el equipo lo quiere, no solo el gerente) · internal-alignment (adopción) · case-study (futuro)
+- **Cited en:** Product Strategy `04-go-to-market/08-learnings-de-validacion` §2 (Sesión #6)
+- **Por qué es load-bearing:** primera voz de **usuarios finales** del back (no gerente, no dueño) pidiendo Zenet — responde la objeción "mi equipo no lo va a usar"
+---
+
+> **Library v0.1.3 cierra en V-037** (V-036 y V-037 añadidas 2026-10-07 · segunda visita a Alma Verde). **Library v0.1.2 cerraba en V-035.** Total: 10 gold + 14 load-bearing + 11 illustrative = **35 entries**. V-035 (design partner · demo Alma Verde 2026-07-14) añadida 2026-07-19 — **primera verbatim de una sesión de validación con design partner** (cf. `04-go-to-market/08-learnings-de-validacion`). V-031 → V-034 añadidas 2026-05-23 (Perplexity Pro report · Mexican Restaurant Accountant Workflow). Coverage gaps en §5.
 
 ---
 

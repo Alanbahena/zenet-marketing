@@ -1,10 +1,10 @@
 ---
 name: Bitácora de learnings de validación — Fase A
-description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Entrada #5 = Alfonso Arellano / chef de catering · Culinary Art School TJ (café 27-ago-2026 · insider/conector — NO cuenta en el N; deja la mejor señal de H3 de la Fase A: el moat hardware-agnostic articulado espontáneamente por alguien que conoce a los vendors, + capacitación/gente como 2ª señal independiente con Carlos). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
+description: Registro durable y estructurado de lo que enseña cada sesión de campo de la Fase A. Una entrada por sesión — contexto · observaciones (dicho vs hecho) · scores H1-H6 + ICP/DP fit · learnings estratégicos (marcados N=1) · implicaciones (qué feeds a Product Strategy vs repo de producción vs VoC) · decisión · evidencia. Entrada #1 = Carlos / Alma Verde (demo 14-jul-2026 · design partner). Entrada #2 = Alfonso Arballo / mesa jóvenes CANIRAC (café 28-jul-2026 · conector institucional — NO cuenta como N de validación, se registra por el patrón que forma). Entrada #3 = Juan Pablo (videollamada 07-ago-2026 · perfil frontera/CONTROL del beachhead — NO cuenta en el N del beachhead; resultado = rama sorpresa: los dolores SÍ resuenan antes del beachhead, pero cambian de naturaleza — construcción/criterio prestado vs extensión — y acotan el beachhead por abajo, como Alma Verde lo acota por arriba). Entrada #5 = Alfonso Arellano / chef de catering · Culinary Art School TJ (café 27-ago-2026 · insider/conector — NO cuenta en el N; deja la mejor señal de H3 de la Fase A: el moat hardware-agnostic articulado espontáneamente por alguien que conoce a los vendors, + capacitación/gente como 2ª señal independiente con Carlos). Entrada #6 = Carlos / Alma Verde, segunda visita (demo presencial 07-oct-2026 · sucursal Cacho + centro de distribución — la sesión más fuerte de la Fase A: todo el back se hace a mano, confirmado con compras y almacén; acuerdo = documentos de Cacho → diagnóstico → Alma; la prueba de los 5 s salió mal: 3ª señal de que el mensaje no se entiende solo; perfil ① fuera del N, pero "documentado ≠ digitalizado"). Disciplina anti-autoengaño: todo es DIRECCIÓN a bajo N, no verdad validada — alimenta VP/segmentación/MVP scope solo cuando el patrón se confirma con 2-3+ sesiones. La lista granular de features/UX es evidencia aquí, pero el build vive en el repo de producción.
 type: product-strategy
-last_updated: 2026-08-30
+last_updated: 2026-10-11
 status: active
-version: 0.5
+version: 0.7
 owner: Alan Bahena
 ---
 
@@ -505,3 +505,191 @@ Paráfrasis del debrief de Alan (07-ago · videollamada · sin grabación — **
 ---
 
 *Entrada #5 · fuente: resumen de Alan post-sesión (27-ago). Insider/conector — no suma al N. Única sesión de una semana sin otras respuestas: leer con la disciplina anti-gravedad. Lo durable: el moat hardware-agnostic confirmado en campo + capacitación/gente como 2ª señal.*
+
+---
+
+## Sesión #6 · Carlos — Alma Verde, segunda visita (demo presencial · sucursal Cacho + centro de distribución · 07-oct-2026)
+
+> **Etiqueta: perfil ① — NO suma al N** (regla de `11` §2.3). Se registra completa porque es la sesión más fuerte de la Fase A y porque pone a prueba la propia definición del perfil ①.
+>
+> ⚠️ **Disciplina:** todo lo de "fascinado" es **declarado y post-demo**, de un gerente que no paga. Lo revelado está en lo que hizo (abajo) y en si llegan los documentos.
+
+### 1. Contexto
+
+- **Carlos**, gerente de la **sucursal Cacho** de Alma Verde. Segunda sesión (la #1 fue el 14-jul).
+- **Cómo se llegó:** WhatsApp del 5-oct con el video de 2 min → contestó el mismo día → demo presencial mié 7-oct, 10:30.
+- **Instrumento:** run-sheet `Sesiones-Fase-A/Run-sheet-Carlos-AlmaVerde-7oct` (escuchar → flyer de primer toque → diagnóstico de ejemplo → preguntarle a Zenet → WhatsApp → Compras → usuarios → lo que sigue → oferta).
+- **Quién decide (nuevo):** Alma, la dueña, **aprueba**; el **administrador de todas las sucursales** probablemente **decide**. No estuvo en la mesa.
+
+### 2. Observaciones (dicho vs hecho)
+
+**Cómo opera Alma Verde (visto, no contado):**
+- **Centro de distribución** que surte a varias sucursales, incluidas **Tulum, Cancún y Mexicali**.
+- **Todo el back se hace a mano:** el inventario del centro de distribución se actualiza en un Excel **renglón por renglón**; compras **sube las facturas a mano** y hace **el concurso de proveedores a mano**; almacén registra **entradas y salidas a mano**. Errores humanos constantes.
+- **Un POS distinto por sucursal** (Soft Restaurant en unas, Sierra en otras). Al final todo se exporta a Excel: inventarios, estados de resultados, compras.
+- **Proveedores:** en **no perecederos** casi siempre son los mismos; en **perecederos** cambian seguido según el precio.
+
+**Lo que DIJO:**
+- Carlos, *"sorprendido y fascinado"*; ve a Zenet resolviendo los procesos manuales del restaurante.
+- 🌟 Zenet como *"un servicio no negociable, como la luz o el agua"*.
+- Pide, además de Compras: **inventario**, algo **tipo Slack** para el restaurante, **horarios y protocolos** para los empleados. ⚠️ En julio el inventario **no** le interesaba ("ya lo tenemos"); hoy sí — cambió al ver el centro de distribución o al ver el producto.
+- **Precio:** le pareció que **$2,000 por sucursal quizá es barato**. Declarado, de un gerente que no paga, en una cuenta grande.
+- Almacén: *"tienes nuestro apoyo para implementarlo"* · *"esto debería haber desde ayer"*.
+
+**Lo que HIZO (revelado):**
+- Dio su tiempo y **llevó a Alan al centro de distribución**; le presentó a compras y a almacén.
+- **Acuerdo concreto:** Carlos pasa los **documentos actualizados de Cacho** → Alan arma el **diagnóstico de Cacho** → se le presenta a **Alma** → propuesta de ser el **primer Socio Fundador**.
+- Pendiente: Alan le manda la lista de documentos (esta semana). **La señal revelada real es que lleguen.**
+
+**Prueba de los 5 segundos (H2):** viendo la animación, **se le complicó entender qué hace Zenet** — y eso que ya lo conocía desde julio.
+
+### 3. Scores
+
+| Hipótesis | Read | Evidencia |
+|---|---|---|
+| **H1** · los pains resuenan | 🟢 | "Todo a mano en el back", confirmado en campo con gerente, compras y almacén |
+| **H2** · el mensaje se entiende solo | 🔴 | La prueba de 5 s falló. **3ª señal** (Carlos 14-jul · Alfonso Arballo 28-jul · ahora). El producto en vivo sí conecta; la página sola no |
+| **H3** · distinto a lo que tiene | 🟢 | "No negociable, como la luz o el agua" · POS distinto por sucursal = la capa sobre el POS encaja |
+| **H4** · compromiso revelado | 🟡 → 🟢 si llegan los documentos | Tour al centro de distribución + equipo presentado = revelado parcial · documentos = la prueba |
+| **H5** · canal | 🟢 | Re-enganche por WhatsApp con video → demo presencial el mismo día de la respuesta |
+| **H6** · pozo | 🟢 declarado | Horas de trabajo manual y errores en tres áreas |
+| **H6** · precio | 🟡 | "Quizá barato por sucursal" — declarado, no-payer, cuenta grande. Dirección para **grupos**, no para el ICP |
+
+**Fit:** perfil ① — **fuera del N**. DP 🟢 (acceso total, equipo a favor, camino al payer).
+
+### 4. Learnings estratégicos ⚠️ *(N=1 — dirección, no verdad)*
+
+1. **★★ Documentado ≠ digitalizado.** Alma Verde quedó en perfil ① ("estandarizado") porque sus procesos están escritos. Pero **todo se ejecuta a mano**: la carga existe igual, solo que repartida en compras, almacén e inventario. El eje de `11` §1.2 (estandarización previa) puede estar midiendo lo equivocado para cuentas grandes. **No cambia el canon todavía** → a la retro.
+2. **★ El dolor del centro de distribución es el más concreto que hemos visto:** Excel renglón por renglón, facturas a mano, concurso de proveedores a mano. Es Compras + inventario en su forma más pura.
+3. **★ H2 sigue rota sin Alan.** Con el producto delante, Carlos lo entiende y se emociona; con la animación sola, no. Tres señales independientes → **prioridad de mensaje**, no solo de producto.
+4. **Precio para grupos.** Una cadena con centro de distribución y 12-15 personas por lugar no es el operador de 1-2 sucursales para el que se fijaron los $2,000. Señal para separar **grupos** (precio a la medida, como el nivel Enterprise del canon) del programa general. **No** es señal para subir el precio del ICP.
+5. **Proveedores: perecederos ≠ no perecederos.** La comparación de proveedores vale sobre todo en perecederos.
+6. **Bandera amarilla de champion:** inventario + tipo Slack + horarios + protocolos es la lista de un gerente entusiasmado. Dirección, no plan: lo que vende ahora es Compras + el diagnóstico.
+
+### 5. Implicaciones — qué feeds a dónde
+
+| Learning | A dónde |
+|---|---|
+| Documentado ≠ digitalizado | Retro del 11-oct · `11-icp-hipotesis-fase-a` §1.2 (si se confirma con otra cuenta) |
+| H2 rota sin Alan (3ª señal) | Mensaje: landing (hero y animación) · `06-plan-de-activacion` H2 · retro |
+| Precio para grupos | `03-oferta-y-pricing/03-pricing-tiers` (nivel Enterprise) · decidir antes de presentar a Alma |
+| Perecederos vs no perecederos · inventario del centro de distribución | **Repo de producción** (Compras · inventario) |
+| "Como la luz o el agua" · "debería haber desde ayer" | VoC (V-036 · V-037) |
+
+### 6. Decisión / siguiente paso
+
+1. **Jue 8:** mandarle a Carlos la lista de documentos de Cacho (no esperar al viernes: el viernes es la demo con Ali).
+2. **Diagnóstico de Cacho** cuando lleguen los documentos. ⚠️ **Excepción consciente** a la regla "el diagnóstico se paga antes de recibirse" (16-sep): aquí funciona como propuesta para quien paga, que no estuvo en la mesa. **Condición:** una sola sucursal y la entrega amarrada a una reunión con Alma **y el administrador de todas las sucursales**, con fecha.
+3. **Pedirle a Carlos que invite al administrador** a esa presentación.
+4. **Brunch empresarial del 23-oct:** relación con Alma; la presentación formal va con el diagnóstico en la mano.
+5. **Precio para Alma Verde:** cotizar como grupo (centro de distribución como unidad, sin el descuento de la 3ª sucursal, usuarios incluidos por unidad) — se decide antes de presentar, con unidades y usuarios reales.
+6. **Mensaje (H2):** Alan nota que los problemas que más pesan cambiaron — trabajarlo en los próximos días.
+
+### 7. Evidencia — lo que pidieron *(el build vive en el repo de producción)*
+
+- **Inventario** (sobre todo el del centro de distribución: entradas, salidas, existencias).
+- **Comunicación interna tipo Slack** para el restaurante.
+- **Horarios y protocolos** para los empleados.
+- **Compras:** subir facturas sin capturar a mano · el concurso de proveedores · foco en perecederos.
+
+---
+
+*Entrada #6 · fuente: resumen de Alan post-sesión (07-oct). Perfil ① — no suma al N. Lo durable: "documentado ≠ digitalizado", el centro de distribución como el caso más puro del dolor, H2 rota sin Alan (3ª señal), y el primer camino concreto al payer de una cuenta grande.*
+
+---
+
+## Sesión #7 · Ali García — Cocina Palermo (demo presencial · 09-oct-2026)
+
+> **Etiqueta: perfil ② (alta cocina), gerente — NO suma al N** (regla de `11` §2.3: 2 de 6 calificadores). Se registra completa porque es la primera vez que el precio se dice con el punto a alguien de un perfil que sí puede contar.
+>
+> ⚠️ **Disciplina:** todo lo del precio es **declarado y de quien no paga**. Lo revelado es lo que hizo: dio la sesión completa, se llevó los materiales y pidió enero, sin ofrecer nada.
+
+### 1. Contexto
+
+- **Ali García**, gerente general de **Cocina Palermo** (alta cocina · clientela de alto poder adquisitivo · no es un restaurante chico).
+- **Quién paga:** **Juan Carlos Eguiluz**, dueño de dos restaurantes de alta cocina, **fuera de la operación**. Lo conoció el fundador en un evento la semana del 28-sep y **le delegó el software a Ali**.
+- **Cómo se llegó:** WhatsApp del 5-oct con el video de 2 min → Ali contestó al día siguiente y propuso él mismo el viernes → demo presencial vie 9-oct, 2:00 pm.
+- **Instrumento:** run-sheet `Sesiones-Fase-A/Run-sheet-Ali-Palermo-9oct` (apertura · escuchar con la *última vez* · demo · precio con el punto · el ask).
+
+### 2. Observaciones (dicho vs hecho)
+
+**Cómo opera Palermo (contado por Ali):**
+- **Perecederos comprados en persona en el mercado de abastos, sin factura.**
+- **Recibos que casi no se leen:** cortados, con las unidades mal escritas.
+- Procesos propios y una cultura reservada: cuida cómo hace las cosas y tardó en abrirse.
+
+**Lo que DIJO:**
+- Le gustó la demo y **entendió qué hace Zenet con el video y la landing**.
+- Lo que más le atrajo: que **las compras facturadas lleguen al contador**.
+- Cree que **el dueño no lo acepta hoy**: procesos propios, cultura reservada, producto en construcción.
+- **Precio (dicho con el argumento del punto):** estuvo de acuerdo; el punto lo hace viable porque *"puedes ver lo que realmente ahorras"* *(paráfrasis del fundador, no cita textual — no entra a VoC)*.
+- 🌟 **Preguntó si el precio iba a subir para enero.** Según el fundador, fue su preocupación más grande: perder la oferta, no el monto.
+- Preguntó si Zenet puede leer **un archivo ZIP con todo el historial de ventas** del restaurante.
+
+**Lo que HIZO (revelado):**
+- Dio la sesión completa y se llevó el **diagnóstico de ejemplo y los dos flyers**.
+- **Pidió retomar en enero.** El seguimiento con el dueño lo lleva él.
+- **No ofreció mandar nada.**
+
+**Cómo se usó el tiempo:** la plática se fue a la demo desde el principio porque Ali la pidió. Se escuchó poco antes de enseñar.
+
+### 3. El conteo (`11` §2.3)
+
+| | Palermo | |
+|---|---|---|
+| **Eliminatorios** | formal ✓ (contador, factura) · cocina propia ✓ · problema estructural ✓ (habla de procesos, no de *"el equipo no se compromete"*) | pasa |
+| Carga la operación | ✓ conoce las compras a detalle | |
+| Siente el número | ✗ no nombró costo, margen ni pérdida sin que se le preguntara | |
+| Hay algo que extraer | ✗ por la regla: no ofreció mandar nada. *El ZIP dice que el historial existe; preguntar no es ofrecer* | |
+| Delega la carga, no el criterio | ✓ quiere que las facturas lleguen solas al contador | |
+| Ventas $200K–2M | ✗ salieron los datos de ventas, no cuánto venden | |
+| Decide solo | ✗ decide Juan Carlos | |
+| **Total** | **2 de 6** (3 si se contara el ZIP) | **no suma** |
+
+### 4. Scores
+
+| Hipótesis | Read | Evidencia |
+|---|---|---|
+| **H1** · los pains resuenan | 🟡 | Compras a mano y recibos malos, sí; el resto de los problemas no se sondeó |
+| **H2** · el mensaje se entiende | 🟢 en esta sesión | Entendió qué hace Zenet con el video y la landing — contrasta con la prueba de 5 s de Carlos (7-oct) |
+| **H3** · distinto a lo que tiene | ⬜ | No se sondeó |
+| **H4** · compromiso revelado | 🟡 bajo | Sesión completa y materiales, pero *"todavía no"* y nada ofrecido |
+| **H5** · canal | 🟢 | Dueño en evento → delega → el gerente contesta en un día y agenda solo |
+| **H6** · pozo | ⬜ | Ninguna cuantificación |
+| **H6** · precio | 🟡 declarado | Aceptó el precio con el punto; su miedo es que suba. De quien no paga |
+
+**Fit:** perfil ② con el dueño fuera de la operación — **adyacente y más difícil** (`11` §2.3). No suma. DP 🟡 (abierto, pero la decisión no está en la mesa).
+
+### 5. Learnings estratégicos ⚠️ *(N=1 — dirección, no verdad)*
+
+1. **★★ El precio congelado para siempre es lo que engancha.** La pregunta no fue *"¿cuánto?"* sino *"¿va a subir?"*. Primera señal de campo de que el candado del Socio Fundador funciona como lo diseñamos (desviación #1). Vigilar si se repite con alguien que paga.
+2. **★★ Ofrecimos antes de calificar.** El precio se dijo sin saber cuánto le cuesta hoy ni cuánto vende. En el embudo: ⑤ = 2 con ④ = 0. **Los primeros 10 minutos de la demo son para los seis calificadores**, aunque el otro pida ver el producto.
+3. **★ El historial de ventas en un ZIP** es a la vez un pedido de producto (subir todo el historial de una vez) y la puerta para enero: *"¿me mandas ese historial?"* prueba el calificador de extraer.
+4. **★ El contador engancha** (segunda vez). En mayo apareció como el que puede frenar la venta; aquí, como el gancho.
+5. **Así llegan de verdad las compras** en alta cocina: mercado de abastos sin factura, recibos ilegibles, unidades mal. Coincide con lo que vio el fundador en Alma Verde.
+6. **El dueño fuera de la operación** confirma lo que `11` §2.3 anticipaba: el gerente valida el dolor, pero la cuenta queda a medias hasta que el dueño se sienta.
+
+### 6. Implicaciones — qué feeds a dónde
+
+| Learning | A dónde |
+|---|---|
+| El precio congelado engancha | `02-programa` (nota de campo · desviación #1) · retro |
+| Ofrecer antes de calificar | Run-sheets de las próximas demos · `12-proceso-de-ventas` §1-§2 |
+| ZIP con historial de ventas · compras sin factura · recibos malos · unidades | **Repo de producción** (Compras · carga de ventas) |
+| El contador como gancho | `06-argumentacion` · mensajes de outreach (a probar) |
+
+### 7. Decisión / siguiente paso
+
+1. **Palermo → enero** (lo pidió Ali). El seguimiento con el dueño lo lleva Ali; **el fundador decidió no mandar seguimiento a Juan Carlos**.
+2. **Qué contestarle a Ali sobre el precio en enero:** pendiente, lo decide el fundador.
+3. **En enero:** pedir el ZIP del historial y sondear primero lo que faltó: si siente el número, qué hay que extraer y en qué rango venden.
+
+### 8. Evidencia — lo que pidió *(el build vive en el repo de producción)*
+
+- Leer **un ZIP con todo el historial de ventas**.
+- **Compras sin factura** (mercado de abastos) y **recibos de mala calidad** con unidades mal escritas.
+- Que las **compras facturadas lleguen al contador**.
+
+---
+
+*Entrada #7 · fuente: resumen del fundador post-sesión (9-oct) y sus respuestas del 11-oct. Perfil ②, gerente, dueño fuera de la operación — no suma al N (2 de 6). Lo durable: el precio congelado como gancho, ofrecer antes de calificar, y el ZIP de ventas como pedido de producto y puerta para enero.*

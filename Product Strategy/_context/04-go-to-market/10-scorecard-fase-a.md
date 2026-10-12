@@ -3,9 +3,9 @@ name: Scorecard — Fase A
 description: Los números de la Fase A en un solo lugar. Tres tablas con trabajos distintos — el tablero del gate (estado acumulado por hipótesis H1-H6 + las dos condiciones del gate A→B + cobertura por perfil), la serie semanal de hipótesis (una fila por semana, para ver la tendencia sin leer siete retros) y, desde la v0.5, el embudo de ventas (los nueve conteos de 12-proceso-de-ventas §6, una fila por semana, con acumulado). Instancia con datos reales del scorecard que 06-plan §6.2 define. Los números se escriben SOLO aquí; la bitácora 09 narra y apunta; 08-learnings guarda la evidencia citada por sesión. Se actualiza cada domingo en la retro.
 type: product-strategy
 research_stage: discovery-pre-PMF
-last_updated: 2026-10-04
+last_updated: 2026-10-11
 status: active
-version: 0.8
+version: 0.9
 owner: Alan Bahena
 ---
 
@@ -28,7 +28,7 @@ owner: Alan Bahena
 
 ---
 
-## 1. El tablero del gate *(al 2026-10-04 · 13 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
+## 1. El tablero del gate *(al 2026-10-11 · 14 semanas de Fase A · contra el ICP de hipótesis de la Fase A · `11` §2.3)*
 
 ### 1.1 Gate A→B — las dos condiciones, juntas
 
@@ -36,13 +36,13 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 | Condición | Qué hipótesis mide | Umbral (`06-plan` §9.2) | Hoy | |
 |---|---|---|---|---|
-| **(a)** La propuesta de valor la reconocen suficientes personas del perfil correcto | H1 · H2 · H3 | 🟢 sobre ~5-8 conversaciones | **1 — Miguel (perfil ②)** · H1 🟢 dir. · H2 🟡 · H3 🟢 dir. | ✗ |
+| **(a)** La propuesta de valor la reconocen suficientes personas del perfil correcto | H1 · H2 · H3 | 🟢 sobre ~5-8 conversaciones | **1 — Miguel (perfil ②)** · H1 🟢 dir. · H2 🟡 · H3 🟢 dir. · *Palermo (Ali, 9-oct) no suma: 2 de 6 calificadores (`08` #7)* | ✗ |
 | **(a)** **Hay de dónde extraer** — el análisis del producto corre con lo que el operador ya tiene y produce algo que reconoce como suyo *(experimento `11` §0.2)* | la hipótesis propia del ICP chico | ≥ 3 de las primeras 5 | **0 de 0** — Miguel tiene Excel+Word+Trello; el análisis no ha corrido con sus documentos | ⬜ |
-| **(a)** Compromisos **revelados** — hicieron algo: mandaron docs, dieron un intro, agendaron | H4 | ≥ 3-4 | **0** del ICP de Fase A · Miguel: abierto (el ask de docs no se hizo; la señal decisiva es qué hace con `/demo`) · *Carlos: 1, como señal de H4 fuera del ICP (perfil ①)* | ✗ |
+| **(a)** Compromisos **revelados** — hicieron algo: mandaron docs, dieron un intro, agendaron | H4 | ≥ 3-4 | **0** del ICP de Fase A · Miguel: abierto (el ask de docs no se hizo; la señal decisiva es qué hace con `/demo`) · *Carlos: 1, como señal de H4 fuera del ICP (perfil ①) — 7-oct: acordó mandar los documentos de Cacho; la señal es que lleguen* · Ali: no ofreció nada, pidió enero | ✗ |
 | **(a)** Intent-to-join — *"quiero entrar al programa"*, **conociendo el precio y los términos** | H4 + H6·precio, al nivel del que paga | ≥ 1-2 | **0** — el soft-commit de Carlos sale con Alma Verde (decisión #2) | ✗ |
 | **(a)** El problema le cuesta algo hoy | H6 · pozo | no en 🔴 | 🟡 — cero cuantificaciones reveladas; Miguel *"realmente pagaría"* es declarado | ✓ |
 | **(b)** App V1 demostrable | readiness | — | ✅ **desde el 30-ago** (desktop + móvil · Task 28 verificada en producción) | ✓ |
-| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ **marca registrada ante el IMPI (otorgada 14-sep)** · **régimen fiscal cambiado (27-sep)** · cuenta de banco nueva con **CLABE lista** (entra al kit de bienvenida la semana del 5-oct) · facturación (CFDI) por confirmar con el contador antes del primer cobro · sin entidad ni abogado: **el acuerdo de la Fase A es el kit de bienvenida** (5ª desviación · `02-programa` v0.1.1) · abogado detrás del primer sí · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
+| **(b)** Legal listo (entidad · abogado · contratos en borrador) | readiness | — | ⬜ **marca registrada ante el IMPI (otorgada 14-sep)** · **régimen fiscal cambiado (27-sep)** · cuenta de banco nueva con **CLABE lista** (entra al kit de bienvenida la semana del 5-oct) · facturación (CFDI) por confirmar con el contador antes del primer cobro — **ya no es teórico: el precio se está diciendo en la mesa** · abogado: cotizó $80,000 por un paquete básico (9-oct), no contratado · sin entidad ni abogado: **el acuerdo de la Fase A es el kit de bienvenida** (5ª desviación · `02-programa` v0.1.1) · abogado detrás del primer sí · cf. `05-capital-y-finanzas/01-operational-readiness` | ⬜ |
 
 **Lectura:** al recontar contra el ICP de Fase A el marcador **baja y se vuelve honesto** — de *1 · 1 · 1* (Alma Verde, perfil ①) a **1 conversación · 0 compromisos · 0 intent** (Miguel). Las hipótesis no cambiaron; cambió a quién se le pregunta. Lo que sí hay es dirección (H1 y H3 con señal) y un experimento sin correr (extraer). La condición **(b)** ya no bloquea nada del lado del producto.
 
@@ -51,12 +51,12 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | H | Qué valida | Evidencia revelada (con quién · cuándo) | Kill signals | Read | N |
 |---|---|---|---|---|---|
 | **H1** | Los pains que priorizamos son **sus** principales | **Miguel (12-ago):** *la carga* —tiempo, energía, incendios— como dolor #1, en sus palabras · **Carlos (14-jul):** pains reales (protocolos · mantenimiento · gente) pero **no los hipotetizados** (inventario/estandarización) · JP (7-ago · control): resuenan, pero invertidos — construcción, no extensión | ninguno | 🟡→🟢 | 2 op. |
-| **H2** | Nuestro valor **conecta** con lo que más valoran | **Carlos:** prendió AI/chat + automatizar sus procesos; el core del demo (estandarización) no · Miguel: pitch verbal, "sí" post-pitch (cortesía posible) | **Arballo (28-jul):** *"¿otro software más?"* — declarado, social, pero bandera fuerte · **Alfonso (27-ago) T1 contaminado:** eco, no comprensión espontánea | 🟡 | 1 |
+| **H2** | Nuestro valor **conecta** con lo que más valoran | **Carlos:** prendió AI/chat + automatizar sus procesos; el core del demo (estandarización) no · Miguel: pitch verbal, "sí" post-pitch (cortesía posible) · **Ali (9-oct):** entendió qué hace Zenet con el video y la landing · **Carlos (7-oct):** con el producto en vivo, *"sorprendido y fascinado"* | **Arballo (28-jul):** *"¿otro software más?"* — declarado, social, pero bandera fuerte · **Alfonso (27-ago) T1 contaminado:** eco, no comprensión espontánea · **Carlos (7-oct): la prueba de 5 s con la animación falló** (3ª señal de que la página sola no explica) | 🟡 | 1 |
 | **H3** | Ven a Zenet **distinto** de su alternativa actual | **Alfonso (27-ago):** articuló **solo** el moat *hardware-agnostic* vs SoftRestaurant — la mejor señal de la Fase A, de quien conoce a los vendors · **Carlos:** Zenet ≠ POS, la coexistencia aterrizó | Arballo | 🟢 direccional | 1 insider + 1 op. |
-| **H4** | Está dispuesto a **dar** | **Carlos 🟢:** abrió todos sus docs · ofreció intro a Alma + departamentos · **Miguel 🟡:** relación revelada fuerte (platillo · tiempo · apertura) pero el ask de docs no se hizo como se diseñó | **JP:** puerta declarada, cero revelado · **Arballo:** ningún ask aterrizó · **Carlos frío desde agosto** | 🟡 | 1 de 3-4 |
-| **H5** | Qué **mensaje + canal** convierte | **Victor → Miguel:** ciclo completo referido→sesión presencial 🟢 · **red del programa de emprendimiento → JP:** 1ª warm real 🟢 · **Pedro → CANIRAC:** la puerta funcionó (canal post-PMF) | **Frío / LinkedIn: 5 canales tocados → 0 respuestas** (24-30 ago) · **31 ago–6 sep: 2 → 0, ninguno visto** — Juanjo y Algira Garzón por LinkedIn, mensajes sin abrir y links Dub sin clic → dato del canal, no del mensaje · 10 prospectos "por enviar" desde julio | 🟡 partido: **tibio funciona · frío no** | — |
+| **H4** | Está dispuesto a **dar** | **Carlos 🟢:** abrió todos sus docs · ofreció intro a Alma + departamentos · **Miguel 🟡:** relación revelada fuerte (platillo · tiempo · apertura) pero el ask de docs no se hizo como se diseñó | **JP:** puerta declarada, cero revelado · **Arballo:** ningún ask aterrizó · ~~Carlos frío desde agosto~~ (re-enganchó el 5-oct) · **Ali (9-oct):** *"todavía no"*, enero, sin ofrecer nada | 🟡 | 1 de 3-4 |
+| **H5** | Qué **mensaje + canal** convierte | **Victor → Miguel:** ciclo completo referido→sesión presencial 🟢 · **red del programa de emprendimiento → JP:** 1ª warm real 🟢 · **Pedro → CANIRAC:** la puerta funcionó (canal post-PMF) · **5–11 oct: WhatsApp con el video de 2 min a contactos tibios → 4 enviados · 3 respondieron · 2 demos** (Carlos re-enganchado · Juan Carlos, conocido en evento, delegó en Ali) | **Frío / LinkedIn: 5 canales tocados → 0 respuestas** (24-30 ago) · **31 ago–6 sep: 2 → 0, ninguno visto** — Juanjo y Algira Garzón por LinkedIn, mensajes sin abrir y links Dub sin clic → dato del canal, no del mensaje · 10 prospectos "por enviar" desde julio | 🟢 direccional: **tibio funciona · frío no** *(desde el 11-oct)* | — |
 | **H6 · pozo** | El problema le **cuesta** algo hoy (painkiller, no vitamina) | *(ninguna cuantificación revelada todavía)* · **Miguel:** *"realmente pagaría"* — declarado, post-pitch, en calidez · **Alfonso:** *"un chef pagaría $2-4K"* — declarado, en **tercera persona** | **Carlos:** costos abiertos, sin cuantificar | 🟡 riesgo | 0 revelados · 2 declarados sobre el ancla |
-| **H6 · precio** | Acepta el ancla **cuando se le dice** (no se le pregunta) — con el argumento del punto (HV-03) | *(el precio no se ha dicho con el punto a ningún operador del ICP de Fase A)* · HV-03 corrió 1 vez, aproximado, con un insider (S#5) | — | ⬜ sin probar | 0 |
+| **H6 · precio** | Acepta el ancla **cuando se le dice** (no se le pregunta) — con el argumento del punto (HV-03) | **Dicho con el punto por primera vez, a dos gerentes que no pagan (ninguno del ICP todavía):** **Carlos (7-oct · ①):** *"quizá es barato por sucursal"* · **Ali (9-oct · ②):** aceptó el precio; el punto lo hace viable (*"puedes ver lo que realmente ahorras"*, paráfrasis del fundador); su preocupación fue que **suba antes de enero**, no el monto · HV-03 con un insider (S#5) | — | 🟡 declarado · ⬜ al nivel del que paga | 0 del ICP · 2 no-payers |
 
 **Lo que el tablero dice de un vistazo:** la VP (H1-H3) tiene señal pero no N · el compromiso revelado sigue en uno · el canal tibio produce y el frío no · y **nadie ha cuantificado todavía lo que le cuesta hoy** — que es exactamente el riesgo *"yo SOY el sistema"* que el plan pidió vigilar.
 
@@ -64,10 +64,10 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 | Perfil | Definición (eje: estandarización previa) | Sesión | Estado en la Fase A (`11` §1.2) |
 |---|---|---|---|
-| ① Estandarizado / gran producción | ya documentado · Zenet extiende y mantiene | Carlos · Alma Verde (14-jul) | ✓ · **carril de producto · no suma al N** — feedback de la app + prueba del análisis con docs reales · vuelve como ICP al cumplirse `11` §0.4 |
-| ② Alta cocina / chef-dueño | preserva calidad y consistencia · *fine dining ≠ documentado* | Miguel Bahena (12-ago) | ✓ · **adyacente · suma al N** |
+| ① Estandarizado / gran producción | ya documentado · Zenet extiende y mantiene | Carlos · Alma Verde (14-jul · 7-oct) | ✓ · **carril de producto · no suma al N** — feedback de la app + prueba del análisis con docs reales · vuelve como ICP al cumplirse `11` §0.4 |
+| ② Alta cocina / chef-dueño | preserva calidad y consistencia · *fine dining ≠ documentado* | Miguel Bahena (12-ago) · Ali García, Palermo (9-oct · gerente) | ✓ · **adyacente · suma al N** — Miguel sí; Palermo no (2 de 6 · dueño fuera de la operación) |
 | ②b Cafetería con cocina propia | entra si hay BoH que extraer | — | ✗ · sin sesión |
-| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 11ª semana en cero** |
+| ③ **Independiente sin estandarizar** | **el centro** · Zenet extrae su sistema de lo que ya tiene | — | **✗ · 14ª semana en cero** |
 | *(control)* bajo el beachhead | nada que extraer — pediría construcción | Juan Pablo (7-ago) | fuera · acota **por abajo** |
 
 ---
@@ -93,6 +93,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 14–20 sep | 0 | 1 | 0 (11ª) | **0 → 0 → 0** (nada enviado — el #9 adjunta el ejemplo y el ejemplo no existió · Juanjo y Algira siguen sin ver el de LinkedIn, 3ª semana) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 6ª consecutiva · **el kit de venta entero** (doc 12 v0.1 · script · flyer SF · kit de bienvenida · tarjeta impresa · mensajes v0.3 · canon con 5 desviaciones) · **IMPI ® otorgado** · diagnóstico v2 pág. 1 · producto sin avance · gate (b) V1 ✅ · legal: ® + régimen fiscal en curso |
 | 21–27 sep | 0 | 1 | 0 (12ª) | **0 → 0 → 0** (la tanda no salió · CANACO y CANIRAC sin contactos de restaurante) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 7ª consecutiva · **PDF de ejemplo cerrado el lunes** y el spec del diagnóstico hasta v1.3 · primeras sesiones en CANACO Jóvenes y CANIRAC (0 contactos · puerta con la directora de CANIRAC) · banco abierto · **régimen fiscal cambiado** · competidor con nombre: **Marble (YC S26)** |
 | 28 sep–4 oct | 0 | 1 | 0 (13ª) | **0 → 0 → 0** (los seguimientos pasaron al 5-oct por decisión del fundador · 5 contactos de eventos en *Conversación*, que entran a ① cuando salga su WhatsApp) | 🟢 | ⬜ | 🟢 | 🟡 | 🟡 partido | 🟡 | No — 8ª consecutiva sin sesión agendada · **primera respuesta abierta en persona** (brunch: Carlos Lomelí · Daniel Betancourt, director de CANIRAC Jóvenes · vie: Juan Carlos Eguiluz, alta cocina, que delegó en su gerente Ali García · + Mike de Café La Lechuza, CANACO 22-sep) — todo declarado · flyer v0.16 impreso · spec del diagnóstico v1.4.1 · CLABE lista |
+| **5–11 oct** | **2** *(Carlos · Alma Verde ① · 7-oct · Ali · Palermo ②, gerente · 9-oct — ninguna suma al N)* | 1 | 0 (14ª) | **4 → 3** (Carlos · Juan Carlos · Ali; Ana no) | 🟢 | **🟡** | 🟢 | 🟡 | **🟢 dir.** | 🟡 | **Sí** — las primeras sesiones con operador desde agosto · **el precio dicho con el punto por primera vez** (2 gerentes que no pagan) · Alma Verde en soft-commit (documentos de Cacho → diagnóstico → Alma) · Palermo → enero · el N no se mueve · precio: lista $4,000, SF $2,000, 5 usuarios · landing v4.1–v4.6 y flyer v0.22 |
 
 *La columna **N ICP Fase A** se llamaba *N beachhead* hasta el 8-sep. Los valores históricos no cambian pero **cambia lo que significa el 1**: hasta el 31 ago–6 sep, 1 = Carlos, contra el beachhead anterior; desde el 7-13 sep, 1 = Miguel, contra el ICP de hipótesis de la Fase A (`11` §2.3). Las filas anteriores conservan su lectura.*
 
@@ -104,7 +105,7 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 
 **Qué cuenta cada columna:** los nueve conteos de `12` §6.2, en el orden del pipeline. Cada celda es **lo que pasó esa semana**; la última fila es **el acumulado desde el 14-sep**. **Conteos, no porcentajes** (`12` §6.3: con cinco lugares y diez mensajes, una tasa es ruido — lo que informa es en qué columna se para la gente). Una persona está en una sola etapa y avanza solo con evidencia: un *sí* sin precio dicho se queda en ④, no pasa a ⑥ · el *"va"* no es pago: ⑥ ≠ ⑦.
 
-**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep · **no se cumplió: 0 · 0**) · **semana 21–27 sep → las mismas** (retro 20-sep · **no se cumplió: 0 · 0**) · **semana 28 sep–4 oct → ≥ 1 en ③** (el café del brunch · retro 27-sep; la tanda, ≥ 10 en ①, pasa a la semana del 5-oct por decisión del fundador · **no se cumplió: 0**) · **semana 5–11 oct → ≥ 4 en ① y ≥ 1 en ③** (retro 4-oct, ajustada con el fundador) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
+**Metas ya escritas** (no nuevas): semana 14–20 sep → **≥ 10 en ① y ≥ 1 en ③** (retro 13-sep · **no se cumplió: 0 · 0**) · **semana 21–27 sep → las mismas** (retro 20-sep · **no se cumplió: 0 · 0**) · **semana 28 sep–4 oct → ≥ 1 en ③** (el café del brunch · retro 27-sep; la tanda, ≥ 10 en ①, pasa a la semana del 5-oct por decisión del fundador · **no se cumplió: 0**) · **semana 5–11 oct → ≥ 4 en ① y ≥ 1 en ③** (retro 4-oct, ajustada con el fundador · **se cumplió: 4 · 2**) · gate A→B → **5-8 en ④ · 3-4 compromisos revelados · 1-2 en ⑥** (`06-plan` §9.2 · §1.1) · la cohorte → **5 en ⑦**.
 
 | Semana | ① Contactados (env → vistos → resp) | ③ Sesiones (agend → hechas) | ④ Discovery → Pitch | ⑤ Ofertas dichas | ⑥ Síes | ⑦ Pagados | ⑧ Diagnósticos entregados | ⑨ Activos al mes 2 | de ellos, perfil ③ |
 |---|---|---|---|---|---|---|---|---|---|
@@ -112,11 +113,12 @@ Cada fila de **(a)** es un **umbral sobre una o varias hipótesis de §1.2**; **
 | 14–20 sep | **0 → 0 → 0** — el #9 no salió: dependía del PDF de ejemplo | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 21–27 sep | **0 → 0 → 0** — la tanda no salió; las dos cámaras no dieron contactos de restaurante | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 | 28 sep–4 oct | **0 → 0 → 0** — los seguimientos pasaron al 5-oct; los 5 contactos de eventos aún no cuentan en ① | 0 → 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
-| **Σ desde el 14-sep** | **0 → 0 → 0** | **0 → 0** | **0** | **0** | **0** | **0** | **0** | **0** | **0** |
+| 5–11 oct | **4 → s/r → 3** — Carlos (Alma Verde) · Juan Carlos · Ali · Ana (sin respuesta), con el video de 2 min | **2 → 2** (Alma Verde 7-oct · Palermo 9-oct) | 0 — Alma Verde es perfil ①; Palermo, 2 de 6 | **2** — fuera de secuencia: el precio se dijo a dos gerentes que no pasan ④ | 0 | 0 | 0 | 0 | 0 |
+| **Σ desde el 14-sep** | **4 → s/r → 3** | **2 → 2** | **0** | **2** | **0** | **0** | **0** | **0** | **0** |
 
 *② Respondieron es la tercera cifra de ①; ⑧ y ⑨ arrancan vacías por diseño (`12` §6.2). Los días entre etapas se anotan en Notion, no aquí.*
 
-**Lo que el embudo dice de un vistazo:** tercera semana en cero en los conteos, pero por primera vez hay gente esperando en la puerta: cinco contactos con restaurante de eventos en persona, con interés declarado. Entran a ① el día que salga su WhatsApp; la meta del 5–11 oct es que salgan y que uno acepte el café.
+**Lo que el embudo dice de un vistazo:** la entrada se destrabó — 4 mensajes, 3 respuestas, 2 demos — y la meta de la semana se cumplió. Pero **⑤ está en 2 con ④ en 0**: el precio se dijo a dos gerentes que no pasan el filtro. No es un error de conteo: estamos ofreciendo antes de calificar. Lo siguiente es que el próximo ③ sea con alguien que paga, y que los primeros 10 minutos sondeen los seis calificadores.
 
 ---
 
