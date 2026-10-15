@@ -1,10 +1,10 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.13 = plano de §6 En concreto con las etiquetas del flyer v0.22 (tag v4.6). v0.12 = §2/§3 intercambiadas: La realidad de hoy va justo después del hero con los tres problemas del flyer v0.22 y subtítulo nuevo; El momento pasa a §3 (tag v4.5). v0.11 = hero v4.4: definición con "tu inventario" y una 4ª etiqueta "Con menos trabajo a mano" (tag v4.4). v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.15 = landing v4.7 EN VIVO (12-oct): definición nueva aplicada, hero isométrico animado con sus textos y La realidad de hoy con escenas. v0.14 = definición nueva de Zenet decidida por el fundador (11-oct). v0.13 = plano de §6 En concreto con las etiquetas del flyer v0.22 (tag v4.6). v0.12 = §2/§3 intercambiadas: La realidad de hoy va justo después del hero con los tres problemas del flyer v0.22 y subtítulo nuevo; El momento pasa a §3 (tag v4.5). v0.11 = hero v4.4: definición con "tu inventario" y una 4ª etiqueta "Con menos trabajo a mano" (tag v4.4). v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-10-08
+last_updated: 2026-10-12
 status: active
-version: 0.13
+version: 0.15
 owner: Alan Bahena
 ---
 
@@ -38,6 +38,49 @@ owner: Alan Bahena
 # — COPY v4 (v0.5 · en construcción) —
 
 > Las secciones de la v4 se escriben aquí, en orden de página, una por turno. Debajo de este bloque sigue **el copy v3.3 en vivo** (v0.4), intacto, como base e historia. Cuando la v4 se despliegue, la v0.4 se archiva completa.
+
+## v4.7 · 1. Hero — ✅ EN VIVO (2026-10-12 · tag `v4.7`)
+
+**Titular (sin cambio de texto, ahora en tres renglones en escritorio):** *El caos **no es el precio** de tener un restaurante.*
+
+**Definición:** *Zenet es un sistema con inteligencia artificial, fácil de usar, que carga el trabajo manual del back-of-house de tu restaurante: desde tus compras, costos e inventario hasta tus protocolos diarios y más.*
+
+**La animación, tres momentos (texto bajo la escena):** *Hoy, todo se hace a mano.* → *Zenet carga el trabajo.* → *Tú decides lo importante.*
+
+| Antes (globo peach) | Después (globo teal) | ¿Corre hoy? |
+|---|---|---|
+| Contar el inventario | Cuánto pedir, ya calculado | En construcción (pronóstico de demanda) |
+| Hacer las órdenes de compra | Órdenes de compra listas | En unas semanas |
+| Dar de alta cada insumo | Compras al día | Sí |
+| Pasar datos al sistema | Una foto y listo | Sí (WhatsApp / foto) |
+| Costear cada receta | Recetas costeadas | Sí |
+
+**Salen del hero:** las cuatro etiquetas de la figura y el remate *"Tú decides, Zenet lo carga y tu margen lo nota."*
+
+**Por qué:** la red de nodos se veía tecnológica pero no daba confianza ni se entendía (la prueba de 5 segundos falló tres veces). El operador ve **su** restaurante y el trabajo a mano que hoy carga; Zenet aparece integrado en los muros, no como un ícono aparte. *"Una foto y listo"* en vez de *"Costos al día"*: Zenet no automatiza la captura, la facilita (del teclado a una foto) — sin cifra, por la regla de no publicar impacto. *"Tú decides lo importante"* en vez de *"Tú decides"*: el cierre dice qué gana el operador.
+
+**Descartados en la sesión:** *"Pasar todo al Excel o al sistema"* (largo) · *"Inventario al día"* (Zenet no lo lleva) · *"Costos al día"* · el orbe de Zenet en el pasillo y la insignia con el isotipo flotando (no se leían como integrados).
+
+## v4.7 · 2. La realidad de hoy — ✅ EN VIVO (2026-10-12 · tag `v4.7`)
+
+Texto sin cambio (el de la v4.5). Las figuras pasan a escenas del mismo restaurante del hero; los únicos textos dentro de los dibujos son los globos **Costos ↑** y **Margen ↓** de la tarjeta 02.
+
+## Definición de Zenet — ✅ DECIDIDA (2026-10-11) · ✅ aplicada en la landing v4.7 · ⏳ pendiente en el flyer
+
+> **Zenet es un sistema con inteligencia artificial, fácil de usar, que carga el trabajo manual del back-of-house de tu restaurante: desde tus compras, costos e inventario hasta tus protocolos diarios y más.**
+
+**Qué cambia frente a la v4.4:** el verbo pasa de *"para"* a **"carga el trabajo manual"** (el valor dicho en la misma oración: Zenet se queda con el trabajo a mano) · entran **costos** y **protocolos diarios** (lo que pidió Carlos en Alma Verde; el lado de la cocina del plano) · salen *recetas* y *procesos* como palabras sueltas · cierra con *"y más"* (decisión del fundador).
+
+**Se mantiene *inteligencia artificial*** (no *"sistema inteligente"*): dice que es tecnología nueva y explica cómo es posible que Zenet cargue el trabajo — lee las facturas y los documentos por el operador. A probar en las demos: si algún dueño se tensa con la IA, es dato para revisarlo.
+
+**Descartados en la sesión (11-oct), con razón:**
+- *"operación trasera"* — no es lenguaje del operador.
+- *"administra"* junto a *"carga"* — se probó; la versión final usa *"carga el trabajo manual"*.
+- *"optimiza"* · *"optimizando el trabajo manual"* · *"maximizar la rentabilidad"* · *"mayor eficiencia y rentabilidad"* — vocabulario vetado o promesa de folleto que no se puede probar.
+- *"sistema operativo inteligente"* · *"sistema inteligente"* — genérico; pierde la señal de tecnología nueva.
+- Una línea de velocidad (*"en minutos"*, la factura por WhatsApp) — al fundador no le gustó.
+
+**Al aplicarla, revisar:** el remate *"Tú decides, Zenet lo carga y tu margen lo nota"* repite *carga* · la 4ª etiqueta de la figura, *"Con menos trabajo a mano"*, repite la idea de la definición · el flyer de primer toque (v0.23).
 
 ## v4.4 · 1. Hero — ✅ EN VIVO (tag `v4.4`)
 
