@@ -1,10 +1,10 @@
 ---
 name: Landing page · copy por sección
-description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.15 = landing v4.7 EN VIVO (12-oct): definición nueva aplicada, hero isométrico animado con sus textos y La realidad de hoy con escenas. v0.14 = definición nueva de Zenet decidida por el fundador (11-oct). v0.13 = plano de §6 En concreto con las etiquetas del flyer v0.22 (tag v4.6). v0.12 = §2/§3 intercambiadas: La realidad de hoy va justo después del hero con los tres problemas del flyer v0.22 y subtítulo nuevo; El momento pasa a §3 (tag v4.5). v0.11 = hero v4.4: definición con "tu inventario" y una 4ª etiqueta "Con menos trabajo a mano" (tag v4.4). v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
+description: El copy de la landing de Zenet, sección por sección, en la voz de marca. v0.16 = landing v4.8 EN VIVO (14-oct): La solución va justo después de La realidad de hoy, solo con la etiqueta y el video «Zenet en acción» (horizontal y vertical 4:5); sale el video demo de Cómo trabaja y la caja del POS. v0.15 = landing v4.7 EN VIVO (12-oct): definición nueva aplicada, hero isométrico animado con sus textos y La realidad de hoy con escenas. v0.14 = definición nueva de Zenet decidida por el fundador (11-oct). v0.13 = plano de §6 En concreto con las etiquetas del flyer v0.22 (tag v4.6). v0.12 = §2/§3 intercambiadas: La realidad de hoy va justo después del hero con los tres problemas del flyer v0.22 y subtítulo nuevo; El momento pasa a §3 (tag v4.5). v0.11 = hero v4.4: definición con "tu inventario" y una 4ª etiqueta "Con menos trabajo a mano" (tag v4.4). v0.10 = §6 En concreto pasa a cinco pestañas con el plano del restaurante (2026-10-06 · tag v4.3). v0.9 = §3 La realidad de hoy baja de cinco problemas a tres, los mismos del flyer (2026-10-05 · tag v4.2). v0.8 = §4 Cómo trabaja pasa a ser el video demo, EN VIVO (2026-10-05 · tag v4.1). v0.7 = hero v4.0.2 EN VIVO (2026-10-05 · definición + tres etiquetas en la figura + remate debajo). v0.5 = el copy de la landing v4, COMPLETO EN PAPEL (10/10 secciones · 2026-09-09) — cifras de contexto en §2, Compras + Zenet en WhatsApp en la Etapa 1, cinco tarjetas en §6, la consulta como cierre de §5 con preguntas de por qué; escrito encima de la v0.4, que se conserva intacta. v0.4 = pasada del fundador sobre §3, §4, §5 y §7 (2026-09-02 · rama v3.3-copy, aprobada en pantalla, pendiente de animación + deploy). v0.3 = reestructura v3 COMPLETA EN PAPEL (arquitectura Sinek WHY→HOW→WHAT + raíz emocional "el caos no es el precio" · 10/10 secciones cerradas 2026-08-05). EN VIVO en zenetapp.com (tag v3.0 · 2026-08-07 · gate levantado por el fundador; onboarding + análisis real = deuda de producto). La v0.2 (= landing v2 EN VIVO en zenetapp.com) está congelada en _archive.
 type: seo-content
-last_updated: 2026-10-12
+last_updated: 2026-10-14
 status: active
-version: 0.15
+version: 0.16
 owner: Alan Bahena
 ---
 
@@ -38,6 +38,21 @@ owner: Alan Bahena
 # — COPY v4 (v0.5 · en construcción) —
 
 > Las secciones de la v4 se escriben aquí, en orden de página, una por turno. Debajo de este bloque sigue **el copy v3.3 en vivo** (v0.4), intacto, como base e historia. Cuando la v4 se despliegue, la v0.4 se archiva completa.
+
+## v4.8 · La solución — ✅ EN VIVO (2026-10-14 · tag `v4.8`) · sustituye a *Cómo trabaja*
+
+**Orden de la página:** hero → La realidad de hoy → **La solución** → El momento → El camino → En concreto… (problema → solución → por qué ahora).
+
+| Pieza | Copy |
+|---|---|
+| Etiqueta | **La solución** |
+| Titular | *(sin titular visible; encabezado oculto para lectores y buscadores: "Zenet en acción: tu restaurante en orden desde el día 1")* |
+| Video | «Zenet en acción» (54 s, sin sonido, en ciclo) · guion en `03-video-demo/02-guion-zenet-en-accion.md` |
+| Botón (antes de que arranque) | **Ver Zenet en acción · 1 min** |
+
+**Qué sale:** el titular *"El trabajo que más esfuerzo te cuesta — ese es el que hace Zenet"*, el video demo y la caja *"Tu POS se queda. Tu equipo también…"*. *"Tu POS se queda"* sigue en el plano de *En concreto*; *"Tú decides lo importante"* cierra el hero. Lo único que sale de la página es *"Tu equipo también"* (vuelve como una línea bajo el video si en las demos preguntan si Zenet sustituye a su gente).
+
+**Descartados (14-oct):** subtítulo *"Arrancas con los documentos que ya tienes, en una sucursal o en todas. Así se ve:"* · los tres puntos bajo el video (*Desde el día 1 · Una sucursal o todas · En minutos*) · titulares *"Tu restaurante en orden, desde el día 1"* y *"Tu restaurante inteligente funcionando desde el día 1"* (*"inteligente"* ya estaba vetado en el hero). **A vigilar:** es la única sección sin titular visible; si al recorrerla se cae, *La solución* pasa a título.
 
 ## v4.7 · 1. Hero — ✅ EN VIVO (2026-10-12 · tag `v4.7`)
 
